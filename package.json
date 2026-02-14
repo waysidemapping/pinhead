@@ -1,0 +1,15 @@
+{
+    "name": "pinhead-map-icons",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "build_icons": "node ./scripts/build_icons.js",
+        "check_icons": "node ./scripts/check_icons.js",
+        "all": "npm run check_icons && npm run build_icons"
+    },
+    "devDependencies": {
+        "chalk": "^5.2.0",
+        "svg-path-parse": "^1.1.3",
+        "xmlbuilder2": "^4.0.3"
+    }
+}

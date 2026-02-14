@@ -1,0 +1,89 @@
+# Pinhead Map Icon Library
+
+_High quality public domain icons for your map pins_
+
+Okay, so you're making a map and need some icons. Well, maybe a lot of icons. Like, for every type of thing that might appear on a map. And they need to be visually consistent. Like the size and direction and whatever. And they gotta be free. Open licensed. In vector format. Without any AI BS. Oh, and they all need to be legible on the head of a pin. 
+
+> This happened to me while building [themap.is](https://github.com/waysidemapping/themap.is). I put together this repo in case it happens to you too. It's called Pinhead. Enjoy!
+> –Q
+
+---
+
+## Overview
+
+Pinhead is a repository of public domain SVG icons designed to be displayed at 15x15 pixels (minimum). This is much smaller than most other icon sets since the target use case is cartography. Map icons need to be really small to support high visual density. The cool part is that you can scale them up and they'll still look great, so you can use them for all kinds of things, not just maps.
+
+## Where the icons are from
+
+Pinhead is seeded from some of the most popular open source map icon sets including [Maki](https://github.com/mapbox/maki), [Temaki](https://github.com/rapideditor/temaki), [OpenStreetMap Carto](https://github.com/openstreetmap-carto/openstreetmap-carto), and [NPMap Symbol Library](https://github.com/nationalparkservice/symbol-library). If you were considering using one of these libraries, I'd humbly suggest using Pinhead instead since we have nice versions of all the same icons, plus a lot more.
+
+I've been gradually cleaning up the seed icons by scaling them to the same size, conflating duplicates, improving names, removing SVG cruft, and manually improving legibility. I've also been splitting out certain icon elements into standalone icons, such as taking the NPS "wine" icon and creating two additional icons: `wine_glass` and `wine_bottle`.
+
+And finally, the icons come from the likes of you! I myself have been addings some totally new icons I've designed in support of [themap.is](https://github.com/waysidemapping/themap.is). We're looking for contributors to grow and sustain this icon library. Keep reading if you're interested.
+
+## Contributing
+
+Contributions to Pinhead are **open**. I'd love to make this the best and largest library of public domain map icons anywhere on the web, but I can't do it alone. If you have questions, comments, or art, by all means open an [issue](https://github.com/waysidemapping/pinhead-map-icons/issues/new) or [pull request](https://github.com/waysidemapping/pinhead-map-icons/pulls/new) :)
+
+### Design guidelines
+
+If the following sections seem too technical or intimidating, feel free to just ignore them and go straight to opening a PR for your cool icon. These are intended only for managing internal consistency and I'd be happy to give you pointers after the fact. There aren't many hard rules here. Have fun with it!
+
+#### Visual design
+
+* Legibility
+  * Icons should be basically legible when displayed at 15x15 screen points on a 2x pixel density display.
+  * _Ideally_ icons should also be legible on a traditional 1x display at 15x15 pixels, but alas this is not always possible for some of the more complex graphics.
+  * Snapping shapes to 1px and 0.5px increments on the 15x15 pixel grid can often help.
+  * Shapes that are too small, overly detailed, or too close together usually look muddy at small sizes.
+  * Screen legiblity is more of an art than a science, try experimenting.
+* Perspective
+  * Most things are more iconic from one angle than another. Prefer in this order:
+    ** A straight-on horizontal perspective
+    ** A horizontal side profile
+    ** A top-down vertical perspective
+    ** Use 3D only as a last resort
+  * Multiple icons for different perspectives of the same thing can be okay if they're all iconic.
+* Orientation
+  * People, animals, vehicles, etc. depicted in profile should be facing to the right.
+  * Hand tools should be pointed to the right.
+  * Icons with major and minor elements positioned side-by-side should have the major element on the left and minor element on the right.
+  * Multiple icons for different orientations generally isn't useful. Users can manually rotate or flip icons as needed.
+
+#### SVGs
+
+* SVGs must contain only shapes that can be rendered with `fill`. Rendering with `stroke` is not supported.
+* SVGs must have viewBox="0 0 15 15" with no elements extending outside this frame.
+* The build scripts will take care of most other SVG formatting issues.
+
+#### Filenames
+
+* The filename is the only icon ID, which means changing a filename after publishing will break stuff and should be avoided.
+* Filenames should be literal and descriptive at the risk of being verbose. E.g. prefer `giraffe` to `zoo` and `plus` to `medicine`.
+* The filenames of icons with multiple descrete elements should be composed multiple component joined with a hyphen. E.g. prefer `car-key` to `car_key` or `car_rental`.
+* Two elements in different files should only have the same component name if they are intended to appear nearly identically, ignoring size and orientation. 
+* The subdirectory of an icon is not important.
+
+### AI/ML policy
+
+Icons generated by AI/ML models are assumed to be protected by copyright unless the model owner releases the rights to said icons AND said models have been trained exclusively on public domain sources or sources owned by the model owner. As this is generally never the case, and since major AI/ML model owners are known to be disingenuous about this stuff to the detriment of artists, AI-generated icons will not be considered for inclusion in Pinhead at this time.
+
+Since this repository is licensed in the public domain, you are technically free to train AI/ML models on the icons. But come on, wouldn't you rather draw a lil guy and feel a little joy for once?
+
+## Acknowledgements
+
+This repo incorporates icons from the following public domain sources. Thank you to all the contributors who made these projects possible.
+
+- https://github.com/mapbox/maki ([CC0](https://github.com/mapbox/maki/blob/main/LICENSE.txt))
+- https://github.com/rapideditor/temaki ([CC0](https://github.com/rapideditor/temaki/blob/main/LICENSE.md))
+- https://github.com/openstreetmap-carto/openstreetmap-carto ([CC0](https://github.com/openstreetmap-carto/openstreetmap-carto/blob/master/LICENSE.txt))
+- https://github.com/nationalparkservice/symbol-library (public domain as work of US federal government)
+- https://github.com/osmus/OpenTrailMap ([MIT](https://github.com/osmus/OpenTrailMap/blob/main/LICENSE))
+
+A special shoutout to Temaki for directly inspiring this repo and provding some of the build scripts <3
+
+If you know of other sources for public domain map icon that might be a good fit for Pinhead, I'd love to [hear about them](https://github.com/waysidemapping/pinhead-map-icons/issues/new)!
+
+## License
+
+This repository is distributed under [CC0](/LICENSE).
