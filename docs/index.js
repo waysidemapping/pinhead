@@ -1,33 +1,37 @@
 
-window.addEventListener('load', setupPage);
+window.addEventListener('load', _ => {
+  fetch('complete.json')
+    .then(result => result.json())
+    .then(setupPage);
+});
 
-async function setupPage() {
-  const index = await fetch('index.json').then(result => result.json());
-  const icons = index.icons;
+function setupPage(pageData) {
+  const parser = new DOMParser();
+  const icons = pageData.icons;
 
   getElementById('icon-count')
     .replaceChildren(
       new Intl.NumberFormat().format(Object.keys(icons).length)
-    )
+    );
 
   getElementById('icon-gallery')
     .replaceChildren(
       ...Object.keys(icons).map(iconId => {
+        const icon = icons[iconId];
         return createElement('a')
           .setAttribute('href', '#' + iconId)
           .setAttribute('title', iconId)
-          .append(
-            createElement('img')
-              .setAttribute('style', 'width:15px;height:15px;')
-              .setAttribute('src', `i/${iconId}.svg`),
-          )
+            .insertAdjacentHTML("afterbegin", icon.svg)
         }
       )
     );
+
   getElementById('icon-list')
     .replaceChildren(
-      ...(await Promise.all(Object.keys(icons).map(async iconId => {
-        return createElement('div')
+      ...Object.keys(icons).map(iconId => {
+        const icon = icons[iconId];
+        let preview1xCanvas, preview2xCanvas, preview3xCanvas;
+        const el = createElement('div')
           .setAttribute('id', iconId)
           .setAttribute('class', 'icon-item')
           .append(
@@ -37,9 +41,9 @@ async function setupPage() {
                 createElement('h4')
                   .setAttribute('class', 'icon-label')
                   .append(
-                    createElement('img')
-                      .setAttribute('style', 'width:15px;height:15px;filter: invert(1);margin-right: 10px;vertical-align:middle;')
-                      .setAttribute('src', `i/${iconId}.svg`),
+                    createElement('div')
+                      .setAttribute('style', 'width:15px;height:15px;display:inline-block;filter: invert(1);margin-right: 10px;vertical-align:middle;')
+                      .insertAdjacentHTML("afterbegin", icon.svg),
                     createElement('span')
                       .setAttribute('style', 'vertical-align:middle;')
                       .append(iconId)
@@ -59,7 +63,7 @@ async function setupPage() {
                         'Download'
                       ),
                     createElement('a')
-                      .setAttribute('href', `https://github.com/waysidemapping/pinhead-map-icons/blob/main/icons/${(icons[iconId].srcdir ? icons[iconId].srcdir + '/' : '') + iconId}.svg`)
+                      .setAttribute('href', `https://github.com/waysidemapping/pinhead-map-icons/blob/main/icons/${(icon.srcdir ? icon.srcdir + '/' : '') + iconId}.svg`)
                       .append(
                         'GitHub'
                       )
@@ -69,73 +73,76 @@ async function setupPage() {
               .setAttribute('class', 'icon-variants')
               .append(
                 createElement('div')
-                  .setAttribute('style', 'display:flex;flex-direction:column;justify-content:end;gap:15px;height:105px;')
+                  .setAttribute('class', 'res-preview')
                   .append(
                      createElement('div')
+                      .setAttribute('class', 'res-preview-group')
                       .append(
-                        createElement('img')
-                          .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;')
-                          .setAttribute('src', await rasterizeSVG(`i/${iconId}.svg`, 15, 15)),
+                        preview1xCanvas = createElement('canvas')
+                          .setAttribute('width', '15')
+                          .setAttribute('height', '15')
+                          .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;'),
                         createElement('p')
                           .append('1x')
                       ),
                     createElement('div')
+                      .setAttribute('class', 'res-preview-group')
                       .append(
-                        createElement('img')
-                          .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;')
-                          .setAttribute('src', await rasterizeSVG(`i/${iconId}.svg`, 30, 30)),
+                        preview2xCanvas = createElement('canvas')
+                          .setAttribute('width', '30')
+                          .setAttribute('height', '30')
+                          .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;'),
                         createElement('p')
                           .append('2x')
+                      ),
+                    createElement('div')
+                      .setAttribute('class', 'res-preview-group')
+                      .append(
+                        preview3xCanvas = createElement('canvas')
+                          .setAttribute('width', '45')
+                          .setAttribute('height', '45')
+                          .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;'),
+                        createElement('p')
+                          .append('3x')
                       )
                   ),
                 createElement('div')
-                  .setAttribute('style', `width:105px;height:105px;flex-shrink:0;position:relative;`)
+                  .setAttribute('style', `width:105px;height:105px;flex:0 0 auto;position:relative;`)
                   .append(
                     createElement('img')
-                      .setAttribute('style', 'width:100%;height:100%;')
+                      .setAttribute('loading', 'lazy')
+                      .setAttribute('decoding', 'async')
+                      .setAttribute('style', 'width:105px;height:105px;')
                       .setAttribute('src', `demo_map.svg`),
-                    createElement('img')
+                    createElement('div')
                       .setAttribute('style', `width:15px;height:15px;position:absolute;top:45px;left:45px;filter:invert(1);`)
-                      .setAttribute('src', `i/${iconId}.svg`)
+                      .insertAdjacentHTML("afterbegin", icon.svg)
                   ),
                 createElement('div')
-                  .append(
-                    createElement('img')
-                      .setAttribute('style', 'width:105px;height:105px;background:url(15x15_grid.svg);background-size:contain;')
-                      .setAttribute('src', `i/${iconId}.svg`)
-                  ),
-                createElement('div')
-                  .setAttribute('style', 'width:100%;')
-                  .append(
-                    createElement('textarea')
-                      .setAttribute('readonly', true)
-                      .setAttribute('class', 'svg-code')
-                      .setAttribute('style', 'height:105px;')
-                      .addEventListener('focus', e => e.target.select())
-                      .append(await fetch(`i/${iconId}.svg`).then(result => result.text()))
-                  )
+                  .setAttribute("class", "pixel-grid")
+                  .insertAdjacentHTML("afterbegin", icon.svg),
+                createElement('textarea')
+                  .setAttribute('readonly', true)
+                  .setAttribute('class', 'svg-code')
+                  .setAttribute('style', 'height:105px;width: 100%;')
+                  .addEventListener('focus', e => e.target.select())
+                  .append(icon.svg)
               )
-          )
+          );
+          const canvasContexts = [
+            preview1xCanvas.getContext("2d"),
+            preview2xCanvas.getContext("2d"),
+            preview3xCanvas.getContext("2d")
+          ];
+          canvasContexts.forEach((ctx, i) => ctx.scale(i + 1, i + 1));
+          parser.parseFromString(icon.svg, "image/svg+xml").querySelectorAll("path").forEach(pathEl => {
+            const path = new Path2D(pathEl.getAttribute("d"));
+            canvasContexts.forEach(ctx => ctx.fill(path));
+          });
+          return el;
         }
-      )))
+      )
     );
-}
-
-async function rasterizeSVG(svgUrl, width, height) {
-  const img = new Image();
-  img.src = svgUrl;
-
-  await img.decode(); // wait until image loads
-
-  const canvas = document.createElement("canvas");
-  canvas.width = width;
-  canvas.height = height;
-  
-  const ctx = canvas.getContext("2d");
-  ctx.drawImage(img, 0, 0, width, height);
-
-  const rasterURL = canvas.toDataURL("image/png");
-  return rasterURL;
 }
 
 // Creates a new HTML element where certain functions return the element itself.

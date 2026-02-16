@@ -1,5 +1,6 @@
-import { existsSync, rmSync, mkdirSync, readdirSync, copyFileSync, writeFileSync } from 'fs';
+import { existsSync, rmSync, mkdirSync, readdirSync, copyFileSync, writeFileSync, readFileSync, write } from 'fs';
 import { join, basename, extname } from 'path';
+import sharp from 'sharp';
 
 const sourceDir = 'icons';
 const targetDir = 'dist/i';
@@ -28,13 +29,16 @@ function collectFiles(dir) {
   return results;
 }
 
-function flatCopy() {
+async function flatCopy() {
   ensureEmptyDir(targetDir);
 
   const files = collectFiles(sourceDir);
   const seenNames = new Set();
 
   const manifest = {
+    icons: {}
+  };
+  const complete = {
     icons: {}
   };
 
@@ -46,14 +50,18 @@ function flatCopy() {
     if (subdir) {
       manifest.icons[filename].srcdir = subdir;
     }
+    complete.icons[filename] = Object.assign({}, manifest.icons[filename]);
+    complete.icons[filename].svg = readFileSync(file, {encoding: 'utf8'});
 
     if (seenNames.has(filename)) {
       throw new Error(`Filename collision detected: ${filename}`);
     }
 
     seenNames.add(filename);
-    const destPath = join(targetDir, filename) + '.svg';
-    copyFileSync(file, destPath);
+    const baseDestPath = join(targetDir, filename);
+    copyFileSync(file, baseDestPath + '.svg');
+    writeFileSync(baseDestPath + '.15.png', await svgToPngData(file, 15));
+    writeFileSync(baseDestPath + '.30.png', await svgToPngData(file, 30));
   }
   // sort icons by ID
   manifest.icons = Object.fromEntries(
@@ -61,15 +69,28 @@ function flatCopy() {
       keyA.localeCompare(keyB)
     )
   );
+  complete.icons = Object.fromEntries(
+    Object.entries(complete.icons).sort(([keyA], [keyB]) =>
+      keyA.localeCompare(keyB)
+    )
+  );
 
-  writeFileSync('dist/index.json', JSON.stringify(manifest, null, 2));
-  console.log(`${files.length} icons`);
+  writeFileSync('dist/index.json', JSON.stringify(manifest));
+  writeFileSync('dist/complete.json', JSON.stringify(complete));
+  console.log(`Built ${files.length} icons`);
 }
 
 try {
   flatCopy();
-  console.log('Flat copy completed successfully.');
 } catch (err) {
   console.error('Error:', err.message);
   process.exit(1);
+}
+
+
+async function svgToPngData(svgPath, dim) {
+  return await sharp(svgPath)
+    .resize(dim, dim)
+    .png()
+    .toBuffer();
 }

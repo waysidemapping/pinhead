@@ -19,7 +19,7 @@ a {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding-top: 10px;
+  padding: 20px 10px;
 }
 
 article {
@@ -55,7 +55,7 @@ hr {
   height: 75px;
   margin-bottom: -7px;
 }
-#main-title span {
+#main-title h1 span {
   display: inline-block;
   margin-left: -24px;
   margin-bottom: -10px;
@@ -67,6 +67,29 @@ hr {
   gap: 5px;
   padding-bottom: 30px;
   border-bottom: 2px solid #000;
+}
+#icon-gallery a {
+  min-width: 0;
+  min-height: 0;
+  display:block;
+  width:15px;
+  height:15px;
+  flex:0 0 15px;
+}
+#icon-gallery a img {
+  min-width: 0;
+  min-height: 0;
+  display:block;
+  width:15px;
+  height:15px;
+}
+
+.pixel-grid {
+  width:105px;
+  height:105px;
+  flex:0 0 auto;
+  background:url(/15x15_grid.svg);
+  background-size:contain;
 }
 
 #icon-list {
@@ -89,13 +112,20 @@ hr {
 .icon-variants {
   display: flex;
   border-top: 1px solid #000;
-  align-items: flex-end;
-  gap: 30px;
+  gap: 20px;
   padding: 20px 0 20px 8px;
 }
-.icon-variants p {
-  margin-top: 4px;
-  text-align: center;
+.res-preview {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:15px;
+  height:105px;
+}
+.res-preview-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 textarea {
   width: 100%;
@@ -105,6 +135,30 @@ textarea {
   white-space: nowrap;
   background: #f7f7f7;
   padding: 4px;
+  font-family: inherit;
   font-size: inherit;
   resize: none;
 }
+
+@media only screen and (max-width: 800px) {
+  #main-title {
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+    gap: 20px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  
+}
+/* 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000;
+    color: #fff;
+  }
+  svg, img, canvas {
+    filter: invert(1);
+  }
+} */
