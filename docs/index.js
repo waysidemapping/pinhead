@@ -19,7 +19,7 @@ async function setupPage() {
           .append(
             createElement('img')
               .setAttribute('style', 'width:15px;height:15px;')
-              .setAttribute('src', `icons/${iconId}.svg`),
+              .setAttribute('src', `i/${iconId}.svg`),
           )
         }
       )
@@ -39,7 +39,7 @@ async function setupPage() {
                   .append(
                     createElement('img')
                       .setAttribute('style', 'width:15px;height:15px;filter: invert(1);margin-right: 10px;vertical-align:middle;')
-                      .setAttribute('src', `icons/${iconId}.svg`),
+                      .setAttribute('src', `i/${iconId}.svg`),
                     createElement('span')
                       .setAttribute('style', 'vertical-align:middle;')
                       .append(iconId)
@@ -48,12 +48,12 @@ async function setupPage() {
                   .setAttribute('style', 'display:flex;gap: 10px;')
                   .append(
                     createElement('a')
-                      .setAttribute('href', `icons/${iconId}.svg`)
+                      .setAttribute('href', `i/${iconId}.svg`)
                       .append(
                         'Open'
                       ),
                     createElement('a')
-                      .setAttribute('href', `icons/${iconId}.svg`)
+                      .setAttribute('href', `i/${iconId}.svg`)
                       .setAttribute('download', true)
                       .append(
                         'Download'
@@ -75,7 +75,7 @@ async function setupPage() {
                       .append(
                         createElement('img')
                           .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;')
-                          .setAttribute('src', await rasterizeSVG(`icons/${iconId}.svg`, 15, 15)),
+                          .setAttribute('src', await rasterizeSVG(`i/${iconId}.svg`, 15, 15)),
                         createElement('p')
                           .append('1x')
                       ),
@@ -83,7 +83,7 @@ async function setupPage() {
                       .append(
                         createElement('img')
                           .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;')
-                          .setAttribute('src', await rasterizeSVG(`icons/${iconId}.svg`, 30, 30)),
+                          .setAttribute('src', await rasterizeSVG(`i/${iconId}.svg`, 30, 30)),
                         createElement('p')
                           .append('2x')
                       )
@@ -96,13 +96,13 @@ async function setupPage() {
                       .setAttribute('src', `demo_map.svg`),
                     createElement('img')
                       .setAttribute('style', `width:15px;height:15px;position:absolute;top:45px;left:45px;filter:invert(1);`)
-                      .setAttribute('src', `icons/${iconId}.svg`)
+                      .setAttribute('src', `i/${iconId}.svg`)
                   ),
                 createElement('div')
                   .append(
                     createElement('img')
                       .setAttribute('style', 'width:105px;height:105px;background:url(15x15_grid.svg);background-size:contain;')
-                      .setAttribute('src', `icons/${iconId}.svg`)
+                      .setAttribute('src', `i/${iconId}.svg`)
                   ),
                 createElement('div')
                   .setAttribute('style', 'width:100%;')
@@ -112,7 +112,7 @@ async function setupPage() {
                       .setAttribute('class', 'svg-code')
                       .setAttribute('style', 'height:105px;')
                       .addEventListener('focus', e => e.target.select())
-                      .append(await fetch(`icons/${iconId}.svg`).then(result => result.text()))
+                      .append(await fetch(`i/${iconId}.svg`).then(result => result.text()))
                   )
               )
           )

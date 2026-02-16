@@ -2,7 +2,7 @@ import { existsSync, rmSync, mkdirSync, readdirSync, copyFileSync, writeFileSync
 import { join, basename, extname } from 'path';
 
 const sourceDir = 'icons';
-const targetDir = 'dist/icons';
+const targetDir = 'dist/i';
 
 function ensureEmptyDir(dir) {
   if (existsSync(dir)) {
