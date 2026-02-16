@@ -15,11 +15,11 @@ a {
   text-decoration: underline solid #000 1px;
 }
 
-#body {
+.container {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px 10px;
+  padding: 20px 10px 40px 10px;
 }
 
 article {
