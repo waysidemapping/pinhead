@@ -1,10 +1,12 @@
-# Pinhead Map Icon Library
+# <img src="https://pinhead.ink/icons/pin.svg" height="60px" width="60px"/> Pinhead Map Icons
 
-_High quality public domain icons for your map pins_
+_Quality public domain icons for your map pins_
 
-Okay, so you're making a map and need some icons. Well, maybe a lot of icons. Like, for every type of thing that might appear on a map. And they need to be visually consistent. Like the size and direction and whatever. And they gotta be free. Open licensed. In vector format. Without any AI BS. Oh, and they all need to be legible on the head of a pin. 
+So you're making a map and need some icons. Well, maybe a lot of icons. Like, for anything that might appear on a map. And they need to be visually consistent. Like the size and direction and whatever. And they gotta be free. Even public domain. In vector format. With no AI BS. Oh, and they all need to be legible on the head of a pin.
 
-⬆️ This happened to me while building [themap.is](https://github.com/waysidemapping/themap.is). I put together this repo in case it happens to you too. It's called Pinhead. Enjoy!
+This happened to me while building [themap.is](https://github.com/waysidemapping/themap.is). I put together this icon library in case it happens to you too. It's called **Pinhead**.
+
+Pinhead has 1,000+ icons and counting, including standardized versions of the most popular public domain cartographic icon sets: [Maki](https://github.com/mapbox/maki), [Temaki](https://github.com/rapideditor/temaki), [OSM Carto](https://github.com/openstreetmap-carto/openstreetmap-carto), and [NPMap](https://github.com/nationalparkservice/symbol-library).
 
 ## Overview
 
