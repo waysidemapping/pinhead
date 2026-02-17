@@ -68,7 +68,7 @@ function checkIcons() {
   const iconIds = {};
   const iconIdParts = {};
 
-  globSync(`./svg/**/*.svg`).forEach(file => {
+  globSync(`./icons/**/*.svg`).forEach(file => {
     const contents = readFileSync(file, 'utf8');
     let xml;
     try {
@@ -83,6 +83,9 @@ function checkIcons() {
     const id = parse(file).name;
     iconIds[id] = true;
     const parts = id.split('-');
+    if (parts.length > 2) {
+      console.log(id);
+    }
     if (parts[0] !== id) parts.forEach(part => iconIdParts[part] = true);
 
     // Make xml declaration consistent
@@ -226,6 +229,8 @@ function checkIcons() {
     .sort()
     .filter(part => !iconIds[part])
     .forEach(part => console.log(`Missing base icon "${part}"`));
+
+  console.log(`Missing ${Object.keys(iconIdParts).length} base icons total`);
 
   console.timeEnd(END);
 }
