@@ -81,7 +81,7 @@ function checkIcons() {
     }
 
     const id = parse(file).name;
-    if (!id.match(/^[a-z_\d]+$/)) {
+    if (!id.match(/^[a-z_]+$/)) {
       console.error(`Invalid charachters in filename: ` + id);
       process.exit(1);
     }
