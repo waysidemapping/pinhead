@@ -31,7 +31,9 @@ function setupPage(pageData) {
       Object.keys(icons).map(iconId => {
         return new Chainable('div')
           .setAttribute('id', iconId)
-          .setAttribute('class', 'icon-item');
+          .setAttribute('class', 'icon-item')
+          // add a placeholder label to enable in-browser search and find before everything is loaded
+          .append(iconId);
       }).join('')
     );
 
@@ -53,7 +55,7 @@ function setupPage(pageData) {
   function loadIconItemInner(el) {
     const iconId = el.getAttribute('id');
     const icon = icons[iconId];
-    el.insertAdjacentHTML("afterbegin", [
+    el.innerHTML = [
     new Chainable('div')
       .setAttribute('style', 'display:flex;justify-content:space-between;align-items: baseline;')
       .append(
@@ -148,7 +150,7 @@ function setupPage(pageData) {
           .setAttribute('class', 'svg-code')
           .append(icon.svg)   
       )
-    ].join(''));
+    ].join('');
 
     el.querySelector('textarea').addEventListener('focus', e => e.target.select());
 
