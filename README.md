@@ -67,7 +67,7 @@ If the following sections seem too technical or intimidating, feel free to just 
 
 * The filename is the only icon ID, which means changing a filename after publishing will break stuff and should be avoided.
 * Filenames should be literal and descriptive at the risk of being verbose.
-  * E.g. prefer <img src="https://pinhead.ink/i/giraffe.svg" height="15px" width="15px"/> `giraffe` to `zoo` and <img src="https://pinhead.ink/i/plus.svg" height="15px" width="15px"/> `plus` to `medicine`.
+  * E.g. prefer <img src="https://pinhead.ink/i/giraffe.svg" height="15px" width="15px"/> `giraffe` to `zoo` and <img src="https://pinhead.ink/i/greek_cross.svg" height="15px" width="15px"/> `greek_cross` to `medicine`.
 * Two files should have similar names if the components of their icons are similar.
 * The subdirectory of an icon is not important.
 
