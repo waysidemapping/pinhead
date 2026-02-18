@@ -66,7 +66,7 @@ function checkIcons() {
   console.time(END);
 
   const iconIds = {};
-  const iconIdParts = {};
+  const iconIdPartsObj = {};
 
   globSync(`./icons/**/*.svg`).forEach(file => {
     const contents = readFileSync(file, 'utf8');
@@ -86,8 +86,10 @@ function checkIcons() {
       process.exit(1);
     }
     iconIds[id] = true;
-    const parts = id.split(/_with_|_on_|_in_|_onto_|_into_|_and_|_for_|_under_|_over_|_above_|_between_|_atop_|_within_|_toward_|_wearing_|_holding_|_carrying_|_beside_/);
-    if (parts[0] !== id) parts.forEach(part => iconIdParts[part] = true);
+    const parts = id.split(/_with_|_on_|_in_|_onto_|_into_|_and_|_under_|_over_|_above_|_beside_|_between_|_atop_|_within_|_from_|_to_|_toward_|_wearing_|_holding_|_carrying_|_crossing_|_dragging_|_aiming_|_boarding_|_riding_|_driving_|_using_/);
+    // if (parts[0] !== id) {
+    //  parts.forEach(part => iconIdPartsObj[part] = true);
+    // }
 
     // Make xml declaration consistent
     xml.dec({ version: '1.0', encoding: 'UTF-8' });
@@ -226,12 +228,11 @@ function checkIcons() {
 
   });
 
-  Object.keys(iconIdParts)
-    .sort()
-    .filter(part => !iconIds[part])
-    .forEach(part => console.log(`Missing base icon "${part}"`));
-
-  console.log(`Missing ${Object.keys(iconIdParts).length} base icons total`);
+  // const iconIdParts = Object.keys(iconIdPartsObj).sort();
+  // iconIdParts
+  //   .filter(part => !iconIds[part])
+  //   .forEach(part => console.log(`Missing icon part "${part}"`));
+  // console.log(`Missing base icons for ${iconIdParts.filter(part => !iconIds[part]).length} parts of ${iconIdParts.length} parts total`);
 
   console.timeEnd(END);
 }
