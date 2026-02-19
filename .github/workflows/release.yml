@@ -6,7 +6,8 @@ on:
       - "v*"
 
 permissions:
-  contents: write
+  id-token: write  # Required for npm publish via OIDC
+  contents: write  # Required to make GitHub release
 
 concurrency:
   group: "release"
@@ -21,21 +22,21 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
-          node-version: '22'
-      - name: Install
-        run: npm install
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+      - name: Clean install
+        run: npm ci
       - name: Build
         run: npm run build
-      - name: Create tar archive of dist
-        run: |
-          mkdir -p temp
-          cp -r dist temp/pinhead-dist
-          tar -czf pinhead-dist.tar.gz -C temp pinhead-dist
-      - run: rm -rf temp
+      - name: Pack
+        run: npm pack
       - name: Create GitHub Release
         run: |
-          gh release create "${GITHUB_REF_NAME}" pinhead-dist.tar.gz \
+          PACKAGE_FILE=$(ls *.tgz)
+          gh release create "${GITHUB_REF_NAME}" "$PACKAGE_FILE" \
             --title "${GITHUB_REF_NAME}" \
             --generate-notes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish to npm
+        run: npm publish

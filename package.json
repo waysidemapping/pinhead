@@ -9,11 +9,10 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run check_icons && npm run build_icons && npm run write_dist_meta",
+    "build": "npm run check_icons && npm run build_icons",
     "build_icons": "node scripts/build_icons.js",
     "check_icons": "node scripts/check_icons.js",
-    "serve": "node serve.js",
-    "write_dist_meta": "cp LICENSE dist/LICENSE && node -p \"'Pinhead Map Icons version ' + require('./package.json').version + ' by Wayside Mapping. For more info and recent releases visit: https://github.com/waysidemapping/pinhead'\" > dist/README"
+    "serve": "node serve.js"
   },
   "devDependencies": {
     "chalk": "^5.2.0",
