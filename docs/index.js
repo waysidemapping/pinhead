@@ -98,6 +98,7 @@ function setupPage(pageData) {
           .append(
               new Chainable('div')
               .setAttribute('class', 'res-preview-wrap')
+              .setAttribute('title', 'rendered at 15x15 pixels')
               .append(
                 new Chainable('canvas')
                   .setAttribute('class', 'res-preview icon')
@@ -106,10 +107,11 @@ function setupPage(pageData) {
                   .setAttribute('width', 15)
                   .setAttribute('height', 15),
                 new Chainable('p')
-                  .append('1x') 
+                  .append('1x')
               ),
             new Chainable('div')
               .setAttribute('class', 'res-preview-wrap')
+              .setAttribute('title', 'rendered at 30x30 pixels')
               .append(
                 new Chainable('canvas')
                   .setAttribute('class', 'res-preview icon')
@@ -122,6 +124,7 @@ function setupPage(pageData) {
               ),
             new Chainable('div')
               .setAttribute('class', 'res-preview-wrap')
+              .setAttribute('title', 'rendered at 45x45 pixels')
               .append(
                 new Chainable('canvas')
                   .setAttribute('class', 'res-preview icon')
@@ -130,7 +133,7 @@ function setupPage(pageData) {
                   .setAttribute('width', 45)
                   .setAttribute('height', 45),
                 new Chainable('p')
-                  .append('3x')   
+                  .append('3x')
               )   
           ),
         new Chainable('div')
