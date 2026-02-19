@@ -12,7 +12,7 @@ http.createServer(function (request, response) {
         let requestUrl = url.parse(request.url)
 
         // need to use path.normalize so people can't access directories underneath baseDirectory
-        let fsPath = baseDirectory + '/dist' + path.normalize(requestUrl.pathname)
+        let fsPath = baseDirectory + '/docs' + path.normalize(requestUrl.pathname)
 
         if (fs.statSync(fsPath).isDirectory()) {
           if (!fsPath.endsWith("/")) fsPath += "/";

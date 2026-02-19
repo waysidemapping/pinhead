@@ -1,6 +1,6 @@
 
 window.addEventListener('load', _ => {
-  fetch('complete.json')
+  fetch('v1/index.complete.json')
     .then(result => result.json())
     .then(setupPage);
 });
@@ -73,18 +73,18 @@ function setupPage(pageData) {
           .setAttribute('class', 'links')
           .append(
             new Chainable('a')
-              .setAttribute('href', `i/${iconId}.svg`)
+              .setAttribute('href', `v1/${iconId}.svg`)
               .append(
                 'Open'
               ),
             new Chainable('a')
-              .setAttribute('href', `i/${iconId}.svg`)
+              .setAttribute('href', `v1/${iconId}.svg`)
               .setAttribute('download', true)
               .append(
                 'Download'
               ),
             new Chainable('a')
-              .setAttribute('href', `https://github.com/waysidemapping/pinhead-map-icons/blob/main/icons/${(icon.srcdir ? icon.srcdir + '/' : '') + iconId}.svg`)
+              .setAttribute('href', `https://github.com/waysidemapping/pinhead/blob/main/icons/${(icon.srcdir ? icon.srcdir + '/' : '') + iconId}.svg`)
               .append(
                 'GitHub'
               )

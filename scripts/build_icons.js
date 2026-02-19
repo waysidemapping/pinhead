@@ -3,7 +3,10 @@ import { join, basename, extname } from 'path';
 import sharp from 'sharp';
 
 const sourceDir = 'icons';
-const targetDir = 'dist/i';
+const targetDirs = [
+  'docs/v1',
+  'dist/icons'
+];
 
 function ensureEmptyDir(dir) {
   if (existsSync(dir)) {
@@ -30,7 +33,7 @@ function collectFiles(dir) {
 }
 
 async function flatCopy() {
-  ensureEmptyDir(targetDir);
+  targetDirs.forEach(dir => ensureEmptyDir(dir));
 
   const files = collectFiles(sourceDir);
   const seenNames = new Set();
@@ -47,10 +50,10 @@ async function flatCopy() {
     manifest.icons[filename] = {};
 
     const subdir = file.slice(sourceDir.length + 1, file.length - basename(file).length - 1);
-    if (subdir) {
-      manifest.icons[filename].srcdir = subdir;
-    }
     complete.icons[filename] = Object.assign({}, manifest.icons[filename]);
+    if (subdir) {
+      complete.icons[filename].srcdir = subdir;
+    }
     complete.icons[filename].svg = readFileSync(file, {encoding: 'utf8'});
 
     if (seenNames.has(filename)) {
@@ -58,11 +61,18 @@ async function flatCopy() {
     }
 
     seenNames.add(filename);
-    const baseDestPath = join(targetDir, filename);
-    copyFileSync(file, baseDestPath + '.svg');
-    writeFileSync(baseDestPath + '.15.png', await svgToPngData(file, 15));
-    writeFileSync(baseDestPath + '.30.png', await svgToPngData(file, 30));
-    writeFileSync(baseDestPath + '.45.png', await svgToPngData(file, 45));
+
+    const png15 = await svgToPngData(file, 15);
+    const png30 = await svgToPngData(file, 30);
+    const png45 = await svgToPngData(file, 45);
+
+    targetDirs.map(targetDir => {
+      const baseDestPath = join(targetDir, filename);
+      copyFileSync(file, baseDestPath + '.svg');
+      writeFileSync(baseDestPath + '.15.png', png15);
+      writeFileSync(baseDestPath + '.30.png', png30);
+      writeFileSync(baseDestPath + '.45.png', png45);
+    });
   }
   // sort icons by ID
   manifest.icons = Object.fromEntries(
@@ -76,8 +86,11 @@ async function flatCopy() {
     )
   );
 
-  writeFileSync('dist/index.json', JSON.stringify(manifest));
-  writeFileSync('dist/complete.json', JSON.stringify(complete));
+  targetDirs.forEach(dir => {
+    writeFileSync(dir + '/index.json', JSON.stringify(manifest));
+    writeFileSync(dir + '/index.complete.json', JSON.stringify(complete));
+  });
+ 
   console.log(`Built ${files.length} icons`);
 }
 
