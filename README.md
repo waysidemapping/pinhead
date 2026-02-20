@@ -4,7 +4,7 @@ _Quality public domain icons for your map pins_
 
 [<img src="https://pinhead.ink/v1/bird_flying.svg" height="15px" width="15px"/> pinhead.ink <img src="https://pinhead.ink/v1/bird_flying.svg" height="15px" width="15px"/>](https://pinhead.ink) 
 
-So you're making a map and need some icons. Well, maybe a lot of icons. Like, for anything that might appear on a map. And they need to be visually consistent. Like the size and direction and whatever. And they gotta be free. Even public domain. In vector format. With no AI BS. Oh, and they all need to be legible on the head of a pin.
+So you're making a map and need some icons. Well, maybe a lot of icons. Like, for anything that might appear on a map. And they need to be visually consistent. Like the size and direction and whatever. And they gotta be free. Even public domain. In vector format. With no AI. Oh, and they all need to be legible on the head of a pin.
 
 This happened to me while building [themap.is](https://github.com/waysidemapping/themap.is). I put together this icon library in case it happens to you too. It's called **Pinhead**.
 
