@@ -188,9 +188,9 @@ canvas.res-preview {
  image-rendering:crisp-edges;
  image-rendering:pixelated;
 }
-code, textarea {
+textarea {
   background: #f3f3f3;
-  padding: 4px;
+  padding: 6px;
   border: 0;
   overflow: scroll;
   text-align: left;
@@ -199,10 +199,18 @@ code, textarea {
   font-size: inherit;
   resize: none;
 }
-textarea.svg-code {
+.text-areas {
   width: 100%;
-  height:105px;
-  width: 100%;
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text-areas textarea.svg-code {
+  height: calc(3lh + 12px);
+}
+.text-areas textarea.img-code {
+  height: calc(1lh + 12px);
 }
 
 @media only screen and (max-width: 800px) {

@@ -200,14 +200,23 @@ function setupPage(pageData) {
         new Chainable('div')
           .setAttribute("class", "pixel-grid")
           .insertAdjacentHTML("afterbegin", icon.svg),
-        new Chainable('textarea')
-          .setAttribute('readonly', true)
-          .setAttribute('class', 'svg-code')
-          .append(icon.svg)   
+        new Chainable('div')
+          .setAttribute("class", "text-areas")
+          .append(
+            new Chainable('textarea')
+              .setAttribute('readonly', true)
+              .setAttribute('class', 'svg-code')
+              .append(icon.svg),
+            new Chainable('textarea')
+              .setAttribute('readonly', true)
+              .setAttribute('class', 'img-code')
+              .append(`<img src="https://pinhead.ink/v${majorVersion}/${iconId}.svg" width="15px" height="15px"/>`)
+          )
       )
     ].join('');
 
-    el.querySelector('textarea').addEventListener('focus', e => e.target.select());
+    el.querySelectorAll('textarea')
+      .forEach(el => el.addEventListener('focus', e => e.target.select()));
 
     el.querySelectorAll('canvas.icon').forEach(canvas => {
       const scale = parseInt(canvas.getAttribute('scale'));
