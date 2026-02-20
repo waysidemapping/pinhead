@@ -1,0 +1,48 @@
+[
+  {
+    "from_major_version": "1",
+    "to_major_version": "2",
+    "icon_migrations": [
+      {
+        "old_id": "cross_latin",
+        "new_id": "latin_cross"
+      },
+      {
+        "old_id": "flower_boquette",
+        "new_id": "flower_bouquet"
+      },
+      {
+        "old_id": "plan_in_raised_planter",
+        "new_id": "plant_in_raised_planter"
+      },
+      {
+        "old_id": "hanging_rail_transit_vehicle",
+        "new_id": "hanging_rail_transit_vehicle_with_destination_display"
+      },
+      {
+        "old_id": "local_transit_vehicle",
+        "new_id": "transit_vehicle_with_destination_display"
+      },
+      {
+        "old_id": "monorail_transit_vehicle",
+        "new_id": "monorail_transit_vehicle_with_destination_display"
+      },
+      {
+        "old_id": "person_boarding_bus",
+        "new_id": "person_boarding_bus_with_destination_display"
+      },
+      {
+        "old_id": "person_boarding_hanging_rail_transit_vehicle",
+        "new_id": "person_boarding_hanging_rail_transit_vehicle_with_destination_display"
+      },
+      {
+        "old_id": "person_boarding_local_transit_vehicle",
+        "new_id": "person_boarding_transit_vehicle_with_destination_display"
+      },
+      {
+        "old_id": "person_boarding_monorail_transit_vehicle",
+        "new_id": "person_boarding_monorail_transit_vehicle_with_destination_display"
+      }
+    ]
+  }
+]

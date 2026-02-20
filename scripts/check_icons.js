@@ -150,20 +150,21 @@ function checkIcons() {
         } else if (node.nodeName !== 'title' && node.nodeName !== 'desc' && node.nodeName !== 'g') {
           warnings.push(chalk.yellow('Warning - Suspicious node: ' + node.nodeName));
           warnings.push(chalk.gray('  Each svg element should contain only one or more "path" elements.'));
-          return;
+          process.exit(1);
         }
 
+        // remove all children since we'll re-add the paths we want later
         childrenToRemove.add(child);
 
         // suspicious attributes
         const suspiciousAttrs = node.attributes
           .map(attr => attr.name)
-          .filter(name => name !== 'd');
+          .filter(name => !['d', 'fill'].includes(name));
 
         if (suspiciousAttrs.length) {
           warnings.push(chalk.yellow('Warning - Suspicious attributes on ' + node.nodeName + ': ' + suspiciousAttrs));
           warnings.push(chalk.gray('  Avoid identifiers, style, and presentation attributes.'));
-          return;
+          process.exit(1);
         }
       }
 
