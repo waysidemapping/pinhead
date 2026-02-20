@@ -18,6 +18,16 @@ Various icons have been renamed due to issues found in the initial release. A ma
   - <img src="https://pinhead.ink/v2/person_boarding_transit_vehicle_with_destination_display.svg" width="15px"/> `person_boarding_local_transit_vehicle` -> `person_boarding_transit_vehicle_with_destination_display`
   - <img src="https://pinhead.ink/v2/person_boarding_monorail_transit_vehicle_with_destination_display.svg" width="15px"/> `person_boarding_monorail_transit_vehicle` -> `person_boarding_monorail_transit_vehicle_with_destination_display`
 
+### New icons
+
+- <img src="https://pinhead.ink/v2/arrow_down_to_down_bracket.svg" width="15px"/> Add `arrow_down_to_down_bracket`
+- <img src="https://pinhead.ink/v2/arrow_up_to_up_bracket.svg" width="15px"/> Add `arrow_up_to_up_bracket`
+- <img src="https://pinhead.ink/v2/arrow_left_to_left_bracket.svg" width="15px"/> Add `arrow_left_to_left_bracket`
+
+### Updated icons
+
+- <img src="https://pinhead.ink/v2/arrow_right_to_right_bracket.svg" width="15px"/> Update `arrow_right_to_right_bracket` thickness to match similar arrow icons
+
 ### Developer changes
 
 - Add [`migrations.json`](/migrations.json) file.
