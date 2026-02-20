@@ -1,7 +1,7 @@
 {
   "name": "@waysidemapping/pinhead",
-  "version": "2.0.0-dev",
-  "versionIcon": "https://pinhead.ink/v1/heart.svg",
+  "version": "1.0.1",
+  "versionIcon": "https://pinhead.ink/v1/heart_with_bolt.svg",
   "type": "module",
   "description": "Quality public domain icons for your map pins",
   "license": "CC0-1.0",
