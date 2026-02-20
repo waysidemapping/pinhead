@@ -105,7 +105,7 @@ function setupPage(pageData) {
           .setAttribute('class', 'icon-label')
           .append(
             new Chainable('div')
-              .setAttribute('style', 'width:15px;height:15px;display:inline-block;filter: invert(1);margin-right: 10px;vertical-align:middle;')
+              .setAttribute('style', 'width:15px;height:15px;display:inline-block;margin-right: 10px;vertical-align:middle;')
               .insertAdjacentHTML("afterbegin", icon.svg),
             new Chainable('span')
               .setAttribute('style', 'vertical-align:middle;')
@@ -184,7 +184,7 @@ function setupPage(pageData) {
             new Chainable('div')
               .setAttribute("class", "map-preview-background"),
             new Chainable('div')
-              .setAttribute('style', `width:15px;height:15px;position:absolute;top:45px;left:45px;filter:invert(1);`)
+              .setAttribute('style', `width:15px;height:15px;position:absolute;top:45px;left:45px;color:#fff;`)
               .insertAdjacentHTML("afterbegin", icon.svg)
           ),
         new Chainable('div')

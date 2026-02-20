@@ -4,6 +4,10 @@ body {
   font-size: 14px;
 }
 
+svg {
+  fill: currentColor;
+}
+
 i {
   font-style: italic;
 }
