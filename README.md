@@ -34,6 +34,7 @@ Pinhead has no dependencies and is basically just a directory of SVG files. A fe
 
 - `dist/icons/index.json`: a list of all the available icons in this version
 - `dist/icons/index.complete.json`: same as the above but with the SVG code included inline
+- `dist/migrations.json`: a machine-readable list of icon additions, deletions, and renames between major versions
 
 ## Where the icons are from
 
@@ -45,7 +46,7 @@ Pinhead is seeded from the following public domain sources. Thank you to all the
 - [NPMap Symbol Library](https://github.com/nationalparkservice/symbol-library) (public domain)
 - [OpenTrailMap](https://github.com/osmus/OpenTrailMap) ([MIT](https://github.com/osmus/OpenTrailMap/blob/main/LICENSE))
 
-I've been gradually cleaning up the seed icons by scaling them to the same size, conflating duplicates, improving names, removing SVG cruft, and manually improving legibility. I've also been splitting out certain icon elements into standalone icons, such as taking the <img src="https://pinhead.ink/v1/wine_bottle_and_wine_glass.svg" height="15px" width="15px"/> "wine" icon and creating two additional icons: <img src="https://pinhead.ink/v1/wine_glass.svg" height="15px" width="15px"/> `wine_glass` and <img src="https://pinhead.ink/v1/wine_bottle.svg" height="15px" width="15px"/> `wine_bottle`.
+I've been cleaning up the seed icons by scaling them to the same size, conflating duplicates, improving names, removing SVG cruft, and manually improving legibility. I've also been splitting out certain icon elements into standalone icons, such as taking the <img src="https://pinhead.ink/v1/wine_bottle_and_wine_glass.svg" height="15px" width="15px"/> "wine" icon and creating two additional icons: <img src="https://pinhead.ink/v1/wine_glass.svg" height="15px" width="15px"/> `wine_glass` and <img src="https://pinhead.ink/v1/wine_bottle.svg" height="15px" width="15px"/> `wine_bottle`.
 
 If you know of other sources for public domain map icon that might be a good fit for Pinhead, I'd love to [hear about them](https://github.com/waysidemapping/pinhead/issues/new)!
 
