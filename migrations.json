@@ -42,6 +42,18 @@
       {
         "old_id": "person_boarding_monorail_transit_vehicle",
         "new_id": "person_boarding_monorail_transit_vehicle_with_destination_display"
+      },
+      {
+        "new_id": "turtle_top"
+      },
+      {
+        "new_id": "arrow_down_to_down_bracket"
+      },
+      {
+        "new_id": "arrow_up_to_up_bracket"
+      },
+      {
+        "new_id": "arrow_left_to_left_bracket"
       }
     ]
   }
