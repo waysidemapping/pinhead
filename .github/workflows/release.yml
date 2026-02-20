@@ -30,12 +30,16 @@ jobs:
         run: npm run dist
       - name: Pack
         run: npm pack
+      - name: Extract changelog section
+        run: |
+          VERSION=${GITHUB_REF_NAME#v}
+          awk "/## \\[$VERSION\\]/,/## \\[/" CHANGELOG.md | sed '$d' > RELEASE_NOTES.md
       - name: Create GitHub Release
         run: |
           PACKAGE_FILE=$(ls *.tgz)
           gh release create "${GITHUB_REF_NAME}" "$PACKAGE_FILE" \
             --title "${GITHUB_REF_NAME}" \
-            --generate-notes
+            --notes-file RELEASE_NOTES.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish to npm
