@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1] - 2026-02-20
+
+### Developer changes
+
+- List added icons in [`migrations.json`](/migrations.json) file
+- Include `migrations.json` file in the distribution
+
 ## [2.1.0] - 2026-02-20
 
 ### Developer changes
@@ -38,7 +45,7 @@ Various icons have been renamed due to issues found in the initial release. A ma
 
 ### Developer changes
 
-- Add [`migrations.json`](/migrations.json) file.
+- Add [`migrations.json`](/migrations.json) file
 
 ## [1.0.1] - 2026-02-20
 

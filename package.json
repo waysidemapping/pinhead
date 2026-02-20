@@ -33,7 +33,7 @@
     "access": "public"
   },
   "scripts": {
-    "dist": "npm run check_icons && npm run build_dist",
+    "dist": "npm run check_icons && npm run build_dist && cp migrations.json dist/migrations.json",
     "build_docs": "node scripts/build_docs.js",
     "build_dist": "node scripts/build_dist.js",
     "check_icons": "node scripts/check_icons.js",
