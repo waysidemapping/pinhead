@@ -1,6 +1,6 @@
 {
   "name": "@waysidemapping/pinhead",
-  "version": "2.0.0-dev",
+  "version": "2.0.0",
   "versionIcon": "https://pinhead.ink/v2/turtle_top.svg",
   "type": "module",
   "description": "Quality public domain icons for your map pins",
