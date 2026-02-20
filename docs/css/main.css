@@ -35,14 +35,14 @@ hr {
   margin-bottom: 30px;
 }
 
-img.inline {
+img.inline-icon, a.inline-icon img {
   height: 0.85em;
   aspect-ratio: 1;
 }
-img.inline:not(:first-child) {
+.inline-icon:not(:first-child) {
   margin-left: 4px;
 }
-img.inline:not(:last-child) {
+.inline-icon:not(:last-child) {
   margin-right: 4px;
 }
 

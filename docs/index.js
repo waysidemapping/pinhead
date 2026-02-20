@@ -30,10 +30,10 @@ function setupPage(pageData) {
       new Chainable('h2')
         .append(
           new Chainable('a')
+            .setAttribute('class', 'inline-icon')
             .setAttribute('href', '#' + packageJson.versionIcon.slice(0, -4).split('/').slice(-1)[0])
             .append(
               new Chainable('img')
-                .setAttribute('class', 'inline')
                 .setAttribute('src', packageJson.versionIcon || "https://pinhead.ink/v1/heart.svg")
             ),
             new Chainable('span')
@@ -45,7 +45,7 @@ function setupPage(pageData) {
             new Chainable('span')
               .append('download'),
             new Chainable('img')
-              .setAttribute('class', 'inline')
+              .setAttribute('class', 'inline-icon')
               .setAttribute('src', "https://pinhead.ink/v2/arrow_down_to_down_bracket.svg")
           ),
       new Chainable('a')
@@ -55,7 +55,7 @@ function setupPage(pageData) {
             new Chainable('span')
               .append('npm package'),
             new Chainable('img')
-              .setAttribute('class', 'inline')
+              .setAttribute('class', 'inline-icon')
               .setAttribute('src', `https://pinhead.ink/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
           ),
       new Chainable('a')
@@ -65,7 +65,7 @@ function setupPage(pageData) {
           new Chainable('span')
             .append('github release'),
           new Chainable('img')
-            .setAttribute('class', 'inline')
+            .setAttribute('class', 'inline-icon')
             .setAttribute('src', `https://pinhead.ink/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
         )
     ].join(''));
