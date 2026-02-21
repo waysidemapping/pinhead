@@ -22,9 +22,22 @@
 
 ## [2.0.0] - 2026-02-20
 
-### ⚠️ Breaking changes
+⚠️ This major release contains new, redesigned, and renamed icons that may affect your setup. A machine-readable version of the icon upgrade paths can be found in the [`migrations.json`](/migrations.json) file.
 
-Various icons have been renamed due to issues found in the initial release. A machine-readable version of the upgrade paths can be found in the [`migrations.json`](/migrations.json) file.
+### New icons
+
+- <img src="https://pinhead.ink/v2/turtle_top.svg" width="15px"/> Add `turtle_top`
+- <img src="https://pinhead.ink/v2/arrow_down_to_down_bracket.svg" width="15px"/> Add `arrow_down_to_down_bracket`
+- <img src="https://pinhead.ink/v2/arrow_up_to_up_bracket.svg" width="15px"/> Add `arrow_up_to_up_bracket`
+- <img src="https://pinhead.ink/v2/arrow_left_to_left_bracket.svg" width="15px"/> Add `arrow_left_to_left_bracket`
+
+### Redesigned icons
+
+- <img src="https://pinhead.ink/v1/arrow_right_to_right_bracket.svg" width="15px"/> -> <img src="https://pinhead.ink/v2/arrow_right_to_right_bracket.svg" width="15px"/> Update `arrow_right_to_right_bracket` thickness to match similar arrow icons
+
+### Renamed icons
+
+Various icons have been renamed due to issues found in the initial release. 
 
 - <img src="https://pinhead.ink/v2/latin_cross.svg" width="15px"/> Rename `cross_latin` -> `latin_cross` for consistency with `greek_cross`
 - <img src="https://pinhead.ink/v2/flower_bouquet.svg" width="15px"/> Rename `flower_boquette` -> `flower_bouquet` to fix spelling
@@ -37,17 +50,6 @@ Various icons have been renamed due to issues found in the initial release. A ma
   - <img src="https://pinhead.ink/v2/person_boarding_hanging_rail_transit_vehicle_with_destination_display.svg" width="15px"/> `person_boarding_hanging_rail_transit_vehicle` -> `person_boarding_hanging_rail_transit_vehicle_with_destination_display`
   - <img src="https://pinhead.ink/v2/person_boarding_transit_vehicle_with_destination_display.svg" width="15px"/> `person_boarding_local_transit_vehicle` -> `person_boarding_transit_vehicle_with_destination_display`
   - <img src="https://pinhead.ink/v2/person_boarding_monorail_transit_vehicle_with_destination_display.svg" width="15px"/> `person_boarding_monorail_transit_vehicle` -> `person_boarding_monorail_transit_vehicle_with_destination_display`
-
-### New icons
-
-- <img src="https://pinhead.ink/v2/turtle_top.svg" width="15px"/> Add `turtle_top`
-- <img src="https://pinhead.ink/v2/arrow_down_to_down_bracket.svg" width="15px"/> Add `arrow_down_to_down_bracket`
-- <img src="https://pinhead.ink/v2/arrow_up_to_up_bracket.svg" width="15px"/> Add `arrow_up_to_up_bracket`
-- <img src="https://pinhead.ink/v2/arrow_left_to_left_bracket.svg" width="15px"/> Add `arrow_left_to_left_bracket`
-
-### Updated icons
-
-- <img src="https://pinhead.ink/v2/arrow_right_to_right_bracket.svg" width="15px"/> Update `arrow_right_to_right_bracket` thickness to match similar arrow icons
 
 ### Developer changes
 
