@@ -36,6 +36,12 @@ Pinhead has no dependencies and is basically just a directory of SVG files. A fe
 - `dist/icons/index.complete.json`: same as the above but with the SVG code included inline
 - `dist/migrations.json`: a machine-readable list of icon additions, deletions, and renames between major versions
 
+#### Version numbers
+
+Pinhead uses a flavor of semantic versioning, with major releases (v2 etc.) corresponding to breaking changes, minor releases (v2.1) corresponding to backwards-compatible changes, and patch releases (v2.1.1 etc.) corresponding to fixes.
+
+When it comes to icons, renaming or deleting an icon, or making any visual modification, is a breaking change. Perhaps counterintuitively, we also consider the addition of any new icon to be a breaking change. The goal is clear version integrity, where each major version number refers to a complete set of icons with no differences between minor versions. This avoids common gotchas, like developers depending on a library like `^1.0.0` and potentially seeing different lists of icons in development vs. production in the case where v1.1.0 adds an icon.
+
 ## Where the icons are from
 
 Pinhead is seeded from the following public domain sources. Thank you to all the contributors who made these projects possible.
