@@ -140,7 +140,7 @@ function setupPage(pageData) {
                 'download'
               ),
             new Chainable('a')
-              .setAttribute('href', `https://github.com/waysidemapping/pinhead/blob/main/icons/${(icon.srcdir ? icon.srcdir + '/' : '') + iconId}.svg`)
+              .setAttribute('href', `https://github.com/waysidemapping/pinhead/blob/v${version}/icons/${(icon.srcdir ? icon.srcdir + '/' : '') + iconId}.svg`)
               .append(
                 'github'
               )
