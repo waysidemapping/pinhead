@@ -68,6 +68,17 @@
     "icon_migrations": [
       {
         "new_id": "car_profile"
+      },
+      {
+        "new_id": "mobile_phone_with_keypad_and_antenna_and_wifi"
+      },
+      {
+        "new_id": "mobile_phone_with_touchscreen_and_antenna_and_wifi"
+      },
+      {
+        "old_id": "wifi",
+        "new_id": "wifi",
+        "redesign": true
       }
     ]
   }

@@ -2,9 +2,17 @@
 
 ## [3.0.0] - 2026-02-21
 
+⚠️ This major release contains new and redesigned icons that may affect your setup. A machine-readable version of the icon upgrade paths can be found in the [`migrations.json`](/migrations.json) file.
+
 ### New icons
 
 - <img src="https://pinhead.ink/v3/car_profile.svg" width="15px"/> Add `car_profile`
+- <img src="https://pinhead.ink/v3/mobile_phone_with_keypad_and_antenna_and_wifi.svg" width="15px"/> Add `mobile_phone_with_keypad_and_antenna_and_wifi`
+- <img src="https://pinhead.ink/v3/mobile_phone_with_touchscreen_and_antenna_and_wifi.svg" width="15px"/> Add `mobile_phone_with_touchscreen_and_antenna_and_wifi`
+
+### Redesigned icons
+
+- <img src="https://pinhead.ink/v2/wifi.svg" width="15px"/> -> <img src="https://pinhead.ink/v3/wifi.svg" width="15px"/> Update `wifi` to be simpler and bolder, and therefore more legible at smaller sizes and easier to combine with other icons
 
 ## [2.1.1] - 2026-02-20
 
