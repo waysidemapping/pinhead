@@ -1,3 +1,4 @@
 dist
 docs/v*/
 docs/package.json
+docs/migrations.json

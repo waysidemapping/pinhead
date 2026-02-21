@@ -33,6 +33,7 @@ function downloadLegacyIcons(majorVersion) {
 
   if (majorVersion === currentMajorVersion) {
     copyFileSync(`${join(folderName, "package.json")}`, "docs/package.json")
+    copyFileSync(`${join(folderName, "dist/migrations.json")}`, "docs/migrations.json")
   }
 
   rmSync(folderName, { recursive: true, force: true });
