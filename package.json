@@ -1,7 +1,6 @@
 {
   "name": "@waysidemapping/pinhead",
   "version": "3.1.0-dev",
-  "versionIcon": "https://pinhead.ink/v3/maple_leaf.svg",
   "type": "module",
   "description": "Quality public domain icons for your map pins",
   "license": "CC0-1.0",
