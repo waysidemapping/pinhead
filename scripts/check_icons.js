@@ -197,7 +197,17 @@ function checkIcons() {
       child.remove();
     });
 
-    Array.from(pathDataToAdd).forEach(d => {
+    const paths = Array.from(pathDataToAdd).map(path => {
+      if (path[0].toUpperCase() !== 'M') {
+        path = 'M' + path;
+      }
+      if (path[path.length - 1].toUpperCase() !== 'Z') {
+        path = path + 'Z';
+      }
+      return path;
+    })
+    
+    paths.forEach(d => {
         xml.root().ele('path', {
           d: svgPathParse.serializePath(svgPathParse.pathParse(d).normalize({round: 2}))
         });
