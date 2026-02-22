@@ -97,11 +97,30 @@ async function setupPage(pageData) {
         return new Chainable('div')
           .setAttribute('id', iconId)
           .setAttribute('class', 'icon-item')
-          // add a placeholder label to enable in-browser search and find before everything is loaded
+          // add enough elements to make the placehold height match the final height 
           .append(
-            new Chainable('span')
-              .setAttribute('class', 'icon-name')
-              .append(iconId)
+            new Chainable('div')
+              .setAttribute('class', 'icon-item-header')
+              .append(
+                new Chainable('a')
+                  .setAttribute('class', 'icon-label')
+                  .append(
+                    // add icon name so we can find it with in-page search
+                    new Chainable('span')
+                      .setAttribute('class', 'icon-name')
+                      .append(iconId)
+                  )
+              ),
+            new Chainable('div')
+              .setAttribute('class', 'icon-variants')
+              .append(
+                new Chainable('div')
+                  .setAttribute('class', 'res-previews'),
+                new Chainable('div')
+                  .setAttribute("class", "map-preview"),
+                new Chainable('div')
+                  .setAttribute("class", "text-areas")
+              )
           );
       }).join('')
     );
@@ -128,7 +147,8 @@ async function setupPage(pageData) {
     new Chainable('div')
       .setAttribute('class', 'icon-item-header')
       .append(
-        new Chainable('h4')
+        new Chainable('a')
+          .setAttribute('href', '#' + iconId)
           .setAttribute('class', 'icon-label')
           .append(
             icon.svg,
@@ -243,6 +263,20 @@ async function setupPage(pageData) {
         .map(pathEl => new Path2D(pathEl.getAttribute("d")));
       paths.forEach(path => context.fill(path));
     });
+  }
+
+  // we have to manually scroll to any anchor since we added the list items after we loaded the page
+  scrollToHashAnchor();
+  window.addEventListener("hashchange", scrollToHashAnchor);
+}
+
+function scrollToHashAnchor() {
+  const hash = window.location.hash;
+  if (hash && hash.length > 1) {
+    const target = document.querySelector(hash);
+    if (target) {
+      target.scrollIntoView();
+    }
   }
 }
 

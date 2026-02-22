@@ -149,7 +149,6 @@ article > * {
 .icon-item {
   width: 100%;
   margin-bottom: 40px;
-  min-height: 150px;
 }
 .icon-item-header {
   display: flex;
