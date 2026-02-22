@@ -203,12 +203,12 @@ function checkIcons() {
         path = path + 'Z';
       }
       return path;
-    })
-    
-    paths.forEach(d => {
-        xml.root().ele('path', {
-          d: svgPathParse.serializePath(svgPathParse.pathParse(d).normalize({round: 2}))
-        });
+    });
+    // Join all paths into one. This could reveal issues that need to be fixed if multiple fills are overlapping
+    const d = paths.join('');
+    const normalizedD = svgPathParse.serializePath(svgPathParse.pathParse(d).normalize({round: 2}));
+    xml.root().ele('path', {
+      d: normalizedD
     });
 
     let xmlString = xml.end({ prettyPrint: true, headless: true });
