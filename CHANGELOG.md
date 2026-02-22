@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.1.0] -
+## [4.0.0] -
 
 ### Developer changes
 
