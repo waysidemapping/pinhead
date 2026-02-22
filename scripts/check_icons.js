@@ -198,9 +198,7 @@ function checkIcons() {
     });
 
     const paths = Array.from(pathDataToAdd).map(path => {
-      if (path[0].toUpperCase() !== 'M') {
-        path = 'M' + path;
-      }
+      // automatically close any open paths since they'll appear that way anyway when filled
       if (path[path.length - 1].toUpperCase() !== 'Z') {
         path = path + 'Z';
       }
