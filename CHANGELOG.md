@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.1.0] -
+
+### Developer changes
+
+- Ensure that all SVGs contain one and only one closed `path` element
+
 ## [3.0.0] - 2026-02-21
 
 ⚠️ This major release contains new, redesigned, and renamed icons that may affect your setup. A machine-readable version of the icon upgrade paths can be found in the [`migrations.json`](/migrations.json) file.
