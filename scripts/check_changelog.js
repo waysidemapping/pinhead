@@ -104,13 +104,24 @@ function validateChangelog() {
             console.error(`Missing "importBy" for "${iconChange.newId}" in version ${v}`)
             return;
           }
-          if (!iconChange.src.startsWith('http')) {
+          if (!iconChange.src.includes('://')) {
             if (!importSources[iconChange.src]) {
               console.error(`Unknown "src": "${iconChange.src}" for "${iconChange.newId}" in version ${v}`)
               return;
             }
             if (!iconChange[iconChange.src]) {
               console.error(`Missing "${iconChange.src}": "…" property for "${iconChange.newId}" in version ${v}`)
+              return;
+            }
+          }
+        }
+        if (iconChange.inspo) {
+          const inspos = (typeof iconChange.inspo === 'string' ? [iconChange.inspo] : iconChange.inspo);
+          for (const inspo of inspos) {
+            if (!inspo.includes('://') &&
+              !icons[inspo] &&
+              !versionChangelog.iconChanges.find(foreignIconChange => foreignIconChange.newId === inspo)) {
+              console.error(`Unknown icon referenced via "inspo": "${inspo}" for "${iconChange.newId}" in version ${v}`)
               return;
             }
           }
