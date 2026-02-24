@@ -40,3 +40,49 @@ function downloadLegacyIcons(majorVersion) {
 
   console.log("Loaded icons from " + folderName);
 }
+
+const importSources = [
+  {
+    id: "maki",
+    repo: "https://github.com/mapbox/maki.git",
+    iconsPath: "icons",
+  },
+  {
+    id: "nps",
+    repo: "https://github.com/nationalparkservice/symbol-library.git",
+    iconsPath: "src/standalone"
+  },
+  {
+    id: "opentrailmap",
+    repo: "https://github.com/osmus/opentrailmap.git",
+    iconsPath: "style/sprites/svg"
+  },
+  {
+    id: "osmcarto",
+    repo: "https://github.com/openstreetmap-carto/openstreetmap-carto.git",
+    iconsPath: "symbols"
+  },
+  {
+    id: "temaki",
+    repo: "https://github.com/rapideditor/temaki.git",
+    iconsPath: "icons"
+  }
+];
+
+function ensureEmptyDir(dir) {
+  if (existsSync(dir)) {
+    rmSync(dir, { recursive: true, force: true });
+  }
+  mkdirSync(dir, { recursive: true });
+}
+
+ensureEmptyDir('tmp');
+ensureEmptyDir('docs/srcicons');
+
+for (const importSource of importSources) {
+  execSync(`git clone ${importSource.repo} "tmp/${importSource.id}"`)
+  const srcDir = join(`tmp/${importSource.id}`, importSource.iconsPath);
+  execSync(`cp -r "${srcDir}/." "docs/srcicons/${importSource.id}"`);
+}
+
+rmSync('tmp', { recursive: true, force: true });

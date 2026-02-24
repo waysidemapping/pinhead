@@ -2,53 +2,59 @@ import { existsSync, readFileSync, writeFileSync } from "fs";
 import { exec } from "child_process";
 import { promisify } from "util";
 import fs from "fs/promises";
-import path from "path";
+import { join } from "path";
 import os from "os";
 
-const workspace = await fs.mkdtemp(path.join(os.tmpdir(), "workspace-"));
-
-const icons = {};
+const workspace = await fs.mkdtemp(join(os.tmpdir(), "workspace-"));
 
 const importSources = {
   maki: {
+    name: "Maki",
     repo: "https://github.com/mapbox/maki.git",
     iconsPath: "icons",
     seenIcons: {}
   },
   nps: {
+    name: "NPS",
     repo: "https://github.com/nationalparkservice/symbol-library.git",
     iconsPath: "src/standalone",
+    filenameGetter: (id) => `${id}-black-22.svg`,
     seenIcons: {}
   },
   opentrailmap: {
+    name: "OpenTrailMap",
     repo: "https://github.com/osmus/opentrailmap.git",
     iconsPath: "style/sprites/svg",
     seenIcons: {}
   },
   osmcarto: {
+    name: "OSM Carto",
     repo: "https://github.com/openstreetmap-carto/openstreetmap-carto.git",
     iconsPath: "symbols",
     seenIcons: {}
   },
   temaki: {
+    name: "Temaki",
     repo: "https://github.com/rapideditor/temaki.git",
     iconsPath: "icons",
     seenIcons: {}
   }
 };
 
-const iconChangeProps = [
-  "oldId",
-  "newId",
-  "by",
-  "inspo",
-  "inspoBy",
-  "src",
-  "srcBy",
-  "importBy"
-].concat(Object.keys(importSources));
-
 function validateChangelog() {
+
+  const iconsById = {};
+
+  const iconChangeProps = [
+    "oldId",
+    "newId",
+    "by",
+    "inspo",
+    "inspoBy",
+    "src",
+    "srcBy",
+    "importBy"
+  ].concat(Object.keys(importSources));
 
   const changelogPath = 'changelog.json';
 
@@ -74,13 +80,6 @@ function validateChangelog() {
       if (!iconChange.oldId && !iconChange.newId) {
         console.error(`Missing both "newId" and "oldId" in version ${v}`)
         return;
-      }
-      if (iconChange.oldId) {
-        if (!icons[iconChange.oldId]) {
-          console.error(`Can't find old icon ${iconChange.oldId} for "${iconChange.newId}" in version ${v}`)
-          return;
-        }
-        delete icons[iconChange.oldId];
       }
       if (iconChange.newId) {
         if (!iconChange.oldId && !iconChange.by && !iconChange.src) {
@@ -116,40 +115,52 @@ function validateChangelog() {
           }
         }
         if (iconChange.inspo) {
-          const inspos = (typeof iconChange.inspo === 'string' ? [iconChange.inspo] : iconChange.inspo);
+          const inspos = stringArray(iconChange.inspo);
           for (const inspo of inspos) {
             if (!inspo.includes('://') &&
-              !icons[inspo] &&
+              !iconsById[inspo] &&
               !versionChangelog.iconChanges.find(foreignIconChange => foreignIconChange.newId === inspo)) {
               console.error(`Unknown icon referenced via "inspo": "${inspo}" for "${iconChange.newId}" in version ${v}`)
               return;
             }
           }
         }
-        icons[iconChange.newId] = true;
       }
 
       for (const importSourceId in importSources) {
+        const importSource = importSources[importSourceId];
         if (iconChange[importSourceId]) {
-          const ids = (typeof iconChange[importSourceId] === 'string' ? [iconChange[importSourceId]] : iconChange[importSourceId]);
+          const ids = stringArray(iconChange[importSourceId]);
           for (const id of ids) {
-            if (importSources[importSourceId].seenIcons[id]) {
-              console.error(`"${iconChange.newId}" and "${importSources[importSourceId].seenIcons[id]}" both reference the same "${importSourceId}" icon: "${id}"`);
+            if (importSource.seenIcons[id]) {
+              console.error(`"${iconChange.newId}" and "${importSource.seenIcons[id]}" both reference the same "${importSourceId}" icon: "${id}"`);
               return;
             }
-            let filename = `${id}.svg`;
-            if (importSourceId === 'nps') {
-              filename = `${id}-black-22.svg`
-            }
-            const iconFile = path.join(repoPath(importSources[importSourceId].repo), importSources[importSourceId].iconsPath, filename);
+            let filename = importSource.filenameGetter ? importSource.filenameGetter(id) : `${id}.svg`;
+         
+            const iconFile = join(repoPath(importSource.repo), importSource.iconsPath, filename);
             
             if (!existsSync(iconFile)) {
               console.error(`No such icon "${iconFile}" referenced by "${iconChange.newId}" in version ${v}`);
               return;
             }
-            importSources[importSourceId].seenIcons[id] = iconChange.newId;
+            importSource.seenIcons[id] = iconChange.newId;
           }
         }
+      }
+
+      // update commulative icon log
+      if (iconChange.oldId) {
+        if (!iconsById[iconChange.oldId]) {
+          console.error(`Can't find old icon ${iconChange.oldId} for "${iconChange.newId}" in version ${v}`)
+          return;
+        }
+        if (iconChange.newId !== iconChange.oldId) {
+          delete iconsById[iconChange.oldId];
+        }
+      }
+      if (iconChange.newId) {
+        iconsById[iconChange.newId] = true;
       }
     }
 
@@ -174,9 +185,13 @@ function validateChangelog() {
   writeFileSync(changelogPath, JSON.stringify(changelogs, null, 2));
 }
 
+function stringArray(value) {
+  return (typeof value === 'string' ? [value] : [...value]);
+}
+
 function repoPath(repoUrl) {
   const repoName = repoUrl.split("/").pop().replace(".git", "");
-  return path.join(workspace, repoName);
+  return join(workspace, repoName);
 }
 
 async function cloneTempRepos(repos, workFunction) {

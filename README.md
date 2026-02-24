@@ -8,7 +8,7 @@ So you're making a map and need some icons. Well, maybe a lot of icons. Like, fo
 
 This happened to me while building [themap.is](https://github.com/waysidemapping/themap.is). I put together this icon library in case it happens to you too. It's called **Pinhead**.
 
-Pinhead has 1,000+ icons and counting, including standardized versions of the most popular public domain cartographic icon sets: [Maki](https://github.com/mapbox/maki), [Temaki](https://github.com/rapideditor/temaki), [OSM Carto](https://github.com/openstreetmap-carto/openstreetmap-carto), and [NPMap](https://github.com/nationalparkservice/symbol-library).
+Pinhead has 1,000+ icons and counting, including [standardized versions](https://pinhead.ink/coverage) of the most popular public domain cartographic icon sets: [Maki](https://github.com/mapbox/maki), [Temaki](https://github.com/rapideditor/temaki), [OSM Carto](https://github.com/openstreetmap-carto/openstreetmap-carto), and [NPMap](https://github.com/nationalparkservice/symbol-library).
 
 ## Overview
 

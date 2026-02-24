@@ -32,8 +32,9 @@
     "access": "public"
   },
   "scripts": {
-    "dist": "npm run check_icons && npm run build_dist && cp changelog.json dist/changelog.json",
+    "dist": "npm run check_icons && npm run build_dist && npm run check_changelog && cp changelog.json dist/changelog.json",
     "build_docs": "node scripts/build_docs.js",
+    "check_changelog": "node scripts/check_changelog.js",
     "build_docs_for_preview": "npm run build_docs && npm run dist && node scripts/build_preview_docs.js",
     "build_dist": "node scripts/build_dist.js",
     "check_icons": "node scripts/check_icons.js",

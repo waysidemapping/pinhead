@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <title>Pinhead map icon coverage</title>
+  <style>
+    body {
+      font-family: ui-monospace, monospace;
+      font-size: 13px;
+    }
+    a {
+      color: inherit;
+    }
+    #header {
+      max-width: 600px;
+      padding: 10px;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: #fff;
+    }
+    td.header {
+      font-weight:bold;
+    }
+    td div {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 200px;
+    }
+    td, th {
+      padding: 2px;
+    }
+    td img {
+      width:15px;
+      height:15px;
+    }
+    td div > * {
+      vertical-align:middle;
+    }
+    tr:nth-child(even) {
+      background-color: #eeeeee;
+    }
+  </style>
+  </head>
+  <body>
+  <div id="header">
+    <h3>Pinhead map icon coverage</h3>
+    <p>This table compares the coverage of <a href="/">Pinhead</a> to other public domain icon sources. A machine-readable version of this data can be found <a href="/changelog.json">here</a>.</p>
+  </div>
+  <table id="coverage"></table>
+  <script type="module">
+    const importSources = [
+      {
+        id: 'maki',
+        name: "Maki",
+        repo: "https://github.com/mapbox/maki.git",
+      }, {
+        id: 'nps',
+        name: "NPS",
+        repo: "https://github.com/nationalparkservice/symbol-library.git",
+        filenameGetter: (id) => `${id}-black-22.svg`
+      },
+      {
+        id: 'opentrailmap',
+        name: "OpenTrailMap",
+        repo: "https://github.com/osmus/opentrailmap.git",
+      },
+      {
+        id: 'osmcarto',
+        name: "OSM Carto",
+        repo: "https://github.com/openstreetmap-carto/openstreetmap-carto.git",
+      },
+      {
+        id: 'temaki',
+        name: "Temaki",
+        repo: "https://github.com/rapideditor/temaki.git"
+      }
+    ];
+
+    const changelogs = await fetch('/changelog.json')
+      .then(result => result.json());
+
+    const currentVersion = changelogs[changelogs.length - 1].majorVersion;
+
+    const iconsById = {};
+
+    for (const versionChangelog of changelogs) {
+      for (const iconChange of versionChangelog.iconChanges) {
+        // update commulative icon log
+        if (iconChange.oldId) {
+          if (iconChange.newId) {
+            iconsById[iconChange.newId] = iconsById[iconChange.oldId];
+            for (const key in iconChange) {
+              if (!['newId', 'oldId'].includes(key)) {
+                const vals = stringArray(iconChange[key]);
+                if (iconsById[iconChange.newId][key]) {
+                  iconsById[iconChange.newId][key] = iconsById[iconChange.newId][key].concat(vals);
+                } else {
+                  iconsById[iconChange.newId][key] = vals;
+                }
+              }
+            }
+          }
+          if (iconChange.newId !== iconChange.oldId) {
+            delete iconsById[iconChange.oldId];
+          }
+        } else if (iconChange.newId) {
+          iconsById[iconChange.newId] = {};
+          for (const key in iconChange) {
+            if (!['newId', 'oldId'].includes(key)) {
+              iconsById[iconChange.newId][key] = stringArray(iconChange[key]);
+            }
+          }
+        }
+      }
+    }
+
+    function stringArray(value) {
+      return (typeof value === 'string' ? [value] : [...value]);
+    }
+
+    for (const id in iconsById) {
+      iconsById[id].id = id;
+    }
+    const icons = Object.values(iconsById).toSorted((a, b) => b.id > a.id ? -1 : 1);
+
+    for (const importSource of importSources) {
+      importSource.iconCount = icons.filter(icon => icon[importSource.id]).length;
+      console.log(importSource.iconCount);
+    }
+    importSources.sort((a, b) => b.iconCount - a.iconCount);
+
+    let html = ``;
+    html += `<tr>`;
+    html += `<th><a href="/">Pinhead v${currentVersion}</a></th>`
+    for (const importSource of importSources) {
+      html += `<th><a href="${importSource.repo}" target="_blank">${importSource.name}</a></th>`
+    }
+    html += `</tr>`;
+    for (const icon of icons) {
+      html += `<tr>`;
+      html += `<td class="header"><div title="${icon.id}"><img src="/v${currentVersion}/${icon.id}.svg"/> ${icon.id}</div></td>`
+      for (const importSource of importSources) {
+        html += `<td>`;
+        if (icon[importSource.id]) {
+          for (const importedIconId of icon[importSource.id]) {
+            let filename = importSource.filenameGetter ? importSource.filenameGetter(importedIconId) : `${importedIconId}.svg`;
+            html += `<div title="${importedIconId}"><img src="/srcicons/${importSource.id}/${filename}"/> ${importedIconId}</div>`;
+          }
+        }
+        html += `</td>`;
+      }
+      html += `</tr>`;
+    }
+    document.getElementById('coverage').innerHTML = html;
+  </script>
+</body>
+</html>
