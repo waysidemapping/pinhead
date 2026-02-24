@@ -24,6 +24,7 @@
       {
         "newId": "aerial_cargo_lift_with_crates",
         "via": "temaki",
+        "temaki": "goods_lift",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -68,6 +69,7 @@
       {
         "newId": "aerial_platter_lift",
         "via": "temaki",
+        "temaki": "platter_lift",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -76,6 +78,7 @@
       {
         "newId": "aerial_t_bar_lift",
         "via": "temaki",
+        "temaki": "t_bar_lift",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -136,7 +139,8 @@
       },
       {
         "newId": "analog_tv_with_rabbitears",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "shop/electronics",
         "importer": ["@quincylvania"]
       },
       {
@@ -171,7 +175,7 @@
       {
         "newId": "anvil",
         "via": "temaki",
-        "temaki": "ancil",
+        "temaki": "anvil",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -197,7 +201,8 @@
       },
       {
         "newId": "apple",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "shop/greengrocer",
         "importer": ["@quincylvania"]
       },
       {
@@ -272,7 +277,8 @@
       },
       {
         "newId": "arrows_left_right_above_water",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "highway/ford",
         "importer": [
           "@quincylvania"
         ]
@@ -284,14 +290,16 @@
       },
       {
         "newId": "arrows_up_down_in_left_right_brackets",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "highway/elevator",
         "importer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "at_sign",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "amenity/internet_cafe",
         "importer": [
           "@quincylvania"
         ]
@@ -327,14 +335,16 @@
       },
       {
         "newId": "axial_reflecting_dish_with_monopod_antenna_and_beams",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "man_made/tower_dish",
         "importer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "axial_reflecting_dish_with_tripod_antenna",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "man_made/telescope_dish",
         "importer": [
           "@quincylvania"
         ]
@@ -535,7 +545,8 @@
       },
       {
         "newId": "bell_in_tall_gable_roofed_building",
-        "via": "nps-carto",
+        "via": "osmcarto",
+        "osmcarto": "man_made/bell_tower",
         "importer": [
           "@quincylvania"
         ]
@@ -600,6 +611,7 @@
       {
         "newId": "bicycle_in_garage",
         "via": "temaki",
+        "temaki": "bicycle_shed",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -685,6 +697,7 @@
       {
         "newId": "billboard",
         "via": "temaki",
+        "temaki": "billboard",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -860,7 +873,8 @@
       },
       {
         "newId": "bread",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "shop/bakery",
         "importer": [
           "@quincylvania"
         ]
@@ -1124,7 +1138,7 @@
       {
         "newId": "camera",
         "via": "maki",
-        "maki": "camera",
+        "maki": "attraction",
         "nps": "photography",
         "opentrailmap": "viewpoint",
         "importer": [
@@ -1137,7 +1151,7 @@
         "temaki": "camper_trailer",
         "designer": ["@quincylvania"],
         "nps": "trailer-site",
-        "opentrailmap": "carvan_site",
+        "opentrailmap": "caravan_site",
         "importer": [
           "@quincylvania"
         ]
@@ -1237,17 +1251,15 @@
       },
       {
         "newId": "car_and_key",
-        "via": "temaki",
         "maki": "car-rental",
-        "importer": [
+        "designer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "car_and_wrench",
-        "via": "temaki",
         "maki": "car-repair",
-        "importer": [
+        "designer": [
           "@quincylvania"
         ]
       },
@@ -1276,6 +1288,7 @@
       {
         "newId": "car_in_gable_roofed_building",
         "via": "temaki",
+        "temaki": "carport",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -1827,7 +1840,8 @@
       },
       {
         "newId": "couch",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "shop/furniture",
         "importer": [
           "@quincylvania"
         ]
@@ -2146,7 +2160,7 @@
       {
         "newId": "disc_golf_basket",
         "via": "temaki",
-        "temaki": "disk_golf_basket",
+        "temaki": "disc_golf_basket",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -2172,7 +2186,7 @@
       {
         "newId": "dog_wearing_collar",
         "via": "maki",
-        "maki": "dog_park",
+        "maki": "dog-park",
         "nps": "pets-off-leash",
         "importer": [
           "@quincylvania"
@@ -2196,7 +2210,8 @@
       },
       {
         "newId": "dollar_swap_to_euro",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "amenity/bureau_de_change",
         "importer": [
           "@quincylvania"
         ]
@@ -3359,7 +3374,7 @@
         "newId": "house_with_flag",
         "via": "maki",
         "maki": "ranger-station",
-        "nps": "range-station",
+        "nps": "ranger-station",
         "opentrailmap": "ranger_station",
         "importer": [
           "@quincylvania"
@@ -3669,7 +3684,7 @@
       },
       {
         "newId": "kerb_flush_under_shoe",
-        "via": "",
+        "basedOn": ["kerb_flush", "shoe"],
         "importer": [
           "@quincylvania"
         ]
@@ -3684,7 +3699,7 @@
       },
       {
         "newId": "kerb_lowered_under_shoe",
-        "via": "",
+        "basedOn": ["kerb_lowered", "shoe"],
         "importer": [
           "@quincylvania"
         ]
@@ -3699,14 +3714,15 @@
       },
       {
         "newId": "kerb_raised_under_shoe",
-        "via": "temaki",
-        "importer": [
+        "basedOn": ["kerb_raised", "shoe"],
+        "designer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "kerb_rolled",
         "via": "temaki",
+        "basedOn": ["kerb_rolled", "shoe"],
         "temaki": "kerb-rolled",
         "importer": [
           "@quincylvania"
@@ -3866,7 +3882,7 @@
       {
         "newId": "lift_gate_lowered",
         "via": "maki",
-        "maki": "lift_gate",
+        "maki": "lift-gate",
         "importer": [
           "@quincylvania"
         ]
@@ -4226,7 +4242,7 @@
       {
         "newId": "milk_churn",
         "via": "temaki",
-        "temaki": "milk_churn",
+        "temaki": "milk_jug",
         "importer": [
           "@quincylvania"
         ]
@@ -4329,7 +4345,7 @@
       {
         "newId": "motorboat_and_wrench",
         "via": "temaki",
-        "temaki": "boat_repaid",
+        "temaki": "boat_repair",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -4805,7 +4821,8 @@
       },
       {
         "newId": "pedestrian_wearing_backpack_holding_hiking_pole",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "shop/outdoor",
         "opentrailmap": "trailhead",
         "nps": "trailhead",
         "importer": [
@@ -4814,7 +4831,8 @@
       },
       {
         "newId": "pedestrian_wearing_backpack_holding_hiking_pole_under_roof",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "tourism/alpinehut",
         "importer": [
           "@quincylvania"
         ]
@@ -5089,7 +5107,7 @@
         "newId": "person_fishing_from_pier_above_water",
         "via": "nps",
         "temaki": "fishing_pier",
-        "nps": "fishing_pier",
+        "nps": "fishing-pier",
         "importer": [
           "@quincylvania"
         ]
@@ -5605,7 +5623,7 @@
       {
         "newId": "planes_bidirectional",
         "via": "temaki",
-        "temaki": "planes",
+        "temaki": "planes_bidirectional",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -5673,7 +5691,7 @@
       {
         "newId": "pole_with_antenna_array",
         "via": "temaki",
-        "temaki": "tower_communcation",
+        "temaki": "tower_communication",
         "importer": [
           "@quincylvania"
         ]
@@ -5755,6 +5773,7 @@
       {
         "newId": "poster_box",
         "via": "temaki",
+        "temaki": "poster_box",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -5912,6 +5931,7 @@
       {
         "newId": "railway_cable_track",
         "via": "temaki",
+        "temaki": "railway_cable_track",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -5920,6 +5940,7 @@
       {
         "newId": "railway_track",
         "via": "temaki",
+        "temaki": "railway_track",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -5928,6 +5949,7 @@
       {
         "newId": "railway_track_askew",
         "via": "temaki",
+        "temaki": "railway_track_askew",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -5936,6 +5958,7 @@
       {
         "newId": "railway_track_crossing_dashed_line",
         "via": "temaki",
+        "temaki": "crossing_rail_road",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -5944,6 +5967,7 @@
       {
         "newId": "railway_track_crossing_railway_track",
         "via": "temaki",
+        "temaki": "crossing_rail_rail",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -5952,6 +5976,7 @@
       {
         "newId": "railway_track_crossing_solid_line",
         "via": "temaki",
+        "temaki": "crossing_rail_solid",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -5960,6 +5985,7 @@
       {
         "newId": "railway_track_crossing_striped_line",
         "via": "temaki",
+        "temaki": "crossing_rail_striped",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -5968,6 +5994,7 @@
       {
         "newId": "railway_track_mini",
         "via": "temaki",
+        "temaki": "railway_track_mini",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -5976,6 +6003,7 @@
       {
         "newId": "railway_track_narrow_gauge",
         "via": "temaki",
+        "temaki": "railway_track_narrow",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -5984,6 +6012,7 @@
       {
         "newId": "railway_track_partial",
         "via": "temaki",
+        "temaki": "railway_track_partial",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -6102,7 +6131,8 @@
       },
       {
         "newId": "roof_with_fireplace_and_chimney",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "tourism/wilderness_hut",
         "importer": [
           "@quincylvania"
         ]
@@ -6470,7 +6500,8 @@
       },
       {
         "newId": "signboard",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "tourism/board",
         "importer": [
           "@quincylvania"
         ]
@@ -6536,7 +6567,7 @@
         "newId": "sledder",
         "via": "nps",
         "temaki": "sledding",
-        "nps": "sldding",
+        "nps": "sledding",
         "importer": [
           "@quincylvania"
         ]
@@ -6679,7 +6710,7 @@
       {
         "newId": "snowshoer",
         "via": "nps",
-        "temaki": "snoe_shoeing",
+        "temaki": "snow_shoeing",
         "nps": "snow-shoeing",
         "importer": [
           "@quincylvania"
@@ -7386,6 +7417,7 @@
       {
         "newId": "tram_track_crossing_dashed_line",
         "via": "temaki",
+        "temaki": "crossing_tram_road",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -7394,6 +7426,7 @@
       {
         "newId": "tram_track_crossing_solid_line",
         "via": "temaki",
+        "temaki": "crossing_tram_solid",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -7401,6 +7434,7 @@
       },
       {
         "newId": "tram_track_crossing_striped_line",
+        "temaki": "crossing_tram_striped",
         "via": "temaki",
         "designer": ["@quincylvania"],
         "importer": [
@@ -7563,7 +7597,6 @@
       },
       {
         "newId": "triangle_up_outline",
-        "via": "maki",
         "maki": "triangle-stroked",
         "designer": [
           "@quincylvania"
@@ -7631,7 +7664,8 @@
       },
       {
         "newId": "trumpet",
-        "via": "osm-carto",
+        "via": "osmcarto",
+        "osmcarto": "shop/musical_instrument",
         "importer": [
           "@quincylvania"
         ]
@@ -7741,7 +7775,7 @@
       {
         "newId": "utility_device_with_gas_flame",
         "via": "temaki",
-        "temaki": "gas_utility",
+        "temaki": "gas_device",
         "importer": [
           "@quincylvania"
         ]
@@ -7876,6 +7910,7 @@
       {
         "newId": "vacuum_station",
         "via": "temaki",
+        "temaki": "vacuum_station",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -8051,7 +8086,7 @@
       {
         "newId": "water_tap_with_motor",
         "via": "temaki",
-        "temaki": "water_pump_powered",
+        "temaki": "well_pump_powered",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -8060,7 +8095,7 @@
       {
         "newId": "water_tap_with_pump_handle",
         "via": "temaki",
-        "temaki": "water_pump_manual",
+        "temaki": "well_pump_manual",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -8169,14 +8204,17 @@
       },
       {
         "newId": "window",
-        "via": "",
+        "via": "temaki",
+        "temaki": "window",
         "importer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "windpump",
-        "via": "",
+        "via": "temaki",
+        "temaki": "windpump",
+        "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
         ]
@@ -8270,7 +8308,7 @@
       {
         "newId": "y_junction",
         "via": "temaki",
-        "temaki": "y_junction",
+        "temaki": "junction",
         "importer": [
           "@quincylvania"
         ]
@@ -8361,7 +8399,7 @@
   },
   {
     "majorVersion": "3",
-    "icon_migrations": [
+    "iconChanges": [
       {
         "newId": "car_profile",
         "designer": ["@quincylvania"]
@@ -8429,7 +8467,7 @@
   },
   {
     "majorVersion": "4",
-    "icon_migrations": [
+    "iconChanges": [
       {
         "oldId": "bread",
         "newId": "loaf_of_bread",
@@ -8473,12 +8511,12 @@
       },
       {
         "oldId": "cabin",
-        "newId": "cabin_with_chimney",
-        "nps": "cabin"
+        "newId": "cabin_with_chimney"
       },
       {
         "newId": "cabin",
         "basedOn": "cabin_with_chimney",
+        "nps": "cabin",
         "designer": [
           "@quincylvania"
         ]
