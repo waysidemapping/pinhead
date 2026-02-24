@@ -134,7 +134,7 @@
       },
       {
         "newId": "ampersand",
-        "basedOn": ["https://github.com/openstreetmap-carto/openstreetmap-carto/blob/master/symbols/shop/department_store.svg"],
+        "basedOn": "https://github.com/openstreetmap-carto/openstreetmap-carto/blob/40820143374b5550fb294cfc754db8ca662094b0/symbols/shop/department_store.svg",
         "designer": ["@quincylvania"]
       },
       {
@@ -154,6 +154,7 @@
       {
         "newId": "anchor",
         "via": "maki",
+        "osmcarto": "amenity/ferry",
         "maki": "harbor",
         "importer": [
           "@quincylvania"
@@ -257,6 +258,7 @@
       {
         "newId": "arrow_right_to_right_bracket",
         "via": "maki",
+        "osmcarto": "amenity/entrance",
         "maki": "entrance-alt1",
         "nps": "entrance",
         "importer": [
@@ -285,7 +287,7 @@
       },
       {
         "newId": "arrows_recirculating",
-        "basedOn": "https://github.com/openstreetmap-carto/openstreetmap-carto/blob/master/symbols/shop/second_hand.svg",
+        "basedOn": "https://github.com/openstreetmap-carto/openstreetmap-carto/blob/40820143374b5550fb294cfc754db8ca662094b0/symbols/shop/second_hand.svg",
         "designer": ["@quincylvania"]
       },
       {
@@ -365,7 +367,12 @@
         ]
       },
       {
-        "newId": "bag_with_greek_cross"
+        "newId": "bag_with_greek_cross",
+        "via": "osmcarto",
+        "osmcarto": "amenity/doctors",
+        "importer": [
+          "@quincylvania"
+        ]
       },
       {
         "newId": "bagel",
@@ -390,7 +397,12 @@
       },
       {
         "newId": "balance_scales",
-        "temaki": "lawyer"
+        "via": "osmcarto",
+        "osmcarto": "amenity/courthouse",
+        "temaki": "lawyer",
+        "importer": [
+          "@quincylvania"
+        ]
       },
       {
         "newId": "balloon",
@@ -403,6 +415,7 @@
       {
         "newId": "banknote",
         "via": "maki",
+        "osmcarto": "amenity/bank",
         "maki": "bank",
         "importer": [
           "@quincylvania"
@@ -419,6 +432,7 @@
       {
         "newId": "banknote_in_slot",
         "via": "temaki",
+        "osmcarto": "amenity/atm",
         "temaki": "atm2",
         "importer": [
           "@quincylvania"
@@ -516,14 +530,15 @@
       },
       {
         "newId": "beaver_in_water",
-        "basedOn": "https://github.com/osmus/OpenTrailMap/blob/main/style/sprites/svg/beaver_dam.svg",
+        "basedOn": "https://raw.githubusercontent.com/osmus/OpenTrailMap/bb0e7d89ce8dbfd4c3111576aaa77665918e2081/style/sprites/svg/beaver_dam.svg",
         "designer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "bed",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/bed",
         "importer": [
           "@quincylvania"
         ]
@@ -538,7 +553,8 @@
       },
       {
         "newId": "beer_mug_with_foam",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "amenity/biergarten",
         "importer": [
           "@quincylvania"
         ]
@@ -577,6 +593,7 @@
       {
         "newId": "bicycle",
         "via": "maki",
+        "osmcarto": "shop/bicycle",
         "maki": "bicycle",
         "importer": [
           "@quincylvania"
@@ -585,6 +602,7 @@
       {
         "newId": "bicycle_and_key",
         "via": "temaki",
+        "osmcarto": "amenity/rental_bicycle",
         "temaki": "bicycle_rental",
         "importer": [
           "@quincylvania"
@@ -593,6 +611,7 @@
       {
         "newId": "bicycle_and_wrench",
         "via": "temaki",
+        "osmcarto": "amenity/bicycle_repair_station",
         "temaki": "bicycle_repair",
         "nps": "bike-repairs",
         "importer": [
@@ -706,6 +725,7 @@
       {
         "newId": "binoculars",
         "via": "temaki",
+        "osmcarto": "leisure/bird_hide",
         "temaki": "binoculars",
         "nps": "birding-wildlife-viewing",
         "importer": [
@@ -851,6 +871,7 @@
         "newId": "bowling_pin_and_bowling_ball",
         "via": "temaki",
         "temaki": "bowling",
+        "osmcarto": "leisure/bowling_alley",
         "maki": "bowling-alley",
         "importer": [
           "@quincylvania"
@@ -866,7 +887,8 @@
       },
       {
         "newId": "boxes_on_pallet",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/trade",
         "importer": [
           "@quincylvania"
         ]
@@ -1022,6 +1044,7 @@
         "newId": "bunker",
         "via": "temaki",
         "temaki": "bunker",
+        "osmcarto": "man_made/bunker",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -1048,6 +1071,7 @@
       {
         "newId": "burger",
         "via": "maki",
+        "osmcarto": "amenity/fast_food",
         "maki": "fast-food",
         "importer": [
           "@quincylvania"
@@ -1065,6 +1089,7 @@
       {
         "newId": "bus_with_destination_display",
         "via": "temaki",
+        "osmcarto": ["amenity/bus_station", "highway/bus_stop"],
         "maki": "bus",
         "temaki": "bus",
         "nps": "bus-stop",
@@ -1095,7 +1120,8 @@
       },
       {
         "newId": "bust_on_plinth",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "historic/bust",
         "importer": [
           "@quincylvania"
         ]
@@ -1151,6 +1177,7 @@
         "temaki": "camper_trailer",
         "designer": ["@quincylvania"],
         "nps": "trailer-site",
+        "osmcarto": "tourism/caravan_park",
         "opentrailmap": "caravan_site",
         "importer": [
           "@quincylvania"
@@ -1169,6 +1196,7 @@
       {
         "newId": "campfire",
         "via": "temaki",
+        "osmcarto": "leisure/firepit",
         "temaki": "campfire",
         "importer": [
           "@quincylvania"
@@ -1186,6 +1214,7 @@
       {
         "newId": "campsite",
         "via": "maki",
+        "osmcarto": "tourism/camping",
         "maki": "campsite",
         "nps": "campsite",
         "opentrailmap": ["campground", "campsite"],
@@ -1244,6 +1273,7 @@
       {
         "newId": "car",
         "maki": "car",
+        "osmcarto": "shop/car",
         "nps": "automobiles",
         "designer": [
           "@quincylvania"
@@ -1252,6 +1282,7 @@
       {
         "newId": "car_and_key",
         "maki": "car-rental",
+        "osmcarto": "amenity/rental_car",
         "designer": [
           "@quincylvania"
         ]
@@ -1259,21 +1290,22 @@
       {
         "newId": "car_and_wrench",
         "maki": "car-repair",
+        "osmcarto": "shop/car_repair",
         "designer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "car_battery",
-        "via": "",
-        "importer": [
+        "osmcarto": "shop/car_parts",
+        "designer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "car_beside_sleeper_in_bed",
-        "via": "",
-        "importer": [
+        "osmcarto": "tourism/motel",
+        "designer": [
           "@quincylvania"
         ]
       },
@@ -1319,7 +1351,8 @@
       },
       {
         "newId": "car_under_shower_spray",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "amenity/car_wash",
         "importer": [
           "@quincylvania"
         ]
@@ -1364,7 +1397,8 @@
       },
       {
         "newId": "carpet",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/carpet",
         "importer": [
           "@quincylvania"
         ]
@@ -1379,7 +1413,8 @@
       },
       {
         "newId": "castle",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "historic/castle",
         "importer": [
           "@quincylvania"
         ]
@@ -1387,6 +1422,7 @@
       {
         "newId": "castle_keep",
         "via": "maki",
+        "osmcarto": "man_made/tower_defensive",
         "maki": "castle",
         "importer": [
           "@quincylvania"
@@ -1411,7 +1447,8 @@
       },
       {
         "newId": "cave",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "natural/cave",
         "importer": [
           "@quincylvania"
         ]
@@ -1442,7 +1479,8 @@
       },
       {
         "newId": "charging_station",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "amenity/charging_station",
         "maki": "charging-station",
         "importer": [
           "@quincylvania"
@@ -1502,6 +1540,7 @@
       {
         "newId": "chimney_with_smoke",
         "via": "temaki",
+        "osmcarto": "man_made/chimney",
         "temaki": "chimney",
         "importer": [
           "@quincylvania"
@@ -1516,7 +1555,8 @@
       },
       {
         "newId": "cigarette_with_smoke_curl",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/tobacco",
         "nps": "smoking-area",
         "importer": [
           "@quincylvania"
@@ -1540,14 +1580,15 @@
       {
         "newId": "circle_outline",
         "maki": "circle-stroked",
+        "osmcarto": ["place/place-4-z7", "place/place-4", "place/place-6-z7", "place/place-6"],
         "designer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "circle_outline_with_dot",
-        "via": "",
-        "importer": [
+        "osmcarto": ["place/place-capital-6", "place/place-capital-8"],
+        "designer": [
           "@quincylvania"
         ]
       },
@@ -1591,7 +1632,8 @@
       },
       {
         "newId": "city_gate",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "historic/city_gate",
         "importer": [
           "@quincylvania"
         ]
@@ -1599,6 +1641,7 @@
       {
         "newId": "classical_building",
         "via": "maki",
+        "osmcarto": "tourism/museum",
         "temaki": "museum",
         "maki": "museum",
         "nps": "museum",
@@ -1633,6 +1676,7 @@
       {
         "newId": "cleaver",
         "via": "temaki",
+        "osmcarto": "shop/butcher",
         "temaki": "cleaver",
         "designer": ["@quincylvania"],
         "importer": [
@@ -1691,6 +1735,7 @@
       {
         "newId": "cocktail",
         "via": "maki",
+        "osmcarto": "amenity/bar",
         "maki": "bar",
         "importer": [
           "@quincylvania"
@@ -1699,6 +1744,7 @@
       {
         "newId": "coffee_bean",
         "via": "temaki",
+        "osmcarto": "shop/coffee",
         "temaki": "coffee",
         "importer": [
           "@quincylvania"
@@ -1738,6 +1784,7 @@
       {
         "newId": "comedy_mask_and_tragedy_mask",
         "via": "maki",
+        "osmcarto": "amenity/theatre",
         "maki": "theatre",
         "nps": "theatre-arts",
         "importer": [
@@ -1807,6 +1854,7 @@
       {
         "newId": "cooling_tower",
         "via": "temaki",
+        "osmcarto": "man_made/tower_cooling",
         "temaki": "cooling_tower",
         "designer": ["@quincylvania"],
         "importer": [
@@ -1857,6 +1905,7 @@
       {
         "newId": "crane",
         "via": "temaki",
+        "osmcarto": "man_made/crane",
         "temaki": "crane",
         "importer": [
           "@quincylvania"
@@ -1905,6 +1954,7 @@
       {
         "newId": "cross_latin",
         "via": "maki",
+        "osmcarto": ["man_made/cross", "religion/christian"],
         "maki": "religious-christian",
         "importer": [
           "@quincylvania"
@@ -2001,6 +2051,7 @@
       {
         "newId": "cup_and_saucer",
         "via": "maki",
+        "osmcarto": "amenity/cafe",
         "maki": "cafe",
         "importer": [
           "@quincylvania"
@@ -2110,6 +2161,7 @@
       {
         "newId": "dharma_wheel",
         "via": "maki",
+        "osmcarto": "religion/buddhist",
         "maki": "religious-buddhist",
         "importer": [
           "@quincylvania"
@@ -2144,7 +2196,8 @@
       },
       {
         "newId": "dice",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "amenity/casino",
         "temaki": "dice",
         "importer": [
           "@quincylvania"
@@ -2243,8 +2296,8 @@
       },
       {
         "newId": "dot_outline",
-        "via": "",
-        "importer": [
+        "osmcarto": "natural/spring",
+        "designer": [
           "@quincylvania"
         ]
       },
@@ -2277,7 +2330,8 @@
       },
       {
         "newId": "drink_bottle_and_drink_cup_with_straw",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/beverages",
         "importer": [
           "@quincylvania"
         ]
@@ -2361,6 +2415,7 @@
       {
         "newId": "ear_with_hearing_aid",
         "via": "temaki",
+        "osmcarto": "shop/hearing_aids",
         "temaki": "hearing_aid",
         "importer": [
           "@quincylvania"
@@ -2473,7 +2528,8 @@
       },
       {
         "newId": "envelope_in_slot",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "amenity/post_box",
         "importer": [
           "@quincylvania"
         ]
@@ -2487,28 +2543,27 @@
       },
       {
         "newId": "eye",
-        "via": "",
-        "importer": [
+        "designer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "eye_outline",
-        "via": "",
-        "importer": [
+        "designer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "eyebrow",
-        "via": "",
-        "importer": [
+        "basedOn": "eyebrow_and_eyelashes",
+        "designer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "eyebrow_and_eyelashes",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/beauty",
         "importer": [
           "@quincylvania"
         ]
@@ -2516,6 +2571,7 @@
       {
         "newId": "eyeglasses",
         "via": "maki",
+        "osmcarto": "shop/optician",
         "maki": "optician",
         "importer": [
           "@quincylvania"
@@ -2523,8 +2579,8 @@
       },
       {
         "newId": "eyelashes",
-        "via": "",
-        "importer": [
+        "basedOn": "eyebrow_and_eyelashes",
+        "designer": [
           "@quincylvania"
         ]
       },
@@ -2611,14 +2667,16 @@
       },
       {
         "newId": "film",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "amenity/cinema",
         "importer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "film_and_optical_disc",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/video",
         "importer": [
           "@quincylvania"
         ]
@@ -2643,6 +2701,7 @@
       {
         "newId": "fire",
         "via": "maki",
+        "osmcarto": "amenity/firestation",
         "maki": "fire-station",
         "importer": [
           "@quincylvania"
@@ -2658,14 +2717,16 @@
       },
       {
         "newId": "fish",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/seafood",
         "importer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "fish_and_hook",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "leisure/fishing",
         "nps": "fishing",
         "importer": [
           "@quincylvania"
@@ -2702,6 +2763,7 @@
         "via": "maki",
         "maki": "embassy",
         "nps": "flagpole",
+        "osmcarto": "office/embassy",
         "importer": [
           "@quincylvania"
         ]
@@ -2725,7 +2787,8 @@
       },
       {
         "newId": "flash_camera",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/photo",
         "importer": [
           "@quincylvania"
         ]
@@ -2778,14 +2841,16 @@
       },
       {
         "newId": "fort",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "historic/fort",
         "importer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "fortress",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "historic/fortress",
         "importer": [
           "@quincylvania"
         ]
@@ -2799,6 +2864,7 @@
       },
       {
         "newId": "fountain_from_fountain_basin",
+        "osmcarto": "amenity/fountain",
         "via": "",
         "importer": [
           "@quincylvania"
@@ -2824,6 +2890,7 @@
       {
         "newId": "game_controller_with_wire",
         "via": "maki",
+        "osmcarto": "shop/video_games",
         "maki": "gaming",
         "importer": [
           "@quincylvania"
@@ -2855,6 +2922,7 @@
       {
         "newId": "gasoline_pump",
         "via": "maki",
+        "osmcarto": "amenity/fuel",
         "maki": "fuel",
         "nps": "gas-station",
         "importer": [
@@ -2913,6 +2981,7 @@
       {
         "newId": "giftwrapped_box",
         "via": "maki",
+        "osmcarto": "shop/gift",
         "maki": "gift",
         "nps": "souvenir-shop",
         "importer": [
@@ -2971,14 +3040,16 @@
       },
       {
         "newId": "golfer_and_golf_pin",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "leisure/golf",
         "importer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "golfer_and_windmill",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "leisure/miniature_golf",
         "importer": [
           "@quincylvania"
         ]
@@ -3028,7 +3099,8 @@
       },
       {
         "newId": "grecian_vase",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "historic/archaeological_site",
         "importer": [
           "@quincylvania"
         ]
@@ -3044,14 +3116,17 @@
       },
       {
         "newId": "guidepost",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "tourism/guidepost",
         "importer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "guyed_mast",
-        "via": "",
+        "via": "temaki",
+        "temaki": "mast",
+        "osmcarto": "man_made/mast",
         "importer": [
           "@quincylvania"
         ]
@@ -3195,7 +3270,8 @@
       },
       {
         "newId": "headphones_with_info_i",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "tourism/audioguide",
         "importer": [
           "@quincylvania"
         ]
@@ -3392,6 +3468,7 @@
       {
         "newId": "hunting_stand",
         "via": "temaki",
+        "osmcarto": "amenity/hunting_stand",
         "temaki": "hunting_blind",
         "designer": ["@quincylvania"],
         "importer": [
@@ -3409,6 +3486,7 @@
       {
         "newId": "ice_cream_on_cone",
         "via": "maki",
+        "osmcarto": "amenity/ice_cream",
         "nps": "ice-cream",
         "maki": "ice-cream",
         "importer": [
@@ -3467,14 +3545,16 @@
       },
       {
         "newId": "inscribed_memorial_stone",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "historic/memorial",
         "importer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "inscribed_stone",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "historic/stone",
         "importer": [
           "@quincylvania"
         ]
@@ -3506,7 +3586,8 @@
       },
       {
         "newId": "jar",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/deli",
         "importer": [
           "@quincylvania"
         ]
@@ -3539,7 +3620,8 @@
       },
       {
         "newId": "jewel",
-        "via": "",
+        "via": "temaki",
+        "temaki": "jewelry_store",
         "importer": [
           "@quincylvania"
         ]
@@ -3752,6 +3834,7 @@
       {
         "newId": "khanda",
         "via": "temaki",
+        "osmcarto": "religion/sikhist",
         "temaki": "sikhism",
         "importer": [
           "@quincylvania"
@@ -3790,7 +3873,8 @@
       },
       {
         "newId": "laptop",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/computer",
         "importer": [
           "@quincylvania"
         ]
@@ -3822,7 +3906,8 @@
       },
       {
         "newId": "lattice_tower_with_lookout_deck",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "man_made/tower_observation",
         "nps": "lookout-tower",
         "importer": [
           "@quincylvania"
@@ -3882,6 +3967,7 @@
       {
         "newId": "lift_gate_lowered",
         "via": "maki",
+        "osmcarto": "barrier/lift_gate",
         "maki": "lift-gate",
         "importer": [
           "@quincylvania"
@@ -3898,6 +3984,7 @@
       {
         "newId": "lighthouse",
         "via": "nps",
+        "osmcarto": "man_made/lighthouse",
         "nps": "lighthouse",
         "importer": [
           "@quincylvania"
@@ -4078,7 +4165,8 @@
       },
       {
         "newId": "manor",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "historic/manor",
         "importer": [
           "@quincylvania"
         ]
@@ -4094,6 +4182,7 @@
       },
       {
         "newId": "map_outline",
+        "osmcarto": "tourism/map",
         "designer": [
           "@quincylvania"
         ]
@@ -4144,7 +4233,8 @@
       },
       {
         "newId": "market_stall",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/marketplace",
         "importer": [
           "@quincylvania"
         ]
@@ -4277,6 +4367,7 @@
       },
       {
         "newId": "mobile_phone_with_touchscreen_and_antenna",
+        "osmcarto": "shop/mobile_phone",
         "designer": ["@quincylvania"]
       },
       {
@@ -4285,6 +4376,7 @@
       },
       {
         "newId": "molar_tooth",
+        "osmcarto": "amenity/dentist",
         "via": "maki",
         "maki": "dentist",
         "importer": [
@@ -4337,6 +4429,7 @@
         "newId": "motorboat_and_key",
         "via": "temaki",
         "temaki": "boat_rental",
+        "osmcarto": "amenity/boat_rental",
         "designer": ["@quincylvania"],
         "importer": [
           "@quincylvania"
@@ -4354,6 +4447,7 @@
       {
         "newId": "motorboat_on_ramp",
         "via": "maki",
+        "osmcarto": "leisure/slipway",
         "maki": "slipway",
         "importer": [
           "@quincylvania"
@@ -4380,6 +4474,7 @@
       {
         "newId": "motorcycle",
         "via": "temaki",
+        "osmcarto": "shop/motorcycle",
         "temaki": "motorcycle",
         "designer": ["@quincylvania"],
         "importer": [
@@ -4398,6 +4493,7 @@
       {
         "newId": "motorcycle_and_wrench",
         "via": "temaki",
+        "osmcarto": "shop/motorcycle_repair",
         "temaki": "motorcycle_repair",
         "designer": ["@quincylvania"],
         "importer": [
@@ -4472,7 +4568,8 @@
       },
       {
         "newId": "music_note_with_optical_disc",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/music",
         "importer": [
           "@quincylvania"
         ]
@@ -4503,7 +4600,8 @@
       },
       {
         "newId": "newspaper",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/newsagent",
         "importer": [
           "@quincylvania"
         ]
@@ -4535,6 +4633,7 @@
       {
         "newId": "obelisk",
         "via": "temaki",
+        "osmcarto": "historic/obelisk",
         "temaki": "obelisk",
         "designer": ["@quincylvania"],
         "importer": [
@@ -4545,6 +4644,7 @@
         "newId": "obelisk_on_plinth",
         "via": "maki",
         "maki": "monument",
+        "osmcarto": "historic/monument",
         "nps": "monument",
         "importer": [
           "@quincylvania"
@@ -4552,7 +4652,8 @@
       },
       {
         "newId": "observatory_dome",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "man_made/telescope_dome",
         "importer": [
           "@quincylvania"
         ]
@@ -4587,6 +4688,7 @@
         "newId": "om",
         "via": "temaki",
         "temaki": "hinduism",
+        "osmcarto": "religion/hinduist",
         "importer": [
           "@quincylvania"
         ]
@@ -4594,6 +4696,7 @@
       {
         "newId": "open_book",
         "via": "maki",
+        "osmcarto": "amenity/library",
         "maki": "library",
         "importer": [
           "@quincylvania"
@@ -4618,6 +4721,8 @@
       },
       {
         "newId": "paint_roller",
+        "via": "osmcarto",
+        "osmcarto": "shop/paint",
         "maki": "paint",
         "importer": [
           "@quincylvania"
@@ -4625,21 +4730,24 @@
       },
       {
         "newId": "palace",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "historic/palace",
         "importer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "palette",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/art",
         "importer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "palette_with_music_note",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "amenity/arts_centre",
         "importer": [
           "@quincylvania"
         ]
@@ -4662,7 +4770,8 @@
       },
       {
         "newId": "paperclip",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/stationery",
         "importer": [
           "@quincylvania"
         ]
@@ -4727,6 +4836,7 @@
       {
         "newId": "pawprint",
         "via": "temaki",
+        "osmcarto": "shop/pet",
         "temaki": "pet_store",
         "maki": "veterinary",
         "importer": [
@@ -4736,6 +4846,7 @@
       {
         "newId": "pawprint_with_greek_cross",
         "via": "temaki",
+        "osmcarto": "amenity/veterinary",
         "temaki": "veterinary_care",
         "importer": [
           "@quincylvania"
@@ -4863,6 +4974,7 @@
       {
         "newId": "people_sitting_on_seesaw",
         "via": "temaki",
+        "osmcarto": "leisure/playground",
         "temaki": "seesaw",
         "designer": ["@quincylvania"],
         "importer": [
@@ -4872,6 +4984,7 @@
       {
         "newId": "perfume_bottle_with_spray",
         "via": "temaki",
+        "osmcarto": "shop/perfumery",
         "temaki": "perfume",
         "importer": [
           "@quincylvania"
@@ -4912,7 +5025,8 @@
       },
       {
         "newId": "person_behind_barred_window",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "amenity/prison",
         "importer": [
           "@quincylvania"
         ]
@@ -5148,7 +5262,8 @@
       },
       {
         "newId": "person_in_water",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "amenity/public_bath",
         "importer": [
           "@quincylvania"
         ]
@@ -5172,7 +5287,8 @@
       },
       {
         "newId": "person_kneeling_and_praying",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "amenity/place_of_worship",
         "importer": [
           "@quincylvania"
         ]
@@ -5196,7 +5312,8 @@
       },
       {
         "newId": "person_massaging_person_lying_on_front",
-        "via": "temaki",
+        "via": "osmcarto",
+        "osmcarto": "shop/massage",
         "temaki": "spa",
         "importer": [
           "@quincylvania"
@@ -5355,7 +5472,8 @@
       },
       {
         "newId": "person_sitting_in_steam_sauna",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "leisure/sauna",
         "importer": [
           "@quincylvania"
         ]
@@ -5427,6 +5545,7 @@
       {
         "newId": "phone_bottom_right",
         "via": "maki",
+        "osmcarto": "amenity/telephone",
         "maki": "telephone",
         "importer": [
           "@quincylvania"
@@ -5484,6 +5603,7 @@
       {
         "newId": "picnic_table",
         "via": "maki",
+        "osmcarto": "tourism/picnic",
         "maki": "picnic-site",
         "nps": "picnic-area",
         "importer": [
@@ -5527,7 +5647,8 @@
       },
       {
         "newId": "pill_bottle_with_greek_cross",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "amenity/pharmacy",
         "importer": [
           "@quincylvania"
         ]
@@ -5556,7 +5677,8 @@
       },
       {
         "newId": "pixel_invader",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "leisure/amusement_arcade",
         "importer": [
           "@quincylvania"
         ]
@@ -5588,6 +5710,8 @@
       },
       {
         "newId": "plane",
+        "via": "osmcarto",
+        "osmcarto": "amenity/aerodrome",
         "maki": "airport",
         "nps": "airport",
         "importer": [
@@ -5641,6 +5765,7 @@
       {
         "newId": "plaque",
         "via": "temaki",
+        "osmcarto": "historic/plaque",
         "temaki": "plaque",
         "designer": ["@quincylvania"],
         "importer": [
@@ -5707,6 +5832,7 @@
       {
         "newId": "police_officer",
         "via": "temaki",
+        "osmcarto": "amenity/police",
         "temaki": "police_officer",
         "importer": [
           "@quincylvania"
@@ -5724,8 +5850,8 @@
       },
       {
         "newId": "poo_pile",
-        "via": "",
-        "importer": [
+        "basedOn": "https://github.com/openstreetmap-carto/openstreetmap-carto/blob/40820143374b5550fb294cfc754db8ca662094b0/symbols/amenity/excrement_bags.svg",
+        "designer": [
           "@quincylvania"
         ]
       },
@@ -6038,35 +6164,33 @@
       },
       {
         "newId": "rectangle",
-        "via": "",
-        "importer": [
+        "designer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "rectangle_outline",
-        "via": "",
-        "importer": [
+        "osmcarto": "rect",
+        "designer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "rectangle_tall",
-        "via": "",
-        "importer": [
+        "designer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "rectangle_tall_outline",
-        "via": "",
-        "importer": [
+        "designer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "recycling_symbol",
         "via": "nps",
+        "osmcarto": "amenity/recycling",
         "nps": "recycling",
         "maki": "recycling",
         "importer": [
@@ -6084,7 +6208,8 @@
       },
       {
         "newId": "ring_with_jewel",
-        "via": "maki",
+        "via": "osmcarto",
+        "osmcarto": "shop/jewelry",
         "maki": "jewelry-store",
         "importer": [
           "@quincylvania"
@@ -6109,7 +6234,8 @@
       },
       {
         "newId": "rocking_horse",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/toys",
         "importer": [
           "@quincylvania"
         ]
@@ -6193,6 +6319,7 @@
       {
         "newId": "runner",
         "via": "maki",
+        "osmcarto": ["leisure/fitness", "shop/sports"],
         "maki": "pitch",
         "importer": [
           "@quincylvania"
@@ -6276,6 +6403,7 @@
       {
         "newId": "scissors_and_comb",
         "via": "temaki",
+        "osmcarto": "shop/hairdresser",
         "temaki": "beauty_salon",
         "importer": [
           "@quincylvania"
@@ -6301,6 +6429,7 @@
       {
         "newId": "sculpture",
         "via": "temaki",
+        "osmcarto": "tourism/artwork",
         "temaki": "sculpture",
         "designer": ["@quincylvania"],
         "importer": [
@@ -6384,6 +6513,7 @@
       {
         "newId": "shoe",
         "via": "maki",
+        "osmcarto": "shop/shoes",
         "maki": "shoe",
         "importer": [
           "@quincylvania"
@@ -6408,6 +6538,7 @@
       {
         "newId": "shopping_basket",
         "via": "maki",
+        "osmcarto": "shop/convenience",
         "maki": "convenience",
         "importer": [
           "@quincylvania"
@@ -6416,6 +6547,7 @@
       {
         "newId": "shopping_cart",
         "via": "maki",
+        "osmcarto": "shop/supermarket",
         "maki": "grocery",
         "importer": [
           "@quincylvania"
@@ -6432,6 +6564,7 @@
       {
         "newId": "showerhead_with_spray",
         "via": "temaki",
+        "osmcarto": "amenity/shower",
         "temaki": "shower",
         "importer": [
           "@quincylvania"
@@ -6583,6 +6716,7 @@
         "newId": "sleeper_in_bed",
         "via": "maki",
         "maki": "lodging",
+        "osmcarto": "tourism/hostel",
         "nps": "lodging",
         "importer": [
           "@quincylvania"
@@ -6601,6 +6735,7 @@
       {
         "newId": "sleepers_in_bunkbeds",
         "via": "temaki",
+        "osmcarto": "tourism/hostel",
         "temaki": "bunk_beds",
         "designer": ["@quincylvania"],
         "importer": [
@@ -6735,6 +6870,7 @@
       {
         "newId": "speaker",
         "via": "temaki",
+        "osmcarto": "shop/hifi",
         "temaki": "speaker",
         "designer": ["@quincylvania"],
         "importer": [
@@ -6835,7 +6971,8 @@
       },
       {
         "newId": "spoon_and_chefs_knife_and_pot",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/houseware",
         "importer": [
           "@quincylvania"
         ]
@@ -6852,6 +6989,7 @@
       {
         "newId": "square",
         "maki": "square",
+        "osmcarto": "square",
         "designer": [
           "@quincylvania"
         ]
@@ -6908,6 +7046,7 @@
       {
         "newId": "star_and_crescent",
         "via": "maki",
+        "osmcarto": "religion/muslim",
         "maki": "religious-muslim",
         "importer": [
           "@quincylvania"
@@ -6932,6 +7071,7 @@
       {
         "newId": "statue",
         "via": "temaki",
+        "osmcarto": "historic/statue",
         "temaki": "statue",
         "nps": "statue",
         "designer": ["@quincylvania"],
@@ -6982,7 +7122,8 @@
       },
       {
         "newId": "storage_tank",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "man_made/storage_tank",
         "importer": [
           "@quincylvania"
         ]
@@ -7023,6 +7164,7 @@
       {
         "newId": "suitcase",
         "temaki": "suitcase",
+        "osmcarto": "shop/bag",
         "via": "temaki",
         "designer": ["@quincylvania"],
         "importer": [
@@ -7084,6 +7226,7 @@
       {
         "newId": "swimmer_in_water",
         "via": "maki",
+        "osmcarto": "leisure/water_park",
         "maki": "swimming",
         "nps": "swimming",
         "importer": [
@@ -7125,6 +7268,7 @@
       },
       {
         "newId": "taxi",
+        "osmcarto": "amenity/taxi",
         "temaki": "taxi_stand",
         "designer": [
           "@quincylvania"
@@ -7139,7 +7283,8 @@
       },
       {
         "newId": "teapot",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/tea",
         "importer": [
           "@quincylvania"
         ]
@@ -7227,6 +7372,7 @@
       {
         "newId": "three_dot_vertical_line_in_rectangle",
         "via": "temaki",
+        "osmcarto": "highway/traffic_light",
         "temaki": "traffic_signals",
         "importer": [
           "@quincylvania"
@@ -7235,6 +7381,7 @@
       {
         "newId": "ticket",
         "via": "temaki",
+        "osmcarto": "shop/ticket",
         "temaki": "ticket",
         "nps": "ticket-sales",
         "importer": [
@@ -7243,7 +7390,8 @@
       },
       {
         "newId": "ticket_in_slot",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "amenity/public_transport_tickets",
         "importer": [
           "@quincylvania"
         ]
@@ -7259,7 +7407,8 @@
       },
       {
         "newId": "tire",
-        "via": "temaki",
+        "via": "osmcarto",
+        "osmcarto": "shop/tyres",
         "temaki": "tire",
         "importer": [
           "@quincylvania"
@@ -7317,8 +7466,8 @@
       },
       {
         "newId": "toothbrush",
-        "via": "",
-        "importer": [
+        "basedOn": "tube_and_toothbrush",
+        "designer": [
           "@quincylvania"
         ]
       },
@@ -7326,6 +7475,7 @@
         "newId": "torii",
         "via": "temaki",
         "temaki": "shinto",
+        "osmcarto": "religion/shintoist",
         "maki": "religious-shinto",
         "importer": [
           "@quincylvania"
@@ -7590,6 +7740,7 @@
       {
         "newId": "triangle_up",
         "maki": "triangle",
+        "osmcarto": "natural/peak",
         "opentrailmap": "peak",
         "designer": [
           "@quincylvania"
@@ -7672,21 +7823,23 @@
       },
       {
         "newId": "tshirt",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/clothes",
         "importer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "tube",
-        "via": "",
-        "importer": [
+        "basedOn": "tube_and_toothbrush",
+        "designer": [
           "@quincylvania"
         ]
       },
       {
         "newId": "tube_and_toothbrush",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/chemist",
         "importer": [
           "@quincylvania"
         ]
@@ -7694,6 +7847,7 @@
       {
         "newId": "tulip",
         "via": "maki",
+        "osmcarto": "shop/florist",
         "maki": "garden",
         "importer": [
           "@quincylvania"
@@ -8013,6 +8167,7 @@
         "temaki": "laundry",
         "maki": "laundry",
         "nps": "laundry",
+        "osmcarto": "shop/laundry",
         "importer": [
           "@quincylvania"
         ]
@@ -8051,6 +8206,7 @@
       {
         "newId": "water_glass_under_faucet",
         "via": "maki",
+        "osmcarto": "amenity/drinking_water",
         "maki": "drinking-water",
         "importer": [
           "@quincylvania"
@@ -8104,6 +8260,7 @@
       {
         "newId": "water_tower",
         "via": "temaki",
+        "osmcarto": "man_made/water_tower",
         "temaki": "water_tower",
         "designer": ["@quincylvania"],
         "importer": [
@@ -8113,6 +8270,7 @@
       {
         "newId": "waterfall",
         "via": "maki",
+        "osmcarto": "natural/waterfall",
         "maki": "waterfall",
         "nps": "waterfall",
         "opentrailmap": "waterfall",
@@ -8131,6 +8289,7 @@
       {
         "newId": "watering_can",
         "via": "maki",
+        "osmcarto": "shop/garden_centre",
         "maki": "garden-centre",
         "importer": [
           "@quincylvania"
@@ -8163,7 +8322,8 @@
       },
       {
         "newId": "wheelchair",
-        "via": "",
+        "via": "osmcarto",
+        "osmcarto": "shop/medical_supply",
         "importer": [
           "@quincylvania"
         ]
@@ -8188,6 +8348,7 @@
       {
         "newId": "wind_turbine",
         "via": "temaki",
+        "osmcarto": "man_made/generator_wind",
         "temaki": "wind_turbine",
         "importer": [
           "@quincylvania"
@@ -8196,6 +8357,7 @@
       {
         "newId": "windmill",
         "via": "maki",
+        "osmcarto": "man_made/windmill",
         "temaki": "windmill",
         "maki": "windmill",
         "importer": [
@@ -8238,6 +8400,7 @@
       {
         "newId": "wine_bottle_and_wine_glass",
         "via": "nps",
+        "osmcarto": "shop/alcohol",
         "nps": "wine",
         "importer": [
           "@quincylvania"
@@ -8276,6 +8439,7 @@
       {
         "newId": "wrench_and_hammer",
         "via": "temaki",
+        "osmcarto": "shop/diy",
         "temaki": "tools",
         "importer": [
           "@quincylvania"
@@ -8291,6 +8455,7 @@
       {
         "newId": "x_cross",
         "via": "maki",
+        "osmcarto": ["barrier/level_crossing", "barrier/level_crossing2"],
         "maki": "cross",
         "importer": [
           "@quincylvania"
@@ -8323,6 +8488,7 @@
       },
       {
         "newId": "yin_yang",
+        "osmcarto": "religion/taoist",
         "via": "temaki",
         "temaki": "taoism",
         "importer": [
