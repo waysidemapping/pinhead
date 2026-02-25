@@ -72,6 +72,7 @@
         "newId": "aerial_tram",
         "src": "maki",
         "importBy": "@quincylvania",
+        "americana": "poi_aerialway_circle",
         "maki": "aerialway",
         "nps": "tramway"
       },
@@ -990,6 +991,7 @@
       {
         "newId": "car",
         "by": "@quincylvania",
+        "americana": "poi_car_shop",
         "maki": "car",
         "nps": "automobiles",
         "osmcarto": "shop/car"
@@ -1003,6 +1005,7 @@
       {
         "newId": "car_and_wrench",
         "by": "@quincylvania",
+        "americana": "poi_car_repair",
         "maki": "car-repair",
         "osmcarto": "shop/car_repair"
       },
@@ -1152,6 +1155,7 @@
         "newId": "charging_station_with_bolt",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "americana": "poi_charging_station",
         "maki": "charging-station",
         "osmcarto": "amenity/charging_station"
       },
@@ -1230,6 +1234,7 @@
       {
         "newId": "circle_outline_with_dot",
         "by": "@quincylvania",
+        "americana": "place_dot_in_circle",
         "osmcarto": [
           "place/place-capital-6",
           "place/place-capital-8"
@@ -1270,6 +1275,7 @@
         "newId": "classical_building",
         "src": "maki",
         "importBy": "@quincylvania",
+        "americana": "poi_museum",
         "maki": "museum",
         "nps": "museum",
         "osmcarto": "tourism/museum",
@@ -1585,6 +1591,7 @@
         "newId": "cup_and_saucer",
         "src": "maki",
         "importBy": "@quincylvania",
+        "americana": "poi_coffee_cup",
         "maki": "cafe",
         "osmcarto": "amenity/cafe"
       },
@@ -1765,6 +1772,7 @@
       {
         "newId": "dot",
         "by": "@quincylvania",
+        "americana": "place_dot",
         "nps": "dot",
         "temaki": "vertex"
       },
@@ -1940,6 +1948,7 @@
         "newId": "envelope",
         "src": "maki",
         "importBy": "@quincylvania",
+        "americana": "poi_envelope",
         "maki": "post",
         "nps": "post-office"
       },
@@ -2246,6 +2255,7 @@
         "newId": "gasoline_pump",
         "src": "maki",
         "importBy": "@quincylvania",
+        "americana": "poi_fuel",
         "maki": "fuel",
         "nps": "gas-station",
         "osmcarto": "amenity/fuel"
@@ -2388,6 +2398,7 @@
         "newId": "greek_cross",
         "src": "maki",
         "importBy": "@quincylvania",
+        "americana": "poi_health_cross",
         "maki": "hospital",
         "nps": "first-aid"
       },
@@ -3688,6 +3699,7 @@
         "newId": "parking_p",
         "src": "maki",
         "importBy": "@quincylvania",
+        "americana": "poi_p",
         "maki": "parking",
         "nps": "parking"
       },
@@ -4395,6 +4407,7 @@
         "newId": "plane",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "americana": "poi_plane",
         "maki": "airport",
         "nps": "airport",
         "osmcarto": "amenity/aerodrome"
@@ -5034,6 +5047,7 @@
         "newId": "shopping_cart",
         "src": "maki",
         "importBy": "@quincylvania",
+        "americana": "poi_supermarket",
         "maki": "grocery",
         "osmcarto": "shop/supermarket"
       },
@@ -5165,6 +5179,7 @@
         "newId": "sleeper_in_bed",
         "src": "maki",
         "importBy": "@quincylvania",
+        "americana": "poi_hotel",
         "maki": "lodging",
         "nps": "lodging",
         "osmcarto": "tourism/hotel"
@@ -5384,6 +5399,7 @@
         "newId": "square_academic_cap",
         "src": "maki",
         "importBy": "@quincylvania",
+        "americana": "poi_mortarboard",
         "maki": "college"
       },
       {
@@ -5416,6 +5432,7 @@
         "newId": "star",
         "src": "maki",
         "importBy": "@quincylvania",
+        "americana": "place_star",
         "maki": "star"
       },
       {
@@ -5595,6 +5612,7 @@
       {
         "newId": "taxi",
         "by": "@quincylvania",
+        "americana": "poi_taxi",
         "osmcarto": "amenity/taxi",
         "temaki": "taxi_stand"
       },
@@ -5852,6 +5870,10 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "americana": [
+          "poi_rail",
+          "poi_rail_circle"
+        ],
         "temaki": "train"
       },
       {
@@ -6719,12 +6741,189 @@
     ]
   },
   {
-    "majorVersion": "4",
+    "majorVersion": "5",
     "iconChanges": [
       {
         "newId": "clothes_hanger_holding_cloth",
         "by": "@quincylvania",
         "inspo": "clothes_hanger"
+      },
+      {
+        "newId": "f22_raptor_fighter_jet",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "americana": "poi_military_plane"
+      },
+      {
+        "newId": "hospital_h",
+        "by": "@quincylvania",
+        "americana": "poi_hospital"
+      },
+      {
+        "newId": "bus",
+        "by": "@quincylvania",
+        "inspo": "bus_with_destination_display",
+        "americana": [
+          "poi_bus",
+          "poi_bus_circle"
+        ]
+      },
+      {
+        "newId": "dome_with_flag",
+        "by": "@quincylvania",
+        "inspo": [
+          "classical_building_with_dome_and_flag",
+          "https://raw.githubusercontent.com/osm-americana/openstreetmap-americana/94ec9f740619f3cd09fb0877487fe180df2fe62b/icons/poi_town_hall.svg"
+        ],
+        "americana": "poi_town_hall"
+      },
+      {
+        "newId": "book_with_raised_cover",
+        "by": "@quincylvania",
+        "americana": "poi_book_upright"
+      },
+      {
+        "newId": "memorial_stone",
+        "by": "@quincylvania",
+        "inspo": "memorial_stone_with_inscription",
+        "americana": "poi_gravestone"
+      },
+      {
+        "oldId": "inscribed_memorial_stone",
+        "newId": "memorial_stone_with_inscription",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "badge_shield",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "americana": "poi_police_shield"
+      },
+      {
+        "newId": "badge_shield_with_fire",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "americana": "poi_fire_station"
+      },
+      {
+        "newId": "circle_outline_with_star",
+        "by": "@quincylvania",
+        "inspo": [
+          "circle_outline",
+          "star"
+        ],
+        "americana": "place_star_in_circle"
+      },
+      {
+        "newId": "cocktail_with_straw",
+        "by": "@quincylvania",
+        "inspo": [
+          "cocktail",
+          "https://raw.githubusercontent.com/osm-americana/openstreetmap-americana/55926e54bb3191d8deb2762283fcc0bc7d7ab0f1/icons/poi_martini_glass.svg"
+        ],
+        "americana": "poi_martini_glass"
+      },
+      {
+        "newId": "fork_crossing_knife",
+        "by": "@quincylvania",
+        "inspo": [
+          "fork",
+          "knife",
+          "https://raw.githubusercontent.com/osm-americana/openstreetmap-americana/24204851150e10ba7f00bda59ab5702cfe96e77f/icons/poi_restaurant.svg"
+        ],
+        "americana": [
+          "poi_restaurant",
+          "poi_restaurant_circle"
+        ]
+      },
+      {
+        "newId": "sleepers_in_opposing_bunkbeds",
+        "by": "@quincylvania",
+        "inspo": [
+          "sleepers_in_bunkbeds",
+          "https://raw.githubusercontent.com/osm-americana/openstreetmap-americana/42499fb9a57dae4bf2bdb97050d3067455dd21eb/icons/poi_hostel.svg"
+        ],
+        "americana": "poi_hostel"
+      },
+      {
+        "newId": "square_dot",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "americana": [
+          "poi_square_dot",
+          "poi_pow_generic"
+        ]
+      },
+      {
+        "newId": "pennant_on_square",
+        "by": "@quincylvania",
+        "americana": "poi_school"
+      },
+      {
+        "newId": "star_and_crescent_on_square",
+        "by": "@quincylvania",
+        "americana": "poi_pow_muslim"
+      },
+      {
+        "newId": "latin_cross_on_square",
+        "by": "@quincylvania",
+        "americana": "poi_pow_christian"
+      },
+      {
+        "newId": "flaming_chalice",
+        "by": "@quincylvania",
+        "inspo": "flaming_chalice_on_square"
+      },
+      {
+        "newId": "flaming_chalice_on_square",
+        "by": "@quincylvania",
+        "americana": "poi_pow_uu"
+      },
+      {
+        "newId": "quaker_star_on_square",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "star_of_david",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "star_of_david",
+        "newId": "star_of_david_filled"
+      },
+      {
+        "newId": "star_of_david_filled_outline",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "star_of_david_on_square",
+        "by": "@quincylvania",
+        "americana": "poi_pow_jewish"
+      },
+      {
+        "newId": "dharma_wheel_on_square",
+        "by": "@quincylvania",
+        "americana": "poi_pow_buddhist"
+      },
+      {
+        "newId": "yin_yang_on_square",
+        "by": "@quincylvania",
+        "americana": "poi_pow_taoist"
+      },
+      {
+        "newId": "torii_on_square",
+        "by": "@quincylvania",
+        "americana": "poi_pow_shinto"
+      },
+      {
+        "newId": "khanda_on_square",
+        "by": "@quincylvania",
+        "americana": "poi_pow_sikh"
+      },
+      {
+        "newId": "om_on_square",
+        "by": "@quincylvania",
+        "americana": "poi_pow_hindu"
       }
     ]
   }

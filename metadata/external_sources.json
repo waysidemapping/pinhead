@@ -1,5 +1,11 @@
 [
   {
+    "id": "americana",
+    "name": "OSM Americana",
+    "repo": "https://github.com/osm-americana/openstreetmap-americana.git",
+    "iconDir": "icons"
+  },
+  {
     "id": "maki",
     "name": "Maki",
     "repo": "https://github.com/mapbox/maki.git",

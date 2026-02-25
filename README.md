@@ -56,6 +56,7 @@ Pinhead is seeded from the following public domain sources. Thank you to all the
 - [OpenStreetMap Carto](https://github.com/openstreetmap-carto/openstreetmap-carto) ([CC0](https://github.com/openstreetmap-carto/openstreetmap-carto/blob/master/LICENSE.txt))
 - [NPMap Symbol Library](https://github.com/nationalparkservice/symbol-library) (public domain)
 - [OpenTrailMap](https://github.com/osmus/OpenTrailMap) ([MIT](https://github.com/osmus/OpenTrailMap/blob/main/LICENSE))
+- <img src="https://pinhead.ink/v5/badge_shield.svg" width="15px"/> [OpenStreetMap Americana](https://github.com/osm-americana/openstreetmap-americana/) ([CC0](https://github.com/osm-americana/openstreetmap-americana/blob/main/LICENSE))
 
 I've been cleaning up the seed icons by scaling them to the same size, conflating duplicates, improving names, removing SVG cruft, and manually improving legibility. I've also been splitting out certain icon elements into standalone icons, such as taking the <img src="https://pinhead.ink/v1/wine_bottle_and_wine_glass.svg" height="15px" width="15px"/> "wine" icon and creating two additional icons: <img src="https://pinhead.ink/v1/wine_glass.svg" height="15px" width="15px"/> `wine_glass` and <img src="https://pinhead.ink/v1/wine_bottle.svg" height="15px" width="15px"/> `wine_bottle`.
 
