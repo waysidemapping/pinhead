@@ -83,8 +83,8 @@ function checkIcons() {
     }
 
     const id = parse(file).name;
-    if (!id.match(/^[a-z_]+$/)) {
-      console.error(`Invalid charachters in filename: ` + id);
+    if (!id.match(/^[a-z_\d]+$/)) {
+      console.error(`Invalid characters in filename: ` + id);
       process.exit(1);
     }
     iconIds[id] = true;
@@ -140,16 +140,21 @@ function checkIcons() {
 
       // Checks for deeper levels
       } else {
+        let attributesForShape = [];
         if (node.nodeName === 'ellipse' || node.nodeName === 'circle') {
           const attr = (name) => parseFloat(node.getAttribute(name));
           pathDataToAdd.add(ellipseAttrsToPathD(attr('rx') || attr('r'), attr('cx'), attr('ry') || attr('r'), attr('cy')));
+          attributesForShape = ['r', 'rx', 'ry', 'cx', 'cy'];
         } else if (node.nodeName === 'rect') {
           const attr = (name) => node.getAttribute(name);
           pathDataToAdd.add(rectAttrsToPathD(attr));
+          attributesForShape = ['width', 'height', 'x', 'y', 'rx', 'ry'];
         } else if (node.nodeName === 'polygon') {
           pathDataToAdd.add('M ' + node.getAttribute('points') + 'z');
+          attributesForShape = ['points'];
         } else if (node.nodeName === 'path') {
           pathDataToAdd.add(node.getAttribute('d'));
+          attributesForShape = ['d'];
         } else if (node.nodeName !== 'title' && node.nodeName !== 'desc' && node.nodeName !== 'g') {
           console.warn(chalk.yellow('Warning - Suspicious node: ' + node.nodeName));
           console.warn(chalk.gray('  Each svg element should contain only one or more "path" elements.'));
@@ -179,7 +184,7 @@ function checkIcons() {
         // suspicious attributes
         const suspiciousAttrs = node.attributes
           .map(attr => attr.name)
-          .filter(name => !['d', 'fill', 'id', 'fill-rule', 'stroke', 'transform'].includes(name));
+          .filter(name => !attributesForShape.concat(['fill', 'id', 'fill-rule', 'stroke', 'transform']).includes(name));
 
         if (suspiciousAttrs.length) {
           console.warn(chalk.yellow('Warning - Suspicious attributes on ' + node.nodeName + ': ' + suspiciousAttrs));
