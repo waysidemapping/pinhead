@@ -7,6 +7,8 @@ import os from "os";
 
 const workspace = await fs.mkdtemp(join(os.tmpdir(), "workspace-"));
 
+const currentMajorVersion = JSON.parse(readFileSync('package.json')).version.split('.')[0];
+
 const importSources = JSON.parse(readFileSync('metadata/external_sources.json'));
 
 const iconFilesById = {};
@@ -177,9 +179,75 @@ function validateChangelog() {
     }
   }
 
+  const currentChangelog = changelogs.find(c => c.majorVersion === currentMajorVersion);
+  printTextForChangelog(currentChangelog);
+
   console.log("changelog.json is valid");
 
   writeFileSync(changelogPath, JSON.stringify(changelogs, null, 2));
+}
+
+function printTextForChangelog(changelog) {
+  const newV = changelog.majorVersion;
+  const oldV = parseInt(newV) - 1;
+  const addedIcons = [], deletedIcons = [], renamedIcons = [], redesignedIcons = [], renamedAndRedesignedIcons = [];
+  changelog.iconChanges.forEach(iconChange => {
+    if (iconChange.oldId) {
+      if (iconChange.newId) {
+        if (iconChange.oldId === iconChange.newId) {
+          redesignedIcons.push(iconChange);
+        } else if (iconChange.by || iconChange.src) {
+          renamedAndRedesignedIcons.push(iconChange);
+        } else {
+          renamedIcons.push(iconChange);
+        }
+      } else {
+        deletedIcons.push(iconChange);
+      }
+    } else {
+      addedIcons.push(iconChange);
+    }
+  });
+  if (deletedIcons.length) {
+    console.log('### Deleted icons');
+    console.log('');
+    deletedIcons.forEach(iconChange => {
+      console.log(`- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> Remove \`${iconChange.oldId}\``);
+    });
+    console.log('');
+  }
+  if (addedIcons.length) {
+    console.log('### Added icons');
+    console.log('');
+    addedIcons.forEach(iconChange => {
+      console.log(`- <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> Add \`${iconChange.newId}\``);
+    });
+    console.log('');
+  }
+  if (renamedAndRedesignedIcons.length) {
+    console.log('### Renamed and redesigned icons');
+    console.log('');
+    renamedAndRedesignedIcons.forEach(iconChange => {
+      console.log(`- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> \`${iconChange.oldId}\` -> <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.newId}\``);
+    });
+    console.log('');
+  }
+  if (redesignedIcons.length) {
+    console.log('### Redesigned icons');
+    console.log('');
+    redesignedIcons.forEach(iconChange => {
+      console.log(`- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> -> <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.newId}\``);
+    });
+    console.log('');
+  }
+  if (renamedIcons.length) {
+    console.log('### Renamed icons');
+    console.log('');
+    renamedIcons.forEach(iconChange => {
+      console.log(`- <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.oldId}\` -> \`${iconChange.newId}\``);
+    });
+    console.log('');
+  }
 }
 
 function stringArray(value) {
