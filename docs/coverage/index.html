@@ -95,7 +95,13 @@
     const iconsById = {};
 
     for (const versionChangelog of changelogs) {
-      for (const iconChange of versionChangelog.iconChanges) {
+      // Make sure we process all deletions/changes before additions
+      const sortedIconChanges = versionChangelog.iconChanges.toSorted((a, b) => {
+        if (b.oldId && !a.oldId) return 1;
+        if (!b.oldId && a.oldId) return -1;
+        return 0;
+      });
+      for (const iconChange of sortedIconChanges) {
         // update commulative icon log
         if (iconChange.oldId) {
           if (iconChange.newId) {

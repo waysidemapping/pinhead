@@ -1,13 +1,20 @@
-import { existsSync, readFileSync, writeFileSync } from "fs";
+import { existsSync, readFileSync, writeFileSync, globSync } from "fs";
 import { exec } from "child_process";
 import { promisify } from "util";
 import fs from "fs/promises";
-import { join } from "path";
+import { join, parse } from "path";
 import os from "os";
 
 const workspace = await fs.mkdtemp(join(os.tmpdir(), "workspace-"));
 
 const importSources = JSON.parse(readFileSync('metadata/external_sources.json'));
+
+const iconFilesById = {};
+
+globSync(`./icons/**/*.svg`).forEach(file => {
+  const id = parse(file).name;
+  iconFilesById[id] = true;
+});
 
 for (const importSource of importSources) {
   importSource.seenIcons = {};
@@ -38,7 +45,14 @@ function validateChangelog() {
 
     const v = versionChangelog.majorVersion;
 
-    for (const iconChange of versionChangelog.iconChanges) {
+    // Make sure we process all deletions/changes before additions
+    const sortedIconChanges = versionChangelog.iconChanges.toSorted((a, b) => {
+      if (b.oldId && !a.oldId) return 1;
+      if (!b.oldId && a.oldId) return -1;
+      return 0;
+    });
+
+    for (const iconChange of sortedIconChanges) {
       for (const key in iconChange) {
         if (!iconChangeProps.includes(key)) {
           console.error(`Unexpected property "${key}" for "${iconChange.newId}" in version ${v}`);
@@ -148,6 +162,19 @@ function validateChangelog() {
       }
       return returner;
     });
+  }
+
+  for (const idInChangelog in iconsById) {
+    if (!iconFilesById[idInChangelog]) {
+      console.error(`Missing SVG file for icon "${idInChangelog}" referenced in changelog.json`);
+      return;
+    }
+  }
+  for (const idInFiles in iconFilesById) {
+    if (!iconsById[idInFiles]) {
+      console.error(`Missing changelog entry for "${idInFiles}.svg" present in files`);
+      return;
+    }
   }
 
   console.log("changelog.json is valid");
