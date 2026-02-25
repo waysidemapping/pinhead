@@ -6806,6 +6806,14 @@
         "americana": "poi_fire_station"
       },
       {
+        "newId": "badge_shield_with_star",
+        "by": "@quincylvania",
+        "inspo": [
+          "badge_shield",
+          "star"
+        ]
+      },
+      {
         "newId": "circle_outline_with_star",
         "by": "@quincylvania",
         "inspo": [
