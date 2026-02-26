@@ -2417,7 +2417,8 @@
         "importBy": "@quincylvania",
         "americana": "poi_health_cross",
         "maki": "hospital",
-        "nps": "first-aid"
+        "nps": "first-aid",
+        "osmcarto": "amenity/hospital"
       },
       {
         "newId": "guidepost",
