@@ -6945,6 +6945,22 @@
       {
         "newId": "circle_with_fallout_shelter_symbol",
         "by": "@quincylvania"
+      },
+      {
+        "newId": "terminal_screen_with_greater_than_prompt",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "terminal_screen_with_hash_prompt",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "terminal_screen_with_dollar_prompt",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "terminal_screen_with_percent_prompt",
+        "by": "@quincylvania"
       }
     ]
   }
