@@ -107,6 +107,15 @@ async function setupPage(pageData) {
           new Chainable('img')
             .setAttribute('class', 'inline-icon')
             .setAttribute('src', `/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
+        ),
+      new Chainable('a')
+        .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases.atom`)
+        .append(
+          new Chainable('span')
+            .append('feed'),
+          new Chainable('img')
+            .setAttribute('class', 'inline-icon')
+            .setAttribute('src', `/v${majorVersion}/rss.svg`)
         )
     ].join(''));
 
