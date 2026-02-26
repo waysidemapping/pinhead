@@ -33,7 +33,7 @@
   },
   "scripts": {
     "dist": "npm run check_icons && npm run build_dist && npm run check_changelog && cp metadata/changelog.json dist/changelog.json && cp metadata/external_sources.json dist/external_sources.json",
-    "build_docs": "node scripts/build_docs.js",
+    "build_docs": "node scripts/build_docs.js && npm view @waysidemapping/pinhead time --json > docs/npm_publish_dates.json",
     "check_changelog": "node scripts/check_changelog.js",
     "build_docs_for_preview": "npm run build_docs && npm run dist && node scripts/build_preview_docs.js",
     "build_dist": "node scripts/build_dist.js",

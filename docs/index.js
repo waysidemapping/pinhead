@@ -17,6 +17,8 @@ window.addEventListener('load', _ => {
 });
 
 async function setupPage(pageData) {
+  const publishDates = await fetch('npm_publish_dates.json')
+    .then(result => result.json());
   const changelogs = await fetch('changelog.json')
     .then(result => result.json());
 
@@ -28,6 +30,8 @@ async function setupPage(pageData) {
   const parser = new DOMParser();
   const icons = pageData.icons;
 
+  const releaseDate = publishDates[version] || currentChangelog.date;
+
   document.getElementById('icon-count')
     .replaceChildren(
       new Intl.NumberFormat().format(Object.keys(icons).length)
@@ -35,9 +39,25 @@ async function setupPage(pageData) {
 
   document.getElementById('sidebar')
     .insertAdjacentHTML("afterbegin", [
-      new Chainable('h2')
-        .setAttribute('class', 'version-title')
-        .append('v' + version),
+      new Chainable('div')
+        .setAttribute('class', 'sidebar-header')
+        .append(
+          new Chainable('h2')
+            .setAttribute('class', 'version-title')
+            .append(
+              new Chainable('a')
+                .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases/tag/v${version}`)
+                .setAttribute('target', '_blank')
+                .append('v' + version)
+            ),
+          new Chainable('p')
+            .setAttribute('class', 'date-line')
+            .setAttribute('title', releaseDate)
+            .append(new Date(releaseDate).toLocaleDateString(undefined, {
+              dateStyle: "short"
+            //  day: "numeric", month: "short", year: "numeric"
+            }))
+        ),
       new Chainable('div')
         .setAttribute('class', 'icon-grid')
         .insertAdjacentHTML("afterbegin",
@@ -60,10 +80,11 @@ async function setupPage(pageData) {
               .setAttribute('src', `/v${majorVersion}/arrow_down_to_down_bracket.svg`)
           ),
       new Chainable('a')
-        .setAttribute('href', `/coverage`)
+        .setAttribute('href', `https://www.npmjs.com/package/@waysidemapping/pinhead/v/${version}`)
+        .setAttribute('target', '_blank')
         .append(
           new Chainable('span')
-            .append('coverage'),
+            .append('npm package'),
           new Chainable('img')
             .setAttribute('class', 'inline-icon')
             .setAttribute('src', `/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
@@ -79,15 +100,14 @@ async function setupPage(pageData) {
             .setAttribute('src', `/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
         ),
       new Chainable('a')
-          .setAttribute('href', `https://www.npmjs.com/package/@waysidemapping/pinhead/v/${version}`)
-          .setAttribute('target', '_blank')
-          .append(
-            new Chainable('span')
-              .append('npm package'),
-            new Chainable('img')
-              .setAttribute('class', 'inline-icon')
-              .setAttribute('src', `/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
-          )
+        .setAttribute('href', `/coverage`)
+        .append(
+          new Chainable('span')
+            .append('coverage'),
+          new Chainable('img')
+            .setAttribute('class', 'inline-icon')
+            .setAttribute('src', `/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
+        )
     ].join(''));
 
   document.getElementById('icon-gallery')

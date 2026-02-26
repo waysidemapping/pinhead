@@ -77,12 +77,23 @@ img.inline-icon, a.inline-icon img {
 #sidebar > * {
   margin-bottom: 10px;
 }
-.version-title {
-  padding-bottom: 10px;
-  border-bottom: 1px dashed var(--text-color);
+.sidebar-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+}
+.version-title a {
+  text-decoration: none;
+}
+.version-title a:hover, .version-title a:focus {
+  text-decoration: underline  1px var(--text-color);;
+}
+.date-line {
+  font-style: italic;
 }
 #sidebar .icon-grid {
-    padding-bottom: 10px;
+    padding: 10px 0;
+    border-top: 1px dashed var(--text-color);
     border-bottom: 1px dashed var(--text-color);
 }
 article {
