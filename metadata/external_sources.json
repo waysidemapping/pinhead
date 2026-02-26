@@ -18,7 +18,7 @@
     "repo": "https://github.com/nationalparkservice/symbol-library.git",
     "iconDir": "src/standalone",
     "filenameSuffix": "-black-22",
-    "ignoreFiles": "^transparent$"
+    "ignoreFiles": "^transparent"
   },
   {
     "id": "opentrailmap",
