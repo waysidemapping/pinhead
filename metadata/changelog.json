@@ -7007,6 +7007,13 @@
         "inspo": "wifi"
       },
       {
+        "newId": "chocolate_drop",
+        "src": "temaki",
+        "srcBy": "@bhousel",
+        "importBy": "@quincylvania",
+        "temaki": "chocolate"
+      },
+      {
         "oldId": "shopping_cart",
         "newId": "shopping_cart",
         "edit": "flip",
