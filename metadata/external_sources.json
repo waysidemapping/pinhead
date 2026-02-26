@@ -24,7 +24,8 @@
     "id": "opentrailmap",
     "name": "OpenTrailMap",
     "repo": "https://github.com/osmus/opentrailmap.git",
-    "iconDir": "style/sprites/svg"
+    "iconDir": "style/sprites/svg",
+    "ignoreFiles": "^(oneway-)|(fill-)|(stroke-)"
   },
   {
     "id": "osmcarto",
