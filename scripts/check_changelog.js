@@ -190,6 +190,8 @@ function validateChangelog() {
 
 function printTextForChangelog(changelog) {
   const newV = changelog.majorVersion;
+  console.log(`## [${newV}.0.0] - ${changelog.date}`);
+  console.log('');
   const oldV = parseInt(newV) - 1;
   const addedIcons = [], deletedIcons = [], renamedIcons = [], redesignedIcons = [], renamedAndRedesignedIcons = [];
   changelog.iconChanges.forEach(iconChange => {

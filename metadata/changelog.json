@@ -1,6 +1,7 @@
 [
   {
     "majorVersion": "1",
+    "date": "2026-02-19",
     "iconChanges": [
       {
         "newId": "adit_profile",
@@ -6554,6 +6555,7 @@
   },
   {
     "majorVersion": "2",
+    "date": "2026-02-20",
     "iconChanges": [
       {
         "oldId": "cross_latin",
@@ -6620,6 +6622,7 @@
   },
   {
     "majorVersion": "3",
+    "date": "2026-02-21",
     "iconChanges": [
       {
         "newId": "car_profile",
@@ -6688,6 +6691,7 @@
   },
   {
     "majorVersion": "4",
+    "date": "2026-02-24",
     "iconChanges": [
       {
         "oldId": "bread",
@@ -6742,6 +6746,7 @@
   },
   {
     "majorVersion": "5",
+    "date": "2026-02-25",
     "iconChanges": [
       {
         "newId": "clothes_hanger_holding_cloth",
@@ -6937,6 +6942,7 @@
   },
   {
     "majorVersion": "6",
+    "date": "2026-02-26",
     "iconChanges": [
       {
         "newId": "fallout_shelter_symbol",
