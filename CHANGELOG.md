@@ -1,5 +1,32 @@
 # Changelog
 
+## [7.0.0] - 2026-02-27
+
+⚠️ This major release contains new icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
+
+### Added icons
+
+- <img src="https://pinhead.ink/v7/canoe_on_sedan.svg" width="15px"/> Add `canoe_on_sedan`
+- <img src="https://pinhead.ink/v7/canoe_on_station_wagon.svg" width="15px"/> Add `canoe_on_station_wagon`
+- <img src="https://pinhead.ink/v7/canoe_on_pickup_truck.svg" width="15px"/> Add `canoe_on_pickup_truck`
+- <img src="https://pinhead.ink/v7/pickup_truck_with_truck_cap.svg" width="15px"/> Add `pickup_truck_with_truck_cap`
+- <img src="https://pinhead.ink/v7/conifer_tree_with_antenna_array.svg" width="15px"/> Add `conifer_tree_with_antenna_array`
+- <img src="https://pinhead.ink/v7/shed.svg" width="15px"/> Add `shed`
+- <img src="https://pinhead.ink/v7/plus.svg" width="15px"/> Add `plus`
+- <img src="https://pinhead.ink/v7/roman_numeral_i.svg" width="15px"/> Add `roman_numeral_i`
+- <img src="https://pinhead.ink/v7/roman_numeral_ii.svg" width="15px"/> Add `roman_numeral_ii`
+- <img src="https://pinhead.ink/v7/roman_numeral_iii.svg" width="15px"/> Add `roman_numeral_iii`
+- <img src="https://pinhead.ink/v7/roman_numeral_iv.svg" width="15px"/> Add `roman_numeral_iv`
+- <img src="https://pinhead.ink/v7/roman_numeral_v.svg" width="15px"/> Add `roman_numeral_v`
+- <img src="https://pinhead.ink/v7/roman_numeral_vi.svg" width="15px"/> Add `roman_numeral_vi`
+- <img src="https://pinhead.ink/v7/roman_numeral_vii.svg" width="15px"/> Add `roman_numeral_vii`
+- <img src="https://pinhead.ink/v7/roman_numeral_viii.svg" width="15px"/> Add `roman_numeral_viii`
+- <img src="https://pinhead.ink/v7/roman_numeral_ix.svg" width="15px"/> Add `roman_numeral_ix`
+- <img src="https://pinhead.ink/v7/roman_numeral_x.svg" width="15px"/> Add `roman_numeral_x`
+- <img src="https://pinhead.ink/v7/roman_numeral_xi.svg" width="15px"/> Add `roman_numeral_xi`
+- <img src="https://pinhead.ink/v7/roman_numeral_xii.svg" width="15px"/> Add `roman_numeral_xii`
+- <img src="https://pinhead.ink/v7/roman_numeral_xx.svg" width="15px"/> Add `roman_numeral_xx`
+
 ## [6.0.0] - 2026-02-26
 
 ⚠️ This major release contains new, redesigned, and renamed icons that may affect your setup. A machine-readable version of the icon upgrade paths can be found in the [`changelog.json`](/metadata/changelog.json) file.
