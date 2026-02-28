@@ -40,6 +40,7 @@ Pinhead has no dependencies and is basically just a directory of SVG files. A fe
 - `dist/icons/index.json`: a list of all the available icons in this version
 - `dist/icons/index.complete.json`: same as the above but with the SVG code included inline
 - `dist/changelog.json`: a machine-readable list of icon additions, deletions, and renames between major versions
+- `dist/external_sources.json`: a detailed list of the external icons sources referenced in changelog.json
 
 #### Version numbers
 
