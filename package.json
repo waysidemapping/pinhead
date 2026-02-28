@@ -1,6 +1,6 @@
 {
   "name": "@waysidemapping/pinhead",
-  "version": "7.0.0",
+  "version": "8.0.0-dev",
   "type": "module",
   "description": "Quality public domain icons for your map pins",
   "license": "CC0-1.0",

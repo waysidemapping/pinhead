@@ -7390,5 +7390,26 @@
         "issue": "11"
       }
     ]
+  },
+  {
+    "majorVersion": "8",
+    "date": "2026-02-28",
+    "iconChanges": [
+      {
+        "newId": "wifi_weak_signal",
+        "by": "@quincylvania",
+        "inspo": "wifi"
+      },
+      {
+        "newId": "wifi_very_weak_signal",
+        "by": "@quincylvania",
+        "inspo": "wifi"
+      },
+      {
+        "newId": "wifi_no_signal",
+        "by": "@quincylvania",
+        "inspo": "wifi"
+      }
+    ]
   }
 ]
