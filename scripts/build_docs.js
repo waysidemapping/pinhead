@@ -57,7 +57,7 @@ ensureEmptyDir('docs/srcicons');
 const srciconsIndex = {};
 
 for (const importSource of importSources) {
-  execSync(`git clone ${importSource.repo} "tmp/${importSource.id}"`)
+  execSync(`git clone --depth 1 ${importSource.repo} "tmp/${importSource.id}"`)
   const srcDir = join(`tmp/${importSource.id}`, importSource.iconDir);
   const targetDir = `docs/srcicons/${importSource.id}`;
   execSync(`cp -r "${srcDir}/." "${targetDir}"`);

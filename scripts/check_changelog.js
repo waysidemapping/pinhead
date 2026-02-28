@@ -268,7 +268,7 @@ async function cloneTempRepos(repos, workFunction) {
     const execAsync = promisify(exec);
     console.log("Cloning repos...")
     await Promise.all(
-      repos.map(repoUrl => execAsync(`git clone ${repoUrl} "${repoPath(repoUrl)}"`))
+      repos.map(repoUrl => execAsync(`git clone --depth 1  ${repoUrl} "${repoPath(repoUrl)}"`))
     );
     console.log("All repos cloned");
 
