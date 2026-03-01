@@ -7480,6 +7480,10 @@
     "date": "2026-03-01",
     "iconChanges": [
       {
+        "newId": "sugar_cubes",
+        "by": "@quincylvania"
+      },
+      {
         "newId": "sugarcane_stalk_with_leaves",
         "by": "@quincylvania"
       },
