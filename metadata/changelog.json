@@ -7474,5 +7474,33 @@
         "by": "@quincylvania"
       }
     ]
+  },
+  {
+    "majorVersion": "9",
+    "date": "2026-03-01",
+    "iconChanges": [
+      {
+        "newId": "sugarcane_stalk_with_leaves",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "sugarcane_stalk_with_top_leaves",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "sugarcane_stalks_with_top_leaves",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "syrup_jug_with_sugarcane_stalk_with_leaves",
+        "by": "@quincylvania",
+        "inspo": "syrup_jug_with_maple_leaf"
+      },
+      {
+        "newId": "syrup_jug_with_sugarcane_stalk_with_leaves_and_droplet",
+        "by": "@quincylvania",
+        "inspo": "syrup_jug_with_maple_leaf_and_droplet"
+      }
+    ]
   }
 ]
