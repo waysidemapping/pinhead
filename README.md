@@ -17,7 +17,7 @@ Pinhead is a library of free vector icons. There are other projects like this, b
 1. Cartography first
 2. 100% public domain
 
-Map icons need to be really small to support high visual density, so all of Pinhead icon's are intended to be legible at **15x15 pixels** minimum. This is much smaller than most other icon sets you'll find, but you can scale them up and they'll still look great. And since they're licensed **CC0**, you can use them anywhere for anything without restrictions.
+Map icons need to be really small to support high visual density, so all of Pinhead icon's are intended to be legible at **15x15 pixels** minimum. This is much smaller than most other icon sets you'll find, but you can scale them up and they'll still look great. And since they're licensed **CC0**, you can use them anywhere for free without restrictions.
 
 ## Usage
 
@@ -46,7 +46,7 @@ Pinhead has no dependencies and is basically just a directory of SVG files. A fe
 
 Pinhead uses a flavor of semantic versioning, with major releases (v2.0.0) corresponding to breaking changes, minor releases (v2.1.0) corresponding to backwards-compatible changes, and patch releases (v2.1.1) corresponding to fixes.
 
-When it comes to icons, renaming or deleting an icon, or making any visual modification, is a breaking change. Perhaps counterintuitively, adding a new icon is also considered a breaking change. The goal is clear version integrity, where each major version number refers to a complete set of icons with no differences between minor versions. This avoids common gotchas, like developers depending on a package like `^1.0.0` and potentially seeing different lists of icons in development vs. production in the case where v1.1.0 adds an icon.
+When it comes to icons: renaming or deleting an icon, or making any visual modification, is a breaking change. Perhaps counterintuitively, adding a new icon is also considered a breaking change. The goal is clear version integrity, where each major version number refers to a complete set of icons with no differences between minor versions. In effect, this means you can think of Pinhead v1 and Pinhead v2 as two static, independent icon sets. This avoids common gotchas, like developers depending on a package like `^1.0.0` and potentially seeing different lists of icons in development vs. production in the case where v1.1.0 adds an icon. 
 
 ## Where the icons are from
 
@@ -100,9 +100,12 @@ If the following sections seem too technical or intimidating, feel free to just 
   * Multiple icons for different perspectives of the same thing can be okay if they're all iconic.
 * Orientation
   * People, animals, vehicles, etc. depicted in profile should be facing to the right.
+    * Except when moving backwards (e.g. boats on slipways).
+    * Except when standing in opposition to movement (e.g. the "stop arm" checkpoint officers).
   * Hand tools should be pointed to the right.
   * Icons with major and minor elements positioned side-by-side should have the major element on the left and minor element on the right.
-  * Multiple icons for different orientations generally isn't useful. Users can manually rotate or flip icons as needed.
+  * Multiple icons for different orientations generally isn't useful. Users can manually rotate or flip icons if desired.
+    * Except when a different orientation gives the icon a different meaning (e.g. arrows).
 
 #### SVGs
 
@@ -116,7 +119,12 @@ If the following sections seem too technical or intimidating, feel free to just 
 * Filenames should be literal and descriptive at the risk of being verbose.
   * E.g. prefer <img src="https://pinhead.ink/v1/giraffe.svg" height="15px" width="15px"/> `giraffe` to `zoo` and <img src="https://pinhead.ink/v1/greek_cross.svg" height="15px" width="15px"/> `greek_cross` to `medicine`.
 * Two files should have similar names if the components of their icons are similar.
-* The subdirectory of an icon is not important.
+* Two files cannot share a name, even if they are in different subdirectories.
+
+#### Subdirectories
+* The subdirectory of an icon is used only for developer-side convenience and has no effect on distributed icons.
+* Files are broadly organized by design, not by content.
+* Some subdirectories contain README.md files which give more detailed information.
 
 ### AI/ML policy
 
