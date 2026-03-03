@@ -7679,6 +7679,15 @@
           "ticket",
           "envelope_in_slot"
         ]
+      },
+      {
+        "newId": "shopping_bag_with_heart",
+        "by": "@quincylvania",
+        "inspo": [
+          "shopping_bag",
+          "heart"
+        ],
+        "osmcarto": "shop/charity"
       }
     ]
   }
