@@ -7577,5 +7577,15 @@
         "inspo": "plane"
       }
     ]
+  },
+  {
+    "majorVersion": "10",
+    "date": "2026-03-03",
+    "iconChanges": [
+      {
+        "newId": "flat_head_thumb_tack",
+        "by": "@quincylvania"
+      }
+    ]
   }
 ]
