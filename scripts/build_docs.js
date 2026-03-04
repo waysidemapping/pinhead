@@ -1,5 +1,5 @@
 import { execSync } from "child_process";
-import { readFileSync, existsSync, renameSync, rmSync, copyFileSync, mkdirSync } from "fs";
+import { readFileSync, existsSync, renameSync, rmSync, copyFileSync, mkdirSync, globSync, writeFileSync } from "fs";
 import { join } from "path";
 
 const packageName = "@waysidemapping/pinhead";
@@ -54,10 +54,29 @@ function ensureEmptyDir(dir) {
 ensureEmptyDir('tmp');
 ensureEmptyDir('docs/srcicons');
 
+const srciconsIndex = {};
+
 for (const importSource of importSources) {
-  execSync(`git clone ${importSource.repo} "tmp/${importSource.id}"`)
+  execSync(`git clone --depth 1 ${importSource.repo} "tmp/${importSource.id}"`)
   const srcDir = join(`tmp/${importSource.id}`, importSource.iconDir);
-  execSync(`cp -r "${srcDir}/." "docs/srcicons/${importSource.id}"`);
+  const targetDir = `docs/srcicons/${importSource.id}`;
+  execSync(`cp -r "${srcDir}/." "${targetDir}"`);
+
+  srciconsIndex[importSource.id] = {};
+
+  const ignoreFilesRegex = importSource.ignoreFiles && new RegExp(importSource.ignoreFiles);
+  globSync(`${targetDir}/**/*.svg`).forEach(file => {
+    const id = file.slice(targetDir.length + 1, -4);
+    if (importSource.filenameSuffix && !id.endsWith(importSource.filenameSuffix)) {
+      return;
+    }
+    if (ignoreFilesRegex && ignoreFilesRegex.test(id)) {
+      return;
+    }
+    srciconsIndex[importSource.id][id] = {};
+  });
 }
+
+writeFileSync('docs/srcicons/index.json', JSON.stringify(srciconsIndex));
 
 rmSync('tmp', { recursive: true, force: true });

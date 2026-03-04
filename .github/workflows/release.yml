@@ -41,7 +41,8 @@ jobs:
       - name: Create GitHub Release
         run: |
           PACKAGE_FILE=$(ls *.tgz)
-          gh release create "${GITHUB_REF_NAME}" "$PACKAGE_FILE" \
+          ZIP_FILE=$(ls *.zip)
+          gh release create "${GITHUB_REF_NAME}" "$PACKAGE_FILE" "$ZIP_FILE" \
             --title "${GITHUB_REF_NAME}" \
             --notes-file RELEASE_NOTES.md
         env:

@@ -1,6 +1,6 @@
 {
   "name": "@waysidemapping/pinhead",
-  "version": "6.0.0-dev",
+  "version": "10.0.0",
   "type": "module",
   "description": "Quality public domain icons for your map pins",
   "license": "CC0-1.0",
@@ -32,17 +32,21 @@
     "access": "public"
   },
   "scripts": {
-    "dist": "npm run check_icons && npm run build_dist && npm run check_changelog && cp metadata/changelog.json dist/changelog.json && cp metadata/external_sources.json dist/external_sources.json",
-    "build_docs": "node scripts/build_docs.js",
+    "dist": "npm run dist_package && npm run dist_qgis_plugin",
+    "dist_package": "npm run check_icons && npm run build_dist && npm run check_changelog && cp metadata/changelog.json dist/changelog.json && cp metadata/external_sources.json dist/external_sources.json",
+    "dist_qgis_plugin": "npm run check_icons && npm run build_qgis_plugin",
+    "build_docs": "node scripts/build_docs.js && npm view @waysidemapping/pinhead time --json > docs/npm_publish_dates.json",
     "check_changelog": "node scripts/check_changelog.js",
-    "build_docs_for_preview": "npm run build_docs && npm run dist && node scripts/build_preview_docs.js",
+    "build_docs_for_preview": "npm run build_docs && npm run dist_package && node scripts/build_preview_docs.js",
     "build_dist": "node scripts/build_dist.js",
+    "build_qgis_plugin": "node scripts/build_qgis_plugin.js",
     "check_icons": "node scripts/check_icons.js",
     "serve": "node serve.js"
   },
   "devDependencies": {
     "chalk": "^5.2.0",
     "svg-path-parse": "^1.1.3",
-    "xmlbuilder2": "^4.0.3"
+    "xmlbuilder2": "^4.0.3",
+    "archiver": "^7.0.1"
   }
 }

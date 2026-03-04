@@ -1,0 +1,28 @@
+[general]
+name=Pinhead SVG Icons
+description=Quality public domain icons for your map pins
+about=This is the official QGIS plugin for the Pinhead map icon pack. Pinhead is a cartography-first library of 1,000+ public domain map icons, or "pinheads". It includes standardized versions of icons from some of the most popular open-license icon sources for mapmaking: Maki, Temaki, OpenStreetMap Carto, and the National Park Service.
+
+  Upon installing this plugin, the Pinhead icons will become available in the SVG browser. For example, to use the icons with a point layer:
+    
+    1. Open the Layer Properties window
+    2. Go to the Symbology tab
+    3. Select or add a marker
+    4. Select the "SVG Marker" symbol layer type
+    5. Select "User Symbols" -> "Pinhead map icons by Wayside Mapping" under SVG Groups in the SVG browser
+    6. Select the icon you want to use
+    7. Style it however you like!
+    
+  Note that if you uninstall this plugin future then these icons will disappear from your project. You can reinstall this plugin at any time to recover them. If you want to share a project between setups, it is highly recommended to set relative save paths at: Project -> Properties -> General -> Save paths -> Relative. However, the only way to ensure truly persistent icons is to copy the SVG files directly into your project directory.
+  
+  Pinhead is an active project which sees frequent releases of new and improved icons. Occassionally, icons may be renamed or redesigned, which may affect your projects. Please read the release notes before updating this plugin to determine if action is needed.
+icon=logo.png
+version={{VERSION}}
+changelog=https://github.com/waysidemapping/pinhead/releases/tag/v{{VERSION}}
+qgisMinimumVersion=3.16
+author=Wayside Mapping
+email=quincy@waysidemapping.org
+homepage=https://pinhead.ink
+repository=https://github.com/waysidemapping/pinhead
+tracker=https://github.com/waysidemapping/pinhead/issues
+tags=icons,markers,symbols,symbology,cartography,pictograms,svg

@@ -29,12 +29,14 @@ function validateChangelog() {
   const iconChangeProps = [
     "oldId",
     "newId",
+    "edit",
     "by",
     "inspo",
     "inspoBy",
     "src",
     "srcBy",
-    "importBy"
+    "importBy",
+    "issue"
   ].concat(importSources.map(source => source.id));
 
   const changelogPath = 'metadata/changelog.json';
@@ -76,10 +78,6 @@ function validateChangelog() {
         }
         if (iconChange.oldId && iconChange.src) {
           console.error(`Unexpected both "src": "${iconChange.src}" and "oldId": "${iconChange.oldId}" for "${iconChange.newId}" in version ${v}`)
-          return;
-        }
-        if (iconChange.by && iconChange.src) {
-          console.error(`Unexpected both "src": "${iconChange.src}" and "by": "${iconChange.by}" for "${iconChange.newId}" in version ${v}`)
           return;
         }
         if (iconChange.importBy && !iconChange.src) {
@@ -189,6 +187,8 @@ function validateChangelog() {
 
 function printTextForChangelog(changelog) {
   const newV = changelog.majorVersion;
+  console.log(`## [${newV}.0.0] - ${changelog.date}`);
+  console.log('');
   const oldV = parseInt(newV) - 1;
   const addedIcons = [], deletedIcons = [], renamedIcons = [], redesignedIcons = [], renamedAndRedesignedIcons = [];
   changelog.iconChanges.forEach(iconChange => {
@@ -220,7 +220,11 @@ function printTextForChangelog(changelog) {
     console.log('### Added icons');
     console.log('');
     addedIcons.forEach(iconChange => {
-      console.log(`- <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> Add \`${iconChange.newId}\``);
+      let str = `- <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> Add \`${iconChange.newId}\``;
+      if (iconChange.by) {
+        str += ` by [${iconChange.by}](https://github.com/${iconChange.by.slice(1)})`;
+      }
+      console.log(str);
     });
     console.log('');
   }
@@ -264,7 +268,7 @@ async function cloneTempRepos(repos, workFunction) {
     const execAsync = promisify(exec);
     console.log("Cloning repos...")
     await Promise.all(
-      repos.map(repoUrl => execAsync(`git clone ${repoUrl} "${repoPath(repoUrl)}"`))
+      repos.map(repoUrl => execAsync(`git clone --depth 1  ${repoUrl} "${repoPath(repoUrl)}"`))
     );
     console.log("All repos cloned");
 

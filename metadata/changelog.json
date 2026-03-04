@@ -1,6 +1,7 @@
 [
   {
     "majorVersion": "1",
+    "date": "2026-02-19",
     "iconChanges": [
       {
         "newId": "adit_profile",
@@ -129,6 +130,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "maki": "harbor",
+        "nps": "marina",
         "osmcarto": "amenity/ferry"
       },
       {
@@ -448,7 +450,8 @@
       },
       {
         "newId": "bench",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "osmcarto": "amenity/bench"
       },
       {
         "newId": "bench_with_backrest",
@@ -1157,6 +1160,7 @@
         "importBy": "@quincylvania",
         "americana": "poi_charging_station",
         "maki": "charging-station",
+        "nps": "electric-car-charging",
         "osmcarto": "amenity/charging_station"
       },
       {
@@ -1182,7 +1186,11 @@
       {
         "newId": "chevron_up_tall_outline",
         "by": "@quincylvania",
-        "opentrailmap": "lock"
+        "opentrailmap": [
+          "lock",
+          "lock-canoeable",
+          "lock-hazard"
+        ]
       },
       {
         "newId": "chicane_arrow",
@@ -1573,7 +1581,10 @@
         "newId": "crosswalk_markings_zebra",
         "src": "temaki",
         "importBy": "@quincylvania",
-        "temaki": "crossing_markings-zebra"
+        "temaki": [
+          "crossing_markings-zebra",
+          "crossing_markings-zebra_bicolour"
+        ]
       },
       {
         "newId": "crosswalk_markings_zebra_double",
@@ -1627,7 +1638,11 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "maki": "dam",
-        "opentrailmap": "dam"
+        "opentrailmap": [
+          "dam",
+          "dam-canoeable",
+          "dam-hazard"
+        ]
       },
       {
         "newId": "dancer_with_sparkles",
@@ -1950,7 +1965,8 @@
         "importBy": "@quincylvania",
         "americana": "poi_envelope",
         "maki": "post",
-        "nps": "post-office"
+        "nps": "post-office",
+        "osmcarto": "amenity/post_office"
       },
       {
         "newId": "envelope_in_slot",
@@ -2265,6 +2281,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "osmcarto": "barrier/gate",
         "temaki": "gate"
       },
       {
@@ -2400,7 +2417,8 @@
         "importBy": "@quincylvania",
         "americana": "poi_health_cross",
         "maki": "hospital",
-        "nps": "first-aid"
+        "nps": "first-aid",
+        "osmcarto": "amenity/hospital"
       },
       {
         "newId": "guidepost",
@@ -3701,7 +3719,11 @@
         "importBy": "@quincylvania",
         "americana": "poi_p",
         "maki": "parking",
-        "nps": "parking"
+        "nps": "parking",
+        "osmcarto": [
+          "amenity/parking",
+          "amenity/parking_subtle"
+        ]
       },
       {
         "newId": "parking_p_under_roof",
@@ -5745,7 +5767,8 @@
         "newId": "toll_booth",
         "src": "maki",
         "importBy": "@quincylvania",
-        "maki": "toll"
+        "maki": "toll",
+        "osmcarto": "barrier/toll_booth"
       },
       {
         "newId": "toll_gantry",
@@ -5918,7 +5941,8 @@
         "newId": "trash_can",
         "src": "maki",
         "importBy": "@quincylvania",
-        "maki": "waste-basket"
+        "maki": "waste-basket",
+        "osmcarto": "amenity/waste_basket"
       },
       {
         "newId": "treasure_map",
@@ -6377,10 +6401,7 @@
         "newId": "waterfall",
         "src": "maki",
         "importBy": "@quincylvania",
-        "maki": "waterfall",
-        "nps": "waterfall",
-        "opentrailmap": "waterfall",
-        "osmcarto": "natural/waterfall"
+        "maki": "waterfall"
       },
       {
         "newId": "waterfowl",
@@ -6554,6 +6575,7 @@
   },
   {
     "majorVersion": "2",
+    "date": "2026-02-20",
     "iconChanges": [
       {
         "oldId": "cross_latin",
@@ -6561,7 +6583,8 @@
       },
       {
         "oldId": "flower_boquette",
-        "newId": "flower_bouquet"
+        "newId": "flower_bouquet",
+        "issue": "1"
       },
       {
         "oldId": "plan_in_raised_planter",
@@ -6620,6 +6643,7 @@
   },
   {
     "majorVersion": "3",
+    "date": "2026-02-21",
     "iconChanges": [
       {
         "newId": "car_profile",
@@ -6688,6 +6712,7 @@
   },
   {
     "majorVersion": "4",
+    "date": "2026-02-24",
     "iconChanges": [
       {
         "oldId": "bread",
@@ -6696,7 +6721,8 @@
       },
       {
         "newId": "loaf_of_bread_with_steam",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "issue": "3"
       },
       {
         "newId": "loaf_of_pan_bread",
@@ -6704,7 +6730,8 @@
       },
       {
         "newId": "loaf_of_pan_bread_with_steam",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "issue": "3"
       },
       {
         "newId": "station_wagon",
@@ -6716,11 +6743,13 @@
       },
       {
         "oldId": "car_profile",
-        "newId": "sedan"
+        "newId": "sedan",
+        "issue": "7"
       },
       {
         "oldId": "car_profile_with_raised_hood",
-        "newId": "sedan_with_raised_hood"
+        "newId": "sedan_with_raised_hood",
+        "issue": "7"
       },
       {
         "newId": "car_with_taxi_checkerboard",
@@ -6742,6 +6771,7 @@
   },
   {
     "majorVersion": "5",
+    "date": "2026-02-25",
     "iconChanges": [
       {
         "newId": "clothes_hanger_holding_cloth",
@@ -6752,17 +6782,21 @@
         "newId": "f22_raptor_fighter_jet",
         "src": "americana",
         "importBy": "@quincylvania",
+        "issue": "4",
         "americana": "poi_military_plane"
       },
       {
         "newId": "hospital_h",
         "by": "@quincylvania",
-        "americana": "poi_hospital"
+        "issue": "4",
+        "americana": "poi_hospital",
+        "nps": "hospital"
       },
       {
         "newId": "bus",
         "by": "@quincylvania",
         "inspo": "bus_with_destination_display",
+        "issue": "4",
         "americana": [
           "poi_bus",
           "poi_bus_circle"
@@ -6771,21 +6805,24 @@
       {
         "newId": "dome_with_flag",
         "by": "@quincylvania",
-        "inspo": [
-          "classical_building_with_dome_and_flag",
-          "https://raw.githubusercontent.com/osm-americana/openstreetmap-americana/94ec9f740619f3cd09fb0877487fe180df2fe62b/icons/poi_town_hall.svg"
-        ],
+        "inspo": "classical_building_with_dome_and_flag",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "issue": "4",
         "americana": "poi_town_hall"
       },
       {
         "newId": "book_with_raised_cover",
         "by": "@quincylvania",
-        "americana": "poi_book_upright"
+        "issue": "4",
+        "americana": "poi_book_upright",
+        "nps": "bookstore"
       },
       {
         "newId": "memorial_stone",
         "by": "@quincylvania",
         "inspo": "memorial_stone_with_inscription",
+        "issue": "4",
         "americana": "poi_gravestone"
       },
       {
@@ -6797,12 +6834,14 @@
         "newId": "badge_shield",
         "src": "americana",
         "importBy": "@quincylvania",
+        "issue": "4",
         "americana": "poi_police_shield"
       },
       {
         "newId": "badge_shield_with_fire",
         "src": "americana",
         "importBy": "@quincylvania",
+        "issue": "4",
         "americana": "poi_fire_station"
       },
       {
@@ -6820,6 +6859,7 @@
           "circle_outline",
           "star"
         ],
+        "issue": "4",
         "americana": "place_star_in_circle"
       },
       {
@@ -6829,6 +6869,7 @@
           "cocktail",
           "https://raw.githubusercontent.com/osm-americana/openstreetmap-americana/55926e54bb3191d8deb2762283fcc0bc7d7ab0f1/icons/poi_martini_glass.svg"
         ],
+        "issue": "4",
         "americana": "poi_martini_glass"
       },
       {
@@ -6839,6 +6880,7 @@
           "knife",
           "https://raw.githubusercontent.com/osm-americana/openstreetmap-americana/24204851150e10ba7f00bda59ab5702cfe96e77f/icons/poi_restaurant.svg"
         ],
+        "issue": "4",
         "americana": [
           "poi_restaurant",
           "poi_restaurant_circle"
@@ -6851,12 +6893,14 @@
           "sleepers_in_bunkbeds",
           "https://raw.githubusercontent.com/osm-americana/openstreetmap-americana/42499fb9a57dae4bf2bdb97050d3067455dd21eb/icons/poi_hostel.svg"
         ],
+        "issue": "4",
         "americana": "poi_hostel"
       },
       {
         "newId": "square_dot",
         "src": "americana",
         "importBy": "@quincylvania",
+        "issue": "4",
         "americana": [
           "poi_square_dot",
           "poi_pow_generic"
@@ -6865,16 +6909,25 @@
       {
         "newId": "pennant_on_square",
         "by": "@quincylvania",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "issue": "4",
         "americana": "poi_school"
       },
       {
         "newId": "star_and_crescent_on_square",
         "by": "@quincylvania",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "issue": "4",
         "americana": "poi_pow_muslim"
       },
       {
         "newId": "latin_cross_on_square",
         "by": "@quincylvania",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "issue": "4",
         "americana": "poi_pow_christian"
       },
       {
@@ -6885,6 +6938,9 @@
       {
         "newId": "flaming_chalice_on_square",
         "by": "@quincylvania",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "issue": "4",
         "americana": "poi_pow_uu"
       },
       {
@@ -6893,7 +6949,10 @@
       },
       {
         "newId": "star_of_david",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "src": "osmcarto",
+        "importBy": "@quincylvania",
+        "osmcarto": "religion/jewish"
       },
       {
         "oldId": "star_of_david",
@@ -6906,37 +6965,56 @@
       {
         "newId": "star_of_david_on_square",
         "by": "@quincylvania",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "issue": "4",
         "americana": "poi_pow_jewish"
       },
       {
         "newId": "dharma_wheel_on_square",
         "by": "@quincylvania",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "issue": "4",
         "americana": "poi_pow_buddhist"
       },
       {
         "newId": "yin_yang_on_square",
         "by": "@quincylvania",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "issue": "4",
         "americana": "poi_pow_taoist"
       },
       {
         "newId": "torii_on_square",
         "by": "@quincylvania",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "issue": "4",
         "americana": "poi_pow_shinto"
       },
       {
         "newId": "khanda_on_square",
         "by": "@quincylvania",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "issue": "4",
         "americana": "poi_pow_sikh"
       },
       {
         "newId": "om_on_square",
         "by": "@quincylvania",
+        "src": "americana",
+        "importBy": "@quincylvania",
+        "issue": "4",
         "americana": "poi_pow_hindu"
       }
     ]
   },
   {
     "majorVersion": "6",
+    "date": "2026-02-26",
     "iconChanges": [
       {
         "newId": "fallout_shelter_symbol",
@@ -6947,20 +7025,755 @@
         "by": "@quincylvania"
       },
       {
-        "newId": "terminal_screen_with_greater_than_prompt",
+        "newId": "pixel_ghost",
         "by": "@quincylvania"
+      },
+      {
+        "newId": "terminal_screen_with_greater_than_prompt",
+        "by": "@quincylvania",
+        "issue": "17"
       },
       {
         "newId": "terminal_screen_with_hash_prompt",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "issue": "17"
       },
       {
         "newId": "terminal_screen_with_dollar_prompt",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "issue": "17"
       },
       {
         "newId": "terminal_screen_with_percent_prompt",
+        "by": "@quincylvania",
+        "issue": "17"
+      },
+      {
+        "newId": "rss",
+        "by": "@quincylvania",
+        "inspo": "wifi"
+      },
+      {
+        "newId": "chocolate_drop",
+        "src": "temaki",
+        "srcBy": "@bhousel",
+        "importBy": "@quincylvania",
+        "temaki": "chocolate"
+      },
+      {
+        "newId": "womens_and_mens_separate_restrooms_symbol",
+        "by": "@quincylvania",
+        "inspo": "womens_and_mens_restroom_symbol",
+        "nps": "restrooms",
+        "osmcarto": "amenity/toilets"
+      },
+      {
+        "oldId": "shopping_cart",
+        "newId": "shopping_cart",
+        "edit": "flip",
         "by": "@quincylvania"
+      },
+      {
+        "oldId": "person_shushing",
+        "newId": "person_shushing",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "pedestrian",
+        "newId": "person_walking"
+      },
+      {
+        "oldId": "sign_beside_pedestrian",
+        "newId": "sign_beside_person_walking"
+      },
+      {
+        "oldId": "pedestrian_wearing_backpack_holding_hiking_pole",
+        "newId": "person_wearing_backpack_walking_with_hiking_pole"
+      },
+      {
+        "oldId": "pedestrian_wearing_backpack_holding_hiking_pole_under_roof",
+        "newId": "person_wearing_backpack_walking_with_hiking_pole_in_gable_roofed_building"
+      },
+      {
+        "oldId": "pedestrian_under_icy_eave",
+        "newId": "person_walking_under_icy_eave"
+      },
+      {
+        "oldId": "pedestrian_using_white_cane",
+        "newId": "person_walking_with_white_cane"
+      },
+      {
+        "oldId": "pedestrian_between_walls",
+        "newId": "person_walking_between_walls"
+      },
+      {
+        "oldId": "pedestrian_on_crosswalk",
+        "newId": "person_walking_on_crosswalk"
+      },
+      {
+        "oldId": "pedestrian_holding_shopping_bags",
+        "newId": "person_holding_shopping_bags_walking"
+      },
+      {
+        "oldId": "motorboater_on_water",
+        "newId": "person_driving_motorboat_on_water"
+      },
+      {
+        "oldId": "bicyclist",
+        "newId": "person_riding_bicycle"
+      },
+      {
+        "oldId": "bicyclist_on_crosswalk",
+        "newId": "person_riding_bicycle_on_crosswalk"
+      },
+      {
+        "oldId": "pedestrian_and_cyclist",
+        "newId": "person_walking_and_person_riding_bicycle"
+      },
+      {
+        "oldId": "pedestrian_and_cyclist_on_crosswalk",
+        "newId": "person_walking_and_person_riding_bicycle_on_crosswalk"
+      },
+      {
+        "oldId": "swimmer_in_water",
+        "newId": "person_swimming_in_water"
+      },
+      {
+        "oldId": "wind_surfer_on_water",
+        "newId": "person_wind_surfing_on_water"
+      },
+      {
+        "oldId": "kayaker_on_water",
+        "newId": "person_wearing_helmet_paddling_kayak_on_water"
+      },
+      {
+        "oldId": "pedal_boater_on_water",
+        "newId": "person_riding_pedal_boat_on_water"
+      },
+      {
+        "oldId": "jet_skier_on_water",
+        "newId": "person_riding_jetski_on_water"
+      },
+      {
+        "oldId": "diver_above_water",
+        "newId": "person_diving_into_water"
+      },
+      {
+        "oldId": "towed_skier_on_water",
+        "newId": "person_tow_skiing_on_water"
+      },
+      {
+        "oldId": "runner",
+        "newId": "person_running"
+      },
+      {
+        "oldId": "sleeper",
+        "newId": "person_sleeping"
+      },
+      {
+        "oldId": "sleeper_in_shelter",
+        "newId": "person_sleeping_in_shelter"
+      },
+      {
+        "oldId": "car_beside_sleeper_in_bed",
+        "newId": "car_beside_person_sleeping_in_bed"
+      },
+      {
+        "oldId": "sleeper_in_bed",
+        "newId": "person_sleeping_in_bed"
+      },
+      {
+        "oldId": "sleepers_in_bunkbeds",
+        "newId": "people_sleeping_in_bunkbeds"
+      },
+      {
+        "oldId": "sleepers_in_opposing_bunkbeds",
+        "newId": "people_sleeping_in_opposing_bunkbeds"
+      },
+      {
+        "oldId": "climber_with_climbing_rope",
+        "newId": "person_climbing_with_climbing_rope"
+      },
+      {
+        "oldId": "dancer_with_sparkles",
+        "newId": "person_dancing_with_sparkles"
+      },
+      {
+        "oldId": "skateboarder",
+        "newId": "person_riding_skateboard"
+      },
+      {
+        "oldId": "cross_country_skier",
+        "newId": "person_cross_country_skiing"
+      },
+      {
+        "oldId": "aerial_chairlift_with_skier",
+        "newId": "person_wearing_skis_riding_chairlift"
+      },
+      {
+        "oldId": "mountaineer_with_backpack_climbing_cliff",
+        "newId": "person_wearing_backpack_scrambling_up_cliff"
+      },
+      {
+        "oldId": "car_with_driver_and_passenger",
+        "newId": "people_in_car"
+      },
+      {
+        "oldId": "snowshoer",
+        "newId": "person_snowshoeing"
+      },
+      {
+        "oldId": "snowboarder",
+        "newId": "person_snowboarding_downhill"
+      },
+      {
+        "oldId": "sledder",
+        "newId": "person_sledding_downhill"
+      },
+      {
+        "oldId": "ski_jumper",
+        "newId": "person_ski_jumping"
+      },
+      {
+        "oldId": "volleyball_player",
+        "newId": "person_spiking_volleyball"
+      },
+      {
+        "oldId": "tennis_player",
+        "newId": "person_playing_tennis"
+      },
+      {
+        "oldId": "theater_with_audience",
+        "newId": "people_sitting_in_theater"
+      },
+      {
+        "oldId": "soccer_player",
+        "newId": "person_playing_soccer"
+      },
+      {
+        "oldId": "ice_skater",
+        "newId": "person_ice_skating"
+      },
+      {
+        "oldId": "inline_skater",
+        "newId": "person_inline_skating"
+      },
+      {
+        "oldId": "downhill_skier",
+        "newId": "person_skiing_downhill"
+      },
+      {
+        "oldId": "dog_sledder",
+        "newId": "person_riding_dog_sled"
+      },
+      {
+        "oldId": "scuba_diver",
+        "newId": "person_wearing_scuba_gear_diving"
+      },
+      {
+        "oldId": "baseball_batter",
+        "newId": "person_baseball_batting"
+      },
+      {
+        "oldId": "cricket_batter",
+        "newId": "person_cricket_batting_at_cricket_ball"
+      },
+      {
+        "oldId": "public_speaker",
+        "newId": "person_speaking_to_amphitheater"
+      },
+      {
+        "oldId": "spelunker",
+        "newId": "person_wearing_backpack_and_headlamp_crouching"
+      },
+      {
+        "oldId": "person_padding_raft_on_water",
+        "newId": "person_wearing_helmet_padding_raft_on_water"
+      },
+      {
+        "oldId": "portrait_of_person_in_hat_in_frame",
+        "newId": "profile_of_person_in_hat_in_frame"
+      },
+      {
+        "oldId": "golfer",
+        "newId": "person_swinging_golf_club"
+      },
+      {
+        "oldId": "golfer_and_golf_pin",
+        "newId": "person_swinging_golf_club_beside_golf_pin"
+      },
+      {
+        "oldId": "golfer_and_windmill",
+        "newId": "person_swinging_golf_club_beside_windmill"
+      },
+      {
+        "oldId": "horse_racer",
+        "newId": "person_jockeying_racehorse"
+      },
+      {
+        "oldId": "boat_racer_on_water",
+        "newId": "person_boat_racing_in_waves"
+      },
+      {
+        "oldId": "bicycle_racer",
+        "newId": "person_bicycle_racing"
+      },
+      {
+        "oldId": "person_riding_atv",
+        "newId": "person_wearing_helmet_riding_atv"
+      },
+      {
+        "oldId": "waiter_holding_tray_with_wine_glass",
+        "newId": "person_wearing_waiters_attire_holding_tray_with_wine_glass"
+      }
+    ]
+  },
+  {
+    "majorVersion": "7",
+    "date": "2026-02-27",
+    "iconChanges": [
+      {
+        "newId": "canoe_on_sedan",
+        "by": "@quincylvania",
+        "inspo": "sedan"
+      },
+      {
+        "newId": "canoe_on_station_wagon",
+        "by": "@quincylvania",
+        "inspo": "station_wagon"
+      },
+      {
+        "newId": "canoe_on_pickup_truck",
+        "by": "@quincylvania",
+        "inspo": "pickup_truck"
+      },
+      {
+        "newId": "pickup_truck_with_truck_cap",
+        "by": "@quincylvania",
+        "inspo": "pickup_truck"
+      },
+      {
+        "newId": "conifer_tree_with_antenna_array",
+        "by": "@quincylvania",
+        "inspo": [
+          "conifer_tree",
+          "pole_with_antenna_array"
+        ]
+      },
+      {
+        "newId": "shed",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "plus",
+        "by": "@quincylvania",
+        "inspo": "plus_squat"
+      },
+      {
+        "newId": "roman_numeral_i",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_ii",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_iii",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_iv",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_v",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_vi",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_vii",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_viii",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_ix",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_x",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_xi",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_xii",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_xx",
+        "by": "@quincylvania",
+        "issue": "11"
+      }
+    ]
+  },
+  {
+    "majorVersion": "8",
+    "date": "2026-02-28",
+    "iconChanges": [
+      {
+        "newId": "syrup_jug",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "syrup_jug_with_maple_leaf",
+        "by": "@quincylvania",
+        "inspo": "maple_leaf"
+      },
+      {
+        "newId": "syrup_jug_with_maple_leaf_and_droplet",
+        "by": "@quincylvania",
+        "inspo": "maple_leaf"
+      },
+      {
+        "newId": "slice_of_pan_bread",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "slice_of_pan_bread_outline",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "ladder",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "step_ladder",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "step_ladder_doubled_sided",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "wifi_weak_signal",
+        "by": "@quincylvania",
+        "inspo": "wifi"
+      },
+      {
+        "newId": "wifi_weakest_signal",
+        "by": "@quincylvania",
+        "inspo": "wifi"
+      },
+      {
+        "newId": "wifi_no_signal",
+        "by": "@quincylvania",
+        "inspo": "wifi"
+      },
+      {
+        "newId": "wifi_no_signal_with_x",
+        "by": "@quincylvania",
+        "inspo": "wifi"
+      },
+      {
+        "newId": "phone_bars",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "phone_bars_weak_signal",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "phone_bars_weaker_signal",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "phone_bars_weakest_signal",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "phone_bars_no_signal",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "phone_bars_no_signal_with_x",
+        "by": "@quincylvania"
+      }
+    ]
+  },
+  {
+    "majorVersion": "9",
+    "date": "2026-03-01",
+    "iconChanges": [
+      {
+        "newId": "sugar_cubes",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "sugarcane_stalk_with_leaves",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "sugarcane_stalk_with_top_leaves",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "sugarcane_stalks_with_top_leaves",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "syrup_jug_with_sugarcane_stalk_with_leaves",
+        "by": "@quincylvania",
+        "inspo": "syrup_jug_with_maple_leaf"
+      },
+      {
+        "newId": "syrup_jug_with_sugarcane_stalk_with_leaves_and_droplet",
+        "by": "@quincylvania",
+        "inspo": "syrup_jug_with_maple_leaf_and_droplet"
+      },
+      {
+        "newId": "pixel_conifer_tree",
+        "by": "@quincylvania",
+        "inspo": "conifer_tree"
+      },
+      {
+        "newId": "pixel_broadleaved_tree",
+        "by": "@quincylvania",
+        "inspo": "broadleaved_tree"
+      },
+      {
+        "newId": "pixel_apple",
+        "by": "@quincylvania",
+        "inspo": "apple"
+      },
+      {
+        "newId": "pixel_megalith",
+        "by": "@quincylvania",
+        "inspo": "megalith"
+      },
+      {
+        "newId": "pixel_star",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "pixel_circle",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "pixel_circle_outline",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "pixel_circle_with_star",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "pixel_house_with_chimney",
+        "by": "@quincylvania",
+        "inspo": "house_with_chimney"
+      },
+      {
+        "newId": "pixel_house_with_flag",
+        "by": "@quincylvania",
+        "inspo": "house_with_flag"
+      },
+      {
+        "newId": "pixel_classical_building",
+        "by": "@quincylvania",
+        "inspo": "classical_building"
+      },
+      {
+        "newId": "pixel_classical_building_with_flag",
+        "by": "@quincylvania",
+        "inspo": "classical_building_with_flag"
+      },
+      {
+        "newId": "pixel_classical_building_with_dome_and_flag",
+        "by": "@quincylvania",
+        "inspo": "classical_building_with_dome_and_flag"
+      },
+      {
+        "newId": "pixel_dome_with_flag",
+        "by": "@quincylvania",
+        "inspo": "dome_with_flag"
+      },
+      {
+        "newId": "pixel_plane",
+        "by": "@quincylvania",
+        "inspo": "plane"
+      }
+    ]
+  },
+  {
+    "majorVersion": "10",
+    "date": "2026-03-03",
+    "iconChanges": [
+      {
+        "newId": "person_riding_bicycle_up_uneven_slope",
+        "src": "https://raw.githubusercontent.com/mapbox/maki/refs/heads/valleyofdawn/icons/mountain-bike-15.svg",
+        "importBy": "@dschep",
+        "issue": "9"
+      },
+      {
+        "newId": "person_riding_bicycle_down_uneven_slope",
+        "by": "@dschep",
+        "inspo": "person_riding_bicycle_up_uneven_slope",
+        "issue": "9"
+      },
+      {
+        "newId": "cargobike",
+        "by": "@dschep"
+      },
+      {
+        "newId": "cargobike_on_parking_line",
+        "by": "@dschep",
+        "inspo": [
+          "cargobike",
+          "parking_line"
+        ]
+      },
+      {
+        "newId": "cargobike_in_parking_structure",
+        "by": "@dschep",
+        "inspo": [
+          "cargobike",
+          "parking_structure"
+        ]
+      },
+      {
+        "newId": "flat_head_thumb_tack",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "flag",
+        "newId": "flagpole_with_flag"
+      },
+      {
+        "newId": "flag",
+        "by": "@quincylvania",
+        "inspo": "flagpole_with_flag"
+      },
+      {
+        "newId": "flagstick_with_pennant",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "flagstick_with_pennant_in_hole",
+        "by": "@quincylvania",
+        "osmcarto": "leisure/golf_pin"
+      },
+      {
+        "newId": "flagstick_with_flag",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "flagstick_with_flag_in_hole",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "pennant_on_square",
+        "newId": "flagstick_with_pennant_on_square"
+      },
+      {
+        "oldId": "person_swinging_golf_club_beside_golf_pin",
+        "newId": "person_swinging_golf_club_beside_flagstick_with_pennant"
+      },
+      {
+        "oldId": "waterfall",
+        "newId": "waterfall_with_froth",
+        "issue": "18"
+      },
+      {
+        "newId": "waterfall_into_water",
+        "src": "osmcarto",
+        "importBy": "@quincylvania",
+        "issue": "18",
+        "nps": "waterfall",
+        "opentrailmap": [
+          "waterfall",
+          "waterfall-canoeable",
+          "waterfall-hazard"
+        ],
+        "osmcarto": "natural/waterfall"
+      },
+      {
+        "newId": "waterfall",
+        "by": "@quincylvania",
+        "inspo": "waterfall_into_water",
+        "issue": "18"
+      },
+      {
+        "newId": "person_climbing",
+        "by": "@quincylvania",
+        "inspo": "person_climbing_with_climbing_rope"
+      },
+      {
+        "newId": "bus_within_guideway",
+        "by": "@quincylvania",
+        "inspo": "bus_with_destination_display_within_guideway"
+      },
+      {
+        "newId": "bus_with_pantograph",
+        "by": "@quincylvania",
+        "inspo": "bus_with_destination_display_and_pantograph"
+      },
+      {
+        "oldId": "ticket_in_slot",
+        "newId": "ticket_in_slot",
+        "by": "@quincylvania",
+        "inspo": [
+          "ticket",
+          "envelope_in_slot"
+        ]
+      },
+      {
+        "newId": "shopping_bag_with_heart",
+        "by": "@quincylvania",
+        "inspo": [
+          "shopping_bag",
+          "heart"
+        ],
+        "osmcarto": "shop/charity"
+      },
+      {
+        "newId": "shopping_bag_with_ampersand",
+        "by": "@quincylvania",
+        "inspo": [
+          "shopping_bag",
+          "ampersand"
+        ],
+        "osmcarto": "shop/department_store"
+      },
+      {
+        "newId": "music_notes_eighth",
+        "src": "osmcarto",
+        "importBy": "@quincylvania",
+        "osmcarto": "amenity/nightclub"
+      },
+      {
+        "newId": "pixel_anchor",
+        "by": "@quincylvania",
+        "inspo": "anchor"
       }
     ]
   }

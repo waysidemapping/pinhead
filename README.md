@@ -17,11 +17,15 @@ Pinhead is a library of free vector icons. There are other projects like this, b
 1. Cartography first
 2. 100% public domain
 
-Map icons need to be really small to support high visual density, so all of Pinhead icon's are intended to be legible at **15x15 pixels** minimum. This is much smaller than most other icon sets you'll find, but you can scale them up and they'll still look great. And since they're licensed **CC0**, you can use them anywhere for anything without restrictions.
+Map icons need to be really small to support high visual density, so all of Pinhead icon's are intended to be legible at **15x15 pixels** minimum. This is much smaller than most other icon sets you'll find, but you can scale them up and they'll still look great. And since they're licensed **CC0**, you can use them anywhere for free without restrictions.
+
+## Community and support
+
+A small community is developing around Pinhead! We're working to make this the best and largest library of public domain map icons anywhere on the web, but we can't do it alone. Come join us in the [#pinhead](https://osmus.slack.com/archives/C0AH40E4J9W) channel on [OSM US Slack](https://slack.openstreetmap.us/). Bring your questions, comments, and ideas, or feel free to [open an issue](https://github.com/waysidemapping/pinhead/issues/new) on GitHub. You can also contact me (@quincylvania) directly through any of the channels listed on [my website](https://waysidemapping.org).
 
 ## Usage
 
-There are a few easy ways to get and use the icons depending on what you're trying to do.
+There are a few easy ways to access the icons depending on what you're trying to do.
 
 Visit [pinhead.ink](https://pinhead.ink) to browse the icons. Each icon has a download link, a copyable `<svg>` code, and an embeddable `<img>` code. These links are permanent and will not break in the future even if an icon is deleted or renamed, so feel to save, share, or embed them.
 
@@ -40,12 +44,13 @@ Pinhead has no dependencies and is basically just a directory of SVG files. A fe
 - `dist/icons/index.json`: a list of all the available icons in this version
 - `dist/icons/index.complete.json`: same as the above but with the SVG code included inline
 - `dist/changelog.json`: a machine-readable list of icon additions, deletions, and renames between major versions
+- `dist/external_sources.json`: a detailed list of the external icons sources referenced in changelog.json
 
 #### Version numbers
 
 Pinhead uses a flavor of semantic versioning, with major releases (v2.0.0) corresponding to breaking changes, minor releases (v2.1.0) corresponding to backwards-compatible changes, and patch releases (v2.1.1) corresponding to fixes.
 
-When it comes to icons, renaming or deleting an icon, or making any visual modification, is a breaking change. Perhaps counterintuitively, adding a new icon is also considered a breaking change. The goal is clear version integrity, where each major version number refers to a complete set of icons with no differences between minor versions. This avoids common gotchas, like developers depending on a package like `^1.0.0` and potentially seeing different lists of icons in development vs. production in the case where v1.1.0 adds an icon.
+When it comes to icons: renaming or deleting an icon, or making any visual modification, is a breaking change. Perhaps counterintuitively, adding a new icon is also considered a breaking change. The goal is clear version integrity, where each major version number refers to a complete set of icons with no differences between minor versions. In effect, this means you can think of Pinhead v1 and Pinhead v2 as two static, independent icon sets. This avoids common gotchas, like developers depending on a package like `^1.0.0` and potentially seeing different lists of icons in development vs. production in the case where v1.1.0 adds an icon. 
 
 ## Where the icons are from
 
@@ -62,11 +67,11 @@ I've been cleaning up the seed icons by scaling them to the same size, conflatin
 
 If you know of other sources for public domain map icon that might be a good fit for Pinhead, I'd love to [hear about them](https://github.com/waysidemapping/pinhead/issues/new)!
 
-And finally, the icons come from the likes of you! I myself have been addings some totally new icons I've designed in support of [themap.is](https://github.com/waysidemapping/themap.is). I'm hoping for contributors to grow and sustain this icon library. Keep reading if you're interested.
+And finally, the icons come from the likes of you! I myself have been addings some totally new icons I've designed in support of [themap.is](https://github.com/waysidemapping/themap.is). I'm hoping for contributors to grow and sustain this icon library.
 
 ## Contributing
 
-Contributions to Pinhead are **open**. I'd love to make this the best and largest library of public domain map icons anywhere on the web, but I can't do it alone. If you have questions, comments, or art, by all means open an [issue](https://github.com/waysidemapping/pinhead/issues/new) or [pull request](https://github.com/waysidemapping/pinhead/pulls/new) :)
+Contributions to Pinhead are **open**. We'd love for you to be involved! If you'd like to add or improve some icons, by all means open a [pull request](https://github.com/waysidemapping/pinhead/pulls/new). See the [open issues](https://github.com/waysidemapping/pinhead/issues) to browse icons that folks have requested.
 
 ### Contributor FAQ 
 
@@ -99,9 +104,12 @@ If the following sections seem too technical or intimidating, feel free to just 
   * Multiple icons for different perspectives of the same thing can be okay if they're all iconic.
 * Orientation
   * People, animals, vehicles, etc. depicted in profile should be facing to the right.
+    * Except when moving backwards (e.g. boats on slipways).
+    * Except when standing in opposition to movement (e.g. the "stop arm" checkpoint officers).
   * Hand tools should be pointed to the right.
   * Icons with major and minor elements positioned side-by-side should have the major element on the left and minor element on the right.
-  * Multiple icons for different orientations generally isn't useful. Users can manually rotate or flip icons as needed.
+  * Multiple icons for different orientations generally isn't useful. Users can manually rotate or flip icons if desired.
+    * Except when a different orientation gives the icon a different meaning (e.g. arrows).
 
 #### SVGs
 
@@ -115,7 +123,12 @@ If the following sections seem too technical or intimidating, feel free to just 
 * Filenames should be literal and descriptive at the risk of being verbose.
   * E.g. prefer <img src="https://pinhead.ink/v1/giraffe.svg" height="15px" width="15px"/> `giraffe` to `zoo` and <img src="https://pinhead.ink/v1/greek_cross.svg" height="15px" width="15px"/> `greek_cross` to `medicine`.
 * Two files should have similar names if the components of their icons are similar.
-* The subdirectory of an icon is not important.
+* Two files cannot share a name, even if they are in different subdirectories.
+
+#### Subdirectories
+* The subdirectory of an icon is used only for developer-side convenience and has no effect on distributed icons.
+* Files are broadly organized by design, not by content.
+* Some subdirectories contain README.md files which give more detailed information.
 
 ### AI/ML policy
 
