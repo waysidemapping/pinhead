@@ -7754,6 +7754,26 @@
         "by": "@dschep",
         "inspo": "person_riding_bicycle_up_uneven_slope",
         "issue": "9"
+      },
+      {
+        "newId": "cargobike",
+        "by": "@dschep"
+      },
+      {
+        "newId": "cargobike_on_parking_line",
+        "by": "@dschep",
+        "inspo": [
+          "cargobike",
+          "parking_line"
+        ]
+      },
+      {
+        "newId": "cargobike_in_parking_structure",
+        "by": "@dschep",
+        "inspo": [
+          "cargobike",
+          "parking_structure"
+        ]
       }
     ]
   }
