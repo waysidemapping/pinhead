@@ -7853,6 +7853,10 @@
         "osmcarto": "tourism/camping"
       },
       {
+        "newId": "campsite_tipi_style_with_dollar",
+        "by": "@quincylvania"
+      },
+      {
         "newId": "campsites_tipi_style",
         "by": "@quincylvania",
         "issue": "52"
