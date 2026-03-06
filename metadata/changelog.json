@@ -7987,6 +7987,11 @@
         "inspo": "target_with_archery_arrow_at_bullseye"
       },
       {
+        "newId": "life_ring",
+        "by": "@westnordost",
+        "issue": "68"
+      },
+      {
         "newId": "person_carrying_ski",
         "by": [
           "@ycouble",
