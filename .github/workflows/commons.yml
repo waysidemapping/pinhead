@@ -1,0 +1,33 @@
+name: Upload icons to Wikimedia Commons
+
+on:
+  workflow_run:
+    workflows: ["Release"]
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "commons"
+  cancel-in-progress: false
+
+jobs:
+  commons:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Install
+        run: npm install
+      - name: Commons
+        env:
+          COMMONS_BOT_USERNAME: ${{ secrets.COMMONS_BOT_USERNAME }}
+          COMMONS_BOT_PASSWORD: ${{ secrets.COMMONS_BOT_PASSWORD }}
+        run: npm run commons
