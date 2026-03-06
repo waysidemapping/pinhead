@@ -32,6 +32,7 @@
     "access": "public"
   },
   "scripts": {
+    "commons": "npm run dist_package && npm run upload_icons_to_commons",
     "dist": "npm run dist_package && npm run dist_qgis_plugin",
     "dist_package": "npm run check_icons && npm run build_dist && npm run check_changelog && cp metadata/changelog.json dist/changelog.json && cp metadata/external_sources.json dist/external_sources.json",
     "dist_qgis_plugin": "npm run check_icons && npm run build_qgis_plugin",
@@ -41,12 +42,14 @@
     "build_dist": "node scripts/build_dist.js",
     "build_qgis_plugin": "node scripts/build_qgis_plugin.js",
     "check_icons": "node scripts/check_icons.js",
-    "serve": "node serve.js"
+    "serve": "node serve.js",
+    "upload_icons_to_commons": "node scripts/upload_icons_to_commons.js"
   },
   "devDependencies": {
+    "archiver": "^7.0.1",
+    "dotenv": "^17.3.1",
     "chalk": "^5.2.0",
     "svg-path-parse": "^1.1.3",
-    "xmlbuilder2": "^4.0.3",
-    "archiver": "^7.0.1"
+    "xmlbuilder2": "^4.0.3"
   }
 }

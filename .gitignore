@@ -1,3 +1,4 @@
+.env
 dist
 docs/v*/
 docs/package.json
