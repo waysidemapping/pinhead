@@ -32,6 +32,11 @@
       text-overflow: ellipsis;
       max-width: 200px;
     }
+    td div.unicode-char {
+      font-size: 15px;
+      line-height: 1;
+      display: inline;
+    }
     td, th {
       padding: 2px;
     }
@@ -132,7 +137,8 @@
 
     let html = ``;
     html += `<tr>`;
-    html += `<th><a href="/">Pinhead v${currentVersion}</a></th>`
+    html += `<th><a href="/">Pinhead v${currentVersion}</a></th>`;
+    html += `<th>Unicode</th>`;
     for (const importSource of importSources) {
       html += `<th><a href="${importSource.repo}" target="_blank">${importSource.name}</a></th>`
     }
@@ -140,6 +146,13 @@
     for (const icon of icons) {
       html += `<tr>`;
       html += `<td class="header"><div title="${icon.id}"><a href="/#${icon.id}"><img src="/v${currentVersion}/${icon.id}.svg"/></a>${icon.id}</div></td>`
+      html += `<td>`;
+      if (icon.char) {
+        for (const char of icon.char) {
+          html += `<div class="unicode-char">${char}</div>`;
+        }
+      }
+      html += `</td>`;
       for (const importSource of importSources) {
         html += `<td>`;
         if (icon[importSource.id]) {
@@ -155,7 +168,7 @@
     }
     for (const importSource of importSources) {
       for (const externalIconFilename in srciconsIndex[importSource.id]) {
-        html += `<tr><td></td>`;
+        html += `<tr><td></td><td></td>`;
         for (const importSource2 of importSources) {
           html += `<td>`;
           if (importSource.id === importSource2.id) {

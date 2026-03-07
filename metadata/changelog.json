@@ -106,12 +106,14 @@
         "newId": "american_football",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🏈",
         "maki": "american-football"
       },
       {
         "newId": "ampersand",
         "by": "@quincylvania",
-        "inspo": "https://raw.githubusercontent.com/openstreetmap-carto/openstreetmap-carto/40820143374b5550fb294cfc754db8ca662094b0/symbols/shop/department_store.svg"
+        "inspo": "https://raw.githubusercontent.com/openstreetmap-carto/openstreetmap-carto/40820143374b5550fb294cfc754db8ca662094b0/symbols/shop/department_store.svg",
+        "char": "&"
       },
       {
         "newId": "analog_tv_with_rabbitears",
@@ -129,6 +131,7 @@
         "newId": "anchor",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "⚓️",
         "maki": "harbor",
         "nps": "marina",
         "osmcarto": "amenity/ferry"
@@ -137,6 +140,7 @@
         "newId": "angelfish",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🐠",
         "maki": "aquarium"
       },
       {
@@ -169,6 +173,10 @@
         "newId": "apple",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "char": [
+          "🍏",
+          "🍎"
+        ],
         "osmcarto": "shop/greengrocer"
       },
       {
@@ -191,6 +199,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "🏹",
         "temaki": "bow_and_arrow"
       },
       {
@@ -249,6 +258,7 @@
         "newId": "at_sign",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "char": "@",
         "osmcarto": "amenity/internet_cafe"
       },
       {
@@ -260,7 +270,8 @@
       {
         "newId": "axe",
         "by": "@quincylvania",
-        "inspo": "axe_and_firewood_pile"
+        "inspo": "axe_and_firewood_pile",
+        "char": "🪓"
       },
       {
         "newId": "axe_and_chipped_log",
@@ -305,7 +316,8 @@
       },
       {
         "newId": "bagel",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "🥯"
       },
       {
         "newId": "bagel_seeded",
@@ -316,6 +328,7 @@
         "src": "temaki",
         "srcBy": "@bhousel",
         "importBy": "@quincylvania",
+        "char": "🥖",
         "temaki": "bread"
       },
       {
@@ -440,6 +453,7 @@
         "newId": "beer_mug_with_foam",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "char": "🍺",
         "osmcarto": "amenity/biergarten"
       },
       {
@@ -469,6 +483,7 @@
         "newId": "bicycle",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🚲",
         "maki": "bicycle",
         "osmcarto": "shop/bicycle"
       },
@@ -594,6 +609,7 @@
         "src": "opentrailmap",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "🦬",
         "opentrailmap": "bison_refuge"
       },
       {
@@ -665,6 +681,7 @@
         "newId": "border_officer_with_open_suitcase",
         "src": "nps",
         "importBy": "@quincylvania",
+        "char": "🛃",
         "nps": "customs"
       },
       {
@@ -672,6 +689,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "🛂",
         "temaki": "passport_checkpoint"
       },
       {
@@ -767,6 +785,7 @@
         "newId": "broadleaved_tree",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🌳",
         "maki": "park",
         "opentrailmap": "park",
         "temaki": "tree_broadleaved"
@@ -787,6 +806,7 @@
         "newId": "bull",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🐂",
         "maki": "slaughterhouse"
       },
       {
@@ -834,6 +854,7 @@
         "newId": "burger",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🍔",
         "maki": "fast-food",
         "osmcarto": "amenity/fast_food"
       },
@@ -849,6 +870,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "🚍",
         "maki": "bus",
         "nps": "bus-stop",
         "osmcarto": [
@@ -993,6 +1015,7 @@
       {
         "newId": "car",
         "by": "@quincylvania",
+        "char": "🚘",
         "americana": "poi_car_shop",
         "maki": "car",
         "nps": "automobiles",
@@ -1170,6 +1193,7 @@
         "newId": "chefs_knife",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🔪",
         "temaki": "chefs_knife"
       },
       {
@@ -1213,6 +1237,7 @@
         "newId": "cigarette_with_smoke_curl",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "char": "🚬",
         "nps": "smoking-area",
         "osmcarto": "shop/tobacco"
       },
@@ -1282,6 +1307,7 @@
         "newId": "classical_building",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🏛️",
         "americana": "poi_museum",
         "maki": "museum",
         "nps": "museum",
@@ -1392,6 +1418,7 @@
         "newId": "comedy_mask_and_tragedy_mask",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🎭",
         "maki": "theatre",
         "nps": "theatre-arts",
         "osmcarto": "amenity/theatre"
@@ -1405,6 +1432,7 @@
       {
         "newId": "compass",
         "by": "@quincylvania",
+        "char": "🧭",
         "temaki": "compass"
       },
       {
@@ -1418,6 +1446,7 @@
         "src": "opentrailmap",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "🌲",
         "maki": "park-alt1",
         "nps": "wilderness",
         "opentrailmap": "forest_reserve",
@@ -1460,7 +1489,8 @@
       {
         "newId": "coral",
         "by": "@quincylvania",
-        "inspo": "coral_and_angelfish"
+        "inspo": "coral_and_angelfish",
+        "char": "🪸"
       },
       {
         "newId": "coral_and_angelfish",
@@ -1479,12 +1509,14 @@
         "newId": "crab",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🦀",
         "maki": "restaurant-seafood"
       },
       {
         "newId": "crane",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🏗️",
         "osmcarto": "man_made/crane",
         "temaki": "crane"
       },
@@ -1497,7 +1529,8 @@
       {
         "newId": "crescent",
         "by": "@quincylvania",
-        "inspo": "star_and_crescent"
+        "inspo": "star_and_crescent",
+        "char": "🌙"
       },
       {
         "newId": "cricket_batter",
@@ -1509,6 +1542,7 @@
         "newId": "croissant",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🥐",
         "maki": "bakery"
       },
       {
@@ -1522,6 +1556,7 @@
         "newId": "cross_latin",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "✝️",
         "maki": "religious-christian",
         "osmcarto": [
           "man_made/cross",
@@ -1623,6 +1658,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "🗡️",
         "temaki": "dagger"
       },
       {
@@ -1665,6 +1701,7 @@
         "newId": "deer_with_antlers",
         "src": "nps",
         "importBy": "@quincylvania",
+        "char": "🦌",
         "nps": "deer-viewing"
       },
       {
@@ -1691,6 +1728,10 @@
         "newId": "dharma_wheel",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": [
+          "☸️",
+          "☸"
+        ],
         "maki": "religious-buddhist",
         "osmcarto": "religion/buddhist"
       },
@@ -1762,6 +1803,10 @@
       {
         "newId": "dollar",
         "by": "@quincylvania",
+        "char": [
+          "💲",
+          "$"
+        ],
         "nps": "atm"
       },
       {
@@ -1781,6 +1826,7 @@
         "newId": "donut",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🍩",
         "temaki": "donut"
       },
       {
@@ -1805,6 +1851,7 @@
         "newId": "downhill_skier",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "⛷️",
         "maki": "skiing",
         "nps": "downhill-skiing",
         "temaki": "skiing"
@@ -1814,6 +1861,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "👗",
         "temaki": "dress"
       },
       {
@@ -1834,12 +1882,14 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "🧋",
         "temaki": "bubble_tea"
       },
       {
         "newId": "droplet",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "💧",
         "maki": "water",
         "opentrailmap": "watershed_reserve",
         "temaki": "water"
@@ -1891,6 +1941,7 @@
         "newId": "egg",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🥚",
         "temaki": "egg"
       },
       {
@@ -1962,6 +2013,7 @@
         "newId": "envelope",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "✉️",
         "americana": "poi_envelope",
         "maki": "post",
         "nps": "post-office",
@@ -1980,11 +2032,13 @@
       },
       {
         "newId": "eye",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "👁️"
       },
       {
         "newId": "eye_outline",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "👁️"
       },
       {
         "newId": "eyebrow",
@@ -2024,6 +2078,7 @@
         "newId": "ferris_wheel",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🎡",
         "maki": "amusement-park"
       },
       {
@@ -2045,6 +2100,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "🏑",
         "temaki": "field_hockey"
       },
       {
@@ -2087,6 +2143,7 @@
         "newId": "film_movie_projector",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "📽️",
         "maki": "cinema"
       },
       {
@@ -2103,6 +2160,7 @@
         "newId": "fire",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🔥",
         "maki": "fire-station",
         "osmcarto": "amenity/firestation"
       },
@@ -2110,12 +2168,14 @@
         "newId": "fire_extinguisher",
         "src": "nps",
         "importBy": "@quincylvania",
+        "char": "🧯",
         "nps": "fire-extinguisher"
       },
       {
         "newId": "fish",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "char": "🐟",
         "osmcarto": "shop/seafood"
       },
       {
@@ -2157,6 +2217,7 @@
         "newId": "flag_checkered",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🏁",
         "maki": "racetrack"
       },
       {
@@ -2186,6 +2247,7 @@
         "newId": "flower_boquette",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "💐",
         "maki": "florist"
       },
       {
@@ -2197,6 +2259,7 @@
         "newId": "fork_and_knife",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🍴",
         "maki": "restaurant",
         "nps": "food-service"
       },
@@ -2325,6 +2388,7 @@
         "newId": "giraffe",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🦒",
         "temaki": "zoo"
       },
       {
@@ -2350,6 +2414,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "⛳️",
         "temaki": "golf_green"
       },
       {
@@ -2408,6 +2473,7 @@
         "newId": "grecian_vase",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "char": "🏺",
         "osmcarto": "historic/archaeological_site"
       },
       {
@@ -2447,7 +2513,8 @@
       {
         "newId": "hammer",
         "by": "@quincylvania",
-        "inspo": "wrench_and_hammer"
+        "inspo": "wrench_and_hammer",
+        "char": "🔨"
       },
       {
         "newId": "hammer_and_inverted_shoe",
@@ -2544,6 +2611,11 @@
       {
         "newId": "heart",
         "by": "@quincylvania",
+        "char": [
+          "❤️",
+          "💟",
+          "❤︎"
+        ],
         "maki": "heart",
         "temaki": "heart"
       },
@@ -2570,7 +2642,8 @@
       },
       {
         "newId": "heart_with_crack",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "💔"
       },
       {
         "newId": "heart_with_ecg_line",
@@ -2607,6 +2680,7 @@
         "newId": "helicopter",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🚁",
         "maki": "heliport"
       },
       {
@@ -2646,7 +2720,8 @@
       },
       {
         "newId": "hot_dog_with_mustard",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "🌭"
       },
       {
         "newId": "house_and_industrial_building_and_lowrise_building",
@@ -2732,6 +2807,7 @@
         "newId": "info_i",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "ℹ️",
         "maki": "information",
         "nps": "information"
       },
@@ -2973,6 +3049,7 @@
         "newId": "khanda",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🪯",
         "osmcarto": "religion/sikhist",
         "temaki": "sikhism"
       },
@@ -3003,6 +3080,7 @@
         "newId": "laptop",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "char": "💻",
         "osmcarto": "shop/computer"
       },
       {
@@ -3048,6 +3126,7 @@
         "newId": "leafless_tree",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🪾",
         "temaki": "tree_leafless"
       },
       {
@@ -3055,6 +3134,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "📫",
         "temaki": "letter_box"
       },
       {
@@ -3103,7 +3183,8 @@
       {
         "newId": "lips",
         "by": "@quincylvania",
-        "inspo": "lips_and_lipstick"
+        "inspo": "lips_and_lipstick",
+        "char": "👄"
       },
       {
         "newId": "lips_and_lipstick",
@@ -3114,7 +3195,8 @@
       {
         "newId": "lipstick",
         "by": "@quincylvania",
-        "inspo": "lips_and_lipstick"
+        "inspo": "lips_and_lipstick",
+        "char": "💄"
       },
       {
         "newId": "local_transit_vehicle",
@@ -3309,6 +3391,7 @@
         "newId": "medal_ribbon_with_star",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🎖️",
         "temaki": "military"
       },
       {
@@ -3320,18 +3403,21 @@
       {
         "newId": "mens_restroom_symbol",
         "by": "@quincylvania",
+        "char": "🚹",
         "nps": "mens-restroom"
       },
       {
         "newId": "microphone",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🎤",
         "maki": "karaoke"
       },
       {
         "newId": "microscope",
         "src": "nps",
         "importBy": "@quincylvania",
+        "char": "🔬",
         "nps": "young-scientist-program"
       },
       {
@@ -3390,6 +3476,7 @@
         "newId": "molar_tooth",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🦷",
         "maki": "dentist",
         "osmcarto": "amenity/dentist"
       },
@@ -3416,6 +3503,7 @@
         "newId": "motor_scooter",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🛵",
         "maki": "scooter"
       },
       {
@@ -3423,6 +3511,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "🚤",
         "temaki": "boat"
       },
       {
@@ -3469,6 +3558,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "🏍️",
         "osmcarto": "shop/motorcycle",
         "temaki": "motorcycle"
       },
@@ -3587,6 +3677,7 @@
         "newId": "no_entry",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "⛔️",
         "maki": "roadblock"
       },
       {
@@ -3621,6 +3712,7 @@
         "newId": "octagon",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🛑",
         "temaki": "stop"
       },
       {
@@ -3641,6 +3733,7 @@
         "newId": "om",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🕉️",
         "osmcarto": "religion/hinduist",
         "temaki": "hinduism"
       },
@@ -3648,6 +3741,7 @@
         "newId": "open_book",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "📖",
         "maki": "library",
         "osmcarto": "amenity/library"
       },
@@ -3693,6 +3787,7 @@
         "newId": "palm_tree",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🌴",
         "temaki": "tree_palm"
       },
       {
@@ -3716,6 +3811,7 @@
         "newId": "parking_p",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🅿️",
         "americana": "poi_p",
         "maki": "parking",
         "nps": "parking",
@@ -4075,6 +4171,7 @@
         "newId": "person_holding_chestfeeding_baby",
         "src": "nps",
         "importBy": "@quincylvania",
+        "char": "🤱",
         "nps": "breastfeeding-station"
       },
       {
@@ -4211,6 +4308,7 @@
         "newId": "person_riding_surfboard",
         "src": "nps",
         "importBy": "@quincylvania",
+        "char": "🏄",
         "nps": "surfing",
         "temaki": "surfing"
       },
@@ -4375,6 +4473,7 @@
       {
         "newId": "pill",
         "by": "@quincylvania",
+        "char": "💊",
         "temaki": "pharmacy"
       },
       {
@@ -4385,7 +4484,8 @@
       },
       {
         "newId": "pin",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "📍"
       },
       {
         "newId": "pint_glass",
@@ -4403,12 +4503,14 @@
         "newId": "pixel_invader",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "char": "👾",
         "osmcarto": "leisure/amusement_arcade"
       },
       {
         "newId": "pizza_slice",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🍕",
         "maki": "restaurant-pizza"
       },
       {
@@ -4437,6 +4539,7 @@
         "newId": "plane_takeoff_above_ground",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🛫",
         "maki": "terminal"
       },
       {
@@ -4486,6 +4589,7 @@
         "newId": "plug",
         "by": "@quincylvania",
         "inspo": "plug_with_bolt",
+        "char": "🔌",
         "nps": "electrical-hookup"
       },
       {
@@ -4503,6 +4607,7 @@
         "src": "temaki",
         "srcBy": "@bhousel",
         "importBy": "@quincylvania",
+        "char": "🪨",
         "temaki": "boulder2"
       },
       {
@@ -4679,6 +4784,7 @@
         "newId": "radiation_symbol",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "☢️",
         "temaki": "radiation"
       },
       {
@@ -4821,6 +4927,7 @@
         "newId": "rocketship",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🚀",
         "maki": "rocket"
       },
       {
@@ -4838,6 +4945,7 @@
         "newId": "roller_coaster",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🎢",
         "temaki": "roller_coaster"
       },
       {
@@ -4901,6 +5009,7 @@
         "newId": "saguaro",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🌵",
         "temaki": "tree_cactus"
       },
       {
@@ -4914,6 +5023,7 @@
         "newId": "sailboat",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "⛵️",
         "temaki": "sailboat"
       },
       {
@@ -4965,6 +5075,7 @@
         "newId": "scissors_open",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "✂︎",
         "maki": "hairdresser"
       },
       {
@@ -5068,6 +5179,7 @@
         "newId": "shopping_cart",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🛒",
         "americana": "poi_supermarket",
         "maki": "grocery",
         "osmcarto": "shop/supermarket"
@@ -5103,6 +5215,7 @@
         "newId": "sign",
         "src": "nps",
         "importBy": "@quincylvania",
+        "char": "🪧",
         "maki": "historic",
         "nps": "sign"
       },
@@ -5151,6 +5264,7 @@
         "newId": "skateboard",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🛹",
         "maki": "skateboard"
       },
       {
@@ -5283,6 +5397,7 @@
         "newId": "snowflake",
         "src": "nps",
         "importBy": "@quincylvania",
+        "char": "❄️",
         "nps": "winter-recreation-area",
         "temaki": "snow"
       },
@@ -5395,7 +5510,8 @@
       },
       {
         "newId": "spoon",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "🥄"
       },
       {
         "newId": "spoon_and_chefs_knife_and_pot",
@@ -5420,6 +5536,7 @@
         "newId": "square_academic_cap",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🎓",
         "americana": "poi_mortarboard",
         "maki": "college"
       },
@@ -5453,6 +5570,7 @@
         "newId": "star",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "⭐️",
         "americana": "place_star",
         "maki": "star"
       },
@@ -5460,6 +5578,7 @@
         "newId": "star_and_crescent",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "☪️",
         "maki": "religious-muslim",
         "osmcarto": "religion/muslim"
       },
@@ -5467,6 +5586,7 @@
         "newId": "star_of_david",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "✡️",
         "maki": "religious-jewish"
       },
       {
@@ -5495,6 +5615,7 @@
         "newId": "stethoscope",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🩺",
         "maki": "doctor"
       },
       {
@@ -5575,6 +5696,7 @@
         "newId": "sun",
         "by": "@quincylvania",
         "inspo": "person_lying_on_front_in_sun_on_surface",
+        "char": "☀️",
         "nps": "sunny"
       },
       {
@@ -5595,6 +5717,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "👙",
         "temaki": "bikini"
       },
       {
@@ -5633,6 +5756,7 @@
       {
         "newId": "taxi",
         "by": "@quincylvania",
+        "char": "🚖",
         "americana": "poi_taxi",
         "osmcarto": "amenity/taxi",
         "temaki": "taxi_stand"
@@ -5645,6 +5769,7 @@
         "newId": "teapot",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "char": "🫖",
         "osmcarto": "shop/tea"
       },
       {
@@ -5652,6 +5777,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "🔭",
         "temaki": "telescope"
       },
       {
@@ -5687,6 +5813,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "🛖",
         "temaki": "hut"
       },
       {
@@ -5719,6 +5846,7 @@
         "newId": "ticket",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🎟️",
         "nps": "ticket-sales",
         "osmcarto": "shop/ticket",
         "temaki": "ticket"
@@ -5780,17 +5908,20 @@
         "newId": "toolbox",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🧰",
         "temaki": "toolbox"
       },
       {
         "newId": "toothbrush",
         "by": "@quincylvania",
-        "inspo": "tube_and_toothbrush"
+        "inspo": "tube_and_toothbrush",
+        "char": "🪥"
       },
       {
         "newId": "torii",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "⛩️",
         "maki": "religious-shinto",
         "osmcarto": "religion/shintoist",
         "temaki": "shinto"
@@ -5798,7 +5929,8 @@
       {
         "newId": "tornado",
         "by": "@quincylvania",
-        "inspo": "tornado_beside_shelter"
+        "inspo": "tornado_beside_shelter",
+        "char": "🌪️"
       },
       {
         "newId": "tornado_beside_shelter",
@@ -5927,6 +6059,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "🚇",
         "temaki": "subway"
       },
       {
@@ -6011,6 +6144,7 @@
       {
         "newId": "triangle_up_with_exclamation_point",
         "by": "@quincylvania",
+        "char": "⚠️",
         "maki": "caution",
         "nps": "safety-caution-alerts"
       },
@@ -6262,7 +6396,8 @@
       },
       {
         "newId": "venus",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "♀"
       },
       {
         "newId": "vertical_rotisserie",
@@ -6287,6 +6422,7 @@
         "newId": "volleyball",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🏐",
         "maki": "volleyball"
       },
       {
@@ -6438,12 +6574,14 @@
         "newId": "wheelchair",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "char": "🦽",
         "osmcarto": "shop/medical_supply"
       },
       {
         "newId": "wifi",
         "src": "nps",
         "importBy": "@quincylvania",
+        "char": "🛜",
         "nps": "wi-fi"
       },
       {
@@ -6503,16 +6641,19 @@
       {
         "newId": "wine_glass",
         "by": "@quincylvania",
-        "inspo": "wine_bottle_and_wine_glass"
+        "inspo": "wine_bottle_and_wine_glass",
+        "char": "🍷"
       },
       {
         "newId": "womens_and_mens_restroom_symbol",
         "by": "@quincylvania",
+        "char": "🚻",
         "maki": "toilet"
       },
       {
         "newId": "womens_restroom_symbol",
         "by": "@quincylvania",
+        "char": "🚺",
         "nps": "womens-restroom"
       },
       {
@@ -6567,6 +6708,7 @@
         "newId": "yin_yang",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "☯️",
         "osmcarto": "religion/taoist",
         "temaki": "taoism"
       }
@@ -6654,7 +6796,8 @@
       },
       {
         "newId": "pickup_truck",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "🛻"
       },
       {
         "newId": "pickup_truck_with_raised_hood",
@@ -6671,7 +6814,8 @@
       },
       {
         "newId": "compact_box_truck",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "🚚"
       },
       {
         "newId": "compact_box_truck_with_greek_cross",
@@ -6679,7 +6823,8 @@
       },
       {
         "newId": "compact_box_truck_with_heavy_six_point_asterisk",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "🚑"
       },
       {
         "oldId": "truck_profile",
@@ -6692,7 +6837,8 @@
       },
       {
         "newId": "maple_leaf",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "🍁"
       },
       {
         "oldId": "wifi",
@@ -6725,7 +6871,8 @@
       },
       {
         "newId": "loaf_of_pan_bread",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "🍞"
       },
       {
         "newId": "loaf_of_pan_bread_with_steam",
@@ -6734,7 +6881,8 @@
       },
       {
         "newId": "station_wagon",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "🚙"
       },
       {
         "newId": "station_wagon_with_raised_hood",
@@ -7472,7 +7620,8 @@
       },
       {
         "newId": "step_ladder_doubled_sided",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "🪜"
       },
       {
         "newId": "wifi_weak_signal",
@@ -7496,7 +7645,8 @@
       },
       {
         "newId": "phone_bars",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "📶"
       },
       {
         "newId": "phone_bars_weak_signal",
@@ -7828,7 +7978,8 @@
       },
       {
         "newId": "euro",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "€"
       },
       {
         "newId": "car_with_euro",
@@ -7880,7 +8031,8 @@
       {
         "newId": "a_frame_tent",
         "by": "@quincylvania",
-        "issue": "53"
+        "issue": "53",
+        "char": "⛺️"
       },
       {
         "newId": "a_frame_tents",
@@ -7911,7 +8063,8 @@
       {
         "newId": "sitting_tank_toilet",
         "by": "@quincylvania",
-        "issue": "39"
+        "issue": "39",
+        "char": "🚽"
       },
       {
         "newId": "sitting_tank_toilet_with_droplet",
@@ -7934,23 +8087,28 @@
       },
       {
         "newId": "mars",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "♂"
       },
       {
         "newId": "venus_mars",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "⚥"
       },
       {
         "newId": "venus_with_mars",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "⚤"
       },
       {
         "newId": "double_venus",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "⚢"
       },
       {
         "newId": "double_mars",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "⚣"
       },
       {
         "newId": "pixel_map_pin",
@@ -7989,7 +8147,8 @@
       {
         "newId": "life_ring",
         "by": "@westnordost",
-        "issue": "68"
+        "issue": "68",
+        "char": "🛟"
       },
       {
         "newId": "person_carrying_ski",
@@ -8025,7 +8184,8 @@
       },
       {
         "newId": "three_inch_floppy_disk",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "💾"
       },
       {
         "newId": "pixel_circle_with_dot",
