@@ -2,7 +2,7 @@ import { readFileSync, existsSync } from "fs";
 
 import dotenv from "dotenv";
 if (existsSync(".env")) {
-  dotenv.config();
+  dotenv.config({quiet: true});
 }
 
 import { ChangelogReader } from '../src/ChangelogReader.js';
@@ -28,59 +28,7 @@ const externalSources = JSON.parse(readFileSync('dist/external_sources.json'));
 
 const iconsToUpload = JSON.parse(readFileSync('dist/icons/index.complete.json')).icons;
 
-async function downloadCategoryPages(category) {
-  let cont = null;
-  do {
-    const params = new URLSearchParams({
-      action: "query",
-      generator: "categorymembers",
-      gcmtitle: category,
-      gcmtype: "file",
-      gcmlimit: "500",
-      prop: "revisions|imageinfo",
-      iiprop: "url",
-      rvslots: "main",
-      rvprop: "content",
-      format: "json"
-    });
-
-    if (cont) params.set("gcmcontinue", cont);
-
-    const res = await fetch(`${commonsApiBase}?${params}`);
-    const data = await res.json();
-
-    const pages = Object.values(data.query?.pages || {});
-
-    for (const page of pages) {
-      const title = page.title;
-      const content = page.revisions?.[0]?.slots?.main?.["*"];
-      const results = content && /{{Pinhead\|(.+?)(?:\|v=(\d+?))}}/.exec(content);
-
-      if (results && results.length >= 3) {
-        const iconId = results[1];
-        const commonsIconV = parseInt(results[2]);
-
-        const iconInfo = iconsById[iconId];
-        if (!iconInfo) {
-          console.error(`Cannot find icon info for ${title}`);
-        } else {
-          const latestV = parseInt(iconsById[iconId].v);
-          if (commonsIconV < latestV) {
-             console.error(`Commons icon needs to be updated: ${title}`);
-          }
-          if (iconsToUpload[iconId]) {
-            delete iconsToUpload[iconId];
-          }
-        }
-      } else {
-        console.error(`Cannot find valid {{Pinhead|}} template for ${title}`);
-      }
-    }
-
-    cont = data.continue?.gcmcontinue;
-
-  } while (cont);
-}
+const validRemotePages = {};
 
 async function login() {
   const tokenRes = await fetch(
@@ -119,6 +67,66 @@ async function login() {
   const token = csrfData.query.tokens.csrftoken;
 
   return { cookie, token };
+}
+
+async function downloadCategoryPages() {
+  console.log('Downloading category pages...');
+  let cont = null;
+  do {
+    const params = new URLSearchParams({
+      action: "query",
+      generator: "categorymembers",
+      gcmtitle: commonsCategory,
+      gcmtype: "file",
+      // revisions will not be returned if we go higher than this
+      gcmlimit: "50",
+      prop: "revisions|imageinfo",
+      iiprop: "url",
+      rvslots: "main",
+      rvprop: "content",
+      format: "json",
+      formatversion: "2"
+    });
+
+    if (cont) params.set("gcmcontinue", cont);
+
+    const res = await fetch(`${commonsApiBase}?${params}`);
+    const data = await res.json();
+    const pages = Object.values(data.query?.pages || {});
+    for (const page of pages) {
+      const title = page.title;
+      const content = page.revisions?.[0]?.slots?.main?.content;
+      const results = content && /{{Pinhead\|(.+?)(?:\|v=(\d+?))}}/.exec(content);
+
+      if (results && results.length >= 3) {
+        const iconId = results[1];
+        const commonsIconV = parseInt(results[2]);
+
+        const iconInfo = iconsById[iconId];
+        if (!iconInfo) {
+          console.error(`Cannot find icon info for ${title}`);
+        } else {
+          const latestV = parseInt(iconsById[iconId].v);
+          if (commonsIconV < latestV) {
+             console.error(`Commons icon needs to be updated: ${title}`);
+          } else {
+            validRemotePages[page.pageid] = {
+              filename: page.title.slice(5)
+            };
+          }
+          if (iconsToUpload[iconId]) {
+            delete iconsToUpload[iconId];
+          }
+        }
+      } else {
+        console.error(`Cannot find valid {{Pinhead|}} template for ${title}`);
+      }
+    }
+
+    cont = data.continue?.gcmcontinue;
+
+  } while (cont);
+  console.log('Done downloading');
 }
 
 async function uploadFile(iconId, srcdir, svg, cookie, token) {
@@ -218,24 +226,153 @@ ${categoriesString}`);
     headers: { Cookie: cookie }
   });
   const json = await res.json();
+  if (json.upload?.result === 'Success') {
+    validRemotePages[json.upload.pageid] = {
+      filename: json.upload.filename
+    };
+  } 
   console.log(json.upload?.result + ': ' + json.upload?.imageinfo?.descriptionurl);
 }
 
-async function uploadMissingIcons() {
+async function uploadMissingIcons(loginInfo) {
+  console.log('Uploading icons...');
   if (Object.keys(iconsToUpload).length) {
     console.log(`Uploading ${Object.keys(iconsToUpload).length} icons to Wikimedia Commons`);
-    const {cookie, token} = await login();
     for (const id in iconsToUpload) {
-      await uploadFile(id, iconsToUpload[id].srcdir, iconsToUpload[id].svg, cookie, token);
+      await uploadFile(id, iconsToUpload[id].srcdir, iconsToUpload[id].svg, loginInfo.cookie, loginInfo.token);
     }
     console.log("Upload complete");
   } else {
     console.log("No icons to upload");
   }
+  console.log("Done uploading");
 }
 
-await downloadCategoryPages(commonsCategory)
+async function downloadEntityStatements() {
+  console.log('Downloading entity statements...');
+
+  let idsToGet = Object.keys(validRemotePages).map(id => 'M' + id);
+
+  const maxIdsPerQuery = 50;
+  while (idsToGet.length) {
+    const batchIds = idsToGet.slice(0, maxIdsPerQuery);
+    idsToGet = idsToGet.slice(maxIdsPerQuery);
+
+    const batchInfos = await getMediaInfo(batchIds);
+    for (const id in batchInfos.entities) {
+      const item = batchInfos.entities[id]
+      validRemotePages[item.pageid].statements = item.statements;
+    }
+  }
+
+  async function getMediaInfo(ids) {
+    const params = new URLSearchParams({
+      action: "wbgetentities",
+      ids: ids.join("|"),
+      format: "json"
+    });
+
+    const res = await fetch(`${commonsApiBase}?${params}`);
+    return res.json();
+  }
+  console.log('Done downloading');
+}
+
+async function uploadEntityStatements(loginInfo) {
+  console.log('Uploading entity statements...');
+
+  const defaultProps = {
+    P31: 'Q52827',          // instance of        = pictogram
+    P7482: 'Q138577495',    // source of file     = Pinhead
+    P1163: 'image/svg+xml', // media type
+    P2061: 'Q20970430',     // aspect ratio (W:H) = 1:1
+    P275: 'Q6938433',       // copyright license  = Creative Commons CC0 License
+    P6216: 'Q88088423',     // copyright status   = copyrighted, dedicated to the public domain by copyright holder
+    P462: 'Q23445',         // color              = black
+  };
+
+  function claimsForProps(props) {
+    const claims = [];
+    for (const prop in props) {
+      const claim = {
+        mainsnak: {
+          snaktype: "value",
+          property: prop,
+          datavalue: {}
+        },
+        type: "statement",
+        rank: "normal"
+      }
+      const val = props[prop];
+      if (val.slice(0, 1) === 'Q') {
+        claim.mainsnak.datavalue = {
+          value: {
+            "entity-type": "item",
+            "numeric-id": parseInt(val.slice(1))
+          },
+          type: "wikibase-entityid"
+        };
+      } else {
+        claim.mainsnak.datavalue = {
+          value: val,
+          type: "string"
+        };
+      }
+      claims.push(claim);
+    }
+    return claims;
+  }
+  
+  for (const id in validRemotePages) {
+    const remotePage = validRemotePages[id];
+    if (!remotePage.statements) {
+      console.error('Missing statements for ' + remotePage.filename);
+      return;
+    }
+    const propsToUpload = Object.assign({}, defaultProps);
+    for (const prop in remotePage.statements) {
+      if (propsToUpload[prop]) delete propsToUpload[prop];
+    }
+    if (Object.keys(propsToUpload).length) {
+      console.log('Uploading props for ' + remotePage.filename + ': ' + Object.keys(propsToUpload));
+      
+      const claims = claimsForProps(propsToUpload);
+      const params = new URLSearchParams({
+        action: "wbeditentity",
+        id: 'M' + id,
+        data: JSON.stringify({
+          claims: claims
+        }),
+        token: loginInfo.token,
+        format: "json"
+      });
+
+      const res = await fetch(commonsApiBase, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+          "Cookie": loginInfo.cookie
+        },
+        body: params
+      });
+      const data = await res.json();
+      console.log('success: ' + data.success);
+    }
+  }
+  console.log('Done uploading');
+}
+
+const loginInfo = await login();
+
+await downloadCategoryPages()
   .catch(console.error);
 
-await uploadMissingIcons()
+await uploadMissingIcons(loginInfo)
   .catch(console.error);
+
+await downloadEntityStatements()
+  .catch(console.error);
+
+await uploadEntityStatements(loginInfo)
+  .catch(console.error);
+
