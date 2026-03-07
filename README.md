@@ -33,7 +33,7 @@ If you want to get the full set of icon files, use the download link on pinhead.
 
 ### For Wikimedia editors
 
-All Pinhead icons are [synced to Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Plain_black_Pinhead_SVG_icons) for convenient integration with Wikipedia, Wikidata, and other such projects.
+All Pinhead icons are [synced to Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Plain_black_Pinhead_SVG_icons) for convenient integration with Wikipedia, Wikidata, the OpenStreetMap Wiki, and other such projects.
 
 ### For developers
 
