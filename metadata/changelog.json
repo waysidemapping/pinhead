@@ -8046,7 +8046,8 @@
           "briefcase_with_info_i",
           "https://raw.githubusercontent.com/openstreetmap-carto/openstreetmap-carto/40820143374b5550fb294cfc754db8ca662094b0/symbols/tourism/terminal.svg"
         ],
-        "osmcarto": "tourism/terminal"
+        "osmcarto": "tourism/terminal",
+        "pr": "74"
       }
     ]
   }
