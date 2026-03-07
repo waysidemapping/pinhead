@@ -8203,7 +8203,7 @@
   },
   {
     "majorVersion": "13",
-    "date": "",
+    "date": "2026-03-07",
     "iconChanges": [
       {
         "newId": "info_i_terminal",
@@ -8213,8 +8213,27 @@
           "briefcase_with_info_i",
           "https://raw.githubusercontent.com/openstreetmap-carto/openstreetmap-carto/40820143374b5550fb294cfc754db8ca662094b0/symbols/tourism/terminal.svg"
         ],
-        "osmcarto": "tourism/terminal",
-        "pr": "74"
+        "pr": "74",
+        "osmcarto": "tourism/terminal"
+      },
+      {
+        "newId": "pound",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "car_with_pound",
+        "by": "@quincylvania",
+        "inspo": "car_with_dollar"
+      },
+      {
+        "newId": "campsite_with_pound",
+        "by": "@quincylvania",
+        "inspo": "campsite"
+      },
+      {
+        "newId": "tipi_campsite_with_pound",
+        "by": "@quincylvania",
+        "inspo": "tipi_campsite"
       }
     ]
   }
