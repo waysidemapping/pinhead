@@ -8721,6 +8721,31 @@
       {
         "newId": "pixel_skull",
         "by": "@quincylvania"
+      },
+      {
+        "newId": "cupcake_with_cherry",
+        "src": "osmcarto",
+        "importBy": "@quincylvania",
+        "osmcarto": "shop/confectionery"
+      },
+      {
+        "newId": "milk_carton_and_cheese",
+        "src": "osmcarto",
+        "importBy": "@quincylvania",
+        "osmcarto": "shop/dairy"
+      },
+      {
+        "newId": "rays_outward",
+        "src": "osmcarto",
+        "importBy": "@quincylvania",
+        "osmcarto": "tourism/viewpoint",
+        "temaki": "viewpoint"
+      },
+      {
+        "newId": "dot_with_rays_right",
+        "src": "nps",
+        "importBy": "@quincylvania",
+        "nps": "scenic-viewpoint"
       }
     ]
   }
