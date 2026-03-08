@@ -8688,7 +8688,8 @@
       },
       {
         "newId": "dog_wearing_collar_on_leash",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "nps": "pets-on-leash"
       },
       {
         "newId": "dog_wearing_harness",
