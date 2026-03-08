@@ -6669,6 +6669,7 @@
         "newId": "wrench",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🔧",
         "maki": "hardware",
         "nps": "mechanic"
       },
@@ -6711,6 +6712,7 @@
         "newId": "yen_yuan",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "¥",
         "maki": "bank-JP"
       },
       {
@@ -7838,7 +7840,8 @@
       },
       {
         "newId": "flagstick_with_pennant",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "opentrailmap": "route_marker"
       },
       {
         "newId": "flagstick_with_pennant_in_hole",
