@@ -8779,6 +8779,41 @@
         "inspo": "kids_train_on_railway_track"
       },
       {
+        "newId": "arrow_left",
+        "by": "@quincylvania",
+        "inspo": "arrow_right"
+      },
+      {
+        "newId": "arrow_up",
+        "by": "@quincylvania",
+        "inspo": "arrow_right"
+      },
+      {
+        "newId": "arrow_down",
+        "by": "@quincylvania",
+        "inspo": "arrow_right"
+      },
+      {
+        "newId": "arrow_bottom_left",
+        "by": "@quincylvania",
+        "inspo": "arrow_right"
+      },
+      {
+        "newId": "arrow_bottom_right",
+        "by": "@quincylvania",
+        "inspo": "arrow_right"
+      },
+      {
+        "newId": "arrow_top_left",
+        "by": "@quincylvania",
+        "inspo": "arrow_right"
+      },
+      {
+        "newId": "arrow_top_right",
+        "by": "@quincylvania",
+        "inspo": "arrow_right"
+      },
+      {
         "newId": "arrow_down_from_up_bracket",
         "by": "@quincylvania",
         "inspo": "arrow_up_to_up_bracket"
