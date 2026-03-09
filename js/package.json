@@ -1,0 +1,49 @@
+{
+  "name": "@waysidemapping/pinhead-js",
+  "version": "1.14.0-dev",
+  "type": "module",
+  "main": "index.js",
+  "description": "Quality public domain sprites for your map",
+  "license": "CC0-1.0",
+  "keywords": [
+    "icons",
+    "maps",
+    "cartography",
+    "public domain"
+  ],
+  "homepage": "https://pinhead.ink",
+  "repository": "github:waysidemapping/pinhead",
+  "bugs": {
+    "url": "https://github.com/waysidemapping/pinhead/issues"
+  },
+  "funding": [
+    {
+      "type": "GitHub Sponsors",
+      "url": "https://github.com/sponsors/quincylvania"
+    },
+    {
+      "type": "Ko-Fi",
+      "url": "https://ko-fi.com/waysidemapping"
+    }
+  ],
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "pinhead": "cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write *.js README.md"
+  },
+  "dependencies": {
+    "@waysidemapping/pinhead": "^14.0.0",
+    "tinycolor2": "^1.6.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  }
+}
