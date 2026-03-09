@@ -5,21 +5,21 @@ various shapes, including pins, markers, circles, and squares. It's designed for
 need flexible, programmatically generated icons for MapLibre GL JS, Leaflet, or any other web-based
 mapping platform.
 
-![](./example_outputs/cafe-black-stroke.svg)
-![](./example_outputs/bike-circle-green.svg)
-![](./example_outputs/jeep-map_pin-stroke-1.svg)
-![](./example_outputs/cargobike-square-blue.svg)
-![](./example_outputs/burger-marker.svg)
-![](./example_outputs/sun-square-yellow.svg)
-![](./example_outputs/plane-square-navy.svg)
-![](./example_outputs/ice_cream-circle-pink.svg)
-![](./example_outputs/beer-marker-amber.svg)
-![](./example_outputs/rocket-map_pin-purple.svg)
-![](./example_outputs/pizza-square-red.svg)
-![](./example_outputs/bus-circle-blue.svg)
-![](./example_outputs/camera-marker-darkgrey.svg)
-![](./example_outputs/tree-map_pin-green.svg)
-![](./example_outputs/tent-square-brown.svg)
+![](./examples/cafe-black-stroke.svg)
+![](./examples/bike-circle-green.svg)
+![](./examples/jeep-map_pin-stroke-1.svg)
+![](./examples/cargobike-square-blue.svg)
+![](./examples/burger-marker.svg)
+![](./examples/sun-square-yellow.svg)
+![](./examples/plane-square-navy.svg)
+![](./examples/ice_cream-circle-pink.svg)
+![](./examples/beer-marker-amber.svg)
+![](./examples/rocket-map_pin-purple.svg)
+![](./examples/pizza-square-red.svg)
+![](./examples/bus-circle-blue.svg)
+![](./examples/camera-marker-darkgrey.svg)
+![](./examples/tree-map_pin-green.svg)
+![](./examples/tent-square-brown.svg)
 
 ## Features
 
@@ -77,11 +77,11 @@ const marker = getSprite("jeep", {
 | Result                                       | Code                                                                                                |
 | :------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
 | ![](./example_outputs/cargobike.svg)         | `getSprite("cargobike")`                                                                            |
-| ![](./example_outputs/cafe-black-stroke.svg) | `getSprite("cup_and_saucer", { strokeWidth: 1 })`                                                   |
-| ![](./example_outputs/bike-circle-green.svg) | `getSprite("bicycle", { shape: "circle", shapeFill: "white", fill: "#6dad6f", stroke: "#6dad6f" })` |
-| ![](./example_outputs/burger-marker.svg)     | `getSprite("burger", { shape: "marker", shapeFill: "#3FB1CE" })`                                    |
-| ![](./example_outputs/ice_cream-circle-pink.svg)| `getSprite("ice_cream_on_cone", { shape: "circle", shapeFill: "pink" })`                           |
-| ![](./example_outputs/rocket-map_pin-purple.svg)| `getSprite("rocketship", { shape: "map_pin", shapeFill: "purple" })`                               |
+| ![](./examples/cafe-black-stroke.svg) | `getSprite("cup_and_saucer", { strokeWidth: 1 })`                                                   |
+| ![](./examples/bike-circle-green.svg) | `getSprite("bicycle", { shape: "circle", shapeFill: "white", fill: "#6dad6f", stroke: "#6dad6f" })` |
+| ![](./examples/burger-marker.svg)     | `getSprite("burger", { shape: "marker", shapeFill: "#3FB1CE" })`                                    |
+| ![](./examples/ice_cream-circle-pink.svg)| `getSprite("ice_cream_on_cone", { shape: "circle", shapeFill: "pink" })`                           |
+| ![](./examples/rocket-map_pin-purple.svg)| `getSprite("rocketship", { shape: "map_pin", shapeFill: "purple" })`                               |
 
 ### Command Line Interface (CLI)
 
