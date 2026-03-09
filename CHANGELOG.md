@@ -2,6 +2,8 @@
 
 ## [14.0.0] - 2026-03-08
 
+⚠️ This major release contains new and resdesigned icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
+
 ### Added icons
 
 Add dog icons:
