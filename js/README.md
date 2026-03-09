@@ -76,7 +76,7 @@ const marker = getSprite("jeep", {
 
 | Result                                       | Code                                                                                                |
 | :------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
-| ![](./example_outputs/cargobike.svg)         | `getSprite("cargobike")`                                                                            |
+| ![](./examples/cargobike.svg)         | `getSprite("cargobike")`                                                                            |
 | ![](./examples/cafe-black-stroke.svg) | `getSprite("cup_and_saucer", { strokeWidth: 1 })`                                                   |
 | ![](./examples/bike-circle-green.svg) | `getSprite("bicycle", { shape: "circle", shapeFill: "white", fill: "#6dad6f", stroke: "#6dad6f" })` |
 | ![](./examples/burger-marker.svg)     | `getSprite("burger", { shape: "marker", shapeFill: "#3FB1CE" })`                                    |
