@@ -218,7 +218,7 @@ async function uploadFile(pinheadIconId, srcdir, svg, cookie, token) {
   form.append("text", `=={{int:filedesc}}==
 {{Information
 |description    = {{en|1=Plain black vector icon depicting "${pinheadIconId.replaceAll('_', ' ')}". Intended for display at 15x15 pixels or greater. Part of the [https://pinhead.ink Pinhead] map icon library.}}
-|date           = ${icon.date}
+|date           = ${icon.ogDate}
 |source         = https://github.com/waysidemapping/pinhead/blob/v${currentMajorVersion}.0.0/icons/${(srcdir ? srcdir + '/' : '') + pinheadIconId}.svg
 |author         = ${bylines.join(', ')}
 |permission     = 
