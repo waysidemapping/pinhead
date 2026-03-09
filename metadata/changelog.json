@@ -8720,10 +8720,6 @@
         "inspo": "turtle_top"
       },
       {
-        "newId": "pixel_skull",
-        "by": "@quincylvania"
-      },
-      {
         "newId": "cupcake_with_cherry",
         "src": "osmcarto",
         "importBy": "@quincylvania",
@@ -8779,6 +8775,35 @@
         "inspo": "kids_train_on_railway_track"
       },
       {
+        "newId": "tag",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "car_with_tag",
+        "by": "@quincylvania",
+        "inspo": "car_with_dollar"
+      },
+      {
+        "newId": "bicycle_with_tag",
+        "by": "@quincylvania",
+        "inspo": "bicycle_and_key"
+      },
+      {
+        "newId": "motorcycle_with_tag",
+        "by": "@quincylvania",
+        "inspo": "motorcycle"
+      },
+      {
+        "newId": "cargobike_with_tag",
+        "by": "@quincylvania",
+        "inspo": "cargobike"
+      },
+      {
+        "newId": "vneck_tshirt_with_tag",
+        "by": "@quincylvania",
+        "inspo": "vneck_tshirt"
+      },
+      {
         "newId": "arrow_left",
         "by": "@quincylvania",
         "inspo": "arrow_right"
@@ -8827,6 +8852,10 @@
         "newId": "arrow_left_from_right_bracket",
         "by": "@quincylvania",
         "inspo": "arrow_right_to_right_bracket"
+      },
+      {
+        "newId": "pixel_skull",
+        "by": "@quincylvania"
       }
     ]
   }
