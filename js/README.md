@@ -74,14 +74,14 @@ const marker = getSprite("jeep", {
 
 #### Examples
 
-| Result                                       | Code                                                                                                |
-| :------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
-| ![](./example_outputs/cargobike.svg)         | `getSprite("cargobike")`                                                                            |
-| ![](./example_outputs/cafe-black-stroke.svg) | `getSprite("cup_and_saucer", { strokeWidth: 1 })`                                                   |
-| ![](./example_outputs/bike-circle-green.svg) | `getSprite("bicycle", { shape: "circle", shapeFill: "white", fill: "#6dad6f", stroke: "#6dad6f" })` |
-| ![](./example_outputs/burger-marker.svg)     | `getSprite("burger", { shape: "marker", shapeFill: "#3FB1CE" })`                                    |
-| ![](./example_outputs/ice_cream-circle-pink.svg)| `getSprite("ice_cream_on_cone", { shape: "circle", shapeFill: "pink" })`                           |
-| ![](./example_outputs/rocket-map_pin-purple.svg)| `getSprite("rocketship", { shape: "map_pin", shapeFill: "purple" })`                               |
+| Result                                           | Code                                                                                                |
+| :----------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
+| ![](./example_outputs/cargobike.svg)             | `getSprite("cargobike")`                                                                            |
+| ![](./example_outputs/cafe-black-stroke.svg)     | `getSprite("cup_and_saucer", { strokeWidth: 1 })`                                                   |
+| ![](./example_outputs/bike-circle-green.svg)     | `getSprite("bicycle", { shape: "circle", shapeFill: "white", fill: "#6dad6f", stroke: "#6dad6f" })` |
+| ![](./example_outputs/burger-marker.svg)         | `getSprite("burger", { shape: "marker", shapeFill: "#3FB1CE" })`                                    |
+| ![](./example_outputs/ice_cream-circle-pink.svg) | `getSprite("ice_cream_on_cone", { shape: "circle", shapeFill: "pink" })`                            |
+| ![](./example_outputs/rocket-map_pin-purple.svg) | `getSprite("rocketship", { shape: "map_pin", shapeFill: "purple" })`                                |
 
 ### Command Line Interface (CLI)
 

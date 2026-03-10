@@ -29,6 +29,16 @@ const defaultPadding = {
   marker: 5,
 };
 
+function getSvgPathStrings(iconSvg) {
+  const paths = [];
+  for (const { groups } of iconSvg.matchAll(
+    /<path[^>]+?d="(?<path>[^"]+?)"/gm,
+  )) {
+    paths.push(groups.path);
+  }
+  return paths;
+}
+
 export function getSprite(name, properties = {}) {
   let iconSvg;
   if (name.includes("<svg")) {
@@ -45,10 +55,7 @@ export function getSprite(name, properties = {}) {
 
   const shape = properties.shape;
 
-  const paths = [];
-  for (const { groups } of iconSvg.matchAll(/<path .*?d="(?<path>.*?)"/g)) {
-    paths.push(groups.path);
-  }
+  const paths = getSvgPathStrings(iconSvg);
 
   let scale = properties.scale || 1;
   let shapeFill = properties.shapeFill || "#000";
@@ -193,4 +200,9 @@ export function getSprite(name, properties = {}) {
   }
   svg += "</svg>";
   return svg;
+}
+
+export let exportsForTesting;
+if (process?.env?.NODE_ENV === "test") {
+  exportsForTesting = { getSvgPathStrings };
 }

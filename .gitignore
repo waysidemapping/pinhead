@@ -8,3 +8,4 @@ docs/srcicons/
 docs/npm_publish_dates.json
 node_modules/
 package-lock.json
+js/test/fixtures/*-diff.png

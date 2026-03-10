@@ -50,7 +50,7 @@ const commands = {
     },
     run: ({ values }) => {
       const config = JSON.parse(fs.readFileSync(values.config));
-      fs.mkdirSync(values.outdir, {recursive: true});
+      fs.mkdirSync(values.outdir, { recursive: true });
       for (const { icons, options } of config.groups) {
         for (const [icon, name] of Object.entries(icons)) {
           fs.writeFileSync(
