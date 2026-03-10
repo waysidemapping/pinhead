@@ -1,4 +1,3 @@
-
 export const examples = [
   {
     name: "jeep-map_pin-stroke-1",
@@ -89,4 +88,3 @@ export const examples = [
     properties: { shape: "square", shapeFill: "brown" },
   },
 ];
-
