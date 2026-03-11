@@ -145,7 +145,7 @@ If you wish to use a very specific version of **Pinhead**, you can import it you
 import { getSprite } from "@waysidemapping/pinhead-js";
 import index from "@waysidemapping/pinhead/dist/icons/index.complete.json" with { type: "json" };
 
-const svg = getSprite(index.icons['bicycle'], svg, { shape: 'marker' });
+const svg = getSprite(index.icons['bicycle'].svg, { shape: 'marker' });
 ```
 
 ---
