@@ -59,13 +59,13 @@ These options are common across both the CLI and API.
 Ideal for dynamic icon generation in the browser or on the server.
 
 ```javascript
-import { getSprite } from "@waysidemapping/pinhead-js";
+import { getIcon } from "@waysidemapping/pinhead-js";
 
 // Simple icon
-const svg = getSprite("cargobike");
+const svg = getIcon("cargobike");
 
 // Icon with background and custom colors
-const marker = getSprite("jeep", {
+const marker = getIcon("jeep", {
   shape: "map_pin",
   shapeFill: "#6486f5",
   strokeWidth: 1,
@@ -74,31 +74,31 @@ const marker = getSprite("jeep", {
 
 #### Examples
 
-| Result                                    | Code                                                                                                |
-| :---------------------------------------- | :-------------------------------------------------------------------------------------------------- |
-| ![](./examples/cargobike.svg)             | `getSprite("cargobike")`                                                                            |
-| ![](./examples/cafe-black-stroke.svg)     | `getSprite("cup_and_saucer", { strokeWidth: 1 })`                                                   |
-| ![](./examples/bike-circle-green.svg)     | `getSprite("bicycle", { shape: "circle", shapeFill: "white", fill: "#6dad6f", stroke: "#6dad6f" })` |
-| ![](./examples/burger-marker.svg)         | `getSprite("burger", { shape: "marker", shapeFill: "#3FB1CE" })`                                    |
-| ![](./examples/ice_cream-circle-pink.svg) | `getSprite("ice_cream_on_cone", { shape: "circle", shapeFill: "pink" })`                            |
-| ![](./examples/rocket-map_pin-purple.svg) | `getSprite("rocketship", { shape: "map_pin", shapeFill: "purple" })`                                |
+| Result                                    | Code                                                                                              |
+| :---------------------------------------- | :------------------------------------------------------------------------------------------------ |
+| ![](./examples/cargobike.svg)             | `getIcon("cargobike")`                                                                            |
+| ![](./examples/cafe-black-stroke.svg)     | `getIcon("cup_and_saucer", { strokeWidth: 1 })`                                                   |
+| ![](./examples/bike-circle-green.svg)     | `getIcon("bicycle", { shape: "circle", shapeFill: "white", fill: "#6dad6f", stroke: "#6dad6f" })` |
+| ![](./examples/burger-marker.svg)         | `getIcon("burger", { shape: "marker", shapeFill: "#3FB1CE" })`                                    |
+| ![](./examples/ice_cream-circle-pink.svg) | `getIcon("ice_cream_on_cone", { shape: "circle", shapeFill: "pink" })`                            |
+| ![](./examples/rocket-map_pin-purple.svg) | `getIcon("rocketship", { shape: "map_pin", shapeFill: "purple" })`                                |
 
 ### Command Line Interface (CLI)
 
-#### 1. Generate a single sprite
+#### 1. Generate a single icon
 
 Outputs the SVG string directly to `stdout`.
 
 ```bash
-npx pinhead get-sprite cargobike --shape=square --shapeFill='#6486f5' > icon.svg
+npx pinhead get-icon cargobike --shape=square --shapeFill='#6486f5' > icon.svg
 ```
 
 #### 2. Batch build from configuration
 
-The `build-sprites` command creates a collection of SVG files based on a JSON configuration file. By default, it looks for `pinhead.json` and writes results to a `./svgs/` directory.
+The `build-icons` command creates a collection of SVG files based on a JSON configuration file. By default, it looks for `pinhead.json` and writes results to a `./svgs/` directory.
 
 ```bash
-npx pinhead build-sprites --config my-icons.json --outdir ./assets/icons
+npx pinhead build-icons --config my-icons.json --outdir ./assets/icons
 ```
 
 **`pinhead.json` structure:**
@@ -141,10 +141,10 @@ EG: `@waysidemapping/pinhead-js==1.15.0` bundles `@waysidemapping/pinhead==15.0.
 If you wish to use a very specific version of **Pinhead**, you can import it yourself and use **Pinhead JS**'s custom SVG support:
 
 ```javascript
-import { getSprite } from "@waysidemapping/pinhead-js";
+import { getIcon } from "@waysidemapping/pinhead-js";
 import index from "@waysidemapping/pinhead/dist/icons/index.complete.json" with { type: "json" };
 
-const svg = getSprite(index.icons["bicycle"].svg, { shape: "marker" });
+const svg = getIcon(index.icons["bicycle"].svg, { shape: "marker" });
 ```
 
 ---
@@ -156,7 +156,7 @@ const svg = getSprite(index.icons["bicycle"].svg, { shape: "marker" });
 To use **Pinhead JS** dynamically with MapLibre:
 
 ```javascript
-const svg = getSprite("greek_cross", { shape: "circle", shapeFill: "red" });
+const svg = getIcon("greek_cross", { shape: "circle", shapeFill: "red" });
 
 const img = new Image();
 const blob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });

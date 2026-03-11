@@ -2,10 +2,10 @@
 
 import fs from "fs";
 import { parseArgs } from "util";
-import { getSprite } from "./index.js";
+import { getIcon } from "./index.js";
 
 const commands = {
-  "get-sprite": {
+  "get-icon": {
     config: {
       options: {
         fill: { type: "string" },
@@ -37,11 +37,11 @@ const commands = {
           console.error("More than one icon name specified!");
           return 1;
       }
-      console.log(getSprite(positionals[0], values));
+      console.log(getIcon(positionals[0], values));
       return 0;
     },
   },
-  "build-sprites": {
+  "build-icons": {
     config: {
       options: {
         config: { type: "string", default: "pinhead.json" },
@@ -55,7 +55,7 @@ const commands = {
         for (const [icon, name] of Object.entries(icons)) {
           fs.writeFileSync(
             `${values.outdir}/${name}.svg`,
-            getSprite(icon, options),
+            getIcon(icon, options),
           );
         }
       }

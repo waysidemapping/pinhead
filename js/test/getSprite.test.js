@@ -3,7 +3,7 @@ import { test } from "node:test";
 import assert from "node:assert";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { getSprite } from "../icon.js";
+import { getIcon } from "../icon.js";
 import { Resvg } from "@resvg/resvg-js";
 import pixelmatch from "pixelmatch";
 import { PNG } from "pngjs";
@@ -11,8 +11,8 @@ import { PNG } from "pngjs";
 import { examples } from "./examples.js";
 
 for (const example of examples) {
-  test(`getSprite matches fixture for ${example.name}`, () => {
-    const svg = getSprite(example.icon, example.properties);
+  test(`getIcon matches fixture for ${example.name}`, () => {
+    const svg = getIcon(example.icon, example.properties);
     const resvg = new Resvg(svg, { fitTo: { mode: "zoom", value: 4 } });
     const rendered = resvg.render();
     // get pixels from writing & reading PNG for apples-to-apples comparison instead of using rendered.pixels

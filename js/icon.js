@@ -30,7 +30,7 @@ const defaultPadding = {
   marker: 5,
 };
 
-export function getSprite(name, properties = {}) {
+export function getIcon(name, properties = {}) {
   let iconSvg;
   if (name.includes("<svg")) {
     iconSvg = name;

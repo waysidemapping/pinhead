@@ -1,1 +1,1 @@
-export { getSprite } from "./icon.js";
+export { getIcon } from "./icon.js";
