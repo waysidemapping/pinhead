@@ -8959,6 +8959,23 @@
         "inspo": "mounted_slotted_dispenser_with_dog_wearing_collar"
       },
       {
+        "newId": "antler",
+        "by": "@quincylvania",
+        "inspo": "deer_head_with_antlers",
+        "issue": "86"
+      },
+      {
+        "newId": "bone",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "jack_o_lantern",
+        "by": "@quincylvania",
+        "inspo": "pumpkin",
+        "issue": "83",
+        "char": "🎃"
+      },
+      {
         "newId": "compact_box_truck_with_box_peak",
         "by": "@quincylvania",
         "inspo": "compact_box_truck"
@@ -8971,19 +8988,6 @@
           "loaf_of_pan_bread_with_steam"
         ],
         "issue": "101"
-      },
-      {
-        "newId": "antler",
-        "by": "@quincylvania",
-        "inspo": "deer_head_with_antlers",
-        "issue": "86"
-      },
-      {
-        "newId": "jack_o_lantern",
-        "by": "@quincylvania",
-        "inspo": "pumpkin",
-        "issue": "83",
-        "char": "🎃"
       },
       {
         "newId": "water_tap",
