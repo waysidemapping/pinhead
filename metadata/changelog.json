@@ -301,6 +301,7 @@
         "newId": "baby",
         "src": "nps",
         "importBy": "@quincylvania",
+        "healthicons": "people/baby-0203m",
         "nps": "baby-changing-station"
       },
       {
@@ -335,6 +336,7 @@
         "newId": "balance_scales",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "healthicons": "objects/justice",
         "osmcarto": "amenity/courthouse",
         "temaki": "lawyer"
       },
@@ -1238,6 +1240,7 @@
         "src": "osmcarto",
         "importBy": "@quincylvania",
         "char": "🚬",
+        "healthicons": "symbols/smoking",
         "nps": "smoking-area",
         "osmcarto": "shop/tobacco"
       },
@@ -1891,6 +1894,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "char": "💧",
+        "healthicons": "body/blood-drop",
         "maki": "water",
         "opentrailmap": "watershed_reserve",
         "temaki": "water"
@@ -1923,6 +1927,7 @@
         "newId": "ear",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "healthicons": "body/ear",
         "temaki": "ear"
       },
       {
@@ -2039,7 +2044,8 @@
       {
         "newId": "eye_outline",
         "by": "@quincylvania",
-        "char": "👁️"
+        "char": "👁️",
+        "healthicons": "body/eye"
       },
       {
         "newId": "eyebrow",
@@ -2619,6 +2625,7 @@
           "💟",
           "❤︎"
         ],
+        "healthicons": "symbols/heart",
         "maki": "heart",
         "temaki": "heart",
         "viglino": "princesse/svg/coeur"
@@ -2642,6 +2649,7 @@
       {
         "newId": "heart_with_bolt",
         "by": "@quincylvania",
+        "healthicons": "devices/defibrillator",
         "nps": "aed"
       },
       {
@@ -2653,6 +2661,10 @@
         "newId": "heart_with_ecg_line",
         "by": "@quincylvania",
         "inspo": "https://raw.githubusercontent.com/mapbox/maki/8a3337e06e0919e102c8f6f8976b8e9e6ccb90ab/icons/defibrillator.svg",
+        "healthicons": [
+          "symbols/cardiogram",
+          "symbols/heart-cardiogram"
+        ],
         "maki": "defibrillator"
       },
       {
@@ -2685,6 +2697,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "char": "🚁",
+        "healthicons": "vehicles/helicopter",
         "maki": "heliport"
       },
       {
@@ -3352,6 +3365,7 @@
         "newId": "map_pin_with_dot",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "healthicons": "symbols/geo-location",
         "temaki": "pin"
       },
       {
@@ -3409,6 +3423,7 @@
         "newId": "mens_restroom_symbol",
         "by": "@quincylvania",
         "char": "🚹",
+        "healthicons": "people/man",
         "nps": "mens-restroom"
       },
       {
@@ -3482,6 +3497,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "char": "🦷",
+        "healthicons": "body/tooth",
         "maki": "dentist",
         "osmcarto": "amenity/dentist"
       },
@@ -3882,6 +3898,7 @@
         "newId": "pedestrian",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "healthicons": "exercise/walking",
         "nps": "walking",
         "temaki": "pedestrian"
       },
@@ -4179,6 +4196,7 @@
         "src": "nps",
         "importBy": "@quincylvania",
         "char": "🤱",
+        "healthicons": "people/lactation",
         "nps": "breastfeeding-station"
       },
       {
@@ -5007,6 +5025,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "char": "🏃‍➡️",
+        "healthicons": "exercise/running",
         "maki": "pitch",
         "osmcarto": [
           "leisure/fitness",
@@ -6406,7 +6425,8 @@
       {
         "newId": "venus",
         "by": "@quincylvania",
-        "char": "♀"
+        "char": "♀",
+        "healthicons": "symbols/female"
       },
       {
         "newId": "vertical_rotisserie",
@@ -6483,6 +6503,7 @@
         "newId": "water_faucet_with_droplet",
         "src": "nps",
         "importBy": "@quincylvania",
+        "healthicons": "objects/running-water",
         "nps": "water-hookup"
       },
       {
@@ -6584,6 +6605,7 @@
         "src": "osmcarto",
         "importBy": "@quincylvania",
         "char": "🦽",
+        "healthicons": "devices/wheelchair-alt",
         "osmcarto": "shop/medical_supply"
       },
       {
@@ -6657,12 +6679,14 @@
         "newId": "womens_and_mens_restroom_symbol",
         "by": "@quincylvania",
         "char": "🚻",
+        "healthicons": "people/male-and_female",
         "maki": "toilet"
       },
       {
         "newId": "womens_restroom_symbol",
         "by": "@quincylvania",
         "char": "🚺",
+        "healthicons": "people/woman",
         "nps": "womens-restroom"
       },
       {
@@ -6830,7 +6854,8 @@
       },
       {
         "newId": "compact_box_truck_with_greek_cross",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "healthicons": "vehicles/mobile-clinic"
       },
       {
         "newId": "compact_box_truck_with_heavy_six_point_asterisk",
@@ -8100,7 +8125,8 @@
       {
         "newId": "mars",
         "by": "@quincylvania",
-        "char": "♂"
+        "char": "♂",
+        "healthicons": "symbols/male"
       },
       {
         "newId": "venus_mars",
@@ -8995,6 +9021,15 @@
         "issue": "70"
       },
       {
+        "newId": "pixel_ape_face",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "pixel_three_inch_floppy_disk",
+        "by": "@quincylvania",
+        "inspo": "three_inch_floppy_disk"
+      },
+      {
         "newId": "winding_way_narrow",
         "by": "@quincylvania"
       },
@@ -9084,13 +9119,414 @@
         "by": "@quincylvania"
       },
       {
-        "newId": "pixel_ape_face",
-        "by": "@quincylvania"
+        "newId": "peace_sign",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": [
+          "107",
+          "75"
+        ],
+        "healthicons": "symbols/peace"
       },
       {
-        "newId": "pixel_three_inch_floppy_disk",
+        "newId": "biohazard_symbol",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "symbols/outbreak"
+      },
+      {
+        "newId": "video_camera_symbol",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "symbols/video"
+      },
+      {
+        "newId": "mosquito",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "zoonoses/mosquito"
+      },
+      {
+        "newId": "antibody",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/antibody"
+      },
+      {
+        "newId": "anus",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/anus"
+      },
+      {
+        "newId": "arm",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/arm"
+      },
+      {
+        "newId": "bacteria",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/bacteria"
+      },
+      {
+        "newId": "bladder",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/bladder"
+      },
+      {
+        "newId": "blood_cells",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/blood-cells"
+      },
+      {
+        "newId": "cell_nuclei",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/cell-nuclei"
+      },
+      {
+        "newId": "dna",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/dna"
+      },
+      {
+        "newId": "enzyme",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/enzyme"
+      },
+      {
+        "newId": "female_groin",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/vagina-alt"
+      },
+      {
+        "newId": "female_reproductive_system",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/female-reproductive_system"
+      },
+      {
+        "newId": "fetus",
         "by": "@quincylvania",
-        "inspo": "three_inch_floppy_disk"
+        "inspo": "fetus_in_circle_outline",
+        "issue": "107"
+      },
+      {
+        "newId": "fetus_in_circle",
+        "by": "@quincylvania",
+        "inspo": "fetus_in_circle_outline",
+        "issue": "107"
+      },
+      {
+        "newId": "fetus_in_circle_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "people/fetus"
+      },
+      {
+        "newId": "foot",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/foot"
+      },
+      {
+        "newId": "gallbladder",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/gallbladder"
+      },
+      {
+        "newId": "human_head",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/head"
+      },
+      {
+        "newId": "heart_organ",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "char": "🫀",
+        "healthicons": "body/heart-organ"
+      },
+      {
+        "newId": "intestine",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/intestine"
+      },
+      {
+        "newId": "joint",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/joints"
+      },
+      {
+        "newId": "kidneys",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/kidneys"
+      },
+      {
+        "newId": "leg",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/leg"
+      },
+      {
+        "newId": "leg_with_varicose_veins",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "conditions/varicose-vein"
+      },
+      {
+        "newId": "lungs",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/lungs"
+      },
+      {
+        "newId": "lungs_with_right_side_spots",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "conditions/tb"
+      },
+      {
+        "newId": "male_genitalia",
+        "by": "@quincylvania",
+        "inspo": "male_genitalia_with_urethra",
+        "issue": "107"
+      },
+      {
+        "newId": "male_genitalia_with_urethra",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/penis"
+      },
+      {
+        "newId": "male_genitalia_with_testicles",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/testicles"
+      },
+      {
+        "newId": "male_groin",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/penis-alt"
+      },
+      {
+        "newId": "nose_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/nose"
+      },
+      {
+        "newId": "pancreas",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/pancreas"
+      },
+      {
+        "newId": "prostate",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/prostate"
+      },
+      {
+        "newId": "spleen",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/spleen"
+      },
+      {
+        "newId": "stomach",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/stomach"
+      },
+      {
+        "newId": "thyroid",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/thyroid"
+      },
+      {
+        "newId": "tissue",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/tissue"
+      },
+      {
+        "newId": "tumor",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/tumour"
+      },
+      {
+        "newId": "person_with_open_arms",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/body"
+      },
+      {
+        "newId": "underweight_person",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "conditions/underweight"
+      },
+      {
+        "newId": "overweight_person",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "conditions/overweight"
+      },
+      {
+        "newId": "pregnant_person",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "people/pregnant"
+      },
+      {
+        "newId": "person_vomiting",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "conditions/vomiting"
+      },
+      {
+        "newId": "person_with_droplets",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "conditions/sweating"
+      },
+      {
+        "newId": "person_walking_holding_railing",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "exercise/walk-supported"
+      },
+      {
+        "newId": "rememberance_ribbon",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "char": "🎗️",
+        "healthicons": "conditions/ribbon"
+      },
+      {
+        "newId": "face_mask",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "ppe/ppe-face_mask"
+      },
+      {
+        "newId": "respirator",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "ppe/respirator"
+      },
+      {
+        "newId": "diaper",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "symbols/nappy-diaper"
+      },
+      {
+        "newId": "quadcopter_drone",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "vehicles/drone"
+      },
+      {
+        "newId": "sayana_press",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "contraceptives/sayana-press"
+      },
+      {
+        "newId": "sperm",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "contraceptives/sperm"
+      },
+      {
+        "newId": "condom",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "contraceptives/male-condom"
+      },
+      {
+        "newId": "condom_and_venus",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "contraceptives/female-condom"
+      },
+      {
+        "newId": "condom_and_mars",
+        "by": "@quincylvania",
+        "inspo": [
+          "condom_and_venus",
+          "mars"
+        ],
+        "issue": "107"
       }
     ]
   }
