@@ -22,16 +22,24 @@ export function migrateName(name, from = "pinhead") {
   }
 
   for (const version of changelog) {
-    // FIXME
     for (const change of version.iconChanges) {
       if (externalKey && change[externalKey] === resolvedName) {
+        // migrate from an external key
         resolvedName = change.newId;
+      } else if (
+        !pinheadVersion &&
+        change.newId === name
+      ) {
+        // undo any migrations if not targeting specific pinhead version and a name is re-used
+        resolvedName = name;
       } else if (
         pinheadVersion &&
         parseInt(change.majorVersion) < pinheadVersion
       ) {
+        // do nothing if migrating from a specific version newer than current
         continue;
       } else if (change.oldId === resolvedName) {
+        // migrate!
         resolvedName = change.newId;
       }
     }
