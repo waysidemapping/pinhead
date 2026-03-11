@@ -2,6 +2,12 @@
 
 ## [15.15.0] - 2026-03-11
 
+⚠️ This major release contains new, resdesigned, and renamed icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
+
+### Distribution changes
+
+The Pinhead version number now corresponds to the minor version (the middle number) instead of the major version (the first number) of the release version number.
+
 ### Renamed and redesigned icons
 
 - <img src="https://pinhead.ink/v14/water_glass_under_faucet.svg" width="15px"/> `water_glass_under_faucet` -> <img src="https://pinhead.ink/v15/water_tap_with_drinking_glass.svg" width="15px"/> `water_tap_with_drinking_glass`
@@ -70,8 +76,8 @@ Import assorted [Health Icons](https://github.com/resolvetosavelives/healthicons
 - <img src="https://pinhead.ink/v15/enzyme.svg" width="15px"/> Add `enzyme` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
 - <img src="https://pinhead.ink/v15/female_groin.svg" width="15px"/> Add `female_groin` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
 - <img src="https://pinhead.ink/v15/female_reproductive_system.svg" width="15px"/> Add `female_reproductive_system` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
-- <img src="https://pinhead.ink/v15/fetus.svg" width="15px"/> Add `fetus` by [@quincylvania](https://github.com/quincylvania) ([#107](https://github.com/waysidemapping/pinhead/issues/107))
-- <img src="https://pinhead.ink/v15/fetus_in_circle.svg" width="15px"/> Add `fetus_in_circle` by [@quincylvania](https://github.com/quincylvania) ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/fetus.svg" width="15px"/> Add `fetus` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/fetus_in_circle.svg" width="15px"/> Add `fetus_in_circle` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
 - <img src="https://pinhead.ink/v15/fetus_in_circle_outline.svg" width="15px"/> Add `fetus_in_circle_outline` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
 - <img src="https://pinhead.ink/v15/foot.svg" width="15px"/> Add `foot` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
 - <img src="https://pinhead.ink/v15/gallbladder.svg" width="15px"/> Add `gallbladder` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
@@ -84,7 +90,7 @@ Import assorted [Health Icons](https://github.com/resolvetosavelives/healthicons
 - <img src="https://pinhead.ink/v15/leg_with_varicose_veins.svg" width="15px"/> Add `leg_with_varicose_veins` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
 - <img src="https://pinhead.ink/v15/lungs.svg" width="15px"/> Add `lungs` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
 - <img src="https://pinhead.ink/v15/lungs_with_right_side_spots.svg" width="15px"/> Add `lungs_with_right_side_spots` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
-- <img src="https://pinhead.ink/v15/male_genitalia.svg" width="15px"/> Add `male_genitalia` by [@quincylvania](https://github.com/quincylvania) ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/male_genitalia.svg" width="15px"/> Add `male_genitalia` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
 - <img src="https://pinhead.ink/v15/male_genitalia_with_urethra.svg" width="15px"/> Add `male_genitalia_with_urethra` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
 - <img src="https://pinhead.ink/v15/male_genitalia_with_testicles.svg" width="15px"/> Add `male_genitalia_with_testicles` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
 - <img src="https://pinhead.ink/v15/male_groin.svg" width="15px"/> Add `male_groin` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
@@ -112,7 +118,7 @@ Import assorted [Health Icons](https://github.com/resolvetosavelives/healthicons
 - <img src="https://pinhead.ink/v15/sperm.svg" width="15px"/> Add `sperm` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
 - <img src="https://pinhead.ink/v15/condom.svg" width="15px"/> Add `condom` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
 - <img src="https://pinhead.ink/v15/condom_and_venus.svg" width="15px"/> Add `condom_and_venus` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
-- <img src="https://pinhead.ink/v15/condom_and_mars.svg" width="15px"/> Add `condom_and_mars` by [@quincylvania](https://github.com/quincylvania) ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/condom_and_mars.svg" width="15px"/> Add `condom_and_mars` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
 
 ## [14.0.0] - 2026-03-08
 
