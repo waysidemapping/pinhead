@@ -32,7 +32,7 @@ mapping platform.
 ## Installation
 
 ```bash
-npm install @waysidemapping/pinhead-js
+npm install @waysidemapping/pinhead
 ```
 
 ## Options
@@ -129,6 +129,24 @@ To work with **Pinhead JS**, custom SVG strings must follow these constraints:
 - Use only `<path>` elements.
 - Path elements should only contain the `d` attribute.
 - The `viewBox` should be `"0 0 15 15"`, or `height` and `width` should be set to `15`.
+
+---
+
+
+## Versioning 
+
+Because **Pinhead** generally uses major version numbers, but **Pinhead JS** uses it's `changelog.json` too offer compatibility across versions, the major version of **Pinhead JS** reflects breaking API changes, the minor version reflects the version of Pinhead, and the patch version is incremented for non-breaking changes.
+
+EG: `@waysidemapping/pinhead-js==1.15.0` bundles `@waysidemapping/pinhead==15.0.0`
+
+If you wish to use a very specific version of **Pinhead**, you can import it yourself and use **Pinhead JS**'s custom SVG support: 
+
+```
+import { getSprite } from "@waysidemapping/pinhead-js";
+import index from "@waysidemapping/pinhead/dist/icons/index.complete.json" with { type: "json" };
+
+const svg = getSprite(index.icons['bicycle'], svg, { shape: 'marker' });
+```
 
 ---
 
