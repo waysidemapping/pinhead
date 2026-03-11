@@ -5221,6 +5221,7 @@
         "newId": "showerhead_with_spray",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🚿",
         "osmcarto": "amenity/shower",
         "temaki": "shower"
       },
@@ -8499,6 +8500,7 @@
         "srcBy": "@viglino",
         "importBy": "@quincylvania",
         "issue": "81",
+        "char": "🐙",
         "viglino": "pirate/svg/animal-octopus"
       },
       {
@@ -9066,7 +9068,8 @@
       {
         "newId": "water_tap_with_handle_and_drinking_glass",
         "by": "@quincylvania",
-        "issue": "52"
+        "issue": "52",
+        "char": "🚰"
       },
       {
         "oldId": "water_tap",
