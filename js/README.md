@@ -157,7 +157,7 @@ const svg = getSprite(index.icons['bicycle'].svg, { shape: 'marker' });
 To use **Pinhead JS** dynamically with MapLibre:
 
 ```javascript
-const svg = getSprite("hospital", { shape: "circle", shapeFill: "red" });
+const svg = getSprite("greek_cross", { shape: "circle", shapeFill: "red" });
 
 const img = new Image();
 const blob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
