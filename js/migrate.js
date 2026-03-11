@@ -26,10 +26,7 @@ export function migrateName(name, from = "pinhead") {
       if (externalKey && change[externalKey] === resolvedName) {
         // migrate from an external key
         resolvedName = change.newId;
-      } else if (
-        !pinheadVersion &&
-        change.newId === name
-      ) {
+      } else if (!pinheadVersion && change.newId === name) {
         // undo any migrations if not targeting specific pinhead version and a name is re-used
         resolvedName = name;
       } else if (
