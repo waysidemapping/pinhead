@@ -37,7 +37,8 @@
   },
   "scripts": {
     "test": "env NODE_ENV=test node --test test/*.test.js",
-    "format": "prettier --write *.js test/*.js"
+    "format": "prettier --write *.js test/*.js README.md",
+    "check-format": "prettier --check *.js test/*.js README.md"
   },
   "dependencies": {
     "@waysidemapping/pinhead": "^14.0.0",

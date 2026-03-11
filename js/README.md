@@ -74,14 +74,14 @@ const marker = getSprite("jeep", {
 
 #### Examples
 
-| Result                                       | Code                                                                                                |
-| :------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
-| ![](./examples/cargobike.svg)         | `getSprite("cargobike")`                                                                            |
-| ![](./examples/cafe-black-stroke.svg) | `getSprite("cup_and_saucer", { strokeWidth: 1 })`                                                   |
-| ![](./examples/bike-circle-green.svg) | `getSprite("bicycle", { shape: "circle", shapeFill: "white", fill: "#6dad6f", stroke: "#6dad6f" })` |
-| ![](./examples/burger-marker.svg)     | `getSprite("burger", { shape: "marker", shapeFill: "#3FB1CE" })`                                    |
-| ![](./examples/ice_cream-circle-pink.svg)| `getSprite("ice_cream_on_cone", { shape: "circle", shapeFill: "pink" })`                           |
-| ![](./examples/rocket-map_pin-purple.svg)| `getSprite("rocketship", { shape: "map_pin", shapeFill: "purple" })`                               |
+| Result                                    | Code                                                                                                |
+| :---------------------------------------- | :-------------------------------------------------------------------------------------------------- |
+| ![](./examples/cargobike.svg)             | `getSprite("cargobike")`                                                                            |
+| ![](./examples/cafe-black-stroke.svg)     | `getSprite("cup_and_saucer", { strokeWidth: 1 })`                                                   |
+| ![](./examples/bike-circle-green.svg)     | `getSprite("bicycle", { shape: "circle", shapeFill: "white", fill: "#6dad6f", stroke: "#6dad6f" })` |
+| ![](./examples/burger-marker.svg)         | `getSprite("burger", { shape: "marker", shapeFill: "#3FB1CE" })`                                    |
+| ![](./examples/ice_cream-circle-pink.svg) | `getSprite("ice_cream_on_cone", { shape: "circle", shapeFill: "pink" })`                            |
+| ![](./examples/rocket-map_pin-purple.svg) | `getSprite("rocketship", { shape: "map_pin", shapeFill: "purple" })`                                |
 
 ### Command Line Interface (CLI)
 
@@ -132,20 +132,19 @@ To work with **Pinhead JS**, custom SVG strings must follow these constraints:
 
 ---
 
-
-## Versioning 
+## Versioning
 
 Because **Pinhead** generally uses major version numbers, but **Pinhead JS** uses it's `changelog.json` too offer compatibility across versions, the major version of **Pinhead JS** reflects breaking API changes, the minor version reflects the version of Pinhead, and the patch version is incremented for non-breaking changes.
 
 EG: `@waysidemapping/pinhead-js==1.15.0` bundles `@waysidemapping/pinhead==15.0.0`
 
-If you wish to use a very specific version of **Pinhead**, you can import it yourself and use **Pinhead JS**'s custom SVG support: 
+If you wish to use a very specific version of **Pinhead**, you can import it yourself and use **Pinhead JS**'s custom SVG support:
 
-```
+```javascript
 import { getSprite } from "@waysidemapping/pinhead-js";
 import index from "@waysidemapping/pinhead/dist/icons/index.complete.json" with { type: "json" };
 
-const svg = getSprite(index.icons['bicycle'].svg, { shape: 'marker' });
+const svg = getSprite(index.icons["bicycle"].svg, { shape: "marker" });
 ```
 
 ---

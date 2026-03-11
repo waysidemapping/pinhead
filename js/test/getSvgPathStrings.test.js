@@ -1,8 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert";
-import { exportsForTesting } from "../index.js";
-
-const { getSvgPathStrings } = exportsForTesting;
+import { getSvgPathStrings } from "../util.js";
 
 test("getSvgPathStrings extracts path data from anchor.svg", () => {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
