@@ -18,7 +18,7 @@ const userAgent ="PinheadBot/1.0 (quincy@waysidemapping.org)";
 
 if (versionParts[2] !== '0' ||
   currentVersion.includes('dev') ||
-  Object.values(localIconsById).some(icon => parseInt(icon.v) > parseInt(currentVersion))) {
+  Object.values(localIconsById).some(icon => parseInt(icon.v) > parseInt(currentMajorVersion))) {
   console.log('Skipping commons upload for non-release, non-major version of Pinhead');
   process.exit(0);
 }
@@ -189,7 +189,7 @@ function commonsPageAuthorValue(pinheadIconId) {
 
 function commonsPageSourceValue(pinheadIconId) {
   const srcdir = completeIconsById[pinheadIconId].srcdir;
-  return `https://github.com/waysidemapping/pinhead/blob/v${currentMajorVersion}.0.0/icons/${(srcdir ? srcdir + '/' : '') + pinheadIconId}.svg`;
+  return `https://github.com/waysidemapping/pinhead/blob/v${currentVersion}/icons/${(srcdir ? srcdir + '/' : '') + pinheadIconId}.svg`;
 }
 
 function commonsPageCategoriesText(pinheadIconId) {
