@@ -23,6 +23,9 @@
       top: 0;
       background: #fff;
     }
+    tr:empty {
+      height: 22px;
+    }
     td.header {
       font-weight:bold;
     }
@@ -143,9 +146,51 @@
       html += `<th><a href="${importSource.repo}" target="_blank">${importSource.name}</a></th>`
     }
     html += `</tr>`;
+    
     for (const icon of icons) {
-      html += `<tr>`;
-      html += `<td class="header"><div title="${icon.id}"><a href="/#${icon.id}"><img src="/v${currentVersion}/${icon.id}.svg"/></a>${icon.id}</div></td>`
+      html += `<tr class="pinhead-row" icon="${icon.id}"></tr>`;
+      for (const importSource of importSources) {
+        if (icon[importSource.id]) {
+          for (const importedIconId of icon[importSource.id]) {
+            const filename = importedIconId + (importSource.filenameSuffix || '');
+            delete srciconsIndex[importSource.id][filename];
+          }
+        }
+      }
+    }
+    for (const importSource of importSources) {
+      for (const externalIconFilename in srciconsIndex[importSource.id]) {
+        html += `<tr class="external-row" source="${importSource.id}" icon="${externalIconFilename}"></tr>`
+      }
+    }
+
+    document.getElementById('coverage').innerHTML = html;
+
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          if (entry.target.hasAttribute('icon')) {
+            if (entry.target.hasAttribute('source')) {
+              const source = importSources.find(source => source.id === entry.target.getAttribute('source'));
+              entry.target.innerHTML = getExternalRow(source, entry.target.getAttribute('icon'));
+            } else {
+              entry.target.innerHTML = getPinheadRow(iconsById[entry.target.getAttribute('icon')]);
+            }
+          }
+          observer.unobserve(entry.target);
+        }
+      }
+    }, {
+      // preload before visible
+      rootMargin: "200px" 
+    });
+
+    document.querySelectorAll("tr")
+      .forEach(el => observer.observe(el));
+
+    function getPinheadRow(icon) {
+      let html = '';
+      html += `<td class="header"><div title="${icon.id}"><a href="/#${icon.id}"><img src="/v${currentVersion}/${icon.id}.svg"/></a>${icon.id}</div></td>`;
       html += `<td>`;
       if (icon.char) {
         for (const char of icon.char) {
@@ -164,26 +209,25 @@
         }
         html += `</td>`;
       }
-      html += `</tr>`;
+      return html;
     }
-    for (const importSource of importSources) {
-      for (const externalIconFilename in srciconsIndex[importSource.id]) {
-        html += `<tr><td></td><td></td>`;
-        for (const importSource2 of importSources) {
-          html += `<td>`;
-          if (importSource.id === importSource2.id) {
-            let externalIconId = externalIconFilename;
-            if (importSource.filenameSuffix) {
-              externalIconId = externalIconId.slice(0, -importSource.filenameSuffix.length);
-            }
-            html += `<div title="${externalIconId}"><img src="/srcicons/${importSource.id}/${externalIconFilename}.svg"/> ${externalIconId}</div>`;
+
+    function getExternalRow(importSource, externalIconFilename) {
+      let html = '';
+      html += `<td></td><td></td>`;
+      for (const importSource2 of importSources) {
+        html += `<td>`;
+        if (importSource.id === importSource2.id) {
+          let externalIconId = externalIconFilename;
+          if (importSource.filenameSuffix) {
+            externalIconId = externalIconId.slice(0, -importSource.filenameSuffix.length);
           }
-          html += `</td>`;
+          html += `<div title="${externalIconId}"><img src="/srcicons/${importSource.id}/${externalIconFilename}.svg"/> ${externalIconId}</div>`;
         }
-        html += `</tr>`;
+        html += `</td>`;
       }
+      return html;
     }
-    document.getElementById('coverage').innerHTML = html;
   </script>
 </body>
 </html>
