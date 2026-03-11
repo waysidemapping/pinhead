@@ -25,7 +25,7 @@ export function migrateName(name, from = "pinhead") {
     // FIXME
     for (const change of version.iconChanges) {
       if (externalKey && change[externalKey] === resolvedName) {
-        resolvedName = change[externalKey];
+        resolvedName = change.newId;
       } else if (
         pinheadVersion &&
         parseInt(change.majorVersion) < pinheadVersion
