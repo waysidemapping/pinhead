@@ -12,5 +12,5 @@ jobs:
       with:
         node-version: '20.x'
     - run: npm --prefix js i
-    - run: npm --prefix js check-format
+    - run: npm --prefix js run check-format
 
