@@ -12,7 +12,9 @@ window.addEventListener('load', _ => {
       majorVersion = version.split('.')[1];
       fetch(`v${majorVersion}/index.complete.json`)
         .then(result => result.json())
-        .then(setupPage);
+        .then(function(data) {
+          setupPage(data);
+        });
     });
 });
 
@@ -325,14 +327,46 @@ async function setupPage(pageData) {
   // we have to manually scroll to any anchor since we added the list items after we loaded the page
   scrollToHashAnchor();
   window.addEventListener("hashchange", scrollToHashAnchor);
+
+  const searchElement = document.getElementById('icon-search');
+  searchElement.addEventListener('input', function() {
+    filterIcons(searchElement.value);
+    const offset = document.getElementById('sticky-bar')
+      .getBoundingClientRect().height;
+    window.scrollTo({
+      top: document.getElementById('icon-list').getBoundingClientRect().top -
+        document.body.getBoundingClientRect().top -
+        offset
+    });
+  });
+}
+
+function filterIcons(rawQuery) {
+  const query = rawQuery.toLowerCase().trim().replaceAll(/[\s_]+/gi, '');
+  const elements = document.querySelectorAll('#icon-list .icon-item');
+  for (const element of elements) {
+    if (query === '' || element.id.replaceAll('_', '').includes(query)) {
+      element.classList.remove('hidden');
+    } else {
+      element.classList.add('hidden');
+    }
+  }
 }
 
 function scrollToHashAnchor() {
+  document.getElementById('icon-search').value = '';
+  filterIcons('');
   const hash = window.location.hash;
   if (hash && hash.length > 1) {
     const target = document.querySelector(hash);
     if (target) {
-      target.scrollIntoView();
+      const offset = document.getElementById('sticky-bar')
+        .getBoundingClientRect().height;
+      window.scrollTo({
+        top: target.getBoundingClientRect().top -
+          document.body.getBoundingClientRect().top -
+          offset
+      });
     }
   }
 }
