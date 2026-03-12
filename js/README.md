@@ -33,7 +33,7 @@ mapping platform.
 ## Installation
 
 ```bash
-npm install @waysidemapping/pinhead
+npm install @waysidemapping/pinhead-js
 ```
 
 ## Options
