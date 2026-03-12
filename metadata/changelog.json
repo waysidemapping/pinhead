@@ -73,6 +73,7 @@
         "newId": "aerial_tram",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🚡",
         "americana": "poi_aerialway_circle",
         "maki": "aerialway",
         "nps": "tramway"
