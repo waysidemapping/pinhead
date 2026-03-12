@@ -1,6 +1,6 @@
 {
   "name": "@waysidemapping/pinhead-js",
-  "version": "1.14.0-dev",
+  "version": "15.16.0-dev",
   "type": "module",
   "main": "index.js",
   "description": "Quality public domain sprites for your map",
