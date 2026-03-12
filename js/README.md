@@ -23,11 +23,12 @@ mapping platform.
 
 ## Features
 
-- **Icon Composition:** Layer any **Pinhead** icon onto background shapes.
+- **Icon Composition:** Layer any Pinhead icon onto background shapes.
 - **Smart Coloring:** Automatically chooses contrasting icon colors based on the background fill.
 - **Multiple Shapes:** Supports `circle`, `square`, `map_pin`, and `marker`.
 - **CLI & API:** Use it as a command-line tool for batch processing or as a JavaScript library in your app.
 - **Custom SVGs:** Pass raw SVG strings to compose custom icons
+- **Migation:** A function is provided to simplify the usage of Pinehead's `changelog.json`.
 
 ## Installation
 
@@ -56,6 +57,8 @@ These options are common across both the CLI and API.
 
 ### JavaScript API
 
+#### Create Icons
+
 Ideal for dynamic icon generation in the browser or on the server.
 
 ```javascript
@@ -72,7 +75,7 @@ const marker = getIcon("jeep", {
 });
 ```
 
-#### Examples
+##### Examples
 
 | Result                                    | Code                                                                                              |
 | :---------------------------------------- | :------------------------------------------------------------------------------------------------ |
@@ -82,6 +85,22 @@ const marker = getIcon("jeep", {
 | ![](./examples/burger-marker.svg)         | `getIcon("burger", { shape: "marker", shapeFill: "#3FB1CE" })`                                    |
 | ![](./examples/ice_cream-circle-pink.svg) | `getIcon("ice_cream_on_cone", { shape: "circle", shapeFill: "pink" })`                            |
 | ![](./examples/rocket-map_pin-purple.svg) | `getIcon("rocketship", { shape: "map_pin", shapeFill: "purple" })`                                |
+
+#### Migrate an icon name
+
+```javascript
+import { migrateName } from "@waysidemapping/pinhead-js";
+
+// Migrate a name previously used by Pinhead. If a name was used more than once, the more recent name is returned.
+let name = migrateName("pedestrian"); // -> "person_walking"
+
+// Migrate from a specific version (treasure_map was renamed, in v13, but a new treasure_map was introduced then too)
+migrateName("treasure_map", "pinhead@10"); // -> "bifold_map_with_dotted_line_to_x"
+migrateName("treasure_map", "pinhead@13"); // -> "treasure_map"
+
+// Migrate from a seed source
+migrateName("maps", "nps"); // -> "bifold_map_with_dotted_line_to_x"
+```
 
 ### Command Line Interface (CLI)
 
@@ -124,7 +143,7 @@ npx pinhead build-icons --config my-icons.json --outdir ./assets/icons
 
 ## Custom SVG icon requirements
 
-To work with **Pinhead JS**, custom SVG strings must follow these constraints:
+To work with Pinhead JS, custom SVG strings must follow these constraints:
 
 - Use only `<path>` elements.
 - Path elements should only contain the `d` attribute.
@@ -134,11 +153,11 @@ To work with **Pinhead JS**, custom SVG strings must follow these constraints:
 
 ## Versioning
 
-Because **Pinhead** generally uses major version numbers, but **Pinhead JS** uses it's `changelog.json` too offer compatibility across versions, the major version of **Pinhead JS** reflects breaking API changes, the minor version reflects the version of Pinhead, and the patch version is incremented for non-breaking changes.
+Because Pinhead generally uses major version numbers, but Pinhead JS uses it's `changelog.json` too offer compatibility across versions, the major version of Pinhead JS reflects breaking API changes, the minor version reflects the version of Pinhead, and the patch version is incremented for non-breaking changes.
 
 EG: `@waysidemapping/pinhead-js==1.15.0` bundles `@waysidemapping/pinhead==15.0.0`
 
-If you wish to use a very specific version of **Pinhead**, you can import it yourself and use **Pinhead JS**'s custom SVG support:
+If you wish to use a very specific version of Pinhead, you can import it yourself and use Pinhead JS's custom SVG support:
 
 ```javascript
 import { getIcon } from "@waysidemapping/pinhead-js";
@@ -153,7 +172,7 @@ const svg = getIcon(index.icons["bicycle"].svg, { shape: "marker" });
 
 ### MapLibre GL JS
 
-To use **Pinhead JS** dynamically with MapLibre:
+To use Pinhead JS dynamically with MapLibre:
 
 ```javascript
 const svg = getIcon("greek_cross", { shape: "circle", shapeFill: "red" });
@@ -172,8 +191,8 @@ URL.revokeObjectURL(url);
 
 ## Inspiration
 
-**Pinhead JS** is inspired by the [Maki Icon Editor](https://labs.mapbox.com/maki-icons/editor/) and [makiwich](https://github.com/mapbox/makiwich)
+Pinhead JS is inspired by the [Maki Icon Editor](https://labs.mapbox.com/maki-icons/editor/) and [makiwich](https://github.com/mapbox/makiwich)
 
 ## License
 
-**Pinhead JS** is distributed under [CC0](/LICENSE).
+Pinhead JS is distributed under [CC0](/LICENSE).

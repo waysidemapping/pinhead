@@ -1,24 +1,6 @@
 import index from "@waysidemapping/pinhead/dist/icons/index.complete.json" with { type: "json" };
 import tinycolor from "tinycolor2";
-import { getSvgPathStrings } from "./util.js";
-
-// minifiy is a JS template tag function to strip whitespace from XML
-function minify(strings, ...values) {
-  // Interleave the strings and values
-  let output = strings.reduce((acc, part, i) => {
-    return acc + part + (values[i] !== undefined ? values[i] : "");
-  }, "");
-
-  // remove newlines
-  output = output.replace(/\n/g, " ");
-  // trim
-  output = output.trim();
-  // remove double spaces
-  output = output.replace(/\s\s+/g, " ");
-  // remove spaces around > and < and />
-  output = output.replace(/\s*(\/?>|<)\s*/g, "$1");
-  return output;
-}
+import { getSvgPathStrings, minify } from "./util.js";
 
 // Hard coding for 15x15 requirement for Pinhead icons
 const size = 15;
@@ -37,8 +19,6 @@ export function getIcon(name, properties = {}) {
   } else {
     const icon = index.icons[name];
     if (!icon) {
-      // TODO: lookup using old names?
-      // TODO: lookup using original(eg maki/temaki/etc) names?
       throw new Error(`unknown icon: ${name}`);
     }
     iconSvg = icon.svg;
