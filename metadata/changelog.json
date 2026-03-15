@@ -9589,6 +9589,16 @@
         "issue": "114"
       },
       {
+        "newId": "california",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "california_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
         "newId": "colorado",
         "by": "@quincylvania",
         "issue": "114"
@@ -9670,6 +9680,26 @@
       },
       {
         "newId": "massachusetts_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "michigan",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "michigan_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "michigan_lower_peninsula",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "michigan_upper_peninsula",
         "by": "@quincylvania",
         "issue": "114"
       },
@@ -9820,6 +9850,16 @@
       },
       {
         "newId": "vermont_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "washington",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "washington_with_capital_star",
         "by": "@quincylvania",
         "issue": "114"
       },
