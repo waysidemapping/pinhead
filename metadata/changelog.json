@@ -9555,6 +9555,16 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "ethernet_port",
+        "by": "@quincylvania",
+        "issue": "110"
+      },
+      {
+        "newId": "ethernet_port_in_square",
+        "by": "@quincylvania",
+        "issue": "110"
+      },
+      {
         "newId": "pixel_ape_face_with_eye_patch",
         "by": "@quincylvania",
         "inspo": "pixel_ape_face"
