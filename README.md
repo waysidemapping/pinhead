@@ -21,7 +21,7 @@ Map icons need to be really small to support high visual density, so all of Pinh
 
 ## Community and support
 
-A small community is developing around Pinhead! We're working to make this the best and largest library of public domain map icons anywhere on the web, but we can't do it alone. Come join us in the [#pinhead](https://osmus.slack.com/archives/C0AH40E4J9W) channel on [OSM US Slack](https://slack.openstreetmap.us/). Bring your questions, comments, and ideas, or feel free to [open an issue](https://github.com/waysidemapping/pinhead/issues/new) on GitHub. You can also contact me (@quincylvania) directly through any of the channels listed on [my website](https://waysidemapping.org).
+A small community is developing around Pinhead! We're working to make this the best and largest library of public domain map icons anywhere on the web, but we can't do it alone. Come join us in the [#pinhead](https://osmus.slack.com/archives/C0AH40E4J9W) channel on [OSM US Slack](https://slack.openstreetmap.us/). Bring your questions, comments, and ideas, or feel free to [open an issue](https://github.com/waysidemapping/pinhead/issues/new) on GitHub. You can also contact me ([@quincylvania](https://github.com/quincylvania)) directly through any of the channels listed on [my website](https://waysidemapping.org).
 
 ## Usage
 
