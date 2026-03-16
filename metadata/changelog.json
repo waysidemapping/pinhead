@@ -10160,5 +10160,19 @@
         "issue": "114"
       }
     ]
+  },
+  {
+    "majorVersion": "17",
+    "date": "2026-03-16",
+    "iconChanges": [
+      {
+        "oldId": "new_hampsire",
+        "newId": "new_hampshire"
+      },
+      {
+        "oldId": "new_hampsire_with_capital_star",
+        "newId": "new_hampshire_with_capital_star"
+      }
+    ]
   }
 ]
