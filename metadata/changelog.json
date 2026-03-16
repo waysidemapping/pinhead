@@ -10200,6 +10200,11 @@
         "newId": "honeycomb",
         "by": "@westnordost",
         "pr": "125"
+      },
+      {
+        "newId": "hash",
+        "by": "@quincylvania",
+        "inspo": "terminal_screen_with_hash_prompt"
       }
     ]
   }
