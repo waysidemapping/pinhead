@@ -1,5 +1,79 @@
 # Changelog
 
+## [15.17.0] - 2026-03-17
+
+This release contains new, renamed, and redesigned icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
+
+### Renamed and redesigned icons
+
+- <img src="https://pinhead.ink/v16/plane.svg" width="15px"/> `plane` -> <img src="https://pinhead.ink/v17/plane_up.svg" width="15px"/> `plane_up` ([#128](https://github.com/waysidemapping/pinhead/issues/128))
+
+### Renamed icons
+
+- <img src="https://pinhead.ink/v17/new_hampshire.svg" width="15px"/> `new_hampsire` -> `new_hampshire`
+- <img src="https://pinhead.ink/v17/new_hampshire_with_capital_star.svg" width="15px"/> `new_hampsire_with_capital_star` -> `new_hampshire_with_capital_star`
+
+### Redesigned icons
+
+- <img src="https://pinhead.ink/v16/barbell.svg" width="15px"/> -> <img src="https://pinhead.ink/v17/barbell.svg" width="15px"/> `barbell` ([#124](https://github.com/waysidemapping/pinhead/issues/124))
+- <img src="https://pinhead.ink/v16/paperclip.svg" width="15px"/> -> <img src="https://pinhead.ink/v17/paperclip.svg" width="15px"/> `paperclip` ([#126](https://github.com/waysidemapping/pinhead/issues/126))
+- <img src="https://pinhead.ink/v16/banknote_in_slot.svg" width="15px"/> -> <img src="https://pinhead.ink/v17/banknote_in_slot.svg" width="15px"/> `banknote_in_slot` ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v16/envelope_in_slot.svg" width="15px"/> -> <img src="https://pinhead.ink/v17/envelope_in_slot.svg" width="15px"/> `envelope_in_slot` ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v16/ticket_in_slot.svg" width="15px"/> -> <img src="https://pinhead.ink/v17/ticket_in_slot.svg" width="15px"/> `ticket_in_slot` ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+
+### Added icons
+
+- <img src="https://pinhead.ink/v17/bee.svg" width="15px"/> Add `bee` by [@westnordost](https://github.com/westnordost) ([#125](https://github.com/waysidemapping/pinhead/issues/125), [#121](https://github.com/waysidemapping/pinhead/issues/121))
+- <img src="https://pinhead.ink/v17/bee_skep.svg" width="15px"/> Add `bee_skep` by [@westnordost](https://github.com/westnordost) ([#125](https://github.com/waysidemapping/pinhead/issues/125))
+- <img src="https://pinhead.ink/v17/honeycomb.svg" width="15px"/> Add `honeycomb` by [@westnordost](https://github.com/westnordost) ([#125](https://github.com/waysidemapping/pinhead/issues/125))
+- <img src="https://pinhead.ink/v17/bohr_atomic_model.svg" width="15px"/> Add `bohr_atomic_model` by [@westnordost](https://github.com/westnordost) ([#136](https://github.com/waysidemapping/pinhead/issues/136))
+- <img src="https://pinhead.ink/v17/elephant.svg" width="15px"/> Add `elephant` from [source](https://upload.wikimedia.org/wikipedia/commons/0/02/MX_road_sign_SIT-56.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/rooster_fighting.svg" width="15px"/> Add `rooster_fighting` from [source](https://upload.wikimedia.org/wikipedia/commons/9/98/MX_road_sign_SIT-42.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/baseball_bat_and_baseball.svg" width="15px"/> Add `baseball_bat_and_baseball` from [source](https://upload.wikimedia.org/wikipedia/commons/f/f5/MX_road_sign_SIT-21.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/boxing_glove_up.svg" width="15px"/> Add `boxing_glove_up` from [source](https://upload.wikimedia.org/wikipedia/commons/5/5c/MX_road_sign_SIT-64.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/jai_alai_cesta_and_ball.svg" width="15px"/> Add `jai_alai_cesta_and_ball` from [source](https://upload.wikimedia.org/wikipedia/commons/a/a3/MX_road_sign_SIT-35.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/person_dancing_with_person_wearing_dress.svg" width="15px"/> Add `person_dancing_with_person_wearing_dress` from [source](https://upload.wikimedia.org/wikipedia/commons/d/da/MX_road_sign_SIT-58.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/people_wearing_traditional_festive_latin_clothes.svg" width="15px"/> Add `people_wearing_traditional_festive_latin_clothes` from [source](https://upload.wikimedia.org/wikipedia/commons/b/bc/MX_road_sign_SIT-27.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/person_wearing_martial_arts_belt_front_kicking.svg" width="15px"/> Add `person_wearing_martial_arts_belt_front_kicking` from [source](https://upload.wikimedia.org/wikipedia/commons/c/c6/MX_road_sign_SIT-62.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/person_holding_barbell.svg" width="15px"/> Add `person_holding_barbell` from [source](https://upload.wikimedia.org/wikipedia/commons/4/4d/MX_road_sign_SIT-70.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/person_wearing_racing_helmet_driving_go_kart.svg" width="15px"/> Add `person_wearing_racing_helmet_driving_go_kart` from [source](https://upload.wikimedia.org/wikipedia/commons/d/dc/MX_road_sign_SIT-31.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/person_leaping_over_hurdle.svg" width="15px"/> Add `person_leaping_over_hurdle` from [source](https://upload.wikimedia.org/wikipedia/commons/d/da/MX_road_sign_SIT-63.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/person_standing.svg" width="15px"/> Add `person_standing` from [source](https://upload.wikimedia.org/wikipedia/commons/4/4d/MX_road_sign_SIT-70.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/person_wearing_cowboy_hat_holding_coiled_rope.svg" width="15px"/> Add `person_wearing_cowboy_hat_holding_coiled_rope` from [source](https://upload.wikimedia.org/wikipedia/commons/f/f1/MX_road_sign_SIT-38.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/ice_skate.svg" width="15px"/> Add `ice_skate` from [source](https://upload.wikimedia.org/wikipedia/commons/e/e6/MX_road_sign_SIT-69.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/inline_skate.svg" width="15px"/> Add `inline_skate` from [source](https://upload.wikimedia.org/wikipedia/commons/6/63/MX_road_sign_SIT-68.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/chess_knight.svg" width="15px"/> Add `chess_knight` from [source](https://upload.wikimedia.org/wikipedia/commons/7/74/MX_road_sign_SIT-36.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/lucha_libre_mask.svg" width="15px"/> Add `lucha_libre_mask` from [source](https://upload.wikimedia.org/wikipedia/commons/c/c1/MX_road_sign_SIT-61.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/soccer_ball.svg" width="15px"/> Add `soccer_ball` from [source](https://upload.wikimedia.org/wikipedia/commons/d/d9/MX_road_sign_SIT-28.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/slot.svg" width="15px"/> Add `slot` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v17/vertical_slot.svg" width="15px"/> Add `vertical_slot` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v17/arrow_down_from_banknote_in_slot.svg" width="15px"/> Add `arrow_down_from_banknote_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/arrow_up_to_banknote_in_slot.svg" width="15px"/> Add `arrow_up_to_banknote_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/arrow_down_from_envelope_in_slot.svg" width="15px"/> Add `arrow_down_from_envelope_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/arrow_up_to_envelope_in_slot.svg" width="15px"/> Add `arrow_up_to_envelope_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/payment_card.svg" width="15px"/> Add `payment_card` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/payment_card_in_slot.svg" width="15px"/> Add `payment_card_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/arrow_down_from_payment_card_in_slot.svg" width="15px"/> Add `arrow_down_from_payment_card_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/arrow_up_to_payment_card_in_slot.svg" width="15px"/> Add `arrow_up_to_payment_card_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/arrow_down_from_ticket_in_slot.svg" width="15px"/> Add `arrow_down_from_ticket_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/arrow_up_to_ticket_in_slot.svg" width="15px"/> Add `arrow_up_to_ticket_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/plane_top_right.svg" width="15px"/> Add `plane_top_right` by [@quincylvania](https://github.com/quincylvania) ([#128](https://github.com/waysidemapping/pinhead/issues/128))
+- <img src="https://pinhead.ink/v17/plane_right.svg" width="15px"/> Add `plane_right` by [@quincylvania](https://github.com/quincylvania) ([#128](https://github.com/waysidemapping/pinhead/issues/128))
+- <img src="https://pinhead.ink/v17/stone_arrowhead_up.svg" width="15px"/> Add `stone_arrowhead_up` by [@quincylvania](https://github.com/quincylvania) ([#115](https://github.com/waysidemapping/pinhead/issues/115))
+- <img src="https://pinhead.ink/v17/stone_arrowhead_top_right.svg" width="15px"/> Add `stone_arrowhead_top_right` by [@quincylvania](https://github.com/quincylvania) ([#115](https://github.com/waysidemapping/pinhead/issues/115))
+- <img src="https://pinhead.ink/v17/stone_arrowhead_right.svg" width="15px"/> Add `stone_arrowhead_right` by [@quincylvania](https://github.com/quincylvania) ([#115](https://github.com/waysidemapping/pinhead/issues/115))
+- <img src="https://pinhead.ink/v17/stone_arrowhead_down.svg" width="15px"/> Add `stone_arrowhead_down` by [@quincylvania](https://github.com/quincylvania) ([#115](https://github.com/waysidemapping/pinhead/issues/115))
+- <img src="https://pinhead.ink/v17/hash.svg" width="15px"/> Add `hash` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v17/bicycle_and_dollar.svg" width="15px"/> Add `bicycle_and_dollar` by [@quincylvania](https://github.com/quincylvania) ([#91](https://github.com/waysidemapping/pinhead/issues/91))
+- <img src="https://pinhead.ink/v17/bicycle_and_euro.svg" width="15px"/> Add `bicycle_and_euro` by [@quincylvania](https://github.com/quincylvania) ([#91](https://github.com/waysidemapping/pinhead/issues/91))
+- <img src="https://pinhead.ink/v17/bicycle_and_pound.svg" width="15px"/> Add `bicycle_and_pound` by [@quincylvania](https://github.com/quincylvania) ([#91](https://github.com/waysidemapping/pinhead/issues/91))
+- <img src="https://pinhead.ink/v17/cargobike_and_dollar.svg" width="15px"/> Add `cargobike_and_dollar` by [@quincylvania](https://github.com/quincylvania) ([#91](https://github.com/waysidemapping/pinhead/issues/91))
+- <img src="https://pinhead.ink/v17/cargobike_and_euro.svg" width="15px"/> Add `cargobike_and_euro` by [@quincylvania](https://github.com/quincylvania) ([#91](https://github.com/waysidemapping/pinhead/issues/91))
+- <img src="https://pinhead.ink/v17/cargobike_and_pound.svg" width="15px"/> Add `cargobike_and_pound` by [@quincylvania](https://github.com/quincylvania) ([#91](https://github.com/waysidemapping/pinhead/issues/91))
+- <img src="https://pinhead.ink/v17/campsite_and_droplet.svg" width="15px"/> Add `campsite_and_droplet` by [@quincylvania](https://github.com/quincylvania) ([#134](https://github.com/waysidemapping/pinhead/issues/134))
+- <img src="https://pinhead.ink/v17/tipi_campsite_and_droplet.svg" width="15px"/> Add `tipi_campsite_and_droplet` by [@quincylvania](https://github.com/quincylvania) ([#134](https://github.com/waysidemapping/pinhead/issues/134))
+- <img src="https://pinhead.ink/v17/campsite_and_wifi.svg" width="15px"/> Add `campsite_and_wifi` by [@quincylvania](https://github.com/quincylvania)
+
 ## [15.16.0] - 2026-03-15
 
 This release contains new, merged, and redesigned icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
