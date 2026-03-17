@@ -10327,6 +10327,117 @@
         ]
       },
       {
+        "newId": "slot",
+        "by": "@quincylvania",
+        "inspo": "payment_card_in_slot"
+      },
+      {
+        "newId": "vertical_slot",
+        "by": "@quincylvania",
+        "inspo": "payment_card_in_slot"
+      },
+      {
+        "oldId": "banknote_in_slot",
+        "newId": "banknote_in_slot",
+        "by": "@ooosssay",
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_down_from_banknote_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "banknote_in_slot",
+          "arrow_down"
+        ],
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_up_to_banknote_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "banknote_in_slot",
+          "arrow_up"
+        ],
+        "pr": "139"
+      },
+      {
+        "oldId": "envelope_in_slot",
+        "newId": "envelope_in_slot",
+        "by": "@ooosssay",
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_down_from_envelope_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "envelope_in_slot",
+          "arrow_down"
+        ],
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_up_to_envelope_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "envelope_in_slot",
+          "arrow_up"
+        ],
+        "pr": "139"
+      },
+      {
+        "newId": "payment_card",
+        "by": "@ooosssay",
+        "pr": "139"
+      },
+      {
+        "newId": "payment_card_in_slot",
+        "by": "@ooosssay",
+        "inspo": "payment_card",
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_down_from_payment_card_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "payment_card_in_slot",
+          "arrow_down"
+        ],
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_up_to_payment_card_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "payment_card_in_slot",
+          "arrow_up"
+        ],
+        "pr": "139"
+      },
+      {
+        "oldId": "ticket_in_slot",
+        "newId": "ticket_in_slot",
+        "by": "@ooosssay",
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_down_from_ticket_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "ticket_in_slot",
+          "arrow_down"
+        ],
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_up_to_ticket_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "ticket_in_slot",
+          "arrow_up"
+        ],
+        "pr": "139"
+      },
+      {
         "oldId": "plane",
         "newId": "plane_up",
         "by": "@quincylvania",
