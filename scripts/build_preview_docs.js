@@ -3,7 +3,7 @@ import { readFileSync, existsSync, rmSync, copyFileSync, mkdirSync } from "fs";
 
 const version = JSON.parse(readFileSync('package.json')).version;
 console.log('Building docs for Pinhead v' + version);
-const majorVersion = parseInt(version.split('.')[0]);
+const majorVersion = parseInt(version.split('.')[1]);
 
 copyFileSync('package.json', "docs/package.json");
 copyFileSync('metadata/changelog.json', "docs/changelog.json");

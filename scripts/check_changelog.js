@@ -7,7 +7,8 @@ import os from "os";
 
 const workspace = await fs.mkdtemp(join(os.tmpdir(), "workspace-"));
 
-const currentMajorVersion = JSON.parse(readFileSync('package.json')).version.split('.')[0];
+const version = JSON.parse(readFileSync('package.json')).version;
+const currentMajorVersion = version.split('.')[1];
 
 const importSources = JSON.parse(readFileSync('metadata/external_sources.json'));
 
@@ -146,7 +147,7 @@ function validateChangelog() {
         }
       }
       if (iconChange.newId && iconChange.newId !== iconChange.oldId) {
-        if (iconsById[iconChange.newId]) {
+        if (iconsById[iconChange.newId] && iconChange.edit !== 'merge') {
           console.error(`Duplicate changelog entry for icon "${iconChange.newId}" in version ${v}`)
           return;
         }
@@ -193,10 +194,10 @@ function validateChangelog() {
 
 function printTextForChangelog(changelog) {
   const newV = changelog.majorVersion;
-  console.log(`## [${newV}.0.0] - ${changelog.date}`);
+  console.log(`## [${version}] - ${changelog.date}`);
   console.log('');
   const oldV = parseInt(newV) - 1;
-  const addedIcons = [], deletedIcons = [], renamedIcons = [], redesignedIcons = [], renamedAndRedesignedIcons = [];
+  const addedIcons = [], deletedIcons = [], renamedIcons = [], mergedIcons = [], redesignedIcons = [], renamedAndRedesignedIcons = [];
   changelog.iconChanges.forEach(iconChange => {
     if (iconChange.oldId) {
       if (iconChange.newId) {
@@ -204,6 +205,8 @@ function printTextForChangelog(changelog) {
           redesignedIcons.push(iconChange);
         } else if (iconChange.by || iconChange.src) {
           renamedAndRedesignedIcons.push(iconChange);
+        } else if (iconChange.edit === 'merge'){
+          mergedIcons.push(iconChange);
         } else {
           renamedIcons.push(iconChange);
         }
@@ -238,16 +241,11 @@ function printTextForChangelog(changelog) {
     });
     console.log('');
   }
-  if (addedIcons.length) {
-    console.log('### Added icons');
+  if (mergedIcons.length) {
+    console.log('### Merged icons');
     console.log('');
-    addedIcons.forEach(iconChange => {
-      let str = `- <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> Add \`${iconChange.newId}\``;
-      if (iconChange.by || iconChange.srcBy) {
-        const bys = (iconChange.by ? stringArray(iconChange.by) : []).concat(iconChange.srcBy ? stringArray(iconChange.srcBy) : []);
-        str += ' by ' + bys.map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
-      }
-      console.log(str + issueLinks(iconChange));
+    mergedIcons.forEach(iconChange => {
+      console.log(`- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> \`${iconChange.oldId}\` -> <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.newId}\`` + issueLinks(iconChange));
     });
     console.log('');
   }
@@ -256,6 +254,30 @@ function printTextForChangelog(changelog) {
     console.log('');
     redesignedIcons.forEach(iconChange => {
       console.log(`- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> -> <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.newId}\`` + issueLinks(iconChange));
+    });
+    console.log('');
+  }
+  if (addedIcons.length) {
+    console.log('### Added icons');
+    console.log('');
+    addedIcons.forEach(iconChange => {
+      let str = `- <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> Add \`${iconChange.newId}\``;
+      if (iconChange.by || iconChange.srcBy) {
+        const bys = (iconChange.by ? stringArray(iconChange.by) : []).concat(iconChange.srcBy ? stringArray(iconChange.srcBy) : []);
+        str += ' by ' + bys.map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
+      } else if (iconChange.src && iconChange.importBy) {
+        const srcs = stringArray(iconChange.src);
+        str += ' from ' + srcs.map(src => {
+          const importSource = importSources.find(source => source.id === src);
+          if (importSource) {
+            return `[${importSource.name}](${importSource.repo.slice(0, -4)})`;
+          }
+          return `[source](${src})`;
+        }).join(', ');
+        const importBys = stringArray(iconChange.importBy);
+        str += ' imported by ' + importBys.map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
+      }
+      console.log(str + issueLinks(iconChange));
     });
     console.log('');
   }

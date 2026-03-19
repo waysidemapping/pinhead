@@ -9,10 +9,12 @@ window.addEventListener('load', _ => {
     .then(obj => {
       packageJson = obj;
       version = packageJson.version;
-      majorVersion = version.split('.')[0];
+      majorVersion = version.split('.')[1];
       fetch(`v${majorVersion}/index.complete.json`)
         .then(result => result.json())
-        .then(setupPage);
+        .then(function(data) {
+          setupPage(data);
+        });
     });
 });
 
@@ -24,7 +26,7 @@ async function setupPage(pageData) {
 
   const currentChangelog = changelogs.find(item => item.majorVersion === majorVersion);
   const newIconIds = currentChangelog.iconChanges
-    .filter(iconChange => iconChange.newId && (!iconChange.oldId || (iconChange.by && iconChange.edit !== "flip")))
+    .filter(iconChange => iconChange.newId && (!iconChange.oldId || (iconChange.by && !["flip", "resize"].includes(iconChange.edit))))
     .map(iconChange => iconChange.newId);
 
   const parser = new DOMParser();
@@ -58,7 +60,7 @@ async function setupPage(pageData) {
               new Chainable('a')
                 .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases/tag/v${version}`)
                 .setAttribute('target', '_blank')
-                .append('v' + version)
+                .append('v' + majorVersion)
             ),
           new Chainable('p')
             .setAttribute('class', 'date-line')
@@ -116,7 +118,7 @@ async function setupPage(pageData) {
             .append('coverage'),
           new Chainable('img')
             .setAttribute('class', 'inline-icon')
-            .setAttribute('src', `/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
+            .setAttribute('src', `/v${majorVersion}/arrow_right_from_left_bracket.svg`)
         ),
       new Chainable('a')
         .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases.atom`)
@@ -325,14 +327,46 @@ async function setupPage(pageData) {
   // we have to manually scroll to any anchor since we added the list items after we loaded the page
   scrollToHashAnchor();
   window.addEventListener("hashchange", scrollToHashAnchor);
+
+  const searchElement = document.getElementById('icon-search');
+  searchElement.addEventListener('input', function() {
+    filterIcons(searchElement.value);
+    const offset = document.getElementById('sticky-bar')
+      .getBoundingClientRect().height;
+    window.scrollTo({
+      top: document.getElementById('icon-list').getBoundingClientRect().top -
+        document.body.getBoundingClientRect().top -
+        offset
+    });
+  });
+}
+
+function filterIcons(rawQuery) {
+  const query = rawQuery.toLowerCase().trim().replaceAll(/[\s_]+/gi, '');
+  const elements = document.querySelectorAll('#icon-list .icon-item');
+  for (const element of elements) {
+    if (query === '' || element.id.replaceAll('_', '').includes(query)) {
+      element.classList.remove('hidden');
+    } else {
+      element.classList.add('hidden');
+    }
+  }
 }
 
 function scrollToHashAnchor() {
+  document.getElementById('icon-search').value = '';
+  filterIcons('');
   const hash = window.location.hash;
   if (hash && hash.length > 1) {
     const target = document.querySelector(hash);
     if (target) {
-      target.scrollIntoView();
+      const offset = document.getElementById('sticky-bar')
+        .getBoundingClientRect().height;
+      window.scrollTo({
+        top: target.getBoundingClientRect().top -
+          document.body.getBoundingClientRect().top -
+          offset
+      });
     }
   }
 }

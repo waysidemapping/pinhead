@@ -73,6 +73,7 @@
         "newId": "aerial_tram",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🚡",
         "americana": "poi_aerialway_circle",
         "maki": "aerialway",
         "nps": "tramway"
@@ -301,6 +302,7 @@
         "newId": "baby",
         "src": "nps",
         "importBy": "@quincylvania",
+        "healthicons": "people/baby-0203m",
         "nps": "baby-changing-station"
       },
       {
@@ -335,6 +337,7 @@
         "newId": "balance_scales",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "healthicons": "objects/justice",
         "osmcarto": "amenity/courthouse",
         "temaki": "lawyer"
       },
@@ -1238,6 +1241,7 @@
         "src": "osmcarto",
         "importBy": "@quincylvania",
         "char": "🚬",
+        "healthicons": "symbols/smoking",
         "nps": "smoking-area",
         "osmcarto": "shop/tobacco"
       },
@@ -1891,6 +1895,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "char": "💧",
+        "healthicons": "body/blood-drop",
         "maki": "water",
         "opentrailmap": "watershed_reserve",
         "temaki": "water"
@@ -1923,6 +1928,7 @@
         "newId": "ear",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "healthicons": "body/ear",
         "temaki": "ear"
       },
       {
@@ -2039,7 +2045,8 @@
       {
         "newId": "eye_outline",
         "by": "@quincylvania",
-        "char": "👁️"
+        "char": "👁️",
+        "healthicons": "body/eye"
       },
       {
         "newId": "eyebrow",
@@ -2619,6 +2626,7 @@
           "💟",
           "❤︎"
         ],
+        "healthicons": "symbols/heart",
         "maki": "heart",
         "temaki": "heart",
         "viglino": "princesse/svg/coeur"
@@ -2642,6 +2650,7 @@
       {
         "newId": "heart_with_bolt",
         "by": "@quincylvania",
+        "healthicons": "devices/defibrillator",
         "nps": "aed"
       },
       {
@@ -2653,6 +2662,10 @@
         "newId": "heart_with_ecg_line",
         "by": "@quincylvania",
         "inspo": "https://raw.githubusercontent.com/mapbox/maki/8a3337e06e0919e102c8f6f8976b8e9e6ccb90ab/icons/defibrillator.svg",
+        "healthicons": [
+          "symbols/cardiogram",
+          "symbols/heart-cardiogram"
+        ],
         "maki": "defibrillator"
       },
       {
@@ -2685,6 +2698,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "char": "🚁",
+        "healthicons": "vehicles/helicopter",
         "maki": "heliport"
       },
       {
@@ -3352,6 +3366,7 @@
         "newId": "map_pin_with_dot",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "healthicons": "symbols/geo-location",
         "temaki": "pin"
       },
       {
@@ -3409,6 +3424,7 @@
         "newId": "mens_restroom_symbol",
         "by": "@quincylvania",
         "char": "🚹",
+        "healthicons": "people/man",
         "nps": "mens-restroom"
       },
       {
@@ -3423,6 +3439,7 @@
         "src": "nps",
         "importBy": "@quincylvania",
         "char": "🔬",
+        "healthicons": "devices/microscope",
         "nps": "young-scientist-program"
       },
       {
@@ -3482,6 +3499,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "char": "🦷",
+        "healthicons": "body/tooth",
         "maki": "dentist",
         "osmcarto": "amenity/dentist"
       },
@@ -3882,6 +3900,7 @@
         "newId": "pedestrian",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "healthicons": "exercise/walking",
         "nps": "walking",
         "temaki": "pedestrian"
       },
@@ -4179,6 +4198,7 @@
         "src": "nps",
         "importBy": "@quincylvania",
         "char": "🤱",
+        "healthicons": "people/lactation",
         "nps": "breastfeeding-station"
       },
       {
@@ -5007,6 +5027,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "char": "🏃‍➡️",
+        "healthicons": "exercise/running",
         "maki": "pitch",
         "osmcarto": [
           "leisure/fitness",
@@ -5202,6 +5223,7 @@
         "newId": "showerhead_with_spray",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🚿",
         "osmcarto": "amenity/shower",
         "temaki": "shower"
       },
@@ -6406,7 +6428,8 @@
       {
         "newId": "venus",
         "by": "@quincylvania",
-        "char": "♀"
+        "char": "♀",
+        "healthicons": "symbols/female"
       },
       {
         "newId": "vertical_rotisserie",
@@ -6483,6 +6506,7 @@
         "newId": "water_faucet_with_droplet",
         "src": "nps",
         "importBy": "@quincylvania",
+        "healthicons": "objects/running-water",
         "nps": "water-hookup"
       },
       {
@@ -6584,6 +6608,7 @@
         "src": "osmcarto",
         "importBy": "@quincylvania",
         "char": "🦽",
+        "healthicons": "devices/wheelchair-alt",
         "osmcarto": "shop/medical_supply"
       },
       {
@@ -6657,12 +6682,14 @@
         "newId": "womens_and_mens_restroom_symbol",
         "by": "@quincylvania",
         "char": "🚻",
+        "healthicons": "people/male-and_female",
         "maki": "toilet"
       },
       {
         "newId": "womens_restroom_symbol",
         "by": "@quincylvania",
         "char": "🚺",
+        "healthicons": "people/woman",
         "nps": "womens-restroom"
       },
       {
@@ -6830,7 +6857,8 @@
       },
       {
         "newId": "compact_box_truck_with_greek_cross",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "healthicons": "vehicles/mobile-clinic"
       },
       {
         "newId": "compact_box_truck_with_heavy_six_point_asterisk",
@@ -8100,7 +8128,8 @@
       {
         "newId": "mars",
         "by": "@quincylvania",
-        "char": "♂"
+        "char": "♂",
+        "healthicons": "symbols/male"
       },
       {
         "newId": "venus_mars",
@@ -8473,6 +8502,7 @@
         "srcBy": "@viglino",
         "importBy": "@quincylvania",
         "issue": "81",
+        "char": "🐙",
         "viglino": "pirate/svg/animal-octopus"
       },
       {
@@ -8919,6 +8949,1617 @@
       {
         "newId": "pixel_skull",
         "by": "@quincylvania"
+      }
+    ]
+  },
+  {
+    "majorVersion": "15",
+    "date": "2026-03-11",
+    "iconChanges": [
+      {
+        "newId": "crystal_ball_on_sphere_stand",
+        "by": "@ooosssay",
+        "pr": "106"
+      },
+      {
+        "newId": "piano_keys",
+        "by": "@ooosssay",
+        "pr": "103"
+      },
+      {
+        "newId": "hand_dropping_circles",
+        "by": "@ooosssay",
+        "inspo": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Conventional_Toll_Plaza_Advance_Sign_2.svg",
+        "pr": "103"
+      },
+      {
+        "newId": "hand_dropping_circles_into_container",
+        "by": "@ooosssay",
+        "inspo": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Conventional_Toll_Plaza_Advance_Sign_2.svg",
+        "pr": "103"
+      },
+      {
+        "newId": "mounted_slotted_dispenser",
+        "by": "@quincylvania",
+        "inspo": "mounted_slotted_dispenser_with_dog_wearing_collar"
+      },
+      {
+        "newId": "mounted_slotted_dispenser_with_poo_pile",
+        "by": "@quincylvania",
+        "inspo": "mounted_slotted_dispenser_with_dog_wearing_collar"
+      },
+      {
+        "newId": "antler",
+        "by": "@quincylvania",
+        "inspo": "deer_head_with_antlers",
+        "issue": "86"
+      },
+      {
+        "newId": "bone",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "jack_o_lantern",
+        "by": "@quincylvania",
+        "inspo": "pumpkin",
+        "issue": "83",
+        "char": "🎃"
+      },
+      {
+        "newId": "compact_box_truck_with_box_peak",
+        "by": "@quincylvania",
+        "inspo": "compact_box_truck"
+      },
+      {
+        "newId": "sub_sandwich_with_steam",
+        "by": "@quincylvania",
+        "inspo": [
+          "sub_sandwich",
+          "loaf_of_pan_bread_with_steam"
+        ],
+        "issue": "101"
+      },
+      {
+        "newId": "vinyl_record",
+        "by": "@quincylvania",
+        "issue": "70"
+      },
+      {
+        "newId": "pixel_ape_face",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "pixel_three_inch_floppy_disk",
+        "by": "@quincylvania",
+        "inspo": "three_inch_floppy_disk"
+      },
+      {
+        "newId": "winding_way_narrow",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "winding_way",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "winding_way_wide",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "water_tap",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "water_tap_with_droplet",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "water_glass_under_faucet",
+        "newId": "water_tap_with_drinking_glass",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "water_tap_with_handle",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "water_faucet_with_droplet",
+        "newId": "water_tap_with_handle_and_droplet",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "water_tap_with_handle_and_drinking_glass",
+        "by": "@quincylvania",
+        "issue": "52",
+        "char": "🚰"
+      },
+      {
+        "oldId": "water_tap",
+        "newId": "water_standpipe_with_handle",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "water_standpipe_with_handle_and_droplet",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "water_glass_under_water_tap",
+        "newId": "water_standpipe_with_handle_and_drinking_glass",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "water_tap_with_pump_handle",
+        "newId": "water_standpipe_with_pump_handle",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "water_standpipe_with_pump_handle_and_droplet",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "water_standpipe_with_pump_handle_and_drinking_glass",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "water_tap_with_motor",
+        "newId": "water_standpipe_with_motor_and_handle",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "water_standpipe_with_motor_and_handle_and_droplet",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "water_standpipe_with_motor_and_handle_and_drinking_glass",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "water_pipe_return_bend_with_handle",
+        "by": "@quincylvania",
+        "inspo": "water_pipe_return_bend_with_motor_and_handle"
+      },
+      {
+        "oldId": "water_pipe_with_motor",
+        "newId": "water_pipe_return_bend_with_motor_and_handle",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "peace_sign",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": [
+          "107",
+          "75"
+        ],
+        "healthicons": "symbols/peace"
+      },
+      {
+        "newId": "biohazard_symbol",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "symbols/outbreak"
+      },
+      {
+        "newId": "video_camera_symbol",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "symbols/video"
+      },
+      {
+        "newId": "mosquito",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "zoonoses/mosquito"
+      },
+      {
+        "newId": "antibody",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/antibody"
+      },
+      {
+        "newId": "anus",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/anus"
+      },
+      {
+        "newId": "arm",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/arm"
+      },
+      {
+        "newId": "bacteria",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/bacteria"
+      },
+      {
+        "newId": "bladder",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/bladder"
+      },
+      {
+        "newId": "blood_cells",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/blood-cells"
+      },
+      {
+        "newId": "cell_nuclei",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/cell-nuclei"
+      },
+      {
+        "newId": "dna",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/dna"
+      },
+      {
+        "newId": "enzyme",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/enzyme"
+      },
+      {
+        "newId": "female_groin",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/vagina-alt"
+      },
+      {
+        "newId": "female_reproductive_system",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/female-reproductive_system"
+      },
+      {
+        "newId": "fetus",
+        "by": "@quincylvania",
+        "inspo": "fetus_in_circle_outline",
+        "issue": "107"
+      },
+      {
+        "newId": "fetus_in_circle",
+        "by": "@quincylvania",
+        "inspo": "fetus_in_circle_outline",
+        "issue": "107"
+      },
+      {
+        "newId": "fetus_in_circle_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "people/fetus"
+      },
+      {
+        "newId": "foot",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/foot"
+      },
+      {
+        "newId": "gallbladder",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/gallbladder"
+      },
+      {
+        "newId": "human_head",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/head"
+      },
+      {
+        "newId": "heart_organ",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "char": "🫀",
+        "healthicons": "body/heart-organ"
+      },
+      {
+        "newId": "intestine",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/intestine"
+      },
+      {
+        "newId": "joint",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/joints"
+      },
+      {
+        "newId": "kidneys",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/kidneys"
+      },
+      {
+        "newId": "leg",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/leg"
+      },
+      {
+        "newId": "leg_with_varicose_veins",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "conditions/varicose-vein"
+      },
+      {
+        "newId": "lungs",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/lungs"
+      },
+      {
+        "newId": "lungs_with_right_side_spots",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "conditions/tb"
+      },
+      {
+        "newId": "male_genitalia",
+        "by": "@quincylvania",
+        "inspo": "male_genitalia_with_urethra",
+        "issue": "107"
+      },
+      {
+        "newId": "male_genitalia_with_urethra",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/penis"
+      },
+      {
+        "newId": "male_genitalia_with_testicles",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/testicles"
+      },
+      {
+        "newId": "male_groin",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/penis-alt"
+      },
+      {
+        "newId": "nose_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/nose"
+      },
+      {
+        "newId": "pancreas",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/pancreas"
+      },
+      {
+        "newId": "prostate",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/prostate"
+      },
+      {
+        "newId": "spleen",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/spleen"
+      },
+      {
+        "newId": "stomach",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/stomach"
+      },
+      {
+        "newId": "thyroid",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/thyroid"
+      },
+      {
+        "newId": "tissue",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/tissue"
+      },
+      {
+        "newId": "tumor",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/tumour"
+      },
+      {
+        "newId": "person_with_open_arms",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/body"
+      },
+      {
+        "newId": "underweight_person",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "conditions/underweight"
+      },
+      {
+        "newId": "overweight_person",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "conditions/overweight"
+      },
+      {
+        "newId": "pregnant_person",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "people/pregnant"
+      },
+      {
+        "newId": "person_vomiting",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "conditions/vomiting"
+      },
+      {
+        "newId": "person_with_droplets",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "conditions/sweating"
+      },
+      {
+        "newId": "person_walking_holding_railing",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "exercise/walk-supported"
+      },
+      {
+        "newId": "rememberance_ribbon",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "char": "🎗️",
+        "healthicons": "conditions/ribbon"
+      },
+      {
+        "newId": "face_mask",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "ppe/ppe-face_mask"
+      },
+      {
+        "newId": "respirator",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "ppe/respirator"
+      },
+      {
+        "newId": "diaper",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "symbols/nappy-diaper"
+      },
+      {
+        "newId": "quadcopter_drone",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "vehicles/drone"
+      },
+      {
+        "newId": "sayana_press",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "contraceptives/sayana-press"
+      },
+      {
+        "newId": "sperm",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "contraceptives/sperm"
+      },
+      {
+        "newId": "condom",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "contraceptives/male-condom"
+      },
+      {
+        "newId": "condom_and_venus",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "contraceptives/female-condom"
+      },
+      {
+        "newId": "condom_and_mars",
+        "by": "@quincylvania",
+        "inspo": [
+          "condom_and_venus",
+          "mars"
+        ],
+        "issue": "107"
+      }
+    ]
+  },
+  {
+    "majorVersion": "16",
+    "date": "2026-03-15",
+    "iconChanges": [
+      {
+        "oldId": "jp_school",
+        "newId": "jp_college",
+        "edit": "merge"
+      },
+      {
+        "oldId": "delicate_arch",
+        "newId": "delicate_arch",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "crystal_ball_on_sphere_stand",
+        "newId": "crystal_ball_on_sphere_stand",
+        "by": "@ooosssay",
+        "pr": "116"
+      },
+      {
+        "newId": "steel_square_and_drafting_compass",
+        "by": "@ooosssay",
+        "pr": "116"
+      },
+      {
+        "newId": "typha_and_duck_in_water",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c7/MX_road_sign_SIT-6.svg",
+        "importBy": "@ooosssay",
+        "pr": "116"
+      },
+      {
+        "newId": "dome_with_crescent_moon_and_star_and_planet",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/MX_road_sign_SIT-12.svg",
+        "importBy": "@ooosssay",
+        "pr": "116"
+      },
+      {
+        "newId": "mesoamerican_pyramid",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/MX_road_sign_SIT-10.svg",
+        "importBy": "@ooosssay",
+        "pr": "116"
+      },
+      {
+        "newId": "badminton_racket_and_shuttlecock",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/MX_road_sign_SIT-18.svg",
+        "importBy": "@ooosssay",
+        "pr": "116"
+      },
+      {
+        "newId": "person_behind_desk",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/MX_road_sign_SIT-13.svg",
+        "importBy": "@ooosssay",
+        "pr": "116"
+      },
+      {
+        "newId": "person_in_water_with_steam",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/MX_road_sign_SIT-14.svg",
+        "importBy": "@ooosssay",
+        "pr": "116"
+      },
+      {
+        "newId": "person_wearing_racing_helmet_driving_racecar",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b2/MX_road_sign_SIT-17.svg",
+        "importBy": "@ooosssay",
+        "pr": "116"
+      },
+      {
+        "newId": "person_walking_bicycle",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/MX_road_sign_SR-43A.svg",
+        "importBy": "@ooosssay",
+        "issue": "88",
+        "pr": "116"
+      },
+      {
+        "newId": "traditional_storage_jars",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/MX_road_sign_SIT-2.svg",
+        "importBy": "@ooosssay",
+        "pr": "116"
+      },
+      {
+        "newId": "madison_cross",
+        "by": "@quincylvania",
+        "inspo": "https://upload.wikimedia.org/wikipedia/commons/1/14/Flag_of_Madison%2C_Wisconsin_%282018%E2%80%93present%29.svg",
+        "issue": "112"
+      },
+      {
+        "newId": "keystone",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "ethernet_port",
+        "by": "@quincylvania",
+        "issue": "110"
+      },
+      {
+        "newId": "ethernet_port_in_square",
+        "by": "@quincylvania",
+        "issue": "110"
+      },
+      {
+        "newId": "cup_and_saucer_and_wifi",
+        "by": "@quincylvania",
+        "inspo": [
+          "cup_and_saucer",
+          "wifi"
+        ]
+      },
+      {
+        "newId": "pixel_ape_face_with_eye_patch",
+        "by": "@quincylvania",
+        "inspo": "pixel_ape_face"
+      },
+      {
+        "newId": "contiguous_united_states",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "contiguous_united_states_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "alabama",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "alabama_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "alaska",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "arizona",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "arizona_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "arkansas",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "arkansas_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "california",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "california_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "colorado",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "colorado_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "connecticut",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "connecticut_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "delaware",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "delaware_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "district_of_columbia",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "district_of_columbia_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "florida",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "georgia_us",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "georgia_us_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "hawaii",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "idaho",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "idaho_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "illinois",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "illinois_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "indiana",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "indiana_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "iowa",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "iowa_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "kansas",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "kansas_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "kentucky",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "kentucky_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "louisiana",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "louisiana_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "maine",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "maine_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "maryland",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "massachusetts",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "massachusetts_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "michigan",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "michigan_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "michigan_lower_peninsula",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "michigan_upper_peninsula",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "minnesota",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "minnesota_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "mississippi",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "mississippi_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "missouri",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "missouri_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "montana",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "montana_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "nebraska",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "nebraska_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "nevada",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "nevada_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "new_hampsire",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "new_hampsire_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "new_jersey",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "new_jersey_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "new_mexico",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "new_mexico_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "new_york",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "new_york_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "north_dakota",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "north_dakota_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "north_carolina",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "north_carolina_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "ohio",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "ohio_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "oklahoma",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "oklahoma_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "oregon",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "oregon_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "pennsylvania",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "pennsylvania_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "rhode_island",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "rhode_island_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "south_dakota",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "south_dakota_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "south_carolina",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "south_carolina_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "tennessee",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "tennessee_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "texas",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "texas_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "utah",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "utah_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "vermont",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "vermont_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "virginia",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "virginia_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "washington",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "washington_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "west_virginia",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "west_virginia_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "wisconsin",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "wisconsin_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "wyoming",
+        "by": "@quincylvania",
+        "issue": "114"
+      },
+      {
+        "newId": "wyoming_with_capital_star",
+        "by": "@quincylvania",
+        "issue": "114"
+      }
+    ]
+  },
+  {
+    "majorVersion": "17",
+    "date": "2026-03-17",
+    "iconChanges": [
+      {
+        "oldId": "new_hampsire",
+        "newId": "new_hampshire"
+      },
+      {
+        "oldId": "new_hampsire_with_capital_star",
+        "newId": "new_hampshire_with_capital_star"
+      },
+      {
+        "oldId": "barbell",
+        "newId": "barbell",
+        "by": "@westnordost",
+        "pr": "124"
+      },
+      {
+        "oldId": "paperclip",
+        "newId": "paperclip",
+        "by": "@westnordost",
+        "pr": "126"
+      },
+      {
+        "newId": "bee",
+        "by": "@westnordost",
+        "issue": "121",
+        "pr": "125",
+        "char": "🐝"
+      },
+      {
+        "newId": "bee_skep",
+        "by": "@westnordost",
+        "pr": "125"
+      },
+      {
+        "newId": "honeycomb",
+        "by": "@westnordost",
+        "pr": "125"
+      },
+      {
+        "newId": "bohr_atomic_model",
+        "by": "@westnordost",
+        "pr": "136"
+      },
+      {
+        "newId": "elephant",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/02/MX_road_sign_SIT-56.svg",
+        "importBy": "@ooosssay",
+        "pr": "127",
+        "char": "🐘"
+      },
+      {
+        "newId": "rooster_fighting",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/98/MX_road_sign_SIT-42.svg",
+        "importBy": "@ooosssay",
+        "pr": "127"
+      },
+      {
+        "newId": "baseball_bat_and_baseball",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/MX_road_sign_SIT-21.svg",
+        "importBy": "@ooosssay",
+        "pr": "127"
+      },
+      {
+        "newId": "boxing_glove_up",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5c/MX_road_sign_SIT-64.svg",
+        "importBy": "@ooosssay",
+        "pr": "127",
+        "char": "🥊"
+      },
+      {
+        "newId": "jai_alai_cesta_and_ball",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a3/MX_road_sign_SIT-35.svg",
+        "importBy": "@ooosssay",
+        "pr": "127"
+      },
+      {
+        "newId": "person_dancing_with_person_wearing_dress",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/MX_road_sign_SIT-58.svg",
+        "importBy": "@ooosssay",
+        "pr": "127"
+      },
+      {
+        "newId": "people_wearing_traditional_festive_latin_clothes",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/bc/MX_road_sign_SIT-27.svg",
+        "importBy": "@ooosssay",
+        "pr": "127"
+      },
+      {
+        "newId": "person_wearing_martial_arts_belt_front_kicking",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c6/MX_road_sign_SIT-62.svg",
+        "importBy": "@ooosssay",
+        "pr": "127"
+      },
+      {
+        "newId": "person_holding_barbell",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/MX_road_sign_SIT-70.svg",
+        "importBy": "@ooosssay",
+        "pr": "127"
+      },
+      {
+        "newId": "person_wearing_racing_helmet_driving_go_kart",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/MX_road_sign_SIT-31.svg",
+        "importBy": "@ooosssay",
+        "pr": "127"
+      },
+      {
+        "newId": "person_leaping_over_hurdle",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/MX_road_sign_SIT-63.svg",
+        "importBy": "@ooosssay",
+        "pr": "127"
+      },
+      {
+        "newId": "person_standing",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/MX_road_sign_SIT-70.svg",
+        "importBy": "@ooosssay",
+        "pr": "127"
+      },
+      {
+        "newId": "person_wearing_cowboy_hat_holding_coiled_rope",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/MX_road_sign_SIT-38.svg",
+        "importBy": "@ooosssay",
+        "pr": "127"
+      },
+      {
+        "newId": "ice_skate",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/e6/MX_road_sign_SIT-69.svg",
+        "importBy": "@ooosssay",
+        "pr": "127",
+        "char": "⛸️"
+      },
+      {
+        "newId": "inline_skate",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/MX_road_sign_SIT-68.svg",
+        "importBy": "@ooosssay",
+        "pr": "127"
+      },
+      {
+        "newId": "chess_knight",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/74/MX_road_sign_SIT-36.svg",
+        "importBy": "@ooosssay",
+        "pr": "127",
+        "char": [
+          "♘",
+          "♞"
+        ]
+      },
+      {
+        "newId": "lucha_libre_mask",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c1/MX_road_sign_SIT-61.svg",
+        "importBy": "@ooosssay",
+        "pr": "127"
+      },
+      {
+        "newId": "soccer_ball",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/MX_road_sign_SIT-28.svg",
+        "importBy": "@ooosssay",
+        "pr": "127",
+        "char": [
+          "⚽️",
+          "⚽︎"
+        ]
+      },
+      {
+        "newId": "slot",
+        "by": "@quincylvania",
+        "inspo": "payment_card_in_slot"
+      },
+      {
+        "newId": "vertical_slot",
+        "by": "@quincylvania",
+        "inspo": "payment_card_in_slot"
+      },
+      {
+        "oldId": "banknote_in_slot",
+        "newId": "banknote_in_slot",
+        "by": "@ooosssay",
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_down_from_banknote_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "banknote_in_slot",
+          "arrow_down"
+        ],
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_up_to_banknote_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "banknote_in_slot",
+          "arrow_up"
+        ],
+        "pr": "139"
+      },
+      {
+        "oldId": "envelope_in_slot",
+        "newId": "envelope_in_slot",
+        "by": "@ooosssay",
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_down_from_envelope_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "envelope_in_slot",
+          "arrow_down"
+        ],
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_up_to_envelope_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "envelope_in_slot",
+          "arrow_up"
+        ],
+        "pr": "139"
+      },
+      {
+        "newId": "payment_card",
+        "by": "@ooosssay",
+        "pr": "139"
+      },
+      {
+        "newId": "payment_card_in_slot",
+        "by": "@ooosssay",
+        "inspo": "payment_card",
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_down_from_payment_card_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "payment_card_in_slot",
+          "arrow_down"
+        ],
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_up_to_payment_card_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "payment_card_in_slot",
+          "arrow_up"
+        ],
+        "pr": "139"
+      },
+      {
+        "oldId": "ticket_in_slot",
+        "newId": "ticket_in_slot",
+        "by": "@ooosssay",
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_down_from_ticket_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "ticket_in_slot",
+          "arrow_down"
+        ],
+        "pr": "139"
+      },
+      {
+        "newId": "arrow_up_to_ticket_in_slot",
+        "by": "@ooosssay",
+        "inspo": [
+          "ticket_in_slot",
+          "arrow_up"
+        ],
+        "pr": "139"
+      },
+      {
+        "oldId": "plane",
+        "newId": "plane_up",
+        "by": "@quincylvania",
+        "pr": "128"
+      },
+      {
+        "newId": "plane_top_right",
+        "by": "@quincylvania",
+        "pr": "128",
+        "char": "✈️"
+      },
+      {
+        "newId": "plane_right",
+        "by": "@quincylvania",
+        "pr": "128",
+        "char": "✈︎"
+      },
+      {
+        "newId": "stone_arrowhead_up",
+        "by": "@quincylvania",
+        "issue": "115"
+      },
+      {
+        "newId": "stone_arrowhead_top_right",
+        "by": "@quincylvania",
+        "issue": "115"
+      },
+      {
+        "newId": "stone_arrowhead_right",
+        "by": "@quincylvania",
+        "issue": "115"
+      },
+      {
+        "newId": "stone_arrowhead_down",
+        "by": "@quincylvania",
+        "issue": "115"
+      },
+      {
+        "newId": "hash",
+        "by": "@quincylvania",
+        "inspo": "terminal_screen_with_hash_prompt",
+        "char": "#"
+      },
+      {
+        "newId": "bicycle_and_dollar",
+        "by": "@quincylvania",
+        "inspo": [
+          "bicycle_and_tag",
+          "car_with_dollar"
+        ],
+        "issue": "91"
+      },
+      {
+        "newId": "bicycle_and_euro",
+        "by": "@quincylvania",
+        "inspo": [
+          "bicycle_and_tag",
+          "car_with_euro"
+        ],
+        "issue": "91"
+      },
+      {
+        "newId": "bicycle_and_pound",
+        "by": "@quincylvania",
+        "inspo": [
+          "bicycle_and_tag",
+          "car_with_pound"
+        ],
+        "issue": "91"
+      },
+      {
+        "newId": "cargobike_and_dollar",
+        "by": "@quincylvania",
+        "inspo": [
+          "cargobike",
+          "car_with_dollar"
+        ],
+        "issue": "91"
+      },
+      {
+        "newId": "cargobike_and_euro",
+        "by": "@quincylvania",
+        "inspo": [
+          "cargobike",
+          "car_with_euro"
+        ],
+        "issue": "91"
+      },
+      {
+        "newId": "cargobike_and_pound",
+        "by": "@quincylvania",
+        "inspo": [
+          "cargobike",
+          "car_with_pound"
+        ],
+        "issue": "91"
+      },
+      {
+        "newId": "campsite_and_droplet",
+        "by": "@quincylvania",
+        "inspo": [
+          "campsite",
+          "water_tap_with_droplet"
+        ],
+        "issue": "134"
+      },
+      {
+        "newId": "tipi_campsite_and_droplet",
+        "by": "@quincylvania",
+        "inspo": [
+          "tipi_campsite",
+          "water_tap_with_droplet"
+        ],
+        "issue": "134"
+      },
+      {
+        "newId": "campsite_and_wifi",
+        "by": "@quincylvania",
+        "inspo": [
+          "campsite",
+          "wifi"
+        ]
       }
     ]
   }

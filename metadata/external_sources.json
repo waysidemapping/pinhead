@@ -7,6 +7,12 @@
     "ignoreFiles": "^(shield)|(oneway)"
   },
   {
+    "id": "healthicons",
+    "name": "Health Icons",
+    "repo": "https://github.com/resolvetosavelives/healthicons.git",
+    "iconDir": "public/icons/svg/filled-24px"
+  },
+  {
     "id": "maki",
     "name": "Maki",
     "repo": "https://github.com/mapbox/maki.git",

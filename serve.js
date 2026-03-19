@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 
 const baseDirectory = path.dirname(url.fileURLToPath(import.meta.url));
-const port = 3366;
+const port = 3367;
 
 http.createServer(function (request, response) {
     try {

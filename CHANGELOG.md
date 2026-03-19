@@ -1,5 +1,339 @@
 # Changelog
 
+## [15.17.0] - 2026-03-17
+
+This release contains new, renamed, and redesigned icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
+
+### Renamed and redesigned icons
+
+- <img src="https://pinhead.ink/v16/plane.svg" width="15px"/> `plane` -> <img src="https://pinhead.ink/v17/plane_up.svg" width="15px"/> `plane_up` ([#128](https://github.com/waysidemapping/pinhead/issues/128))
+
+### Renamed icons
+
+- <img src="https://pinhead.ink/v17/new_hampshire.svg" width="15px"/> `new_hampsire` -> `new_hampshire`
+- <img src="https://pinhead.ink/v17/new_hampshire_with_capital_star.svg" width="15px"/> `new_hampsire_with_capital_star` -> `new_hampshire_with_capital_star`
+
+### Redesigned icons
+
+- <img src="https://pinhead.ink/v16/barbell.svg" width="15px"/> -> <img src="https://pinhead.ink/v17/barbell.svg" width="15px"/> `barbell` ([#124](https://github.com/waysidemapping/pinhead/issues/124))
+- <img src="https://pinhead.ink/v16/paperclip.svg" width="15px"/> -> <img src="https://pinhead.ink/v17/paperclip.svg" width="15px"/> `paperclip` ([#126](https://github.com/waysidemapping/pinhead/issues/126))
+- <img src="https://pinhead.ink/v16/banknote_in_slot.svg" width="15px"/> -> <img src="https://pinhead.ink/v17/banknote_in_slot.svg" width="15px"/> `banknote_in_slot` ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v16/envelope_in_slot.svg" width="15px"/> -> <img src="https://pinhead.ink/v17/envelope_in_slot.svg" width="15px"/> `envelope_in_slot` ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v16/ticket_in_slot.svg" width="15px"/> -> <img src="https://pinhead.ink/v17/ticket_in_slot.svg" width="15px"/> `ticket_in_slot` ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+
+### Added icons
+
+- <img src="https://pinhead.ink/v17/bee.svg" width="15px"/> Add `bee` by [@westnordost](https://github.com/westnordost) ([#125](https://github.com/waysidemapping/pinhead/issues/125), [#121](https://github.com/waysidemapping/pinhead/issues/121))
+- <img src="https://pinhead.ink/v17/bee_skep.svg" width="15px"/> Add `bee_skep` by [@westnordost](https://github.com/westnordost) ([#125](https://github.com/waysidemapping/pinhead/issues/125))
+- <img src="https://pinhead.ink/v17/honeycomb.svg" width="15px"/> Add `honeycomb` by [@westnordost](https://github.com/westnordost) ([#125](https://github.com/waysidemapping/pinhead/issues/125))
+- <img src="https://pinhead.ink/v17/bohr_atomic_model.svg" width="15px"/> Add `bohr_atomic_model` by [@westnordost](https://github.com/westnordost) ([#136](https://github.com/waysidemapping/pinhead/issues/136))
+- <img src="https://pinhead.ink/v17/elephant.svg" width="15px"/> Add `elephant` from [source](https://upload.wikimedia.org/wikipedia/commons/0/02/MX_road_sign_SIT-56.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/rooster_fighting.svg" width="15px"/> Add `rooster_fighting` from [source](https://upload.wikimedia.org/wikipedia/commons/9/98/MX_road_sign_SIT-42.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/baseball_bat_and_baseball.svg" width="15px"/> Add `baseball_bat_and_baseball` from [source](https://upload.wikimedia.org/wikipedia/commons/f/f5/MX_road_sign_SIT-21.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/boxing_glove_up.svg" width="15px"/> Add `boxing_glove_up` from [source](https://upload.wikimedia.org/wikipedia/commons/5/5c/MX_road_sign_SIT-64.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/jai_alai_cesta_and_ball.svg" width="15px"/> Add `jai_alai_cesta_and_ball` from [source](https://upload.wikimedia.org/wikipedia/commons/a/a3/MX_road_sign_SIT-35.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/person_dancing_with_person_wearing_dress.svg" width="15px"/> Add `person_dancing_with_person_wearing_dress` from [source](https://upload.wikimedia.org/wikipedia/commons/d/da/MX_road_sign_SIT-58.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/people_wearing_traditional_festive_latin_clothes.svg" width="15px"/> Add `people_wearing_traditional_festive_latin_clothes` from [source](https://upload.wikimedia.org/wikipedia/commons/b/bc/MX_road_sign_SIT-27.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/person_wearing_martial_arts_belt_front_kicking.svg" width="15px"/> Add `person_wearing_martial_arts_belt_front_kicking` from [source](https://upload.wikimedia.org/wikipedia/commons/c/c6/MX_road_sign_SIT-62.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/person_holding_barbell.svg" width="15px"/> Add `person_holding_barbell` from [source](https://upload.wikimedia.org/wikipedia/commons/4/4d/MX_road_sign_SIT-70.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/person_wearing_racing_helmet_driving_go_kart.svg" width="15px"/> Add `person_wearing_racing_helmet_driving_go_kart` from [source](https://upload.wikimedia.org/wikipedia/commons/d/dc/MX_road_sign_SIT-31.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/person_leaping_over_hurdle.svg" width="15px"/> Add `person_leaping_over_hurdle` from [source](https://upload.wikimedia.org/wikipedia/commons/d/da/MX_road_sign_SIT-63.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/person_standing.svg" width="15px"/> Add `person_standing` from [source](https://upload.wikimedia.org/wikipedia/commons/4/4d/MX_road_sign_SIT-70.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/person_wearing_cowboy_hat_holding_coiled_rope.svg" width="15px"/> Add `person_wearing_cowboy_hat_holding_coiled_rope` from [source](https://upload.wikimedia.org/wikipedia/commons/f/f1/MX_road_sign_SIT-38.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/ice_skate.svg" width="15px"/> Add `ice_skate` from [source](https://upload.wikimedia.org/wikipedia/commons/e/e6/MX_road_sign_SIT-69.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/inline_skate.svg" width="15px"/> Add `inline_skate` from [source](https://upload.wikimedia.org/wikipedia/commons/6/63/MX_road_sign_SIT-68.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/chess_knight.svg" width="15px"/> Add `chess_knight` from [source](https://upload.wikimedia.org/wikipedia/commons/7/74/MX_road_sign_SIT-36.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/lucha_libre_mask.svg" width="15px"/> Add `lucha_libre_mask` from [source](https://upload.wikimedia.org/wikipedia/commons/c/c1/MX_road_sign_SIT-61.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/soccer_ball.svg" width="15px"/> Add `soccer_ball` from [source](https://upload.wikimedia.org/wikipedia/commons/d/d9/MX_road_sign_SIT-28.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#127](https://github.com/waysidemapping/pinhead/issues/127))
+- <img src="https://pinhead.ink/v17/slot.svg" width="15px"/> Add `slot` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v17/vertical_slot.svg" width="15px"/> Add `vertical_slot` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v17/arrow_down_from_banknote_in_slot.svg" width="15px"/> Add `arrow_down_from_banknote_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/arrow_up_to_banknote_in_slot.svg" width="15px"/> Add `arrow_up_to_banknote_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/arrow_down_from_envelope_in_slot.svg" width="15px"/> Add `arrow_down_from_envelope_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/arrow_up_to_envelope_in_slot.svg" width="15px"/> Add `arrow_up_to_envelope_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/payment_card.svg" width="15px"/> Add `payment_card` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/payment_card_in_slot.svg" width="15px"/> Add `payment_card_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/arrow_down_from_payment_card_in_slot.svg" width="15px"/> Add `arrow_down_from_payment_card_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/arrow_up_to_payment_card_in_slot.svg" width="15px"/> Add `arrow_up_to_payment_card_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/arrow_down_from_ticket_in_slot.svg" width="15px"/> Add `arrow_down_from_ticket_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/arrow_up_to_ticket_in_slot.svg" width="15px"/> Add `arrow_up_to_ticket_in_slot` by [@ooosssay](https://github.com/ooosssay) ([#139](https://github.com/waysidemapping/pinhead/issues/139))
+- <img src="https://pinhead.ink/v17/plane_top_right.svg" width="15px"/> Add `plane_top_right` by [@quincylvania](https://github.com/quincylvania) ([#128](https://github.com/waysidemapping/pinhead/issues/128))
+- <img src="https://pinhead.ink/v17/plane_right.svg" width="15px"/> Add `plane_right` by [@quincylvania](https://github.com/quincylvania) ([#128](https://github.com/waysidemapping/pinhead/issues/128))
+- <img src="https://pinhead.ink/v17/stone_arrowhead_up.svg" width="15px"/> Add `stone_arrowhead_up` by [@quincylvania](https://github.com/quincylvania) ([#115](https://github.com/waysidemapping/pinhead/issues/115))
+- <img src="https://pinhead.ink/v17/stone_arrowhead_top_right.svg" width="15px"/> Add `stone_arrowhead_top_right` by [@quincylvania](https://github.com/quincylvania) ([#115](https://github.com/waysidemapping/pinhead/issues/115))
+- <img src="https://pinhead.ink/v17/stone_arrowhead_right.svg" width="15px"/> Add `stone_arrowhead_right` by [@quincylvania](https://github.com/quincylvania) ([#115](https://github.com/waysidemapping/pinhead/issues/115))
+- <img src="https://pinhead.ink/v17/stone_arrowhead_down.svg" width="15px"/> Add `stone_arrowhead_down` by [@quincylvania](https://github.com/quincylvania) ([#115](https://github.com/waysidemapping/pinhead/issues/115))
+- <img src="https://pinhead.ink/v17/hash.svg" width="15px"/> Add `hash` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v17/bicycle_and_dollar.svg" width="15px"/> Add `bicycle_and_dollar` by [@quincylvania](https://github.com/quincylvania) ([#91](https://github.com/waysidemapping/pinhead/issues/91))
+- <img src="https://pinhead.ink/v17/bicycle_and_euro.svg" width="15px"/> Add `bicycle_and_euro` by [@quincylvania](https://github.com/quincylvania) ([#91](https://github.com/waysidemapping/pinhead/issues/91))
+- <img src="https://pinhead.ink/v17/bicycle_and_pound.svg" width="15px"/> Add `bicycle_and_pound` by [@quincylvania](https://github.com/quincylvania) ([#91](https://github.com/waysidemapping/pinhead/issues/91))
+- <img src="https://pinhead.ink/v17/cargobike_and_dollar.svg" width="15px"/> Add `cargobike_and_dollar` by [@quincylvania](https://github.com/quincylvania) ([#91](https://github.com/waysidemapping/pinhead/issues/91))
+- <img src="https://pinhead.ink/v17/cargobike_and_euro.svg" width="15px"/> Add `cargobike_and_euro` by [@quincylvania](https://github.com/quincylvania) ([#91](https://github.com/waysidemapping/pinhead/issues/91))
+- <img src="https://pinhead.ink/v17/cargobike_and_pound.svg" width="15px"/> Add `cargobike_and_pound` by [@quincylvania](https://github.com/quincylvania) ([#91](https://github.com/waysidemapping/pinhead/issues/91))
+- <img src="https://pinhead.ink/v17/campsite_and_droplet.svg" width="15px"/> Add `campsite_and_droplet` by [@quincylvania](https://github.com/quincylvania) ([#134](https://github.com/waysidemapping/pinhead/issues/134))
+- <img src="https://pinhead.ink/v17/tipi_campsite_and_droplet.svg" width="15px"/> Add `tipi_campsite_and_droplet` by [@quincylvania](https://github.com/quincylvania) ([#134](https://github.com/waysidemapping/pinhead/issues/134))
+- <img src="https://pinhead.ink/v17/campsite_and_wifi.svg" width="15px"/> Add `campsite_and_wifi` by [@quincylvania](https://github.com/quincylvania)
+
+## [15.16.0] - 2026-03-15
+
+This release contains new, merged, and redesigned icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
+
+### Merged icons
+
+- <img src="https://pinhead.ink/v15/jp_school.svg" width="15px"/> `jp_school` -> <img src="https://pinhead.ink/v16/jp_college.svg" width="15px"/> `jp_college`
+
+### Redesigned icons
+
+- <img src="https://pinhead.ink/v15/delicate_arch.svg" width="15px"/> -> <img src="https://pinhead.ink/v16/delicate_arch.svg" width="15px"/> `delicate_arch`
+- <img src="https://pinhead.ink/v15/crystal_ball_on_sphere_stand.svg" width="15px"/> -> <img src="https://pinhead.ink/v16/crystal_ball_on_sphere_stand.svg" width="15px"/> `crystal_ball_on_sphere_stand` ([#116](https://github.com/waysidemapping/pinhead/issues/116))
+
+### Added icons
+
+- <img src="https://pinhead.ink/v16/steel_square_and_drafting_compass.svg" width="15px"/> Add `steel_square_and_drafting_compass` by [@ooosssay](https://github.com/ooosssay) ([#116](https://github.com/waysidemapping/pinhead/issues/116))
+- <img src="https://pinhead.ink/v16/madison_cross.svg" width="15px"/> Add `madison_cross` by [@quincylvania](https://github.com/quincylvania) ([#112](https://github.com/waysidemapping/pinhead/issues/112))
+- <img src="https://pinhead.ink/v16/keystone.svg" width="15px"/> Add `keystone` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v16/ethernet_port.svg" width="15px"/> Add `ethernet_port` by [@quincylvania](https://github.com/quincylvania) ([#110](https://github.com/waysidemapping/pinhead/issues/110))
+- <img src="https://pinhead.ink/v16/ethernet_port_in_square.svg" width="15px"/> Add `ethernet_port_in_square` by [@quincylvania](https://github.com/quincylvania) ([#110](https://github.com/waysidemapping/pinhead/issues/110))
+- <img src="https://pinhead.ink/v16/cup_and_saucer_and_wifi.svg" width="15px"/> Add `cup_and_saucer_and_wifi` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v16/pixel_ape_face_with_eye_patch.svg" width="15px"/> Add `pixel_ape_face_with_eye_patch` by [@quincylvania](https://github.com/quincylvania)
+
+Add icons sourced from Secretaría de Infraestructura, Comunicaciones y Transportes (SICT) & Secretaría de Desarrollo Agrario, Territorial y Urbano (SEDATU):
+
+- <img src="https://pinhead.ink/v16/typha_and_duck_in_water.svg" width="15px"/> Add `typha_and_duck_in_water` from [source](https://upload.wikimedia.org/wikipedia/commons/c/c7/MX_road_sign_SIT-6.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#116](https://github.com/waysidemapping/pinhead/issues/116))
+- <img src="https://pinhead.ink/v16/dome_with_crescent_moon_and_star_and_planet.svg" width="15px"/> Add `dome_with_crescent_moon_and_star_and_planet` from [source](https://upload.wikimedia.org/wikipedia/commons/6/6d/MX_road_sign_SIT-12.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#116](https://github.com/waysidemapping/pinhead/issues/116))
+- <img src="https://pinhead.ink/v16/mesoamerican_pyramid.svg" width="15px"/> Add `mesoamerican_pyramid` from [source](https://upload.wikimedia.org/wikipedia/commons/4/4c/MX_road_sign_SIT-10.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#116](https://github.com/waysidemapping/pinhead/issues/116))
+- <img src="https://pinhead.ink/v16/badminton_racket_and_shuttlecock.svg" width="15px"/> Add `badminton_racket_and_shuttlecock` from [source](https://upload.wikimedia.org/wikipedia/commons/0/0b/MX_road_sign_SIT-18.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#116](https://github.com/waysidemapping/pinhead/issues/116))
+- <img src="https://pinhead.ink/v16/person_behind_desk.svg" width="15px"/> Add `person_behind_desk` from [source](https://upload.wikimedia.org/wikipedia/commons/7/7b/MX_road_sign_SIT-13.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#116](https://github.com/waysidemapping/pinhead/issues/116))
+- <img src="https://pinhead.ink/v16/person_in_water_with_steam.svg" width="15px"/> Add `person_in_water_with_steam` from [source](https://upload.wikimedia.org/wikipedia/commons/4/48/MX_road_sign_SIT-14.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#116](https://github.com/waysidemapping/pinhead/issues/116))
+- <img src="https://pinhead.ink/v16/person_wearing_racing_helmet_driving_racecar.svg" width="15px"/> Add `person_wearing_racing_helmet_driving_racecar` from [source](https://upload.wikimedia.org/wikipedia/commons/b/b2/MX_road_sign_SIT-17.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#116](https://github.com/waysidemapping/pinhead/issues/116))
+- <img src="https://pinhead.ink/v16/person_walking_bicycle.svg" width="15px"/> Add `person_walking_bicycle` from [source](https://upload.wikimedia.org/wikipedia/commons/5/57/MX_road_sign_SR-43A.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#116](https://github.com/waysidemapping/pinhead/issues/116), [#88](https://github.com/waysidemapping/pinhead/issues/88))
+- <img src="https://pinhead.ink/v16/traditional_storage_jars.svg" width="15px"/> Add `traditional_storage_jars` from [source](https://upload.wikimedia.org/wikipedia/commons/5/58/MX_road_sign_SIT-2.svg) imported by [@ooosssay](https://github.com/ooosssay) ([#116](https://github.com/waysidemapping/pinhead/issues/116))
+
+Add icons for US boundaries:
+
+- <img src="https://pinhead.ink/v16/contiguous_united_states.svg" width="15px"/> Add `contiguous_united_states` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/contiguous_united_states_with_capital_star.svg" width="15px"/> Add `contiguous_united_states_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/alabama.svg" width="15px"/> Add `alabama` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/alabama_with_capital_star.svg" width="15px"/> Add `alabama_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/alaska.svg" width="15px"/> Add `alaska` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/arizona.svg" width="15px"/> Add `arizona` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/arizona_with_capital_star.svg" width="15px"/> Add `arizona_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/arkansas.svg" width="15px"/> Add `arkansas` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/arkansas_with_capital_star.svg" width="15px"/> Add `arkansas_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/california.svg" width="15px"/> Add `california` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/california_with_capital_star.svg" width="15px"/> Add `california_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/colorado.svg" width="15px"/> Add `colorado` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/colorado_with_capital_star.svg" width="15px"/> Add `colorado_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/connecticut.svg" width="15px"/> Add `connecticut` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/connecticut_with_capital_star.svg" width="15px"/> Add `connecticut_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/delaware.svg" width="15px"/> Add `delaware` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/delaware_with_capital_star.svg" width="15px"/> Add `delaware_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/district_of_columbia.svg" width="15px"/> Add `district_of_columbia` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/district_of_columbia_with_capital_star.svg" width="15px"/> Add `district_of_columbia_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/florida.svg" width="15px"/> Add `florida` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/georgia_us.svg" width="15px"/> Add `georgia_us` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/georgia_us_with_capital_star.svg" width="15px"/> Add `georgia_us_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/hawaii.svg" width="15px"/> Add `hawaii` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/idaho.svg" width="15px"/> Add `idaho` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/idaho_with_capital_star.svg" width="15px"/> Add `idaho_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/illinois.svg" width="15px"/> Add `illinois` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/illinois_with_capital_star.svg" width="15px"/> Add `illinois_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/indiana.svg" width="15px"/> Add `indiana` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/indiana_with_capital_star.svg" width="15px"/> Add `indiana_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/iowa.svg" width="15px"/> Add `iowa` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/iowa_with_capital_star.svg" width="15px"/> Add `iowa_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/kansas.svg" width="15px"/> Add `kansas` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/kansas_with_capital_star.svg" width="15px"/> Add `kansas_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/kentucky.svg" width="15px"/> Add `kentucky` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/kentucky_with_capital_star.svg" width="15px"/> Add `kentucky_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/louisiana.svg" width="15px"/> Add `louisiana` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/louisiana_with_capital_star.svg" width="15px"/> Add `louisiana_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/maine.svg" width="15px"/> Add `maine` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/maine_with_capital_star.svg" width="15px"/> Add `maine_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/maryland.svg" width="15px"/> Add `maryland` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/massachusetts.svg" width="15px"/> Add `massachusetts` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/massachusetts_with_capital_star.svg" width="15px"/> Add `massachusetts_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/michigan.svg" width="15px"/> Add `michigan` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/michigan_with_capital_star.svg" width="15px"/> Add `michigan_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/michigan_lower_peninsula.svg" width="15px"/> Add `michigan_lower_peninsula` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/michigan_upper_peninsula.svg" width="15px"/> Add `michigan_upper_peninsula` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/minnesota.svg" width="15px"/> Add `minnesota` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/minnesota_with_capital_star.svg" width="15px"/> Add `minnesota_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/mississippi.svg" width="15px"/> Add `mississippi` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/mississippi_with_capital_star.svg" width="15px"/> Add `mississippi_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/missouri.svg" width="15px"/> Add `missouri` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/missouri_with_capital_star.svg" width="15px"/> Add `missouri_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/montana.svg" width="15px"/> Add `montana` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/montana_with_capital_star.svg" width="15px"/> Add `montana_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/nebraska.svg" width="15px"/> Add `nebraska` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/nebraska_with_capital_star.svg" width="15px"/> Add `nebraska_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/nevada.svg" width="15px"/> Add `nevada` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/nevada_with_capital_star.svg" width="15px"/> Add `nevada_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/new_hampsire.svg" width="15px"/> Add `new_hampsire` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/new_hampsire_with_capital_star.svg" width="15px"/> Add `new_hampsire_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/new_jersey.svg" width="15px"/> Add `new_jersey` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/new_jersey_with_capital_star.svg" width="15px"/> Add `new_jersey_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/new_mexico.svg" width="15px"/> Add `new_mexico` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/new_mexico_with_capital_star.svg" width="15px"/> Add `new_mexico_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/new_york.svg" width="15px"/> Add `new_york` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/new_york_with_capital_star.svg" width="15px"/> Add `new_york_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/north_dakota.svg" width="15px"/> Add `north_dakota` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/north_dakota_with_capital_star.svg" width="15px"/> Add `north_dakota_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/north_carolina.svg" width="15px"/> Add `north_carolina` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/north_carolina_with_capital_star.svg" width="15px"/> Add `north_carolina_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/ohio.svg" width="15px"/> Add `ohio` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/ohio_with_capital_star.svg" width="15px"/> Add `ohio_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/oklahoma.svg" width="15px"/> Add `oklahoma` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/oklahoma_with_capital_star.svg" width="15px"/> Add `oklahoma_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/oregon.svg" width="15px"/> Add `oregon` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/oregon_with_capital_star.svg" width="15px"/> Add `oregon_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/pennsylvania.svg" width="15px"/> Add `pennsylvania` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/pennsylvania_with_capital_star.svg" width="15px"/> Add `pennsylvania_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/rhode_island.svg" width="15px"/> Add `rhode_island` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/rhode_island_with_capital_star.svg" width="15px"/> Add `rhode_island_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/south_dakota.svg" width="15px"/> Add `south_dakota` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/south_dakota_with_capital_star.svg" width="15px"/> Add `south_dakota_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/south_carolina.svg" width="15px"/> Add `south_carolina` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/south_carolina_with_capital_star.svg" width="15px"/> Add `south_carolina_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/tennessee.svg" width="15px"/> Add `tennessee` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/tennessee_with_capital_star.svg" width="15px"/> Add `tennessee_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/texas.svg" width="15px"/> Add `texas` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/texas_with_capital_star.svg" width="15px"/> Add `texas_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/utah.svg" width="15px"/> Add `utah` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/utah_with_capital_star.svg" width="15px"/> Add `utah_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/vermont.svg" width="15px"/> Add `vermont` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/vermont_with_capital_star.svg" width="15px"/> Add `vermont_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/virginia.svg" width="15px"/> Add `virginia` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/virginia_with_capital_star.svg" width="15px"/> Add `virginia_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/washington.svg" width="15px"/> Add `washington` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/washington_with_capital_star.svg" width="15px"/> Add `washington_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/west_virginia.svg" width="15px"/> Add `west_virginia` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/west_virginia_with_capital_star.svg" width="15px"/> Add `west_virginia_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/wisconsin.svg" width="15px"/> Add `wisconsin` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/wisconsin_with_capital_star.svg" width="15px"/> Add `wisconsin_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/wyoming.svg" width="15px"/> Add `wyoming` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+- <img src="https://pinhead.ink/v16/wyoming_with_capital_star.svg" width="15px"/> Add `wyoming_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
+
+## [15.15.0] - 2026-03-11
+
+⚠️ This major release contains new, resdesigned, and renamed icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
+
+### Distribution changes
+
+The Pinhead version number now corresponds to the minor version (the middle number) instead of the major version (the first number) of the release version number.
+
+### Renamed and redesigned icons
+
+- <img src="https://pinhead.ink/v14/water_glass_under_faucet.svg" width="15px"/> `water_glass_under_faucet` -> <img src="https://pinhead.ink/v15/water_tap_with_drinking_glass.svg" width="15px"/> `water_tap_with_drinking_glass`
+- <img src="https://pinhead.ink/v14/water_faucet_with_droplet.svg" width="15px"/> `water_faucet_with_droplet` -> <img src="https://pinhead.ink/v15/water_tap_with_handle_and_droplet.svg" width="15px"/> `water_tap_with_handle_and_droplet`
+- <img src="https://pinhead.ink/v14/water_tap.svg" width="15px"/> `water_tap` -> <img src="https://pinhead.ink/v15/water_standpipe_with_handle.svg" width="15px"/> `water_standpipe_with_handle`
+- <img src="https://pinhead.ink/v14/water_glass_under_water_tap.svg" width="15px"/> `water_glass_under_water_tap` -> <img src="https://pinhead.ink/v15/water_standpipe_with_handle_and_drinking_glass.svg" width="15px"/> `water_standpipe_with_handle_and_drinking_glass`
+- <img src="https://pinhead.ink/v14/water_tap_with_pump_handle.svg" width="15px"/> `water_tap_with_pump_handle` -> <img src="https://pinhead.ink/v15/water_standpipe_with_pump_handle.svg" width="15px"/> `water_standpipe_with_pump_handle`
+- <img src="https://pinhead.ink/v14/water_tap_with_motor.svg" width="15px"/> `water_tap_with_motor` -> <img src="https://pinhead.ink/v15/water_standpipe_with_motor_and_handle.svg" width="15px"/> `water_standpipe_with_motor_and_handle`
+- <img src="https://pinhead.ink/v14/water_pipe_with_motor.svg" width="15px"/> `water_pipe_with_motor` -> <img src="https://pinhead.ink/v15/water_pipe_return_bend_with_motor_and_handle.svg" width="15px"/> `water_pipe_return_bend_with_motor_and_handle`
+
+### Added icons
+
+Add icons by new contributor [@ooosssay](https://github.com/ooosssay). Thanks, @ooosssay!
+
+- <img src="https://pinhead.ink/v15/crystal_ball_on_sphere_stand.svg" width="15px"/> Add `crystal_ball_on_sphere_stand` by [@ooosssay](https://github.com/ooosssay) ([#106](https://github.com/waysidemapping/pinhead/issues/106))
+- <img src="https://pinhead.ink/v15/piano_keys.svg" width="15px"/> Add `piano_keys` by [@ooosssay](https://github.com/ooosssay) ([#103](https://github.com/waysidemapping/pinhead/issues/103))
+- <img src="https://pinhead.ink/v15/hand_dropping_circles.svg" width="15px"/> Add `hand_dropping_circles` by [@ooosssay](https://github.com/ooosssay) ([#103](https://github.com/waysidemapping/pinhead/issues/103))
+- <img src="https://pinhead.ink/v15/hand_dropping_circles_into_container.svg" width="15px"/> Add `hand_dropping_circles_into_container` by [@ooosssay](https://github.com/ooosssay) ([#103](https://github.com/waysidemapping/pinhead/issues/103))
+
+Add assorted icons:
+
+- <img src="https://pinhead.ink/v15/mounted_slotted_dispenser.svg" width="15px"/> Add `mounted_slotted_dispenser` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/mounted_slotted_dispenser_with_poo_pile.svg" width="15px"/> Add `mounted_slotted_dispenser_with_poo_pile` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/antler.svg" width="15px"/> Add `antler` by [@quincylvania](https://github.com/quincylvania) ([#86](https://github.com/waysidemapping/pinhead/issues/86))
+- <img src="https://pinhead.ink/v15/bone.svg" width="15px"/> Add `bone` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/jack_o_lantern.svg" width="15px"/> Add `jack_o_lantern` by [@quincylvania](https://github.com/quincylvania) ([#83](https://github.com/waysidemapping/pinhead/issues/83))
+- <img src="https://pinhead.ink/v15/compact_box_truck_with_box_peak.svg" width="15px"/> Add `compact_box_truck_with_box_peak` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/sub_sandwich_with_steam.svg" width="15px"/> Add `sub_sandwich_with_steam` by [@quincylvania](https://github.com/quincylvania) ([#101](https://github.com/waysidemapping/pinhead/issues/101))
+- <img src="https://pinhead.ink/v15/vinyl_record.svg" width="15px"/> Add `vinyl_record` by [@quincylvania](https://github.com/quincylvania) ([#70](https://github.com/waysidemapping/pinhead/issues/70))
+- <img src="https://pinhead.ink/v15/winding_way_narrow.svg" width="15px"/> Add `winding_way_narrow` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/winding_way.svg" width="15px"/> Add `winding_way` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/winding_way_wide.svg" width="15px"/> Add `winding_way_wide` by [@quincylvania](https://github.com/quincylvania)
+
+Add pixel icons:
+
+- <img src="https://pinhead.ink/v15/pixel_ape_face.svg" width="15px"/> Add `pixel_ape_face` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/pixel_three_inch_floppy_disk.svg" width="15px"/> Add `pixel_three_inch_floppy_disk` by [@quincylvania](https://github.com/quincylvania)
+
+Add more water access icon variants:
+
+- <img src="https://pinhead.ink/v15/water_tap.svg" width="15px"/> Add `water_tap` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/water_tap_with_droplet.svg" width="15px"/> Add `water_tap_with_droplet` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/water_tap_with_handle.svg" width="15px"/> Add `water_tap_with_handle` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/water_tap_with_handle_and_drinking_glass.svg" width="15px"/> Add `water_tap_with_handle_and_drinking_glass` by [@quincylvania](https://github.com/quincylvania) ([#52](https://github.com/waysidemapping/pinhead/issues/52))
+- <img src="https://pinhead.ink/v15/water_standpipe_with_handle_and_droplet.svg" width="15px"/> Add `water_standpipe_with_handle_and_droplet` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/water_standpipe_with_pump_handle_and_droplet.svg" width="15px"/> Add `water_standpipe_with_pump_handle_and_droplet` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/water_standpipe_with_pump_handle_and_drinking_glass.svg" width="15px"/> Add `water_standpipe_with_pump_handle_and_drinking_glass` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/water_standpipe_with_motor_and_handle_and_droplet.svg" width="15px"/> Add `water_standpipe_with_motor_and_handle_and_droplet` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/water_standpipe_with_motor_and_handle_and_drinking_glass.svg" width="15px"/> Add `water_standpipe_with_motor_and_handle_and_drinking_glass` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v15/water_pipe_return_bend_with_handle.svg" width="15px"/> Add `water_pipe_return_bend_with_handle` by [@quincylvania](https://github.com/quincylvania)
+
+Import assorted [Health Icons](https://github.com/resolvetosavelives/healthicons) ([CC0](https://healthicons.org/about#license)):
+
+- <img src="https://pinhead.ink/v15/peace_sign.svg" width="15px"/> Add `peace_sign` ([#107](https://github.com/waysidemapping/pinhead/issues/107), [#75](https://github.com/waysidemapping/pinhead/issues/75))
+- <img src="https://pinhead.ink/v15/biohazard_symbol.svg" width="15px"/> Add `biohazard_symbol` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/video_camera_symbol.svg" width="15px"/> Add `video_camera_symbol` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/mosquito.svg" width="15px"/> Add `mosquito` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/antibody.svg" width="15px"/> Add `antibody` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/anus.svg" width="15px"/> Add `anus` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/arm.svg" width="15px"/> Add `arm` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/bacteria.svg" width="15px"/> Add `bacteria` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/bladder.svg" width="15px"/> Add `bladder` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/blood_cells.svg" width="15px"/> Add `blood_cells` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/cell_nuclei.svg" width="15px"/> Add `cell_nuclei` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/dna.svg" width="15px"/> Add `dna` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/enzyme.svg" width="15px"/> Add `enzyme` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/female_groin.svg" width="15px"/> Add `female_groin` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/female_reproductive_system.svg" width="15px"/> Add `female_reproductive_system` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/fetus.svg" width="15px"/> Add `fetus` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/fetus_in_circle.svg" width="15px"/> Add `fetus_in_circle` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/fetus_in_circle_outline.svg" width="15px"/> Add `fetus_in_circle_outline` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/foot.svg" width="15px"/> Add `foot` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/gallbladder.svg" width="15px"/> Add `gallbladder` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/human_head.svg" width="15px"/> Add `human_head` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/heart_organ.svg" width="15px"/> Add `heart_organ` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/intestine.svg" width="15px"/> Add `intestine` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/joint.svg" width="15px"/> Add `joint` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/kidneys.svg" width="15px"/> Add `kidneys` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/leg.svg" width="15px"/> Add `leg` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/leg_with_varicose_veins.svg" width="15px"/> Add `leg_with_varicose_veins` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/lungs.svg" width="15px"/> Add `lungs` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/lungs_with_right_side_spots.svg" width="15px"/> Add `lungs_with_right_side_spots` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/male_genitalia.svg" width="15px"/> Add `male_genitalia` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/male_genitalia_with_urethra.svg" width="15px"/> Add `male_genitalia_with_urethra` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/male_genitalia_with_testicles.svg" width="15px"/> Add `male_genitalia_with_testicles` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/male_groin.svg" width="15px"/> Add `male_groin` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/nose_outline.svg" width="15px"/> Add `nose_outline` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/pancreas.svg" width="15px"/> Add `pancreas` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/prostate.svg" width="15px"/> Add `prostate` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/spleen.svg" width="15px"/> Add `spleen` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/stomach.svg" width="15px"/> Add `stomach` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/thyroid.svg" width="15px"/> Add `thyroid` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/tissue.svg" width="15px"/> Add `tissue` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/tumor.svg" width="15px"/> Add `tumor` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/person_with_open_arms.svg" width="15px"/> Add `person_with_open_arms` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/underweight_person.svg" width="15px"/> Add `underweight_person` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/overweight_person.svg" width="15px"/> Add `overweight_person` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/pregnant_person.svg" width="15px"/> Add `pregnant_person` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/person_vomiting.svg" width="15px"/> Add `person_vomiting` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/person_with_droplets.svg" width="15px"/> Add `person_with_droplets` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/person_walking_holding_railing.svg" width="15px"/> Add `person_walking_holding_railing` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/rememberance_ribbon.svg" width="15px"/> Add `rememberance_ribbon` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/face_mask.svg" width="15px"/> Add `face_mask` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/respirator.svg" width="15px"/> Add `respirator` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/diaper.svg" width="15px"/> Add `diaper` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/quadcopter_drone.svg" width="15px"/> Add `quadcopter_drone` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/sayana_press.svg" width="15px"/> Add `sayana_press` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/sperm.svg" width="15px"/> Add `sperm` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/condom.svg" width="15px"/> Add `condom` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/condom_and_venus.svg" width="15px"/> Add `condom_and_venus` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+- <img src="https://pinhead.ink/v15/condom_and_mars.svg" width="15px"/> Add `condom_and_mars` ([#107](https://github.com/waysidemapping/pinhead/issues/107))
+
 ## [14.0.0] - 2026-03-08
 
 ⚠️ This major release contains new and resdesigned icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
