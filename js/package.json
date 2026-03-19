@@ -41,7 +41,7 @@
     "check-format": "prettier --check *.js test/*.js README.md"
   },
   "dependencies": {
-    "@waysidemapping/pinhead": "^14.0.0",
+    "@waysidemapping/pinhead": "^15.16.0",
     "tinycolor2": "^1.6.0"
   },
   "devDependencies": {
