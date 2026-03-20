@@ -2937,7 +2937,8 @@
       {
         "newId": "jp_college",
         "src": "maki",
-        "importBy": "@quincylvania"
+        "importBy": "@quincylvania",
+        "maki": "college-JP"
       },
       {
         "newId": "jp_ferry",
@@ -2997,7 +2998,7 @@
         "newId": "jp_school",
         "src": "maki",
         "importBy": "@quincylvania",
-        "maki": ["school-JP", "college-JP"]
+        "maki": "school-JP"
       },
       {
         "newId": "jug_and_apple",
