@@ -27,6 +27,12 @@
     "ignoreFiles": "^transparent"
   },
   {
+    "id": "opengemeenten",
+    "name": "OpenGemeenten",
+    "repo": "https://github.com/OpenGemeenten/Iconenset.git",
+    "iconDir": "Svg/Regular diapositive"
+  },
+  {
     "id": "opentrailmap",
     "name": "OpenTrailMap",
     "repo": "https://github.com/osmus/opentrailmap.git",

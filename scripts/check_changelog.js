@@ -262,10 +262,10 @@ function printTextForChangelog(changelog) {
     console.log('');
     addedIcons.forEach(iconChange => {
       let str = `- <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> Add \`${iconChange.newId}\``;
-      if (iconChange.by || iconChange.srcBy) {
-        const bys = (iconChange.by ? stringArray(iconChange.by) : []).concat(iconChange.srcBy ? stringArray(iconChange.srcBy) : []);
-        str += ' by ' + bys.map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
-      } else if (iconChange.src && iconChange.importBy) {
+      if (iconChange.srcBy) {
+        str += ' by ' + stringArray(iconChange.srcBy).map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
+      }
+      if (iconChange.src && iconChange.importBy) {
         const srcs = stringArray(iconChange.src);
         str += ' from ' + srcs.map(src => {
           const importSource = importSources.find(source => source.id === src);
@@ -276,6 +276,15 @@ function printTextForChangelog(changelog) {
         }).join(', ');
         const importBys = stringArray(iconChange.importBy);
         str += ' imported by ' + importBys.map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
+        if (iconChange.by) {
+          if (iconChange.by.toString() === iconChange.importBy.toString()) {
+            str += ' with edits';
+          } else {
+            str += ' with edits by ' + stringArray(iconChange.by).map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
+          }
+        }
+      } else if (iconChange.by) {
+        str += ' by ' + stringArray(iconChange.by).map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
       }
       console.log(str + issueLinks(iconChange));
     });

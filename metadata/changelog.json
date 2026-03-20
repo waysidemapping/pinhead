@@ -363,6 +363,7 @@
       {
         "newId": "banknote_in_slot",
         "src": "temaki",
+        "srcBy": "@tyrasd",
         "importBy": "@quincylvania",
         "osmcarto": "amenity/atm",
         "temaki": "atm2"
@@ -488,6 +489,7 @@
         "importBy": "@quincylvania",
         "char": "🚲",
         "maki": "bicycle",
+        "opengemeenten": "Fiets",
         "osmcarto": "shop/bicycle"
       },
       {
@@ -536,7 +538,10 @@
       {
         "newId": "bicycle_on_parking_line",
         "src": "temaki",
-        "srcBy": "@quincylvania",
+        "srcBy": [
+          "@tyrasd",
+          "@quincylvania"
+        ],
         "importBy": "@quincylvania",
         "temaki": "bicycle_parked"
       },
@@ -549,6 +554,7 @@
       {
         "newId": "bicycle_under_shower_spray",
         "src": "temaki",
+        "srcBy": "@mcliquid",
         "importBy": "@quincylvania",
         "temaki": "bicycle_wash"
       },
@@ -664,6 +670,7 @@
         "newId": "book",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "opengemeenten": "Gegevenswoordenboek",
         "temaki": "book_store"
       },
       {
@@ -796,6 +803,7 @@
       {
         "newId": "broadleaved_tree_in_water",
         "src": "temaki",
+        "srcBy": "@westnordost",
         "importBy": "@quincylvania",
         "temaki": "swamp"
       },
@@ -1022,6 +1030,7 @@
         "americana": "poi_car_shop",
         "maki": "car",
         "nps": "automobiles",
+        "opengemeenten": "Auto",
         "osmcarto": "shop/car"
       },
       {
@@ -1186,6 +1195,7 @@
         "americana": "poi_charging_station",
         "maki": "charging-station",
         "nps": "electric-car-charging",
+        "opengemeenten": "ElektrischLaden",
         "osmcarto": "amenity/charging_station"
       },
       {
@@ -1315,6 +1325,7 @@
         "americana": "poi_museum",
         "maki": "museum",
         "nps": "museum",
+        "opengemeenten": "Politiek",
         "osmcarto": "tourism/museum",
         "temaki": "museum"
       },
@@ -1425,6 +1436,7 @@
         "char": "🎭",
         "maki": "theatre",
         "nps": "theatre-arts",
+        "opengemeenten": "Cultuur",
         "osmcarto": "amenity/theatre"
       },
       {
@@ -1712,6 +1724,7 @@
       {
         "newId": "delicate_arch",
         "src": "temaki",
+        "srcBy": "@jake-low",
         "importBy": "@quincylvania",
         "temaki": "natural_arch"
       },
@@ -1796,7 +1809,8 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "maki": "dog-park",
-        "nps": "pets-off-leash"
+        "nps": "pets-off-leash",
+        "opengemeenten": "Hond"
       },
       {
         "newId": "dog_wearing_collar_in_shelter",
@@ -2080,6 +2094,10 @@
       {
         "newId": "fence",
         "src": "temaki",
+        "srcBy": [
+          "@RudyTheDev",
+          "@bhousel"
+        ],
         "importBy": "@quincylvania",
         "temaki": "guard_rail"
       },
@@ -2366,6 +2384,7 @@
         "newId": "gavel_with_sound_block",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "opengemeenten": "BezwaarEnBeroep",
         "temaki": "courthouse"
       },
       {
@@ -2571,6 +2590,7 @@
       {
         "newId": "handled_bowl_with_steam",
         "src": "temaki",
+        "srcBy": "@novolife",
         "importBy": "@quincylvania",
         "temaki": "hotpot"
       },
@@ -2828,7 +2848,8 @@
         "importBy": "@quincylvania",
         "char": "ℹ️",
         "maki": "information",
-        "nps": "information"
+        "nps": "information",
+        "opengemeenten": "Informatie"
       },
       {
         "newId": "inline_skater",
@@ -2854,6 +2875,7 @@
         "src": "nps",
         "importBy": "@quincylvania",
         "nps": "wheelchair-accessible",
+        "opengemeenten": "Rolstoel",
         "temaki": "wheelchair"
       },
       {
@@ -3139,6 +3161,7 @@
         "src": "opentrailmap",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "opengemeenten": "BladerenOpruimen",
         "opentrailmap": "nature_reserve"
       },
       {
@@ -3308,6 +3331,10 @@
       {
         "newId": "manhole_cover_with_hydrant",
         "src": "temaki",
+        "srcBy": [
+          "@qugebert",
+          "@bhousel"
+        ],
         "importBy": "@quincylvania",
         "temaki": "fire_hydrant_underground"
       },
@@ -3379,6 +3406,7 @@
         "newId": "market_stall",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "opengemeenten": "KopenEnVerkopen",
         "osmcarto": "shop/marketplace"
       },
       {
@@ -3688,6 +3716,7 @@
         "newId": "newspaper",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "opengemeenten": "Actueel",
         "osmcarto": "shop/newsagent"
       },
       {
@@ -3778,6 +3807,7 @@
       {
         "newId": "paifang",
         "src": "temaki",
+        "srcBy": "@novolife",
         "importBy": "@quincylvania",
         "temaki": "paifang"
       },
@@ -3914,7 +3944,7 @@
       {
         "newId": "pedestrian_and_cyclist_on_crosswalk",
         "src": "temaki",
-        "srcBy": "@quincylvania",
+        "srcBy": "@hikemaniac",
         "importBy": "@quincylvania",
         "temaki": "ped_cyclist_crosswalk"
       },
@@ -3994,6 +4024,7 @@
       {
         "newId": "perfume_bottle_with_spray",
         "src": "temaki",
+        "srcBy": "@bhousel",
         "importBy": "@quincylvania",
         "osmcarto": "shop/perfumery",
         "temaki": "perfume"
@@ -4464,6 +4495,7 @@
       {
         "newId": "pickleball_paddle_with_ball",
         "src": "temaki",
+        "srcBy": "@tjasz",
         "importBy": "@quincylvania",
         "temaki": "pickleball"
       },
@@ -4646,6 +4678,7 @@
       {
         "newId": "pole_with_floodlights",
         "src": "temaki",
+        "srcBy": "@tyrasd",
         "importBy": "@quincylvania",
         "temaki": "mast_lighting"
       },
@@ -4672,6 +4705,7 @@
       {
         "newId": "portable_fence",
         "src": "temaki",
+        "srcBy": "@RudyTheDev",
         "importBy": "@quincylvania",
         "temaki": "railing"
       },
@@ -4758,6 +4792,7 @@
       {
         "newId": "pumpjack",
         "src": "temaki",
+        "srcBy": "@bhousel",
         "importBy": "@quincylvania",
         "temaki": "oil_well"
       },
@@ -4777,6 +4812,7 @@
       {
         "newId": "quay",
         "src": "temaki",
+        "srcBy": "@jdhoek",
         "importBy": "@quincylvania",
         "temaki": "quay"
       },
@@ -4955,7 +4991,8 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "char": "🚀",
-        "maki": "rocket"
+        "maki": "rocket",
+        "opengemeenten": "ParticipatieUitvoering"
       },
       {
         "newId": "rocking_horse",
@@ -5188,6 +5225,7 @@
       {
         "newId": "shoe_under_shower_spray",
         "src": "temaki",
+        "srcBy": "@k-yle",
         "importBy": "@quincylvania",
         "temaki": "footwear_decontamination"
       },
@@ -5211,6 +5249,7 @@
         "char": "🛒",
         "americana": "poi_supermarket",
         "maki": "grocery",
+        "opengemeenten": "Winkelwagen",
         "osmcarto": "shop/supermarket"
       },
       {
@@ -5370,7 +5409,10 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
-        "temaki": "slide"
+        "temaki": [
+          "slide",
+          "slide2"
+        ]
       },
       {
         "newId": "slot_machine",
@@ -5456,7 +5498,8 @@
         "newId": "soccer_player",
         "src": "maki",
         "importBy": "@quincylvania",
-        "maki": "soccer"
+        "maki": "soccer",
+        "opengemeenten": "Sport"
       },
       {
         "newId": "spade",
@@ -5651,6 +5694,7 @@
       {
         "newId": "stone_wall",
         "src": "temaki",
+        "srcBy": "@RudyTheDev",
         "importBy": "@quincylvania",
         "temaki": "wall"
       },
@@ -5767,6 +5811,7 @@
       {
         "newId": "table_soccer_players_with_ball",
         "src": "temaki",
+        "srcBy": "@tjasz",
         "importBy": "@quincylvania",
         "temaki": "table_soccer"
       },
@@ -6137,6 +6182,7 @@
       {
         "newId": "tree_stump",
         "src": "temaki",
+        "srcBy": "@tyrasd",
         "importBy": "@quincylvania",
         "temaki": "tree_stump"
       },
@@ -6629,6 +6675,7 @@
         "newId": "wind_turbine",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "opengemeenten": "Windenergie",
         "osmcarto": "man_made/generator_wind",
         "temaki": "wind_turbine"
       },
@@ -7070,7 +7117,8 @@
         "americana": [
           "poi_restaurant",
           "poi_restaurant_circle"
-        ]
+        ],
+        "opengemeenten": "Horeca"
       },
       {
         "newId": "sleepers_in_opposing_bunkbeds",
@@ -10560,6 +10608,453 @@
           "campsite",
           "wifi"
         ]
+      }
+    ]
+  },
+  {
+    "majorVersion": "18",
+    "date": "2026-03-19",
+    "iconChanges": [
+      {
+        "newId": "double_diamond_tall",
+        "by": "@dschep",
+        "inspo": "diamond_tall",
+        "pr": "144"
+      },
+      {
+        "newId": "turntable",
+        "by": "@ooosssay",
+        "pr": "#143"
+      },
+      {
+        "newId": "exclamation_point",
+        "by": "@quincylvania",
+        "inspo": "triangle_up_with_exclamation_point",
+        "opengemeenten": "LetOp"
+      },
+      {
+        "newId": "wheelie_bin",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Afval"
+      },
+      {
+        "newId": "wheelie_bin_and_bag_of_trash",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "AfvalbakAfvalzak"
+      },
+      {
+        "newId": "wheelie_bin_and_drink_bottle_and_can",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "AfvalbakPMD"
+      },
+      {
+        "newId": "wheelie_bin_and_leaf",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "AfvalGFT"
+      },
+      {
+        "newId": "wheelie_bin_and_apple_core",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "AfvalGroenbak"
+      },
+      {
+        "newId": "calendar_with_wheelie_bin",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Afvalkalender"
+      },
+      {
+        "newId": "trash_truck",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "AfvalOphalen"
+      },
+      {
+        "newId": "drink_bottle_and_milk_carton_and_can",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "AfvalPMD"
+      },
+      {
+        "newId": "person_reaching_into_bins",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "AfvalScheiden"
+      },
+      {
+        "newId": "bag_of_trash_with_stink",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Afvalzak"
+      },
+      {
+        "newId": "bag_of_trash",
+        "by": "@quincylvania",
+        "inspo": "bag_of_trash_with_stink",
+        "issue": "141"
+      },
+      {
+        "newId": "calendar",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Agenda"
+      },
+      {
+        "newId": "parachute",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Airborne"
+      },
+      {
+        "newId": "milk_carton_and_apple_and_euro",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Armoede"
+      },
+      {
+        "newId": "triangle_up_with_skull",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "AsbestVerwijderen"
+      },
+      {
+        "newId": "megaphone",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "char": "📢",
+        "opengemeenten": [
+          "Attentie",
+          "ParticipatieCampagne"
+        ]
+      },
+      {
+        "newId": "crowd_of_people",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Bevolking"
+      },
+      {
+        "newId": "dove_and_laurel",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Bevrijding"
+      },
+      {
+        "newId": "dove",
+        "by": "@quincylvania",
+        "inspo": "dove_and_laurel",
+        "issue": "141"
+      },
+      {
+        "newId": "speech_bubbles",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": [
+          "141",
+          "50"
+        ],
+        "opengemeenten": "Chat"
+      },
+      {
+        "newId": "speech_bubble",
+        "by": "@quincylvania",
+        "inspo": "speech_bubbles",
+        "issue": [
+          "141",
+          "50"
+        ]
+      },
+      {
+        "newId": "hairy_caterpillar_and_exclamation_point",
+        "by": "@quincylvania",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Eikenprocessie"
+      },
+      {
+        "newId": "hairy_caterpillar",
+        "by": "@quincylvania",
+        "inspo": "hairy_caterpillar_and_exclamation_point",
+        "issue": "141"
+      },
+      {
+        "newId": "big_top_tent_with_pennant",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Evenementen"
+      },
+      {
+        "newId": "canister_vacuum_cleaner",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "HulpHuishouden"
+      },
+      {
+        "newId": "id_card",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "char": "🪪",
+        "opengemeenten": "Idkaart"
+      },
+      {
+        "newId": "key_with_house_keychain",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "KopenEnHuren"
+      },
+      {
+        "newId": "horse_head_wearing_bridle",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Manege"
+      },
+      {
+        "newId": "gull_and_exclamation_point",
+        "by": "@quincylvania",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Meeuwenoverlast"
+      },
+      {
+        "newId": "gull",
+        "by": "@quincylvania",
+        "inspo": "gull_and_exclamation_point",
+        "issue": "141"
+      },
+      {
+        "newId": "handshake",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Ondernemen"
+      },
+      {
+        "newId": "thumbs_up_hand_with_sleeve",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "ParticipatieLike"
+      },
+      {
+        "newId": "passport_with_graticule_globe",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": [
+          "PaspoortInternationaal",
+          "Paspoort"
+        ]
+      },
+      {
+        "newId": "a_frame_signboard",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Reclame"
+      },
+      {
+        "newId": "bishops_miter_with_latin_cross_beside_crozier_head",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Sinterklaas"
+      },
+      {
+        "newId": "ring_linked_to_ring_with_jewel",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "TrouwenEnGeregistreerdPartnerschap"
+      },
+      {
+        "newId": "greenhouse",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Tuinbouw"
+      },
+      {
+        "newId": "syringe",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Vaccinatie"
+      },
+      {
+        "newId": "person_walking_with_hiking_pole",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Wandelen"
+      },
+      {
+        "newId": "person_shoveling_dirt",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Werkzaamheden"
+      },
+      {
+        "newId": "wolf_head_and_exclamation_point",
+        "by": "@quincylvania",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Wolf"
+      },
+      {
+        "newId": "wolf_head",
+        "by": "@quincylvania",
+        "inspo": "wolf_head_and_exclamation_point",
+        "issue": "141"
+      },
+      {
+        "newId": "magnifying_glass",
+        "src": "opengemeenten",
+        "importBy": "@quincylvania",
+        "issue": "141",
+        "opengemeenten": "Zoeken"
+      },
+      {
+        "newId": "droplet_from_pipes",
+        "src": "temaki",
+        "importBy": "@quincylvania",
+        "temaki": "plumber"
+      },
+      {
+        "newId": "bicycle_in_rectangle_outline",
+        "src": "temaki",
+        "srcBy": "@quincylvania",
+        "importBy": "@quincylvania",
+        "temaki": "bicycle_box"
+      },
+      {
+        "newId": "motorboat_in_parking_structure",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorboat",
+          "parking_structure"
+        ]
+      },
+      {
+        "newId": "motorboat_on_parking_line",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorboat",
+          "parking_line"
+        ],
+        "temaki": "boat_dry_dock"
+      },
+      {
+        "newId": "person_using_terminal_kiosk",
+        "by": "@quincylvania",
+        "inspo": "person_using_terminal_kiosk_with_dollar"
+      },
+      {
+        "newId": "person_using_terminal_kiosk_with_dollar",
+        "by": "@quincylvania",
+        "src": "temaki",
+        "importBy": "@quincylvania",
+        "temaki": "atm"
+      },
+      {
+        "newId": "activity_panel",
+        "src": "temaki",
+        "srcBy": "@marensiegel",
+        "importBy": "@quincylvania",
+        "temaki": "activity_panel"
+      },
+      {
+        "newId": "basket_swing",
+        "src": "temaki",
+        "srcBy": "@marensiegel",
+        "importBy": "@quincylvania",
+        "temaki": "basketswing"
+      },
+      {
+        "newId": "swing",
+        "src": "temaki",
+        "srcBy": "@marensiegel",
+        "importBy": "@quincylvania",
+        "temaki": "swing"
+      },
+      {
+        "newId": "climbing_wall",
+        "src": "temaki",
+        "srcBy": "@marensiegel",
+        "importBy": "@quincylvania",
+        "temaki": "climbing_wall"
+      },
+      {
+        "newId": "play_shelter",
+        "src": "temaki",
+        "srcBy": "@marensiegel",
+        "importBy": "@quincylvania",
+        "temaki": "playhouse"
+      },
+      {
+        "newId": "person_climbing_on_climbing_frame",
+        "src": "temaki",
+        "srcBy": "@marensiegel",
+        "importBy": "@quincylvania",
+        "temaki": "climbing_frame"
+      },
+      {
+        "newId": "person_jumping_in_puddle_with_splashes",
+        "src": "temaki",
+        "srcBy": "@marensiegel",
+        "importBy": "@quincylvania",
+        "temaki": "splash_pad"
+      },
+      {
+        "newId": "person_jumping_on_bouncy_cushion",
+        "src": "temaki",
+        "srcBy": "@marensiegel",
+        "importBy": "@quincylvania",
+        "temaki": "cushion"
+      },
+      {
+        "newId": "person_jumping_on_trampoline",
+        "src": "temaki",
+        "srcBy": "@marensiegel",
+        "importBy": "@quincylvania",
+        "temaki": "trampoline"
+      },
+      {
+        "newId": "person_with_ponytail_riding_zip_line",
+        "src": "temaki",
+        "srcBy": "@marensiegel",
+        "importBy": "@quincylvania",
+        "temaki": "zip_wire"
       }
     ]
   }
