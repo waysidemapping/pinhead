@@ -1,6 +1,80 @@
 # Changelog
 
+## [15.18.0-dev] - 2026-03-19
+
+_Pinhead v18_
+
+This release contains new icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
+
+### Added icons
+
+- <img src="https://pinhead.ink/v18/double_diamond_tall.svg" width="15px"/> Add `double_diamond_tall` by [@dschep](https://github.com/dschep) ([#144](https://github.com/waysidemapping/pinhead/issues/144))
+- <img src="https://pinhead.ink/v18/turntable.svg" width="15px"/> Add `turntable` by [@ooosssay](https://github.com/ooosssay) ([##143](https://github.com/waysidemapping/pinhead/issues/#143))
+- <img src="https://pinhead.ink/v18/exclamation_point.svg" width="15px"/> Add `exclamation_point` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v18/wheelie_bin.svg" width="15px"/> Add `wheelie_bin` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/wheelie_bin_and_bag_of_trash.svg" width="15px"/> Add `wheelie_bin_and_bag_of_trash` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/wheelie_bin_and_drink_bottle_and_can.svg" width="15px"/> Add `wheelie_bin_and_drink_bottle_and_can` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/wheelie_bin_and_leaf.svg" width="15px"/> Add `wheelie_bin_and_leaf` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/wheelie_bin_and_apple_core.svg" width="15px"/> Add `wheelie_bin_and_apple_core` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/calendar_with_wheelie_bin.svg" width="15px"/> Add `calendar_with_wheelie_bin` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/trash_truck.svg" width="15px"/> Add `trash_truck` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/drink_bottle_and_milk_carton_and_can.svg" width="15px"/> Add `drink_bottle_and_milk_carton_and_can` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/person_reaching_into_bins.svg" width="15px"/> Add `person_reaching_into_bins` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/bag_of_trash_with_stink.svg" width="15px"/> Add `bag_of_trash_with_stink` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/bag_of_trash.svg" width="15px"/> Add `bag_of_trash` by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/calendar.svg" width="15px"/> Add `calendar` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/parachute.svg" width="15px"/> Add `parachute` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/milk_carton_and_apple_and_euro.svg" width="15px"/> Add `milk_carton_and_apple_and_euro` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/triangle_up_with_skull.svg" width="15px"/> Add `triangle_up_with_skull` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/megaphone.svg" width="15px"/> Add `megaphone` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/crowd_of_people.svg" width="15px"/> Add `crowd_of_people` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/dove_and_laurel.svg" width="15px"/> Add `dove_and_laurel` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/dove.svg" width="15px"/> Add `dove` by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/speech_bubbles.svg" width="15px"/> Add `speech_bubbles` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141), [#50](https://github.com/waysidemapping/pinhead/issues/50))
+- <img src="https://pinhead.ink/v18/speech_bubble.svg" width="15px"/> Add `speech_bubble` by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141), [#50](https://github.com/waysidemapping/pinhead/issues/50))
+- <img src="https://pinhead.ink/v18/hairy_caterpillar_and_exclamation_point.svg" width="15px"/> Add `hairy_caterpillar_and_exclamation_point` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/hairy_caterpillar.svg" width="15px"/> Add `hairy_caterpillar` by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/big_top_tent_with_pennant.svg" width="15px"/> Add `big_top_tent_with_pennant` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/canister_vacuum_cleaner.svg" width="15px"/> Add `canister_vacuum_cleaner` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/id_card.svg" width="15px"/> Add `id_card` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/key_with_house_keychain.svg" width="15px"/> Add `key_with_house_keychain` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/horse_head_wearing_bridle.svg" width="15px"/> Add `horse_head_wearing_bridle` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/gull_and_exclamation_point.svg" width="15px"/> Add `gull_and_exclamation_point` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/gull.svg" width="15px"/> Add `gull` by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/handshake.svg" width="15px"/> Add `handshake` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/thumbs_up_hand_with_sleeve.svg" width="15px"/> Add `thumbs_up_hand_with_sleeve` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/passport_with_graticule_globe.svg" width="15px"/> Add `passport_with_graticule_globe` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/a_frame_signboard.svg" width="15px"/> Add `a_frame_signboard` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/bishops_miter_with_latin_cross_beside_crozier_head.svg" width="15px"/> Add `bishops_miter_with_latin_cross_beside_crozier_head` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/ring_linked_to_ring_with_jewel.svg" width="15px"/> Add `ring_linked_to_ring_with_jewel` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/greenhouse.svg" width="15px"/> Add `greenhouse` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/syringe.svg" width="15px"/> Add `syringe` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/person_walking_with_hiking_pole.svg" width="15px"/> Add `person_walking_with_hiking_pole` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/person_shoveling_dirt.svg" width="15px"/> Add `person_shoveling_dirt` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/wolf_head_and_exclamation_point.svg" width="15px"/> Add `wolf_head_and_exclamation_point` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/wolf_head.svg" width="15px"/> Add `wolf_head` by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/magnifying_glass.svg" width="15px"/> Add `magnifying_glass` from [OpenGemeenten](https://github.com/OpenGemeenten/Iconenset) imported by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
+- <img src="https://pinhead.ink/v18/droplet_from_pipes.svg" width="15px"/> Add `droplet_from_pipes` from [Temaki](https://github.com/rapideditor/temaki) imported by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v18/bicycle_in_rectangle_outline.svg" width="15px"/> Add `bicycle_in_rectangle_outline` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v18/motorboat_in_parking_structure.svg" width="15px"/> Add `motorboat_in_parking_structure` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v18/motorboat_on_parking_line.svg" width="15px"/> Add `motorboat_on_parking_line` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v18/person_using_terminal_kiosk.svg" width="15px"/> Add `person_using_terminal_kiosk` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v18/person_using_terminal_kiosk_with_dollar.svg" width="15px"/> Add `person_using_terminal_kiosk_with_dollar` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v18/activity_panel.svg" width="15px"/> Add `activity_panel` by [@marensiegel](https://github.com/marensiegel)
+- <img src="https://pinhead.ink/v18/basket_swing.svg" width="15px"/> Add `basket_swing` by [@marensiegel](https://github.com/marensiegel)
+- <img src="https://pinhead.ink/v18/swing.svg" width="15px"/> Add `swing` by [@marensiegel](https://github.com/marensiegel)
+- <img src="https://pinhead.ink/v18/climbing_wall.svg" width="15px"/> Add `climbing_wall` by [@marensiegel](https://github.com/marensiegel)
+- <img src="https://pinhead.ink/v18/play_shelter.svg" width="15px"/> Add `play_shelter` by [@marensiegel](https://github.com/marensiegel)
+- <img src="https://pinhead.ink/v18/person_climbing_on_climbing_frame.svg" width="15px"/> Add `person_climbing_on_climbing_frame` by [@marensiegel](https://github.com/marensiegel)
+- <img src="https://pinhead.ink/v18/person_jumping_in_puddle_with_splashes.svg" width="15px"/> Add `person_jumping_in_puddle_with_splashes` by [@marensiegel](https://github.com/marensiegel)
+- <img src="https://pinhead.ink/v18/person_jumping_on_bouncy_cushion.svg" width="15px"/> Add `person_jumping_on_bouncy_cushion` by [@marensiegel](https://github.com/marensiegel)
+- <img src="https://pinhead.ink/v18/person_jumping_on_trampoline.svg" width="15px"/> Add `person_jumping_on_trampoline` by [@marensiegel](https://github.com/marensiegel)
+- <img src="https://pinhead.ink/v18/person_with_ponytail_riding_zip_line.svg" width="15px"/> Add `person_with_ponytail_riding_zip_line` by [@marensiegel](https://github.com/marensiegel)
+
+
 ## [15.17.0] - 2026-03-17
+
+_Pinhead v17_
 
 This release contains new, renamed, and redesigned icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
 
@@ -75,6 +149,8 @@ This release contains new, renamed, and redesigned icons that may affect your se
 - <img src="https://pinhead.ink/v17/campsite_and_wifi.svg" width="15px"/> Add `campsite_and_wifi` by [@quincylvania](https://github.com/quincylvania)
 
 ## [15.16.0] - 2026-03-15
+
+_Pinhead v16_
 
 This release contains new, merged, and redesigned icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
 
@@ -215,6 +291,8 @@ Add icons for US boundaries:
 - <img src="https://pinhead.ink/v16/wyoming_with_capital_star.svg" width="15px"/> Add `wyoming_with_capital_star` by [@quincylvania](https://github.com/quincylvania) ([#114](https://github.com/waysidemapping/pinhead/issues/114))
 
 ## [15.15.0] - 2026-03-11
+
+_Pinhead v15_
 
 ⚠️ This major release contains new, resdesigned, and renamed icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
 
