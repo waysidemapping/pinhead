@@ -89,8 +89,8 @@ export async function downloadCategoryPages(commonsCategory) {
     allPages = allPages.concat(pages);
     cont = data.continue?.gcmcontinue;
   } while (cont);
-  console.log('Done downloading');
-  return pages;
+  console.log(`Done downloading ${allPages.length} pages`);
+  return allPages;
 }
 
 export async function uploadFile(filename, svg, newFileText) {
@@ -143,15 +143,16 @@ export async function uploadNewFileDescription(title, content) {
   return result;
 }
 
-export async function downloadEntityStatements(idsToGet) {
+export async function downloadEntityStatements(ids) {
   console.log('Downloading entity statements...');
   const maxIdsPerQuery = 50;
   let allEntities = [];
+  const idsToGet = ids.slice();
   while (idsToGet.length) {
     const batchIds = idsToGet.splice(0, maxIdsPerQuery);
     const batchInfo = await getMediaInfo(batchIds);
-    if (batchInfo.entities && Object.keys(batchInfo.entities).length) {
-      allEntities = allEntities.concat(batchInfo.entities);
+    if (batchInfo?.entities) {
+      allEntities = allEntities.concat(Object.keys(batchInfo.entities));
     } else {
       console.error('Could not get entities for: ' + batchIds);
       console.error('Continuing anyway...');
@@ -172,7 +173,7 @@ export async function downloadEntityStatements(idsToGet) {
     });
     return res.json();
   }
-  console.log('Done downloading');
+  console.log(`Done downloading ${allEntities.length} entities`);
   return allEntities;
 }
 

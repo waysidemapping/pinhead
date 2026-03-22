@@ -12,6 +12,8 @@ const currentVersion = JSON.parse(readFileSync('package.json')).version;
 const versionParts = currentVersion.split('.');
 const currentMajorVersion = versionParts[1];
 
+const pinheadTemplateRegex = /{{Pinhead\|(.+?)(?:\|v=(\d+?))}}/;
+
 if (versionParts[2] !== '0' ||
   currentVersion.includes('dev') ||
   Object.values(localIconsById).some(icon => parseInt(icon.v) > parseInt(currentMajorVersion))) {
@@ -42,9 +44,8 @@ await uploadMissingIcons()
 const entities = await downloadEntityStatements(Object.keys(validRemotePages).map(pageid => 'M' + pageid))
   .catch(console.error);
 
-for (const mid in entities) {
-  const item = entities[mid];
-  const pageid = mid.slice(1);
+for (const item of entities) {
+  const pageid = item.pageid;
   const page = validRemotePages[pageid];
   if (!page) {
     console.error('Cannot find page for: ' + pageid);
@@ -61,7 +62,7 @@ await uploadEntityStatements()
 function processCategoryPage(page) {
   const title = page.title;
   const content = page.revisions?.[0]?.slots?.main?.content;
-  const results = content && /{{Pinhead\|(.+?)(?:\|v=(\d+?))}}/.exec(content);
+  const results = content && pinheadTemplateRegex.exec(content);
 
   if (results && results.length >= 3) {
     const pinheadIconId = results[1];
