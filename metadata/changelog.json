@@ -11114,6 +11114,60 @@
         "newId": "bench_with_armrests_and_backrest_with_plaque",
         "by": "@quincylvania",
         "inspo": "bench_with_armrests_and_backrest"
+      },
+      {
+        "newId": "dog_sitting",
+        "by": "@quincylvania",
+        "inspo": "dog",
+        "issue": "149"
+      },
+      {
+        "newId": "dog_sitting_and_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": "dog_sitting",
+        "issue": "149"
+      },
+      {
+        "newId": "dog_sitting_wearing_collar",
+        "by": "@quincylvania",
+        "inspo": [
+          "dog_sitting",
+          "dog_wearing_collar"
+        ],
+        "issue": "149"
+      },
+      {
+        "newId": "dog_sitting_wearing_collar_and_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": "dog_sitting_wearing_collar",
+        "issue": "149"
+      },
+      {
+        "newId": "dog_sitting_wearing_collar_on_leash",
+        "by": "@quincylvania",
+        "inspo": [
+          "dog_sitting",
+          "dog_wearing_collar_on_leash"
+        ],
+        "issue": "149"
+      },
+      {
+        "newId": "dog_sitting_wearing_harness",
+        "by": "@quincylvania",
+        "inspo": [
+          "dog_sitting",
+          "dog_wearing_harness"
+        ],
+        "issue": "149"
+      },
+      {
+        "newId": "dog_sitting_wearing_harness_on_leash",
+        "by": "@quincylvania",
+        "inspo": [
+          "dog_sitting",
+          "dog_wearing_harness_on_leash"
+        ],
+        "issue": "149"
       }
     ]
   }
