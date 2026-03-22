@@ -11063,6 +11063,11 @@
     "date": "2026-03-21",
     "iconChanges": [
       {
+        "newId": "crosshair",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
         "newId": "bench_with_armrests",
         "by": "@quincylvania",
         "inspo": "bench",
@@ -11168,6 +11173,137 @@
           "dog_wearing_harness_on_leash"
         ],
         "issue": "149"
+      },
+      {
+        "oldId": "campsite_with_dollar",
+        "newId": "campsite_with_dollar",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "campsite_with_euro",
+        "newId": "campsite_with_euro",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "tipi_campsite_with_dollar",
+        "newId": "tipi_campsite_with_dollar",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "tipi_campsite_with_euro",
+        "newId": "tipi_campsite_with_euro",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "dollar_swap_to_euro",
+        "newId": "dollar_swap_to_euro",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "euro",
+        "newId": "euro",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "noodle_bowl_and_chopsticks_with_noodles",
+        "newId": "noodle_bowl_and_chopsticks_with_noodles",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "newId": "noodle_bowl_with_steam",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "paint_roller",
+        "newId": "paint_roller",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "person_behind_barred_window",
+        "newId": "person_behind_barred_window",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "terminal_screen_with_dollar_prompt",
+        "newId": "terminal_screen_with_dollar_prompt",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "bicycle_and_dollar",
+        "newId": "bicycle_and_dollar",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "bicycle_and_euro",
+        "newId": "bicycle_and_euro",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "cargobike_and_dollar",
+        "newId": "cargobike_and_dollar",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "cargobike_and_euro",
+        "newId": "cargobike_and_euro",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "car_with_dollar",
+        "newId": "car_with_dollar",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "car_with_euro",
+        "newId": "car_with_euro",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "boxes_on_pallet",
+        "newId": "boxes_on_pallet",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "life_ring",
+        "newId": "life_ring",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "soccer_ball",
+        "newId": "soccer_ball",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "target",
+        "newId": "target",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "target_with_archery_arrow_at_bullseye",
+        "newId": "target_with_archery_arrow_at_bullseye",
+        "by": "@westnordost",
+        "pr": "146"
       }
     ]
   }
