@@ -1,4 +1,4 @@
-import { writeFileSync } from "fs";
+import { writeFileSync, existsSync, rmSync, mkdirSync } from "fs";
 import { downloadCategoryPages, downloadEntityStatements, fetchWikidataEntities } from "../src/CommonsConnection.js";
 
 const pinheadTemplateRegex = /{{Pinhead\|(.+?)(?:\|v=(\d+?))}}/;
