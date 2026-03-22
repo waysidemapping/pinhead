@@ -7,7 +7,12 @@ if (existsSync(".env")) {
 
 const userAgent ="PinheadBot/1.0 (quincy@waysidemapping.org)";
 const commonsApiBase = "https://commons.wikimedia.org/w/api.php";
-const loginInfo = await login();
+
+let _loginInfo;
+async function getLoginInfo() {
+  if (!_loginInfo) _loginInfo = await login();
+  return _loginInfo;
+}
 
 async function login() {
   const tokenRes = await fetch(`${commonsApiBase}?action=query&meta=tokens&type=login&format=json`, {
@@ -95,6 +100,8 @@ export async function downloadCategoryPages(commonsCategory) {
 
 export async function uploadFile(filename, svg, newFileText) {
 
+  const loginInfo = await getLoginInfo();
+
   const isFirstVersion = !!newFileText;
   
   const form = new FormData();
@@ -122,6 +129,7 @@ export async function uploadFile(filename, svg, newFileText) {
 
 export async function uploadNewFileDescription(title, content) {
   console.log(`Uploading new version of page text for page: ${title}...`);
+  const loginInfo = await getLoginInfo();
   const params = new URLSearchParams({
     action: "edit",
     title: title,
@@ -178,6 +186,7 @@ export async function downloadEntityStatements(ids) {
 }
 
 export async function uploadClaims(pageid, claims) {
+  const loginInfo = await getLoginInfo();
   const params = new URLSearchParams({
     action: "wbeditentity",
     id: 'M' + pageid,
