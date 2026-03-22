@@ -79,7 +79,10 @@ for (const entity of entities) {
                   if (!translationsByLang[lang]) translationsByLang[lang] = { icons:{} };
                   if (!translationsByLang[lang].icons[pinheadId]) translationsByLang[lang].icons[pinheadId] = {}; 
                   if (!translationsByLang[lang].icons[pinheadId].labels) translationsByLang[lang].icons[pinheadId].labels = [];
-                  translationsByLang[lang].icons[pinheadId].labels.push(info.labels[lang]);
+                  const labelLC = info.labels[lang].toLowerCase();
+                  if (!translationsByLang[lang].icons[pinheadId].labels.includes(labelLC)) {
+                    translationsByLang[lang].icons[pinheadId].labels.push(labelLC);
+                  }
                 }
               }
               if (info.aliases) {
@@ -87,7 +90,13 @@ for (const entity of entities) {
                   if (!translationsByLang[lang]) translationsByLang[lang] = { icons:{} };
                   if (!translationsByLang[lang].icons[pinheadId]) translationsByLang[lang].icons[pinheadId] = {}; 
                   if (!translationsByLang[lang].icons[pinheadId].aliases) translationsByLang[lang].icons[pinheadId].aliases = [];
-                  translationsByLang[lang].icons[pinheadId].aliases = translationsByLang[lang].icons[pinheadId].aliases.concat(info.aliases[lang]);
+                  for (const alias of info.aliases[lang]) {
+                    const aliasLC = alias.toLowerCase();
+                    if (!(translationsByLang[lang].icons[pinheadId].labels || []).includes(aliasLC) &&
+                      !translationsByLang[lang].icons[pinheadId].aliases.includes(aliasLC)) {
+                      translationsByLang[lang].icons[pinheadId].aliases.push(aliasLC);
+                    }
+                  }
                 }
               }
             }
