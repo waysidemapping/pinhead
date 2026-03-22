@@ -11068,25 +11068,6 @@
         "pr": "146"
       },
       {
-        "newId": "tag_with_dollar",
-        "by": "@quincylvania",
-        "inspo": "tag",
-        "issue": "150"
-      },
-      {
-        "newId": "tag_with_euro",
-        "by": "@quincylvania",
-        "inspo": "tag",
-        "issue": "150",
-        "opengemeenten": "Prijskaartje"
-      },
-      {
-        "newId": "tag_with_pound",
-        "by": "@quincylvania",
-        "inspo": "tag",
-        "issue": "150"
-      },
-      {
         "newId": "bench_with_armrests",
         "by": "@quincylvania",
         "inspo": "bench",
@@ -11206,6 +11187,11 @@
         "pr": "146"
       },
       {
+        "newId": "campsite_with_yen_yuan",
+        "by": "@quincylvania",
+        "issue": "77"
+      },
+      {
         "oldId": "tipi_campsite_with_dollar",
         "newId": "tipi_campsite_with_dollar",
         "by": "@westnordost",
@@ -11216,6 +11202,11 @@
         "newId": "tipi_campsite_with_euro",
         "by": "@westnordost",
         "pr": "146"
+      },
+      {
+        "newId": "tipi_campsite_with_yen_yuan",
+        "by": "@quincylvania",
+        "issue": "77"
       },
       {
         "oldId": "dollar_swap_to_euro",
@@ -11236,33 +11227,28 @@
         "issue": "77"
       },
       {
-        "oldId": "noodle_bowl_and_chopsticks_with_noodles",
-        "newId": "noodle_bowl_and_chopsticks_with_noodles",
-        "by": "@westnordost",
-        "pr": "146"
+        "newId": "tag_with_dollar",
+        "by": "@quincylvania",
+        "inspo": "tag",
+        "issue": "150"
       },
       {
-        "newId": "noodle_bowl_with_steam",
-        "by": "@westnordost",
-        "pr": "146"
+        "newId": "tag_with_euro",
+        "by": "@quincylvania",
+        "inspo": "tag",
+        "issue": "150",
+        "opengemeenten": "Prijskaartje"
       },
       {
-        "oldId": "paint_roller",
-        "newId": "paint_roller",
-        "by": "@westnordost",
-        "pr": "146"
+        "newId": "tag_with_pound",
+        "by": "@quincylvania",
+        "inspo": "tag",
+        "issue": "150"
       },
       {
-        "oldId": "person_behind_barred_window",
-        "newId": "person_behind_barred_window",
-        "by": "@westnordost",
-        "pr": "146"
-      },
-      {
-        "oldId": "terminal_screen_with_dollar_prompt",
-        "newId": "terminal_screen_with_dollar_prompt",
-        "by": "@westnordost",
-        "pr": "146"
+        "newId": "tag_with_yen_yuan",
+        "by": "@quincylvania",
+        "issue": "77"
       },
       {
         "oldId": "bicycle_and_dollar",
@@ -11277,6 +11263,11 @@
         "pr": "146"
       },
       {
+        "newId": "bicycle_and_yen_yuan",
+        "by": "@quincylvania",
+        "issue": "77"
+      },
+      {
         "oldId": "cargobike_and_dollar",
         "newId": "cargobike_and_dollar",
         "by": "@westnordost",
@@ -11287,6 +11278,11 @@
         "newId": "cargobike_and_euro",
         "by": "@westnordost",
         "pr": "146"
+      },
+      {
+        "newId": "cargobike_and_yen_yuan",
+        "by": "@quincylvania",
+        "issue": "77"
       },
       {
         "oldId": "car_with_dollar",
@@ -11301,35 +11297,9 @@
         "pr": "146"
       },
       {
-        "oldId": "boxes_on_pallet",
-        "newId": "boxes_on_pallet",
-        "by": "@westnordost",
-        "pr": "146"
-      },
-      {
-        "oldId": "life_ring",
-        "newId": "life_ring",
-        "by": "@westnordost",
-        "pr": "146"
-      },
-      {
-        "oldId": "soccer_ball",
-        "newId": "soccer_ball",
-        "by": "@westnordost",
-        "inspo": "https://www.svgrepo.com/show/151403/soccer-ball.svg",
-        "pr": "146"
-      },
-      {
-        "oldId": "target",
-        "newId": "target",
-        "by": "@westnordost",
-        "pr": "146"
-      },
-      {
-        "oldId": "target_with_archery_arrow_at_bullseye",
-        "newId": "target_with_archery_arrow_at_bullseye",
-        "by": "@westnordost",
-        "pr": "146"
+        "newId": "car_with_yen_yuan",
+        "by": "@quincylvania",
+        "issue": "77"
       },
       {
         "newId": "person_using_terminal_kiosk_with_euro",
@@ -11374,34 +11344,64 @@
         "inspo": "milk_carton_and_apple_and_euro"
       },
       {
-        "newId": "tag_with_yen_yuan",
-        "by": "@quincylvania",
-        "issue": "77"
+        "oldId": "noodle_bowl_and_chopsticks_with_noodles",
+        "newId": "noodle_bowl_and_chopsticks_with_noodles",
+        "by": "@westnordost",
+        "pr": "146"
       },
       {
-        "newId": "car_with_yen_yuan",
-        "by": "@quincylvania",
-        "issue": "77"
+        "newId": "noodle_bowl_with_steam",
+        "by": "@westnordost",
+        "pr": "146"
       },
       {
-        "newId": "bicycle_and_yen_yuan",
-        "by": "@quincylvania",
-        "issue": "77"
+        "oldId": "paint_roller",
+        "newId": "paint_roller",
+        "by": "@westnordost",
+        "pr": "146"
       },
       {
-        "newId": "cargobike_and_yen_yuan",
-        "by": "@quincylvania",
-        "issue": "77"
+        "oldId": "person_behind_barred_window",
+        "newId": "person_behind_barred_window",
+        "by": "@westnordost",
+        "pr": "146"
       },
       {
-        "newId": "campsite_with_yen_yuan",
-        "by": "@quincylvania",
-        "issue": "77"
+        "oldId": "terminal_screen_with_dollar_prompt",
+        "newId": "terminal_screen_with_dollar_prompt",
+        "by": "@westnordost",
+        "pr": "146"
       },
       {
-        "newId": "tipi_campsite_with_yen_yuan",
-        "by": "@quincylvania",
-        "issue": "77"
+        "oldId": "boxes_on_pallet",
+        "newId": "boxes_on_pallet",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "life_ring",
+        "newId": "life_ring",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "soccer_ball",
+        "newId": "soccer_ball",
+        "by": "@westnordost",
+        "inspo": "https://www.svgrepo.com/show/151403/soccer-ball.svg",
+        "pr": "146"
+      },
+      {
+        "oldId": "target",
+        "newId": "target",
+        "by": "@westnordost",
+        "pr": "146"
+      },
+      {
+        "oldId": "target_with_archery_arrow_at_bullseye",
+        "newId": "target_with_archery_arrow_at_bullseye",
+        "by": "@westnordost",
+        "pr": "146"
       },
       {
         "newId": "apple_core",
