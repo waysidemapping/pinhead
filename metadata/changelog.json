@@ -11068,6 +11068,25 @@
         "pr": "146"
       },
       {
+        "newId": "tag_with_dollar",
+        "by": "@quincylvania",
+        "inspo": "tag",
+        "issue": "150"
+      },
+      {
+        "newId": "tag_with_euro",
+        "by": "@quincylvania",
+        "inspo": "tag",
+        "issue": "150",
+        "opengemeenten": "Prijskaartje"
+      },
+      {
+        "newId": "tag_with_pound",
+        "by": "@quincylvania",
+        "inspo": "tag",
+        "issue": "150"
+      },
+      {
         "newId": "bench_with_armrests",
         "by": "@quincylvania",
         "inspo": "bench",
