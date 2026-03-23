@@ -61,7 +61,7 @@ It is *not* recommended for production apps to depend directly on the GitHub rep
 
 ### Icons on Wikimedia Commons
 
-All Pinhead icons are [synced to Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Plain_black_Pinhead_SVG_icons) for convenient integration with Wikipedia, Wikidata, the OpenStreetMap Wiki, and other such projects. These files are easy to [search](https://commons.wikimedia.org/w/index.php?search=pinhead+icon&title=Special%3AMediaSearch&go=Go&type=image&filemime=svg).
+All Pinhead icons are [synced to Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Plain_black_Pinhead_SVG_icons) for convenient integration with Wikipedia, Wikidata, the OpenStreetMap Wiki, and other such projects. These files are easy to [search](https://commons.wikimedia.org/w/index.php?title=Special%3AMediaSearch&search=deepcat%3A%22Plain+black+Pinhead+SVG+icons%22&type=image).
 
 ### Node.js package
 
