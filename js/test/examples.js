@@ -97,4 +97,13 @@ export const examples = [
     icon: "a_frame_tent",
     properties: { shape: "square", shapeFill: "brown" },
   },
+  {
+    name: "translucent-cargobike",
+    icon: "cargobike",
+    properties: {
+      fill: "rgba(255,0,0,0.5)",
+      stroke: "rgba(0,0,255,0.5)",
+      strokeWidth: 1,
+    },
+  },
 ];

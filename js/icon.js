@@ -159,8 +159,17 @@ export function getIcon(name, properties = {}) {
   }
   for (const path of paths) {
     if (!shape && strokeWidth) {
+      svg += minify`<defs><clipPath id="stroke-clip">
+              <path
+                d="M${-strokeWidth} ${-strokeWidth}V${15 + strokeWidth}H${15 + strokeWidth}V${-15 - strokeWidth}Z M0 0 ${path}"
+                clip-rule="evenodd"
+                fill="black"
+                />
+        </clipPath></defs>`;
       svg += minify`<path
               transform="translate(${iconOffset[0] + strokeWidth} ${iconOffset[1] + strokeWidth})${rotate}"
+              clip-path="url(#stroke-clip)"
+              fill="none"
               stroke-linejoin="round"
               stroke="${stroke}"
               stroke-width="${2 * strokeWidth}"
