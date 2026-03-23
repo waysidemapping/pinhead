@@ -37,10 +37,11 @@
     "dist_package": "npm run check_icons && npm run build_dist && npm run check_changelog && cp metadata/changelog.json dist/changelog.json && cp metadata/external_sources.json dist/external_sources.json",
     "dist_qgis_plugin": "npm run check_icons && npm run build_qgis_plugin",
     "build_docs": "node scripts/build_docs.js && npm view @waysidemapping/pinhead time --json > docs/npm_publish_dates.json",
-    "check_changelog": "node scripts/check_changelog.js",
     "build_docs_for_preview": "npm run build_docs && npm run dist_package && node scripts/build_preview_docs.js",
     "build_dist": "node scripts/build_dist.js",
+    "build_font": "node scripts/build_font.js",
     "build_qgis_plugin": "node scripts/build_qgis_plugin.js",
+    "check_changelog": "node scripts/check_changelog.js",
     "check_icons": "node scripts/check_icons.js",
     "fetch_wikidata_info": "node scripts/fetch_wikidata_info.js",
     "serve": "node serve.js",
@@ -48,9 +49,11 @@
   },
   "devDependencies": {
     "archiver": "^7.0.1",
-    "dotenv": "^17.3.1",
     "chalk": "^5.2.0",
+    "dotenv": "^17.3.1",
     "svg-path-parse": "^1.1.3",
+    "svg2ttf": "^6.0.3",
+    "svgicons2svgfont": "^15.0.1",
     "xmlbuilder2": "^4.0.3"
   }
 }
