@@ -1,4 +1,4 @@
-import { createReadStream, globSync, mkdirSync, writeFileSync } from 'fs';
+import { createReadStream, globSync, mkdirSync, readFileSync, writeFileSync, copyFileSync } from 'fs';
 import { join, basename } from 'path';
 import { Writable } from 'stream';
 import { SVGIcons2SVGFontStream } from 'svgicons2svgfont';
@@ -9,6 +9,32 @@ const distDir = 'font';
 
 const fontName = 'pinhead';
 const classPrefix = 'pinhead';
+
+copyFileSync('LICENSE', join(distDir, `LICENSE`));
+
+const packageJson = JSON.parse(readFileSync('package.json'));
+const majorVersion = parseInt(packageJson.version.split('.')[1]);
+
+const fontPackageJson = {
+  name: packageJson.name + '-font',
+  description: "Official Pinhead map icon font distribution",
+  version: `1.${majorVersion}.0`
+};
+
+for (const key of [
+  "type",
+  "license",
+  "keywords",
+  "homepage",
+  "repository",
+  "bugs",
+  "funding",
+  "publishConfig"
+]) {
+  fontPackageJson[key] = packageJson[key];
+}
+
+writeFileSync(join(distDir, `package.json`), JSON.stringify(fontPackageJson, null, 2));
 
 async function buildFont() {
   mkdirSync(distDir, { recursive: true });

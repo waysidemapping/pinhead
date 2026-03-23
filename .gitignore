@@ -8,3 +8,8 @@ docs/srcicons/
 docs/npm_publish_dates.json
 docs/commons_metadata.json
 docs/translations
+font/LICENSE
+font/package.json
+font/pinhead.css
+font/pinhead.ttf
+font/preview.html
