@@ -44,8 +44,18 @@ export const examples = [
   },
   {
     name: "plane-square-navy",
-    icon: "plane",
+    icon: "plane_up",
     properties: { shape: "square", cornerRadius: 0, shapeFill: "navy" },
+  },
+  {
+    name: "plane-down-square-navy",
+    icon: "plane_up",
+    properties: {
+      shape: "square",
+      cornerRadius: 0,
+      shapeFill: "navy",
+      rotate: 180,
+    },
   },
   {
     name: "ice_cream-circle-pink",

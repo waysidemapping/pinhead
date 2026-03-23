@@ -153,10 +153,14 @@ export function getIcon(name, properties = {}) {
       // Nothing to do when not drawing a shape
       break;
   }
+  let rotate = "";
+  if (properties.rotate) {
+    rotate = ` rotate(${properties.rotate} 7.5 7.5)`;
+  }
   for (const path of paths) {
     if (!shape && strokeWidth) {
       svg += minify`<path
-              transform="translate(${iconOffset[0] + strokeWidth} ${iconOffset[1] + strokeWidth})"
+              transform="translate(${iconOffset[0] + strokeWidth} ${iconOffset[1] + strokeWidth})${rotate}"
               stroke-linejoin="round"
               stroke="${stroke}"
               stroke-width="${2 * strokeWidth}"
@@ -164,7 +168,7 @@ export function getIcon(name, properties = {}) {
               />`;
     }
     svg += minify`<path
-            ${iconOffset[0] || iconOffset[1] || strokeWidth ? `transform="translate(${iconOffset[0] + strokeWidth} ${iconOffset[1] + strokeWidth})"` : ""}
+            ${iconOffset[0] || iconOffset[1] || strokeWidth ? `transform="translate(${iconOffset[0] + strokeWidth} ${iconOffset[1] + strokeWidth})${rotate}"` : ""}
             ${fill ? `fill="${fill}"` : ""}
             d="${path}"
             />`;
