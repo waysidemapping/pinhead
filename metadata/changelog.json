@@ -11642,33 +11642,42 @@
       {
         "newId": "shopping_bag_with_dollar",
         "by": "@quincylvania",
-        "inspo": "shopping_bag_with_heart"
+        "inspo": "shopping_bag"
+      },
+      {
+        "newId": "shopping_bag_with_arrows_recirculating",
+        "by": "@quincylvania",
+        "inspo": [
+          "shopping_bag",
+          "arrows_recirculating"
+        ],
+        "osmcarto": "shop/second_hand"
       },
       {
         "newId": "shopping_bag_with_euro",
         "by": "@quincylvania",
-        "inspo": "shopping_bag_with_heart",
+        "inspo": "shopping_bag",
         "opengemeenten": "Winkelen"
       },
       {
         "newId": "shopping_bag_with_pound",
         "by": "@quincylvania",
-        "inspo": "shopping_bag_with_heart"
+        "inspo": "shopping_bag"
       },
       {
         "newId": "shopping_bag_with_yen_yuan",
         "by": "@quincylvania",
-        "inspo": "shopping_bag_with_heart"
+        "inspo": "shopping_bag"
       },
       {
         "newId": "shopping_bag_with_rupee",
         "by": "@quincylvania",
-        "inspo": "shopping_bag_with_heart"
+        "inspo": "shopping_bag"
       },
       {
         "newId": "shopping_bag_with_ruble",
         "by": "@quincylvania",
-        "inspo": "shopping_bag_with_heart"
+        "inspo": "shopping_bag"
       }
     ]
   }
