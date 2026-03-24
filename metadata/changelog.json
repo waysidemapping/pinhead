@@ -11678,6 +11678,11 @@
         "newId": "shopping_bag_with_ruble",
         "by": "@quincylvania",
         "inspo": "shopping_bag"
+      },
+      {
+        "newId": "tags",
+        "by": "@quincylvania",
+        "inspo": "tag"
       }
     ]
   }
