@@ -11683,6 +11683,64 @@
         "newId": "tags",
         "by": "@quincylvania",
         "inspo": "tag"
+      },
+      {
+        "newId": "peso",
+        "by": "@quincylvania",
+        "issue": "156"
+      },
+      {
+        "newId": "pixel_peso",
+        "by": "@quincylvania",
+        "issue": [
+          "156",
+          "159"
+        ]
+      },
+      {
+        "newId": "person_using_terminal_kiosk_with_peso",
+        "by": "@quincylvania",
+        "issue": "156"
+      },
+      {
+        "newId": "milk_carton_and_apple_and_peso",
+        "by": "@quincylvania",
+        "issue": "156"
+      },
+      {
+        "newId": "shopping_bag_with_peso",
+        "by": "@quincylvania",
+        "issue": "156"
+      },
+      {
+        "newId": "car_with_peso",
+        "by": "@quincylvania",
+        "issue": "156"
+      },
+      {
+        "newId": "cargobike_and_peso",
+        "by": "@quincylvania",
+        "issue": "156"
+      },
+      {
+        "newId": "bicycle_and_peso",
+        "by": "@quincylvania",
+        "issue": "156"
+      },
+      {
+        "newId": "tag_with_peso",
+        "by": "@quincylvania",
+        "issue": "156"
+      },
+      {
+        "newId": "campsite_with_peso",
+        "by": "@quincylvania",
+        "issue": "156"
+      },
+      {
+        "newId": "tipi_campsite_with_peso",
+        "by": "@quincylvania",
+        "issue": "156"
       }
     ]
   }
