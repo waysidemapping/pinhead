@@ -106,4 +106,16 @@ export const examples = [
       strokeWidth: 1,
     },
   },
+  {
+    name: "upside-down-jeep-map_pin-stroke-1",
+    icon: "jeep",
+    properties: { shape: "map_pin", strokeWidth: 1, flip: "vertical" },
+  },
+  {
+    name: "plane-down",
+    icon: "plane_up",
+    properties: {
+      rotate: 180,
+    },
+  },
 ];

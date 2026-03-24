@@ -153,21 +153,27 @@ export function getIcon(name, properties = {}) {
       // Nothing to do when not drawing a shape
       break;
   }
-  let rotate = "";
+  let extraTransform = "";
   if (properties.rotate) {
-    rotate = ` rotate(${properties.rotate} 7.5 7.5)`;
+    extraTransform = ` rotate(${properties.rotate} 7.5 7.5)`;
+  }
+  if (properties.flip === "horizontal") {
+    iconOffset[0] += size;
+    extraTransform = `scale(-1 1)`;
+  } else if (properties.flip === "vertical") {
+    iconOffset[1] += size;
+    extraTransform = `scale(1 -1)`;
   }
   for (const path of paths) {
     if (!shape && strokeWidth) {
       svg += minify`<defs><clipPath id="stroke-clip">
-              <path
-                d="M${-strokeWidth} ${-strokeWidth}V${15 + strokeWidth}H${15 + strokeWidth}V${-15 - strokeWidth}Z M0 0 ${path}"
+              <path 
                 clip-rule="evenodd"
-                fill="black"
+                d="M${-strokeWidth} ${-strokeWidth}V${15 + strokeWidth}H${15 + strokeWidth}V${-15 - strokeWidth}Z M0 0 ${path}"
                 />
         </clipPath></defs>`;
       svg += minify`<path
-              transform="translate(${iconOffset[0] + strokeWidth} ${iconOffset[1] + strokeWidth})${rotate}"
+              transform="translate(${iconOffset[0] + strokeWidth} ${iconOffset[1] + strokeWidth})${extraTransform}"
               clip-path="url(#stroke-clip)"
               fill="none"
               stroke-linejoin="round"
@@ -177,7 +183,7 @@ export function getIcon(name, properties = {}) {
               />`;
     }
     svg += minify`<path
-            ${iconOffset[0] || iconOffset[1] || strokeWidth ? `transform="translate(${iconOffset[0] + strokeWidth} ${iconOffset[1] + strokeWidth})${rotate}"` : ""}
+            ${iconOffset[0] || iconOffset[1] || strokeWidth || extraTransform ? `transform="translate(${iconOffset[0] + strokeWidth} ${iconOffset[1] + strokeWidth})${extraTransform}"` : ""}
             ${fill ? `fill="${fill}"` : ""}
             d="${path}"
             />`;
