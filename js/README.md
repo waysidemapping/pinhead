@@ -26,6 +26,7 @@ mapping platform.
 - **Icon Composition:** Layer any Pinhead icon onto background shapes.
 - **Smart Coloring:** Automatically chooses contrasting icon colors based on the background fill.
 - **Multiple Shapes:** Supports `circle`, `square`, `map_pin`, and `marker`.
+- **Basic transforms:** Rotate and flip icons.
 - **CLI & API:** Use it as a command-line tool for batch processing or as a JavaScript library in your app.
 - **Custom SVGs:** Pass raw SVG strings to compose custom icons
 - **Migation:** A function is provided to simplify the usage of Pinehead's `changelog.json`.
@@ -50,6 +51,8 @@ These options are common across both the CLI and API.
 | `shapeFill`    | Fill color of the background shape                                | `black`                                               |
 | `stroke`       | Color of the stroke (applies to shape if present, otherwise icon) | Auto-calculated (contrasting or darkened/lightened)   |
 | `strokeWidth`  | Width of the stroke                                               | `1` for `marker`, else `0`                            |
+| `flip`         | Flip the icon: `horizontal` or `vertical`                         | `none`                                                |
+| `rotate`       | Rotate the icon                                                   | `none`                                                |
 
 ---
 
