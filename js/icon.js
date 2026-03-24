@@ -172,11 +172,15 @@ export function getIcon(name, properties = {}) {
                 d="M${-strokeWidth} ${-strokeWidth}V${15 + strokeWidth}H${15 + strokeWidth}V${-15 - strokeWidth}Z M0 0 ${path}"
                 />
         </clipPath></defs>`;
+      // linecap & dasharray are a hack to fix problems with self intersection strokes in holes
+      // https://stackoverflow.com/questions/69006152/svg-stroke-overlaps-disappear
+      // to see the problem, remove the lines and generate a cargobike icon with stroke=1
       svg += minify`<path
               transform="translate(${iconOffset[0] + strokeWidth} ${iconOffset[1] + strokeWidth})${extraTransform}"
               clip-path="url(#stroke-clip)"
               fill="none"
               stroke-linejoin="round"
+              stroke-linecap="round" stroke-dasharray="1 0"
               stroke="${stroke}"
               stroke-width="${2 * strokeWidth}"
               d="${path}"
