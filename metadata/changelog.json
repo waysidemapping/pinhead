@@ -11799,12 +11799,38 @@
         "newId": "swastika",
         "by": "@ooosssay",
         "pr": "163",
+        "char": [
+          "卐",
+          "࿕"
+        ],
+        "sensitive": "hate"
+      },
+      {
+        "newId": "swastika_with_dots",
+        "by": [
+          "@ooosssay",
+          "@quincylvania"
+        ],
+        "char": "࿗",
         "sensitive": "hate"
       },
       {
         "newId": "sauvastika",
         "by": "@ooosssay",
         "pr": "163",
+        "char": [
+          "卍",
+          "࿖"
+        ],
+        "sensitive": "hate"
+      },
+      {
+        "newId": "sauvastika_with_dots",
+        "by": [
+          "@ooosssay",
+          "@quincylvania"
+        ],
+        "char": "࿘",
         "sensitive": "hate"
       },
       {
