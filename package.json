@@ -47,7 +47,8 @@
     "check_icons": "node scripts/check_icons.js",
     "fetch_wikidata_info": "node scripts/fetch_wikidata_info.js",
     "serve": "node serve.js",
-    "sync_to_commons": "node scripts/sync_to_commons.js"
+    "sync_to_commons": "node scripts/sync_to_commons.js",
+    "update_js_version": "node scripts/update_js_version.js"
   },
   "devDependencies": {
     "archiver": "^7.0.1",
