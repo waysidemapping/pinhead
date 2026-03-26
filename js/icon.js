@@ -84,8 +84,8 @@ export function getIcon(name, properties = {}) {
         height += 5;
       height = Math.ceil(height);
       break;
-    case shape.startsWith("data:image/png;base64,"):
-    case shape.includes("<svg"):
+    case shape?.startsWith("data:image/png;base64,"):
+    case shape?.includes("<svg"):
       if (padding instanceof Array) {
         iconOffset = padding;
       } else if (padding) {
@@ -163,10 +163,10 @@ export function getIcon(name, properties = {}) {
         transform="${scaleTransform}translate(${strokeWidth} ${strokeWidth})"
         />`;
       break;
-    case shape.includes("<svg"):
+    case shape?.includes("<svg"):
       svg = shape.replace(/<\/\s*svg\s*>/, "");
       break;
-    case shape.startsWith("data:image/png;base64,"):
+    case shape?.startsWith("data:image/png;base64,"):
       const buffer = Uint8Array.fromBase64(shape.split(",", 2)[1]);
       ({ height, width } = imageSize(buffer));
       svg = minify`<svg xmlns="http://www.w3.org/2000/svg"
