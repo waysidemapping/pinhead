@@ -6,6 +6,14 @@ docs/changelog.json
 docs/external_sources.json
 docs/srcicons/
 docs/npm_publish_dates.json
+docs/commons_metadata.json
+docs/translations
+font/LICENSE
+font/package.json
+font/pinhead.css
+font/pinhead.ttf
+font/preview.html
+qgis_resources_repo
 node_modules/
 package-lock.json
 js/test/fixtures/*-diff.png

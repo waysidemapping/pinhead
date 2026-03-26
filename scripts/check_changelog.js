@@ -39,7 +39,8 @@ function validateChangelog() {
     "importBy",
     "issue",
     "pr",
-    "char"
+    "char",
+    "sensitive"
   ].concat(importSources.map(source => source.id));
 
   const changelogPath = 'metadata/changelog.json';
@@ -229,7 +230,7 @@ function printTextForChangelog(changelog) {
     console.log('### Renamed and redesigned icons');
     console.log('');
     renamedAndRedesignedIcons.forEach(iconChange => {
-      console.log(`- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> \`${iconChange.oldId}\` -> <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.newId}\`` + issueLinks(iconChange));
+      console.log(`- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> \`${iconChange.oldId}\` -> <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.newId}\`` + fromInfo(iconChange) + issueLinks(iconChange));
     });
     console.log('');
   }
@@ -253,7 +254,7 @@ function printTextForChangelog(changelog) {
     console.log('### Redesigned icons');
     console.log('');
     redesignedIcons.forEach(iconChange => {
-      console.log(`- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> -> <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.newId}\`` + issueLinks(iconChange));
+      console.log(`- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> -> <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.newId}\`` + fromInfo(iconChange) + issueLinks(iconChange));
     });
     console.log('');
   }
@@ -261,34 +262,38 @@ function printTextForChangelog(changelog) {
     console.log('### Added icons');
     console.log('');
     addedIcons.forEach(iconChange => {
-      let str = `- <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> Add \`${iconChange.newId}\``;
-      if (iconChange.srcBy) {
-        str += ' by ' + stringArray(iconChange.srcBy).map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
-      }
-      if (iconChange.src && iconChange.importBy) {
-        const srcs = stringArray(iconChange.src);
-        str += ' from ' + srcs.map(src => {
-          const importSource = importSources.find(source => source.id === src);
-          if (importSource) {
-            return `[${importSource.name}](${importSource.repo.slice(0, -4)})`;
-          }
-          return `[source](${src})`;
-        }).join(', ');
-        const importBys = stringArray(iconChange.importBy);
-        str += ' imported by ' + importBys.map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
-        if (iconChange.by) {
-          if (iconChange.by.toString() === iconChange.importBy.toString()) {
-            str += ' with edits';
-          } else {
-            str += ' with edits by ' + stringArray(iconChange.by).map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
-          }
-        }
-      } else if (iconChange.by) {
-        str += ' by ' + stringArray(iconChange.by).map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
-      }
-      console.log(str + issueLinks(iconChange));
+      console.log(`- <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> Add \`${iconChange.newId}\`` + fromInfo(iconChange) + issueLinks(iconChange));
     });
     console.log('');
+  }
+
+  function fromInfo(iconChange) {
+    let str = '';
+    if (iconChange.srcBy) {
+      str += ' by ' + stringArray(iconChange.srcBy).map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
+    }
+    if (iconChange.src && iconChange.importBy) {
+      const srcs = stringArray(iconChange.src);
+      str += ' from ' + srcs.map(src => {
+        const importSource = importSources.find(source => source.id === src);
+        if (importSource) {
+          return `[${importSource.name}](${importSource.repo.slice(0, -4)})`;
+        }
+        return `[source](${src})`;
+      }).join(', ');
+      const importBys = stringArray(iconChange.importBy);
+      str += ' imported by ' + importBys.map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
+      if (iconChange.by) {
+        if (iconChange.by.toString() === iconChange.importBy.toString()) {
+          str += ' with edits';
+        } else {
+          str += ' with edits by ' + stringArray(iconChange.by).map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
+        }
+      }
+    } else if (iconChange.by) {
+      str += ' by ' + stringArray(iconChange.by).map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
+    }
+    return str;
   }
 
   function issueLinks(iconChange) {

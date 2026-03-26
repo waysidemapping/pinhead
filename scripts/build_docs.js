@@ -11,14 +11,13 @@ const currentMajorVersion = parseInt(version.split('.')[1]);
 for (let i = 1; i <= currentMajorVersion; i+=1) {
   const targetDir = 'docs/v' + i;
   if (!existsSync(targetDir)) {
+    ensureEmptyDir(targetDir);
     downloadLegacyIcons(i, targetDir);
+    downloadLegacyFont(i, targetDir);
   }
 }
 
-function downloadLegacyIcons(majorVersion, targetDir) {
-  ensureEmptyDir(targetDir);
-
-  const spec = parseInt(majorVersion) >= 15 ? packageName + "@~15." + majorVersion : packageName + "@^" + majorVersion;
+function downloadPackage(spec) {
   const file = execSync(`npm pack "${spec}" --silent`, { encoding: "utf8" }).trim();
   const folderName = file.replace(/\.tgz$/, "");
 
@@ -28,6 +27,13 @@ function downloadLegacyIcons(majorVersion, targetDir) {
 
   renameSync("package", folderName);
   rmSync(file);
+
+  return folderName;
+}
+
+function downloadLegacyIcons(majorVersion, targetDir) {
+  const spec = parseInt(majorVersion) >= 15 ? packageName + "@~15." + majorVersion : packageName + "@^" + majorVersion;
+  const folderName = downloadPackage(spec);
 
   const iconDir = join(folderName, "dist", "icons");
   if (!existsSync(iconDir)) throw new Error(`dist/icons not found in ${folderName}`);
@@ -43,6 +49,21 @@ function downloadLegacyIcons(majorVersion, targetDir) {
   rmSync(folderName, { recursive: true, force: true });
 
   console.log("Downloaded icons from " + folderName);
+}
+
+function downloadLegacyFont(majorVersion, targetDir) {
+  if (parseInt(majorVersion) < 19) return;
+
+  const spec = `${packageName}-font@~1.${majorVersion}`;
+  const folderName = downloadPackage(spec);
+
+  copyFileSync(join(folderName, "pinhead.css"), join(targetDir, "pinhead.css"));
+  copyFileSync(join(folderName, "pinhead.ttf"), join(targetDir, "pinhead.ttf"));
+  copyFileSync(join(folderName, "preview.html"), join(targetDir, "font_preview.html"));
+
+  rmSync(folderName, { recursive: true, force: true });
+
+  console.log("Downloaded font from " + folderName);
 }
 
 const importSources = JSON.parse(readFileSync('metadata/external_sources.json'));

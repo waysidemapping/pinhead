@@ -2,13 +2,17 @@ name: Build and deploy site to GitHub Pages
 
 on:
   workflow_run:
-    # Runs after successful release workflow
+    # Runs after release workflow (successful or not)
     workflows: ["Release"]
     types:
       - completed
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+
+  # Redeploy hourly to get the latest Wikimedia data
+  schedule:
+    - cron: '0 * * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,6 +32,7 @@ concurrency:
 jobs:
   # Build job
   build:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -42,6 +47,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build_docs
+      - name: fetch_wikidata_info
+        run: npm run fetch_wikidata_info
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:

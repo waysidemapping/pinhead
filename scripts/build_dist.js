@@ -1,8 +1,12 @@
 import { existsSync, rmSync, mkdirSync, readdirSync, copyFileSync, writeFileSync, readFileSync } from 'fs';
 import { join, basename, extname } from 'path';
+import { ChangelogReader } from '../src/ChangelogReader.js';
 
 const sourceDir = 'icons';
 const distIconsDir = 'dist/icons';
+
+const changelogs = JSON.parse(readFileSync('metadata/changelog.json'));
+const changelogReader = new ChangelogReader(changelogs);
 
 const version = JSON.parse(readFileSync('package.json')).version;
 
@@ -48,6 +52,12 @@ async function flatCopy() {
   for (const file of files) {
     const filename = basename(file, extname(file))
     manifest.icons[filename] = {};
+
+    if (changelogReader.iconsById[filename]) {
+      if (changelogReader.iconsById[filename].sensitive) {
+         manifest.icons[filename].sensitive = changelogReader.iconsById[filename].sensitive;
+      }
+    }
 
     const subdir = file.slice(sourceDir.length + 1, file.length - basename(file).length - 1);
     complete.icons[filename] = Object.assign({}, manifest.icons[filename]);

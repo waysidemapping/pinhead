@@ -1,7 +1,7 @@
 let packageJson;
 
 let version;
-let majorVersion
+let majorVersion;
 
 window.addEventListener('load', _ => {
   fetch('package.json')
@@ -18,11 +18,31 @@ window.addEventListener('load', _ => {
     });
 });
 
+const translations = {};
+
+async function loadLanguage(code) {
+  if (translations[code]) return;
+  const file = code.toLowerCase();
+  try {
+    const data = await fetch(`translations/${file}.json`)
+      .then(result => result.json());
+    if (data) translations[file] = data;
+  } catch {
+    console.log(`Could not get translations file: ${file}.json`)
+  }
+}
+
 async function setupPage(pageData) {
   const publishDates = await fetch('npm_publish_dates.json')
     .then(result => result.json());
   const changelogs = await fetch('changelog.json')
     .then(result => result.json());
+  
+  let userLangs = navigator.languages ? navigator.languages : navigator.language ? [navigator.language] : [];
+  userLangs = Array.from(new Set(userLangs.map(lang => [lang].concat(lang.split('-')[0])).flat()));
+  for (const lang of userLangs) {
+    await loadLanguage(lang);
+  }
 
   const currentChangelog = changelogs.find(item => item.majorVersion === majorVersion);
   const newIconIds = currentChangelog.iconChanges
@@ -46,7 +66,7 @@ async function setupPage(pageData) {
 
   document.getElementById('per-day-icon-count')
     .replaceChildren(
-      new Intl.NumberFormat(undefined, {maximumFractionDigits: 1}).format(iconsAddedPerDaySinceLaunch)
+      new Intl.NumberFormat().format(Math.round(iconsAddedPerDaySinceLaunch))
     );
 
   document.getElementById('sidebar')
@@ -344,8 +364,12 @@ async function setupPage(pageData) {
 function filterIcons(rawQuery) {
   const query = rawQuery.toLowerCase().trim().replaceAll(/[\s_]+/gi, '');
   const elements = document.querySelectorAll('#icon-list .icon-item');
+  const ts = Object.values(translations);
   for (const element of elements) {
-    if (query === '' || element.id.replaceAll('_', '').includes(query)) {
+    const matchesALabel = ts.some(t => {
+      return t.icons[element.id]?.labels?.some(label => label.toLowerCase().replaceAll(' ', '').includes(query)) || t.icons[element.id]?.aliases?.some(alias => alias.toLowerCase().replaceAll(' ', '').includes(query));
+    });
+    if (query === '' || element.id.replaceAll('_', '').includes(query) || matchesALabel) {
       element.classList.remove('hidden');
     } else {
       element.classList.add('hidden');

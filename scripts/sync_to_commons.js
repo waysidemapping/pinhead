@@ -1,10 +1,6 @@
-import { readFileSync, existsSync } from "fs";
+import { readFileSync } from "fs";
 
-import dotenv from "dotenv";
-if (existsSync(".env")) {
-  dotenv.config({quiet: true});
-}
-
+import { downloadCategoryPages, uploadFile, uploadNewFileDescription, downloadEntityStatements, uploadClaims } from "../src/CommonsConnection.js";
 import { ChangelogReader } from '../src/ChangelogReader.js';
 
 const changelogs = JSON.parse(readFileSync('dist/changelog.json'));
@@ -16,7 +12,7 @@ const currentVersion = JSON.parse(readFileSync('package.json')).version;
 const versionParts = currentVersion.split('.');
 const currentMajorVersion = versionParts[1];
 
-const userAgent ="PinheadBot/1.0 (quincy@waysidemapping.org)";
+const pinheadTemplateRegex = /{{Pinhead\|(.+?)(?:\|v=(\d+?))}}/;
 
 if (versionParts[2] !== '0' ||
   currentVersion.includes('dev') ||
@@ -25,9 +21,6 @@ if (versionParts[2] !== '0' ||
   process.exit(0);
 }
 
-const commonsApiBase = "https://commons.wikimedia.org/w/api.php";
-const commonsCategory = "Category:Plain_black_Pinhead_SVG_icons";
-
 const externalSources = JSON.parse(readFileSync('dist/external_sources.json'));
 const completeIconsById =  JSON.parse(readFileSync('dist/icons/index.complete.json')).icons;
 const iconsToUploadById = Object.assign({}, completeIconsById);
@@ -35,10 +28,12 @@ const pagesNeedingUpdateByIconId = {};
 
 const validRemotePages = {};
 
-const loginInfo = await login();
-
-await downloadCategoryPages()
+const pages = await downloadCategoryPages("Category:Plain_black_Pinhead_SVG_icons")
   .catch(console.error);
+
+for (const page of pages) {
+  processCategoryPage(page);
+}
 
 await uploadNewIconVersions()
   .catch(console.error);
@@ -46,134 +41,65 @@ await uploadNewIconVersions()
 await uploadMissingIcons()
   .catch(console.error);
 
-await downloadEntityStatements()
+const entities = await downloadEntityStatements(Object.keys(validRemotePages))
   .catch(console.error);
+
+for (const item of entities) {
+  const pageid = item.id.slice(1);
+  const page = validRemotePages[pageid];
+  if (page) {
+    // statements will be undefined if none have been added yet
+    page.statements = item.statements || [];
+  } else {
+    console.error('Cannot find page for: ' + pageid);
+    console.log(item);
+    console.error('Continuing anyway...');
+  }
+}
 
 await uploadEntityStatements()
   .catch(console.error);
 
-async function login() {
-  const tokenRes = await fetch(`${commonsApiBase}?action=query&meta=tokens&type=login&format=json`, {
-      headers: {
-        "User-Agent": userAgent
-      }
-    }
-  );
+function processCategoryPage(page) {
+  const title = page.title;
+  const content = page.revisions?.[0]?.slots?.main?.content;
+  const results = content && pinheadTemplateRegex.exec(content);
 
-  const tokenData = await tokenRes.json();
-  const loginToken = tokenData.query.tokens.logintoken;
-
-  let cookie = tokenRes.headers.get("set-cookie");
-
-  const loginParams = new URLSearchParams({
-    action: "login",
-    lgname: process.env.COMMONS_BOT_USERNAME,
-    lgpassword: process.env.COMMONS_BOT_PASSWORD,
-    lgtoken: loginToken,
-    format: "json"
-  });
-
-  const loginRes = await fetch(commonsApiBase, {
-    method: "POST",
-    body: loginParams,
-    headers: {
-      "Cookie": cookie, 
-      "User-Agent": userAgent
-    }
-  });
-
-  const loginData = await loginRes.json();
-  console.log("login:", loginData);
-
-  cookie = loginRes.headers.get("set-cookie") || cookie;
-
-  const csrfRes = await fetch(`${commonsApiBase}?action=query&meta=tokens&type=csrf&format=json`, {
-      headers: {
-        Cookie: cookie,
-        "User-Agent": userAgent
-      }
-    }
-  );
-  const csrfData = await csrfRes.json();
-  const token = csrfData.query.tokens.csrftoken;
-
-  return { cookie, token };
-}
-
-async function downloadCategoryPages() {
-  console.log('Downloading category pages...');
-  let cont = null;
-  do {
-    const params = new URLSearchParams({
-      action: "query",
-      generator: "categorymembers",
-      gcmtitle: commonsCategory,
-      gcmtype: "file",
-      // revisions will not be returned if we go higher than this
-      gcmlimit: "50",
-      prop: "revisions|imageinfo",
-      iiprop: "url",
-      rvslots: "main",
-      rvprop: "content",
-      format: "json",
-      formatversion: "2"
-    });
-
-    if (cont) params.set("gcmcontinue", cont);
-
-    const res = await fetch(`${commonsApiBase}?${params}`, {
-      headers: {
-        "User-Agent": userAgent
-      }
-    });
-    const data = await res.json();
-    const pages = Object.values(data.query?.pages || {});
-    for (const page of pages) {
-      const title = page.title;
-      const content = page.revisions?.[0]?.slots?.main?.content;
-      const results = content && /{{Pinhead\|(.+?)(?:\|v=(\d+?))}}/.exec(content);
-
-      if (results && results.length >= 3) {
-        const pinheadIconId = results[1];
-        const commonsIconV = parseInt(results[2]);
-        const versionedIconId = `v${commonsIconV}/${pinheadIconId}`;
-        const targetId = localIconsByVersionedIconId[versionedIconId];
-        if (targetId === pinheadIconId) {
-          const iconInfo = localIconsById[pinheadIconId];
-          if (iconInfo) {
-            const latestV = parseInt(localIconsById[pinheadIconId].v);
-            if (commonsIconV < latestV) {
-              pagesNeedingUpdateByIconId[pinheadIconId] = page;
-            } else {
-              validRemotePages[page.pageid] = {
-                pinheadIconId: pinheadIconId,
-                filename: page.title.slice(5)
-              };
-            }
-            if (iconsToUploadById[pinheadIconId]) {
-              delete iconsToUploadById[pinheadIconId];
-            }
-          } else {
-            console.error(`Cannot find local icon info for Commmons page ${title} with icon id ${pinheadIconId} from version ${commonsIconV}`);
-          }
+  if (results && results.length >= 3) {
+    const pinheadIconId = results[1];
+    const commonsIconV = parseInt(results[2]);
+    const versionedIconId = `v${commonsIconV}/${pinheadIconId}`;
+    const targetId = localIconsByVersionedIconId[versionedIconId];
+    if (targetId === pinheadIconId) {
+      const iconInfo = localIconsById[pinheadIconId];
+      if (iconInfo) {
+        const latestV = parseInt(localIconsById[pinheadIconId].v);
+        if (commonsIconV < latestV) {
+          pagesNeedingUpdateByIconId[pinheadIconId] = page;
         } else {
-          console.log(`Icon renamed and needs to be manually moved on Commons: ${pinheadIconId} -> ${targetId}`);
-          if (iconsToUploadById[pinheadIconId]) {
-            delete iconsToUploadById[pinheadIconId];
-          }
-          if (iconsToUploadById[targetId]) {
-            delete iconsToUploadById[targetId];
-          }
+          validRemotePages[page.pageid] = {
+            pinheadIconId: pinheadIconId,
+            filename: page.title.slice(5)
+          };
+        }
+        if (iconsToUploadById[pinheadIconId]) {
+          delete iconsToUploadById[pinheadIconId];
         }
       } else {
-        console.error(`Cannot find valid {{Pinhead|}} template for ${title}`);
+        console.error(`Cannot find local icon info for Commmons page ${title} with icon id ${pinheadIconId} from version ${commonsIconV}`);
+      }
+    } else {
+      console.log(`Icon renamed and needs to be manually moved on Commons: ${pinheadIconId} -> ${targetId}`);
+      if (iconsToUploadById[pinheadIconId]) {
+        delete iconsToUploadById[pinheadIconId];
+      }
+      if (iconsToUploadById[targetId]) {
+        delete iconsToUploadById[targetId];
       }
     }
-
-    cont = data.continue?.gcmcontinue;
-
-  } while (cont);
-  console.log('Done downloading');
+  } else {
+    console.error(`Cannot find valid {{Pinhead|}} template for ${title}`);
+  }
 }
 
 function commonsPageAuthorValue(pinheadIconId) {
@@ -214,8 +140,10 @@ function commonsPageCategoriesText(pinheadIconId) {
     'abstract_symbols/hearts': ['Plain black SVG heart icons'],
     'abstract_symbols/japanese_map_symbols': ['SVG map symbols of Japan'],
     animals: ['Plain black SVG animal icons'],
+    benches: ['Plain black SVG bench icons'],
     body_parts: ['Plain black SVG medical icons'],
     'boundaries/us': ['Plain black SVG icon maps of the United States'],
+    boundaries: ['Plain black SVG icon maps'],
     briefcases: ['Plain black SVG briefcase icons'],
     'abstract_symbols/campsite_symbols': ['Plain black SVG tent icons'],
     'buildings/castles': ['Plain black SVG castle icons'],
@@ -228,11 +156,18 @@ function commonsPageCategoriesText(pinheadIconId) {
     medical_devices_and_medicine: ['Plain black SVG medical icons'],
     microbiology: ['Plain black SVG medical icons'],
     mobile_phones: ['Plain black SVG telephone icons'],
+    passports: ['Plain black SVG passport icons'],
     people: ['Plain black SVG people icons'],
     phones: ['Plain black SVG telephone icons'],
+    'pixel_style/buildings': ['One-color SVG pixel art (black)', 'Plain black SVG building icons'],
+    'pixel_style/currency_symbols': ['One-color SVG pixel art (black)', 'Currency icons'],
+    'pixel_style/food': ['One-color SVG pixel art (black)', 'Plain black SVG food and drink icons'],
+    'pixel_style/vehicles': ['One-color SVG pixel art (black)', 'Plain black SVG vehicle icons'],
     pixel_style: ['One-color SVG pixel art (black)'],
     plants: ['Plain black SVG plant icons'],
     religious: ['Plain black SVG religious computer icons'],
+    shopping_bags: ['Plain black SVG shopping bag icons'],
+    tags: ['Plain black SVG tag icons'],
     towers_poles_masts: ['Tower icons'],
     'vehicles/aircraft': ['Plain black SVG aircraft icons'],
     'vehicles/bicycles': ['Plain black SVG bicycle icons'],
@@ -274,33 +209,6 @@ function textForNewFile(pinheadIconId) {
 {{Cc-zero}}
 
 ${commonsPageCategoriesText(pinheadIconId)}`;
-}
-
-async function uploadFile(filename, svg, newFileText) {
-
-  const isFirstVersion = !!newFileText;
-  
-  const form = new FormData();
-  form.append("action", "upload");
-  form.append("filename", filename);
-  form.append("file", new Blob([svg], { type: "image/svg+xml" }), filename);
-  if (isFirstVersion) form.append("text", newFileText);
-  const comment = (isFirstVersion ? 'Upload' : 'Upload latest version of') + ' Pinhead icon via Node.js';  
-  form.append("comment", comment);
-  form.append("token", loginInfo.token);
-  // intentionally enable overwriting files only if this is an update
-  form.append("ignorewarnings", isFirstVersion ? "0" : "1");
-  form.append("format", "json");
-
-  const res = await fetch(commonsApiBase, {
-    method: "POST",
-    body: form,
-    headers: {
-      Cookie: loginInfo.cookie,
-      "User-Agent": userAgent
-    }
-  });
-  return await res.json();
 }
 
 async function uploadMissingIcons() {
@@ -352,6 +260,7 @@ function updatedFileText(text, pinheadIconId) {
   }
   return text;
 }
+
 async function uploadNewIconVersions() {
   console.log('Uploading updated icons...');
   for (const pinheadIconId in pagesNeedingUpdateByIconId) {
@@ -368,32 +277,12 @@ async function uploadNewIconVersions() {
           console.log('Success');
         } else {
           console.log('File already up to date');
-        }
-        console.log(`Uploading updated version of page text for file: ${filename}...`);
-
+        }      
         validRemotePages[page.pageid] = {
           pinheadIconId: pinheadIconId,
           filename: filename
         };
-        const params = new URLSearchParams({
-          action: "edit",
-          title: page.title,
-          text: content,
-          summary: "Update file description for Pinhead icon via Node.js",
-          token: loginInfo.token,
-          format: "json"
-        });
-        
-        const res = await fetch(commonsApiBase, {
-          method: "POST",
-          body: params,
-          headers: {
-            Cookie: loginInfo.cookie,
-            "User-Agent": userAgent
-          }
-        });
-        const result2 = await res.json();
-        console.log(result2.edit?.result);
+        await uploadNewFileDescription(page.title, content);
       } else {
         console.error(result);
       }
@@ -404,69 +293,10 @@ async function uploadNewIconVersions() {
   console.log('Done uploading')
 }
 
-async function downloadEntityStatements() {
-  console.log('Downloading entity statements...');
-
-  const idsToGet = Object.keys(validRemotePages).map(pageid => 'M' + pageid);
-
-  const maxIdsPerQuery = 50;
-  while (idsToGet.length) {
-    const batchIds = idsToGet.splice(0, maxIdsPerQuery);
-    const batchInfo = await getMediaInfo(batchIds);
-    if (batchInfo.entities && Object.keys(batchInfo.entities).length) {
-      for (const mid in batchInfo.entities) {
-        const item = batchInfo.entities[mid];
-        const pageid = mid.slice(1);
-        const page = validRemotePages[pageid];
-        if (!page) {
-          console.error('Cannot find page for: ' + pageid);
-          console.log(item);
-          console.error('Continuing anyway...');
-        }
-        // statements will be undefined if none have been added yet
-        page.statements = item.statements || [];
-      }
-    } else {
-      console.error('Could not get entities for: ' + batchIds);
-      console.error('Continuing anyway...');
-    }
-  }
-
-  async function getMediaInfo(ids) {
-    const params = new URLSearchParams({
-      action: "wbgetentities",
-      ids: ids.join("|"),
-      format: "json"
-    });
-
-    const res = await fetch(`${commonsApiBase}?${params}`, {
-      headers: {
-        "User-Agent": userAgent
-      }
-    });
-    return res.json();
-  }
-  console.log('Done downloading');
-}
-
 async function uploadEntityStatements() {
   console.log('Uploading entity statements...');
 
   const yearRegex = /^\d{4}-\d{2}-\d{2}$/;
-
-  const defaultProps = {
-    P31: 'Q52827',          // instance of        = pictogram
-    P7482: 'Q138577495',    // source of file     = Pinhead
-    P1163: 'image/svg+xml', // media type
-    P2061: 'Q20970430',     // aspect ratio (W:H) = 1:1
-    P275: 'Q6938433',       // copyright license  = Creative Commons CC0 License
-    P6216: 'Q88088423',     // copyright status   = copyrighted, dedicated to the public domain by copyright holder
-    P462: 'Q23445',         // color              = black
-  };
-  const dependentPropsBySupportingProp = {
-    // only add copyright license if we're also adding copyright status
-    P6216: 'P275'
-  };
   
   for (const pageid in validRemotePages) {
     const remotePage = validRemotePages[pageid];
@@ -474,11 +304,57 @@ async function uploadEntityStatements() {
       console.error('Missing statements for ' + remotePage.filename);
       return;
     }
-    const propsToUpload = Object.assign({}, defaultProps);
+
+    const propsToUpload = getPropsToUpload(remotePage);
+
+    if (propsToUpload && Object.keys(propsToUpload).length) {
+      const claims = claimsForProps(propsToUpload);
+      console.log('Uploading props for ' + remotePage.filename + ': ' + claims.map(claim => claim.mainsnak.property));
+      const data = await uploadClaims(pageid, claims);
+      if (data.success !== 1) {
+        console.log(data);
+      } else {
+        console.log('success: ' + data.success);
+      }
+    }
+  }
+  console.log('Done uploading');
+
+  function getPropsToUpload(remotePage) {
+
+    const defaultProps = {
+      P31: 'Q52827',          // instance of        = pictogram
+      P7482: 'Q138577495',    // source of file     = Pinhead
+      P1163: 'image/svg+xml', // media type
+      P2061: 'Q20970430',     // aspect ratio (W:H) = 1:1
+      P275: 'Q6938433',       // copyright license  = Creative Commons CC0 License
+      P6216: 'Q88088423',     // copyright status   = copyrighted, dedicated to the public domain by copyright holder
+      P462: 'Q23445',         // color              = black
+    };
+    const dependentPropsBySupportingProp = {
+      // only add copyright license if we're also adding copyright status
+      P6216: 'P275'
+    };
+    const propsForDir = {
+      pixel_style: {
+        P136: 'Q811179'        // genre = pixel art
+      }
+    };
+       
     const pinheadIconInfo = localIconsById[remotePage.pinheadIconId];
     if (!pinheadIconInfo) {
       console.error('Missing Pinhead icon info for ' + remotePage.filename);
       return;
+    }
+    const propsToUpload = Object.assign({}, defaultProps);
+    const srcdir = completeIconsById[remotePage.pinheadIconId].srcdir;
+    if (srcdir) {
+      for (const dirPrefix in propsForDir) {
+        if (srcdir.startsWith(dirPrefix)) {
+          Object.assign(propsToUpload, propsForDir[dirPrefix])
+          break;
+        }
+      }
     }
 
     // inception = date
@@ -496,18 +372,8 @@ async function uploadEntityStatements() {
         }
       }
     }
-    if (Object.keys(propsToUpload).length) {
-      const claims = claimsForProps(propsToUpload);
-      console.log('Uploading props for ' + remotePage.filename + ': ' + claims.map(claim => claim.mainsnak.property));
-      const data = await uploadClaims(pageid, claims);
-      if (data.success !== 1) {
-        console.log(data);
-      } else {
-        console.log('success: ' + data.success);
-      }
-    }
+    return propsToUpload;
   }
-  console.log('Done uploading');
 
   function claimsForProps(props) {
     const claims = [];
@@ -554,28 +420,5 @@ async function uploadEntityStatements() {
       } 
     }
     return claims;
-  }
-
-  async function uploadClaims(pageid, claims) {
-    const params = new URLSearchParams({
-      action: "wbeditentity",
-      id: 'M' + pageid,
-      data: JSON.stringify({
-        claims: claims
-      }),
-      token: loginInfo.token,
-      format: "json"
-    });
-
-    const res = await fetch(commonsApiBase, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Cookie": loginInfo.cookie,
-        "User-Agent": userAgent
-      },
-      body: params
-    });
-    return await res.json();
   }
 }

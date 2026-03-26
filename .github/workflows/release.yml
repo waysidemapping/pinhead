@@ -28,6 +28,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run dist
+      - name: Build font
+        run: npm run build_font
       - name: Pack
         run: npm pack
       - name: Extract changelog section
@@ -41,11 +43,13 @@ jobs:
       - name: Create GitHub Release
         run: |
           PACKAGE_FILE=$(ls *.tgz)
-          ZIP_FILE=$(ls *.zip)
-          gh release create "${GITHUB_REF_NAME}" "$PACKAGE_FILE" "$ZIP_FILE" \
+          gh release create "${GITHUB_REF_NAME}" "$PACKAGE_FILE" \
             --title "${GITHUB_REF_NAME}" \
             --notes-file RELEASE_NOTES.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish to npm
         run: npm publish
+      - name: Publish font package to npm
+        run: npm publish
+        working-directory: ./font
