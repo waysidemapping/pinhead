@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "@waysidemapping/pinhead": "^15.16.0",
+    "image-size": "^2.0.2",
     "tinycolor2": "^1.6.0"
   },
   "devDependencies": {

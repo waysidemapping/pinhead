@@ -1,5 +1,6 @@
 import index from "@waysidemapping/pinhead/dist/icons/index.complete.json" with { type: "json" };
 import tinycolor from "tinycolor2";
+import { imageSize } from "image-size";
 import { getSvgPathStrings, minify } from "./util.js";
 
 // Hard coding for 15x15 requirement for Pinhead icons
@@ -83,6 +84,19 @@ export function getIcon(name, properties = {}) {
         height += 5;
       height = Math.ceil(height);
       break;
+    case shape.startsWith("data:image/png;base64,"):
+    case shape.includes("<svg"):
+      if (padding instanceof Array) {
+        iconOffset = padding;
+      } else if (padding) {
+        iconOffset = [padding, padding];
+      } else {
+        console.warn(
+          "Custom SVG used without specifying padding(ie: icon placement)",
+        );
+        iconOffset = [0, 0];
+      }
+      break;
     default:
       height += 2 * strokeWidth;
       width += 2 * strokeWidth;
@@ -148,6 +162,19 @@ export function getIcon(name, properties = {}) {
         fill="${shapeFill}"
         transform="${scaleTransform}translate(${strokeWidth} ${strokeWidth})"
         />`;
+      break;
+    case shape.includes("<svg"):
+      svg = shape.replace(/<\/\s*svg\s*>/, "");
+      break;
+    case shape.startsWith("data:image/png;base64,"):
+      const buffer = Uint8Array.fromBase64(shape.split(",", 2)[1]);
+      const { height, width } = imageSize(buffer);
+      svg = minify`<svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 ${width} ${height}"
+          ${scale ? `width="${scale * width}" height="${scale * height}"` : ""}
+          >
+          <image href="${shape}"/>
+        `;
       break;
     default:
       // Nothing to do when not drawing a shape

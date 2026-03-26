@@ -28,8 +28,9 @@ mapping platform.
 - **Multiple Shapes:** Supports `circle`, `square`, `map_pin`, and `marker`.
 - **Basic transforms:** Rotate and flip icons.
 - **CLI & API:** Use it as a command-line tool for batch processing or as a JavaScript library in your app.
-- **Custom SVGs:** Pass raw SVG strings to compose custom icons
-- **Migation:** A function is provided to simplify the usage of Pinehead's `changelog.json`.
+- **Custom Icon SVGs:** Pass raw SVG strings as the icon name to use custom icons.
+- **Custom Shapes:** Use custom SVG strings or PNG data URIs as background shapes.
+- **Migration:** A function is provided to simplify the usage of Pinehead's `changelog.json`.
 
 ## Installation
 
@@ -41,18 +42,18 @@ npm install @waysidemapping/pinhead-js
 
 These options are common across both the CLI and API.
 
-| Option         | Description                                                       | Default                                               |
-| :------------- | :---------------------------------------------------------------- | :---------------------------------------------------- |
-| `cornerRadius` | Corner radius (applies to `square` only)                          | `4`                                                   |
-| `fill`         | Sets the fill color of the icon                                   | `black` or `white` (auto-calculated from `shapeFill`) |
-| `padding`      | Internal padding between icon and shape edge                      | Varies by shape                                       |
-| `scale`        | Scale factor for the output SVG dimensions                        | `1`                                                   |
-| `shape`        | Background shape: `square`, `circle`, `map_pin`, or `marker`      | `none`                                                |
-| `shapeFill`    | Fill color of the background shape                                | `black`                                               |
-| `stroke`       | Color of the stroke (applies to shape if present, otherwise icon) | Auto-calculated (contrasting or darkened/lightened)   |
-| `strokeWidth`  | Width of the stroke                                               | `1` for `marker`, else `0`                            |
-| `flip`         | Flip the icon: `horizontal` or `vertical`                         | `none`                                                |
-| `rotate`       | Rotate the icon                                                   | `none`                                                |
+| Option         | Description                                                                                    | Default                                               |
+| :------------- | :--------------------------------------------------------------------------------------------- | :---------------------------------------------------- |
+| `cornerRadius` | Corner radius (applies to `square` only)                                                       | `4`                                                   |
+| `fill`         | Sets the fill color of the icon                                                                | `black` or `white` (auto-calculated from `shapeFill`) |
+| `padding`      | Internal padding between icon and shape edge                                                   | Varies by shape                                       |
+| `scale`        | Scale factor for the output SVG dimensions                                                     | `1`                                                   |
+| `shape`        | Background shape: `square`, `circle`, `map_pin`, `marker`, a raw SVG string, or a PNG data URI | `none`                                                |
+| `shapeFill`    | Fill color of the background shape                                                             | `black`                                               |
+| `stroke`       | Color of the stroke (applies to shape if present, otherwise icon)                              | Auto-calculated (contrasting or darkened/lightened)   |
+| `strokeWidth`  | Width of the stroke                                                                            | `1` for `marker`, else `0`                            |
+| `flip`         | Flip the icon: `horizontal` or `vertical`                                                      | `none`                                                |
+| `rotate`       | Rotate the icon                                                                                | `none`                                                |
 
 ---
 
@@ -88,6 +89,44 @@ const marker = getIcon("jeep", {
 | ![](./examples/burger-marker.svg)         | `getIcon("burger", { shape: "marker", shapeFill: "#3FB1CE" })`                                    |
 | ![](./examples/ice_cream-circle-pink.svg) | `getIcon("ice_cream_on_cone", { shape: "circle", shapeFill: "pink" })`                            |
 | ![](./examples/rocket-map_pin-purple.svg) | `getIcon("rocketship", { shape: "map_pin", shapeFill: "purple" })`                                |
+
+#### Custom Icon SVGs
+
+You can pass a raw SVG string as the icon name to use a custom icon.
+
+```javascript
+import { getIcon } from "@waysidemapping/pinhead-js";
+
+const customIcon = getIcon(
+  '<svg viewBox="0 0 15 15"><path d="M7.5 10a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" fill="red"/></svg>',
+  {
+    shape: "circle",
+    shapeFill: "white",
+  },
+);
+```
+
+#### Custom Shapes
+
+You can provide your own background shapes as SVG strings or PNG data URIs. Use the `padding` option as an array `[x, y]` to precisely position the 15x15 icon within your custom shape.
+
+```javascript
+import { getIcon } from "@waysidemapping/pinhead-js";
+
+// Custom SVG shape
+const customSvg = getIcon("bicycle", {
+  shape:
+    '<svg viewBox="0 0 25 25"><circle cx="12.5" cy="12.5" r="10" fill="green"/></svg>',
+  padding: [5, 5],
+});
+
+// Custom PNG shape (base64 data URI)
+const customPng = getIcon("bus", {
+  shape:
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAjCAYAAABhCKGo...",
+  padding: [5, 10],
+});
+```
 
 #### Migrate an icon name
 
@@ -144,9 +183,9 @@ npx pinhead build-icons --config my-icons.json --outdir ./assets/icons
 
 ---
 
-## Custom SVG icon requirements
+## Custom Icon SVG requirements
 
-To work with Pinhead JS, custom SVG strings must follow these constraints:
+To work with Pinhead JS as a custom icon (passed as the `name` argument), custom SVG strings must follow these constraints:
 
 - Use only `<path>` elements.
 - Path elements should only contain the `d` attribute.
