@@ -168,7 +168,7 @@ export function getIcon(name, properties = {}) {
       break;
     case shape.startsWith("data:image/png;base64,"):
       const buffer = Uint8Array.fromBase64(shape.split(",", 2)[1]);
-      const { height, width } = imageSize(buffer);
+      ({ height, width } = imageSize(buffer));
       svg = minify`<svg xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 ${width} ${height}"
           ${scale ? `width="${scale * width}" height="${scale * height}"` : ""}
