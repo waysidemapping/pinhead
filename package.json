@@ -55,7 +55,7 @@
     "dotenv": "^17.3.1",
     "svg-path-parse": "^1.1.3",
     "svg2ttf": "^6.0.3",
-    "svgicons2svgfont": "^15.0.1",
+    "svgicons2svgfont": "^16.0.0",
     "xmlbuilder2": "^4.0.3"
   }
 }
