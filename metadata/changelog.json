@@ -12323,56 +12323,67 @@
       {
         "newId": "vending_machine_with_baguette",
         "by": "@quincylvania",
+        "issue": "181",
         "temaki": "vending_bread"
       },
       {
         "newId": "vending_machine_with_egg",
         "by": "@quincylvania",
+        "issue": "181",
         "temaki": "vending_eggs"
       },
       {
         "newId": "vending_machine_with_cigarette_with_smoke_curl",
         "by": "@quincylvania",
+        "issue": "181",
         "temaki": "vending_cigarettes"
       },
       {
         "newId": "vending_machine_with_drink_can",
         "by": "@quincylvania",
+        "issue": "181",
         "temaki": "vending_cold_drink"
       },
       {
         "newId": "vending_machine_with_drink_cup_with_steam",
         "by": "@quincylvania",
+        "issue": "181",
         "temaki": "vending_hot_drink"
       },
       {
         "newId": "vending_machine_with_ice_cream_on_cone",
         "by": "@quincylvania",
+        "issue": "181",
         "temaki": "vending_ice_cream"
       },
       {
         "newId": "vending_machine_with_heart",
         "by": "@quincylvania",
+        "issue": "181",
         "temaki": "vending_love"
       },
       {
         "newId": "vending_machine_with_greek_cross",
         "by": "@quincylvania",
+        "issue": "181",
         "temaki": "vending_medicine"
       },
       {
         "newId": "vending_machine_with_postage_stamp",
         "by": "@quincylvania",
+        "issue": "181",
         "temaki": "vending_stamps"
       },
       {
         "newId": "vending_machine_with_ticket",
         "by": "@quincylvania",
+        "issue": "181",
         "temaki": "vending_tickets"
       },
       {
         "newId": "vending_machine_with_venus",
         "by": "@quincylvania",
+        "issue": "181",
         "temaki": "vending_venus"
       },
       {
