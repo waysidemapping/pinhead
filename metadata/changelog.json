@@ -2401,7 +2401,8 @@
         "newId": "geyser_from_ground",
         "src": "nps",
         "importBy": "@quincylvania",
-        "nps": "geyser"
+        "nps": "geyser",
+        "temaki": "geyser_from_ground"
       },
       {
         "newId": "giftwrapped_box",
@@ -3641,7 +3642,8 @@
         "inspo": [
           "motorcycle",
           "car_on_parking_line"
-        ]
+        ],
+        "temaki": "motorcycle_parked"
       },
       {
         "newId": "mountain",
@@ -6467,7 +6469,6 @@
         "newId": "vending_machine",
         "src": "temaki",
         "importBy": "@quincylvania",
-        "nps": "vending-machine",
         "temaki": "vending_machine"
       },
       {
@@ -11929,6 +11930,126 @@
         "newId": "pixel_transit_vehicle_on_railway_track",
         "by": "@quincylvania",
         "inspo": "transit_vehicle_on_railway_track"
+      }
+    ]
+  },
+  {
+    "majorVersion": "21",
+    "date": "2026-03-29",
+    "iconChanges": [
+      {
+        "newId": "taco",
+        "by": "@ooosssay",
+        "pr": "178"
+      },
+      {
+        "newId": "chopsticks",
+        "by": [
+          "@ooosssay",
+          "@quincylvania"
+        ],
+        "pr": "174",
+        "char": "🥢"
+      },
+      {
+        "newId": "chopsticks_crossed",
+        "by": [
+          "@ooosssay",
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "spoon_and_chopsticks",
+        "by": "@ooosssay",
+        "inspo": "spoon",
+        "pr": "174"
+      },
+      {
+        "newId": "spoon_and_fork",
+        "by": "@ooosssay",
+        "inspo": [
+          "spoon",
+          "fork"
+        ],
+        "pr": "174"
+      },
+      {
+        "newId": "fork_and_spoon",
+        "by": [
+          "@ooosssay",
+          "@quincylvania"
+        ],
+        "inspo": "spoon_and_fork",
+        "osmcarto": "amenity/restaurant"
+      },
+      {
+        "newId": "drink_can",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "vending_machine",
+        "by": "@quincylvania",
+        "nps": "vending-machine"
+      },
+      {
+        "oldId": "vending_machine",
+        "newId": "vending_machine_with_shelves",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "vending_machine_with_baguette",
+        "by": "@quincylvania",
+        "temaki": "vending_bread"
+      },
+      {
+        "newId": "vending_machine_with_egg",
+        "by": "@quincylvania",
+        "temaki": "vending_eggs"
+      },
+      {
+        "newId": "vending_machine_with_cigarette_with_smoke_curl",
+        "by": "@quincylvania",
+        "temaki": "vending_cigarettes"
+      },
+      {
+        "newId": "vending_machine_with_drink_can",
+        "by": "@quincylvania",
+        "temaki": "vending_cold_drink"
+      },
+      {
+        "newId": "vending_machine_with_drink_cup_with_steam",
+        "by": "@quincylvania",
+        "temaki": "vending_hot_drink"
+      },
+      {
+        "newId": "vending_machine_with_ice_cream_on_cone",
+        "by": "@quincylvania",
+        "temaki": "vending_ice_cream"
+      },
+      {
+        "newId": "vending_machine_with_heart",
+        "by": "@quincylvania",
+        "temaki": "vending_love"
+      },
+      {
+        "newId": "vending_machine_with_greek_cross",
+        "by": "@quincylvania",
+        "temaki": "vending_medicine"
+      },
+      {
+        "newId": "vending_machine_with_postage_stamp",
+        "by": "@quincylvania",
+        "temaki": "vending_stamps"
+      },
+      {
+        "newId": "vending_machine_with_ticket",
+        "by": "@quincylvania",
+        "temaki": "vending_tickets"
+      },
+      {
+        "newId": "vending_machine_with_venus",
+        "by": "@quincylvania",
+        "temaki": "vending_venus"
       }
     ]
   }

@@ -8,11 +8,11 @@ For technical reasons, this repository is separate from the [main Pinhead repo](
 
 ## Usage
 
-If you're brand new to this, start by [installing QGIS](https://qgis.org/resources/installation-guide/).
+If you haven't already, start by [installing QGIS](https://qgis.org/resources/installation-guide/).
 
 ### Installing the plugin
 
-First, make sure you install the QGIS Resource Sharing plugin:
+Then, [install the QGIS Resource Sharing plugin](https://qgis-contribution.github.io/QGIS-ResourceSharing/usage/installation.html):
 
 1. From the menubar, open "Plugins" -> "Manage and Install Plugins…"
 2. Search for and select the "QGIS Resource Sharing" plugin

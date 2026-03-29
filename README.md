@@ -87,6 +87,10 @@ It is *not* recommended for production apps to depend directly on the GitHub rep
 
 All Pinhead icons are [synced to Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Plain_black_Pinhead_SVG_icons) for convenient integration with Wikipedia, Wikidata, the OpenStreetMap Wiki, and other such projects. These files are easy to [search](https://commons.wikimedia.org/w/index.php?title=Special%3AMediaSearch&search=deepcat%3A%22Plain+black+Pinhead+SVG+icons%22&type=image).
 
+### Icons in QGIS
+
+Pinhead is bundled as a default collection in the [QGIS Resource Sharing](https://github.com/QGIS-Contribution/QGIS-ResourceSharing/) plugin, making it easy to use Pinhead icons in your QGIS project. These icon files support rich styling within the QGIS UI. For installation instructions and raw file downloads, see the [pinhead-qgis-resources](https://github.com/waysidemapping/pinhead-qgis-resources) repo.
+
 ### Node.js packages
 
 Pinhead is distributed in two different packages for Node developers. The packages have no dependencies and contain no code.
