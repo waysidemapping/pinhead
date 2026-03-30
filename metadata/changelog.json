@@ -12391,5 +12391,41 @@
         "newId": "budded_latin_cross"
       }
     ]
+  },
+  {
+    "majorVersion": "22",
+    "date": "2026-03-31",
+    "iconChanges": [
+      {
+        "oldId": "fork_and_knife",
+        "newId": "fork_and_knife",
+        "by": "@westnordost",
+        "pr": "183"
+      },
+      {
+        "oldId": "fork_and_spoon",
+        "newId": "fork_and_spoon",
+        "by": "@westnordost",
+        "pr": "183"
+      },
+      {
+        "oldId": "spoon_and_fork",
+        "newId": "spoon_and_fork",
+        "by": "@westnordost",
+        "pr": "183"
+      },
+      {
+        "oldId": "fork_and_sausage",
+        "newId": "fork_and_sausage",
+        "by": "@westnordost",
+        "pr": "183"
+      },
+      {
+        "oldId": "calculator",
+        "newId": "calculator",
+        "by": "@westnordost",
+        "pr": "183"
+      }
+    ]
   }
 ]
