@@ -12,6 +12,9 @@ copyFileSync('metadata/external_sources.json', "docs/external_sources.json");
 ensureEmptyDir(`docs/v${majorVersion}`);
 execSync(`cp -r "dist/icons/" 'docs/v${majorVersion}'`);
 
+ensureEmptyDir(`docs/js`);
+execSync(`cp -r "js/" 'docs/.'`);
+
 function ensureEmptyDir(dir) {
   if (existsSync(dir)) {
     rmSync(dir, { recursive: true, force: true });
