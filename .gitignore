@@ -14,3 +14,6 @@ font/pinhead.css
 font/pinhead.ttf
 font/preview.html
 qgis_resources_repo
+node_modules/
+package-lock.json
+js/test/fixtures/*-diff.png
