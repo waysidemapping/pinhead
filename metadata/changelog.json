@@ -12620,6 +12620,11 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "parking_stall_markings_with_parking_p",
+        "by": "@quincylvania",
+        "inspo": "parking_stall_markings"
+      },
+      {
         "newId": "estacionar_e",
         "by": "@quincylvania"
       },
@@ -12627,6 +12632,11 @@
         "newId": "estacionar_e_with_parking_meter",
         "by": "@quincylvania",
         "inspo": "parking_p_with_parking_meter"
+      },
+      {
+        "newId": "parking_stall_markings_with_estacionar_e",
+        "by": "@quincylvania",
+        "inspo": "parking_stall_markings"
       },
       {
         "newId": "estacionar_e_under_roof",
