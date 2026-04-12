@@ -12647,6 +12647,11 @@
         "oldId": "crates_under_roof",
         "newId": "crates_under_roof",
         "by": "@quincylvania"
+      },
+      {
+        "newId": "sos",
+        "by": "@quincylvania",
+        "char": "🆘"
       }
     ]
   }
