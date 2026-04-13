@@ -12658,6 +12658,13 @@
         "newId": "sos",
         "by": "@quincylvania",
         "char": "🆘"
+      },
+      {
+        "oldId": "person_sitting_in_seat",
+        "newId": "person_sitting_in_seat",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "194"
       }
     ]
   }
