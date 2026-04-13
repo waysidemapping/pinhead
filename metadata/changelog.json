@@ -12659,6 +12659,13 @@
         "by": "@quincylvania",
         "char": "🆘"
       },
+      {
+        "oldId": "person_sitting_in_seat",
+        "newId": "person_sitting_in_seat",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "194"
+      },
       { 
         "newId": "book_with_arrows_recirculating",
         "by": "@ooosssay",
@@ -12689,6 +12696,7 @@
         "inspo": [
           "book",
           "info_i"
+        ]
       },
       { 
         "newId": "book_with_kids_train", 
