@@ -12457,6 +12457,84 @@
         "issue": "49"
       },
       {
+        "newId": "flying_saucer",
+        "by": "@ooosssay",
+        "pr": "185"
+      },
+      {
+        "newId": "spooky_ghost",
+        "by": "@ooosssay",
+        "pr": "185"
+      },
+      {
+        "newId": "chicken_drumstick",
+        "by": "@ooosssay",
+        "inspo": "bone",
+        "issue": "23",
+        "pr": "185"
+      },
+      {
+        "newId": "chip_bag",
+        "by": [
+          "@ooosssay",
+          "@quincylvania"
+        ],
+        "pr": "185"
+      },
+      {
+        "newId": "chip_bag_with_chip",
+        "by": [
+          "@ooosssay",
+          "@quincylvania"
+        ],
+        "pr": "185"
+      },
+      {
+        "newId": "conifer_tree_with_star_and_ornaments",
+        "by": "@ooosssay",
+        "inspo": [
+          "conifer_tree",
+          "star"
+        ],
+        "pr": "185",
+        "char": "🎄"
+      },
+      {
+        "newId": "two_button_computer_mouse_with_scroll_wheel",
+        "by": "@ooosssay",
+        "pr": "185"
+      },
+      {
+        "newId": "puzzle_piece",
+        "by": "@ooosssay",
+        "issue": "33",
+        "pr": "185"
+      },
+      {
+        "newId": "confetti_ball",
+        "by": "@ooosssay",
+        "pr": "185",
+        "char": "🎊"
+      },
+      {
+        "newId": "party_popper",
+        "by": "@ooosssay",
+        "pr": "185",
+        "char": "🎉"
+      },
+      {
+        "newId": "shooting_stars",
+        "by": "@ooosssay",
+        "inspo": "star",
+        "pr": "185"
+      },
+      {
+        "newId": "trophy_with_star",
+        "by": "@ooosssay",
+        "inspo": "star",
+        "pr": "185"
+      },
+      {
         "newId": "banana",
         "by": "@ooosssay",
         "issue": "35",
