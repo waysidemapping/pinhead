@@ -50,7 +50,7 @@ jobs:
       - name: fetch_wikidata_info
         run: npm run fetch_wikidata_info
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: 'docs'
 
