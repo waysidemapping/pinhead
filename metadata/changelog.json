@@ -12687,6 +12687,12 @@
         "char": "0"
       },
       {
+        "newId": "zero_with_slash",
+        "by": "@quincylvania",
+        "issue": "10",
+        "char": "0"
+      },
+      {
         "newId": "one",
         "by": "@quincylvania",
         "issue": "10",
