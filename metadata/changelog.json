@@ -12480,6 +12480,11 @@
         "pr": "191"
       },
       {
+        "oldId": "crates_under_roof",
+        "newId": "crates_under_roof",
+        "by": "@quincylvania"
+      },
+      {
         "newId": "a",
         "by": "@quincylvania",
         "issue": "10",
@@ -12751,8 +12756,7 @@
         "issue": "10"
       },
       {
-        "oldId": "crates_under_roof",
-        "newId": "crates_under_roof",
+        "newId": "nine_one_one",
         "by": "@quincylvania"
       },
       {
@@ -12764,10 +12768,6 @@
         "newId": "sos_text",
         "by": "@quincylvania",
         "char": "🆘"
-      },
-      {
-        "newId": "nine_one_one",
-        "by": "@quincylvania"
       },
       {
         "oldId": "person_sitting_in_seat",
