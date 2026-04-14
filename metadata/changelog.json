@@ -6868,7 +6868,8 @@
       {
         "newId": "x",
         "by": "@quincylvania",
-        "inspo": "spiky_fish_with_x"
+        "inspo": "spiky_fish_with_x",
+        "char": "X"
       },
       {
         "newId": "x_cross",
@@ -12481,27 +12482,32 @@
       {
         "newId": "a",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "A"
       },
       {
         "newId": "b",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "B"
       },
       {
         "newId": "c",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "C"
       },
       {
         "newId": "d",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "D"
       },
       {
         "newId": "e",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "E"
       },
       {
         "newId": "e_wide",
@@ -12525,57 +12531,68 @@
       {
         "newId": "f",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "F"
       },
       {
         "newId": "g",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "G"
       },
       {
         "newId": "h",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "H"
       },
       {
         "newId": "i",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "I"
       },
       {
         "newId": "j",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "J"
       },
       {
         "newId": "k",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "K"
       },
       {
         "newId": "l",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "L"
       },
       {
         "newId": "m",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "M"
       },
       {
         "newId": "n",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "N"
       },
       {
         "newId": "o",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "O"
       },
       {
         "newId": "p",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "P"
       },
       {
         "oldId": "parking_p",
@@ -12601,37 +12618,44 @@
         "newId": "q",
         "by": "@quincylvania",
         "issue": "10",
+        "char": "Q",
         "nps": "quagga-mussel-decontamination-station"
       },
       {
         "newId": "r",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "R"
       },
       {
         "newId": "s",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "S"
       },
       {
         "newId": "t",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "T"
       },
       {
         "newId": "u",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "U"
       },
       {
         "newId": "v",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "V"
       },
       {
         "newId": "w",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "W"
       },
       {
         "oldId": "x",
@@ -12642,11 +12666,13 @@
       {
         "newId": "y",
         "by": "@quincylvania",
-        "issue": "10"
+        "issue": "10",
+        "char": "Y"
       },
       {
         "newId": "z",
         "by": "@quincylvania",
+        "char": "Z"
         "issue": "10"
       },
       {
