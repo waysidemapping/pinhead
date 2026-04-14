@@ -12672,7 +12672,82 @@
       {
         "newId": "z",
         "by": "@quincylvania",
+        "issue": "10",
         "char": "Z"
+      },
+      {
+        "newId": "zero",
+        "by": "@quincylvania",
+        "issue": "10",
+        "char": "0"
+      },
+      {
+        "newId": "one",
+        "by": "@quincylvania",
+        "issue": "10",
+        "char": "1"
+      },
+      {
+        "newId": "two",
+        "by": "@quincylvania",
+        "issue": "10",
+        "char": "2"
+      },
+      {
+        "newId": "three",
+        "by": "@quincylvania",
+        "issue": "10",
+        "char": "3"
+      },
+      {
+        "newId": "four",
+        "by": "@quincylvania",
+        "issue": "10",
+        "char": "4"
+      },
+      {
+        "newId": "five",
+        "by": "@quincylvania",
+        "issue": "10",
+        "char": "5"
+      },
+      {
+        "newId": "six",
+        "by": "@quincylvania",
+        "issue": "10",
+        "char": "6"
+      },
+      {
+        "newId": "seven",
+        "by": "@quincylvania",
+        "issue": "10",
+        "char": "7"
+      },
+      {
+        "newId": "eight",
+        "by": "@quincylvania",
+        "issue": "10",
+        "char": "8"
+      },
+      {
+        "newId": "nine",
+        "by": "@quincylvania",
+        "issue": "10",
+        "char": "9"
+      },
+      {
+        "newId": "ten",
+        "by": "@quincylvania",
+        "issue": "10"
+      },
+      {
+        "newId": "eleven",
+        "by": "@quincylvania",
+        "issue": "10"
+      },
+      {
+        "newId": "twelve",
+        "by": "@quincylvania",
         "issue": "10"
       },
       {
