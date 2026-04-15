@@ -12567,6 +12567,86 @@
         "pr": "191"
       },
       {
+        "newId": "magic_wand_and_sparkles",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "symbols/magic-wand"
+      },
+      {
+        "newId": "baby_in_swaddle",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "people/baby-0203_alt"
+      },
+      {
+        "newId": "baby_crawling",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "people/baby-0306m"
+      },
+      {
+        "newId": "person_holding_cane",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "people/old-man"
+      },
+      {
+        "newId": "person_wearing_dress_holding_cane",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "people/old-woman"
+      },
+      {
+        "newId": "hazmat_suit",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "ppe/ppe-suit"
+      },
+      {
+        "newId": "liver",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/liver-alt"
+      },
+      {
+        "newId": "liver_with_bile_duct",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/liver"
+      },
+      {
+        "newId": "spinal_vertebrae",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "body/spine"
+      },
+      {
+        "newId": "spherical_virus",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": [
+          "symbols/virus-alt",
+          "symbols/virus"
+        ]
+      },
+      {
+        "newId": "bathroom_scale",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "devices/weight"
+      },
+      {
         "oldId": "crates_under_roof",
         "newId": "crates_under_roof",
         "by": "@quincylvania"
