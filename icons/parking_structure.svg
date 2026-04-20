@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
-  <path d="M11.5 13L11 12L13 12L14 14L1 14L2 12L4 12L3.5 13L11.5 13ZM11.5 2L3.5 2L4 3L2 3L1 1L14 1L13 3L11 3L11.5 2Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" aria-describedby="parking_structure">
+  <title id="parking_structure">Parking Structure</title>
+<path d="M11.5 13L11 12L13 12L14 14L1 14L2 12L4 12L3.5 13L11.5 13ZM11.5 2L3.5 2L4 3L2 3L1 1L14 1L13 3L11 3L11.5 2Z"/>
 </svg>

@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
-  <path d="M12 0L12 15L7.5 12L3 15L3 0z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" aria-describedby="bookmark">
+  <title id="bookmark">Bookmark</title>
+<path d="M12 0L12 15L7.5 12L3 15L3 0z"/>
 </svg>

@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
-  <path d="M7.5 0L6 2.5v7h3v-7L7.5 0zM3 11.5L3 15h9v-3.5L10.5 10h-6L3 11.5z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" aria-describedby="obelisk_on_plinth">
+  <title id="obelisk_on_plinth">Obelisk On Plinth</title>
+<path d="M7.5 0L6 2.5v7h3v-7L7.5 0zM3 11.5L3 15h9v-3.5L10.5 10h-6L3 11.5z"/>
 </svg>

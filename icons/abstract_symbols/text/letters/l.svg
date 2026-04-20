@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
-  <path d="M3 0L6 0L6 12L13 12L13 15L3 15z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" aria-describedby="l">
+  <title id="l">L</title>
+<path d="M3 0L6 0L6 12L13 12L13 15L3 15z"/>
 </svg>

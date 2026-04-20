@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
-  <path d="M15 7.5L8.5 11.5L8.5 3.5L15 7.5ZM0 7.5L6.5 3.5L6.5 11.5L0 7.5Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" aria-describedby="triangles_left_right">
+  <title id="triangles_left_right">Triangles Left Right</title>
+<path d="M15 7.5L8.5 11.5L8.5 3.5L15 7.5ZM0 7.5L6.5 3.5L6.5 11.5L0 7.5Z"/>
 </svg>

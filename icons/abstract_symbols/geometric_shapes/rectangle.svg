@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
-  <path d="M2 3H13A2 2 0 0 1 15 5V10A2 2 0 0 1 13 12H2A2 2 0 0 1 0 10V5A2 2 0 0 1 2 3z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" aria-describedby="rectangle">
+  <title id="rectangle">Rectangle</title>
+<path d="M2 3H13A2 2 0 0 1 15 5V10A2 2 0 0 1 13 12H2A2 2 0 0 1 0 10V5A2 2 0 0 1 2 3z"/>
 </svg>

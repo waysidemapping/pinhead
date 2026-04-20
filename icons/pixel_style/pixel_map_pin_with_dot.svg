@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
-  <path d="M11 0L11 2L13 2L13 8L11 8L11 12L9 12L9 15L6 15L6 12L4 12L4 8L2 8L2 2L4 2L4 0L11 0ZM9 3L6 3L6 6L9 6L9 3Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" aria-describedby="pixel_map_pin_with_dot">
+  <title id="pixel_map_pin_with_dot">Pixel Map Pin With Dot</title>
+<path d="M11 0L11 2L13 2L13 8L11 8L11 12L9 12L9 15L6 15L6 12L4 12L4 8L2 8L2 2L4 2L4 0L11 0ZM9 3L6 3L6 6L9 6L9 3Z"/>
 </svg>

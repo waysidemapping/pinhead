@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
-  <path d="M12 0L12 15L7.5 12L3 15L3 0L12 0ZM5 2.07L5 11.26L6.39 10.34L7.5 9.6L8.61 10.34L10 11.26L10 2.07L5 2.07Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" aria-describedby="bookmark_outline">
+  <title id="bookmark_outline">Bookmark Outline</title>
+<path d="M12 0L12 15L7.5 12L3 15L3 0L12 0ZM5 2.07L5 11.26L6.39 10.34L7.5 9.6L8.61 10.34L10 11.26L10 2.07L5 2.07Z"/>
 </svg>

@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
-  <path d="M3 0.5L12 0.5L12 1.5L3 1.5zM3 2.5L12 2.5L12 3.5L3 3.5zM3 6L12 6L12 7L3 7zM3 8L12 8L12 9L3 9zM3 11.5L12 11.5L12 12.5L3 12.5zM3 13.5L12 13.5L12 14.5L3 14.5z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" aria-describedby="crosswalk_markings_zebra_paired">
+  <title id="crosswalk_markings_zebra_paired">Crosswalk Markings Zebra Paired</title>
+<path d="M3 0.5L12 0.5L12 1.5L3 1.5zM3 2.5L12 2.5L12 3.5L3 3.5zM3 6L12 6L12 7L3 7zM3 8L12 8L12 9L3 9zM3 11.5L12 11.5L12 12.5L3 12.5zM3 13.5L12 13.5L12 14.5L3 14.5z"/>
 </svg>

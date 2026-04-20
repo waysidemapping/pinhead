@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
-  <path d="M6.5 13L14 13L14 0L1 0L1 15L3 15L3 14L7 14z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" aria-describedby="new_mexico">
+  <title id="new_mexico">New Mexico</title>
+<path d="M6.5 13L14 13L14 0L1 0L1 15L3 15L3 14L7 14z"/>
 </svg>
