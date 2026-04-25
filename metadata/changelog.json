@@ -13037,6 +13037,12 @@
         "char": "🧀"
       },
       {
+        "newId": "person_wearing_cheese_wedge_hat",
+        "by": "@quincylvania",
+        "inspo": "cheese_wedge",
+        "issue": "113"
+      },
+      {
         "newId": "lotus_flower",
         "by": "@ooosssay",
         "pr": "210",
