@@ -13036,6 +13036,14 @@
         "newId": "wc_text",
         "by": "@quincylvania",
         "char": "🚾"
+      },
+      {
+        "newId": "kayak_beside_kayak_paddle",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "kayak_paddle_crossing_kayak",
+        "by": "@quincylvania"
       }
     ]
   }
