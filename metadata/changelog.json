@@ -12999,86 +12999,6 @@
         "edit": "minor",
         "by": "@quincylvania",
         "issue": "194"
-      },
-      { 
-        "newId": "book_with_arrows_recirculating",
-        "by": "@ooosssay",
-        "inspo": [ 
-          "book",
-          "arrows_recirculating"
-        ]
-      },
-      { 
-        "newId": "book_with_balance_scales",
-        "by": "@ooosssay",
-        "inspo": [
-          "book",
-          "balance_scales"
-        ]
-      },
-      { 
-        "newId": "book_with_dna",
-        "by": "@ooosssay",
-        "inspo": [
-          "book",
-          "dna"
-        ]
-      },
-      { 
-        "newId": "book_with_info_i", 
-        "by": "@ooosssay",
-        "inspo": [
-          "book",
-          "info_i"
-        ]
-      },
-      { 
-        "newId": "book_with_molar_tooth",
-        "by": "@ooosssay",
-        "inspo": [
-          "book",
-          "molar_tooth"
-        ]
-      },
-      { 
-        "newId": "book_with_music_notes_eighth",
-        "by": "@ooosssay",
-        "inspo": [
-          "book",
-          "music_notes_eighth"
-        ]
-      },
-      { 
-        "newId": "book_with_pawprint",
-        "by": "@ooosssay",
-        "inspo": [
-          "book",
-          "pawprint"
-        ]
-      },
-      { 
-        "newId": "book_with_pencil_and_apple",
-        "by": "@ooosssay",
-        "inspo": [
-          "book",
-          "pencil_and_apple"
-        ]
-      },
-      { 
-        "newId": "book_with_rocketship",
-        "by": "@ooosssay",
-        "inspo": [
-          "book",
-          "rocketship"
-        ]
-      },
-      { 
-        "newId": "book_with_square_academic_cap",
-        "by": "@ooosssay",
-        "inspo": [
-          "book",
-          "academic_cap"
-        ]
       }
     ]
   },
@@ -13173,6 +13093,86 @@
         "newId": "scientology_cross",
         "by": "@ooosssay",
         "pr": "207"
+      },
+      {
+        "newId": "book_with_arrows_recirculating",
+        "by": "@ooosssay",
+        "inspo": [
+          "book",
+          "arrows_recirculating"
+        ]
+      },
+      {
+        "newId": "book_with_balance_scales",
+        "by": "@ooosssay",
+        "inspo": [
+          "book",
+          "balance_scales"
+        ]
+      },
+      {
+        "newId": "book_with_dna",
+        "by": "@ooosssay",
+        "inspo": [
+          "book",
+          "dna"
+        ]
+      },
+      {
+        "newId": "book_with_info_i",
+        "by": "@ooosssay",
+        "inspo": [
+          "book",
+          "info_i"
+        ]
+      },
+      {
+        "newId": "book_with_molar_tooth",
+        "by": "@ooosssay",
+        "inspo": [
+          "book",
+          "molar_tooth"
+        ]
+      },
+      {
+        "newId": "book_with_music_notes_eighth",
+        "by": "@ooosssay",
+        "inspo": [
+          "book",
+          "music_notes_eighth"
+        ]
+      },
+      {
+        "newId": "book_with_pawprint",
+        "by": "@ooosssay",
+        "inspo": [
+          "book",
+          "pawprint"
+        ]
+      },
+      {
+        "newId": "book_with_pencil_and_apple",
+        "by": "@ooosssay",
+        "inspo": [
+          "book",
+          "pencil_and_apple"
+        ]
+      },
+      {
+        "newId": "book_with_rocketship",
+        "by": "@ooosssay",
+        "inspo": [
+          "book",
+          "rocketship"
+        ]
+      },
+      {
+        "newId": "book_with_square_academic_cap",
+        "by": "@ooosssay",
+        "inspo": [
+          "book",
+          "square_academic_cap"
+        ]
       },
       {
         "oldId": "atm_text",
