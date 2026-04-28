@@ -13268,6 +13268,12 @@
         "issue": "135"
       },
       {
+        "oldId": "person_swimming_in_water",
+        "newId": "person_swimming_in_water",
+        "by": "@quincylvania",
+        "issue": "135"
+      },
+      {
         "oldId": "person_diving_into_water",
         "newId": "person_diving_into_water",
         "by": "@quincylvania",
