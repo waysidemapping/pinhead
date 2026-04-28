@@ -13544,6 +13544,18 @@
         "by": "@quincylvania",
         "inspo": "shark_dorsal_fin_in_waters",
         "issue": "135"
+      },
+      {
+        "newId": "person_walking_in_water",
+        "by": "@quincylvania",
+        "inspo": "person_walking",
+        "issue": "94"
+      },
+      {
+        "newId": "person_walking_in_waters",
+        "by": "@quincylvania",
+        "inspo": "person_walking",
+        "issue": "95"
       }
     ]
   }
