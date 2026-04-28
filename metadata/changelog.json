@@ -13041,6 +13041,13 @@
         "inspo": "tram_with_destination_display_and_pantograph_on_tram_track"
       },
       {
+        "newId": "club_chair",
+        "src": "nps",
+        "importBy": "@quincylvania",
+        "issue": "182",
+        "nps": "lounge"
+      },
+      {
         "newId": "corn_cob",
         "by": "@ooosssay",
         "issue": "118",
