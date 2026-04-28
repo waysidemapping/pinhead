@@ -13031,6 +13031,16 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "transit_vehicle",
+        "by": "@quincylvania",
+        "inspo": "transit_vehicle_on_railway_track"
+      },
+      {
+        "newId": "tram_with_pantograph_on_tram_track",
+        "by": "@quincylvania",
+        "inspo": "tram_with_destination_display_and_pantograph_on_tram_track"
+      },
+      {
         "newId": "corn_cob",
         "by": "@ooosssay",
         "issue": "118",
