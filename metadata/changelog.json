@@ -6191,7 +6191,6 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
-        "maki": "rail-metro",
         "temaki": "tram"
       },
       {
@@ -13036,9 +13035,21 @@
         "inspo": "transit_vehicle_on_railway_track"
       },
       {
+        "newId": "tram_on_tram_track",
+        "by": "@quincylvania",
+        "inspo": "tram_with_destination_display_and_pantograph_on_tram_track",
+        "maki": "rail-metro"
+      },
+      {
         "newId": "tram_with_pantograph_on_tram_track",
         "by": "@quincylvania",
         "inspo": "tram_with_destination_display_and_pantograph_on_tram_track"
+      },
+      {
+        "newId": "tram_with_destination_display_on_tram_track",
+        "by": "@quincylvania",
+        "inspo": "tram_with_destination_display_and_pantograph_on_tram_track",
+        "osmic": "transport/tram-stop"
       },
       {
         "newId": "club_chair",
