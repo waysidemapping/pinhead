@@ -13274,6 +13274,11 @@
         "issue": "135"
       },
       {
+        "newId": "person_swimming_in_waters",
+        "by": "@quincylvania",
+        "inspo": "person_swimming_in_water"
+      },
+      {
         "oldId": "person_diving_into_water",
         "newId": "person_diving_into_water",
         "by": "@quincylvania",
