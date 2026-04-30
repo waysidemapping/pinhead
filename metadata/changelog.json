@@ -13558,5 +13558,83 @@
         "issue": "95"
       }
     ]
+  },
+  {
+    "majorVersion": "24",
+    "date": "2026-05-05",
+    "iconChanges": [
+      {
+        "newId": "roman_numeral_i_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "roman_numeral_i",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "roman_numeral_ii_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "roman_numeral_ii",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "roman_numeral_iii_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "roman_numeral_iii",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "roman_numeral_iv_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "roman_numeral_iv",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "roman_numeral_v_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "roman_numeral_v",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "roman_numeral_vi_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "roman_numeral_vi",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "x_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "x",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "skull_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "skull",
+          "water"
+        ],
+        "issue": "200"
+      }
+    ]
   }
 ]
