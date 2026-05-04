@@ -13634,6 +13634,24 @@
           "water"
         ],
         "issue": "200"
+      },
+      {
+        "newId": "p_wide_on_parking_line",
+        "by": "@quincylvania",
+        "inspo": [
+          "p_wide",
+          "parking_line"
+        ],
+        "issue": "216"
+      },
+      {
+        "newId": "p_wide_in_parking_structure",
+        "by": "@quincylvania",
+        "inspo": [
+          "p_wide",
+          "parking_structure"
+        ],
+        "issue": "216"
       }
     ]
   }
