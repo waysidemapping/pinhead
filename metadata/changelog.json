@@ -13564,6 +13564,177 @@
     "date": "2026-05-05",
     "iconChanges": [
       {
+        "newId": "zero_with_slash_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "zero_with_slash",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "one_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "one",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "one_minus_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "one",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "one_plus_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "one",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "two_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "two",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "two_minus_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "two",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "two_plus_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "two",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "three_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "three",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "three_minus_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "three",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "three_plus_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "three",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "four_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "four",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "four_minus_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "four",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "four_plus_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "four",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "five_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "five",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "five_minus_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "five",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "five_plus_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "five",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "six_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "six",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "six_minus_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "six",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
+        "newId": "six_plus_over_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "six",
+          "water"
+        ],
+        "issue": "200"
+      },
+      {
         "newId": "roman_numeral_i_over_water",
         "by": "@quincylvania",
         "inspo": [
