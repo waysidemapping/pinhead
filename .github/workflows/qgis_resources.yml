@@ -1,0 +1,31 @@
+name: Sync to pinhead-qgis-resources repository 
+
+on:
+  workflow_run:
+    workflows: ["Release"]
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "qgis"
+  cancel-in-progress: false
+
+jobs:
+  qgis:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Install
+        run: npm install
+      - name: qgis_resources
+        run: npm run qgis_resources
