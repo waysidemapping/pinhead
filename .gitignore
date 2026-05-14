@@ -1,5 +1,6 @@
 .env
 dist
+docs/latest/
 docs/v*/
 docs/package.json
 docs/changelog.json

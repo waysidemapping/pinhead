@@ -5,12 +5,14 @@ import { downloadExternalSourceAssets } from "../src/ExternalSourceManager.js";
 
 const packageName = "@waysidemapping/pinhead";
 
+const docsDir = 'docs/';
+
 const version = execSync(`npm view ${packageName} version`, { encoding: "utf8" }).trim();
 console.log('Building docs for Pinhead v' + version);
 const currentMajorVersion = parseInt(version.split('.')[1]);
 
 for (let i = 1; i <= currentMajorVersion; i+=1) {
-  const targetDir = 'docs/v' + i;
+  const targetDir = join(docsDir, `v${i}`);
   if (!existsSync(targetDir)) {
     ensureEmptyDir(targetDir);
     downloadLegacyIcons(i, targetDir);
@@ -18,7 +20,7 @@ for (let i = 1; i <= currentMajorVersion; i+=1) {
   }
 }
 
-downloadExternalSourceAssets('docs/srcicons');
+downloadExternalSourceAssets(join(docsDir, 'srcicons'));
 
 function downloadPackage(spec) {
   const file = execSync(`npm pack "${spec}" --silent`, { encoding: "utf8" }).trim();
@@ -42,11 +44,12 @@ function downloadLegacyIcons(majorVersion, targetDir) {
   if (!existsSync(iconDir)) throw new Error(`dist/icons not found in ${folderName}`);
 
   execSync(`cp -r "${iconDir}/." "${targetDir}"`);
+  execSync(`cp -r "${iconDir}/." "${join(docsDir, 'latest')}"`);
 
   if (majorVersion === currentMajorVersion) {
-    copyFileSync(`${join(folderName, "package.json")}`, "docs/package.json");
-    if (existsSync(`${join(folderName, "dist/changelog.json")}`)) copyFileSync(`${join(folderName, "dist/changelog.json")}`, "docs/changelog.json");
-    if (existsSync(`${join(folderName, "dist/external_sources.json")}`)) copyFileSync(`${join(folderName, "dist/external_sources.json")}`, "docs/external_sources.json");
+    copyFileSync(join(folderName, "package.json"), join(docsDir, 'package.json'));
+    if (existsSync(join(folderName, "dist/changelog.json"))) copyFileSync(join(folderName, "dist/changelog.json"), join(docsDir, 'changelog.json'));
+    if (existsSync(join(folderName, "dist/external_sources.json"))) copyFileSync(join(folderName, "dist/external_sources.json"), join(docsDir, 'external_sources.json'));
   }
 
   rmSync(folderName, { recursive: true, force: true });
