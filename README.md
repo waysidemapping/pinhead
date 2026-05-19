@@ -72,14 +72,15 @@ font-size: 15px; color: navy; text-decoration: underline solid 2px red;
 The following files are hosted on pinhead.ink (through GitHub Pages) at the following URLs. You can point your app directly to these endpoints as they are stable.
 
 - For each version:
-  - `https://pinhead.ink/v*/*.svg`: the individual icon SVG files
-  - `https://pinhead.ink/v*/index.json`: a list of all the available icons in this version
-  - `https://pinhead.ink/v*/index.complete.json`: same as the above but with the SVG code included inline
-  - `https://pinhead.ink/v*/pinhead.ttf`: icons compiled into a font file
-  - `https://pinhead.ink/v*/pinhead.css`: stylesheet for easy web usage of the font file
-- For the latest version only:
-  - `https://pinhead.ink/changelog.json`: a machine-readable list of icon additions, deletions, and renames between Pinhead versions
-  - `https://pinhead.ink/external_sources.json`: a detailed list of the external icon sources referenced in `changelog.json`
+  - `https://pinhead.ink/v*/*.svg`: The individual icon SVG files
+  - `https://pinhead.ink/v*/index.json`: A list of all the available icons in this version
+  - `https://pinhead.ink/v*/index.complete.json`: Same as the above but with the SVG code included inline
+  - `https://pinhead.ink/v*/pinhead.ttf`: Icons compiled into a font file
+  - `https://pinhead.ink/v*/pinhead.css`: Stylesheet for easy web usage of the font file
+- For the latest version:
+  - `https://pinhead.ink/latest/*.svg`: The individual icon SVG files, with each file representing the highest-versioned icon of that name (even if the name was later changed)
+  - `https://pinhead.ink/changelog.json`: A machine-readable list of icon additions, deletions, and renames between Pinhead versions
+  - `https://pinhead.ink/external_sources.json`: A detailed list of the external icon sources referenced in `changelog.json`
 
 It is *not* recommended for production apps to depend directly on the GitHub repository or any of its raw files as these may change without notice.
 
@@ -115,7 +116,7 @@ Pinhead is seeded from the following public domain sources. Thank you to all of 
 - <img src="https://pinhead.ink/v18/gull.svg" width="15px"/> [OpenGemeenten Iconenset](https://github.com/OpenGemeenten/Iconenset/) ([CC0](https://github.com/OpenGemeenten/Iconenset/blob/master/LICENSE.md))
 - <img src="https://pinhead.ink/v13/sailing_ship_in_water.svg" width="15px"/> [princesse](https://github.com/Viglino/map-font-symbols/tree/main/princesse) and [pirate](https://github.com/Viglino/map-font-symbols/tree/main/pirate) map icons by [@Viglino](https://github.com/Viglino) (CC0)
 - <img src="https://pinhead.ink/v5/badge_shield.svg" width="15px"/> [OpenStreetMap Americana](https://github.com/osm-americana/openstreetmap-americana/) ([CC0](https://github.com/osm-americana/openstreetmap-americana/blob/main/LICENSE))
-- <img src="https://pinhead.ink/v1/deer_head_with_antlers.svg" width="15px"/> [OpenTrailMap](https://github.com/osmus/OpenTrailMap) ([MIT](https://github.com/osmus/OpenTrailMap/blob/main/LICENSE))
+- <img src="https://pinhead.ink/v1/deer_head_with_antlers.svg" width="15px"/> [OpenTrailMap](https://github.com/osmus/OpenTrailMap) ([CC0](https://github.com/osmus/OpenTrailMap/blob/main/style/sprites/LICENSE))
 
 I've been cleaning up the seed icons by scaling them to the same size, conflating duplicates, improving names, removing SVG cruft, and manually improving legibility. I've also been splitting out certain icon elements into standalone icons, such as taking the <img src="https://pinhead.ink/v1/wine_bottle_and_wine_glass.svg" height="15px" width="15px"/> "wine" icon and creating two additional icons: <img src="https://pinhead.ink/v1/wine_glass.svg" height="15px" width="15px"/> `wine_glass` and <img src="https://pinhead.ink/v1/wine_bottle.svg" height="15px" width="15px"/> `wine_bottle`.
 

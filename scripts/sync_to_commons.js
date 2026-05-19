@@ -185,6 +185,7 @@ function commonsPageCategoriesText(pinheadIconId) {
     animals: ['Plain black SVG animal icons'],
     benches: ['Plain black SVG bench icons'],
     body_parts: ['Plain black SVG medical icons'],
+    books: ['Plain black SVG book icons'],
     'boundaries/us': ['Plain black SVG icon maps of the United States'],
     boundaries: ['Plain black SVG icon maps'],
     briefcases: ['Plain black SVG briefcase icons'],
