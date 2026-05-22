@@ -13563,28 +13563,60 @@
         "issue": "41"
       },
       {
-        "newId": "kerb_flush_with_arrow_right",
+        "newId": "flush_curb_with_arrow_right",
         "src": "temaki",
         "importBy": "@quincylvania",
         "temaki": "kerb-flush"
       },
       {
-        "newId": "kerb_lowered_with_arrow_bottom_right",
+        "newId": "lowered_curb_with_arrow_bottom_right",
         "src": "temaki",
         "importBy": "@quincylvania",
         "temaki": "kerb-lowered"
       },
       {
-        "newId": "kerb_raised_with_arrow_down",
+        "newId": "raised_curb_with_arrow_down",
         "src": "temaki",
         "importBy": "@quincylvania",
         "temaki": "kerb-raised"
       },
       {
-        "newId": "kerb_rolled_with_arrow_bottom_right",
+        "newId": "rolled_curb_with_arrow_bottom_right",
         "src": "temaki",
         "importBy": "@quincylvania",
         "temaki": "kerb-rolled"
+      },
+      {
+        "oldId": "kerb_rolled",
+        "newId": "rolled_curb"
+      },
+      {
+        "oldId": "kerb_lowered",
+        "newId": "lowered_curb"
+      },
+      {
+        "oldId": "kerb_flush",
+        "newId": "flush_curb"
+      },
+      {
+        "oldId": "kerb_raised",
+        "newId": "raised_curb"
+      },
+      {
+        "oldId": "kerb_rolled_under_shoe",
+        "newId": "rolled_curb_under_shoe"
+      },
+      {
+        "oldId": "kerb_lowered_under_shoe",
+        "newId": "lowered_curb_under_shoe"
+      },
+      {
+        "oldId": "kerb_flush_under_shoe",
+        "newId": "flush_curb_under_shoe"
+      },
+      {
+        "oldId": "kerb_raised_under_shoe",
+        "newId": "raised_curb_under_shoe"
       },
       {
         "newId": "campsite_on_platform",
