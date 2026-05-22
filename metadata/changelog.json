@@ -10750,6 +10750,11 @@
         "newId": "exclamation_point",
         "by": "@quincylvania",
         "inspo": "triangle_up_with_exclamation_point",
+        "char": [
+          "!",
+          "❗️",
+          "❕"
+        ],
         "nps": "incident",
         "opengemeenten": "LetOp"
       },
@@ -13562,6 +13567,42 @@
         "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/MUTCD_I4-1.svg",
         "importBy": "@quincylvania",
         "issue": "41"
+      },
+      {
+        "newId": "question_mark",
+        "by": "@quincylvania",
+        "char": [
+          "?",
+          "❓",
+          "❔"
+        ],
+        "healthicons": [
+          "symbols/question",
+          "symbols/question-circle",
+          "symbols/question-triangle"
+        ],
+        "opentrailmap": "question"
+      },
+      {
+        "oldId": "exclamation_point",
+        "newId": "exclamation_point",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "exclamation_point_beside_question_mark",
+        "by": "@quincylvania",
+        "char": [
+          "⁉",
+          "⁉️"
+        ]
+      },
+      {
+        "newId": "exclamation_point_beside_exclamation_point",
+        "by": "@quincylvania",
+        "char": [
+          "‼️",
+          "‼"
+        ]
       },
       {
         "newId": "flush_curb_with_arrow_right",
