@@ -2899,6 +2899,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "char": "ℹ️",
+        "healthicons": "symbols/info",
         "maki": "information",
         "nps": "information",
         "opengemeenten": "Informatie",
