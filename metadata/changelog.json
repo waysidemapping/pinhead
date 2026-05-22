@@ -3079,9 +3079,7 @@
       },
       {
         "newId": "kerb_flush",
-        "src": "temaki",
-        "importBy": "@quincylvania",
-        "temaki": "kerb-flush"
+        "by": "@quincylvania"
       },
       {
         "newId": "kerb_flush_under_shoe",
@@ -3093,9 +3091,7 @@
       },
       {
         "newId": "kerb_lowered",
-        "src": "temaki",
-        "importBy": "@quincylvania",
-        "temaki": "kerb-lowered"
+        "by": "@quincylvania"
       },
       {
         "newId": "kerb_lowered_under_shoe",
@@ -3107,9 +3103,7 @@
       },
       {
         "newId": "kerb_raised",
-        "src": "temaki",
-        "importBy": "@quincylvania",
-        "temaki": "kerb-raised"
+        "by": "@quincylvania"
       },
       {
         "newId": "kerb_raised_under_shoe",
@@ -3121,9 +3115,7 @@
       },
       {
         "newId": "kerb_rolled",
-        "src": "temaki",
-        "importBy": "@quincylvania",
-        "temaki": "kerb-rolled"
+        "by": "temaki"
       },
       {
         "newId": "kerb_rolled_under_shoe",
@@ -13569,6 +13561,30 @@
         "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/MUTCD_I4-1.svg",
         "importBy": "@quincylvania",
         "issue": "41"
+      },
+      {
+        "newId": "kerb_flush_with_arrow_right",
+        "src": "temaki",
+        "importBy": "@quincylvania",
+        "temaki": "kerb-flush"
+      },
+      {
+        "newId": "kerb_lowered_with_arrow_bottom_right",
+        "src": "temaki",
+        "importBy": "@quincylvania",
+        "temaki": "kerb-lowered"
+      },
+      {
+        "newId": "kerb_raised_with_arrow_down",
+        "src": "temaki",
+        "importBy": "@quincylvania",
+        "temaki": "kerb-raised"
+      },
+      {
+        "newId": "kerb_rolled_with_arrow_bottom_right",
+        "src": "temaki",
+        "importBy": "@quincylvania",
+        "temaki": "kerb-rolled"
       },
       {
         "newId": "campsite_on_platform",
