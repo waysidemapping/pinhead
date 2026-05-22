@@ -5449,6 +5449,7 @@
         "newId": "skull_with_x_oblique",
         "src": "maki",
         "importBy": "@quincylvania",
+        "healthicons": "symbols/death-alt",
         "maki": "danger"
       },
       {
@@ -13571,34 +13572,43 @@
       },
       {
         "newId": "campsite_on_platform",
-        "inspo":["camspite"],
         "by": "@quincylvania",
+        "inspo": "campsite",
         "issue": "132"
       },
       {
         "newId": "campsite_on_pier_in_water",
-        "inspo":["camspite"],
         "by": "@quincylvania",
+        "inspo": "campsite",
         "issue": "133"
       },
       {
         "newId": "campsite_over_water",
-        "inspo":["camspite", "water"],
         "by": "@quincylvania",
+        "inspo": [
+          "campsite",
+          "water"
+        ],
         "issue": "133"
       },
       {
         "newId": "campsite_over_waters",
-        "inspo":["camspite", "waters"],
         "by": "@quincylvania",
+        "inspo": [
+          "campsite",
+          "waters"
+        ],
         "issue": "133"
       },
       {
         "newId": "arrows_left_right_above_waters",
-        "inspo":["arrows_left_right", "waters"],
         "by": "@quincylvania",
-        "osmic": "transport/ford",
-        "issue": "40"
+        "inspo": [
+          "arrows_left_right",
+          "waters"
+        ],
+        "issue": "40",
+        "osmic": "transport/ford"
       },
       {
         "newId": "zero_with_slash_over_water",
