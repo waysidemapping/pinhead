@@ -13570,6 +13570,30 @@
         "issue": "41"
       },
       {
+        "newId": "campsite_on_platform",
+        "inspo":["camspite"],
+        "by": "@quincylvania",
+        "issue": "132"
+      },
+      {
+        "newId": "campsite_on_pier_in_water",
+        "inspo":["camspite"],
+        "by": "@quincylvania",
+        "issue": "133"
+      },
+       {
+        "newId": "campsite_over_water",
+        "inspo":["camspite", "water"],
+        "by": "@quincylvania",
+        "issue": "133"
+      },
+       {
+        "newId": "campsite_over_waters",
+        "inspo":["camspite", "waters"],
+        "by": "@quincylvania",
+        "issue": "133"
+      },
+      {
         "newId": "zero_with_slash_over_water",
         "by": "@quincylvania",
         "inspo": [
