@@ -13564,6 +13564,12 @@
     "date": "2026-05-05",
     "iconChanges": [
       {
+        "newId": "person_holding_open_book_profile",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/MUTCD_I4-1.svg",
+        "importBy": "@quincylvania",
+        "issue": "41"
+      },
+      {
         "newId": "zero_with_slash_over_water",
         "by": "@quincylvania",
         "inspo": [
