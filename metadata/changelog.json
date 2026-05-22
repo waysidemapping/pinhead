@@ -13575,16 +13575,16 @@
         "temaki": "kerb-lowered"
       },
       {
-        "newId": "raised_curb_with_arrow_down",
-        "src": "temaki",
-        "importBy": "@quincylvania",
-        "temaki": "kerb-raised"
-      },
-      {
         "newId": "rolled_curb_with_arrow_bottom_right",
         "src": "temaki",
         "importBy": "@quincylvania",
         "temaki": "kerb-rolled"
+      },
+      {
+        "newId": "raised_curb_with_arrow_down",
+        "src": "temaki",
+        "importBy": "@quincylvania",
+        "temaki": "kerb-raised"
       },
       {
         "newId": "flush_curb_with_question_mark",
