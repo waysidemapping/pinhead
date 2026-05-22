@@ -13587,6 +13587,27 @@
         "temaki": "kerb-rolled"
       },
       {
+        "newId": "flush_curb_with_question_mark",
+        "by": "@quincylvania",
+        "inspo": "flush_curb"
+      },
+      {
+        "newId": "lowered_curb_with_question_mark",
+        "by": "@quincylvania",
+        "inspo": "lowered_curb"
+      },
+      {
+        "newId": "rolled_curb_with_question_mark",
+        "by": "@quincylvania",
+        "inspo": "rolled_curb"
+      },
+      {
+        "newId": "raised_curb_with_question_mark",
+        "by": "@quincylvania",
+        "inspo": "raised_curb",
+        "temaki": "kerb-unspecified"
+      },
+      {
         "oldId": "kerb_rolled",
         "newId": "rolled_curb"
       },
