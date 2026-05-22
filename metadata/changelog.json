@@ -13581,17 +13581,24 @@
         "by": "@quincylvania",
         "issue": "133"
       },
-       {
+      {
         "newId": "campsite_over_water",
         "inspo":["camspite", "water"],
         "by": "@quincylvania",
         "issue": "133"
       },
-       {
+      {
         "newId": "campsite_over_waters",
         "inspo":["camspite", "waters"],
         "by": "@quincylvania",
         "issue": "133"
+      },
+      {
+        "newId": "arrows_left_right_above_waters",
+        "inspo":["arrows_left_right", "waters"],
+        "by": "@quincylvania",
+        "osmic": "transport/ford",
+        "issue": "40"
       },
       {
         "newId": "zero_with_slash_over_water",
