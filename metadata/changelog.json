@@ -4922,6 +4922,7 @@
       {
         "newId": "radiation_symbol",
         "src": "temaki",
+        "healthicons": "symbols/hazardous",
         "importBy": "@quincylvania",
         "char": "☢️",
         "temaki": "radiation"
@@ -12744,7 +12745,8 @@
         "newId": "m",
         "by": "@quincylvania",
         "issue": "10",
-        "char": "M"
+        "char": "M",
+        "nps": "metro-station"
       },
       {
         "newId": "n",
@@ -12843,7 +12845,8 @@
         "newId": "z",
         "by": "@quincylvania",
         "issue": "10",
-        "char": "Z"
+        "char": "Z",
+        "nps": "zebra-mussel-decontamination-station"
       },
       {
         "newId": "zero",
@@ -13275,7 +13278,8 @@
       {
         "newId": "person_swimming_in_waters",
         "by": "@quincylvania",
-        "inspo": "person_swimming_in_water"
+        "inspo": "person_swimming_in_water",
+        "opengemeenten": "Zwemmen"
       },
       {
         "oldId": "person_diving_into_water",
@@ -13608,24 +13612,28 @@
         "newId": "flush_curb_with_arrow_right",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "issue": "181",
         "temaki": "kerb-flush"
       },
       {
         "newId": "lowered_curb_with_arrow_bottom_right",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "issue": "181",
         "temaki": "kerb-lowered"
       },
       {
         "newId": "rolled_curb_with_arrow_bottom_right",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "issue": "181",
         "temaki": "kerb-rolled"
       },
       {
         "newId": "raised_curb_with_arrow_down",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "issue": "181",
         "temaki": "kerb-raised"
       },
       {
@@ -13647,6 +13655,7 @@
         "newId": "raised_curb_with_question_mark",
         "by": "@quincylvania",
         "inspo": "raised_curb",
+        "issue": "181",
         "temaki": "kerb-unspecified"
       },
       {
