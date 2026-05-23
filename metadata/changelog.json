@@ -4922,9 +4922,9 @@
       {
         "newId": "radiation_symbol",
         "src": "temaki",
-        "healthicons": "symbols/hazardous",
         "importBy": "@quincylvania",
         "char": "☢️",
+        "healthicons": "symbols/hazardous",
         "temaki": "radiation"
       },
       {
