@@ -13573,6 +13573,42 @@
         "issue": "41"
       },
       {
+        "newId": "arrow_left_from_rectangle_tall_outline",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "arrow_left_to_rectangle_tall_outline",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "arrow_right_from_rectangle_tall_outline",
+        "by": "@quincylvania",
+        "issue": "40",
+        "osmic": "amenity/exit"
+      },
+      {
+        "newId": "arrow_right_to_rectangle_tall_outline",
+        "by": "@quincylvania",
+        "issue": "40",
+        "osmic": "amenity/entrance"
+      },
+      {
+        "newId": "arrow_up_from_rectangle_outline",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "arrow_down_from_rectangle_outline",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "arrow_up_to_rectangle_outline",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "arrow_down_to_rectangle_outline",
+        "by": "@quincylvania"
+      },
+      {
         "newId": "question_mark",
         "by": "@quincylvania",
         "char": [
