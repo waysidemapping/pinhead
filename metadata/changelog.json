@@ -13580,6 +13580,11 @@
         "nps": "alcohol"
       },
       {
+        "newId": "syrup_jug_and_droplet",
+        "by": "@quincylvania",
+        "inspo": "syrup_jug_with_maple_leaf_and_droplet"
+      },
+      {
         "newId": "arrow_left_from_rectangle_tall_outline",
         "by": "@quincylvania"
       },
