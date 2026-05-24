@@ -13580,6 +13580,27 @@
         "nps": "alcohol"
       },
       {
+        "newId": "person_dropping_trash_into_wheelie_bin",
+        "src": "nps",
+        "importBy": "@quincylvania",
+        "issue": "182",
+        "nps": "trash-dumpster"
+      },
+      {
+        "newId": "drink_can_and_drink_bottle",
+        "src": "nps",
+        "importBy": "@quincylvania",
+        "issue": "182",
+        "nps": "cans-or-bottles"
+      },
+      {
+        "newId": "beer_bottle_and_drink_bottle",
+        "src": "nps",
+        "importBy": "@quincylvania",
+        "issue": "182",
+        "nps": "bottles"
+      },
+      {
         "newId": "syrup_jug_and_droplet",
         "by": "@quincylvania",
         "inspo": "syrup_jug_with_maple_leaf_and_droplet"
