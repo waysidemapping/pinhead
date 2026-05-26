@@ -14392,6 +14392,29 @@
         "issue": "104"
       },
       {
+        "newId": "square_with_dot",
+        "by": "@quincylvania",
+        "inspo": [
+          "square",
+          "dot"
+        ],
+        "issue": "180",
+        "osmcarto": "man_made/power_tower_small"
+      },
+      {
+        "newId": "square_with_square_dot",
+        "by": "@quincylvania",
+        "inspo": [
+          "square",
+          "square_dot"
+        ]
+      },
+      {
+        "newId": "octagon_outline",
+        "by": "@quincylvania",
+        "inspo": "octagon"
+      },
+      {
         "oldId": "map_pin_with_dot",
         "newId": "map_pin_with_dot",
         "by": "@quincylvania"
