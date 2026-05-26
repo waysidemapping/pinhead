@@ -14336,7 +14336,7 @@
       {
         "newId": "table_with_umbrella",
         "by": "@quincylvania",
-        "inspo": "table_with_chairs_and_umbrella"
+        "inspo": "table_with_umbrella_and_chairs"
       },
       {
         "oldId": "compass_rose",
@@ -14351,13 +14351,13 @@
         "newId": "left_bracket_and_cube",
         "src": "osmcarto",
         "importBy": "@quincylvania",
-                "issue": "180",
+        "issue": "180",
         "osmcarto": "amenity/parcel_locker"
       },
       {
         "newId": "cube",
-        "inspo": "left_bracket_and_cube",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "inspo": "left_bracket_and_cube"
       }
     ]
   }
