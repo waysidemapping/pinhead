@@ -14320,6 +14320,23 @@
         "importBy": "@quincylvania",
         "issue": "180",
         "osmcarto": "historic/shrine"
+      },
+      {
+        "newId": "table_with_chairs",
+        "by": "@quincylvania",
+        "inspo": "table_with_chairs"
+      },
+      {
+        "newId": "table_with_umbrella_and_chairs",
+        "src": "osmcarto",
+        "importBy": "@quincylvania",
+        "issue": "180",
+        "osmcarto": "leisure/outdoor_seating"
+      },
+      {
+        "newId": "table_with_umbrella",
+        "by": "@quincylvania",
+        "inspo": "table_with_chairs_and_umbrella"
       }
     ]
   }
