@@ -13683,6 +13683,16 @@
         ]
       },
       {
+        "newId": "spherical_virus_with_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "spherical_virus",
+          "exclamation_point"
+        ],
+        "issue": "228",
+        "opengemeenten": "Virus"
+      },
+      {
         "newId": "flush_curb_with_arrow_right",
         "src": "temaki",
         "importBy": "@quincylvania",
