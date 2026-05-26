@@ -14337,6 +14337,15 @@
         "newId": "table_with_umbrella",
         "by": "@quincylvania",
         "inspo": "table_with_chairs_and_umbrella"
+      },
+      {
+        "oldId": "compass_rose",
+        "newId": "compass_rose_in_circle_outline"
+      },
+      {
+        "newId": "compass_rose",
+        "by": "@quincylvania",
+        "inspo": "compass_rose_in_circle_outline"
       }
     ]
   }
