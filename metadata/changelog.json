@@ -13776,6 +13776,11 @@
         "opengemeenten": "Kerstbomen"
       },
       {
+        "newId": "campsite_beside_campsite_above_campsite_beside_campsite",
+        "by": "@quincylvania",
+        "inspo": "campsite"
+      },
+      {
         "newId": "campsite_on_platform",
         "by": "@quincylvania",
         "inspo": "campsite",
