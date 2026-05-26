@@ -14313,6 +14313,13 @@
         ],
         "osmcarto": "natural/saddle",
         "osmic": "nature/saddle"
+      },
+      {
+        "newId": "column_shrine",
+        "src": "osmcarto",
+        "importBy": "@quincylvania",
+        "issue": "180",
+        "osmcarto": "historic/shrine"
       }
     ]
   }
