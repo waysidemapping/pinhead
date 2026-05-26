@@ -14390,6 +14390,29 @@
           "@quincylvania"
         ],
         "issue": "104"
+      },
+      {
+        "oldId": "map_pin_with_dot",
+        "newId": "map_pin_with_dot",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "map_pin",
+        "newId": "map_pin",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "map_pin_outline",
+        "newId": "map_pin_outline",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "map_pin_outline_with_dot",
+        "by": "@quincylvania",
+        "inspo": [
+          "map_pin_outline",
+          "map_pin_with_dot"
+        ]
       }
     ]
   }
