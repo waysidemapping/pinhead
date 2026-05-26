@@ -14346,6 +14346,18 @@
         "newId": "compass_rose",
         "by": "@quincylvania",
         "inspo": "compass_rose_in_circle_outline"
+      },
+      {
+        "newId": "left_bracket_and_cube",
+        "src": "osmcarto",
+        "importBy": "@quincylvania",
+                "issue": "180",
+        "osmcarto": "amenity/parcel_locker"
+      },
+      {
+        "newId": "cube",
+        "inspo": "left_bracket_and_cube",
+        "by": "@quincylvania"
       }
     ]
   }
