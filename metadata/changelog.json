@@ -13760,6 +13760,15 @@
         "newId": "raised_curb_under_shoe"
       },
       {
+        "newId": "campsite_beside_conifer_tree",
+        "by": "@quincylvania",
+        "inspo": [
+          "campsite",
+          "conifer_tree"
+        ],
+        "issue": "228"
+      },
+      {
         "newId": "campsite_on_platform",
         "by": "@quincylvania",
         "inspo": "campsite",
