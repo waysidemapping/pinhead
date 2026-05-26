@@ -13776,6 +13776,16 @@
         "issue": "228"
       },
       {
+        "newId": "campsite_beside_conifer_tree_above_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "campsite",
+          "conifer_tree",
+          "water"
+        ],
+        "issue": "228"
+      },
+      {
         "newId": "campsite_beside_campsite_above_campsite_beside_campsite",
         "by": "@quincylvania",
         "inspo": "campsite"
