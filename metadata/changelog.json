@@ -14358,6 +14358,38 @@
         "newId": "cube",
         "by": "@quincylvania",
         "inspo": "left_bracket_and_cube"
+      },
+      {
+        "newId": "isosceles_trapezoid_tall_up",
+        "by": [
+          "@petercooperjr",
+          "@quincylvania"
+        ],
+        "issue": "104"
+      },
+      {
+        "newId": "isosceles_trapezoid_tall_down",
+        "by": [
+          "@petercooperjr",
+          "@quincylvania"
+        ],
+        "issue": "104"
+      },
+      {
+        "newId": "parallelogram_tall_right",
+        "by": [
+          "@petercooperjr",
+          "@quincylvania"
+        ],
+        "issue": "104"
+      },
+      {
+        "newId": "parallelogram_tall_left",
+        "by": [
+          "@petercooperjr",
+          "@quincylvania"
+        ],
+        "issue": "104"
       }
     ]
   }
