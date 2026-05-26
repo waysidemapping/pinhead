@@ -13580,6 +13580,11 @@
         "nps": "trash-dumpster"
       },
       {
+        "newId": "hot_dog",
+        "by": "@quincylvania",
+        "inspo": "hot_dog_with_mustard"
+      },
+      {
         "newId": "martini_glass_and_wine_bottle",
         "src": "nps",
         "importBy": "@quincylvania",
