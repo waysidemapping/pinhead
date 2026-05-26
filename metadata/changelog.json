@@ -13760,6 +13760,13 @@
         "newId": "raised_curb_under_shoe"
       },
       {
+        "newId": "conifer_tree_beside_conifer_tree",
+        "by": "@quincylvania",
+        "inspo": "conifer_tree",
+        "issue": "228",
+        "opengemeenten": "Kerstbomen"
+      },
+      {
         "newId": "campsite_beside_conifer_tree",
         "by": "@quincylvania",
         "inspo": [
@@ -13767,13 +13774,6 @@
           "conifer_tree"
         ],
         "issue": "228"
-      },
-      {
-        "newId": "conifer_tree_beside_conifer_tree",
-        "by": "@quincylvania",
-        "inspo": "conifer_tree",
-        "issue": "228",
-        "opengemeenten": "Kerstbomen"
       },
       {
         "newId": "campsite_beside_campsite_above_campsite_beside_campsite",
