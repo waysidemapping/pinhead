@@ -14274,6 +14274,17 @@
           "phone_down",
           "nine_one_one"
         ]
+      },
+      {
+        "newId": "saddle_shape",
+        "src": "osmcarto",
+        "importBy": "@quincylvania",
+        "issue": [
+          "40",
+          "180"
+        ],
+        "osmcarto": "natural/saddle",
+        "osmic": "nature/saddle"
       }
     ]
   }
