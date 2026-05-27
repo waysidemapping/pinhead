@@ -14502,6 +14502,49 @@
           "map_pin_outline",
           "map_pin_with_dot"
         ]
+      },
+      {
+        "oldId": "gasoline_pump",
+        "newId": "gasoline_pump",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "gasoline_pump_with_d",
+        "by": "@quincylvania",
+        "inspo": [
+          "gasoline_pump",
+          "d"
+        ],
+        "issue": "182",
+        "nps": "gasoline-diesel"
+      },
+      {
+        "newId": "gasoline_pump_with_e",
+        "by": "@quincylvania",
+        "inspo": [
+          "gasoline_pump",
+          "e"
+        ]
+      },
+      {
+        "newId": "globe_gasoline_pump",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "globe_gasoline_pump_with_d",
+        "by": "@quincylvania",
+        "inspo": [
+          "globe_gasoline_pump",
+          "d"
+        ]
+      },
+      {
+        "newId": "globe_gasoline_pump_with_e",
+        "by": "@quincylvania",
+        "inspo": [
+          "globe_gasoline_pump",
+          "e"
+        ]
       }
     ]
   }
