@@ -78,7 +78,7 @@ This release contains new, renamed, and redesigned icons that may affect your se
 - <img src="https://pinhead.ink/v24/lowered_curb_with_question_mark.svg" width="15px"/> Add `lowered_curb_with_question_mark` by [@quincylvania](https://github.com/quincylvania)
 - <img src="https://pinhead.ink/v24/rolled_curb_with_question_mark.svg" width="15px"/> Add `rolled_curb_with_question_mark` by [@quincylvania](https://github.com/quincylvania)
 - <img src="https://pinhead.ink/v24/raised_curb_with_question_mark.svg" width="15px"/> Add `raised_curb_with_question_mark` by [@quincylvania](https://github.com/quincylvania) ([#181](https://github.com/waysidemapping/pinhead/issues/181))
-- <img src="https://pinhead.ink/v24/spherical_virus_with_exclamation_point.svg" width="15px"/> Add `spherical_virus_with_exclamation_point` by [@quincylvania](https://github.com/quincylvania) ([#228](https://github.com/waysidemapping/pinhead/issues/228))
+- <img src="https://pinhead.ink/v24/spherical_virus_with_exclamation_point.svg" width="15px"/> Add `spherical_virus_with_exclamation_point` by [@quincylvania](https://github.com/quincylvania) ([#141](https://github.com/waysidemapping/pinhead/issues/141))
 - <img src="https://pinhead.ink/v24/question_mark.svg" width="15px"/> Add `question_mark` by [@quincylvania](https://github.com/quincylvania)
 - <img src="https://pinhead.ink/v24/exclamation_point_beside_question_mark.svg" width="15px"/> Add `exclamation_point_beside_question_mark` by [@quincylvania](https://github.com/quincylvania)
 - <img src="https://pinhead.ink/v24/exclamation_point_beside_exclamation_point.svg" width="15px"/> Add `exclamation_point_beside_exclamation_point` by [@quincylvania](https://github.com/quincylvania)
