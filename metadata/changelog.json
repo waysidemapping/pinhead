@@ -14545,6 +14545,37 @@
           "globe_gasoline_pump",
           "e"
         ]
+      },
+      {
+        "oldId": "snowflake_and_icicles",
+        "newId": "snowflake_above_icicles",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "icicles",
+        "newId": "icicles",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "ice_text",
+        "by": "@quincylvania",
+        "inspo": [
+          "i",
+          "c",
+          "e"
+        ]
+      },
+      {
+        "newId": "ice_text_above_icicles",
+        "by": "@quincylvania",
+        "inspo": [
+          "ice_text",
+          "icicles"
+        ],
+        "issue": "182",
+        "nps": "ice"
       }
     ]
   }
