@@ -14697,11 +14697,18 @@
       },
       {
         "newId": "pixel_exclamation_point",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "inspo": "exclamation_point"
       },
       {
         "newId": "pixel_question_mark",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "inspo": "question_mark"
+      },
+      {
+        "newId": "pixel_gasoline_pump",
+        "by": "@quincylvania",
+        "inspo": "gasoline_pump"
       }
     ]
   }
