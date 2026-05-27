@@ -13577,8 +13577,19 @@
           "car",
           "people_sleeping_in_bunkbeds"
         ],
+        "issue": [
+          "40",
+          "180"
+        ],
         "osmcarto": "tourism/motel",
         "osmic": "accommodation/motel"
+      },
+      {
+        "newId": "person_sleeping_in_bed_between_floor_and_ceiling",
+        "by": "@quincylvania",
+        "inspo": "person_sleeping_in_bed_above_car",
+        "issue": "180",
+        "osmcarto": "tourism/apartment"
       },
       {
         "newId": "person_dropping_trash_into_wheelie_bin",
