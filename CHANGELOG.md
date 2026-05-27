@@ -1,5 +1,188 @@
 # Changelog
 
+## [15.24.0] - 2026-05-27
+
+_Pinhead v24_
+
+This release contains new, renamed, and redesigned icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
+
+### Renamed and redesigned icons
+
+- <img src="https://pinhead.ink/v23/roof_with_fireplace_and_chimney.svg" width="15px"/> `roof_with_fireplace_and_chimney` -> <img src="https://pinhead.ink/v24/gable_roofed_shelter_with_fireplace_and_chimney.svg" width="15px"/> `gable_roofed_shelter_with_fireplace_and_chimney` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v23/person_wearing_backpack_walking_with_hiking_pole_in_gable_roofed_building.svg" width="15px"/> `person_wearing_backpack_walking_with_hiking_pole_in_gable_roofed_building` -> <img src="https://pinhead.ink/v24/person_wearing_backpack_walking_with_hiking_pole_in_gable_roofed_shelter.svg" width="15px"/> `person_wearing_backpack_walking_with_hiking_pole_in_gable_roofed_shelter` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v23/snowflake_and_icicles.svg" width="15px"/> `snowflake_and_icicles` -> <img src="https://pinhead.ink/v24/snowflake_above_icicles.svg" width="15px"/> `snowflake_above_icicles` by [@quincylvania](https://github.com/quincylvania)
+
+### Renamed icons
+
+- <img src="https://pinhead.ink/v24/compass_rose_in_circle_outline.svg" width="15px"/> `compass_rose` -> `compass_rose_in_circle_outline`
+- <img src="https://pinhead.ink/v24/rolled_curb.svg" width="15px"/> `kerb_rolled` -> `rolled_curb`
+- <img src="https://pinhead.ink/v24/lowered_curb.svg" width="15px"/> `kerb_lowered` -> `lowered_curb`
+- <img src="https://pinhead.ink/v24/flush_curb.svg" width="15px"/> `kerb_flush` -> `flush_curb`
+- <img src="https://pinhead.ink/v24/raised_curb.svg" width="15px"/> `kerb_raised` -> `raised_curb`
+- <img src="https://pinhead.ink/v24/rolled_curb_under_shoe.svg" width="15px"/> `kerb_rolled_under_shoe` -> `rolled_curb_under_shoe`
+- <img src="https://pinhead.ink/v24/lowered_curb_under_shoe.svg" width="15px"/> `kerb_lowered_under_shoe` -> `lowered_curb_under_shoe`
+- <img src="https://pinhead.ink/v24/flush_curb_under_shoe.svg" width="15px"/> `kerb_flush_under_shoe` -> `flush_curb_under_shoe`
+- <img src="https://pinhead.ink/v24/raised_curb_under_shoe.svg" width="15px"/> `kerb_raised_under_shoe` -> `raised_curb_under_shoe`
+- <img src="https://pinhead.ink/v24/car_beside_car_above_car_beside_car.svg" width="15px"/> `car_beside_car_under_car_beside_car` -> `car_beside_car_above_car_beside_car`
+- <img src="https://pinhead.ink/v24/seaplane_takeoff_above_water.svg" width="15px"/> `seaplane_takeoff_over_water` -> `seaplane_takeoff_above_water`
+- <img src="https://pinhead.ink/v24/flag_above_railway_track.svg" width="15px"/> `flag_over_railway_track` -> `flag_above_railway_track`
+
+### Merged icons
+
+- <img src="https://pinhead.ink/v23/zero_with_slash.svg" width="15px"/> `zero_with_slash` -> <img src="https://pinhead.ink/v24/zero.svg" width="15px"/> `zero`
+
+### Redesigned icons
+
+- <img src="https://pinhead.ink/v23/gasoline_pump.svg" width="15px"/> -> <img src="https://pinhead.ink/v24/gasoline_pump.svg" width="15px"/> `gasoline_pump` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v23/person_slipping_down_cliff.svg" width="15px"/> -> <img src="https://pinhead.ink/v24/person_slipping_down_cliff.svg" width="15px"/> `person_slipping_down_cliff` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v23/icicles.svg" width="15px"/> -> <img src="https://pinhead.ink/v24/icicles.svg" width="15px"/> `icicles` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v23/exclamation_point.svg" width="15px"/> -> <img src="https://pinhead.ink/v24/exclamation_point.svg" width="15px"/> `exclamation_point` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v23/zero.svg" width="15px"/> -> <img src="https://pinhead.ink/v24/zero.svg" width="15px"/> `zero` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v23/map_pin_with_dot.svg" width="15px"/> -> <img src="https://pinhead.ink/v24/map_pin_with_dot.svg" width="15px"/> `map_pin_with_dot` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v23/map_pin.svg" width="15px"/> -> <img src="https://pinhead.ink/v24/map_pin.svg" width="15px"/> `map_pin` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v23/map_pin_outline.svg" width="15px"/> -> <img src="https://pinhead.ink/v24/map_pin_outline.svg" width="15px"/> `map_pin_outline` by [@quincylvania](https://github.com/quincylvania)
+
+### Added icons
+
+- <img src="https://pinhead.ink/v24/person_holding_open_book_profile.svg" width="15px"/> Add `person_holding_open_book_profile` from [source](https://upload.wikimedia.org/wikipedia/commons/0/0f/MUTCD_I4-1.svg) imported by [@quincylvania](https://github.com/quincylvania) ([#41](https://github.com/waysidemapping/pinhead/issues/41))
+- <img src="https://pinhead.ink/v24/person_sleeping_in_bed_above_car.svg" width="15px"/> Add `person_sleeping_in_bed_above_car` by [@quincylvania](https://github.com/quincylvania) ([#40](https://github.com/waysidemapping/pinhead/issues/40), [#180](https://github.com/waysidemapping/pinhead/issues/180))
+- <img src="https://pinhead.ink/v24/person_sleeping_in_bed_between_floor_and_ceiling.svg" width="15px"/> Add `person_sleeping_in_bed_between_floor_and_ceiling` by [@quincylvania](https://github.com/quincylvania) ([#180](https://github.com/waysidemapping/pinhead/issues/180))
+- <img src="https://pinhead.ink/v24/person_dropping_trash_into_wheelie_bin.svg" width="15px"/> Add `person_dropping_trash_into_wheelie_bin` from [NPS](https://github.com/nationalparkservice/symbol-library) imported by [@quincylvania](https://github.com/quincylvania) ([#182](https://github.com/waysidemapping/pinhead/issues/182))
+- <img src="https://pinhead.ink/v24/column_shrine.svg" width="15px"/> Add `column_shrine` from [OSM Carto](https://github.com/openstreetmap-carto/openstreetmap-carto) imported by [@quincylvania](https://github.com/quincylvania) ([#180](https://github.com/waysidemapping/pinhead/issues/180))
+- <img src="https://pinhead.ink/v24/table_with_chairs.svg" width="15px"/> Add `table_with_chairs` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/table_with_umbrella_and_chairs.svg" width="15px"/> Add `table_with_umbrella_and_chairs` from [OSM Carto](https://github.com/openstreetmap-carto/openstreetmap-carto) imported by [@quincylvania](https://github.com/quincylvania) ([#180](https://github.com/waysidemapping/pinhead/issues/180))
+- <img src="https://pinhead.ink/v24/table_with_umbrella.svg" width="15px"/> Add `table_with_umbrella` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/compass_rose.svg" width="15px"/> Add `compass_rose` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/hot_dog.svg" width="15px"/> Add `hot_dog` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/martini_glass_and_wine_bottle.svg" width="15px"/> Add `martini_glass_and_wine_bottle` from [NPS](https://github.com/nationalparkservice/symbol-library) imported by [@quincylvania](https://github.com/quincylvania) ([#182](https://github.com/waysidemapping/pinhead/issues/182))
+- <img src="https://pinhead.ink/v24/drink_can_and_drink_bottle.svg" width="15px"/> Add `drink_can_and_drink_bottle` from [NPS](https://github.com/nationalparkservice/symbol-library) imported by [@quincylvania](https://github.com/quincylvania) ([#182](https://github.com/waysidemapping/pinhead/issues/182))
+- <img src="https://pinhead.ink/v24/beer_bottle_and_drink_bottle.svg" width="15px"/> Add `beer_bottle_and_drink_bottle` from [NPS](https://github.com/nationalparkservice/symbol-library) imported by [@quincylvania](https://github.com/quincylvania) ([#182](https://github.com/waysidemapping/pinhead/issues/182))
+- <img src="https://pinhead.ink/v24/syrup_jug_and_droplet.svg" width="15px"/> Add `syrup_jug_and_droplet` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/gasoline_pump_with_d.svg" width="15px"/> Add `gasoline_pump_with_d` by [@quincylvania](https://github.com/quincylvania) ([#182](https://github.com/waysidemapping/pinhead/issues/182))
+- <img src="https://pinhead.ink/v24/gasoline_pump_with_e.svg" width="15px"/> Add `gasoline_pump_with_e` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/globe_gasoline_pump.svg" width="15px"/> Add `globe_gasoline_pump` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/globe_gasoline_pump_with_d.svg" width="15px"/> Add `globe_gasoline_pump_with_d` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/globe_gasoline_pump_with_e.svg" width="15px"/> Add `globe_gasoline_pump_with_e` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/gable_roofed_shelter.svg" width="15px"/> Add `gable_roofed_shelter` from [Osmic](https://github.com/gmgeo/osmic) imported by [@quincylvania](https://github.com/quincylvania) ([#40](https://github.com/waysidemapping/pinhead/issues/40))
+- <img src="https://pinhead.ink/v24/gable_roofed_shelter_with_spoon_and_knife.svg" width="15px"/> Add `gable_roofed_shelter_with_spoon_and_knife` from [Osmic](https://github.com/gmgeo/osmic) imported by [@quincylvania](https://github.com/quincylvania) ([#40](https://github.com/waysidemapping/pinhead/issues/40))
+- <img src="https://pinhead.ink/v24/person_slipping_down_cliff_into_water.svg" width="15px"/> Add `person_slipping_down_cliff_into_water` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/person_sliding_down_cliff.svg" width="15px"/> Add `person_sliding_down_cliff` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/person_sliding_down_cliff_into_water.svg" width="15px"/> Add `person_sliding_down_cliff_into_water` by [@quincylvania](https://github.com/quincylvania) ([#182](https://github.com/waysidemapping/pinhead/issues/182))
+- <img src="https://pinhead.ink/v24/ice_text.svg" width="15px"/> Add `ice_text` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/ice_text_above_icicles.svg" width="15px"/> Add `ice_text_above_icicles` by [@quincylvania](https://github.com/quincylvania) ([#182](https://github.com/waysidemapping/pinhead/issues/182))
+- <img src="https://pinhead.ink/v24/flush_curb_with_arrow_right.svg" width="15px"/> Add `flush_curb_with_arrow_right` from [Temaki](https://github.com/rapideditor/temaki) imported by [@quincylvania](https://github.com/quincylvania) ([#181](https://github.com/waysidemapping/pinhead/issues/181))
+- <img src="https://pinhead.ink/v24/lowered_curb_with_arrow_bottom_right.svg" width="15px"/> Add `lowered_curb_with_arrow_bottom_right` from [Temaki](https://github.com/rapideditor/temaki) imported by [@quincylvania](https://github.com/quincylvania) ([#181](https://github.com/waysidemapping/pinhead/issues/181))
+- <img src="https://pinhead.ink/v24/rolled_curb_with_arrow_bottom_right.svg" width="15px"/> Add `rolled_curb_with_arrow_bottom_right` from [Temaki](https://github.com/rapideditor/temaki) imported by [@quincylvania](https://github.com/quincylvania) ([#181](https://github.com/waysidemapping/pinhead/issues/181))
+- <img src="https://pinhead.ink/v24/raised_curb_with_arrow_down.svg" width="15px"/> Add `raised_curb_with_arrow_down` from [Temaki](https://github.com/rapideditor/temaki) imported by [@quincylvania](https://github.com/quincylvania) ([#181](https://github.com/waysidemapping/pinhead/issues/181))
+- <img src="https://pinhead.ink/v24/flush_curb_with_question_mark.svg" width="15px"/> Add `flush_curb_with_question_mark` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/lowered_curb_with_question_mark.svg" width="15px"/> Add `lowered_curb_with_question_mark` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/rolled_curb_with_question_mark.svg" width="15px"/> Add `rolled_curb_with_question_mark` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/raised_curb_with_question_mark.svg" width="15px"/> Add `raised_curb_with_question_mark` by [@quincylvania](https://github.com/quincylvania) ([#181](https://github.com/waysidemapping/pinhead/issues/181))
+- <img src="https://pinhead.ink/v24/spherical_virus_with_exclamation_point.svg" width="15px"/> Add `spherical_virus_with_exclamation_point` by [@quincylvania](https://github.com/quincylvania) ([#228](https://github.com/waysidemapping/pinhead/issues/228))
+- <img src="https://pinhead.ink/v24/question_mark.svg" width="15px"/> Add `question_mark` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/exclamation_point_beside_question_mark.svg" width="15px"/> Add `exclamation_point_beside_question_mark` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/exclamation_point_beside_exclamation_point.svg" width="15px"/> Add `exclamation_point_beside_exclamation_point` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/conifer_tree_beside_conifer_tree.svg" width="15px"/> Add `conifer_tree_beside_conifer_tree` by [@quincylvania](https://github.com/quincylvania) ([#228](https://github.com/waysidemapping/pinhead/issues/228))
+- <img src="https://pinhead.ink/v24/campsite_beside_conifer_tree.svg" width="15px"/> Add `campsite_beside_conifer_tree` by [@quincylvania](https://github.com/quincylvania) ([#228](https://github.com/waysidemapping/pinhead/issues/228))
+- <img src="https://pinhead.ink/v24/campsite_beside_conifer_tree_above_water.svg" width="15px"/> Add `campsite_beside_conifer_tree_above_water` by [@quincylvania](https://github.com/quincylvania) ([#228](https://github.com/waysidemapping/pinhead/issues/228))
+- <img src="https://pinhead.ink/v24/oval_broadleaved_tree_beside_oval_broadleaved_tree.svg" width="15px"/> Add `oval_broadleaved_tree_beside_oval_broadleaved_tree` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/campsite_beside_oval_broadleaved_tree.svg" width="15px"/> Add `campsite_beside_oval_broadleaved_tree` by [@quincylvania](https://github.com/quincylvania) ([#228](https://github.com/waysidemapping/pinhead/issues/228))
+- <img src="https://pinhead.ink/v24/campsite_beside_oval_broadleaved_tree_above_water.svg" width="15px"/> Add `campsite_beside_oval_broadleaved_tree_above_water` by [@quincylvania](https://github.com/quincylvania) ([#228](https://github.com/waysidemapping/pinhead/issues/228))
+- <img src="https://pinhead.ink/v24/campsite_beside_campsite_above_campsite_beside_campsite.svg" width="15px"/> Add `campsite_beside_campsite_above_campsite_beside_campsite` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/campsite_on_platform.svg" width="15px"/> Add `campsite_on_platform` by [@quincylvania](https://github.com/quincylvania) ([#132](https://github.com/waysidemapping/pinhead/issues/132))
+- <img src="https://pinhead.ink/v24/campsite_on_pier_in_water.svg" width="15px"/> Add `campsite_on_pier_in_water` by [@quincylvania](https://github.com/quincylvania) ([#133](https://github.com/waysidemapping/pinhead/issues/133))
+- <img src="https://pinhead.ink/v24/campsite_above_water.svg" width="15px"/> Add `campsite_above_water` by [@quincylvania](https://github.com/quincylvania) ([#133](https://github.com/waysidemapping/pinhead/issues/133))
+- <img src="https://pinhead.ink/v24/campsite_above_waters.svg" width="15px"/> Add `campsite_above_waters` by [@quincylvania](https://github.com/quincylvania) ([#133](https://github.com/waysidemapping/pinhead/issues/133))
+- <img src="https://pinhead.ink/v24/arrows_left_right_above_waters.svg" width="15px"/> Add `arrows_left_right_above_waters` by [@quincylvania](https://github.com/quincylvania) ([#40](https://github.com/waysidemapping/pinhead/issues/40))
+- <img src="https://pinhead.ink/v24/person_wearing_scuba_gear_diving_under_water.svg" width="15px"/> Add `person_wearing_scuba_gear_diving_under_water` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/exclamation_point_above_water.svg" width="15px"/> Add `exclamation_point_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/question_mark_above_water.svg" width="15px"/> Add `question_mark_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/zero_above_water.svg" width="15px"/> Add `zero_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/one_above_water.svg" width="15px"/> Add `one_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/one_minus_above_water.svg" width="15px"/> Add `one_minus_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/one_plus_above_water.svg" width="15px"/> Add `one_plus_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/one_minus.svg" width="15px"/> Add `one_minus` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/one_plus.svg" width="15px"/> Add `one_plus` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/two_above_water.svg" width="15px"/> Add `two_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/two_minus_above_water.svg" width="15px"/> Add `two_minus_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/two_plus_above_water.svg" width="15px"/> Add `two_plus_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/two_minus.svg" width="15px"/> Add `two_minus` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/two_plus.svg" width="15px"/> Add `two_plus` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/three_above_water.svg" width="15px"/> Add `three_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/three_minus_above_water.svg" width="15px"/> Add `three_minus_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/three_plus_above_water.svg" width="15px"/> Add `three_plus_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/three_minus.svg" width="15px"/> Add `three_minus` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/three_plus.svg" width="15px"/> Add `three_plus` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/four_above_water.svg" width="15px"/> Add `four_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/four_minus_above_water.svg" width="15px"/> Add `four_minus_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/four_plus_above_water.svg" width="15px"/> Add `four_plus_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/four_minus.svg" width="15px"/> Add `four_minus` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/four_plus.svg" width="15px"/> Add `four_plus` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/five_above_water.svg" width="15px"/> Add `five_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/five_minus_above_water.svg" width="15px"/> Add `five_minus_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/five_plus_above_water.svg" width="15px"/> Add `five_plus_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/five_minus.svg" width="15px"/> Add `five_minus` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/five_plus.svg" width="15px"/> Add `five_plus` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/six_above_water.svg" width="15px"/> Add `six_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/six_minus_above_water.svg" width="15px"/> Add `six_minus_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/six_plus_above_water.svg" width="15px"/> Add `six_plus_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/six_minus.svg" width="15px"/> Add `six_minus` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/six_plus.svg" width="15px"/> Add `six_plus` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/roman_numeral_i_above_water.svg" width="15px"/> Add `roman_numeral_i_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/roman_numeral_ii_above_water.svg" width="15px"/> Add `roman_numeral_ii_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/roman_numeral_iii_above_water.svg" width="15px"/> Add `roman_numeral_iii_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/roman_numeral_iv_above_water.svg" width="15px"/> Add `roman_numeral_iv_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/roman_numeral_v_above_water.svg" width="15px"/> Add `roman_numeral_v_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/roman_numeral_vi_above_water.svg" width="15px"/> Add `roman_numeral_vi_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/x_above_water.svg" width="15px"/> Add `x_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/skull_above_water.svg" width="15px"/> Add `skull_above_water` by [@quincylvania](https://github.com/quincylvania) ([#200](https://github.com/waysidemapping/pinhead/issues/200))
+- <img src="https://pinhead.ink/v24/p_wide_on_parking_line.svg" width="15px"/> Add `p_wide_on_parking_line` by [@quincylvania](https://github.com/quincylvania) ([#216](https://github.com/waysidemapping/pinhead/issues/216))
+- <img src="https://pinhead.ink/v24/e_wide_on_parking_line.svg" width="15px"/> Add `e_wide_on_parking_line` by [@quincylvania](https://github.com/quincylvania) ([#216](https://github.com/waysidemapping/pinhead/issues/216))
+- <img src="https://pinhead.ink/v24/p_wide_in_parking_structure.svg" width="15px"/> Add `p_wide_in_parking_structure` by [@quincylvania](https://github.com/quincylvania) ([#216](https://github.com/waysidemapping/pinhead/issues/216))
+- <img src="https://pinhead.ink/v24/e_wide_in_parking_structure.svg" width="15px"/> Add `e_wide_in_parking_structure` by [@quincylvania](https://github.com/quincylvania) ([#216](https://github.com/waysidemapping/pinhead/issues/216))
+- <img src="https://pinhead.ink/v24/p_wide_with_arrow_bottom_right.svg" width="15px"/> Add `p_wide_with_arrow_bottom_right` by [@quincylvania](https://github.com/quincylvania) ([#180](https://github.com/waysidemapping/pinhead/issues/180))
+- <img src="https://pinhead.ink/v24/e_wide_with_arrow_bottom_right.svg" width="15px"/> Add `e_wide_with_arrow_bottom_right` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/p_wide_with_arrow_right.svg" width="15px"/> Add `p_wide_with_arrow_right` by [@quincylvania](https://github.com/quincylvania) ([#180](https://github.com/waysidemapping/pinhead/issues/180))
+- <img src="https://pinhead.ink/v24/e_wide_with_arrow_right.svg" width="15px"/> Add `e_wide_with_arrow_right` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/p_wide_with_bicycle.svg" width="15px"/> Add `p_wide_with_bicycle` by [@quincylvania](https://github.com/quincylvania) ([#180](https://github.com/waysidemapping/pinhead/issues/180))
+- <img src="https://pinhead.ink/v24/e_wide_with_bicycle.svg" width="15px"/> Add `e_wide_with_bicycle` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/phone_down_above_one_one_one.svg" width="15px"/> Add `phone_down_above_one_one_one` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/phone_down_above_one_one_two.svg" width="15px"/> Add `phone_down_above_one_one_two` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/phone_down_above_one_two_three.svg" width="15px"/> Add `phone_down_above_one_two_three` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/phone_down_above_two_one_one.svg" width="15px"/> Add `phone_down_above_two_one_one` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/phone_down_above_three_one_one.svg" width="15px"/> Add `phone_down_above_three_one_one` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/phone_down_above_four_one_one.svg" width="15px"/> Add `phone_down_above_four_one_one` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/phone_down_above_five_one_one.svg" width="15px"/> Add `phone_down_above_five_one_one` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/phone_down_above_six_one_one.svg" width="15px"/> Add `phone_down_above_six_one_one` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/phone_down_above_seven_one_one.svg" width="15px"/> Add `phone_down_above_seven_one_one` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/phone_down_above_eight_one_one.svg" width="15px"/> Add `phone_down_above_eight_one_one` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/phone_down_above_nine_one_one.svg" width="15px"/> Add `phone_down_above_nine_one_one` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/phone_down_above_nine_eight_eight.svg" width="15px"/> Add `phone_down_above_nine_eight_eight` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/phone_down_above_nine_nine_nine.svg" width="15px"/> Add `phone_down_above_nine_nine_nine` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/left_bracket_and_cube.svg" width="15px"/> Add `left_bracket_and_cube` from [OSM Carto](https://github.com/openstreetmap-carto/openstreetmap-carto) imported by [@quincylvania](https://github.com/quincylvania) ([#180](https://github.com/waysidemapping/pinhead/issues/180))
+- <img src="https://pinhead.ink/v24/cube.svg" width="15px"/> Add `cube` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/saddle_shape.svg" width="15px"/> Add `saddle_shape` from [OSM Carto](https://github.com/openstreetmap-carto/openstreetmap-carto) imported by [@quincylvania](https://github.com/quincylvania) ([#40](https://github.com/waysidemapping/pinhead/issues/40), [#180](https://github.com/waysidemapping/pinhead/issues/180))
+- <img src="https://pinhead.ink/v24/isosceles_trapezoid_tall_up.svg" width="15px"/> Add `isosceles_trapezoid_tall_up` by [@petercooperjr](https://github.com/petercooperjr), [@quincylvania](https://github.com/quincylvania) ([#104](https://github.com/waysidemapping/pinhead/issues/104))
+- <img src="https://pinhead.ink/v24/isosceles_trapezoid_tall_down.svg" width="15px"/> Add `isosceles_trapezoid_tall_down` by [@petercooperjr](https://github.com/petercooperjr), [@quincylvania](https://github.com/quincylvania) ([#104](https://github.com/waysidemapping/pinhead/issues/104))
+- <img src="https://pinhead.ink/v24/parallelogram_tall_right.svg" width="15px"/> Add `parallelogram_tall_right` by [@petercooperjr](https://github.com/petercooperjr), [@quincylvania](https://github.com/quincylvania) ([#104](https://github.com/waysidemapping/pinhead/issues/104))
+- <img src="https://pinhead.ink/v24/parallelogram_tall_left.svg" width="15px"/> Add `parallelogram_tall_left` by [@petercooperjr](https://github.com/petercooperjr), [@quincylvania](https://github.com/quincylvania) ([#104](https://github.com/waysidemapping/pinhead/issues/104))
+- <img src="https://pinhead.ink/v24/square_with_dot.svg" width="15px"/> Add `square_with_dot` by [@quincylvania](https://github.com/quincylvania) ([#180](https://github.com/waysidemapping/pinhead/issues/180))
+- <img src="https://pinhead.ink/v24/square_with_square_dot.svg" width="15px"/> Add `square_with_square_dot` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/octagon_outline.svg" width="15px"/> Add `octagon_outline` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/map_pin_outline_with_dot.svg" width="15px"/> Add `map_pin_outline_with_dot` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/arrow_left_from_rectangle_tall_outline.svg" width="15px"/> Add `arrow_left_from_rectangle_tall_outline` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/arrow_left_to_rectangle_tall_outline.svg" width="15px"/> Add `arrow_left_to_rectangle_tall_outline` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/arrow_right_from_rectangle_tall_outline.svg" width="15px"/> Add `arrow_right_from_rectangle_tall_outline` by [@quincylvania](https://github.com/quincylvania) ([#40](https://github.com/waysidemapping/pinhead/issues/40))
+- <img src="https://pinhead.ink/v24/arrow_right_to_rectangle_tall_outline.svg" width="15px"/> Add `arrow_right_to_rectangle_tall_outline` by [@quincylvania](https://github.com/quincylvania) ([#40](https://github.com/waysidemapping/pinhead/issues/40))
+- <img src="https://pinhead.ink/v24/arrow_up_from_rectangle_outline.svg" width="15px"/> Add `arrow_up_from_rectangle_outline` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/arrow_down_from_rectangle_outline.svg" width="15px"/> Add `arrow_down_from_rectangle_outline` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/arrow_up_to_rectangle_outline.svg" width="15px"/> Add `arrow_up_to_rectangle_outline` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/arrow_down_to_rectangle_outline.svg" width="15px"/> Add `arrow_down_to_rectangle_outline` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/pixel_exclamation_point.svg" width="15px"/> Add `pixel_exclamation_point` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/pixel_question_mark.svg" width="15px"/> Add `pixel_question_mark` by [@quincylvania](https://github.com/quincylvania)
+- <img src="https://pinhead.ink/v24/pixel_gasoline_pump.svg" width="15px"/> Add `pixel_gasoline_pump` by [@quincylvania](https://github.com/quincylvania)
+
+
 ## [15.23.0] - 2026-04-28
 
 _Pinhead v23_
