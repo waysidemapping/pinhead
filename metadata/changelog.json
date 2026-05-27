@@ -14181,20 +14181,20 @@
         "issue": "216"
       },
       {
-        "newId": "p_wide_in_parking_structure",
-        "by": "@quincylvania",
-        "inspo": [
-          "p_wide",
-          "parking_structure"
-        ],
-        "issue": "216"
-      },
-      {
         "newId": "e_wide_on_parking_line",
         "by": "@quincylvania",
         "inspo": [
           "e_wide",
           "parking_line"
+        ],
+        "issue": "216"
+      },
+      {
+        "newId": "p_wide_in_parking_structure",
+        "by": "@quincylvania",
+        "inspo": [
+          "p_wide",
+          "parking_structure"
         ],
         "issue": "216"
       },
@@ -14215,13 +14215,6 @@
         "osmcarto": "amenity/parking_entrance_underground"
       },
       {
-        "newId": "p_wide_with_arrow_right",
-        "by": "@quincylvania",
-        "inspo": "p_wide",
-        "issue": "180",
-        "osmcarto": "amenity/parking_entrance_multistorey"
-      },
-      {
         "newId": "e_wide_with_arrow_bottom_right",
         "by": "@quincylvania",
         "inspo": [
@@ -14230,11 +14223,36 @@
         ]
       },
       {
+        "newId": "p_wide_with_arrow_right",
+        "by": "@quincylvania",
+        "inspo": "p_wide",
+        "issue": "180",
+        "osmcarto": "amenity/parking_entrance_multistorey"
+      },
+      {
         "newId": "e_wide_with_arrow_right",
         "by": "@quincylvania",
         "inspo": [
           "p_wide_with_arrow_right",
           "e_wide"
+        ]
+      },
+      {
+        "newId": "p_wide_with_bicycle",
+        "by": "@quincylvania",
+        "inspo": [
+          "p_wide",
+          "bicycle"
+        ],
+        "issue": "180",
+        "osmcarto": "amenity/bicycle_parking"
+      },
+      {
+        "newId": "e_wide_with_bicycle",
+        "by": "@quincylvania",
+        "inspo": [
+          "e_wide",
+          "bicycle"
         ]
       },
       {
