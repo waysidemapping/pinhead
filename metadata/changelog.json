@@ -13687,6 +13687,32 @@
         ]
       },
       {
+        "oldId": "person_slipping_down_cliff",
+        "newId": "person_slipping_down_cliff",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "person_slipping_down_cliff_into_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "person_slipping_down_cliff",
+          "person_sliding_down_cliff_into_water"
+        ]
+      },
+      {
+        "newId": "person_sliding_down_cliff",
+        "by": "@quincylvania",
+        "inspo": "person_sliding_down_cliff_into_water"
+      },
+      {
+        "newId": "person_sliding_down_cliff_into_water",
+        "by": "@quincylvania",
+        "inspo": "person_slipping_down_cliff",
+        "issue": "182",
+        "nps": "stay-back-from-edge-shore"
+      },
+      {
         "newId": "question_mark",
         "by": "@quincylvania",
         "char": [
@@ -13853,6 +13879,24 @@
         "opengemeenten": "Kerstbomen"
       },
       {
+        "newId": "campsite_beside_conifer_tree",
+        "by": "@quincylvania",
+        "inspo": [
+          "campsite",
+          "conifer_tree_and_oval_broadleaved_tree"
+        ],
+        "issue": "228"
+      },
+      {
+        "newId": "campsite_beside_conifer_tree_above_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "campsite_beside_conifer_tree",
+          "water"
+        ],
+        "issue": "228"
+      },
+      {
         "newId": "oval_broadleaved_tree_beside_oval_broadleaved_tree",
         "by": "@quincylvania",
         "inspo": "conifer_tree_and_oval_broadleaved_tree"
@@ -13871,24 +13915,6 @@
         "by": "@quincylvania",
         "inspo": [
           "campsite_beside_oval_broadleaved_tree",
-          "water"
-        ],
-        "issue": "228"
-      },
-      {
-        "newId": "campsite_beside_conifer_tree",
-        "by": "@quincylvania",
-        "inspo": [
-          "campsite",
-          "conifer_tree_and_oval_broadleaved_tree"
-        ],
-        "issue": "228"
-      },
-      {
-        "newId": "campsite_beside_conifer_tree_above_water",
-        "by": "@quincylvania",
-        "inspo": [
-          "campsite_beside_conifer_tree",
           "water"
         ],
         "issue": "228"
