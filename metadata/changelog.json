@@ -13713,52 +13713,6 @@
         "nps": "stay-back-from-edge-shore"
       },
       {
-        "newId": "question_mark",
-        "by": "@quincylvania",
-        "char": [
-          "?",
-          "❓",
-          "❔"
-        ],
-        "healthicons": [
-          "symbols/question",
-          "symbols/question-circle",
-          "symbols/question-triangle"
-        ],
-        "opentrailmap": "question"
-      },
-      {
-        "oldId": "exclamation_point",
-        "newId": "exclamation_point",
-        "by": "@quincylvania"
-      },
-      {
-        "newId": "exclamation_point_beside_question_mark",
-        "by": "@quincylvania",
-        "char": [
-          "⁉",
-          "⁉️"
-        ]
-      },
-      {
-        "newId": "exclamation_point_beside_exclamation_point",
-        "by": "@quincylvania",
-        "char": [
-          "‼️",
-          "‼"
-        ]
-      },
-      {
-        "newId": "spherical_virus_with_exclamation_point",
-        "by": "@quincylvania",
-        "inspo": [
-          "spherical_virus",
-          "exclamation_point"
-        ],
-        "issue": "228",
-        "opengemeenten": "Virus"
-      },
-      {
         "oldId": "snowflake_and_icicles",
         "newId": "snowflake_above_icicles",
         "edit": "minor",
@@ -13870,6 +13824,52 @@
       {
         "oldId": "kerb_raised_under_shoe",
         "newId": "raised_curb_under_shoe"
+      },
+      {
+        "newId": "spherical_virus_with_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "spherical_virus",
+          "exclamation_point"
+        ],
+        "issue": "228",
+        "opengemeenten": "Virus"
+      },
+      {
+        "newId": "question_mark",
+        "by": "@quincylvania",
+        "char": [
+          "?",
+          "❓",
+          "❔"
+        ],
+        "healthicons": [
+          "symbols/question",
+          "symbols/question-circle",
+          "symbols/question-triangle"
+        ],
+        "opentrailmap": "question"
+      },
+      {
+        "oldId": "exclamation_point",
+        "newId": "exclamation_point",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "exclamation_point_beside_question_mark",
+        "by": "@quincylvania",
+        "char": [
+          "⁉",
+          "⁉️"
+        ]
+      },
+      {
+        "newId": "exclamation_point_beside_exclamation_point",
+        "by": "@quincylvania",
+        "char": [
+          "‼️",
+          "‼"
+        ]
       },
       {
         "newId": "conifer_tree_beside_conifer_tree",
