@@ -14414,7 +14414,8 @@
           "bicycle"
         ],
         "issue": "180",
-        "osmcarto": "amenity/bicycle_parking"
+        "osmcarto": "amenity/bicycle_parking",
+        "osmic": "transport/parking-bicycle"
       },
       {
         "newId": "e_wide_with_bicycle",
