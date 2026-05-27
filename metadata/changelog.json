@@ -13580,6 +13580,39 @@
         "nps": "trash-dumpster"
       },
       {
+        "newId": "column_shrine",
+        "src": "osmcarto",
+        "importBy": "@quincylvania",
+        "issue": "180",
+        "osmcarto": "historic/shrine"
+      },
+      {
+        "newId": "table_with_chairs",
+        "by": "@quincylvania",
+        "inspo": "table_with_chairs"
+      },
+      {
+        "newId": "table_with_umbrella_and_chairs",
+        "src": "osmcarto",
+        "importBy": "@quincylvania",
+        "issue": "180",
+        "osmcarto": "leisure/outdoor_seating"
+      },
+      {
+        "newId": "table_with_umbrella",
+        "by": "@quincylvania",
+        "inspo": "table_with_umbrella_and_chairs"
+      },
+      {
+        "oldId": "compass_rose",
+        "newId": "compass_rose_in_circle_outline"
+      },
+      {
+        "newId": "compass_rose",
+        "by": "@quincylvania",
+        "inspo": "compass_rose_in_circle_outline"
+      },
+      {
         "newId": "hot_dog",
         "by": "@quincylvania",
         "inspo": "hot_dog_with_mustard"
@@ -13611,40 +13644,47 @@
         "inspo": "syrup_jug_with_maple_leaf_and_droplet"
       },
       {
-        "newId": "arrow_left_from_rectangle_tall_outline",
+        "oldId": "gasoline_pump",
+        "newId": "gasoline_pump",
         "by": "@quincylvania"
       },
       {
-        "newId": "arrow_left_to_rectangle_tall_outline",
-        "by": "@quincylvania"
-      },
-      {
-        "newId": "arrow_right_from_rectangle_tall_outline",
+        "newId": "gasoline_pump_with_d",
         "by": "@quincylvania",
-        "issue": "40",
-        "osmic": "amenity/exit"
+        "inspo": [
+          "gasoline_pump",
+          "d"
+        ],
+        "issue": "182",
+        "nps": "gasoline-diesel"
       },
       {
-        "newId": "arrow_right_to_rectangle_tall_outline",
+        "newId": "gasoline_pump_with_e",
         "by": "@quincylvania",
-        "issue": "40",
-        "osmic": "amenity/entrance"
+        "inspo": [
+          "gasoline_pump",
+          "e"
+        ]
       },
       {
-        "newId": "arrow_up_from_rectangle_outline",
+        "newId": "globe_gasoline_pump",
         "by": "@quincylvania"
       },
       {
-        "newId": "arrow_down_from_rectangle_outline",
-        "by": "@quincylvania"
+        "newId": "globe_gasoline_pump_with_d",
+        "by": "@quincylvania",
+        "inspo": [
+          "globe_gasoline_pump",
+          "d"
+        ]
       },
       {
-        "newId": "arrow_up_to_rectangle_outline",
-        "by": "@quincylvania"
-      },
-      {
-        "newId": "arrow_down_to_rectangle_outline",
-        "by": "@quincylvania"
+        "newId": "globe_gasoline_pump_with_e",
+        "by": "@quincylvania",
+        "inspo": [
+          "globe_gasoline_pump",
+          "e"
+        ]
       },
       {
         "newId": "question_mark",
@@ -13691,6 +13731,37 @@
         ],
         "issue": "228",
         "opengemeenten": "Virus"
+      },
+      {
+        "oldId": "snowflake_and_icicles",
+        "newId": "snowflake_above_icicles",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "icicles",
+        "newId": "icicles",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "ice_text",
+        "by": "@quincylvania",
+        "inspo": [
+          "i",
+          "c",
+          "e"
+        ]
+      },
+      {
+        "newId": "ice_text_above_icicles",
+        "by": "@quincylvania",
+        "inspo": [
+          "ice_text",
+          "icicles"
+        ],
+        "issue": "182",
+        "nps": "ice"
       },
       {
         "newId": "flush_curb_with_arrow_right",
@@ -14370,50 +14441,6 @@
         ]
       },
       {
-        "newId": "saddle_shape",
-        "src": "osmcarto",
-        "importBy": "@quincylvania",
-        "issue": [
-          "40",
-          "180"
-        ],
-        "osmcarto": "natural/saddle",
-        "osmic": "nature/saddle"
-      },
-      {
-        "newId": "column_shrine",
-        "src": "osmcarto",
-        "importBy": "@quincylvania",
-        "issue": "180",
-        "osmcarto": "historic/shrine"
-      },
-      {
-        "newId": "table_with_chairs",
-        "by": "@quincylvania",
-        "inspo": "table_with_chairs"
-      },
-      {
-        "newId": "table_with_umbrella_and_chairs",
-        "src": "osmcarto",
-        "importBy": "@quincylvania",
-        "issue": "180",
-        "osmcarto": "leisure/outdoor_seating"
-      },
-      {
-        "newId": "table_with_umbrella",
-        "by": "@quincylvania",
-        "inspo": "table_with_umbrella_and_chairs"
-      },
-      {
-        "oldId": "compass_rose",
-        "newId": "compass_rose_in_circle_outline"
-      },
-      {
-        "newId": "compass_rose",
-        "by": "@quincylvania",
-        "inspo": "compass_rose_in_circle_outline"
-      },
-      {
         "newId": "left_bracket_and_cube",
         "src": "osmcarto",
         "importBy": "@quincylvania",
@@ -14424,6 +14451,17 @@
         "newId": "cube",
         "by": "@quincylvania",
         "inspo": "left_bracket_and_cube"
+      },
+      {
+        "newId": "saddle_shape",
+        "src": "osmcarto",
+        "importBy": "@quincylvania",
+        "issue": [
+          "40",
+          "180"
+        ],
+        "osmcarto": "natural/saddle",
+        "osmic": "nature/saddle"
       },
       {
         "newId": "isosceles_trapezoid_tall_up",
@@ -14504,78 +14542,40 @@
         ]
       },
       {
-        "oldId": "gasoline_pump",
-        "newId": "gasoline_pump",
+        "newId": "arrow_left_from_rectangle_tall_outline",
         "by": "@quincylvania"
       },
       {
-        "newId": "gasoline_pump_with_d",
-        "by": "@quincylvania",
-        "inspo": [
-          "gasoline_pump",
-          "d"
-        ],
-        "issue": "182",
-        "nps": "gasoline-diesel"
-      },
-      {
-        "newId": "gasoline_pump_with_e",
-        "by": "@quincylvania",
-        "inspo": [
-          "gasoline_pump",
-          "e"
-        ]
-      },
-      {
-        "newId": "globe_gasoline_pump",
+        "newId": "arrow_left_to_rectangle_tall_outline",
         "by": "@quincylvania"
       },
       {
-        "newId": "globe_gasoline_pump_with_d",
+        "newId": "arrow_right_from_rectangle_tall_outline",
         "by": "@quincylvania",
-        "inspo": [
-          "globe_gasoline_pump",
-          "d"
-        ]
+        "issue": "40",
+        "osmic": "amenity/exit"
       },
       {
-        "newId": "globe_gasoline_pump_with_e",
+        "newId": "arrow_right_to_rectangle_tall_outline",
         "by": "@quincylvania",
-        "inspo": [
-          "globe_gasoline_pump",
-          "e"
-        ]
+        "issue": "40",
+        "osmic": "amenity/entrance"
       },
       {
-        "oldId": "snowflake_and_icicles",
-        "newId": "snowflake_above_icicles",
-        "edit": "minor",
+        "newId": "arrow_up_from_rectangle_outline",
         "by": "@quincylvania"
       },
       {
-        "oldId": "icicles",
-        "newId": "icicles",
-        "edit": "minor",
+        "newId": "arrow_down_from_rectangle_outline",
         "by": "@quincylvania"
       },
       {
-        "newId": "ice_text",
-        "by": "@quincylvania",
-        "inspo": [
-          "i",
-          "c",
-          "e"
-        ]
+        "newId": "arrow_up_to_rectangle_outline",
+        "by": "@quincylvania"
       },
       {
-        "newId": "ice_text_above_icicles",
-        "by": "@quincylvania",
-        "inspo": [
-          "ice_text",
-          "icicles"
-        ],
-        "issue": "182",
-        "nps": "ice"
+        "newId": "arrow_down_to_rectangle_outline",
+        "by": "@quincylvania"
       }
     ]
   }
