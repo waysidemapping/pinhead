@@ -1074,9 +1074,7 @@
       },
       {
         "newId": "car_beside_sleeper_in_bed",
-        "by": "@quincylvania",
-        "osmcarto": "tourism/motel",
-        "osmic": "accommodation/motel"
+        "by": "@quincylvania"
       },
       {
         "newId": "car_between_roller_brushes",
@@ -13571,6 +13569,16 @@
         "src": "https://upload.wikimedia.org/wikipedia/commons/0/0f/MUTCD_I4-1.svg",
         "importBy": "@quincylvania",
         "issue": "41"
+      },
+      {
+        "newId": "person_sleeping_in_bed_above_car",
+        "by": "@quincylvania",
+        "inspo": [
+          "car",
+          "people_sleeping_in_bunkbeds"
+        ],
+        "osmcarto": "tourism/motel",
+        "osmic": "accommodation/motel"
       },
       {
         "newId": "person_dropping_trash_into_wheelie_bin",
