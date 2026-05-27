@@ -13687,6 +13687,30 @@
         ]
       },
       {
+        "newId": "gable_roofed_shelter",
+        "src": "osmic",
+        "importBy": "@quincylvania",
+        "issue": "40",
+        "osmic": "outdoor/basic-hut"
+      },
+      {
+        "oldId": "roof_with_fireplace_and_chimney",
+        "newId": "gable_roofed_shelter_with_fireplace_and_chimney",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "person_wearing_backpack_walking_with_hiking_pole_in_gable_roofed_building",
+        "newId": "person_wearing_backpack_walking_with_hiking_pole_in_gable_roofed_shelter",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "gable_roofed_shelter_with_spoon_and_knife",
+        "src": "osmic",
+        "importBy": "@quincylvania",
+        "issue": "40",
+        "osmic": "outdoor/alpine-hut"
+      },
+      {
         "oldId": "person_slipping_down_cliff",
         "newId": "person_slipping_down_cliff",
         "edit": "minor",
