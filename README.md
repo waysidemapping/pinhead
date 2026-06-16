@@ -17,7 +17,7 @@ Pinhead is a library of free vector icons. There are other projects like this, b
 1. Cartography first
 2. 100% public domain
 
-Map icons need to be really small to support high visual density, so all of Pinhead icon's are intended to be legible at **15x15 pixels** minimum. This is much smaller than most other icon sets you'll find, but you can scale them up and they'll still look great. And since they're licensed **CC0**, you can use them anywhere for free without restrictions.
+Map icons need to be really small to support high visual density, so all of Pinhead icons are intended to be legible at **15x15 pixels** minimum. This is much smaller than most other icon sets you'll find, but you can scale them up and they'll still look great. And since they're licensed **CC0**, you can use them anywhere for free without restrictions.
 
 ## Community and support
 
@@ -28,7 +28,7 @@ A small community is developing around Pinhead! We're working to make this the b
 There are a number of ways to get Pinhead icons. But before you get started, you'll want to be aware of a few things:
 
 - **Churn**: Pinhead is an active project receiving regular updates. If you want stability, use a specific version of Pinhead. If you want to stay up-to-date with the latest version, be aware that icons may change. Developers can use the `changelog.json` file to deal with changes automatically.
-- **Verison numbers**: Each Pinhead version number refers to a complete, static set of icons. The version number increments whenever an icon is added, deleted, renamed, or otherwise changed. This ensures version integrity, so that two apps running the same Pinhead version will have the same icons.
+- **Version numbers**: Each Pinhead version number refers to a complete, static set of icons. The version number increments whenever an icon is added, deleted, renamed, or otherwise changed. This ensures version integrity, so that two apps running the same Pinhead version will have the same icons.
 - **Content warning**: Pinhead aims to be comprehensive and contains icons that some audiences may find objectionable. Icons commonly considered problematic are marked `sensitive` in the metadata files, but concerned users should manually review any icons they plan to redistribute or display to others.
 
 ### Getting an icon
@@ -101,7 +101,7 @@ Pinhead is distributed in two different packages for Node developers. The packag
 - [@waysidemapping/pinhead-font](https://www.npmjs.com/package/@waysidemapping/pinhead-font): icon font and CSS for use on webpages
   - `npm install @waysidemapping/pinhead-font`
 
-These packages use a special flavor of semantic versioning (`major.minor.patch`), with the Pinhead version number corresponding to the minor version. If your app expects the icons to be static, depend on the package like (`~x.x.0`). If your app can automatically handle icons changes, i.e. by reading the `changelog.json` file, then depend on the package like (`^x.x.0`). We'll only increment the major version if there is a breaking change to the package format, in which case the minor version will NOT reset to zero but will remain the Pinhead version number. Note that prior to v15, the Pinhead version number of `@waysidemapping/pinhead` corresponded to the major package version instead of the minor.
+These packages use a special flavor of semantic versioning (`major.minor.patch`), with the Pinhead version number corresponding to the minor version. If your app expects the icons to be static, depend on the package like (`~x.x.0`). If your app can automatically handle icon changes, i.e. by reading the `changelog.json` file, then depend on the package like (`^x.x.0`). We'll only increment the major version if there is a breaking change to the package format, in which case the minor version will NOT reset to zero but will remain the Pinhead version number. Note that prior to v15, the Pinhead version number of `@waysidemapping/pinhead` corresponded to the major package version instead of the minor.
 
 ## Where the icons are from
 
@@ -120,9 +120,9 @@ Pinhead is seeded from the following public domain sources. Thank you to all of 
 
 I've been cleaning up the seed icons by scaling them to the same size, conflating duplicates, improving names, removing SVG cruft, and manually improving legibility. I've also been splitting out certain icon elements into standalone icons, such as taking the <img src="https://pinhead.ink/v1/wine_bottle_and_wine_glass.svg" height="15px" width="15px"/> "wine" icon and creating two additional icons: <img src="https://pinhead.ink/v1/wine_glass.svg" height="15px" width="15px"/> `wine_glass` and <img src="https://pinhead.ink/v1/wine_bottle.svg" height="15px" width="15px"/> `wine_bottle`.
 
-If you know of other sources for public domain map icon that might be a good fit for Pinhead, I'd love to [hear about them](https://github.com/waysidemapping/pinhead/issues/new)!
+If you know of other sources for public domain map icons that might be a good fit for Pinhead, I'd love to [hear about them](https://github.com/waysidemapping/pinhead/issues/new)!
 
-And finally, the icons come from the likes of you! I myself have been addings some totally new icons I've designed in support of [themap.is](https://github.com/waysidemapping/themap.is). I'm hoping for contributors to grow and sustain this icon library.
+And finally, the icons come from the likes of you! I myself have been adding some totally new icons I've designed in support of [themap.is](https://github.com/waysidemapping/themap.is). I'm hoping for contributors to grow and sustain this icon library.
 
 ## Contributing
 
