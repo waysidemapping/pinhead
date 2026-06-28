@@ -14973,6 +14973,26 @@
         ],
         "issue": "233",
         "openhistoricalmap": "police"
+      },
+      {
+        "newId": "pixel_fork_and_knife",
+        "by": "@quincylvania",
+        "inspo": "fork_and_knife"
+      },
+      {
+        "newId": "pixel_water",
+        "by": "@quincylvania",
+        "inspo": "water"
+      },
+      {
+        "newId": "pixel_waters",
+        "by": "@quincylvania",
+        "inspo": "waters"
+      },
+      {
+        "newId": "pixel_arrows_left_right_above_water",
+        "by": "@quincylvania",
+        "inspo": "arrows_left_right_above_water"
       }
     ]
   }
