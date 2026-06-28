@@ -173,7 +173,7 @@ function checkIcons() {
           console.warn('');
           process.exit(1);
         }
-        if (node.getAttribute('transform') && node.getAttribute('transform') !== 'translate(0, 0)' && node.getAttribute('transform') !== 'translate(-0, -0)') {
+        if (node.getAttribute('transform') && node.getAttribute('transform') !== 'translate(0, 0)' && node.getAttribute('transform') !== 'translate(-0, -0)' && node.getAttribute('transform') !== 'translate(-0, 0)') {
           console.warn(chalk.yellow('Unexpcted transform value on ' + node.nodeName + ': ' + node.getAttribute('transform')));
           console.warn(chalk.gray('  Elements must not rely on transforms.'));
           console.warn('  in ' + file);

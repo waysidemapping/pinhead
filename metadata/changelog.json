@@ -155,6 +155,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "blacksmith",
         "temaki": "anvil"
       },
       {
@@ -305,7 +306,8 @@
         "src": "nps",
         "importBy": "@quincylvania",
         "healthicons": "people/baby-0203m",
-        "nps": "baby-changing-station"
+        "nps": "baby-changing-station",
+        "openhistoricalmap": "kindergarten"
       },
       {
         "newId": "bag",
@@ -316,6 +318,10 @@
         "newId": "bag_with_greek_cross",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "openhistoricalmap": [
+          "clinic",
+          "doctors"
+        ],
         "osmcarto": "amenity/doctors",
         "osmic": "health/doctor"
       },
@@ -341,6 +347,7 @@
         "src": "osmcarto",
         "importBy": "@quincylvania",
         "healthicons": "objects/justice",
+        "openhistoricalmap": "courthouse",
         "osmcarto": "amenity/courthouse",
         "osmic": "administration/courthouse",
         "temaki": "lawyer"
@@ -464,6 +471,10 @@
         "src": "osmcarto",
         "importBy": "@quincylvania",
         "char": "🍺",
+        "openhistoricalmap": [
+          "pub",
+          "saloon"
+        ],
         "osmcarto": "amenity/biergarten",
         "osmic": "eat-drink/biergarten"
       },
@@ -481,7 +492,8 @@
       },
       {
         "newId": "bench_with_backrest",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "openhistoricalmap": "bench"
       },
       {
         "newId": "bench_with_backrest_in_rectangular_shelter",
@@ -497,6 +509,7 @@
         "char": "🚲",
         "maki": "bicycle",
         "opengemeenten": "Fiets",
+        "openhistoricalmap": "bicycle",
         "osmcarto": "shop/bicycle",
         "osmic": "shop/bicycle"
       },
@@ -738,6 +751,7 @@
         "newId": "bread",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "bakery",
         "osmcarto": "shop/bakery",
         "osmic": "shop/bakery"
       },
@@ -857,6 +871,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "bunker",
         "osmcarto": "man_made/bunker",
         "temaki": "bunker"
       },
@@ -880,6 +895,7 @@
         "importBy": "@quincylvania",
         "char": "🍔",
         "maki": "fast-food",
+        "openhistoricalmap": "fast_food",
         "osmcarto": "amenity/fast_food",
         "osmic": "eat-drink/fast-food"
       },
@@ -958,6 +974,7 @@
         "importBy": "@quincylvania",
         "maki": "attraction",
         "nps": "photography",
+        "openhistoricalmap": "photo",
         "opentrailmap": "viewpoint",
         "osmic": "shop/photo"
       },
@@ -1055,6 +1072,7 @@
         "newId": "car_and_key",
         "by": "@quincylvania",
         "maki": "car-rental",
+        "openhistoricalmap": "car_rental",
         "osmcarto": "amenity/rental_car",
         "osmic": "transport/rental-car"
       },
@@ -1069,6 +1087,7 @@
       {
         "newId": "car_battery",
         "by": "@quincylvania",
+        "openhistoricalmap": "car_parts",
         "osmcarto": "shop/car_parts",
         "osmic": "shop/car-parts"
       },
@@ -1165,6 +1184,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "maki": "castle",
+        "openhistoricalmap": "tower",
         "osmcarto": "man_made/tower_defensive",
         "osmic": "tourism/watchtower"
       },
@@ -1292,6 +1312,7 @@
         "newId": "circle_outline",
         "by": "@quincylvania",
         "maki": "circle-stroked",
+        "openhistoricalmap": "city",
         "osmcarto": [
           "place/place-4-z7",
           "place/place-4",
@@ -1349,6 +1370,7 @@
         "maki": "museum",
         "nps": "museum",
         "opengemeenten": "Politiek",
+        "openhistoricalmap": "townhall",
         "osmcarto": "tourism/museum",
         "osmic": "tourism/museum",
         "temaki": "museum"
@@ -1421,6 +1443,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "maki": "bar",
+        "openhistoricalmap": "bar",
         "osmcarto": "amenity/bar",
         "osmic": "eat-drink/bar"
       },
@@ -1462,6 +1485,7 @@
         "maki": "theatre",
         "nps": "theatre-arts",
         "opengemeenten": "Cultuur",
+        "openhistoricalmap": "theatre",
         "osmcarto": "amenity/theatre",
         "osmic": "tourism/theatre"
       },
@@ -1546,6 +1570,7 @@
         "newId": "couch",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "furniture",
         "osmcarto": "shop/furniture",
         "osmic": "shop/furniture"
       },
@@ -1603,6 +1628,10 @@
         "importBy": "@quincylvania",
         "char": "✝️",
         "maki": "religious-christian",
+        "openhistoricalmap": [
+          "christian",
+          "cross"
+        ],
         "osmcarto": [
           "man_made/cross",
           "religion/christian"
@@ -2070,6 +2099,7 @@
         "americana": "poi_envelope",
         "maki": "post",
         "nps": "post-office",
+        "openhistoricalmap": "post_office",
         "osmcarto": "amenity/post_office",
         "osmic": "amenity/post-office"
       },
@@ -2225,6 +2255,7 @@
         "importBy": "@quincylvania",
         "char": "🔥",
         "maki": "fire-station",
+        "openhistoricalmap": "fire_station",
         "osmcarto": "amenity/firestation",
         "osmic": "emergency/fire-station"
       },
@@ -2326,7 +2357,8 @@
         "importBy": "@quincylvania",
         "char": "🍴",
         "maki": "restaurant",
-        "nps": "food-service"
+        "nps": "food-service",
+        "openhistoricalmap": "restaurant"
       },
       {
         "newId": "fork_and_sausage",
@@ -2404,6 +2436,7 @@
         "americana": "poi_fuel",
         "maki": "fuel",
         "nps": "gas-station",
+        "openhistoricalmap": "fuel",
         "osmcarto": "amenity/fuel",
         "osmic": "transport/fuel"
       },
@@ -2547,6 +2580,7 @@
         "src": "osmcarto",
         "importBy": "@quincylvania",
         "char": "🏺",
+        "openhistoricalmap": "urn",
         "osmcarto": "historic/archaeological_site",
         "osmic": "tourism/archaeological-site"
       },
@@ -2557,6 +2591,7 @@
         "americana": "poi_health_cross",
         "maki": "hospital",
         "nps": "first-aid",
+        "openhistoricalmap": "hospital",
         "osmcarto": "amenity/hospital",
         "osmic": "health/hospital"
       },
@@ -2596,6 +2631,7 @@
         "newId": "hammer_and_inverted_shoe",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "shoemaker",
         "temaki": "hammer_shoe"
       },
       {
@@ -2857,6 +2893,7 @@
         "newId": "hydrant",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "fire_hydrant",
         "temaki": "fire_hydrant"
       },
       {
@@ -2901,6 +2938,7 @@
         "maki": "information",
         "nps": "information",
         "opengemeenten": "Informatie",
+        "openhistoricalmap": "information",
         "osmic": "tourism/information"
       },
       {
@@ -3171,6 +3209,7 @@
         "src": "osmcarto",
         "importBy": "@quincylvania",
         "char": "💻",
+        "openhistoricalmap": "computer",
         "osmcarto": "shop/computer",
         "osmic": "shop/computer"
       },
@@ -3473,6 +3512,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "butcher",
         "temaki": "meat"
       },
       {
@@ -3568,6 +3608,7 @@
       {
         "newId": "mobile_phone_with_touchscreen_and_antenna",
         "by": "@quincylvania",
+        "openhistoricalmap": "mobile_phone",
         "osmcarto": "shop/mobile_phone",
         "osmic": "shop/mobile-phone"
       },
@@ -3582,6 +3623,7 @@
         "char": "🦷",
         "healthicons": "body/tooth",
         "maki": "dentist",
+        "openhistoricalmap": "dentist",
         "osmcarto": "amenity/dentist",
         "osmic": "health/dentist"
       },
@@ -3664,6 +3706,7 @@
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
         "char": "🏍️",
+        "openhistoricalmap": "motorcycle",
         "osmcarto": "shop/motorcycle",
         "temaki": "motorcycle"
       },
@@ -3844,6 +3887,7 @@
         "src": "temaki",
         "importBy": "@quincylvania",
         "char": "🕉️",
+        "openhistoricalmap": "hindu",
         "osmcarto": "religion/hinduist",
         "osmic": "religious/hinduist",
         "temaki": "hinduism"
@@ -3854,6 +3898,7 @@
         "importBy": "@quincylvania",
         "char": "📖",
         "maki": "library",
+        "openhistoricalmap": "library",
         "osmcarto": "amenity/library",
         "osmic": "amenity/library"
       },
@@ -3889,6 +3934,7 @@
         "newId": "palette",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "arts_centre",
         "osmcarto": "shop/art"
       },
       {
@@ -4083,6 +4129,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "playground",
         "osmcarto": "leisure/playground",
         "osmic": "amenity/playground",
         "temaki": "seesaw"
@@ -4454,7 +4501,8 @@
         "newId": "person_showering_with_soap_under_shower_spray",
         "src": "nps",
         "importBy": "@quincylvania",
-        "nps": "showers"
+        "nps": "showers",
+        "openhistoricalmap": "shower"
       },
       {
         "newId": "person_shushing",
@@ -4609,6 +4657,7 @@
         "newId": "pill_bottle_with_greek_cross",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "pharmacy",
         "osmcarto": "amenity/pharmacy",
         "osmic": "health/pharmacy"
       },
@@ -4647,7 +4696,8 @@
         "newId": "place_of_worship_building",
         "src": "maki",
         "importBy": "@quincylvania",
-        "maki": "place-of-worship"
+        "maki": "place-of-worship",
+        "openhistoricalmap": "place_of_worship"
       },
       {
         "newId": "plan_in_raised_planter",
@@ -4663,6 +4713,7 @@
         "americana": "poi_plane",
         "maki": "airport",
         "nps": "airport",
+        "openhistoricalmap": "airport",
         "osmcarto": "amenity/aerodrome",
         "osmic": "transport/airport"
       },
@@ -4855,7 +4906,8 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "maki": "airfield",
-        "nps": "airfield"
+        "nps": "airfield",
+        "openhistoricalmap": "airfield"
       },
       {
         "newId": "public_speaker",
@@ -4923,6 +4975,7 @@
         "importBy": "@quincylvania",
         "char": "☢️",
         "healthicons": "symbols/hazardous",
+        "openhistoricalmap": "generator_nuclear",
         "temaki": "radiation"
       },
       {
@@ -5038,6 +5091,7 @@
         "importBy": "@quincylvania",
         "maki": "recycling",
         "nps": "recycling",
+        "openhistoricalmap": "recycling",
         "osmcarto": "amenity/recycling",
         "osmic": "amenity/recycling"
       },
@@ -5053,6 +5107,7 @@
         "src": "osmcarto",
         "importBy": "@quincylvania",
         "maki": "jewelry-store",
+        "openhistoricalmap": "jewelry",
         "osmcarto": "shop/jewelry"
       },
       {
@@ -5299,6 +5354,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "maki": "shoe",
+        "openhistoricalmap": "shoes",
         "osmcarto": "shop/shoes",
         "osmic": "shop/shoes"
       },
@@ -5314,6 +5370,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "maki": "shop",
+        "openhistoricalmap": "shop",
         "osmic": "shop/convenience"
       },
       {
@@ -5331,6 +5388,11 @@
         "americana": "poi_supermarket",
         "maki": "grocery",
         "opengemeenten": "Winkelwagen",
+        "openhistoricalmap": [
+          "grocery",
+          "marketplace",
+          "supermarket"
+        ],
         "osmcarto": "shop/supermarket",
         "osmic": "shop/supermarket"
       },
@@ -5469,6 +5531,7 @@
         "americana": "poi_hotel",
         "maki": "lodging",
         "nps": "lodging",
+        "openhistoricalmap": "hotel",
         "osmcarto": "tourism/hotel",
         "osmic": "accommodation/hotel"
       },
@@ -5527,7 +5590,8 @@
         "newId": "snowcapped_mountain",
         "src": "maki",
         "importBy": "@quincylvania",
-        "maki": "mountain"
+        "maki": "mountain",
+        "openhistoricalmap": "peak"
       },
       {
         "newId": "snowcapped_mountain_range",
@@ -5689,6 +5753,7 @@
         "newId": "square",
         "by": "@quincylvania",
         "maki": "square",
+        "openhistoricalmap": "station",
         "osmcarto": "square"
       },
       {
@@ -5697,7 +5762,11 @@
         "importBy": "@quincylvania",
         "char": "🎓",
         "americana": "poi_mortarboard",
-        "maki": "college"
+        "maki": "college",
+        "openhistoricalmap": [
+          "college",
+          "university"
+        ]
       },
       {
         "newId": "square_outline",
@@ -5739,6 +5808,7 @@
         "importBy": "@quincylvania",
         "char": "☪️",
         "maki": "religious-muslim",
+        "openhistoricalmap": "muslim",
         "osmcarto": "religion/muslim",
         "osmic": "religious/muslim"
       },
@@ -5923,6 +5993,7 @@
         "by": "@quincylvania",
         "char": "🚖",
         "americana": "poi_taxi",
+        "openhistoricalmap": "taxi",
         "osmcarto": "amenity/taxi",
         "osmic": "transport/taxi",
         "temaki": "taxi_stand"
@@ -6005,6 +6076,7 @@
         "newId": "three_dot_vertical_line_in_rectangle",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "traffic_signals",
         "osmcarto": "highway/traffic_light",
         "temaki": "traffic_signals"
       },
@@ -6243,6 +6315,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "maki": "waste-basket",
+        "openhistoricalmap": "waste_basket",
         "osmcarto": "amenity/waste_basket",
         "osmic": "outdoor/waste-basket"
       },
@@ -6365,6 +6438,7 @@
         "newId": "tshirt",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "clothes",
         "osmcarto": "shop/clothes",
         "osmic": "shop/clothes"
       },
@@ -6385,6 +6459,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "maki": "garden",
+        "openhistoricalmap": "garden",
         "osmcarto": "shop/florist",
         "osmic": "shop/florist"
       },
@@ -6630,6 +6705,7 @@
         "importBy": "@quincylvania",
         "maki": "laundry",
         "nps": "laundry",
+        "openhistoricalmap": "dry_cleaning",
         "osmcarto": "shop/laundry",
         "osmic": "shop/laundry",
         "temaki": "laundry"
@@ -6670,6 +6746,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "drinking_water_well",
         "temaki": "water_tap_drinkable"
       },
       {
@@ -6691,6 +6768,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "pump_powered",
         "temaki": "well_pump_powered"
       },
       {
@@ -6698,6 +6776,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "pump_manual",
         "temaki": "well_pump_manual"
       },
       {
@@ -6705,6 +6784,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "water_tower",
         "osmcarto": "man_made/water_tower",
         "osmic": "outdoor/water-tower",
         "temaki": "water_tower"
@@ -6733,7 +6813,8 @@
         "newId": "watermill_on_water",
         "src": "maki",
         "importBy": "@quincylvania",
-        "maki": "watermill"
+        "maki": "watermill",
+        "openhistoricalmap": "watermill"
       },
       {
         "newId": "webcam",
@@ -6775,6 +6856,7 @@
         "src": "temaki",
         "importBy": "@quincylvania",
         "opengemeenten": "Windenergie",
+        "openhistoricalmap": "generator_wind",
         "osmcarto": "man_made/generator_wind",
         "osmic": "energy/power-wind",
         "temaki": "wind_turbine"
@@ -6832,7 +6914,8 @@
         "by": "@quincylvania",
         "char": "🚻",
         "healthicons": "people/male-and_female",
-        "maki": "toilet"
+        "maki": "toilet",
+        "openhistoricalmap": "toilets"
       },
       {
         "newId": "womens_restroom_symbol",
@@ -6978,7 +7061,8 @@
     "iconChanges": [
       {
         "newId": "car_profile",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "openhistoricalmap": "car"
       },
       {
         "newId": "car_profile_with_raised_hood",
@@ -7139,6 +7223,7 @@
           "poi_bus",
           "poi_bus_circle"
         ],
+        "openhistoricalmap": "bus_stop",
         "osmic": "transport/bus-station"
       },
       {
@@ -7199,7 +7284,8 @@
           "star"
         ],
         "issue": "4",
-        "americana": "place_star_in_circle"
+        "americana": "place_star_in_circle",
+        "openhistoricalmap": "capital"
       },
       {
         "newId": "cocktail_with_straw",
@@ -7292,6 +7378,7 @@
         "by": "@quincylvania",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "openhistoricalmap": "jewish",
         "osmcarto": "religion/jewish"
       },
       {
@@ -8210,6 +8297,7 @@
         "newId": "tipi_campsite",
         "by": "@quincylvania",
         "issue": "52",
+        "openhistoricalmap": "camp_site",
         "osmcarto": "tourism/camping",
         "osmic": "outdoor/camping"
       },
@@ -8932,7 +9020,8 @@
         "newId": "dot_with_rays_right",
         "src": "nps",
         "importBy": "@quincylvania",
-        "nps": "scenic-viewpoint"
+        "nps": "scenic-viewpoint",
+        "openhistoricalmap": "viewpoint"
       },
       {
         "newId": "bullet_train",
@@ -8947,7 +9036,8 @@
       {
         "newId": "steam_train",
         "by": "@quincylvania",
-        "inspo": "steam_train_on_railway_track"
+        "inspo": "steam_train_on_railway_track",
+        "openhistoricalmap": "railstation"
       },
       {
         "newId": "steam_train_with_tires",
@@ -9232,6 +9322,7 @@
         "by": "@quincylvania",
         "issue": "52",
         "char": "🚰",
+        "openhistoricalmap": "drinking_water",
         "osmic": "outdoor/drinking-water"
       },
       {
@@ -12119,7 +12210,8 @@
       },
       {
         "newId": "drink_can",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "openhistoricalmap": "beverages"
       },
       {
         "newId": "whistle",
@@ -14709,6 +14801,178 @@
         "newId": "pixel_gasoline_pump",
         "by": "@quincylvania",
         "inspo": "gasoline_pump"
+      }
+    ]
+  },
+  {
+    "majorVersion": "25",
+    "date": "2026-07-01",
+    "iconChanges": [
+      {
+        "newId": "button",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "tailor"
+      },
+      {
+        "newId": "paintbrush",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "artwork"
+      },
+      {
+        "newId": "hammer_with_nail",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "carpenter"
+      },
+      {
+        "newId": "tabletop_microphone",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "studio"
+      },
+      {
+        "newId": "bell",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "bell_tower"
+      },
+      {
+        "newId": "classical_statue",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": [
+          "sculpture",
+          "statue"
+        ]
+      },
+      {
+        "newId": "bucket",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "bucket"
+      },
+      {
+        "newId": "clapperboard",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "cinema"
+      },
+      {
+        "newId": "coffin_with_latin_cross",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "funeral_directors"
+      },
+      {
+        "newId": "coffin",
+        "by": "@quincylvania",
+        "inspo": "coffin_with_latin_cross"
+      },
+      {
+        "newId": "telegraph_key",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "telegraph"
+      },
+      {
+        "newId": "horizontal_storage_tank_on_supports",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "storage_tank"
+      },
+      {
+        "newId": "lantern_lamppost",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "street_lamp"
+      },
+      {
+        "newId": "tshirt_on_clothes_hanger_and_folded_linens",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "laundry"
+      },
+      {
+        "newId": "person_running_after_person",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "school"
+      },
+      {
+        "newId": "car_wheel_with_tire",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "tyres"
+      },
+      {
+        "newId": "screw_beside_nail",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "hardware"
+      },
+      {
+        "newId": "open_scissors_crossing_handled_comb",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": [
+          "barber",
+          "hairdresser",
+          "salon"
+        ]
+      },
+      {
+        "oldId": "memorial_stone",
+        "newId": "memorial_stone",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "memorial_stone_with_inscription",
+        "newId": "memorial_stone_with_inscription",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "memorial_stone_with_latin_cross",
+        "by": "@quincylvania",
+        "inspo": "memorial_stone",
+        "issue": "233",
+        "openhistoricalmap": "grave_yard"
+      },
+      {
+        "newId": "officer",
+        "by": "@quincylvania",
+        "inspo": [
+          "police_officer",
+          "officer_with_stop_arm"
+        ]
+      },
+      {
+        "newId": "military_police_officer",
+        "by": "@quincylvania",
+        "inspo": [
+          "police_officer",
+          "military_police_officer_with_stop_arm"
+        ],
+        "issue": "233",
+        "openhistoricalmap": "police"
       }
     ]
   }

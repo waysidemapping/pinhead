@@ -33,6 +33,13 @@
     "iconDir": "Svg/Regular diapositive"
   },
   {
+    "id": "openhistoricalmap",
+    "name": "OpenHistoricalMap",
+    "repo": "https://github.com/OpenHistoricalMap/map-styles.git",
+    "iconDir": "historical/poi",
+    "filenameSuffix": "-18"
+  },
+  {
     "id": "opentrailmap",
     "name": "OpenTrailMap",
     "repo": "https://github.com/osmus/opentrailmap.git",
