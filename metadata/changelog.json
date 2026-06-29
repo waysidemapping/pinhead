@@ -15049,6 +15049,11 @@
         "openhistoricalmap": "police"
       },
       {
+        "newId": "taxi_checkerboard",
+        "by": "@quincylvania",
+        "inspo": "car_with_taxi_checkerboard"
+      },
+      {
         "newId": "pixel_fork_and_knife",
         "by": "@quincylvania",
         "inspo": "fork_and_knife"
