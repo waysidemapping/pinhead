@@ -14942,11 +14942,13 @@
       {
         "oldId": "memorial_stone",
         "newId": "memorial_stone",
+        "edit": "resize",
         "by": "@quincylvania"
       },
       {
         "oldId": "memorial_stone_with_inscription",
         "newId": "memorial_stone_with_inscription",
+        "edit": "resize",
         "by": "@quincylvania"
       },
       {
