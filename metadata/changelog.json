@@ -14957,6 +14957,13 @@
         "openhistoricalmap": "grave_yard"
       },
       {
+        "newId": "lowrise_apartment_building_on_ground",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "apartment"
+      },
+      {
         "newId": "open_envelope_right",
         "by": "@quincylvania",
         "inspo": "open_envelope_right_with_dollar"
