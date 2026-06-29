@@ -14957,6 +14957,48 @@
         "openhistoricalmap": "grave_yard"
       },
       {
+        "newId": "open_envelope_right",
+        "by": "@quincylvania",
+        "inspo": "open_envelope_right_with_dollar"
+      },
+      {
+        "newId": "open_envelope_right_with_dollar",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "money_transfer"
+      },
+      {
+        "newId": "open_envelope_right_with_euro",
+        "by": "@quincylvania",
+        "inspo": "open_envelope_right_with_dollar"
+      },
+      {
+        "newId": "open_envelope_right_with_pound",
+        "by": "@quincylvania",
+        "inspo": "open_envelope_right_with_dollar"
+      },
+      {
+        "newId": "open_envelope_right_with_yen_yuan",
+        "by": "@quincylvania",
+        "inspo": "open_envelope_right_with_dollar"
+      },
+      {
+        "newId": "open_envelope_right_with_rupee",
+        "by": "@quincylvania",
+        "inspo": "open_envelope_right_with_dollar"
+      },
+      {
+        "newId": "open_envelope_right_with_ruble",
+        "by": "@quincylvania",
+        "inspo": "open_envelope_right_with_dollar"
+      },
+      {
+        "newId": "open_envelope_right_with_peso",
+        "by": "@quincylvania",
+        "inspo": "open_envelope_right_with_dollar"
+      },
+      {
         "newId": "officer",
         "by": "@quincylvania",
         "inspo": [
