@@ -14964,6 +14964,43 @@
         "openhistoricalmap": "apartment"
       },
       {
+        "newId": "pin_pad_with_dollar",
+        "src": "openhistoricalmap",
+        "importBy": "@quincylvania",
+        "issue": "233",
+        "openhistoricalmap": "atm"
+      },
+      {
+        "newId": "pin_pad_with_euro",
+        "by": "@quincylvania",
+        "inspo": "pin_pad_with_dollar"
+      },
+      {
+        "newId": "pin_pad_with_pound",
+        "by": "@quincylvania",
+        "inspo": "pin_pad_with_dollar"
+      },
+      {
+        "newId": "pin_pad_with_yen_yuan",
+        "by": "@quincylvania",
+        "inspo": "pin_pad_with_dollar"
+      },
+      {
+        "newId": "pin_pad_with_rupee",
+        "by": "@quincylvania",
+        "inspo": "pin_pad_with_dollar"
+      },
+      {
+        "newId": "pin_pad_with_ruble",
+        "by": "@quincylvania",
+        "inspo": "pin_pad_with_dollar"
+      },
+      {
+        "newId": "pin_pad_with_peso",
+        "by": "@quincylvania",
+        "inspo": "pin_pad_with_dollar"
+      },
+      {
         "newId": "open_envelope_right",
         "by": "@quincylvania",
         "inspo": "open_envelope_right_with_dollar"
