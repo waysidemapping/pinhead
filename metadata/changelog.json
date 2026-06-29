@@ -14999,6 +14999,38 @@
         "inspo": "open_envelope_right_with_dollar"
       },
       {
+        "newId": "die_face_with_one_pip",
+        "by": "@quincylvania",
+        "char": "⚀"
+      },
+      {
+        "newId": "die_face_with_two_pips",
+        "by": "@quincylvania",
+        "char": "⚁"
+      },
+      {
+        "newId": "die_face_with_three_pips",
+        "by": "@quincylvania",
+        "issue": "233",
+        "char": "⚂",
+        "openhistoricalmap": "gambling"
+      },
+      {
+        "newId": "die_face_with_four_pips",
+        "by": "@quincylvania",
+        "char": "⚃"
+      },
+      {
+        "newId": "die_face_with_five_pips",
+        "by": "@quincylvania",
+        "char": "⚄"
+      },
+      {
+        "newId": "die_face_with_six_pips",
+        "by": "@quincylvania",
+        "char": "⚅"
+      },
+      {
         "newId": "officer",
         "by": "@quincylvania",
         "inspo": [
