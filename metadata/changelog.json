@@ -15003,6 +15003,12 @@
         "inspo": "pin_pad_with_dollar"
       },
       {
+        "newId": "pin_pad_with_shekel",
+        "by": "@quincylvania",
+        "inspo": "pin_pad_with_dollar",
+        "issue": "154"
+      },
+      {
         "newId": "open_envelope_right",
         "by": "@quincylvania",
         "inspo": "open_envelope_right_with_dollar"
@@ -15043,6 +15049,12 @@
         "newId": "open_envelope_right_with_peso",
         "by": "@quincylvania",
         "inspo": "open_envelope_right_with_dollar"
+      },
+      {
+        "newId": "open_envelope_right_with_shekel",
+        "by": "@quincylvania",
+        "inspo": "open_envelope_right_with_dollar",
+        "issue": "154"
       },
       {
         "newId": "die_face_with_one_pip",
@@ -15098,6 +15110,71 @@
         "newId": "taxi_checkerboard",
         "by": "@quincylvania",
         "inspo": "car_with_taxi_checkerboard"
+      },
+      {
+        "newId": "shekel",
+        "by": "@quincylvania",
+        "issue": "154"
+      },
+      {
+        "newId": "person_using_terminal_kiosk_with_shekel",
+        "by": "@quincylvania",
+        "inspo": "person_using_terminal_kiosk_with_dollar",
+        "issue": "154"
+      },
+      {
+        "newId": "shopping_bag_with_shekel",
+        "by": "@quincylvania",
+        "inspo": "shopping_bag_with_dollar",
+        "issue": "154"
+      },
+      {
+        "newId": "milk_carton_and_apple_and_shekel",
+        "by": "@quincylvania",
+        "inspo": "milk_carton_and_apple_and_euro",
+        "issue": "154"
+      },
+      {
+        "newId": "car_with_shekel",
+        "by": "@quincylvania",
+        "inspo": "car_with_dollar",
+        "issue": "154"
+      },
+      {
+        "newId": "bicycle_and_shekel",
+        "by": "@quincylvania",
+        "inspo": "bicycle_and_dollar",
+        "issue": "154"
+      },
+      {
+        "newId": "cargobike_and_shekel",
+        "by": "@quincylvania",
+        "inspo": "cargobike_and_dollar",
+        "issue": "154"
+      },
+      {
+        "newId": "campsite_with_shekel",
+        "by": "@quincylvania",
+        "inspo": "campsite_with_dollar",
+        "issue": "154"
+      },
+      {
+        "newId": "tipi_campsite_with_shekel",
+        "by": "@quincylvania",
+        "inspo": "tipi_campsite_with_dollar",
+        "issue": "154"
+      },
+      {
+        "newId": "tag_with_shekel",
+        "by": "@quincylvania",
+        "inspo": "tag_with_dollar",
+        "issue": "154"
+      },
+      {
+        "newId": "pixel_shekel",
+        "by": "@quincylvania",
+        "inspo": "shekel",
+        "issue": "154"
       },
       {
         "newId": "pixel_fork_and_knife",
