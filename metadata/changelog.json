@@ -15243,6 +15243,16 @@
         "openhistoricalmap": "police"
       },
       {
+        "newId": "transit_vehicle_with_pantograph_on_railway_track",
+        "by": "@quincylvania",
+        "inspo": [
+          "transit_vehicle_on_railway_track",
+          "bus_with_pantograph"
+        ],
+        "issue": "233",
+        "openhistoricalmap": "tram_stop"
+      },
+      {
         "newId": "taxi_checkerboard",
         "by": "@quincylvania",
         "inspo": "car_with_taxi_checkerboard"
