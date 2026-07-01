@@ -14982,6 +14982,16 @@
         "osmcarto": "amenity/public_bookcase"
       },
       {
+        "newId": "traffic_cone_and_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "traffic_cone",
+          "exclamation_point"
+        ],
+        "issue": "141",
+        "opengemeenten": "Onderhoud"
+      },
+      {
         "oldId": "memorial_stone",
         "newId": "memorial_stone",
         "edit": "resize",
