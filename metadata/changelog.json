@@ -14968,6 +14968,16 @@
         ]
       },
       {
+        "newId": "open_book_under_roof",
+        "by": "@quincylvania",
+        "inspo": [
+          "open_book",
+          "crates_under_roof"
+        ],
+        "issue": "180",
+        "osmcarto": "amenity/public_bookcase"
+      },
+      {
         "oldId": "memorial_stone",
         "newId": "memorial_stone",
         "edit": "resize",
