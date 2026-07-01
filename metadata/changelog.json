@@ -14809,6 +14809,34 @@
     "date": "2026-07-01",
     "iconChanges": [
       {
+        "newId": "canoe",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "canoe_on_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "canoe",
+          "motorboat_on_water"
+        ]
+      },
+      {
+        "newId": "canoe_and_key",
+        "by": "@quincylvania",
+        "inspo": [
+          "canoe",
+          "motorboat_and_key"
+        ]
+      },
+      {
+        "newId": "canoe_and_tag",
+        "by": "@quincylvania",
+        "inspo": [
+          "canoe",
+          "motorboat_and_tag"
+        ]
+      },
+      {
         "newId": "button",
         "src": "openhistoricalmap",
         "importBy": "@quincylvania",
