@@ -15055,6 +15055,12 @@
         "inspo": "pin_pad_with_dollar"
       },
       {
+        "newId": "pin_pad_with_baht",
+        "by": "@quincylvania",
+        "inspo": "pin_pad_with_dollar",
+        "issue": "243"
+      },
+      {
         "newId": "pin_pad_with_shekel",
         "by": "@quincylvania",
         "inspo": "pin_pad_with_dollar",
@@ -15101,6 +15107,12 @@
         "newId": "open_envelope_right_with_peso",
         "by": "@quincylvania",
         "inspo": "open_envelope_right_with_dollar"
+      },
+      {
+        "newId": "open_envelope_right_with_baht",
+        "by": "@quincylvania",
+        "inspo": "open_envelope_right_with_dollar",
+        "issue": "243"
       },
       {
         "newId": "open_envelope_right_with_shekel",
@@ -15162,6 +15174,14 @@
         "inspo": [
           "motorcycle",
           "bicycle_and_peso"
+        ]
+      },
+      {
+        "newId": "motorcycle_and_baht",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorcycle",
+          "bicycle_and_baht"
         ]
       },
       {
@@ -15357,10 +15377,75 @@
         "issue": "154"
       },
       {
+        "newId": "baht",
+        "by": "@quincylvania",
+        "issue": "243"
+      },
+      {
+        "newId": "person_using_terminal_kiosk_with_baht",
+        "by": "@quincylvania",
+        "inspo": "person_using_terminal_kiosk_with_dollar",
+        "issue": "243"
+      },
+      {
+        "newId": "shopping_bag_with_baht",
+        "by": "@quincylvania",
+        "inspo": "shopping_bag_with_dollar",
+        "issue": "243"
+      },
+      {
+        "newId": "milk_carton_and_apple_and_baht",
+        "by": "@quincylvania",
+        "inspo": "milk_carton_and_apple_and_euro",
+        "issue": "243"
+      },
+      {
+        "newId": "car_with_baht",
+        "by": "@quincylvania",
+        "inspo": "car_with_dollar",
+        "issue": "243"
+      },
+      {
+        "newId": "bicycle_and_baht",
+        "by": "@quincylvania",
+        "inspo": "bicycle_and_dollar",
+        "issue": "243"
+      },
+      {
+        "newId": "cargobike_and_baht",
+        "by": "@quincylvania",
+        "inspo": "cargobike_and_dollar",
+        "issue": "243"
+      },
+      {
+        "newId": "campsite_with_baht",
+        "by": "@quincylvania",
+        "inspo": "campsite_with_dollar",
+        "issue": "243"
+      },
+      {
+        "newId": "tipi_campsite_with_baht",
+        "by": "@quincylvania",
+        "inspo": "tipi_campsite_with_dollar",
+        "issue": "243"
+      },
+      {
+        "newId": "tag_with_baht",
+        "by": "@quincylvania",
+        "inspo": "tag_with_dollar",
+        "issue": "243"
+      },
+      {
         "newId": "pixel_shekel",
         "by": "@quincylvania",
         "inspo": "shekel",
         "issue": "154"
+      },
+      {
+        "newId": "pixel_baht",
+        "by": "@quincylvania",
+        "inspo": "baht",
+        "issue": "243"
       },
       {
         "newId": "pixel_bell",
