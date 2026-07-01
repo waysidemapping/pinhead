@@ -15085,6 +15085,70 @@
         "issue": "154"
       },
       {
+        "newId": "motorcycle_and_dollar",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorcycle",
+          "bicycle_and_dollar"
+        ]
+      },
+      {
+        "newId": "motorcycle_and_euro",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorcycle",
+          "bicycle_and_euro"
+        ]
+      },
+      {
+        "newId": "motorcycle_and_pound",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorcycle",
+          "bicycle_and_pound"
+        ]
+      },
+      {
+        "newId": "motorcycle_and_yen_yuan",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorcycle",
+          "bicycle_and_yen_yuan"
+        ]
+      },
+      {
+        "newId": "motorcycle_and_rupee",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorcycle",
+          "bicycle_and_rupee"
+        ]
+      },
+      {
+        "newId": "motorcycle_and_ruble",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorcycle",
+          "bicycle_and_ruble"
+        ]
+      },
+      {
+        "newId": "motorcycle_and_peso",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorcycle",
+          "bicycle_and_peso"
+        ]
+      },
+      {
+        "newId": "motorcycle_and_shekel",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorcycle",
+          "bicycle_and_shekel"
+        ]
+      },
+      {
         "newId": "die_face_with_one_pip",
         "by": "@quincylvania",
         "char": "⚀"
