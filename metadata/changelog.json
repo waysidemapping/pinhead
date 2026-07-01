@@ -14968,6 +14968,10 @@
         ]
       },
       {
+        "oldId": "scissors_open",
+        "newId": "open_scissors"
+      },
+      {
         "newId": "open_book_under_roof",
         "by": "@quincylvania",
         "inspo": [
