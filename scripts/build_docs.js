@@ -1,4 +1,4 @@
-import { execSync } from "child_process";
+import { execSync, execFileSync } from "child_process";
 import { existsSync, renameSync, rmSync, copyFileSync, mkdirSync } from "fs";
 import { join } from "path";
 import { downloadExternalSourceAssets } from "../src/ExternalSourceManager.js";
@@ -23,17 +23,17 @@ for (let i = 1; i <= currentMajorVersion; i+=1) {
 downloadExternalSourceAssets(join(docsDir, 'srcicons'));
 
 function downloadPackage(spec) {
-  const file = execSync(`npm pack "${spec}" --silent`, { encoding: "utf8" }).trim();
-  const folderName = file.replace(/\.tgz$/, "");
+  const file = execFileSync("npm", ["pack", spec, "--silent"], { encoding: "utf8" }).trim();
+  const folderNameDownloaded = file.replace(/\.tgz$/, "");
 
-  execSync(`tar -xzf "${file}"`, { stdio: "inherit" });
+  execFileSync("tar", ["-xzf", file], { stdio: "inherit" });
 
   if (!existsSync("package")) throw new Error("package/ folder not found after extraction.");
 
-  renameSync("package", folderName);
+  renameSync("package", folderNameDownloaded);
   rmSync(file);
 
-  return folderName;
+  return folderNameDownloaded;
 }
 
 function downloadLegacyIcons(majorVersion, targetDir) {
@@ -43,8 +43,8 @@ function downloadLegacyIcons(majorVersion, targetDir) {
   const iconDir = join(folderName, "dist", "icons");
   if (!existsSync(iconDir)) throw new Error(`dist/icons not found in ${folderName}`);
 
-  execSync(`cp -r "${iconDir}/." "${targetDir}"`);
-  execSync(`cp -r "${iconDir}/." "${join(docsDir, 'latest')}"`);
+  execFileSync("cp", ["-r", `${iconDir}/.`, targetDir]);
+  execFileSync("cp", ["-r", `${iconDir}/.`, join(docsDir, 'latest')]);
 
   if (majorVersion === currentMajorVersion) {
     copyFileSync(join(folderName, "package.json"), join(docsDir, 'package.json'));
