@@ -14982,6 +14982,27 @@
         "osmcarto": "amenity/public_bookcase"
       },
       {
+        "newId": "gable_roofed_building",
+        "by": "@quincylvania",
+        "inspo": "car_in_gable_roofed_building"
+      },
+      {
+        "oldId": "car_in_gable_roofed_building",
+        "newId": "car_in_gable_roofed_building",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "tabletop_microphone_in_gable_roofed_building",
+        "by": "@quincylvania",
+        "inspo": [
+          "tabletop_microphone",
+          "gable_roofed_building"
+        ],
+        "issue": "182",
+        "nps": "event-facility"
+      },
+      {
         "newId": "traffic_cone_and_exclamation_point",
         "by": "@quincylvania",
         "inspo": [
