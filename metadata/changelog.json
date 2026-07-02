@@ -15073,6 +15073,141 @@
         "openhistoricalmap": "apartment"
       },
       {
+        "newId": "officer",
+        "by": "@quincylvania",
+        "inspo": [
+          "police_officer",
+          "officer_with_stop_arm"
+        ]
+      },
+      {
+        "newId": "military_police_officer",
+        "by": "@quincylvania",
+        "inspo": [
+          "police_officer",
+          "military_police_officer_with_stop_arm"
+        ],
+        "issue": "233",
+        "openhistoricalmap": "police"
+      },
+      {
+        "newId": "transit_vehicle_with_pantograph_on_railway_track",
+        "by": "@quincylvania",
+        "inspo": [
+          "transit_vehicle_on_railway_track",
+          "bus_with_pantograph"
+        ],
+        "issue": "233",
+        "openhistoricalmap": "tram_stop"
+      },
+      {
+        "newId": "taxi_checkerboard",
+        "by": "@quincylvania",
+        "inspo": "car_with_taxi_checkerboard"
+      },
+      {
+        "newId": "die_face_with_one_pip",
+        "by": "@quincylvania",
+        "char": "⚀"
+      },
+      {
+        "newId": "die_face_with_two_pips",
+        "by": "@quincylvania",
+        "char": "⚁"
+      },
+      {
+        "newId": "die_face_with_three_pips",
+        "by": "@quincylvania",
+        "issue": "233",
+        "char": "⚂",
+        "openhistoricalmap": "gambling"
+      },
+      {
+        "newId": "die_face_with_four_pips",
+        "by": "@quincylvania",
+        "char": "⚃"
+      },
+      {
+        "newId": "die_face_with_five_pips",
+        "by": "@quincylvania",
+        "char": "⚄"
+      },
+      {
+        "newId": "die_face_with_six_pips",
+        "by": "@quincylvania",
+        "char": "⚅"
+      },
+      {
+        "oldId": "car_and_wrench",
+        "newId": "car_and_wrench",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "bicycle_and_wrench",
+        "newId": "bicycle_and_wrench",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "motorcycle_and_wrench",
+        "newId": "motorcycle_and_wrench",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "motorboat_and_wrench",
+        "newId": "motorboat_and_wrench",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "cargobike_and_wrench",
+        "by": "@quincylvania",
+        "inspo": "bicycle_and_wrench"
+      },
+      {
+        "oldId": "car_and_key",
+        "newId": "car_and_key",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "bicycle_and_key",
+        "newId": "bicycle_and_key",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "motorcycle_and_key",
+        "newId": "motorcycle_and_key",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "motorboat_and_key",
+        "newId": "motorboat_and_key",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "suitcase_and_key",
+        "newId": "suitcase_and_key",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "garage_and_key",
+        "newId": "garage_and_key",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "cargobike_and_key",
+        "by": "@quincylvania",
+        "inspo": "bicycle_and_key"
+      },
+      {
         "newId": "pin_pad_with_dollar",
         "src": "openhistoricalmap",
         "importBy": "@quincylvania",
@@ -15246,141 +15381,6 @@
           "motorcycle",
           "bicycle_and_shekel"
         ]
-      },
-      {
-        "newId": "die_face_with_one_pip",
-        "by": "@quincylvania",
-        "char": "⚀"
-      },
-      {
-        "newId": "die_face_with_two_pips",
-        "by": "@quincylvania",
-        "char": "⚁"
-      },
-      {
-        "newId": "die_face_with_three_pips",
-        "by": "@quincylvania",
-        "issue": "233",
-        "char": "⚂",
-        "openhistoricalmap": "gambling"
-      },
-      {
-        "newId": "die_face_with_four_pips",
-        "by": "@quincylvania",
-        "char": "⚃"
-      },
-      {
-        "newId": "die_face_with_five_pips",
-        "by": "@quincylvania",
-        "char": "⚄"
-      },
-      {
-        "newId": "die_face_with_six_pips",
-        "by": "@quincylvania",
-        "char": "⚅"
-      },
-      {
-        "newId": "officer",
-        "by": "@quincylvania",
-        "inspo": [
-          "police_officer",
-          "officer_with_stop_arm"
-        ]
-      },
-      {
-        "newId": "military_police_officer",
-        "by": "@quincylvania",
-        "inspo": [
-          "police_officer",
-          "military_police_officer_with_stop_arm"
-        ],
-        "issue": "233",
-        "openhistoricalmap": "police"
-      },
-      {
-        "newId": "transit_vehicle_with_pantograph_on_railway_track",
-        "by": "@quincylvania",
-        "inspo": [
-          "transit_vehicle_on_railway_track",
-          "bus_with_pantograph"
-        ],
-        "issue": "233",
-        "openhistoricalmap": "tram_stop"
-      },
-      {
-        "newId": "taxi_checkerboard",
-        "by": "@quincylvania",
-        "inspo": "car_with_taxi_checkerboard"
-      },
-      {
-        "oldId": "car_and_wrench",
-        "newId": "car_and_wrench",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "bicycle_and_wrench",
-        "newId": "bicycle_and_wrench",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "motorcycle_and_wrench",
-        "newId": "motorcycle_and_wrench",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "motorboat_and_wrench",
-        "newId": "motorboat_and_wrench",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "newId": "cargobike_and_wrench",
-        "by": "@quincylvania",
-        "inspo": "bicycle_and_wrench"
-      },
-      {
-        "oldId": "car_and_key",
-        "newId": "car_and_key",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "bicycle_and_key",
-        "newId": "bicycle_and_key",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "motorcycle_and_key",
-        "newId": "motorcycle_and_key",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "motorboat_and_key",
-        "newId": "motorboat_and_key",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "suitcase_and_key",
-        "newId": "suitcase_and_key",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "garage_and_key",
-        "newId": "garage_and_key",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "newId": "cargobike_and_key",
-        "by": "@quincylvania",
-        "inspo": "bicycle_and_key"
       },
       {
         "newId": "shekel",
