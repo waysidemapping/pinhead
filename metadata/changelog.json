@@ -15003,6 +15003,20 @@
         "nps": "event-facility"
       },
       {
+        "newId": "suitcase_in_rectangle_outline_and_key",
+        "by": "@quincylvania",
+        "inspo": "suitcase_and_key",
+        "issue": "182",
+        "nps": "lockers-storage"
+      },
+      {
+        "newId": "ear_atop_slash_with_t",
+        "src": "nps",
+        "importBy": "@quincylvania",
+        "issue": "182",
+        "nps": "assistive-listening-systems-t-coil-compatible"
+      },
+      {
         "newId": "traffic_cone_and_exclamation_point",
         "by": "@quincylvania",
         "inspo": [
