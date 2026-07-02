@@ -15440,6 +15440,306 @@
         "issue": "243"
       },
       {
+        "newId": "angry_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/angry"
+      },
+      {
+        "newId": "anguished_face_with_spots_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/measles"
+      },
+      {
+        "newId": "calm_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/calm"
+      },
+      {
+        "newId": "confused_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/confused"
+      },
+      {
+        "newId": "coughing_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/coughing"
+      },
+      {
+        "newId": "expectorating_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/expectorate"
+      },
+      {
+        "newId": "face_with_tongue_out_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/tongue"
+      },
+      {
+        "newId": "vomiting_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/vomitting"
+      },
+      {
+        "newId": "frowny_face_wearing_head_bandage_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/bandaged"
+      },
+      {
+        "newId": "laughing_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/happy"
+      },
+      {
+        "newId": "nauseous_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/nauseous"
+      },
+      {
+        "newId": "nervous_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/nervous"
+      },
+      {
+        "newId": "neutral_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/neutral"
+      },
+      {
+        "newId": "sad_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/not-ok"
+      },
+      {
+        "newId": "sad_face_with_tear_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/crying"
+      },
+      {
+        "newId": "smiling_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/ok"
+      },
+      {
+        "newId": "smiling_face_wearing_face_mask_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/masked"
+      },
+      {
+        "newId": "smiling_face_wearing_eyeglasses_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/eyeglasses"
+      },
+      {
+        "newId": "sobbing_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/loudly-crying"
+      },
+      {
+        "newId": "surprised_face_with_x_eyes_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/dizzy"
+      },
+      {
+        "newId": "tired_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/sad"
+      },
+      {
+        "newId": "tired_face_sweating_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/sweating"
+      },
+      {
+        "newId": "tired_face_with_oral_thermometer_and_sweat_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/fever"
+      },
+      {
+        "newId": "tired_face_with_z_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/sleepy"
+      },
+      {
+        "newId": "woozy_face_outline",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "emotions/woozy"
+      },
+      {
+        "newId": "angry_face",
+        "by": "@quincylvania",
+        "inspo": "angry_face_outline"
+      },
+      {
+        "newId": "anguished_face_with_spots",
+        "by": "@quincylvania",
+        "inspo": "anguished_face_with_spots_outline"
+      },
+      {
+        "newId": "calm_face",
+        "by": "@quincylvania",
+        "inspo": "calm_face_outline"
+      },
+      {
+        "newId": "confused_face",
+        "by": "@quincylvania",
+        "inspo": "confused_face_outline"
+      },
+      {
+        "newId": "coughing_face",
+        "by": "@quincylvania",
+        "inspo": "coughing_face_outline"
+      },
+      {
+        "newId": "expectorating_face",
+        "by": "@quincylvania",
+        "inspo": "expectorating_face_outline"
+      },
+      {
+        "newId": "face_with_tongue_out",
+        "by": "@quincylvania",
+        "inspo": "face_with_tongue_out_outline"
+      },
+      {
+        "newId": "vomiting_face",
+        "by": "@quincylvania",
+        "inspo": "vomiting_face_outline"
+      },
+      {
+        "newId": "frowny_face_wearing_head_bandage",
+        "by": "@quincylvania",
+        "inspo": "frowny_face_wearing_head_bandage_outline"
+      },
+      {
+        "newId": "laughing_face",
+        "by": "@quincylvania",
+        "inspo": "laughing_face_outline"
+      },
+      {
+        "newId": "nauseous_face",
+        "by": "@quincylvania",
+        "inspo": "nauseous_face_outline"
+      },
+      {
+        "newId": "nervous_face",
+        "by": "@quincylvania",
+        "inspo": "nervous_face_outline"
+      },
+      {
+        "newId": "neutral_face",
+        "by": "@quincylvania",
+        "inspo": "neutral_face_outline"
+      },
+      {
+        "newId": "sad_face",
+        "by": "@quincylvania",
+        "inspo": "sad_face_outline"
+      },
+      {
+        "newId": "sad_face_with_tear",
+        "by": "@quincylvania",
+        "inspo": "sad_face_with_tear_outline"
+      },
+      {
+        "newId": "smiling_face",
+        "by": "@quincylvania",
+        "inspo": "smiling_face_outline"
+      },
+      {
+        "newId": "smiling_face_wearing_face_mask",
+        "by": "@quincylvania",
+        "inspo": "smiling_face_wearing_face_mask_outline"
+      },
+      {
+        "newId": "smiling_face_wearing_eyeglasses",
+        "by": "@quincylvania",
+        "inspo": "smiling_face_wearing_eyeglasses_outline"
+      },
+      {
+        "newId": "sobbing_face",
+        "by": "@quincylvania",
+        "inspo": "sobbing_face_outline"
+      },
+      {
+        "newId": "surprised_face_with_x_eyes",
+        "by": "@quincylvania",
+        "inspo": "surprised_face_with_x_eyes_outline"
+      },
+      {
+        "newId": "tired_face",
+        "by": "@quincylvania",
+        "inspo": "tired_face_outline"
+      },
+      {
+        "newId": "tired_face_sweating",
+        "by": "@quincylvania",
+        "inspo": "tired_face_sweating_outline"
+      },
+      {
+        "newId": "tired_face_with_oral_thermometer_and_sweat",
+        "by": "@quincylvania",
+        "inspo": "tired_face_with_oral_thermometer_and_sweat_outline"
+      },
+      {
+        "newId": "tired_face_with_z",
+        "by": "@quincylvania",
+        "inspo": "tired_face_with_z_outline"
+      },
+      {
+        "newId": "woozy_face",
+        "by": "@quincylvania",
+        "inspo": "woozy_face_outline"
+      },
+      {
         "newId": "tag_with_baht",
         "by": "@quincylvania",
         "inspo": "tag_with_dollar",
