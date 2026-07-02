@@ -15440,6 +15440,12 @@
         "issue": "243"
       },
       {
+        "newId": "tag_with_baht",
+        "by": "@quincylvania",
+        "inspo": "tag_with_dollar",
+        "issue": "243"
+      },
+      {
         "newId": "angry_face_outline",
         "src": "healthicons",
         "importBy": "@quincylvania",
@@ -15738,12 +15744,6 @@
         "newId": "woozy_face",
         "by": "@quincylvania",
         "inspo": "woozy_face_outline"
-      },
-      {
-        "newId": "tag_with_baht",
-        "by": "@quincylvania",
-        "inspo": "tag_with_dollar",
-        "issue": "243"
       },
       {
         "newId": "pixel_shekel",
