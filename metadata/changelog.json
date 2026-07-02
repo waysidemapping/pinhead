@@ -15039,13 +15039,6 @@
         "nps": "art"
       },
       {
-        "newId": "suitcase_in_rectangle_outline_and_key",
-        "by": "@quincylvania",
-        "inspo": "suitcase_and_key",
-        "issue": "182",
-        "nps": "lockers-storage"
-      },
-      {
         "newId": "ear_atop_slash_with_t",
         "src": "nps",
         "importBy": "@quincylvania",
@@ -15117,11 +15110,6 @@
         "openhistoricalmap": "tram_stop"
       },
       {
-        "newId": "taxi_checkerboard",
-        "by": "@quincylvania",
-        "inspo": "car_with_taxi_checkerboard"
-      },
-      {
         "newId": "die_face_with_one_pip",
         "by": "@quincylvania",
         "char": "⚀"
@@ -15152,76 +15140,6 @@
         "newId": "die_face_with_six_pips",
         "by": "@quincylvania",
         "char": "⚅"
-      },
-      {
-        "oldId": "car_and_wrench",
-        "newId": "car_and_wrench",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "bicycle_and_wrench",
-        "newId": "bicycle_and_wrench",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "motorcycle_and_wrench",
-        "newId": "motorcycle_and_wrench",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "motorboat_and_wrench",
-        "newId": "motorboat_and_wrench",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "newId": "cargobike_and_wrench",
-        "by": "@quincylvania",
-        "inspo": "bicycle_and_wrench"
-      },
-      {
-        "oldId": "car_and_key",
-        "newId": "car_and_key",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "bicycle_and_key",
-        "newId": "bicycle_and_key",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "motorcycle_and_key",
-        "newId": "motorcycle_and_key",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "motorboat_and_key",
-        "newId": "motorboat_and_key",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "suitcase_and_key",
-        "newId": "suitcase_and_key",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "garage_and_key",
-        "newId": "garage_and_key",
-        "edit": "flip",
-        "by": "@quincylvania"
-      },
-      {
-        "newId": "cargobike_and_key",
-        "by": "@quincylvania",
-        "inspo": "bicycle_and_key"
       },
       {
         "newId": "pin_pad_with_dollar",
@@ -15325,6 +15243,203 @@
         "by": "@quincylvania",
         "inspo": "open_envelope_right_with_dollar",
         "issue": "154"
+      },
+            {
+        "oldId": "key",
+        "newId": "key",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "key_and_arrow_right_above_arrow_left",
+        "by": "@quincylvania",
+        "inspo": "key",
+        "issue": "182",
+        "nps": "rentals"
+      },
+      {
+        "newId": "suitcase_and_arrow_right_above_arrow_left",
+        "by": "@quincylvania",
+        "inspo": [
+          "suitcase_and_key",
+          "key_and_arrow_right_above_arrow_left"
+        ]
+      },
+      {
+        "newId": "car_and_arrow_right_above_arrow_left",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_and_key",
+          "key_and_arrow_right_above_arrow_left"
+        ]
+      },
+      {
+        "newId": "bicycle_and_arrow_right_above_arrow_left",
+        "by": "@quincylvania",
+        "inspo": [
+          "bicycle_and_key",
+          "key_and_arrow_right_above_arrow_left"
+        ],
+        "issue": "182",
+        "nps": "bike-rental"
+      },
+      {
+        "newId": "cargobike_and_arrow_right_above_arrow_left",
+        "by": "@quincylvania",
+        "inspo": [
+          "cargobike",
+          "key_and_arrow_right_above_arrow_left"
+        ]
+      },
+      {
+        "newId": "motorcycle_and_arrow_right_above_arrow_left",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorcycle",
+          "key_and_arrow_right_above_arrow_left"
+        ]
+      },
+      {
+        "oldId": "motorboat_and_key",
+        "newId": "motorboat_and_key",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "motorboat_and_wrench",
+        "newId": "motorboat_and_wrench",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "motorboat_and_arrow_right_above_arrow_left",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorboat_and_key",
+          "key_and_arrow_right_above_arrow_left"
+        ]
+      },
+      {
+        "newId": "garage_and_wrench",
+        "by": "@quincylvania",
+        "inspo": [
+          "garage_and_key",
+          "car_and_wrench"
+        ]
+      },
+            {
+        "newId": "taxi_checkerboard",
+        "by": "@quincylvania",
+        "inspo": "car_with_taxi_checkerboard"
+      },
+       {
+        "newId": "bicycle_and_taxi_checkerboard",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_and_taxi_checkerboard",
+          "bicycle_and_key"
+        ]
+      },
+      {
+        "newId": "cargobike_and_taxi_checkerboard",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_and_taxi_checkerboard",
+          "cargobike"
+        ]
+      },
+      {
+        "newId": "motorcycle_and_taxi_checkerboard",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_and_taxi_checkerboard",
+          "motorcycle"
+        ]
+      },
+       {
+        "newId": "motorboat_and_taxi_checkerboard",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_and_taxi_checkerboard",
+          "motorboat"
+        ]
+      },
+       {
+        "oldId": "car_and_wrench",
+        "newId": "car_and_wrench",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "bicycle_and_wrench",
+        "newId": "bicycle_and_wrench",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "motorcycle_and_wrench",
+        "newId": "motorcycle_and_wrench",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "motorboat_and_wrench",
+        "newId": "motorboat_and_wrench",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "cargobike_and_wrench",
+        "by": "@quincylvania",
+        "inspo": "bicycle_and_wrench"
+      },
+      {
+        "oldId": "car_and_key",
+        "newId": "car_and_key",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "bicycle_and_key",
+        "newId": "bicycle_and_key",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "motorcycle_and_key",
+        "newId": "motorcycle_and_key",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "motorboat_and_key",
+        "newId": "motorboat_and_key",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "suitcase_and_key",
+        "newId": "suitcase_and_key",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "garage_and_key",
+        "newId": "garage_and_key",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "cargobike_and_key",
+        "by": "@quincylvania",
+        "inspo": "bicycle_and_key"
+      },
+      {
+        "newId": "suitcase_in_rectangle_outline_and_key",
+        "by": "@quincylvania",
+        "inspo": "suitcase_and_key",
+        "issue": "182",
+        "nps": "lockers-storage"
       },
       {
         "newId": "motorcycle_and_dollar",
