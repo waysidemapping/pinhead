@@ -15003,6 +15003,26 @@
         "nps": "event-facility"
       },
       {
+        "newId": "cc_text",
+        "by": "@quincylvania",
+        "inspo": [
+          "o",
+          "c"
+        ],
+        "issue": "182",
+        "nps": "closed-captioning"
+      },
+      {
+        "newId": "oc_text",
+        "by": "@quincylvania",
+        "inspo": [
+          "o",
+          "c"
+        ],
+        "issue": "182",
+        "nps": "open-captioning"
+      },
+      {
         "newId": "suitcase_in_rectangle_outline_and_key",
         "by": "@quincylvania",
         "inspo": "suitcase_and_key",
