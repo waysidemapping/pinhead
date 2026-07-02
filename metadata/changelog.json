@@ -15023,6 +15023,22 @@
         "nps": "open-captioning"
       },
       {
+        "newId": "art_text",
+        "by": "@quincylvania",
+        "inspo": [
+          "a",
+          "r",
+          "t"
+        ]
+      },
+      {
+        "newId": "art_text_above_swash_line",
+        "by": "@quincylvania",
+        "inspo": "art_text",
+        "issue": "182",
+        "nps": "art"
+      },
+      {
         "newId": "suitcase_in_rectangle_outline_and_key",
         "by": "@quincylvania",
         "inspo": "suitcase_and_key",
