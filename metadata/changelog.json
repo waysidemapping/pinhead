@@ -14821,38 +14821,6 @@
         ]
       },
       {
-        "newId": "canoe_and_key",
-        "by": "@quincylvania",
-        "inspo": [
-          "canoe",
-          "motorboat_and_key"
-        ]
-      },
-      {
-        "newId": "canoe_and_arrow_right_above_arrow_left",
-        "by": "@quincylvania",
-        "inspo": [
-          "canoe",
-          "key_and_arrow_right_above_arrow_left"
-        ]
-      },
-      {
-        "newId": "canoe_and_taxi_checkerboard",
-        "by": "@quincylvania",
-        "inspo": [
-          "canoe",
-          "car_with_taxi_checkerboard"
-        ]
-      },
-      {
-        "newId": "canoe_and_tag",
-        "by": "@quincylvania",
-        "inspo": [
-          "canoe",
-          "motorboat_and_tag"
-        ]
-      },
-      {
         "newId": "button",
         "src": "openhistoricalmap",
         "importBy": "@quincylvania",
@@ -15344,6 +15312,14 @@
         ]
       },
       {
+        "newId": "canoe_and_arrow_right_above_arrow_left",
+        "by": "@quincylvania",
+        "inspo": [
+          "canoe",
+          "key_and_arrow_right_above_arrow_left"
+        ]
+      },
+      {
         "newId": "garage_and_wrench",
         "by": "@quincylvania",
         "inspo": [
@@ -15394,6 +15370,88 @@
         "inspo": [
           "car_with_taxi_checkerboard",
           "motorboat"
+        ]
+      },
+      {
+        "newId": "canoe_and_taxi_checkerboard",
+        "by": "@quincylvania",
+        "inspo": [
+          "canoe",
+          "car_with_taxi_checkerboard"
+        ]
+      },
+      {
+        "newId": "car_and_locked_lock_with_keyhole",
+        "by": "@quincylvania",
+        "inspo": [
+          "bicycle_and_locked_lock_with_keyhole",
+          "person_boarding_taxi"
+        ]
+      },
+      {
+        "newId": "bicycle_and_locked_lock_with_keyhole",
+        "by": "@quincylvania",
+        "inspo": [
+          "locked_lock_with_keyhole",
+          "bicycle_and_key"
+        ],
+        "issue": "182",
+        "nps": "lock-bikes"
+      },
+      {
+        "newId": "cargobike_and_locked_lock_with_keyhole",
+        "by": "@quincylvania",
+        "inspo": [
+          "bicycle_and_locked_lock_with_keyhole",
+          "cargobike"
+        ]
+      },
+      {
+        "newId": "motorcycle_and_locked_lock_with_keyhole",
+        "by": "@quincylvania",
+        "inspo": [
+          "bicycle_and_locked_lock_with_keyhole",
+          "motorcycle"
+        ]
+      },
+      {
+        "newId": "motorboat_and_locked_lock_with_keyhole",
+        "by": "@quincylvania",
+        "inspo": [
+          "bicycle_and_locked_lock_with_keyhole",
+          "motorboat"
+        ]
+      },
+      {
+        "newId": "canoe_and_locked_lock_with_keyhole",
+        "by": "@quincylvania",
+        "inspo": [
+          "bicycle_and_locked_lock_with_keyhole",
+          "canoe"
+        ]
+      },
+      {
+        "newId": "suitcase_and_locked_lock_with_keyhole",
+        "by": "@quincylvania",
+        "inspo": [
+          "bicycle_and_locked_lock_with_keyhole",
+          "suitcase"
+        ]
+      },
+      {
+        "newId": "canoe_and_key",
+        "by": "@quincylvania",
+        "inspo": [
+          "canoe",
+          "motorboat_and_key"
+        ]
+      },
+      {
+        "newId": "canoe_and_tag",
+        "by": "@quincylvania",
+        "inspo": [
+          "canoe",
+          "motorboat_and_tag"
         ]
       },
       {
