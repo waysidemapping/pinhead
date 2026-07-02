@@ -15530,6 +15530,78 @@
         ]
       },
       {
+        "newId": "motorboat_and_dollar",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorboat",
+          "bicycle_and_dollar"
+        ]
+      },
+      {
+        "newId": "motorboat_and_euro",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorboat",
+          "bicycle_and_euro"
+        ]
+      },
+      {
+        "newId": "motorboat_and_pound",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorboat",
+          "bicycle_and_pound"
+        ]
+      },
+      {
+        "newId": "motorboat_and_yen_yuan",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorboat",
+          "bicycle_and_yen_yuan"
+        ]
+      },
+      {
+        "newId": "motorboat_and_rupee",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorboat",
+          "bicycle_and_rupee"
+        ]
+      },
+      {
+        "newId": "motorboat_and_ruble",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorboat",
+          "bicycle_and_ruble"
+        ]
+      },
+      {
+        "newId": "motorboat_and_peso",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorboat",
+          "bicycle_and_peso"
+        ]
+      },
+      {
+        "newId": "motorboat_and_baht",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorboat",
+          "bicycle_and_baht"
+        ]
+      },
+      {
+        "newId": "motorboat_and_shekel",
+        "by": "@quincylvania",
+        "inspo": [
+          "motorboat",
+          "bicycle_and_shekel"
+        ]
+      },
+      {
         "newId": "shekel",
         "by": "@quincylvania",
         "issue": "154"
