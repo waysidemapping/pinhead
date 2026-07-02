@@ -15244,7 +15244,7 @@
         "inspo": "open_envelope_right_with_dollar",
         "issue": "154"
       },
-            {
+      {
         "oldId": "key",
         "newId": "key",
         "edit": "resize",
@@ -15270,6 +15270,14 @@
         "by": "@quincylvania",
         "inspo": [
           "car_and_key",
+          "key_and_arrow_right_above_arrow_left"
+        ]
+      },
+      {
+        "newId": "taxi_and_arrow_right_above_arrow_left",
+        "by": "@quincylvania",
+        "inspo": [
+          "person_boarding_taxi",
           "key_and_arrow_right_above_arrow_left"
         ]
       },
@@ -15327,16 +15335,24 @@
           "car_and_wrench"
         ]
       },
-            {
+      {
         "newId": "taxi_checkerboard",
         "by": "@quincylvania",
         "inspo": "car_with_taxi_checkerboard"
       },
-       {
+      {
+        "newId": "taxi_and_taxi_checkerboard",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_with_taxi_checkerboard",
+          "person_boarding_taxi"
+        ]
+      },
+      {
         "newId": "bicycle_and_taxi_checkerboard",
         "by": "@quincylvania",
         "inspo": [
-          "car_and_taxi_checkerboard",
+          "car_with_taxi_checkerboard",
           "bicycle_and_key"
         ]
       },
@@ -15344,7 +15360,7 @@
         "newId": "cargobike_and_taxi_checkerboard",
         "by": "@quincylvania",
         "inspo": [
-          "car_and_taxi_checkerboard",
+          "car_with_taxi_checkerboard",
           "cargobike"
         ]
       },
@@ -15352,19 +15368,19 @@
         "newId": "motorcycle_and_taxi_checkerboard",
         "by": "@quincylvania",
         "inspo": [
-          "car_and_taxi_checkerboard",
+          "car_with_taxi_checkerboard",
           "motorcycle"
         ]
       },
-       {
+      {
         "newId": "motorboat_and_taxi_checkerboard",
         "by": "@quincylvania",
         "inspo": [
-          "car_and_taxi_checkerboard",
+          "car_with_taxi_checkerboard",
           "motorboat"
         ]
       },
-       {
+      {
         "oldId": "car_and_wrench",
         "newId": "car_and_wrench",
         "edit": "flip",
