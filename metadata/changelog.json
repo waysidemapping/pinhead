@@ -15794,12 +15794,14 @@
       {
         "newId": "angry_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "angry_face_in_circle_outline"
+        "inspo": "angry_face_in_circle_outline",
+        "char": "😠"
       },
       {
         "newId": "anguished_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "anguished_face_with_spots_in_circle"
+        "inspo": "anguished_face_with_spots_in_circle",
+        "char": "😫"
       },
       {
         "newId": "anguished_face_with_spots_in_circle",
@@ -15809,12 +15811,14 @@
       {
         "newId": "calm_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "calm_face_in_circle_outline"
+        "inspo": "calm_face_in_circle_outline",
+        "char": "😌"
       },
       {
         "newId": "confused_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "confused_face_in_circle_outline"
+        "inspo": "confused_face_in_circle_outline",
+        "char": "😕"
       },
       {
         "newId": "coughing_face_in_circle",
@@ -15824,7 +15828,8 @@
       {
         "newId": "coughing_face_with_spittle_in_circle",
         "by": "@quincylvania",
-        "inspo": "coughing_face_with_spittle_in_circle_outline"
+        "inspo": "coughing_face_with_spittle_in_circle_outline",
+        "char": "😮‍💨"
       },
       {
         "newId": "coughing_face_with_phlegm_in_circle",
@@ -15834,42 +15839,50 @@
       {
         "newId": "face_with_tongue_out_in_circle",
         "by": "@quincylvania",
-        "inspo": "face_with_tongue_out_in_circle_outline"
+        "inspo": "face_with_tongue_out_in_circle_outline",
+        "char": "😛"
       },
       {
         "newId": "vomiting_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "vomiting_face_in_circle_outline"
+        "inspo": "vomiting_face_in_circle_outline",
+        "char": "🤮"
       },
       {
         "newId": "frowning_face_with_head_bandage_in_circle",
         "by": "@quincylvania",
-        "inspo": "frowning_face_with_head_bandage_in_circle_outline"
+        "inspo": "frowning_face_with_head_bandage_in_circle_outline",
+        "char": "🤕"
       },
       {
         "newId": "laughing_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "laughing_face_in_circle_outline"
+        "inspo": "laughing_face_in_circle_outline",
+        "char": "😄"
       },
       {
         "newId": "nauseous_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "nauseous_face_in_circle_outline"
+        "inspo": "nauseous_face_in_circle_outline",
+        "char": "🤢"
       },
       {
         "newId": "nervous_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "nervous_face_in_circle_outline"
+        "inspo": "nervous_face_in_circle_outline",
+        "char": "😬"
       },
       {
         "newId": "neutral_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "neutral_face_in_circle_outline"
+        "inspo": "neutral_face_in_circle_outline",
+        "char": "😐"
       },
       {
         "newId": "sad_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "sad_face_in_circle_outline"
+        "inspo": "sad_face_in_circle_outline",
+        "char": "😞"
       },
       {
         "newId": "sad_face_with_tear_in_circle",
@@ -15879,17 +15892,20 @@
       {
         "newId": "happy_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "happy_face_in_circle_outline"
+        "inspo": "happy_face_in_circle_outline",
+        "char": "😊"
       },
       {
         "newId": "happy_face_with_face_mask_in_circle",
         "by": "@quincylvania",
-        "inspo": "happy_face_with_face_mask_in_circle_outline"
+        "inspo": "happy_face_with_face_mask_in_circle_outline",
+        "char": "😷"
       },
       {
         "newId": "smiling_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "smiling_face_in_circle_outline"
+        "inspo": "smiling_face_in_circle_outline",
+        "char": "🙂"
       },
       {
         "newId": "smiling_face_with_eyeglasses_in_circle",
@@ -15899,22 +15915,26 @@
       {
         "newId": "sobbing_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "sobbing_face_in_circle_outline"
+        "inspo": "sobbing_face_in_circle_outline",
+        "char": "😭"
       },
       {
         "newId": "surprised_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "surprised_face_in_circle_outline"
+        "inspo": "surprised_face_in_circle_outline",
+        "char": "😮"
       },
       {
         "newId": "surprised_face_with_x_eyes_in_circle",
         "by": "@quincylvania",
-        "inspo": "surprised_face_with_x_eyes_in_circle_outline"
+        "inspo": "surprised_face_with_x_eyes_in_circle_outline",
+        "char": "😵"
       },
       {
         "newId": "tired_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "tired_face_in_circle_outline"
+        "inspo": "tired_face_in_circle_outline",
+        "char": "😩"
       },
       {
         "newId": "tired_face_with_sweat_in_circle",
@@ -15929,12 +15949,14 @@
       {
         "newId": "tired_face_with_z_in_circle",
         "by": "@quincylvania",
-        "inspo": "tired_face_with_z_in_circle_outline"
+        "inspo": "tired_face_with_z_in_circle_outline",
+        "char": "😴"
       },
       {
         "newId": "woozy_face_in_circle",
         "by": "@quincylvania",
-        "inspo": "woozy_face_in_circle_outline"
+        "inspo": "woozy_face_in_circle_outline",
+        "char": "🥴"
       },
       {
         "newId": "pixel_shekel",
