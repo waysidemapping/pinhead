@@ -15040,6 +15040,15 @@
         "opengemeenten": "Onderhoud"
       },
       {
+        "newId": "fishhook",
+        "by": "@quincylvania",
+        "inspo": "barbed_fishhook"
+      },
+      {
+        "newId": "barbed_fishhook",
+        "by": "@quincylvania"
+      },
+      {
         "oldId": "inscribed_stone",
         "newId": "round_rock_with_inscription",
         "by": "@quincylvania"
