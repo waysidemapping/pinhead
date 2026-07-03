@@ -15040,6 +15040,16 @@
         "opengemeenten": "Onderhoud"
       },
       {
+        "oldId": "inscribed_stone",
+        "newId": "round_rock_with_inscription",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "round_rock",
+        "by": "@quincylvania",
+        "inspo": "round_rock_with_inscription"
+      },
+      {
         "oldId": "memorial_stone",
         "newId": "memorial_stone",
         "edit": "resize",
