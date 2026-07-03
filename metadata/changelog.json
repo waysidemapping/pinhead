@@ -15442,6 +15442,16 @@
         ]
       },
       {
+        "newId": "people_above_car",
+        "by": "@quincylvania",
+        "inspo": [
+          "head_and_shoulders",
+          "car_with_taxi_checkerboard"
+        ],
+        "issue": "40",
+        "osmic": "transport/shared-car"
+      },
+      {
         "newId": "taxi_checkerboard",
         "by": "@quincylvania",
         "inspo": "car_with_taxi_checkerboard"
