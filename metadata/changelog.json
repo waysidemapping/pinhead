@@ -15338,6 +15338,110 @@
         ]
       },
       {
+        "newId": "campsite_under_paragraph",
+        "by": "@quincylvania",
+        "inspo": "campsite",
+        "issue": "182",
+        "nps": "backcountry-camping-permit"
+      },
+      {
+        "oldId": "spiky_fish",
+        "newId": "spiky_fish",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "spiky_fish_with_x",
+        "newId": "spiky_fish_with_x",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "spiky_fish_under_paragraph",
+        "by": "@quincylvania",
+        "inspo": "spiky_fish",
+        "issue": "182",
+        "nps": "aquatic-invasive-species-inspection-sticker"
+      },
+      {
+        "newId": "person_driving_motorboat_on_water_under_paragraph",
+        "by": "@quincylvania",
+        "inspo": "person_driving_motorboat_on_water",
+        "issue": "182",
+        "nps": "boating-permit"
+      },
+      {
+        "newId": "car_under_list_beside_checkmark",
+        "by": "@quincylvania",
+        "inspo": "car_with_checkmark",
+        "issue": "180",
+        "osmcarto": "amenity/vehicle_inspection"
+      },
+      {
+        "newId": "bicycle_under_list_beside_checkmark",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_under_list_beside_checkmark",
+          "bicycle_and_key"
+        ]
+      },
+      {
+        "newId": "cargobike_under_list_beside_checkmark",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_under_list_beside_checkmark",
+          "cargobike"
+        ]
+      },
+      {
+        "newId": "motorcycle_under_list_beside_checkmark",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_under_list_beside_checkmark",
+          "motorcycle"
+        ]
+      },
+      {
+        "newId": "motorboat_under_list_beside_checkmark",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_under_list_beside_checkmark",
+          "motorboat"
+        ]
+      },
+      {
+        "newId": "canoe_under_list_beside_checkmark",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_under_list_beside_checkmark",
+          "canoe"
+        ]
+      },
+      {
+        "newId": "suitcase_under_list_beside_checkmark",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_under_list_beside_checkmark",
+          "suitcase"
+        ]
+      },
+      {
+        "newId": "campsite_under_list_beside_checkmark",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_under_list_beside_checkmark",
+          "campsite"
+        ]
+      },
+      {
+        "newId": "spiky_fish_under_list_beside_checkmark",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_under_list_beside_checkmark",
+          "spiky_fish"
+        ]
+      },
+      {
         "newId": "taxi_checkerboard",
         "by": "@quincylvania",
         "inspo": "car_with_taxi_checkerboard"
