@@ -15452,6 +15452,110 @@
         "osmic": "transport/shared-car"
       },
       {
+        "newId": "bear_spray_can",
+        "by": "@quincylvania",
+        "inspo": "bear_spray_can_with_spray"
+      },
+      {
+        "oldId": "bear_spray_can_with_spray",
+        "newId": "bear_spray_can_with_spray",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "bear_spray_can_with_spray_and_arrow_right_above_arrow_left",
+        "by": "@quincylvania",
+        "inspo": [
+          "bear_spray_can_with_spray",
+          "key_and_arrow_right_above_arrow_left"
+        ],
+        "issue": "182",
+        "nps": "bear-spray-rental"
+      },
+      {
+        "newId": "bear_spray_can_with_spray_and_recycling_symbol",
+        "by": "@quincylvania",
+        "inspo": [
+          "bear_spray_can_with_spray",
+          "propane_tank_with_recycling_symbol"
+        ],
+        "issue": "182",
+        "nps": "bear-spray-return-recycling"
+      },
+      {
+        "newId": "bear_spray_can_with_spray_and_dollar",
+        "by": "@quincylvania",
+        "inspo": [
+          "bear_spray_can_with_spray",
+          "car_with_dollar"
+        ],
+        "issue": "182",
+        "nps": "bear-spray-purchase"
+      },
+      {
+        "newId": "bear_spray_can_with_spray_and_euro",
+        "by": "@quincylvania",
+        "inspo": [
+          "bear_spray_can_with_spray_and_dollar",
+          "car_with_euro"
+        ]
+      },
+      {
+        "newId": "bear_spray_can_with_spray_and_pound",
+        "by": "@quincylvania",
+        "inspo": [
+          "bear_spray_can_with_spray_and_dollar",
+          "car_with_pound"
+        ]
+      },
+      {
+        "newId": "bear_spray_can_with_spray_and_yen_yuan",
+        "by": "@quincylvania",
+        "inspo": [
+          "bear_spray_can_with_spray_and_dollar",
+          "car_with_yen_yuan"
+        ]
+      },
+      {
+        "newId": "bear_spray_can_with_spray_and_rupee",
+        "by": "@quincylvania",
+        "inspo": [
+          "bear_spray_can_with_spray_and_dollar",
+          "car_with_rupee"
+        ]
+      },
+      {
+        "newId": "bear_spray_can_with_spray_and_ruble",
+        "by": "@quincylvania",
+        "inspo": [
+          "bear_spray_can_with_spray_and_dollar",
+          "car_with_ruble"
+        ]
+      },
+      {
+        "newId": "bear_spray_can_with_spray_and_peso",
+        "by": "@quincylvania",
+        "inspo": [
+          "bear_spray_can_with_spray_and_dollar",
+          "car_with_peso"
+        ]
+      },
+      {
+        "newId": "bear_spray_can_with_spray_and_shekel",
+        "by": "@quincylvania",
+        "inspo": [
+          "bear_spray_can_with_spray_and_dollar",
+          "car_with_shekel"
+        ]
+      },
+      {
+        "newId": "bear_spray_can_with_spray_and_baht",
+        "by": "@quincylvania",
+        "inspo": [
+          "bear_spray_can_with_spray_and_dollar",
+          "car_with_baht"
+        ]
+      },
+      {
         "newId": "taxi_checkerboard",
         "by": "@quincylvania",
         "inspo": "car_with_taxi_checkerboard"
