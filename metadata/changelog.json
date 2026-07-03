@@ -10834,7 +10834,7 @@
       {
         "newId": "turntable",
         "by": "@ooosssay",
-        "pr": "#143"
+        "pr": "143"
       },
       {
         "newId": "exclamation_point",
@@ -12522,7 +12522,7 @@
         "newId": "triangles_up_down_in_rectangle_outline",
         "by": "@quincylvania",
         "inspo": "triangles_up_down_in_rectangle",
-        "issue": "#40",
+        "issue": "40",
         "osmic": "transport/elevator"
       },
       {
