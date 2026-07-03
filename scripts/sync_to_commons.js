@@ -198,6 +198,7 @@ function commonsPageCategoriesText(pinheadIconId) {
     'clothing/footwear': ['Plain black SVG footwear icons'],
     'clothing/headwear': ['Plain black SVG headgear icons'],
     clothing: ['Plain black SVG clothing icons'],
+    dice: ['SVG dice icons'],
     food_and_drink: ['Plain black SVG food and drink icons'],
     hand_tools: ['Plain black SVG tool icons'],
     landforms: ['SVG nature icons'],
