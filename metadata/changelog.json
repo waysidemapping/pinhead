@@ -14082,7 +14082,7 @@
           "campsite",
           "water"
         ],
-        "issue": "133"
+        "issue": "131"
       },
       {
         "newId": "campsite_above_waters",
@@ -14091,7 +14091,7 @@
           "campsite",
           "waters"
         ],
-        "issue": "133"
+        "issue": "131"
       },
       {
         "newId": "arrows_left_right_above_waters",
