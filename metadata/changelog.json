@@ -15407,7 +15407,6 @@
       {
         "oldId": "motorboat_and_wrench",
         "newId": "motorboat_and_wrench",
-        "edit": "resize",
         "by": "@quincylvania"
       },
       {
@@ -15845,7 +15844,6 @@
       {
         "oldId": "motorboat_and_key",
         "newId": "motorboat_and_key",
-        "edit": "flip",
         "by": "@quincylvania"
       },
       {
