@@ -15061,6 +15061,30 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "fish_under_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "fish",
+          "water"
+        ]
+      },
+      {
+        "newId": "spiky_fish_under_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "spiky_fish",
+          "water"
+        ]
+      },
+      {
+        "newId": "angelfish_under_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "angelfish",
+          "water"
+        ]
+      },
+      {
         "oldId": "fishes",
         "newId": "fishes",
         "by": "@quincylvania",
