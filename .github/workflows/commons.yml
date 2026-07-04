@@ -1,10 +1,10 @@
 name: Upload icons to Wikimedia Commons
 
 on:
-  workflow_run:
-    workflows: ["Release"]
-    types:
-      - completed
+  # workflow_run:
+  #   workflows: ["Release"]
+  #   types:
+  #     - completed
   workflow_dispatch:
 
 permissions:
