@@ -15040,13 +15040,77 @@
         "opengemeenten": "Onderhoud"
       },
       {
-        "newId": "fishhook",
+        "newId": "hook",
         "by": "@quincylvania",
-        "inspo": "barbed_fishhook"
+        "inspo": "barbed_hook",
+        "issue": "195"
       },
       {
-        "newId": "barbed_fishhook",
+        "newId": "barbed_hook",
+        "by": "@quincylvania",
+        "issue": "195"
+      },
+      {
+        "oldId": "fillet_knife",
+        "newId": "fillet_knife",
         "by": "@quincylvania"
+      },
+      {
+        "oldId": "fish",
+        "newId": "fish",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "fishes",
+        "newId": "fishes",
+        "by": "@quincylvania",
+        "inspo": "fish"
+      },
+      {
+        "newId": "fish_head",
+        "by": "@quincylvania",
+        "inspo": "fish"
+      },
+      {
+        "oldId": "fillet_knife_and_fish",
+        "newId": "fish_under_fillet_knife",
+        "by": "@quincylvania",
+        "inspo": "fish"
+      },
+      {
+        "oldId": "fish_and_hook",
+        "newId": "fish_under_barbed_hook",
+        "by": "@quincylvania",
+        "inspo": [
+          "fish",
+          "fish_head_beside_barbed_hook_on_line_under_ice"
+        ]
+      },
+      {
+        "newId": "fish_head_beside_barbed_hook_on_line",
+        "by": "@quincylvania",
+        "inspo": "fish_head_beside_barbed_hook_on_line_under_ice"
+      },
+      {
+        "oldId": "fish_and_hook_under_ice",
+        "newId": "fish_head_beside_barbed_hook_on_line_under_ice",
+        "by": "@quincylvania",
+        "inspo": "fish_head"
+      },
+      {
+        "newId": "fish_head_beside_barbed_hook_on_line_under_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "fish_head_beside_barbed_hook_on_line_under_ice",
+          "water"
+        ]
+      },
+      {
+        "newId": "fish_head_beside_barbed_hook_under_paragraph",
+        "by": "@quincylvania",
+        "inspo": "fish_head_beside_barbed_hook_on_line_under_ice",
+        "issue": "182",
+        "nps": "fishing-license"
       },
       {
         "oldId": "inscribed_stone",
@@ -15373,6 +15437,14 @@
         "nps": "aquatic-invasive-species-inspection-sticker"
       },
       {
+        "newId": "fish_under_paragraph",
+        "by": "@quincylvania",
+        "inspo": [
+          "fish",
+          "spiky_fish_under_paragraph"
+        ]
+      },
+      {
         "newId": "person_driving_motorboat_on_water_under_paragraph",
         "by": "@quincylvania",
         "inspo": "person_driving_motorboat_on_water",
@@ -15440,6 +15512,14 @@
         "inspo": [
           "car_under_list_beside_checkmark",
           "campsite"
+        ]
+      },
+      {
+        "newId": "fish_under_list_beside_checkmark",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_under_list_beside_checkmark",
+          "fish"
         ]
       },
       {
