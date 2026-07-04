@@ -1,4 +1,4 @@
-import { execSync, execFileSync } from "child_process";
+import { execFileSync } from "child_process";
 import { existsSync, renameSync, rmSync, copyFileSync, mkdirSync } from "fs";
 import { join } from "path";
 import { downloadExternalSourceAssets } from "../src/ExternalSourceManager.js";
@@ -7,7 +7,7 @@ const packageName = "@waysidemapping/pinhead";
 
 const docsDir = 'docs/';
 
-const version = execSync(`npm view ${packageName} version`, { encoding: "utf8" }).trim();
+const version = execFileSync("npm", ["view", packageName, "version"], { encoding: "utf8" }).trim();
 console.log('Building docs for Pinhead v' + version);
 const currentMajorVersion = parseInt(version.split('.')[1]);
 
