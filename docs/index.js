@@ -146,6 +146,15 @@ async function setupPage(pageData) {
             .setAttribute('src', `/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
         ),
       new Chainable('a')
+        .setAttribute('href', `/changelog`)
+        .append(
+          new Chainable('span')
+            .append('changelog'),
+          new Chainable('img')
+            .setAttribute('class', 'inline-icon')
+            .setAttribute('src', `/v${majorVersion}/arrow_right_from_left_bracket.svg`)
+        ),
+      new Chainable('a')
         .setAttribute('href', `/coverage`)
         .append(
           new Chainable('span')
