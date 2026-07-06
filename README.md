@@ -37,7 +37,7 @@ Visit [pinhead.ink](https://pinhead.ink) to browse the icons. Each icon has a do
 
 ### Getting all the icons
 
-If you want to get the full set of icon files, use the `download` link on [pinhead.ink](https://pinhead.ink) for the most recent version. The zipped file is <1 MB. You can also browse [past versions](https://github.com/waysidemapping/pinhead/releases). Each release contains the following:
+If you want to get the full set of icon files, use the `download` link on [pinhead.ink](https://pinhead.ink) for the most recent version. The zipped file is <2 MB. You can also browse [past versions](https://github.com/waysidemapping/pinhead/releases). Each release contains the following:
 
 - `dist/icons/*.svg`: the individual icon SVG files
 - `dist/icons/index.json`: a list of all the available icons in this version
@@ -105,7 +105,7 @@ These packages use a special flavor of semantic versioning (`major.minor.patch`)
 
 ## Where the icons are from
 
-Pinhead is seeded from the following public domain sources. Thank you to all of the contributors to these projects.
+Pinhead is seeded from the following public domain sources, but does not mirror them exactly. Instead, the goal is to create a unified set of icons with standardized design elements and conventions. Check out the [coverage](https://pinhead.ink/coverage) page to see how Pinhead compares to these other icon sets. Thank you to all of the contributors to these projects.
 
 - <img src="https://pinhead.ink/v1/temaki.svg" width="15px"/> [Temaki](https://github.com/rapideditor/temaki) ([CC0](https://github.com/rapideditor/temaki/blob/main/LICENSE.md)) A special shoutout to Temaki for directly inspiring this repo and provding some of the build scripts <3
 - <img src="https://pinhead.ink/v1/sushi.svg" width="15px"/> [Maki](https://github.com/mapbox/maki) ([CC0](https://github.com/mapbox/maki/blob/main/LICENSE.txt))
@@ -118,12 +118,9 @@ Pinhead is seeded from the following public domain sources. Thank you to all of 
 - <img src="https://pinhead.ink/v13/sailing_ship_in_water.svg" width="15px"/> [princesse](https://github.com/Viglino/map-font-symbols/tree/main/princesse) and [pirate](https://github.com/Viglino/map-font-symbols/tree/main/pirate) map icons by [@Viglino](https://github.com/Viglino) (CC0)
 - <img src="https://pinhead.ink/v5/badge_shield.svg" width="15px"/> [OpenStreetMap Americana](https://github.com/osm-americana/openstreetmap-americana/) ([CC0](https://github.com/osm-americana/openstreetmap-americana/blob/main/LICENSE))
 - <img src="https://pinhead.ink/v1/deer_head_with_antlers.svg" width="15px"/> [OpenTrailMap](https://github.com/osmus/OpenTrailMap) ([CC0](https://github.com/osmus/OpenTrailMap/blob/main/style/sprites/LICENSE))
+- If you know of another icon source that might be a good fit for Pinhead, please [let us know](https://github.com/waysidemapping/pinhead/issues/new)!
 
-I've been cleaning up the seed icons by scaling them to the same size, conflating duplicates, improving names, removing SVG cruft, and manually improving legibility. I've also been splitting out certain icon elements into standalone icons, such as taking the <img src="https://pinhead.ink/v1/wine_bottle_and_wine_glass.svg" height="15px" width="15px"/> "wine" icon and creating two additional icons: <img src="https://pinhead.ink/v1/wine_glass.svg" height="15px" width="15px"/> `wine_glass` and <img src="https://pinhead.ink/v1/wine_bottle.svg" height="15px" width="15px"/> `wine_bottle`.
-
-If you know of other sources for public domain map icons that might be a good fit for Pinhead, I'd love to [hear about them](https://github.com/waysidemapping/pinhead/issues/new)!
-
-And finally, the icons come from the likes of you! I myself have been adding some totally new icons I've designed in support of [themap.is](https://github.com/waysidemapping/themap.is). I'm hoping for contributors to grow and sustain this icon library.
+Pinhead also contains hundreds of custom icons that do not have parallels in other sets. Some of these are variants or derivatives of other icons, while others are totally original.
 
 ## Contributing
 
