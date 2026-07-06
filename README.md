@@ -19,89 +19,13 @@ Pinhead is a library of free vector icons. There are other projects like this, b
 
 Map icons need to be really small to support high visual density, so all of Pinhead icons are intended to be legible at **15x15 pixels** minimum. This is much smaller than most other icon sets you'll find, but you can scale them up and they'll still look great. And since they're licensed **CC0**, you can use them anywhere for free without restrictions.
 
+## Usage
+
+Pinhead is distributed in a variety of formats suited to the likes of cartographers, designers, and developers. Browse the [usage guide](USAGE.md) for detailed information about the different distributions and how to use them.
+
 ## Community and support
 
 A small community is developing around Pinhead! We're working to make this the best and largest library of public domain map icons anywhere on the web, but we can't do it alone. Come join us in the [#pinhead](https://osmus.slack.com/archives/C0AH40E4J9W) channel on [OSM US Slack](https://slack.openstreetmap.us/). Bring your questions, comments, and ideas, or feel free to [open an issue](https://github.com/waysidemapping/pinhead/issues/new) on GitHub. You can also contact me ([@quincylvania](https://github.com/quincylvania)) directly through any of the channels listed on [my website](https://waysidemapping.org).
-
-## Usage
-
-There are a number of ways to get Pinhead icons. But before you get started, you'll want to be aware of a few things:
-
-- **Churn**: Pinhead is an active project receiving regular updates. If you want stability, use a specific version of Pinhead. If you want to stay up-to-date with the latest version, be aware that icons may change. Developers can use the `changelog.json` file to deal with changes automatically.
-- **Version numbers**: Each Pinhead version number refers to a complete, static set of icons. The version number increments whenever an icon is added, deleted, renamed, or otherwise changed. This ensures version integrity, so that two apps running the same Pinhead version will have the same icons.
-- **Content warning**: Pinhead aims to be comprehensive and contains icons that some audiences may find objectionable. Icons commonly considered problematic are marked `sensitive` in the metadata files, but concerned users should manually review any icons they plan to redistribute or display to others.
-
-### Getting an icon
-
-Visit [pinhead.ink](https://pinhead.ink) to browse the icons. Each icon has a download link, a copyable `<svg>` code, and an embeddable `<img>` code. These links are permanent and will not break in the future even if an icon is deleted or renamed, so feel free to save, share, or embed them.
-
-### Getting all the icons
-
-If you want to get the full set of icon files, use the `download` link on [pinhead.ink](https://pinhead.ink) for the most recent version. The zipped file is <2 MB. You can also browse [past versions](https://github.com/waysidemapping/pinhead/releases). Each release contains the following:
-
-- `dist/icons/*.svg`: the individual icon SVG files
-- `dist/icons/index.json`: a list of all the available icons in this version
-- `dist/icons/index.complete.json`: same as the above but with the SVG code included inline
-- `dist/changelog.json`: a machine-readable list of icon additions, deletions, and renames between Pinhead versions
-- `dist/external_sources.json`: a detailed list of the external icon sources referenced in `changelog.json`
-
-### Web font
-
-If you want easy access to all the Pinhead icons on your website, the easiest solution is to use the web font.
-
-1. Link the hosted CSS file for the latest Pinhead version in your `<head>` element:
-
-```
-<link href="https://pinhead.ink/v{{VERSION}}/pinhead.css" rel="stylesheet"/>
-```
-
-2. Add icon elements with a class in the format `pinhead-ICON_ID`:
-   
-```
-<span class="pinhead-box_truck"></span>
-```
-
-3. Style like text:
-
-```
-font-size: 15px; color: navy; text-decoration: underline solid 2px red;
-```
-
-### Hosted icons
-
-The following files are hosted on pinhead.ink (through GitHub Pages) at the following URLs. You can point your app directly to these endpoints as they are stable.
-
-- For each version:
-  - `https://pinhead.ink/v*/*.svg`: The individual icon SVG files
-  - `https://pinhead.ink/v*/index.json`: A list of all the available icons in this version
-  - `https://pinhead.ink/v*/index.complete.json`: Same as the above but with the SVG code included inline
-  - `https://pinhead.ink/v*/pinhead.ttf`: Icons compiled into a font file
-  - `https://pinhead.ink/v*/pinhead.css`: Stylesheet for easy web usage of the font file
-- For the latest version:
-  - `https://pinhead.ink/latest/*.svg`: The individual icon SVG files, with each file representing the highest-versioned icon of that name (even if the name was later changed)
-  - `https://pinhead.ink/changelog.json`: A machine-readable list of icon additions, deletions, and renames between Pinhead versions
-  - `https://pinhead.ink/external_sources.json`: A detailed list of the external icon sources referenced in `changelog.json`
-
-It is *not* recommended for production apps to depend directly on the GitHub repository or any of its raw files as these may change without notice.
-
-### Icons on Wikimedia Commons
-
-All Pinhead icons are [synced to Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Plain_black_Pinhead_SVG_icons) for convenient integration with Wikipedia, Wikidata, the OpenStreetMap Wiki, and other such projects. These files are easy to [search](https://commons.wikimedia.org/w/index.php?title=Special%3AMediaSearch&search=deepcat%3A%22Plain+black+Pinhead+SVG+icons%22&type=image).
-
-### Icons in QGIS
-
-Pinhead is bundled as a default collection in the [QGIS Resource Sharing](https://github.com/QGIS-Contribution/QGIS-ResourceSharing/) plugin, making it easy to use Pinhead icons in your QGIS project. These icon files support rich styling within the QGIS UI. For installation instructions and raw file downloads, see the [pinhead-qgis-resources](https://github.com/waysidemapping/pinhead-qgis-resources) repo.
-
-### Node.js packages
-
-Pinhead is distributed in two different packages for Node developers. The packages have no dependencies and contain no code.
-
-- [@waysidemapping/pinhead](https://www.npmjs.com/package/@waysidemapping/pinhead): SVG icons and JSON metadata files
-  - `npm install @waysidemapping/pinhead`
-- [@waysidemapping/pinhead-font](https://www.npmjs.com/package/@waysidemapping/pinhead-font): icon font and CSS for use on webpages
-  - `npm install @waysidemapping/pinhead-font`
-
-These packages use a special flavor of semantic versioning (`major.minor.patch`), with the Pinhead version number corresponding to the minor version. If your app expects the icons to be static, depend on the package like (`~x.x.0`). If your app can automatically handle icon changes, i.e. by reading the `changelog.json` file, then depend on the package like (`^x.x.0`). We'll only increment the major version if there is a breaking change to the package format, in which case the minor version will NOT reset to zero but will remain the Pinhead version number. Note that prior to v15, the Pinhead version number of `@waysidemapping/pinhead` corresponded to the major package version instead of the minor.
 
 ## Where the icons are from
 
