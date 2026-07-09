@@ -16728,6 +16728,14 @@
         ]
       },
       {
+        "newId": "gasoline_pump_with_droplet",
+        "by": "@quincylvania",
+        "inspo": [
+          "droplet",
+          "gasoline_pump"
+        ]
+      },
+      {
         "oldId": "droplet_from_pipes",
         "newId": "droplet_from_pipes",
         "edit": "minor",
