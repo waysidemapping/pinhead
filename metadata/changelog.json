@@ -16720,6 +16720,14 @@
         ]
       },
       {
+        "newId": "hand_holding_droplet",
+        "by": "@quincylvania",
+        "inspo": [
+          "droplet",
+          "hand_holding_heart"
+        ]
+      },
+      {
         "oldId": "droplet_from_pipes",
         "newId": "droplet_from_pipes",
         "edit": "minor",
