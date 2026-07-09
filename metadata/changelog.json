@@ -16683,5 +16683,15 @@
         "inspo": "arrows_left_right_above_water"
       }
     ]
+  },
+  {
+    "majorVersion": "26",
+    "date": "2026-08-01",
+    "iconChanges": [
+      {
+        "newId": "tangram_square",
+        "by": "@quincylvania"
+      }
+    ]
   }
 ]
