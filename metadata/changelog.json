@@ -16736,6 +16736,22 @@
         ]
       },
       {
+        "newId": "droplet_under_roof",
+        "by": "@quincylvania",
+        "inspo": [
+          "droplet",
+          "crates_under_roof"
+        ]
+      },
+      {
+        "newId": "droplet_in_gable_roofed_shelter",
+        "by": "@quincylvania",
+        "inspo": [
+          "droplet",
+          "gable_roofed_shelter"
+        ]
+      },
+      {
         "oldId": "droplet_from_pipes",
         "newId": "droplet_from_pipes",
         "edit": "minor",
