@@ -379,7 +379,9 @@ function filterIcons(rawQuery) {
   const ts = Object.values(translations);
   for (const element of elements) {
     const matchesALabel = ts.some(t => {
-      return t.icons[element.id]?.labels?.some(label => label.toLowerCase().replaceAll(' ', '').includes(query)) || t.icons[element.id]?.aliases?.some(alias => alias.toLowerCase().replaceAll(' ', '').includes(query));
+      const iconTranslation = t.icons[element.id];
+      return iconTranslation?.labels?.some(label => label.toLowerCase().replaceAll(' ', '').includes(query)) ||
+        iconTranslation?.aliases?.some(alias => alias.toLowerCase().replaceAll(' ', '').includes(query));
     });
     if (query === '' || element.id.replaceAll('_', '').includes(query) || matchesALabel) {
       element.classList.remove('hidden');
