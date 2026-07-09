@@ -8355,8 +8355,7 @@
       {
         "newId": "sitting_tank_toilet_with_droplet",
         "by": "@quincylvania",
-        "issue": "39",
-        "nps": "flush-toilets"
+        "issue": "39"
       },
       {
         "newId": "mobile_phone_with_keypad_and_antenna_beside_mobile_phone_with_touchscreen_and_antenna",
@@ -16691,6 +16690,108 @@
       {
         "newId": "tangram_square",
         "by": "@quincylvania"
+      },
+      {
+        "oldId": "droplet",
+        "newId": "droplet",
+        "by": "@quincylvania",
+        "issue": "230"
+      },
+      {
+        "oldId": "droplet_with_greek_cross",
+        "newId": "droplet_with_greek_cross",
+        "by": "@quincylvania",
+        "issue": "230"
+      },
+      {
+        "oldId": "droplet_from_pipes",
+        "newId": "droplet_from_pipes",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "230"
+      },
+      {
+        "oldId": "syrup_jug_and_droplet",
+        "newId": "syrup_jug_and_droplet",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "230"
+      },
+      {
+        "oldId": "syrup_jug_with_maple_leaf_and_droplet",
+        "newId": "syrup_jug_with_maple_leaf_and_droplet",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "230"
+      },
+      {
+        "oldId": "syrup_jug_with_sugarcane_stalk_with_leaves_and_droplet",
+        "newId": "syrup_jug_with_sugarcane_stalk_with_leaves_and_droplet",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "230"
+      },
+      {
+        "newId": "syrup_jug_with_droplet",
+        "by": "@quincylvania",
+        "inspo": [
+          "syrup_jug",
+          "droplet"
+        ]
+      },
+      {
+        "oldId": "manhole_cover_with_droplet",
+        "newId": "manhole_cover_with_droplet",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "230"
+      },
+      {
+        "oldId": "utility_device_with_droplet",
+        "newId": "utility_device_with_droplet",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "230"
+      },
+      {
+        "oldId": "utility_meter_with_droplet",
+        "newId": "utility_meter_with_droplet",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "230"
+      },
+      {
+        "oldId": "utility_valve_with_droplet",
+        "newId": "utility_valve_with_droplet",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "230"
+      },
+      {
+        "oldId": "sitting_tank_toilet_with_droplet",
+        "newId": "sitting_tank_toilet_and_droplet",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "230"
+      },
+      {
+        "newId": "sitting_tank_toilet_with_droplet",
+        "by": "@quincylvania",
+        "inspo": "sitting_tank_toilet_and_droplet",
+        "issue": [
+          "39",
+          "182"
+        ],
+        "nps": "flush-toilets"
+      },
+      {
+        "newId": "briefcase_with_droplet",
+        "by": "@quincylvania",
+        "inspo": [
+          "briefcase",
+          "droplet"
+        ],
+        "issue": "237"
       }
     ]
   }
