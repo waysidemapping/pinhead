@@ -16712,6 +16712,14 @@
         ]
       },
       {
+        "newId": "bucket_with_droplet",
+        "by": "@quincylvania",
+        "inspo": [
+          "droplet",
+          "bucket"
+        ]
+      },
+      {
         "oldId": "droplet_from_pipes",
         "newId": "droplet_from_pipes",
         "edit": "minor",
