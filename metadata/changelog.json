@@ -16704,6 +16704,14 @@
         "issue": "230"
       },
       {
+        "newId": "droplet_above_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "droplet",
+          "water"
+        ]
+      },
+      {
         "oldId": "droplet_from_pipes",
         "newId": "droplet_from_pipes",
         "edit": "minor",
