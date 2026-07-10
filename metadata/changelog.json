@@ -16698,6 +16698,11 @@
         "issue": "230"
       },
       {
+        "newId": "droplet_outline",
+        "by": "@quincylvania",
+        "inspo": "droplet"
+      },
+      {
         "oldId": "droplet_with_greek_cross",
         "newId": "droplet_with_greek_cross",
         "by": "@quincylvania",
