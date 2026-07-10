@@ -16836,9 +16836,7 @@
       {
         "newId": "outstretched_hand",
         "by": "@quincylvania",
-        "inspo": [
-          "heart_above_outstretched_hand"
-        ]
+        "inspo": "heart_above_outstretched_hand"
       },
       {
         "oldId": "hand_holding_heart",
