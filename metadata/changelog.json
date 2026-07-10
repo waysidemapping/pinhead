@@ -16916,6 +16916,11 @@
           "map_pin_with_dot",
           "outstretched_hand"
         ]
+      },
+      {
+        "newId": "thumbs_down_hand_with_sleeve",
+        "by": "@quincylvania",
+        "inspo": "thumbs_up_hand_with_sleeve"
       }
     ]
   }
