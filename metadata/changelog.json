@@ -16720,14 +16720,6 @@
         ]
       },
       {
-        "newId": "hand_holding_droplet",
-        "by": "@quincylvania",
-        "inspo": [
-          "droplet",
-          "hand_holding_heart"
-        ]
-      },
-      {
         "newId": "gasoline_pump_with_droplet",
         "by": "@quincylvania",
         "inspo": [
@@ -16840,6 +16832,90 @@
           "droplet"
         ],
         "issue": "237"
+      },
+      {
+        "newId": "outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "heart_above_outstretched_hand"
+        ]
+      },
+      {
+        "oldId": "hand_holding_heart",
+        "newId": "heart_above_outstretched_hand",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "greek_cross_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "greek_cross",
+          "outstretched_hand"
+        ]
+      },
+      {
+        "newId": "droplet_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "droplet",
+          "outstretched_hand"
+        ]
+      },
+      {
+        "newId": "gas_flame_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "gas_flame",
+          "outstretched_hand"
+        ]
+      },
+      {
+        "newId": "stardust_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "star",
+          "outstretched_hand"
+        ]
+      },
+      {
+        "newId": "apple_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "apple",
+          "outstretched_hand"
+        ]
+      },
+      {
+        "newId": "bread_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "bread",
+          "outstretched_hand"
+        ]
+      },
+      {
+        "newId": "open_book_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "open_book",
+          "outstretched_hand"
+        ]
+      },
+      {
+        "newId": "dove_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "dove",
+          "outstretched_hand"
+        ]
+      },
+      {
+        "newId": "map_pin_with_dot_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "map_pin_with_dot",
+          "outstretched_hand"
+        ]
       }
     ]
   }
