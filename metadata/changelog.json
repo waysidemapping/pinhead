@@ -16886,10 +16886,10 @@
         ]
       },
       {
-        "newId": "bread_above_outstretched_hand",
+        "newId": "loaf_of_bread_above_outstretched_hand",
         "by": "@quincylvania",
         "inspo": [
-          "bread",
+          "loaf_of_bread",
           "outstretched_hand"
         ]
       },
