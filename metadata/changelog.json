@@ -16717,6 +16717,20 @@
         ]
       },
       {
+        "oldId": "water_bottle",
+        "newId": "water_bottle",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "water_bottle_beside_droplet",
+        "by": "@quincylvania",
+        "inspo": [
+          "droplet",
+          "water_bottle"
+        ]
+      },
+      {
         "newId": "bucket_with_droplet",
         "by": "@quincylvania",
         "inspo": [
