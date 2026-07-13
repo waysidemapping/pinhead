@@ -1970,10 +1970,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "char": "💧",
-        "healthicons": "body/blood-drop",
-        "maki": "water",
-        "opentrailmap": "watershed_reserve",
-        "temaki": "water"
+        "maki": "water"
       },
       {
         "newId": "droplet_with_greek_cross",
@@ -16705,6 +16702,17 @@
         "newId": "droplet",
         "by": "@quincylvania",
         "issue": "230"
+      },
+      {
+        "newId": "droplet_with_shine",
+        "by": "@quincylvania",
+        "inspo": [
+          "droplet",
+          "pixel_droplet_with_shine"
+        ],
+        "healthicons": "body/blood-drop",
+        "opentrailmap": "watershed_reserve",
+        "temaki": "water"
       },
       {
         "newId": "droplet_outline",
