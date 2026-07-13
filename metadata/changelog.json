@@ -16688,6 +16688,15 @@
     "date": "2026-08-01",
     "iconChanges": [
       {
+        "newId": "fountain_from_ground",
+        "by": "@Geo-2695",
+        "inspo": [
+          "geyser_from_ground",
+          "fountain"
+        ],
+        "pr": "256"
+      },
+      {
         "newId": "tangram_square",
         "by": "@quincylvania"
       },
