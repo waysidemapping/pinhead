@@ -223,6 +223,7 @@ function commonsPageCategoriesText(pinheadIconId) {
     pixel_style: ['One-color SVG pixel art (black)'],
     plants: ['Plain black SVG plant icons'],
     religious: ['Plain black SVG religious computer icons'],
+    skulls: ['Plain black SVG skull icons'],
     tags: ['Plain black SVG tag icons'],
     towers_poles_masts: ['Tower icons'],
     'vehicles/aircraft': ['Plain black SVG aircraft icons'],
