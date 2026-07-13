@@ -235,6 +235,7 @@ function commonsPageCategoriesText(pinheadIconId) {
     'vehicles/trains': ['Plain black SVG train icons'],
     'vehicles/trucks': ['Plain black SVG truck icons'],
     'vehicles/watercraft': ['Plain black SVG watercraft icons'],
+    waste_containers: ['Plain black SVG waste container icons'],
     water_pipes: ['Plumbing icons'],
   };
 
