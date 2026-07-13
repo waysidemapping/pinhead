@@ -206,6 +206,7 @@ function commonsPageCategoriesText(pinheadIconId) {
     envelopes: ['Plain black SVG envelope icons'],
     flags: ['Plain black SVG flag icons'],
     food_and_drink: ['Plain black SVG food and drink icons'],
+    fountains: ['Plain black SVG fountain icons'],
     hand_tools: ['Plain black SVG tool icons'],
     landforms: ['SVG nature icons'],
     manhole_covers: ['Plain black SVG manhole cover icons'],
