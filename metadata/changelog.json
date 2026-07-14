@@ -16698,6 +16698,82 @@
         "by": "@quincylvania"
       },
       {
+        "oldId": "greek_cross",
+        "newId": "greek_cross",
+        "by": "@quincylvania",
+        "issue": "258"
+      },
+      {
+        "oldId": "heart_with_greek_cross",
+        "newId": "heart_with_greek_cross",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "258"
+      },
+      {
+        "oldId": "pawprint_with_greek_cross",
+        "newId": "pawprint_with_greek_cross",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "258"
+      },
+      {
+        "oldId": "briefcase_with_greek_cross",
+        "newId": "briefcase_with_greek_cross",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "258"
+      },
+      {
+        "oldId": "bag_with_greek_cross",
+        "newId": "bag_with_greek_cross",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "258"
+      },
+      {
+        "oldId": "mountain_with_greek_cross",
+        "newId": "mountain_with_greek_cross",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "258"
+      },
+      {
+        "oldId": "phone_top_right_with_greek_cross",
+        "newId": "phone_top_right_with_greek_cross",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "258"
+      },
+      {
+        "oldId": "compact_box_truck_with_greek_cross",
+        "newId": "compact_box_truck_with_greek_cross",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "258"
+      },
+      {
+        "oldId": "vending_machine_with_greek_cross",
+        "newId": "vending_machine_with_greek_cross",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "258"
+      },
+      {
+        "oldId": "pill_bottle_with_greek_cross",
+        "newId": "pill_bottle_with_greek_cross",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "258"
+      },
+      {
+        "oldId": "mortar_and_pestle_with_greek_cross",
+        "newId": "mortar_and_pestle_with_greek_cross",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "258"
+      },
+      {
         "oldId": "droplet",
         "newId": "droplet",
         "by": "@quincylvania",
@@ -16722,8 +16798,12 @@
       {
         "oldId": "droplet_with_greek_cross",
         "newId": "droplet_with_greek_cross",
+        "edit": "minor",
         "by": "@quincylvania",
-        "issue": "230"
+        "issue": [
+          "230",
+          "258"
+        ]
       },
       {
         "newId": "droplet_above_water",
