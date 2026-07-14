@@ -16778,6 +16778,11 @@
         "issue": "258"
       },
       {
+        "newId": "mortar_and_pestle",
+        "by": "@quincylvania",
+        "inspo": "mortar_and_pestle_with_greek_cross"
+      },
+      {
         "oldId": "mortar_and_pestle_with_greek_cross",
         "newId": "mortar_and_pestle_with_greek_cross",
         "edit": "minor",
