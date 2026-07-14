@@ -16790,6 +16790,14 @@
         "issue": "258"
       },
       {
+        "newId": "book_with_greek_cross",
+        "by": "@quincylvania",
+        "inspo": [
+          "book",
+          "greek_cross"
+        ]
+      },
+      {
         "oldId": "droplet",
         "newId": "droplet",
         "by": "@quincylvania",
