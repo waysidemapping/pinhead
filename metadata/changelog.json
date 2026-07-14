@@ -16711,6 +16711,12 @@
         "issue": "258"
       },
       {
+        "oldId": "pawprint",
+        "newId": "pawprint",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
         "oldId": "pawprint_with_greek_cross",
         "newId": "pawprint_with_greek_cross",
         "edit": "minor",
