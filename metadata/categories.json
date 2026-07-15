@@ -598,7 +598,7 @@
   },
   "number": {
     "commons": "Number icons",
-    "match": "^(zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)$"
+    "match": "^(zero|one|two|three|four|five|six|seven|eight|nine)(?:_(?:zero|one|two|three|four|five|six|seven|eight|nine))*$"
   },
   "oak_leaf": {
     "super": "leaf"

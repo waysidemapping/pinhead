@@ -17128,6 +17128,18 @@
         "newId": "sea_star",
         "edit": "minor",
         "by": "@quincylvania"
+      },
+      {
+        "oldId": "ten",
+        "newId": "one_zero"
+      },
+      {
+        "oldId": "eleven",
+        "newId": "one_one"
+      },
+      {
+        "oldId": "twelve",
+        "newId": "one_two"
       }
     ]
   }
