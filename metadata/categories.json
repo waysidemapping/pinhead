@@ -21,6 +21,9 @@
   "amusement_ride": {
     "super": "vehicle"
   },
+  "angel_moroni": {
+    "super": "christian_symbol"
+  },
   "angelfish": {
     "super": "fish"
   },
@@ -231,6 +234,9 @@
     "super": "cutlery"
   },
   "christian_cross": {
+    "super": "christian_symbol"
+  },
+  "christian_symbol": {
     "super": "religious_symbol"
   },
   "circle": {
@@ -437,6 +443,9 @@
   "hanging_rail_transit_vehicle": {
     "super": "train"
   },
+  "hard_candy": {
+    "super": "food"
+  },
   "hat": {
     "super": "headwear"
   },
@@ -462,8 +471,14 @@
   "houseboat": {
     "super": "boat"
   },
+  "human_head": {
+    "super": "body_part"
+  },
   "ice_skate": {
     "super": "skate"
+  },
+  "ichthys": {
+    "super": "christian_symbol"
   },
   "inline_skate": {
     "super": "skate"
@@ -477,6 +492,9 @@
   "japanese_map_symbol": {
     "commons": "SVG map symbols of Japan",
     "match": "^jp_.+"
+  },
+  "jar": {
+    "super": "vessel"
   },
   "jeep": {
     "super": "car"
@@ -647,6 +665,9 @@
   "pickup_truck": {
     "super": "truck"
   },
+  "pill_bottle": {
+    "super": "bottle"
+  },
   "pin_pad": {
     "super": "atm"
   },
@@ -749,6 +770,9 @@
   },
   "school_bus": {
     "super": "bus"
+  },
+  "sea_star": {
+    "super": "fish"
   },
   "seaplane": {
     "super": [
