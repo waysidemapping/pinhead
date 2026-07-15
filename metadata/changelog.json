@@ -17142,6 +17142,16 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "trail_blazes_top_left",
+        "by": "@quincylvania",
+        "inspo": "trail_blaze"
+      },
+      {
+        "newId": "trail_blazes_top_right",
+        "by": "@quincylvania",
+        "inspo": "trail_blaze"
+      },
+      {
         "newId": "trail_blazes_left",
         "by": "@quincylvania",
         "inspo": "trail_blaze"
@@ -17162,29 +17172,11 @@
         "inspo": "trail_blaze"
       },
       {
-        "newId": "trail_blazes_top_right",
-        "by": "@quincylvania",
-        "inspo": "trail_blaze"
-      },
-      {
-        "newId": "trail_blazes_top_left",
-        "by": "@quincylvania",
-        "inspo": "trail_blaze"
-      },
-      {
-        "newId": "cairn_beside_trail_blazes_left",
+        "newId": "cairn_beside_trail_blaze",
         "by": "@quincylvania",
         "inspo": [
           "cairn",
-          "trail_blazes_left"
-        ]
-      },
-      {
-        "newId": "cairn_beside_trail_blazes_right",
-        "by": "@quincylvania",
-        "inspo": [
-          "cairn",
-          "trail_blazes_right"
+          "trail_blaze"
         ]
       },
       {
@@ -17201,6 +17193,22 @@
         "inspo": [
           "cairn",
           "trail_blazes_top_right"
+        ]
+      },
+      {
+        "newId": "cairn_beside_trail_blazes_left",
+        "by": "@quincylvania",
+        "inspo": [
+          "cairn",
+          "trail_blazes_left"
+        ]
+      },
+      {
+        "newId": "cairn_beside_trail_blazes_right",
+        "by": "@quincylvania",
+        "inspo": [
+          "cairn",
+          "trail_blazes_right"
         ]
       },
       {
