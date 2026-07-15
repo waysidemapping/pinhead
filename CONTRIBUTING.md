@@ -62,9 +62,8 @@ If the following sections seem too technical or intimidating, feel free to just 
 
 #### Filenames
 
-* An icon's filename is its ID. Choosing a good initial filename reduces the chance of needing to rename an icon later.
+* An icon's filename is its unique ID. Choosing a good initial filename reduces the chance of needing to rename an icon later.
 * Filenames should use American English.
-* Two files cannot share a name, even if they are in different subdirectories.
 * Filenames should contain only lowercase letters, numbers, and underscores, and should start with a letter.
 * Filenames should be literal instead of symbolic.
   * E.g. prefer <img src="https://pinhead.ink/latest/giraffe.svg" height="15px" width="15px"/> `giraffe` to `zoo` and <img src="https://pinhead.ink/latest/greek_cross.svg" height="15px" width="15px"/> `greek_cross` to `medicine`.
@@ -83,12 +82,7 @@ If the following sections seem too technical or intimidating, feel free to just 
 * Filenames for graphical design variants (size, shape, stroke, etc.) should be suffixed with the graphical difference.
    * E.g. <img src="https://pinhead.ink/latest/circle_outline.svg" height="15px" width="15px"/> `circle_outline`, not "outlined_circle"
    * E.g. <img src="https://pinhead.ink/latest/diamond_tall.svg" height="15px" width="15px"/> `diamond_tall`, not "tall_diamond"
-
-#### Subdirectories
-
-* The subdirectory of an icon is used only for developer-side convenience and has no effect on distributed icons.
-* Files are broadly organized by design, not by content.
-* Some subdirectories contain `README.md` files which give more detailed information.
+* Note: Prior to v26, most icons were categorized in subdirectories. The subpath was not intended to be part of the icon's ID.
 
 ## Icon policies
 

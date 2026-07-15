@@ -59,11 +59,7 @@ async function flatCopy() {
       }
     }
 
-    const subdir = file.slice(sourceDir.length + 1, file.length - basename(file).length - 1);
     complete.icons[filename] = Object.assign({}, manifest.icons[filename]);
-    if (subdir) {
-      complete.icons[filename].srcdir = subdir;
-    }
     complete.icons[filename].svg = readFileSync(file, {encoding: 'utf8'});
 
     if (seenNames.has(filename)) {

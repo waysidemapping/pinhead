@@ -23,6 +23,7 @@ You can get the latest release as a static archive using the `download` link on 
 - `dist/icons/index.complete.json`: same as the above but with the SVG code included inline
 - `dist/changelog.json`: a machine-readable list of icon additions, deletions, and renames between Pinhead versions
 - `dist/external_sources.json`: a detailed list of the external icon sources referenced in `changelog.json`
+- `dist/categories.json`: icon category data
 
 Note that if you just "download once and forget" then you'll miss out on any future improvements.
 
@@ -62,6 +63,7 @@ The following files are hosted on pinhead.ink (through GitHub Pages) at the foll
   - `https://pinhead.ink/latest/*.svg`: The individual icon SVG files, with each file representing the highest-versioned icon of that name (even if the name was later changed)
   - `https://pinhead.ink/changelog.json`: A machine-readable list of icon additions, deletions, and renames between Pinhead versions
   - `https://pinhead.ink/external_sources.json`: A detailed list of the external icon sources referenced in `changelog.json`
+  - `https://pinhead.ink/categories.json`: Icon category data
 
 It is *not* recommended for production apps to depend directly on the GitHub repository or any of its raw files as these may change without notice.
 

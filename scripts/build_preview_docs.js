@@ -8,6 +8,7 @@ const majorVersion = parseInt(version.split('.')[1]);
 copyFileSync('package.json', "docs/package.json");
 copyFileSync('metadata/changelog.json', "docs/changelog.json");
 copyFileSync('metadata/external_sources.json', "docs/external_sources.json");
+copyFileSync('metadata/categories.json', "docs/categories.json");
 
 ensureEmptyDir(`docs/v${majorVersion}`);
 execSync(`cp -r "dist/icons/" 'docs/v${majorVersion}'`);

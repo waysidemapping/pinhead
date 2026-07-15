@@ -50,6 +50,7 @@ function downloadLegacyIcons(majorVersion, targetDir) {
     copyFileSync(join(folderName, "package.json"), join(docsDir, 'package.json'));
     if (existsSync(join(folderName, "dist/changelog.json"))) copyFileSync(join(folderName, "dist/changelog.json"), join(docsDir, 'changelog.json'));
     if (existsSync(join(folderName, "dist/external_sources.json"))) copyFileSync(join(folderName, "dist/external_sources.json"), join(docsDir, 'external_sources.json'));
+    if (existsSync(join(folderName, "dist/categories.json"))) copyFileSync(join(folderName, "dist/categories.json"), join(docsDir, 'categories.json'));
   }
 
   rmSync(folderName, { recursive: true, force: true });
