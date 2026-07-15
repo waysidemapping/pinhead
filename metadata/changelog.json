@@ -17134,7 +17134,7 @@
       {
         "oldId": "sea_star",
         "newId": "sea_star",
-        "edit": "minor",
+        "edit": "resize",
         "by": "@quincylvania"
       },
       {
@@ -17170,6 +17170,60 @@
         "newId": "trail_blazes_top_left",
         "by": "@quincylvania",
         "inspo": "trail_blaze"
+      },
+      {
+        "newId": "cairn_beside_trail_blazes_left",
+        "by": "@quincylvania",
+        "inspo": [
+          "cairn",
+          "trail_blazes_left"
+        ]
+      },
+      {
+        "newId": "cairn_beside_trail_blazes_right",
+        "by": "@quincylvania",
+        "inspo": [
+          "cairn",
+          "trail_blazes_right"
+        ]
+      },
+      {
+        "newId": "cairn_beside_trail_blazes_top_left",
+        "by": "@quincylvania",
+        "inspo": [
+          "cairn",
+          "trail_blazes_top_left"
+        ]
+      },
+      {
+        "newId": "cairn_beside_trail_blazes_top_right",
+        "by": "@quincylvania",
+        "inspo": [
+          "cairn",
+          "trail_blazes_top_right"
+        ]
+      },
+      {
+        "newId": "cairn_beside_trail_blazes_up",
+        "by": "@quincylvania",
+        "inspo": [
+          "cairn",
+          "trail_blazes_up"
+        ]
+      },
+      {
+        "newId": "cairn_beside_trail_blazes_down",
+        "by": "@quincylvania",
+        "inspo": [
+          "cairn",
+          "trail_blazes_down"
+        ]
+      },
+      {
+        "oldId": "cairn",
+        "newId": "cairn",
+        "edit": "resize",
+        "by": "@quincylvania"
       },
       {
         "oldId": "ten",
