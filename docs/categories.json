@@ -1,0 +1,961 @@
+{
+  "a_frame_sidewall_tent": {
+    "super": [
+      "a_frame_tent",
+      "wall_tent"
+    ]
+  },
+  "a_frame_tent": {
+    "super": "tent"
+  },
+  "ahimsa_hand": {
+    "super": "religious_symbol"
+  },
+  "airboat": {
+    "super": "motorboat"
+  },
+  "aircraft": {
+    "commons": "Plain black SVG aircraft icons",
+    "super": "vehicle"
+  },
+  "amusement_ride": {
+    "super": "vehicle"
+  },
+  "angelfish": {
+    "super": "fish"
+  },
+  "animal": {
+    "commons": "Plain black SVG animal icons"
+  },
+  "anime": {
+    "match": "^anime_.+"
+  },
+  "ankh": {
+    "super": "religious_symbol"
+  },
+  "apple": {
+    "super": "fruit"
+  },
+  "archery_arrow": {
+    "super": "weapon"
+  },
+  "archery_bow": {
+    "super": "weapon"
+  },
+  "army_tent": {
+    "super": "tent"
+  },
+  "arrow": {
+    "commons": "Black SVG arrow icons",
+    "super": "shape"
+  },
+  "astrologers_hat": {
+    "super": "hat"
+  },
+  "atm": {
+    "commons": "ATM icons"
+  },
+  "atv": {
+    "super": "motor_vehicle"
+  },
+  "baby": {
+    "super": "person"
+  },
+  "bag": {
+    "commons": "Plain black SVG luggage icons"
+  },
+  "bag_of_trash": {
+    "commons": "Waste bags",
+    "super": "waste_container"
+  },
+  "baht": {
+    "super": "currency"
+  },
+  "banana": {
+    "super": "fruit"
+  },
+  "barge": {
+    "super": "boat"
+  },
+  "bear_spray_can": {
+    "super": "spray_container"
+  },
+  "beer_bottle": {
+    "super": [
+      "drink_bottle"
+    ]
+  },
+  "bench": {
+    "commons": "Plain black SVG bench icons"
+  },
+  "bicycle": {
+    "commons": "Plain black SVG bicycle icons",
+    "super": "vehicle"
+  },
+  "big_top_tent": {
+    "super": "tent"
+  },
+  "bird": {
+    "commons": "Plain black SVG bird icons",
+    "super": "animal"
+  },
+  "boat": {
+    "super": "watercraft"
+  },
+  "body_part": {
+    "commons": "Plain black SVG medical icons"
+  },
+  "book": {
+    "commons": "Plain black SVG book icons"
+  },
+  "bottle": {
+    "super": "vessel"
+  },
+  "boundary": {
+    "commons": "Plain black SVG icon maps",
+    "match": "^(belgium|netherlands|madagascar)$"
+  },
+  "box_truck": {
+    "super": "truck"
+  },
+  "bread": {
+    "super": "food"
+  },
+  "briefcase": {
+    "commons": "Plain black SVG briefcase icons",
+    "super": "bag"
+  },
+  "broadleaved_tree": {
+    "super": "tree"
+  },
+  "budded_latin_cross": {
+    "super": "christian_cross"
+  },
+  "building": {
+    "commons": "Plain black SVG building icons"
+  },
+  "bulldozer": {
+    "super": "construction_vehicle"
+  },
+  "bullet_train": {
+    "super": "train"
+  },
+  "burger": {
+    "super": "food"
+  },
+  "bus": {
+    "commons": "Plain black SVG bus icons",
+    "super": "transit_vehicle"
+  },
+  "cairn": {
+    "super": "rock"
+  },
+  "camper_trailer": {
+    "super": "trailer"
+  },
+  "campsite": {
+    "super": "tent"
+  },
+  "canoe": {
+    "super": "paddlecraft"
+  },
+  "capital_star": {
+    "super": "star"
+  },
+  "car": {
+    "commons": "Plain black SVG automobile icons",
+    "super": "motor_vehicle"
+  },
+  "cargobike": {
+    "super": "bicycle"
+  },
+  "carousel": {
+    "super": "amusement_ride"
+  },
+  "carriage": {
+    "super": "trailer"
+  },
+  "cartoon": {
+    "match": "^cartoon_.+"
+  },
+  "castle": {
+    "commons": "Plain black SVG castle icons",
+    "super": "building"
+  },
+  "castle_gate": {
+    "super": "castle"
+  },
+  "castle_keep": {
+    "super": "castle"
+  },
+  "castle_tower": {
+    "super": "castle"
+  },
+  "celtic_cross": {
+    "super": "christian_cross"
+  },
+  "charging_station": {
+    "super": "fuel_station"
+  },
+  "cheese": {
+    "super": "food"
+  },
+  "cheese_wedge_hat": {
+    "super": [
+      "cheese",
+      "hat"
+    ]
+  },
+  "chefs_knife": {
+    "super": "knife"
+  },
+  "chopstick": {
+    "super": "cutlery"
+  },
+  "christian_cross": {
+    "super": "religious_symbol"
+  },
+  "circle": {
+    "super": "shape"
+  },
+  "clothing": {
+    "commons": "Plain black SVG clothing icons"
+  },
+  "coconut_palm_tree": {
+    "super": "palm_tree"
+  },
+  "compact_box_truck": {
+    "super": "box_truck"
+  },
+  "conifer_tree": {
+    "super": "tree"
+  },
+  "construction_vehicle": {
+    "super": "motor_vehicle"
+  },
+  "container": {
+    "commons": "Plain black SVG container icons"
+  },
+  "continent_boundary": {
+    "match": "africa",
+    "super": "boundary"
+  },
+  "cowboy_hat": {
+    "super": "hat"
+  },
+  "crescent": {
+    "super": "religious_symbol"
+  },
+  "cup": {
+    "super": "vessel"
+  },
+  "currency": {
+    "commons": "Plain black SVG currency icons"
+  },
+  "cutlery": {
+    "super": "hand_tool"
+  },
+  "dagger": {
+    "super": "knife"
+  },
+  "daisy": {
+    "super": "flower"
+  },
+  "diamond": {
+    "super": "quadrilateral"
+  },
+  "die": {
+    "commons": "SVG dice icons",
+    "match": "^(die|dice|die_face)$"
+  },
+  "diesel_train": {
+    "super": "train"
+  },
+  "dog": {
+    "commons": "Plain black SVG dog icons",
+    "super": "animal"
+  },
+  "dollar": {
+    "super": "currency"
+  },
+  "dot": {
+    "super": "circle"
+  },
+  "drink": {
+    "super": "food_and_drink"
+  },
+  "drink_bottle": {
+    "super": [
+      "drink",
+      "bottle"
+    ]
+  },
+  "drink_cup": {
+    "super": [
+      "drink",
+      "cup"
+    ]
+  },
+  "drone_aircraft": {
+    "super": "aircraft"
+  },
+  "droplet": {
+    "commons": "Plain black SVG water icons",
+    "super": "shape"
+  },
+  "ear": {
+    "commons": "Plain black SVG ear icons",
+    "super": "body_part"
+  },
+  "electrical_diagram_symbols": {
+    "commons": "SVG electrical symbols",
+    "match": "^electrical_.+"
+  },
+  "envelope": {
+    "commons": "Plain black SVG envelope icons"
+  },
+  "euro": {
+    "super": "currency"
+  },
+  "eye": {
+    "commons": "Plain black SVG eye icons",
+    "super": "body_part"
+  },
+  "eyebrow": {
+    "super": "eye"
+  },
+  "eyelash": {
+    "super": "eye"
+  },
+  "face": {
+    "match": ".*face.*"
+  },
+  "ferris_wheel": {
+    "super": "amusement_ride"
+  },
+  "ferryboat": {
+    "super": "motorboat"
+  },
+  "fighter_jet_plane": {
+    "super": "jet_plane"
+  },
+  "fillet_knife": {
+    "super": "knife"
+  },
+  "fish": {
+    "commons": "Plain black SVG fish icons",
+    "super": "animal"
+  },
+  "flag": {
+    "commons": "Plain black SVG flag icons"
+  },
+  "flagpole": {
+    "super": "flag"
+  },
+  "flagstick": {
+    "super": "flag"
+  },
+  "flaming_chalice": {
+    "super": "religious_symbol"
+  },
+  "flatbed_truck": {
+    "super": "truck"
+  },
+  "flower": {
+    "super": "plant"
+  },
+  "flying_saucer": {
+    "super": "spacecraft"
+  },
+  "food": {
+    "super": "food_and_drink"
+  },
+  "food_and_drink": {
+    "commons": "Plain black SVG food and drink icons"
+  },
+  "footwear": {
+    "commons": "Plain black SVG footwear icons",
+    "super": "clothing"
+  },
+  "fork": {
+    "super": "cutlery"
+  },
+  "fountain": {
+    "commons": "Plain black SVG fountain icons"
+  },
+  "fruit": {
+    "commons": "Plain black SVG fruit icons",
+    "super": "food"
+  },
+  "fuel_station": {},
+  "gasoline_pump": {
+    "super": "fuel_station"
+  },
+  "globe_gasoline_pump": {
+    "super": "gasoline_pump"
+  },
+  "grass": {
+    "super": "leaf"
+  },
+  "greek_cross": {
+    "super": "christian_cross"
+  },
+  "hammer": {
+    "super": "hand_tool"
+  },
+  "hand": {
+    "commons": "Plain black SVG hand icons",
+    "super": "body_part"
+  },
+  "hand_tool": {
+    "super": "tool"
+  },
+  "handshake": {
+    "super": "hand"
+  },
+  "hanging_rail_transit_vehicle": {
+    "super": "train"
+  },
+  "hat": {
+    "super": "headwear"
+  },
+  "headwear": {
+    "commons": "Plain black SVG headgear icons",
+    "super": "clothing"
+  },
+  "heart": {
+    "commons": "Plain black SVG heart icons",
+    "super": "shape"
+  },
+  "helicopter": {
+    "commons": "Plain black SVG helicopter icons",
+    "super": "aircraft"
+  },
+  "horse": {
+    "commons": "Plain black SVG horse icons",
+    "super": "animal"
+  },
+  "houseboat": {
+    "super": "boat"
+  },
+  "ice_skate": {
+    "super": "skate"
+  },
+  "inline_skate": {
+    "super": "skate"
+  },
+  "isosceles_trapezoid": {
+    "super": "trapezoid"
+  },
+  "japanese_map_symbol": {
+    "commons": "SVG map symbols of Japan",
+    "match": "^jp_.+"
+  },
+  "jeep": {
+    "super": "car"
+  },
+  "jet_plane": {
+    "super": "plane"
+  },
+  "junk_car": {
+    "super": "car"
+  },
+  "kayak": {
+    "super": "paddlecraft"
+  },
+  "key": {
+    "super": "hand_tool"
+  },
+  "kids_train": {
+    "super": "train"
+  },
+  "knife": {
+    "super": [
+      "cutlery",
+      "weapon"
+    ]
+  },
+  "landform": {
+    "commons": "SVG nature icons"
+  },
+  "latin_cross": {
+    "super": "christian_cross"
+  },
+  "leaf": {
+    "match": "^(leaf|leaves)$",
+    "super": "plant"
+  },
+  "leafless_tree": {
+    "super": "tree"
+  },
+  "letter": {
+    "commons": "Single letter icons",
+    "match": "^[a-z]$",
+    "super": "text"
+  },
+  "loaf_of_bread": {
+    "super": "bread"
+  },
+  "loaf_of_pan_bread": {
+    "super": [
+      "loaf_of_bread",
+      "pan_bread"
+    ]
+  },
+  "lotus_flower": {
+    "super": "flower"
+  },
+  "manhole_cover": {
+    "commons": "Plain black SVG manhole cover icons"
+  },
+  "manicured_grass": {
+    "super": "grass"
+  },
+  "maple_leaf": {
+    "super": "leaf"
+  },
+  "mobile_phone": {
+    "commons": "Plain black SVG telephone icons"
+  },
+  "monorail_transit_vehicle": {
+    "super": "train"
+  },
+  "motor_scooter": {
+    "super": "motorcycle"
+  },
+  "motor_vehicle": {
+    "super": "vehicle"
+  },
+  "motorboat": {
+    "super": [
+      "boat",
+      "motor_vehicle"
+    ]
+  },
+  "motorcycle": {
+    "commons": "Plain black SVG motorcycle icons",
+    "super": "motor_vehicle"
+  },
+  "mountain": {
+    "super": "landform"
+  },
+  "nordic_cross": {
+    "super": "christian_cross"
+  },
+  "number": {
+    "commons": "Number icons",
+    "match": "^(zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)$"
+  },
+  "oak_leaf": {
+    "super": "leaf"
+  },
+  "octagon": {
+    "super": "polygon"
+  },
+  "om": {
+    "super": "religious_symbol"
+  },
+  "open_envelope": {
+    "super": "envelope"
+  },
+  "outstretched_hand": {
+    "super": "hand"
+  },
+  "oval_broadleaved_tree": {
+    "super": "broadleaved_tree"
+  },
+  "paddlecraft": {
+    "super": "boat"
+  },
+  "palm_tree": {
+    "super": "tree"
+  },
+  "pan_bread": {
+    "super": "bread"
+  },
+  "papal_cross": {
+    "super": "christian_cross"
+  },
+  "parallelogram": {
+    "super": "quadrilateral"
+  },
+  "passport": {
+    "commons": "Plain black SVG passport icons"
+  },
+  "patriarchal_cross": {
+    "super": "christian_cross"
+  },
+  "pawprint": {
+    "commons": "Plain black SVG pawprint icons",
+    "super": "animal"
+  },
+  "person": {
+    "commons": "Plain black SVG people icons",
+    "match": "^(person|people)$"
+  },
+  "peso": {
+    "super": "currency"
+  },
+  "petrine_cross": {
+    "super": "christian_cross"
+  },
+  "phone": {
+    "commons": "Plain black SVG telephone icons"
+  },
+  "phone_bars": {
+    "match": "^phone_bars.*"
+  },
+  "pickup_truck": {
+    "super": "truck"
+  },
+  "pin_pad": {
+    "super": "atm"
+  },
+  "piping": {
+    "commons": "Plumbing icons"
+  },
+  "pixel": {
+    "commons": "One-color SVG pixel art (black)",
+    "match": "^pixel_.+"
+  },
+  "plane": {
+    "super": "aircraft"
+  },
+  "plant": {
+    "commons": "Plain black SVG plant icons"
+  },
+  "pointy_rock": {
+    "super": "rock"
+  },
+  "polygon": {
+    "super": "shape"
+  },
+  "pound": {
+    "super": "currency"
+  },
+  "propeller_plane": {
+    "super": "plane"
+  },
+  "quadcopter_drone": {
+    "super": "drone_aircraft"
+  },
+  "quadrilateral": {
+    "super": "polygon"
+  },
+  "ranger_hat": {
+    "super": "hat"
+  },
+  "rectangle": {
+    "super": "parallelogram"
+  },
+  "religious_symbol": {
+    "commons": "Plain black SVG religious computer icons"
+  },
+  "rock": {
+    "super": "landform"
+  },
+  "rocketship": {
+    "super": "spacecraft"
+  },
+  "rocking_horse": {
+    "super": "amusement_ride"
+  },
+  "roller_coaster": {
+    "super": [
+      "amusement_ride",
+      "train"
+    ]
+  },
+  "roman_numeral": {
+    "match": "^roman_numeral_.+"
+  },
+  "round_rock": {
+    "super": "rock"
+  },
+  "ruble": {
+    "super": "currency"
+  },
+  "rupee": {
+    "super": "currency"
+  },
+  "russian_cross": {
+    "super": "christian_cross"
+  },
+  "russian_orthodox_cross": {
+    "super": "christian_cross"
+  },
+  "sailboat": {
+    "super": "boat"
+  },
+  "sailing_ship": {
+    "super": "ship"
+  },
+  "saint_georges_cross": {
+    "super": "christian_cross"
+  },
+  "school_bus": {
+    "super": "bus"
+  },
+  "seaplane": {
+    "super": [
+      "plane",
+      "watercraft"
+    ]
+  },
+  "seaplane_takeoff": {
+    "super": "seaplane"
+  },
+  "sedan": {
+    "super": "car"
+  },
+  "semi_trailer": {
+    "super": "trailer"
+  },
+  "shape": {},
+  "shekel": {
+    "super": "currency"
+  },
+  "ship": {
+    "super": "boat"
+  },
+  "shipwreck": {
+    "super": "ship"
+  },
+  "shirt": {
+    "super": "clothing"
+  },
+  "shoe": {
+    "super": "footwear"
+  },
+  "shopping_bag": {
+    "commons": "Plain black SVG shopping bag icons",
+    "super": "bag"
+  },
+  "shopping_cart": {
+    "commons": "Plain black SVG shopping cart icons",
+    "super": "vehicle"
+  },
+  "shrub": {
+    "super": "plant"
+  },
+  "skate": {
+    "super": "footwear"
+  },
+  "skateboard": {
+    "super": "vehicle"
+  },
+  "skull": {
+    "commons": "Plain black SVG skull icons",
+    "super": "body_part"
+  },
+  "slice_of_pan_bread": {
+    "super": "pan_bread"
+  },
+  "snowmobile": {
+    "super": "vehicle"
+  },
+  "spacecraft": {
+    "super": "aircraft"
+  },
+  "spiky_fish": {
+    "super": "fish"
+  },
+  "spoon": {
+    "super": "cutlery"
+  },
+  "spray_container": {
+    "super": "container"
+  },
+  "spring_rider": {
+    "super": "amusement_ride"
+  },
+  "square": {
+    "super": "rectangle"
+  },
+  "square_academic_cap": {
+    "super": "hat"
+  },
+  "square_dot": {
+    "super": "square"
+  },
+  "squat_rock": {
+    "super": "rock"
+  },
+  "stagecoach": {
+    "super": "carriage"
+  },
+  "star": {
+    "super": "polygon"
+  },
+  "star_of_david": {
+    "super": "religious_symbol"
+  },
+  "stardust": {
+    "super": "star"
+  },
+  "station_wagon": {
+    "super": "car"
+  },
+  "steam_train": {
+    "super": "train"
+  },
+  "stroller": {
+    "super": "vehicle"
+  },
+  "sugarcane_stalk": {
+    "super": "plant"
+  },
+  "suitcase": {
+    "commons": "Plain black SVG luggage icons",
+    "super": "bag"
+  },
+  "tag": {
+    "commons": "Plain black SVG tag icons"
+  },
+  "taxi": {
+    "super": "car"
+  },
+  "tent": {
+    "commons": "Plain black SVG tent icons",
+    "super": "building"
+  },
+  "terminal_screen": {
+    "commons": "Plain black SVG terminal icons"
+  },
+  "text": {
+    "commons": "SVG text icons",
+    "match": ".+_text$"
+  },
+  "tipi_campsite": {
+    "super": "tent"
+  },
+  "tool": {
+    "commons": "Plain black SVG tool icons"
+  },
+  "tour_van": {
+    "super": "van"
+  },
+  "tourboat": {
+    "super": "motorboat"
+  },
+  "tow_truck": {
+    "super": "truck"
+  },
+  "tower": {
+    "commons": "Tower icons"
+  },
+  "trailer": {
+    "super": "vehicle"
+  },
+  "train": {
+    "commons": "Plain black SVG train icons",
+    "super": "transit_vehicle"
+  },
+  "tram": {
+    "super": "train"
+  },
+  "transit_vehicle": {
+    "super": "motor_vehicle"
+  },
+  "trapezoid": {
+    "super": "quadrilateral"
+  },
+  "trapezoidal_rock": {
+    "super": "rock"
+  },
+  "trash_can": {
+    "super": "waste_container"
+  },
+  "trash_truck": {
+    "super": "truck"
+  },
+  "tree": {
+    "super": "plant"
+  },
+  "tree_stump": {
+    "super": "tree"
+  },
+  "tricorne_hat": {
+    "super": "hat"
+  },
+  "truck": {
+    "commons": "Plain black SVG truck icons",
+    "super": "motor_vehicle"
+  },
+  "tshirt": {
+    "super": "shirt"
+  },
+  "tulip": {
+    "super": "flower"
+  },
+  "typha": {
+    "super": "plant"
+  },
+  "us_boundary": {
+    "commons": "Plain black SVG icon maps of the United States",
+    "match": "^(contiguous_united_states|district_of_columbia|alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new_hampshire|new_jersey|new_mexico|new_york|north_carolina|north_dakota|ohio|oklahoma|oregon|pennsylvania|rhode_island|south_carolina|south_dakota|tennessee|texas|utah|vermont|virginia|washington|west_virginia|wisconsin|wyoming)$",
+    "super": "boundary"
+  },
+  "utv": {
+    "super": "motor_vehicle"
+  },
+  "van": {
+    "super": "bus"
+  },
+  "vehicle": {},
+  "vending_machine": {
+    "commons": "Vending machine icons"
+  },
+  "vessel": {
+    "super": "container"
+  },
+  "vneck_tshirt": {
+    "super": "tshirt"
+  },
+  "wall_tent": {
+    "super": "tent"
+  },
+  "waste_container": {
+    "commons": "Plain black SVG waste container icons"
+  },
+  "water": {
+    "commons": "Plain black SVG water icons"
+  },
+  "water_pipe_return_bend": {
+    "super": "piping"
+  },
+  "water_standpipe": {
+    "super": "piping"
+  },
+  "water_tap": {
+    "super": "piping"
+  },
+  "watercraft": {
+    "commons": "Plain black SVG watercraft icons",
+    "super": "vehicle"
+  },
+  "weapon": {
+    "commons": "Plain black SVG weapon icons"
+  },
+  "wheelchair": {
+    "super": "vehicle"
+  },
+  "wheelie_bin": {
+    "super": "waste_container"
+  },
+  "wifi": {
+    "match": "^wifi.*"
+  },
+  "wizards_hat": {
+    "super": "hat"
+  },
+  "wrench": {
+    "super": "hand_tool"
+  },
+  "yen_yuan": {
+    "super": "currency"
+  },
+  "yin_yang": {
+    "super": "religious_symbol"
+  }
+}

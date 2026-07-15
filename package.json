@@ -37,7 +37,7 @@
   "scripts": {
     "commons": "npm run dist_package && npm run sync_to_commons",
     "dist": "npm run dist_package",
-    "dist_package": "npm run check_icons && npm run check_changelog && npm run build_dist && cp metadata/changelog.json dist/changelog.json && cp metadata/external_sources.json dist/external_sources.json",
+    "dist_package": "npm run check_icons && npm run check_icon_categories && npm run check_changelog && npm run build_dist && cp metadata/changelog.json dist/changelog.json && cp metadata/external_sources.json dist/external_sources.json && cp metadata/categories.json dist/categories.json",
     "build_docs": "node scripts/build_docs.js && npm view @waysidemapping/pinhead time --json > docs/npm_publish_dates.json",
     "build_docs_for_preview": "npm run build_docs && npm run dist_package && node scripts/build_preview_docs.js",
     "build_dist": "node scripts/build_dist.js",
@@ -48,6 +48,7 @@
     "sync_qgis_resources_repo": "bash scripts/sync_qgis_resources_repo.sh",
     "check_changelog": "node scripts/check_changelog.js",
     "check_icons": "node scripts/check_icons.js",
+    "check_icon_categories": "node scripts/check_icon_categories.js",
     "fetch_wikidata_info": "node scripts/fetch_wikidata_info.js",
     "serve": "node serve.js",
     "sync_to_commons": "node scripts/sync_to_commons.js"

@@ -1,7 +1,7 @@
 import { readFileSync } from "fs";
-
 import { downloadCategoryPages, uploadFile, uploadNewFileDescription, downloadEntityStatements, uploadClaims, moveFile } from "../src/CommonsConnection.js";
 import { ChangelogReader } from '../src/ChangelogReader.js';
+import { loadCategories } from '../src/CategoryLoader.js';
 
 const changelogs = JSON.parse(readFileSync('dist/changelog.json'));
 const changelogReader = new ChangelogReader(changelogs);
@@ -25,6 +25,8 @@ const externalSources = JSON.parse(readFileSync('dist/external_sources.json'));
 const completeIconsById =  JSON.parse(readFileSync('dist/icons/index.complete.json')).icons;
 const iconsToUploadById = Object.assign({}, completeIconsById);
 const pagesNeedingUpdateByIconId = {};
+
+const iconCategoryInfo = loadCategories(Object.keys(completeIconsById));
 
 const validRemotePages = {};
 
@@ -155,8 +157,7 @@ function commonsPageAuthorValue(pinheadIconId) {
 }
 
 function commonsPageSourceValue(pinheadIconId) {
-  const srcdir = completeIconsById[pinheadIconId].srcdir;
-  return `https://github.com/waysidemapping/pinhead/blob/v${currentVersion}/icons/${(srcdir ? srcdir + '/' : '') + pinheadIconId}.svg`;
+  return `https://github.com/waysidemapping/pinhead/blob/v${currentVersion}/icons/${pinheadIconId}.svg`;
 }
 
 function commonsPageCategoriesText(pinheadIconId) {
@@ -167,86 +168,9 @@ function commonsPageCategoriesText(pinheadIconId) {
   if (bys.includes('@quincylvania')) {
     categories.push('Pinhead icons by Quincy Morgan');
   }
-  const catsForDir = {
-    'abstract_symbols/arrows': ['Black SVG arrow icons'],
-    'abstract_symbols/campsite_symbols': ['Plain black SVG tent icons'],
-    'abstract_symbols/currency_symbols': ['Plain black SVG currency icons'],
-    'abstract_symbols/electrical_diagram_symbols': ['SVG electrical symbols'],
-    'abstract_symbols/hearts': ['Plain black SVG heart icons'],
-    'abstract_symbols/japanese_map_symbols': ['SVG map symbols of Japan'],
-    'abstract_symbols/text/letters': ['Single letter icons'],
-    'abstract_symbols/text/multi_letter': ['SVG text icons'],
-    'abstract_symbols/text/numbers': ['Number icons', 'Plain black SVG numbers'],
-    'animals/birds': ['Plain black SVG bird icons'],
-    'animals/dogs': ['Plain black SVG dog icons'],
-    'animals/fish': ['Plain black SVG fish icons'],
-    'animals/horses': ['Plain black SVG horse icons'],
-    'animals/pawprints': ['Plain black SVG pawprint icons'],
-    animals: ['Plain black SVG animal icons'],
-    'bags/briefcases': ['Plain black SVG briefcase icons'],
-    'bags/shopping_bags': ['Plain black SVG shopping bag icons'],
-    'bags/suitcases': ['Plain black SVG luggage icons'],
-    'bags': ['Plain black SVG luggage icons'],
-    benches: ['Plain black SVG bench icons'],
-    'body_parts/ears': ['Plain black SVG ear icons'],
-    'body_parts/eyes': ['Plain black SVG eye icons'],
-    'body_parts/hands': ['Plain black SVG hand icons'],
-    body_parts: ['Plain black SVG medical icons'],
-    books: ['Plain black SVG book icons'],
-    'boundaries/us': ['Plain black SVG icon maps of the United States'],
-    boundaries: ['Plain black SVG icon maps'],
-    'buildings/castles': ['Plain black SVG castle icons'],
-    'buildings/tents': ['Plain black SVG tent icons'],
-    buildings: ['Plain black SVG building icons'],
-    'clothing/footwear': ['Plain black SVG footwear icons'],
-    'clothing/headwear': ['Plain black SVG headgear icons'],
-    clothing: ['Plain black SVG clothing icons'],
-    dice: ['SVG dice icons'],
-    droplets: ['Plain black SVG water icons'],
-    envelopes: ['Plain black SVG envelope icons'],
-    flags: ['Plain black SVG flag icons'],
-    food_and_drink: ['Plain black SVG food and drink icons'],
-    fountains: ['Plain black SVG fountain icons'],
-    hand_tools: ['Plain black SVG tool icons'],
-    landforms: ['SVG nature icons'],
-    manhole_covers: ['Plain black SVG manhole cover icons'],
-    medical_devices_and_medicine: ['Plain black SVG medical icons'],
-    microbiology: ['Plain black SVG medical icons'],
-    mobile_phones: ['Plain black SVG telephone icons'],
-    passports: ['Plain black SVG passport icons'],
-    people: ['Plain black SVG people icons'],
-    phones: ['Plain black SVG telephone icons'],
-    pin_pads: ['ATM icons'],
-    'pixel_style/buildings': ['One-color SVG pixel art (black)', 'Plain black SVG building icons'],
-    'pixel_style/currency_symbols': ['One-color SVG pixel art (black)', 'Plain black SVG currency icons'],
-    'pixel_style/food': ['One-color SVG pixel art (black)', 'Plain black SVG food and drink icons'],
-    'pixel_style/vehicles': ['One-color SVG pixel art (black)', 'Plain black SVG vehicle icons'],
-    pixel_style: ['One-color SVG pixel art (black)'],
-    plants: ['Plain black SVG plant icons'],
-    religious: ['Plain black SVG religious computer icons'],
-    skulls: ['Plain black SVG skull icons'],
-    tags: ['Plain black SVG tag icons'],
-    towers_poles_masts: ['Tower icons'],
-    'vehicles/aircraft': ['Plain black SVG aircraft icons'],
-    'vehicles/bicycles': ['Plain black SVG bicycle icons'],
-    'vehicles/buses': ['Plain black SVG bus icons'],
-    'vehicles/cars': ['Plain black SVG automobile icons'],
-    'vehicles/motorcycles': ['Plain black SVG motorcycle icons'],
-    'vehicles/trains': ['Plain black SVG train icons'],
-    'vehicles/trucks': ['Plain black SVG truck icons'],
-    'vehicles/watercraft': ['Plain black SVG watercraft icons'],
-    waste_containers: ['Plain black SVG waste container icons'],
-    water_pipes: ['Plumbing icons'],
-  };
 
-  const srcdir = completeIconsById[pinheadIconId].srcdir;
-  if (srcdir) {
-    for (const dirPrefix in catsForDir) {
-      if (srcdir.startsWith(dirPrefix)) {
-        categories = categories.concat(catsForDir[dirPrefix]);
-        break;
-      }
-    }
+  if (iconCategoryInfo.byIconId[pinheadIconId]?.commons) {
+    categories = categories.concat(iconCategoryInfo.byIconId[pinheadIconId].commons);
   }
   return categories.map(cat => `[[Category:${cat}]]\n`).join('');
 }
