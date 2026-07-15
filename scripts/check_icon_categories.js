@@ -43,11 +43,11 @@ function checkIcons() {
 
   const categoryInfo = loadCategories(Object.keys(iconIds));
 
-  for (const iconId in iconIds) {
-    if ((categoryInfo.byIconId[iconId]?.allCategories?.length || 0) === 0) {
-      console.log(`No category for icon: ${iconId}`);
-    }
-  }
+  // for (const iconId in iconIds) {
+  //   if ((categoryInfo.byIconId[iconId]?.allCategories?.length || 0) === 0) {
+  //     console.log(`No category for icon: ${iconId}`);
+  //   }
+  // }
 
   // Object.values(categoryInfo.byCategoryId).sort((c1, c2) => c1.icons.length - c2.icons.length)
   //   .forEach(cat => console.log(`${cat.id}: ${cat.icons.length} icons`));
