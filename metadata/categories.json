@@ -273,6 +273,7 @@
   "cup": {
     "super": "vessel"
   },
+  "curb": {},
   "currency": {
     "commons": "Plain black SVG currency icons"
   },
@@ -391,6 +392,9 @@
   "flower": {
     "super": "plant"
   },
+  "flush_curb": {
+    "super": "curb"
+  },
   "flying_saucer": {
     "super": "spacecraft"
   },
@@ -415,6 +419,9 @@
     "super": "food"
   },
   "fuel_station": {},
+  "gallbladder": {
+    "super": "body_organ"
+  },
   "gasoline_pump": {
     "super": "fuel_station"
   },
@@ -489,6 +496,9 @@
   "isosceles_trapezoid": {
     "super": "trapezoid"
   },
+  "jack_o_lantern": {
+    "super": "pumpkin"
+  },
   "japanese_map_symbol": {
     "commons": "SVG map symbols of Japan",
     "match": "^jp_.+"
@@ -555,6 +565,9 @@
   },
   "lotus_flower": {
     "super": "flower"
+  },
+  "lowered_curb": {
+    "super": "curb"
   },
   "mammal": {
     "super": "animal"
@@ -717,6 +730,12 @@
   "quadrilateral": {
     "super": "polygon"
   },
+  "quaker_star": {
+    "super": "christian_symbol"
+  },
+  "raised_curb": {
+    "super": "curb"
+  },
   "ranger_hat": {
     "super": "hat"
   },
@@ -734,6 +753,9 @@
   },
   "rocking_horse": {
     "super": "amusement_ride"
+  },
+  "rolled_curb": {
+    "super": "curb"
   },
   "roller_coaster": {
     "super": [
@@ -886,6 +908,9 @@
   "stroller": {
     "super": "vehicle"
   },
+  "sugar_cube": {
+    "super": "food"
+  },
   "sugarcane_stalk": {
     "super": "plant"
   },
@@ -967,6 +992,9 @@
   },
   "tree_stump": {
     "super": "tree"
+  },
+  "triangle": {
+    "super": "polygon"
   },
   "tricorne_hat": {
     "super": "hat"
