@@ -17234,6 +17234,36 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "one_pip",
+        "by": "@quincylvania",
+        "inspo": "die_face_with_one_pip"
+      },
+      {
+        "newId": "two_pips",
+        "by": "@quincylvania",
+        "inspo": "die_face_with_two_pips"
+      },
+      {
+        "newId": "three_pips",
+        "by": "@quincylvania",
+        "inspo": "die_face_with_three_pips"
+      },
+      {
+        "newId": "four_pips",
+        "by": "@quincylvania",
+        "inspo": "die_face_with_four_pips"
+      },
+      {
+        "newId": "five_pips",
+        "by": "@quincylvania",
+        "inspo": "die_face_with_five_pips"
+      },
+      {
+        "newId": "six_pips",
+        "by": "@quincylvania",
+        "inspo": "die_face_with_six_pips"
+      },
+      {
         "oldId": "ten",
         "newId": "one_zero"
       },
