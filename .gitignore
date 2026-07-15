@@ -4,6 +4,7 @@ docs/latest/
 docs/v*/
 docs/package.json
 docs/changelog.json
+docs/categories.json
 docs/external_sources.json
 docs/srcicons/
 docs/npm_publish_dates.json
