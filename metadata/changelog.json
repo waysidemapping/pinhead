@@ -16798,6 +16798,22 @@
         ]
       },
       {
+        "newId": "medal_ribbon_with_greek_cross",
+        "by": "@quincylvania",
+        "inspo": [
+          "medal_ribbon_with_star",
+          "greek_cross"
+        ]
+      },
+      {
+        "newId": "medal_ribbon_with_circle",
+        "by": "@quincylvania",
+        "inspo": [
+          "medal_ribbon_with_star",
+          "circle"
+        ]
+      },
+      {
         "oldId": "droplet",
         "newId": "droplet",
         "by": "@quincylvania",
