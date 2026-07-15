@@ -17081,6 +17081,53 @@
         "newId": "thumbs_down_hand_with_sleeve",
         "by": "@quincylvania",
         "inspo": "thumbs_up_hand_with_sleeve"
+      },
+      {
+        "newId": "person_sitting_on_lifeguard_stand",
+        "by": "@quincylvania",
+        "inspo": "person_sitting_on_lifeguard_stand_above_water"
+      },
+      {
+        "newId": "person_diving",
+        "by": "@quincylvania",
+        "inspo": "person_diving_into_water"
+      },
+      {
+        "newId": "tourboat",
+        "by": "@quincylvania",
+        "inspo": "tourboat_on_water"
+      },
+      {
+        "newId": "airboat",
+        "by": "@quincylvania",
+        "inspo": "airboat_on_water"
+      },
+      {
+        "newId": "person_wearing_helmet_padding_raft",
+        "by": "@quincylvania",
+        "inspo": "person_wearing_helmet_padding_raft_on_water"
+      },
+      {
+        "newId": "hand_reaching_down_toward_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "water",
+          "hand_reaching_down"
+        ]
+      },
+      {
+        "newId": "sea_star_under_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "sea_star",
+          "water"
+        ]
+      },
+      {
+        "oldId": "sea_star",
+        "newId": "sea_star",
+        "edit": "minor",
+        "by": "@quincylvania"
       }
     ]
   }
