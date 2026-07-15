@@ -17138,6 +17138,40 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "trail_blaze",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "trail_blazes_left",
+        "by": "@quincylvania",
+        "inspo": "trail_blaze"
+      },
+      {
+        "newId": "trail_blazes_right",
+        "by": "@quincylvania",
+        "inspo": "trail_blaze"
+      },
+      {
+        "newId": "trail_blazes_up",
+        "by": "@quincylvania",
+        "inspo": "trail_blaze"
+      },
+      {
+        "newId": "trail_blazes_down",
+        "by": "@quincylvania",
+        "inspo": "trail_blaze"
+      },
+      {
+        "newId": "trail_blazes_top_right",
+        "by": "@quincylvania",
+        "inspo": "trail_blaze"
+      },
+      {
+        "newId": "trail_blazes_top_left",
+        "by": "@quincylvania",
+        "inspo": "trail_blaze"
+      },
+      {
         "oldId": "ten",
         "newId": "one_zero"
       },
