@@ -74,6 +74,9 @@
     "commons": "Waste bags",
     "super": "waste_container"
   },
+  "baguette": {
+    "super": "loaf_of_bread"
+  },
   "baht": {
     "super": "currency"
   },
@@ -87,7 +90,7 @@
     "super": "sports_ball"
   },
   "bear": {
-    "super": "mammal"
+    "super": "carnivore"
   },
   "bear_spray_can": {
     "super": "spray_container"
@@ -113,6 +116,9 @@
   "bird": {
     "commons": "Plain black SVG bird icons",
     "super": "animal"
+  },
+  "bison": {
+    "super": "ungulate"
   },
   "bladder": {
     "super": "body_organ"
@@ -155,6 +161,9 @@
   "building": {
     "commons": "Plain black SVG building icons"
   },
+  "bull": {
+    "super": "ungulate"
+  },
   "bulldozer": {
     "super": "construction_vehicle"
   },
@@ -168,6 +177,9 @@
     "commons": "Plain black SVG bus icons",
     "super": "transit_vehicle"
   },
+  "butterfly": {
+    "super": "insect"
+  },
   "cairn": {
     "super": "rock"
   },
@@ -176,6 +188,9 @@
   },
   "campsite": {
     "super": "tent"
+  },
+  "canine": {
+    "super": "carnivore"
   },
   "canoe": {
     "super": "paddlecraft"
@@ -189,6 +204,9 @@
   },
   "cargobike": {
     "super": "bicycle"
+  },
+  "carnivore": {
+    "super": "mammal"
   },
   "carousel": {
     "super": "amusement_ride"
@@ -211,6 +229,9 @@
   },
   "castle_tower": {
     "super": "castle"
+  },
+  "cat": {
+    "super": "carnivore"
   },
   "celtic_cross": {
     "super": "christian_cross"
@@ -264,6 +285,9 @@
     "match": "africa",
     "super": "boundary"
   },
+  "coral": {
+    "super": "animal"
+  },
   "cowboy_hat": {
     "super": "hat"
   },
@@ -286,6 +310,9 @@
   "daisy": {
     "super": "flower"
   },
+  "deer": {
+    "super": "ungulate"
+  },
   "diamond": {
     "super": "quadrilateral"
   },
@@ -298,13 +325,16 @@
   },
   "dog": {
     "commons": "Plain black SVG dog icons",
-    "super": "mammal"
+    "super": "canine"
   },
   "dollar": {
     "super": "currency"
   },
   "dot": {
     "super": "circle"
+  },
+  "dove": {
+    "super": "bird"
   },
   "drink": {
     "super": "food_and_drink"
@@ -328,6 +358,9 @@
     "commons": "Plain black SVG water icons",
     "super": "shape"
   },
+  "duck": {
+    "super": "waterfowl"
+  },
   "ear": {
     "commons": "Plain black SVG ear icons",
     "super": "body_part"
@@ -335,6 +368,9 @@
   "electrical_diagram_symbols": {
     "commons": "SVG electrical symbols",
     "match": "^electrical_.+"
+  },
+  "elephant": {
+    "super": "mammal"
   },
   "envelope": {
     "commons": "Plain black SVG envelope icons"
@@ -425,6 +461,9 @@
   "gasoline_pump": {
     "super": "fuel_station"
   },
+  "giraffe": {
+    "super": "ungulate"
+  },
   "globe_gasoline_pump": {
     "super": "gasoline_pump"
   },
@@ -433,6 +472,12 @@
   },
   "greek_cross": {
     "super": "christian_cross"
+  },
+  "gull": {
+    "super": "bird"
+  },
+  "hairy_caterpillar": {
+    "super": "insect"
   },
   "hammer": {
     "super": "hand_tool"
@@ -473,7 +518,7 @@
   },
   "horse": {
     "commons": "Plain black SVG horse icons",
-    "super": "mammal"
+    "super": "ungulate"
   },
   "houseboat": {
     "super": "boat"
@@ -540,6 +585,7 @@
     "super": "christian_cross"
   },
   "leaf": {
+    "commons": "Plain black SVG leaf icons",
     "match": "^(leaf|leaves)$",
     "super": "plant"
   },
@@ -550,6 +596,9 @@
     "commons": "Single letter icons",
     "match": "^[a-z]$",
     "super": "text"
+  },
+  "lion": {
+    "super": "cat"
   },
   "liver": {
     "super": "body_organ"
@@ -586,6 +635,9 @@
   },
   "monorail_transit_vehicle": {
     "super": "train"
+  },
+  "mosquito": {
+    "super": "insect"
   },
   "motor_scooter": {
     "super": "motorcycle"
@@ -793,8 +845,14 @@
   "school_bus": {
     "super": "bus"
   },
+  "sea_lion": {
+    "super": "carnivore"
+  },
   "sea_star": {
-    "super": "fish"
+    "super": [
+      "fish",
+      "star"
+    ]
   },
   "seaplane": {
     "super": [
@@ -850,6 +908,9 @@
   },
   "slice_of_pan_bread": {
     "super": "pan_bread"
+  },
+  "snowcapped_mountain": {
+    "super": "mountain"
   },
   "snowmobile": {
     "super": "vehicle"
@@ -988,6 +1049,7 @@
     "super": "truck"
   },
   "tree": {
+    "commons": "Plain black SVG tree icons",
     "super": "plant"
   },
   "tree_stump": {
@@ -1011,6 +1073,12 @@
   },
   "typha": {
     "super": "plant"
+  },
+  "ungulate": {
+    "super": "mammal"
+  },
+  "unicorn": {
+    "super": "horse"
   },
   "us_boundary": {
     "commons": "Plain black SVG icon maps of the United States",
@@ -1075,6 +1143,9 @@
   },
   "wizards_hat": {
     "super": "hat"
+  },
+  "wolf": {
+    "super": "canine"
   },
   "wrench": {
     "super": "hand_tool"
