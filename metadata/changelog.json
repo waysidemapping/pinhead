@@ -17290,6 +17290,14 @@
       {
         "oldId": "twelve",
         "newId": "one_two"
+      },
+      {
+        "oldId": "ear_atop_slash",
+        "newId": "hearing_accessibility_symbol"
+      },
+      {
+        "oldId": "ear_atop_slash_with_t",
+        "newId": "hearing_accessibility_symbol_with_t"
       }
     ]
   }
