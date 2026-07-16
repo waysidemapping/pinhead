@@ -17292,6 +17292,10 @@
         "newId": "one_two"
       },
       {
+        "oldId": "conifer_tree_and_flower_and_mountain_snowcapped",
+        "newId": "conifer_tree_and_flower_and_snowcapped_mountain"
+      },
+      {
         "oldId": "ear_atop_slash",
         "newId": "hearing_accessibility_symbol"
       },
