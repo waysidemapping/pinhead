@@ -17250,6 +17250,18 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "keyboard",
+        "edit": "resize",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_keyboard"
+      },
+      {
+        "newId": "keyboard_in_rectangle",
+        "edit": "resize",
+        "by": "@quincylvania",
+        "inspo": "keyboard"
+      },
+      {
         "newId": "one_pip",
         "by": "@quincylvania",
         "inspo": "die_face_with_one_pip"
