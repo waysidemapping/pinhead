@@ -170,6 +170,9 @@
   "bullet_train": {
     "super": "train"
   },
+  "bundesadler": {
+    "super": "eagle"
+  },
   "burger": {
     "super": "prepared_food"
   },
@@ -360,6 +363,9 @@
   },
   "duck": {
     "super": "waterfowl"
+  },
+  "eagle": {
+    "super": "raptor"
   },
   "ear": {
     "commons": "Plain black SVG ear icons",
@@ -790,6 +796,9 @@
   },
   "ranger_hat": {
     "super": "hat"
+  },
+  "raptor": {
+    "super": "bird"
   },
   "rectangle": {
     "super": "parallelogram"
