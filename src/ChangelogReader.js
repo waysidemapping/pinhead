@@ -1,6 +1,7 @@
 function loadChangelogData(c) {
-
-  const changelogs = c.toSorted((a, b) => parseInt(a.majorVersion) - parseInt(b.majorVersion));
+  const changelogs = c.toSorted(
+    (a, b) => parseInt(a.majorVersion) - parseInt(b.majorVersion),
+  );
 
   const iconsById = {};
   const iconsByVersionedIconId = {};
@@ -27,7 +28,8 @@ function loadChangelogData(c) {
           iconsById[iconChange.newId].date = date;
           iconsById[iconChange.newId].v = version;
           if (iconChange.newId !== iconChange.oldId) {
-            if (!iconsById[iconChange.newId].oldIds) iconsById[iconChange.newId].oldIds = [];
+            if (!iconsById[iconChange.newId].oldIds)
+              iconsById[iconChange.newId].oldIds = [];
             iconsById[iconChange.newId].oldIds.push(iconChange.oldId);
             iconsById[iconChange.newId].renameDate = date;
             iconsById[iconChange.newId].renameV = version;
@@ -37,10 +39,11 @@ function loadChangelogData(c) {
             iconsById[iconChange.newId].redesignV = version;
           }
           for (const key in iconChange) {
-            if (!['newId', 'oldId'].includes(key)) {
+            if (!["newId", "oldId"].includes(key)) {
               const vals = stringArray(iconChange[key]);
               if (iconsById[iconChange.newId][key]) {
-                iconsById[iconChange.newId][key] = iconsById[iconChange.newId][key].concat(vals);
+                iconsById[iconChange.newId][key] =
+                  iconsById[iconChange.newId][key].concat(vals);
               } else {
                 iconsById[iconChange.newId][key] = vals;
               }
@@ -55,10 +58,10 @@ function loadChangelogData(c) {
           date: date,
           v: version,
           ogDate: date,
-          ogV: version
+          ogV: version,
         };
         for (const key in iconChange) {
-          if (!['newId', 'oldId'].includes(key)) {
+          if (!["newId", "oldId"].includes(key)) {
             iconsById[iconChange.newId][key] = stringArray(iconChange[key]);
           }
         }
@@ -75,7 +78,7 @@ function loadChangelogData(c) {
 }
 
 function stringArray(value) {
-  return (typeof value === 'string' ? [value] : [...value]);
+  return typeof value === "string" ? [value] : [...value];
 }
 
 export class ChangelogReader {

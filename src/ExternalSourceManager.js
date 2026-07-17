@@ -1,10 +1,19 @@
 import { execSync } from "child_process";
-import { readFileSync, existsSync, rmSync, mkdirSync, globSync, writeFileSync } from "fs";
+import {
+  readFileSync,
+  existsSync,
+  rmSync,
+  mkdirSync,
+  globSync,
+  writeFileSync,
+} from "fs";
 import { join } from "path";
 
 export function downloadExternalSourceAssets(toDir, overwrite) {
-  const importSources = JSON.parse(readFileSync('metadata/external_sources.json'));
-  ensureEmptyDir('tmp');
+  const importSources = JSON.parse(
+    readFileSync("metadata/external_sources.json"),
+  );
+  ensureEmptyDir("tmp");
 
   for (const importSource of importSources) {
     const targetDir = `${toDir}/${importSource.id}`;
@@ -13,7 +22,7 @@ export function downloadExternalSourceAssets(toDir, overwrite) {
     }
   }
 
-  rmSync('tmp', { recursive: true, force: true });
+  rmSync("tmp", { recursive: true, force: true });
 }
 
 function ensureEmptyDir(dir) {
@@ -26,16 +35,20 @@ function ensureEmptyDir(dir) {
 function downloadExternalSourceIcons(importSource, targetDir) {
   ensureEmptyDir(targetDir);
 
-  execSync(`git clone --depth 1 ${importSource.repo} "tmp/${importSource.id}"`)
+  execSync(`git clone --depth 1 ${importSource.repo} "tmp/${importSource.id}"`);
   const srcDir = join(`tmp/${importSource.id}`, importSource.iconDir || "");
   execSync(`cp -r "${srcDir}/." "${targetDir}"`);
 
   const srciconsIndex = {};
 
-  const ignoreFilesRegex = importSource.ignoreFiles && new RegExp(importSource.ignoreFiles);
-  globSync(`${targetDir}/**/*.svg`).forEach(file => {
+  const ignoreFilesRegex =
+    importSource.ignoreFiles && new RegExp(importSource.ignoreFiles);
+  globSync(`${targetDir}/**/*.svg`).forEach((file) => {
     const id = file.slice(targetDir.length + 1, -4);
-    if (importSource.filenameSuffix && !id.endsWith(importSource.filenameSuffix)) {
+    if (
+      importSource.filenameSuffix &&
+      !id.endsWith(importSource.filenameSuffix)
+    ) {
       return;
     }
     if (ignoreFilesRegex && ignoreFilesRegex.test(id)) {
@@ -43,6 +56,6 @@ function downloadExternalSourceIcons(importSource, targetDir) {
     }
     srciconsIndex[id] = {};
   });
-  writeFileSync(targetDir + '/index.json', JSON.stringify(srciconsIndex));
+  writeFileSync(targetDir + "/index.json", JSON.stringify(srciconsIndex));
   console.log("Downloaded icons from source: " + importSource.id);
 }
