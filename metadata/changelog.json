@@ -17250,14 +17250,18 @@
         "by": "@quincylvania"
       },
       {
+        "oldId": "microscope",
+        "newId": "microscope",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
         "newId": "keyboard",
-        "edit": "resize",
         "by": "@quincylvania",
         "inspo": "phone_down_above_keyboard"
       },
       {
         "newId": "keyboard_in_rectangle",
-        "edit": "resize",
         "by": "@quincylvania",
         "inspo": "keyboard"
       },
