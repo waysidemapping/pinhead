@@ -17269,7 +17269,7 @@
         "newId": "sedan_under_key",
         "by": "@quincylvania",
         "inspo": [
-          "car_and_key",
+          "car_under_key",
           "sedan"
         ]
       },
@@ -17333,7 +17333,7 @@
         "newId": "station_wagon_under_key",
         "by": "@quincylvania",
         "inspo": [
-          "car_and_key",
+          "car_under_key",
           "station_wagon"
         ]
       },
@@ -17397,7 +17397,7 @@
         "newId": "pickup_truck_under_key",
         "by": "@quincylvania",
         "inspo": [
-          "car_and_key",
+          "car_under_key",
           "pickup_truck"
         ]
       },
@@ -17510,6 +17510,10 @@
         "newId": "conifer_tree_and_flower_and_snowcapped_mountain"
       },
       {
+        "oldId": "car_with_checkmark",
+        "newId": "car_under_checkmark"
+      },
+      {
         "oldId": "car_with_taxi_checkerboard",
         "newId": "car_under_taxi_checkerboard"
       },
@@ -17536,6 +17540,42 @@
       {
         "oldId": "taxi_and_taxi_checkerboard",
         "newId": "taxi_under_taxi_checkerboard"
+      },
+      {
+        "oldId": "car_and_key",
+        "newId": "car_under_key"
+      },
+      {
+        "oldId": "bicycle_and_key",
+        "newId": "bicycle_under_key"
+      },
+      {
+        "oldId": "cargobike_and_key",
+        "newId": "cargobike_under_key"
+      },
+      {
+        "oldId": "motorcycle_and_key",
+        "newId": "motorcycle_under_key"
+      },
+      {
+        "oldId": "motorboat_and_key",
+        "newId": "motorboat_under_key"
+      },
+      {
+        "oldId": "canoe_and_key",
+        "newId": "canoe_under_key"
+      },
+      {
+        "oldId": "suitcase_and_key",
+        "newId": "suitcase_under_key"
+      },
+      {
+        "oldId": "suitcase_in_rectangle_outline_and_key",
+        "newId": "suitcase_in_rectangle_outline_under_key"
+      },
+      {
+        "oldId": "garage_and_key",
+        "newId": "garage_under_key"
       },
       {
         "oldId": "ear_atop_slash",
