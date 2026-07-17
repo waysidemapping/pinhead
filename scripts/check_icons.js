@@ -69,7 +69,6 @@ function checkIcons() {
   console.time(END);
 
   const iconIds = {};
-  // const iconIdPartsObj = {};
 
   globSync(`./icons/**/*.svg`).forEach(cleanSvgFile);
 
@@ -91,10 +90,6 @@ function checkIcons() {
       process.exit(1);
     }
     iconIds[id] = true;
-    // const parts = id.split(/_with_|_on_|_in_|_onto_|_into_|_and_|_under_|_over_|_above_|_beside_|_between_|_atop_|_within_|_from_|_to_|_toward_|_wearing_|_holding_|_carrying_|_crossing_|_dragging_|_aiming_|_boarding_|_riding_|_driving_|_using_/);
-    // if (parts[0] !== id) {
-    //  parts.forEach(part => iconIdPartsObj[part] = true);
-    // }
 
     // Check the contents of the file
     let rootCount = 0;
@@ -330,12 +325,6 @@ function checkIcons() {
 
     writeFileSync(file, xmlString);
   }
-
-  // const iconIdParts = Object.keys(iconIdPartsObj).sort();
-  // iconIdParts
-  //   .filter(part => !iconIds[part])
-  //   .forEach(part => console.log(`Missing icon part "${part}"`));
-  // console.log(`Missing base icons for ${iconIdParts.filter(part => !iconIds[part]).length} parts of ${iconIdParts.length} parts total`);
 
   console.timeEnd(END);
 }
