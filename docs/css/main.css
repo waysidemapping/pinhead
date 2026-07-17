@@ -17,7 +17,8 @@ svg {
 i {
   font-style: italic;
 }
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 a {
@@ -44,7 +45,8 @@ input {
   color: inheir;
 }
 
-img.inline-icon, a.inline-icon img {
+img.inline-icon,
+a.inline-icon img {
   height: 0.85em;
   aspect-ratio: 1;
 }
@@ -79,15 +81,16 @@ img.inline-icon, a.inline-icon img {
   margin-top: 40px;
 }
 .sidebar-header {
-  display:flex;
-  justify-content:space-between;
-  align-items:baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 .version-title a {
   text-decoration: none;
 }
-.version-title a:hover, .version-title a:focus {
-  text-decoration: underline  1px var(--text-color);;
+.version-title a:hover,
+.version-title a:focus {
+  text-decoration: underline 1px var(--text-color);
 }
 .date-line {
   font-style: italic;
@@ -96,8 +99,8 @@ article {
   position: relative;
   margin: 0 auto;
   line-height: 26px;
- 
-    text-align: center;
+
+  text-align: center;
 }
 article::before {
   content: " ";
@@ -148,19 +151,18 @@ article > *:not(:last-child) {
 .icon-grid a {
   min-width: 0;
   min-height: 0;
-  display:block;
-  width:15px;
-  height:15px;
-  flex:0 0 15px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  flex: 0 0 15px;
 }
 .icon-grid a svg {
   min-width: 0;
   min-height: 0;
-  display:block;
-  width:15px;
-  height:15px;
+  display: block;
+  width: 15px;
+  height: 15px;
 }
-
 
 #sticky-topbar {
   position: sticky;
@@ -169,7 +171,7 @@ article > *:not(:last-child) {
   background: var(--bg-color);
   padding: 10px 0;
   margin-bottom: 16px;
-  border-bottom: 1px solid  var(--text-color);
+  border-bottom: 1px solid var(--text-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -193,13 +195,11 @@ input[type="search"] {
 }
 #browser {
   width: 100%;
-
-
 }
 #browser-body {
-   width: 100%;
-     min-height: 100vh;
-    display: flex;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
   position: relative;
   flex-direction: row;
   gap: 16px;
@@ -219,7 +219,7 @@ input[type="search"] {
   background: var(--bg-color);
   border: 1px solid var(--text-color);
   border-bottom: 0;
-  border-radius: 8px 8px 0 0 ;
+  border-radius: 8px 8px 0 0;
   min-height: calc(100% - 16px);
 }
 #inspector:empty {
@@ -251,7 +251,8 @@ input[type="search"] {
   align-items: center;
   padding: 10px;
 }
-.icon-item:hover, .icon-item:active {
+.icon-item:hover,
+.icon-item:active {
   background: #e9e9e9;
 }
 .icon-item > * {
@@ -283,15 +284,15 @@ input[type="search"] {
   overflow: hidden;
 }
 .icon-label svg {
-  width:15px;
-  height:15px;
-  display:inline-block;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
   margin-right: 10px;
-  vertical-align:middle;
+  vertical-align: middle;
   flex: 0 0 auto;
 }
 .icon-name {
-  vertical-align:middle;
+  vertical-align: middle;
   line-break: anywhere;
   white-space: nowrap;
   overflow: hidden;
@@ -314,25 +315,25 @@ input[type="search"] {
   position: relative;
 }
 .map-preview-background {
-  width:105px;
-  height:105px;
-  background:url(/demo_map.svg);
-  background-size:contain;
+  width: 105px;
+  height: 105px;
+  background: url(/demo_map.svg);
+  background-size: contain;
 }
 .map-preview-pin-icon {
-  width:15px;
-  height:15px;
-  position:absolute;
-  top:45px;
-  left:45px;
-  color:var(--bg-color);
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  color: var(--bg-color);
 }
 .pixel-grid {
-  width:105px;
-  height:105px;
-  flex:0 0 auto;
-  background:url(/15x15_grid.svg);
-  background-size:contain;
+  width: 105px;
+  height: 105px;
+  flex: 0 0 auto;
+  background: url(/15x15_grid.svg);
+  background-size: contain;
   border: 1px solid #ccc;
 }
 .res-previews {
@@ -346,16 +347,16 @@ input[type="search"] {
   gap: 8px;
 }
 canvas.res-preview {
- width:15px;
- height:15px;
- image-rendering:crisp-edges;
- image-rendering:pixelated;
+  width: 15px;
+  height: 15px;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 textarea {
   width: 100%;
   border: 0;
   /* border-bottom: 1px solid var(--text-color); */
-  background: rgba(128,128,128,0.1);
+  background: rgba(128, 128, 128, 0.1);
   padding: 6px;
   overflow: scroll;
   text-align: left;

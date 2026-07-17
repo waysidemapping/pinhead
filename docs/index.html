@@ -1,48 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
-    <meta property="og:title" content="Pinhead Map Icons"/>
-    <meta property="og:description" content="Quality public domain icons for your map pins"/>
-    <meta property="og:image" content="https://pinhead.ink/banner.jpg"/>
-    <meta property="og:url" content="https://pinhead.ink"/>
-    <meta property="og:type" content="website"/>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta property="og:title" content="Pinhead Map Icons" />
+    <meta
+      property="og:description"
+      content="Quality public domain icons for your map pins"
+    />
+    <meta property="og:image" content="https://pinhead.ink/banner.jpg" />
+    <meta property="og:url" content="https://pinhead.ink" />
+    <meta property="og:type" content="website" />
     <title>Pinhead Map Icons by Wayside Mapping</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/favicon-192x192.png"
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MXM4VVNQP"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3MXM4VVNQP"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-3MXM4VVNQP');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-3MXM4VVNQP");
     </script>
   </head>
   <body>
-    
     <div id="header">
       <div class="container">
         <div id="main-title">
-          <a href="/"><h1><img src="/latest/pin.svg"/><span>Pinhead Map Icons</span></h1></a>
+          <a href="/"
+            ><h1>
+              <img src="/latest/pin.svg" /><span>Pinhead Map Icons</span>
+            </h1></a
+          >
           <ul id="main-menu"></ul>
         </div>
-        <hr/>
+        <hr />
         <div id="header-body">
           <article>
-            <p>Pinhead is a library of free vector icons for maps and such. It's 100%
-              <a href="https://github.com/waysidemapping/pinhead">open source</a>,
-              <a href="https://github.com/waysidemapping/pinhead/blob/main/LICENSE">public domain</a>, and made by 
-              <a href="https://github.com/waysidemapping/pinhead/graphs/contributors">real people</a>, not AI.
+            <p>
+              Pinhead is a library of free vector icons for maps and such. It's
+              100%
+              <a href="https://github.com/waysidemapping/pinhead">open source</a
+              >,
+              <a
+                href="https://github.com/waysidemapping/pinhead/blob/main/LICENSE"
+                >public domain</a
+              >, and made by
+              <a
+                href="https://github.com/waysidemapping/pinhead/graphs/contributors"
+                >real people</a
+              >, not AI.
             </p>
-            <p>We're an active, collaborative project that has added an average of
-              <span id="per-day-icon-count">many</span> icons per day since v1
-              for <span id="icon-count">1,000+</span> total icons.
+            <p>
+              We're an active, collaborative project that has added an average
+              of <span id="per-day-icon-count">many</span> icons per day since
+              v1 for <span id="icon-count">1,000+</span> total icons.
             </p>
           </article>
           <div id="header-sidebar"></div>
@@ -51,25 +80,43 @@
     </div>
     <div class="container">
       <div id="browser">
-         <div id="sticky-topbar">
-          <img class="search-icon" src="/latest/magnifying_glass_for_search_ui.svg"/>
-          <input type="search" id="icon-search" placeholder="Filter pinheads"/>
-          <a href="#" id="scroll-top-button"><span class="wide-only">scroll to </span><span>top</span><img class="inline-icon" src="/latest/arrow_up.svg"/></a>
+        <div id="sticky-topbar">
+          <img
+            class="search-icon"
+            src="/latest/magnifying_glass_for_search_ui.svg"
+          />
+          <input type="search" id="icon-search" placeholder="Filter pinheads" />
+          <a href="#" id="scroll-top-button"
+            ><span class="wide-only">scroll to </span><span>top</span
+            ><img class="inline-icon" src="/latest/arrow_up.svg"
+          /></a>
         </div>
         <div id="browser-body">
-       
           <div id="icon-list"></div>
-            <div id="inspector-flexer">
+          <div id="inspector-flexer">
             <div id="inspector-scroller">
               <div id="inspector"></div>
             </div>
           </div>
         </div>
-      
       </div>
       <div id="footer">
-        <a href="https://waysidemapping.org" target="_blank"><img src="wayside-mapping-logo.svg" style="width: 240px;margin-bottom: 20px;"/></a>
-        <p>This website is <a href="https://github.com/waysidemapping/pinhead" target="_blank">free and open source</a> (<a href="https://github.com/waysidemapping/pinhead/blob/main/LICENSE" target="_blank">CC0</a>). Collaborators welcome!</p>
+        <a href="https://waysidemapping.org" target="_blank"
+          ><img
+            src="wayside-mapping-logo.svg"
+            style="width: 240px; margin-bottom: 20px"
+        /></a>
+        <p>
+          This website is
+          <a href="https://github.com/waysidemapping/pinhead" target="_blank"
+            >free and open source</a
+          >
+          (<a
+            href="https://github.com/waysidemapping/pinhead/blob/main/LICENSE"
+            target="_blank"
+            >CC0</a
+          >). Collaborators welcome!
+        </p>
       </div>
     </div>
     <script type="module" src="index.js"></script>

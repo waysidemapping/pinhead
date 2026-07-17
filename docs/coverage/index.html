@@ -1,261 +1,301 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
-  <title>Pinhead map icon coverage</title>
-  <style>
-    body {
-      font-family: ui-monospace, monospace;
-      font-size: 13px;
-    }
-    a {
-      color: inherit;
-      text-decoration-thickness: 1px;
-    }
-    #header {
-      max-width: 600px;
-      padding: 10px;
-    }
-    table {
-      border-spacing: 0;
-    }
-    th {
-      position: sticky;
-      top: 0;
-      
-      background: #fff;
-    }
-    th.header {
-      z-index: 100000;
-    }
-    tr:empty {
-      height: 22px;
-    }
-    td.header {
-      font-weight:bold;
-      background: inherit;
-    }
-    th.header, td.header {
-      position: sticky;
-      left: 0;
-      border-right: 1px solid #fff;
-    }
-    td div {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 200px;
-    }
-    td div.unicode-char {
-      font-size: 15px;
-      line-height: 1;
-      display: inline;
-    }
-    td, th {
-      padding: 2px;
-    }
-    td img {
-      width:15px;
-      height:15px;
-      margin-right: 5px;
-    }
-    td div > *, td div img {
-      vertical-align: middle;
-    }
-    tr:nth-child(even) {
-      background-color: #eeeeee;
-    }
-    tr:nth-child(odd) {
-      background-color: #fff;
-    }
-  </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MXM4VVNQP"></script>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>Pinhead map icon coverage</title>
+    <style>
+      body {
+        font-family: ui-monospace, monospace;
+        font-size: 13px;
+      }
+      a {
+        color: inherit;
+        text-decoration-thickness: 1px;
+      }
+      #header {
+        max-width: 600px;
+        padding: 10px;
+      }
+      table {
+        border-spacing: 0;
+      }
+      th {
+        position: sticky;
+        top: 0;
+
+        background: #fff;
+      }
+      th.header {
+        z-index: 100000;
+      }
+      tr:empty {
+        height: 22px;
+      }
+      td.header {
+        font-weight: bold;
+        background: inherit;
+      }
+      th.header,
+      td.header {
+        position: sticky;
+        left: 0;
+        border-right: 1px solid #fff;
+      }
+      td div {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 200px;
+      }
+      td div.unicode-char {
+        font-size: 15px;
+        line-height: 1;
+        display: inline;
+      }
+      td,
+      th {
+        padding: 2px;
+      }
+      td img {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+      }
+      td div > *,
+      td div img {
+        vertical-align: middle;
+      }
+      tr:nth-child(even) {
+        background-color: #eeeeee;
+      }
+      tr:nth-child(odd) {
+        background-color: #fff;
+      }
+    </style>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3MXM4VVNQP"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-3MXM4VVNQP');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-3MXM4VVNQP");
     </script>
   </head>
   <body>
-  <div id="header">
-    <h1>Pinhead map icon coverage</h1>
-    <p>This table compares the coverage of <a href="/">Pinhead</a> to other public domain icon sources. A machine-readable version of this data can be found <a href="/changelog.json">here</a>.</p>
-  </div>
-  <table id="coverage"></table>
-  <script type="module">
+    <div id="header">
+      <h1>Pinhead map icon coverage</h1>
+      <p>
+        This table compares the coverage of <a href="/">Pinhead</a> to other
+        public domain icon sources. A machine-readable version of this data can
+        be found <a href="/changelog.json">here</a>.
+      </p>
+    </div>
+    <table id="coverage"></table>
+    <script type="module">
+      const importSources = await fetch("/external_sources.json").then(
+        (result) => result.json(),
+      );
+      const srciconsIndex = {};
 
-    const importSources = await fetch('/external_sources.json')
-      .then(result => result.json());
-    const srciconsIndex = {};
+      for (const src of importSources) {
+        srciconsIndex[src.id] = await fetch(
+          `/srcicons/${src.id}/index.json`,
+        ).then((result) => result.json());
+      }
 
-    for (const src of importSources) {
-      srciconsIndex[src.id] = await fetch(`/srcicons/${src.id}/index.json`)
-        .then(result => result.json());
-    }
+      const changelogs = await fetch("/changelog.json").then((result) =>
+        result.json(),
+      );
 
-    const changelogs = await fetch('/changelog.json')
-      .then(result => result.json());
+      const currentVersion = changelogs[changelogs.length - 1].majorVersion;
 
-    const currentVersion = changelogs[changelogs.length - 1].majorVersion;
+      const iconsById = {};
 
-    const iconsById = {};
-
-    for (const versionChangelog of changelogs) {
-      // Make sure we process all deletions/changes before additions
-      const sortedIconChanges = versionChangelog.iconChanges.toSorted((a, b) => {
-        if (b.oldId && !a.oldId) return 1;
-        if (!b.oldId && a.oldId) return -1;
-        return 0;
-      });
-      for (const iconChange of sortedIconChanges) {
-        // update commulative icon log
-        if (iconChange.oldId) {
-          if (iconChange.newId) {
-            iconsById[iconChange.newId] = iconsById[iconChange.oldId];
-            for (const key in iconChange) {
-              if (!['newId', 'oldId'].includes(key)) {
-                const vals = stringArray(iconChange[key]);
-                if (iconsById[iconChange.newId][key]) {
-                  iconsById[iconChange.newId][key] = iconsById[iconChange.newId][key].concat(vals);
-                } else {
-                  iconsById[iconChange.newId][key] = vals;
+      for (const versionChangelog of changelogs) {
+        // Make sure we process all deletions/changes before additions
+        const sortedIconChanges = versionChangelog.iconChanges.toSorted(
+          (a, b) => {
+            if (b.oldId && !a.oldId) return 1;
+            if (!b.oldId && a.oldId) return -1;
+            return 0;
+          },
+        );
+        for (const iconChange of sortedIconChanges) {
+          // update commulative icon log
+          if (iconChange.oldId) {
+            if (iconChange.newId) {
+              iconsById[iconChange.newId] = iconsById[iconChange.oldId];
+              for (const key in iconChange) {
+                if (!["newId", "oldId"].includes(key)) {
+                  const vals = stringArray(iconChange[key]);
+                  if (iconsById[iconChange.newId][key]) {
+                    iconsById[iconChange.newId][key] =
+                      iconsById[iconChange.newId][key].concat(vals);
+                  } else {
+                    iconsById[iconChange.newId][key] = vals;
+                  }
                 }
               }
             }
-          }
-          if (iconChange.newId !== iconChange.oldId) {
-            delete iconsById[iconChange.oldId];
-          }
-        } else if (iconChange.newId) {
-          iconsById[iconChange.newId] = {};
-          for (const key in iconChange) {
-            if (!['newId', 'oldId'].includes(key)) {
-              iconsById[iconChange.newId][key] = stringArray(iconChange[key]);
+            if (iconChange.newId !== iconChange.oldId) {
+              delete iconsById[iconChange.oldId];
+            }
+          } else if (iconChange.newId) {
+            iconsById[iconChange.newId] = {};
+            for (const key in iconChange) {
+              if (!["newId", "oldId"].includes(key)) {
+                iconsById[iconChange.newId][key] = stringArray(iconChange[key]);
+              }
             }
           }
         }
       }
-    }
 
-    function stringArray(value) {
-      return (typeof value === 'string' ? [value] : [...value]);
-    }
+      function stringArray(value) {
+        return typeof value === "string" ? [value] : [...value];
+      }
 
-    for (const id in iconsById) {
-      iconsById[id].id = id;
-    }
-    const icons = Object.values(iconsById).toSorted((a, b) => b.id > a.id ? -1 : 1);
+      for (const id in iconsById) {
+        iconsById[id].id = id;
+      }
+      const icons = Object.values(iconsById).toSorted((a, b) =>
+        b.id > a.id ? -1 : 1,
+      );
 
-    for (const importSource of importSources) {
-      importSource.iconCount = icons.filter(icon => icon[importSource.id]).length;
-    }
-    importSources.sort((a, b) => b.iconCount - a.iconCount);
-
-    let html = ``;
-    html += `<tr>`;
-    html += `<th class="header"><a href="/">Pinhead v${currentVersion}</a></th>`;
-    html += `<th>Unicode</th>`;
-    for (const importSource of importSources) {
-      html += `<th><a href="${importSource.repo}" target="_blank">${importSource.name}</a></th>`
-    }
-    html += `</tr>`;
-    
-    for (const icon of icons) {
-      html += `<tr class="pinhead-row" icon="${icon.id}">${getPinheadRow(iconsById[icon.id], false)}</tr>`;
       for (const importSource of importSources) {
-        if (icon[importSource.id]) {
-          for (const importedIconId of icon[importSource.id]) {
-            const filename = importedIconId + (importSource.filenameSuffix || '');
-            delete srciconsIndex[importSource.id][filename];
-          }
-        }
+        importSource.iconCount = icons.filter(
+          (icon) => icon[importSource.id],
+        ).length;
       }
-    }
-    for (const importSource of importSources) {
-      for (const externalIconFilename in srciconsIndex[importSource.id]) {
-        html += `<tr class="external-row" source="${importSource.id}" icon="${externalIconFilename}">${getExternalRow(importSource, externalIconFilename, false)}</tr>`;
+      importSources.sort((a, b) => b.iconCount - a.iconCount);
+
+      let html = ``;
+      html += `<tr>`;
+      html += `<th class="header"><a href="/">Pinhead v${currentVersion}</a></th>`;
+      html += `<th>Unicode</th>`;
+      for (const importSource of importSources) {
+        html += `<th><a href="${importSource.repo}" target="_blank">${importSource.name}</a></th>`;
       }
-    }
+      html += `</tr>`;
 
-    document.getElementById('coverage').innerHTML = html;
-
-    const observer = new IntersectionObserver((entries) => {
-      for (const entry of entries) {
-        if (entry.isIntersecting) {
-          if (entry.target.hasAttribute('icon')) {
-            if (entry.target.hasAttribute('source')) {
-              const source = importSources.find(source => source.id === entry.target.getAttribute('source'));
-              entry.target.innerHTML = getExternalRow(source, entry.target.getAttribute('icon'), true);
-            } else {
-              entry.target.innerHTML = getPinheadRow(iconsById[entry.target.getAttribute('icon')], true);
+      for (const icon of icons) {
+        html += `<tr class="pinhead-row" icon="${icon.id}">${getPinheadRow(iconsById[icon.id], false)}</tr>`;
+        for (const importSource of importSources) {
+          if (icon[importSource.id]) {
+            for (const importedIconId of icon[importSource.id]) {
+              const filename =
+                importedIconId + (importSource.filenameSuffix || "");
+              delete srciconsIndex[importSource.id][filename];
             }
           }
-          observer.unobserve(entry.target);
         }
       }
-    }, {
-      // preload before visible
-      rootMargin: "200px" 
-    });
-
-    document.querySelectorAll("tr")
-      .forEach(el => observer.observe(el));
-
-    function getPinheadRow(icon, withImg) {
-      let html = '';
-      html += `<td class="header"><div title="${icon.id}">`;
-      if (withImg) {
-        html += `<a href="/#${icon.id}"><img src="/v${currentVersion}/${icon.id}.svg"/></a>`;
-      }
-      html += `${icon.id}</div></td>`;
-      html += `<td>`;
-      if (icon.char) {
-        for (const char of icon.char) {
-          html += `<div class="unicode-char">${char}</div>`;
-        }
-      }
-      html += `</td>`;
       for (const importSource of importSources) {
+        for (const externalIconFilename in srciconsIndex[importSource.id]) {
+          html += `<tr class="external-row" source="${importSource.id}" icon="${externalIconFilename}">${getExternalRow(importSource, externalIconFilename, false)}</tr>`;
+        }
+      }
+
+      document.getElementById("coverage").innerHTML = html;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              if (entry.target.hasAttribute("icon")) {
+                if (entry.target.hasAttribute("source")) {
+                  const source = importSources.find(
+                    (source) =>
+                      source.id === entry.target.getAttribute("source"),
+                  );
+                  entry.target.innerHTML = getExternalRow(
+                    source,
+                    entry.target.getAttribute("icon"),
+                    true,
+                  );
+                } else {
+                  entry.target.innerHTML = getPinheadRow(
+                    iconsById[entry.target.getAttribute("icon")],
+                    true,
+                  );
+                }
+              }
+              observer.unobserve(entry.target);
+            }
+          }
+        },
+        {
+          // preload before visible
+          rootMargin: "200px",
+        },
+      );
+
+      document.querySelectorAll("tr").forEach((el) => observer.observe(el));
+
+      function getPinheadRow(icon, withImg) {
+        let html = "";
+        html += `<td class="header"><div title="${icon.id}">`;
+        if (withImg) {
+          html += `<a href="/#${icon.id}"><img src="/v${currentVersion}/${icon.id}.svg"/></a>`;
+        }
+        html += `${icon.id}</div></td>`;
         html += `<td>`;
-        if (icon[importSource.id]) {
-          for (const importedIconId of icon[importSource.id]) {
-            const filename = importedIconId + (importSource.filenameSuffix || '');
-            delete srciconsIndex[importSource.id][filename];
-            html += `<div title="${importedIconId}">`;
+        if (icon.char) {
+          for (const char of icon.char) {
+            html += `<div class="unicode-char">${char}</div>`;
+          }
+        }
+        html += `</td>`;
+        for (const importSource of importSources) {
+          html += `<td>`;
+          if (icon[importSource.id]) {
+            for (const importedIconId of icon[importSource.id]) {
+              const filename =
+                importedIconId + (importSource.filenameSuffix || "");
+              delete srciconsIndex[importSource.id][filename];
+              html += `<div title="${importedIconId}">`;
+              if (withImg) {
+                html += `<img src="/srcicons/${importSource.id}/${filename}.svg"/>`;
+              }
+              html += `${importedIconId}</div>`;
+            }
+          }
+          html += `</td>`;
+        }
+        return html;
+      }
+
+      function getExternalRow(importSource, externalIconFilename, withImg) {
+        let html = "";
+        html += `<td class="header"></td><td></td>`;
+        for (const importSource2 of importSources) {
+          html += `<td>`;
+          if (importSource.id === importSource2.id) {
+            let externalIconId = externalIconFilename;
+            if (importSource.filenameSuffix) {
+              externalIconId = externalIconId.slice(
+                0,
+                -importSource.filenameSuffix.length,
+              );
+            }
+            html += `<div title="${externalIconId}">`;
             if (withImg) {
-              html += `<img src="/srcicons/${importSource.id}/${filename}.svg"/>`;
+              html += `<img src="/srcicons/${importSource.id}/${externalIconFilename}.svg"/>`;
             }
-            html += `${importedIconId}</div>`;
+            html += ` ${externalIconId}</div>`;
           }
+          html += `</td>`;
         }
-        html += `</td>`;
+        return html;
       }
-      return html;
-    }
-
-    function getExternalRow(importSource, externalIconFilename, withImg) {
-      let html = '';
-      html += `<td class="header"></td><td></td>`;
-      for (const importSource2 of importSources) {
-        html += `<td>`;
-        if (importSource.id === importSource2.id) {
-          let externalIconId = externalIconFilename;
-          if (importSource.filenameSuffix) {
-            externalIconId = externalIconId.slice(0, -importSource.filenameSuffix.length);
-          }
-          html += `<div title="${externalIconId}">`;
-          if (withImg) {
-            html += `<img src="/srcicons/${importSource.id}/${externalIconFilename}.svg"/>`;
-          }
-          html += ` ${externalIconId}</div>`;
-        }
-        html += `</td>`;
-      }
-      return html;
-    }
-  </script>
-</body>
+    </script>
+  </body>
 </html>

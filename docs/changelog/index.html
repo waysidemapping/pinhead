@@ -1,196 +1,273 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
-  <title>Pinhead map icon changelog</title>
-  <style>
-    body {
-      font-family: ui-monospace, monospace;
-      font-size: 13px;
-    }
-    a {
-      color: inherit;
-      text-decoration-thickness: 1px;
-    }
-    b {
-      font-weight: bold;
-    }
-    h2 {
-      position: sticky;
-      top: 0;
-      background: #fff;
-      padding: 4px 0;
-    }
-    #header {
-      max-width: 600px;
-    }
-  </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MXM4VVNQP"></script>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>Pinhead map icon changelog</title>
+    <style>
+      body {
+        font-family: ui-monospace, monospace;
+        font-size: 13px;
+      }
+      a {
+        color: inherit;
+        text-decoration-thickness: 1px;
+      }
+      b {
+        font-weight: bold;
+      }
+      h2 {
+        position: sticky;
+        top: 0;
+        background: #fff;
+        padding: 4px 0;
+      }
+      #header {
+        max-width: 600px;
+      }
+    </style>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3MXM4VVNQP"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-3MXM4VVNQP');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-3MXM4VVNQP");
     </script>
   </head>
   <body>
-  <div id="content">
-    <div id="header">
-      <h1>Pinhead map icon changelog</h1>
-      <p>This page lists icon changes made between major versions of <a href="/">Pinhead</a>. A machine-readable version of this data can be found <a href="/changelog.json">here</a>.</p>
+    <div id="content">
+      <div id="header">
+        <h1>Pinhead map icon changelog</h1>
+        <p>
+          This page lists icon changes made between major versions of
+          <a href="/">Pinhead</a>. A machine-readable version of this data can
+          be found <a href="/changelog.json">here</a>.
+        </p>
+      </div>
     </div>
-  </div>
-  <script type="module">
-
-    const importSources = await fetch('/external_sources.json')
-      .then(result => result.json());
-
-    const changelogs = await fetch('/changelog.json')
-      .then(result => result.json());
-
-    const currentVersion = changelogs[changelogs.length - 1].majorVersion;
-
-    document.getElementById('content')
-      .insertAdjacentHTML(
-        "beforeend",
-        changelogs.toReversed()
-          .map(changelog => getHtmlForChangelog(changelog))
-          .join('')
+    <script type="module">
+      const importSources = await fetch("/external_sources.json").then(
+        (result) => result.json(),
       );
 
-    function getCategorizedChangesForChangelog(changelog) {
-      const categorizedChanges = {
-        addedIcons: [],
-        deletedIcons: [],
-        renamedIcons: [],
-        mergedIcons: [],
-        redesignedIcons: [],
-        renamedAndRedesignedIcons: []
-      };
-      changelog.iconChanges.forEach(iconChange => {
-        if (iconChange.oldId) {
-          if (iconChange.newId) {
-            if (iconChange.oldId === iconChange.newId) {
-              categorizedChanges.redesignedIcons.push(iconChange);
-            } else if (iconChange.by || iconChange.src) {
-              categorizedChanges.renamedAndRedesignedIcons.push(iconChange);
-            } else if (iconChange.edit === 'merge'){
-              categorizedChanges.mergedIcons.push(iconChange);
+      const changelogs = await fetch("/changelog.json").then((result) =>
+        result.json(),
+      );
+
+      const currentVersion = changelogs[changelogs.length - 1].majorVersion;
+
+      document.getElementById("content").insertAdjacentHTML(
+        "beforeend",
+        changelogs
+          .toReversed()
+          .map((changelog) => getHtmlForChangelog(changelog))
+          .join(""),
+      );
+
+      function getCategorizedChangesForChangelog(changelog) {
+        const categorizedChanges = {
+          addedIcons: [],
+          deletedIcons: [],
+          renamedIcons: [],
+          mergedIcons: [],
+          redesignedIcons: [],
+          renamedAndRedesignedIcons: [],
+        };
+        changelog.iconChanges.forEach((iconChange) => {
+          if (iconChange.oldId) {
+            if (iconChange.newId) {
+              if (iconChange.oldId === iconChange.newId) {
+                categorizedChanges.redesignedIcons.push(iconChange);
+              } else if (iconChange.by || iconChange.src) {
+                categorizedChanges.renamedAndRedesignedIcons.push(iconChange);
+              } else if (iconChange.edit === "merge") {
+                categorizedChanges.mergedIcons.push(iconChange);
+              } else {
+                categorizedChanges.renamedIcons.push(iconChange);
+              }
             } else {
-              categorizedChanges.renamedIcons.push(iconChange);
+              categorizedChanges.deletedIcons.push(iconChange);
             }
           } else {
-            categorizedChanges.deletedIcons.push(iconChange);
+            categorizedChanges.addedIcons.push(iconChange);
           }
-        } else {
-          categorizedChanges.addedIcons.push(iconChange);
+        });
+        return categorizedChanges;
+      }
+
+      function getHtmlForChangelog(changelog) {
+        let html = "";
+        const changes = getCategorizedChangesForChangelog(changelog);
+        const newV = changelog.majorVersion;
+        html += `<h2>Pinhead v${newV} ${currentVersion === newV ? "(latest)" : ""}— ${changelog.date}</h2>`;
+        const oldV = parseInt(newV) - 1;
+
+        if (changes.deletedIcons.length) {
+          html += `<h3>Deleted icons (${changes.deletedIcons.length})</h3>`;
+          html += "<ul>";
+          changes.deletedIcons.forEach((iconChange) => {
+            html +=
+              `<li><img src="/v${oldV}/${iconChange.oldId}.svg" width="15px"/> Remove <b>${iconChange.oldId}</b>` +
+              issueLinks(iconChange) +
+              `</li>`;
+          });
+          html += "</ul>";
         }
-      });
-      return categorizedChanges;
-    }
-
-    function getHtmlForChangelog(changelog) {
-      let html = '';
-      const changes = getCategorizedChangesForChangelog(changelog);
-      const newV = changelog.majorVersion;
-      html += `<h2>Pinhead v${newV} ${currentVersion === newV ? '(latest)' : ''}— ${changelog.date}</h2>`;
-      const oldV = parseInt(newV) - 1;
-      
-      if (changes.deletedIcons.length) {
-        html += `<h3>Deleted icons (${changes.deletedIcons.length})</h3>`;
-        html += '<ul>';
-        changes.deletedIcons.forEach(iconChange => {
-          html += `<li><img src="/v${oldV}/${iconChange.oldId}.svg" width="15px"/> Remove <b>${iconChange.oldId}</b>` + issueLinks(iconChange) + `</li>`;
-        });
-        html += '</ul>';
-      }
-      if (changes.renamedAndRedesignedIcons.length) {
-        html += `<h3>Renamed and redesigned icons (${changes.renamedAndRedesignedIcons.length})</h3>`;
-        html += '<ul>';
-        changes.renamedAndRedesignedIcons.forEach(iconChange => {
-          html += `<li><img src="/v${oldV}/${iconChange.oldId}.svg" width="15px"/> <b>${iconChange.oldId}</b> -> <img src="/v${newV}/${iconChange.newId}.svg" width="15px"/> <b>${iconChange.newId}</b>` + fromInfo(iconChange) + issueLinks(iconChange) + `</li>`;
-        });
-        html += '</ul>';
-      }
-      if (changes.renamedIcons.length) {
-        html += `<h3>Renamed icons (${changes.renamedIcons.length})</h3>`;
-        html += '<ul>';
-        changes.renamedIcons.forEach(iconChange => {
-          html += `<li><img src="/v${newV}/${iconChange.newId}.svg" width="15px"/> <b>${iconChange.oldId}</b> -> <b>${iconChange.newId}</b>` + issueLinks(iconChange) + `</li>`;
-        });
-        html += '</ul>';
-      }
-      if (changes.mergedIcons.length) {
-        html += `<h3>Merged icons (${changes.mergedIcons.length})</h3>`;
-        html += '<ul>';
-        changes.mergedIcons.forEach(iconChange => {
-          html += `<li><img src="/v${oldV}/${iconChange.oldId}.svg" width="15px"/> <b>${iconChange.oldId}</b> -> <img src="/v${newV}/${iconChange.newId}.svg" width="15px"/> <b>${iconChange.newId}</b>` + issueLinks(iconChange) + `</li>`;
-        });
-        html += '</ul>';
-      }
-      if (changes.redesignedIcons.length) {
-        html += `<h3>Redesigned icons (${changes.redesignedIcons.length})</h3>`;
-        html += '<ul>';
-        changes.redesignedIcons.forEach(iconChange => {
-          html += `<li><img src="/v${oldV}/${iconChange.oldId}.svg" width="15px"/> -> <img src="/v${newV}/${iconChange.newId}.svg" width="15px"/> <b>${iconChange.newId}</b>` + fromInfo(iconChange) + issueLinks(iconChange) + `</li>`;
-        });
-        html += '</ul>';
-      }
-      if (changes.addedIcons.length) {
-        html += `<h3>Added icons (${changes.addedIcons.length})</h3>`;
-        html += '<ul>';
-        changes.addedIcons.forEach(iconChange => {
-          html += `<li><img src="/v${newV}/${iconChange.newId}.svg" width="15px"/> Add <b>${iconChange.newId}</b>` + fromInfo(iconChange) + issueLinks(iconChange) + `</li>`;
-        });
-        html += '</ul>';
-      }
-
-      return html;
-
-      function fromInfo(iconChange) {
-        let str = '';
-        if (iconChange.srcBy) {
-          str += ' by ' + stringArray(iconChange.srcBy).map(by => `<a href="https://github.com/${by.slice(1)}">${by}</a>`).join(', ');
+        if (changes.renamedAndRedesignedIcons.length) {
+          html += `<h3>Renamed and redesigned icons (${changes.renamedAndRedesignedIcons.length})</h3>`;
+          html += "<ul>";
+          changes.renamedAndRedesignedIcons.forEach((iconChange) => {
+            html +=
+              `<li><img src="/v${oldV}/${iconChange.oldId}.svg" width="15px"/> <b>${iconChange.oldId}</b> -> <img src="/v${newV}/${iconChange.newId}.svg" width="15px"/> <b>${iconChange.newId}</b>` +
+              fromInfo(iconChange) +
+              issueLinks(iconChange) +
+              `</li>`;
+          });
+          html += "</ul>";
         }
-        if (iconChange.src && iconChange.importBy) {
-          const srcs = stringArray(iconChange.src);
-          str += ' from ' + srcs.map(src => {
-            const importSource = importSources.find(source => source.id === src);
-            if (importSource) {
-              return `<a href="${importSource.repo.slice(0, -4)}">${importSource.name}</a>`;
-            }
-            return `<a href="${src}">source</a>`;
-          }).join(', ');
-          const importBys = stringArray(iconChange.importBy);
-          str += ' imported by ' + importBys.map(by => `<a href="https://github.com/${by.slice(1)}">${by}</a>`).join(', ');
-          if (iconChange.by) {
-            if (iconChange.by.toString() === iconChange.importBy.toString()) {
-              str += ' with edits';
-            } else {
-              str += ' with edits by ' + stringArray(iconChange.by).map(by => `<a href="https://github.com/${by.slice(1)}">${by}</a>`).join(', ');
-            }
+        if (changes.renamedIcons.length) {
+          html += `<h3>Renamed icons (${changes.renamedIcons.length})</h3>`;
+          html += "<ul>";
+          changes.renamedIcons.forEach((iconChange) => {
+            html +=
+              `<li><img src="/v${newV}/${iconChange.newId}.svg" width="15px"/> <b>${iconChange.oldId}</b> -> <b>${iconChange.newId}</b>` +
+              issueLinks(iconChange) +
+              `</li>`;
+          });
+          html += "</ul>";
+        }
+        if (changes.mergedIcons.length) {
+          html += `<h3>Merged icons (${changes.mergedIcons.length})</h3>`;
+          html += "<ul>";
+          changes.mergedIcons.forEach((iconChange) => {
+            html +=
+              `<li><img src="/v${oldV}/${iconChange.oldId}.svg" width="15px"/> <b>${iconChange.oldId}</b> -> <img src="/v${newV}/${iconChange.newId}.svg" width="15px"/> <b>${iconChange.newId}</b>` +
+              issueLinks(iconChange) +
+              `</li>`;
+          });
+          html += "</ul>";
+        }
+        if (changes.redesignedIcons.length) {
+          html += `<h3>Redesigned icons (${changes.redesignedIcons.length})</h3>`;
+          html += "<ul>";
+          changes.redesignedIcons.forEach((iconChange) => {
+            html +=
+              `<li><img src="/v${oldV}/${iconChange.oldId}.svg" width="15px"/> -> <img src="/v${newV}/${iconChange.newId}.svg" width="15px"/> <b>${iconChange.newId}</b>` +
+              fromInfo(iconChange) +
+              issueLinks(iconChange) +
+              `</li>`;
+          });
+          html += "</ul>";
+        }
+        if (changes.addedIcons.length) {
+          html += `<h3>Added icons (${changes.addedIcons.length})</h3>`;
+          html += "<ul>";
+          changes.addedIcons.forEach((iconChange) => {
+            html +=
+              `<li><img src="/v${newV}/${iconChange.newId}.svg" width="15px"/> Add <b>${iconChange.newId}</b>` +
+              fromInfo(iconChange) +
+              issueLinks(iconChange) +
+              `</li>`;
+          });
+          html += "</ul>";
+        }
+
+        return html;
+
+        function fromInfo(iconChange) {
+          let str = "";
+          if (iconChange.srcBy) {
+            str +=
+              " by " +
+              stringArray(iconChange.srcBy)
+                .map(
+                  (by) =>
+                    `<a href="https://github.com/${by.slice(1)}">${by}</a>`,
+                )
+                .join(", ");
           }
-        } else if (iconChange.by) {
-          str += ' by ' + stringArray(iconChange.by).map(by => `<a href="https://github.com/${by.slice(1)}">${by}</a>`).join(', ');
+          if (iconChange.src && iconChange.importBy) {
+            const srcs = stringArray(iconChange.src);
+            str +=
+              " from " +
+              srcs
+                .map((src) => {
+                  const importSource = importSources.find(
+                    (source) => source.id === src,
+                  );
+                  if (importSource) {
+                    return `<a href="${importSource.repo.slice(0, -4)}">${importSource.name}</a>`;
+                  }
+                  return `<a href="${src}">source</a>`;
+                })
+                .join(", ");
+            const importBys = stringArray(iconChange.importBy);
+            str +=
+              " imported by " +
+              importBys
+                .map(
+                  (by) =>
+                    `<a href="https://github.com/${by.slice(1)}">${by}</a>`,
+                )
+                .join(", ");
+            if (iconChange.by) {
+              if (iconChange.by.toString() === iconChange.importBy.toString()) {
+                str += " with edits";
+              } else {
+                str +=
+                  " with edits by " +
+                  stringArray(iconChange.by)
+                    .map(
+                      (by) =>
+                        `<a href="https://github.com/${by.slice(1)}">${by}</a>`,
+                    )
+                    .join(", ");
+              }
+            }
+          } else if (iconChange.by) {
+            str +=
+              " by " +
+              stringArray(iconChange.by)
+                .map(
+                  (by) =>
+                    `<a href="https://github.com/${by.slice(1)}">${by}</a>`,
+                )
+                .join(", ");
+          }
+          return str;
         }
-        return str;
+
+        function issueLinks(iconChange) {
+          if (iconChange.issue || iconChange.pr) {
+            const issues = (
+              iconChange.pr ? stringArray(iconChange.pr) : []
+            ).concat(iconChange.issue ? stringArray(iconChange.issue) : []);
+            return (
+              " (" +
+              issues
+                .map(
+                  (issue) =>
+                    `<a href="https://github.com/waysidemapping/pinhead/issues/${issue}">#${issue}</a>`,
+                )
+                .join(", ") +
+              ")"
+            );
+          }
+          return "";
+        }
       }
 
-      function issueLinks(iconChange) {
-        if (iconChange.issue || iconChange.pr) {
-          const issues = (iconChange.pr ? stringArray(iconChange.pr) : []).concat(iconChange.issue ? stringArray(iconChange.issue) : [])
-          return ' (' + issues.map(issue => `<a href="https://github.com/waysidemapping/pinhead/issues/${issue}">#${issue}</a>`).join(', ') + ')';
-        }
-        return '';
+      function stringArray(value) {
+        return typeof value === "string" ? [value] : [...value];
       }
-    }
-
-    function stringArray(value) {
-      return (typeof value === 'string' ? [value] : [...value]);
-    }
-
-  </script>
-</body>
+    </script>
+  </body>
 </html>
