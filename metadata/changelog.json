@@ -17442,6 +17442,22 @@
         ]
       },
       {
+        "newId": "taxi_under_key",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_under_key",
+          "taxi_under_taxi_checkerboard"
+        ]
+      },
+      {
+        "newId": "taxi_under_wrench",
+        "by": "@quincylvania",
+        "inspo": [
+          "car_and_wrench",
+          "taxi_under_taxi_checkerboard"
+        ]
+      },
+      {
         "oldId": "microscope",
         "newId": "microscope",
         "edit": "flip",
