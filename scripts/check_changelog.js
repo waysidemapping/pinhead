@@ -2,14 +2,16 @@ import { existsSync, readFileSync, writeFileSync, globSync } from "fs";
 import { join, parse } from "path";
 import { downloadExternalSourceAssets } from "../src/ExternalSourceManager.js";
 
-const version = JSON.parse(readFileSync('package.json')).version;
-const currentMajorVersion = version.split('.')[1];
+const version = JSON.parse(readFileSync("package.json")).version;
+const currentMajorVersion = version.split(".")[1];
 
-const importSources = JSON.parse(readFileSync('metadata/external_sources.json'));
+const importSources = JSON.parse(
+  readFileSync("metadata/external_sources.json"),
+);
 
 const iconFilesById = {};
 
-globSync(`./icons/**/*.svg`).forEach(file => {
+globSync(`./icons/**/*.svg`).forEach((file) => {
   const id = parse(file).name;
   iconFilesById[id] = true;
 });
@@ -18,13 +20,12 @@ for (const importSource of importSources) {
   importSource.seenIcons = {};
 }
 
-const externalSourceIconsDir = 'docs/srcicons';
+const externalSourceIconsDir = "docs/srcicons";
 
 downloadExternalSourceAssets(externalSourceIconsDir);
 validateChangelog();
 
 function validateChangelog() {
-
   const iconsById = {};
 
   const iconChangeProps = [
@@ -40,17 +41,18 @@ function validateChangelog() {
     "issue",
     "pr",
     "char",
-    "sensitive"
-  ].concat(importSources.map(source => source.id));
+    "sensitive",
+  ].concat(importSources.map((source) => source.id));
 
-  const changelogPath = 'metadata/changelog.json';
+  const changelogPath = "metadata/changelog.json";
 
   const changelogs = JSON.parse(readFileSync(changelogPath));
   // sort oldest to newest
-  changelogs.sort((a, b) => parseInt(a.majorVersion) - parseInt(b.majorVersion));
+  changelogs.sort(
+    (a, b) => parseInt(a.majorVersion) - parseInt(b.majorVersion),
+  );
 
   for (const versionChangelog of changelogs) {
-
     const v = versionChangelog.majorVersion;
 
     // Make sure we process all deletions/changes before additions
@@ -63,39 +65,53 @@ function validateChangelog() {
     for (const iconChange of sortedIconChanges) {
       for (const key in iconChange) {
         if (!iconChangeProps.includes(key)) {
-          console.error(`Unexpected property "${key}" for "${iconChange.newId}" in version ${v}`);
+          console.error(
+            `Unexpected property "${key}" for "${iconChange.newId}" in version ${v}`,
+          );
           return;
         }
         if (!iconChange[key]) {
-          console.error(`Unexpected empty property "${key}" for "${iconChange.newId}" in version ${v}`);
+          console.error(
+            `Unexpected empty property "${key}" for "${iconChange.newId}" in version ${v}`,
+          );
           return;
         }
       }
       if (!iconChange.oldId && !iconChange.newId) {
-        console.error(`Missing both "newId" and "oldId" in version ${v}`)
+        console.error(`Missing both "newId" and "oldId" in version ${v}`);
         return;
       }
       if (iconChange.newId) {
         if (!iconChange.oldId && !iconChange.by && !iconChange.src) {
-          console.error(`Missing provenance for "${iconChange.newId}" in version ${v}`)
+          console.error(
+            `Missing provenance for "${iconChange.newId}" in version ${v}`,
+          );
           return;
         }
         if (iconChange.importBy && !iconChange.src) {
-          console.error(`Unexpected "importBy": "${iconChange.importBy}" without "src": "…" for "${iconChange.newId}" in version ${v}`)
+          console.error(
+            `Unexpected "importBy": "${iconChange.importBy}" without "src": "…" for "${iconChange.newId}" in version ${v}`,
+          );
           return;
         }
         if (iconChange.src) {
           if (!iconChange.importBy) {
-            console.error(`Missing "importBy" for "${iconChange.newId}" in version ${v}`)
+            console.error(
+              `Missing "importBy" for "${iconChange.newId}" in version ${v}`,
+            );
             return;
           }
-          if (!iconChange.src.includes('://')) {
-            if (!importSources.find(source => source.id === iconChange.src)) {
-              console.error(`Unknown "src": "${iconChange.src}" for "${iconChange.newId}" in version ${v}`)
+          if (!iconChange.src.includes("://")) {
+            if (!importSources.find((source) => source.id === iconChange.src)) {
+              console.error(
+                `Unknown "src": "${iconChange.src}" for "${iconChange.newId}" in version ${v}`,
+              );
               return;
             }
             if (!iconChange[iconChange.src]) {
-              console.error(`Missing "${iconChange.src}": "…" property for "${iconChange.newId}" in version ${v}`)
+              console.error(
+                `Missing "${iconChange.src}": "…" property for "${iconChange.newId}" in version ${v}`,
+              );
               return;
             }
           }
@@ -103,10 +119,16 @@ function validateChangelog() {
         if (iconChange.inspo) {
           const inspos = stringArray(iconChange.inspo);
           for (const inspo of inspos) {
-            if (!inspo.includes('://') &&
+            if (
+              !inspo.includes("://") &&
               !iconsById[inspo] &&
-              !versionChangelog.iconChanges.find(foreignIconChange => foreignIconChange.newId === inspo)) {
-              console.error(`Unknown icon referenced via "inspo": "${inspo}" for "${iconChange.newId}" in version ${v}`)
+              !versionChangelog.iconChanges.find(
+                (foreignIconChange) => foreignIconChange.newId === inspo,
+              )
+            ) {
+              console.error(
+                `Unknown icon referenced via "inspo": "${inspo}" for "${iconChange.newId}" in version ${v}`,
+              );
               return;
             }
           }
@@ -118,14 +140,22 @@ function validateChangelog() {
           const ids = stringArray(iconChange[importSource.id]);
           for (const id of ids) {
             if (importSource.seenIcons[id]) {
-              console.error(`"${iconChange.newId}" and "${importSource.seenIcons[id]}" both reference the same "${importSource.id}" icon: "${id}"`);
+              console.error(
+                `"${iconChange.newId}" and "${importSource.seenIcons[id]}" both reference the same "${importSource.id}" icon: "${id}"`,
+              );
               return;
             }
-            const filename = id + (importSource.filenameSuffix || '') + '.svg';
-            const iconFile = join(externalSourceIconsDir, importSource.id, filename);
-            
+            const filename = id + (importSource.filenameSuffix || "") + ".svg";
+            const iconFile = join(
+              externalSourceIconsDir,
+              importSource.id,
+              filename,
+            );
+
             if (!existsSync(iconFile)) {
-              console.error(`No such icon "${iconFile}" referenced by "${iconChange.newId}" in version ${v}`);
+              console.error(
+                `No such icon "${iconFile}" referenced by "${iconChange.newId}" in version ${v}`,
+              );
               return;
             }
             importSource.seenIcons[id] = iconChange.newId;
@@ -136,7 +166,9 @@ function validateChangelog() {
       // update commulative icon log
       if (iconChange.oldId) {
         if (!iconsById[iconChange.oldId]) {
-          console.error(`Can't find old icon ${iconChange.oldId} for "${iconChange.newId}" in version ${v}`)
+          console.error(
+            `Can't find old icon ${iconChange.oldId} for "${iconChange.newId}" in version ${v}`,
+          );
           return;
         }
         if (iconChange.newId !== iconChange.oldId) {
@@ -144,8 +176,10 @@ function validateChangelog() {
         }
       }
       if (iconChange.newId && iconChange.newId !== iconChange.oldId) {
-        if (iconsById[iconChange.newId] && iconChange.edit !== 'merge') {
-          console.error(`Duplicate changelog entry for icon "${iconChange.newId}" in version ${v}`)
+        if (iconsById[iconChange.newId] && iconChange.edit !== "merge") {
+          console.error(
+            `Duplicate changelog entry for icon "${iconChange.newId}" in version ${v}`,
+          );
           return;
         }
         iconsById[iconChange.newId] = true;
@@ -153,35 +187,43 @@ function validateChangelog() {
     }
 
     // sort properties into a consistent order
-    versionChangelog.iconChanges = versionChangelog.iconChanges.map(iconChange => {
-      const returner = {};
-      for (const prop of iconChangeProps) {
-        if (prop in iconChange) {
-          returner[prop] = iconChange[prop];
+    versionChangelog.iconChanges = versionChangelog.iconChanges.map(
+      (iconChange) => {
+        const returner = {};
+        for (const prop of iconChangeProps) {
+          if (prop in iconChange) {
+            returner[prop] = iconChange[prop];
+          }
+          // collapse single string arrays down to string
+          if (Array.isArray(returner[prop]) && returner[prop].length === 1) {
+            returner[prop] = returner[prop][0];
+          }
         }
-        // collapse single string arrays down to string
-        if (Array.isArray(returner[prop]) && returner[prop].length === 1) {
-          returner[prop] = returner[prop][0];
-        }
-      }
-      return returner;
-    });
+        return returner;
+      },
+    );
   }
 
   for (const idInChangelog in iconsById) {
     if (!iconFilesById[idInChangelog]) {
-      console.error(`Missing SVG file for icon "${idInChangelog}" referenced in changelog.json`);
+      console.error(
+        `Missing SVG file for icon "${idInChangelog}" referenced in changelog.json`,
+      );
       return;
     }
   }
   for (const idInFiles in iconFilesById) {
     if (!iconsById[idInFiles]) {
-      console.error(`Missing changelog entry for "${idInFiles}.svg" present in files`);
+      console.error(
+        `Missing changelog entry for "${idInFiles}.svg" present in files`,
+      );
       return;
     }
   }
 
-  const currentChangelog = changelogs.find(c => c.majorVersion === currentMajorVersion);
+  const currentChangelog = changelogs.find(
+    (c) => c.majorVersion === currentMajorVersion,
+  );
   printTextForChangelog(currentChangelog);
 
   console.log("changelog.json is valid");
@@ -196,16 +238,16 @@ function getCategorizedChangesForChangelog(changelog) {
     renamedIcons: [],
     mergedIcons: [],
     redesignedIcons: [],
-    renamedAndRedesignedIcons: []
+    renamedAndRedesignedIcons: [],
   };
-  changelog.iconChanges.forEach(iconChange => {
+  changelog.iconChanges.forEach((iconChange) => {
     if (iconChange.oldId) {
       if (iconChange.newId) {
         if (iconChange.oldId === iconChange.newId) {
           categorizedChanges.redesignedIcons.push(iconChange);
         } else if (iconChange.by || iconChange.src) {
           categorizedChanges.renamedAndRedesignedIcons.push(iconChange);
-        } else if (iconChange.edit === 'merge'){
+        } else if (iconChange.edit === "merge") {
           categorizedChanges.mergedIcons.push(iconChange);
         } else {
           categorizedChanges.renamedIcons.push(iconChange);
@@ -224,96 +266,150 @@ function printTextForChangelog(changelog) {
   const changes = getCategorizedChangesForChangelog(changelog);
   const newV = changelog.majorVersion;
   console.log(`## [${version}] - ${changelog.date}`);
-  console.log('');
+  console.log("");
   const oldV = parseInt(newV) - 1;
-  
+
   if (changes.deletedIcons.length) {
-    console.log('### Deleted icons');
-    console.log('');
-    changes.deletedIcons.forEach(iconChange => {
-      console.log(`- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> Remove \`${iconChange.oldId}\`` + issueLinks(iconChange));
+    console.log("### Deleted icons");
+    console.log("");
+    changes.deletedIcons.forEach((iconChange) => {
+      console.log(
+        `- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> Remove \`${iconChange.oldId}\`` +
+          issueLinks(iconChange),
+      );
     });
-    console.log('');
+    console.log("");
   }
   if (changes.renamedAndRedesignedIcons.length) {
-    console.log('### Renamed and redesigned icons');
-    console.log('');
-    changes.renamedAndRedesignedIcons.forEach(iconChange => {
-      console.log(`- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> \`${iconChange.oldId}\` -> <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.newId}\`` + fromInfo(iconChange) + issueLinks(iconChange));
+    console.log("### Renamed and redesigned icons");
+    console.log("");
+    changes.renamedAndRedesignedIcons.forEach((iconChange) => {
+      console.log(
+        `- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> \`${iconChange.oldId}\` -> <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.newId}\`` +
+          fromInfo(iconChange) +
+          issueLinks(iconChange),
+      );
     });
-    console.log('');
+    console.log("");
   }
   if (changes.renamedIcons.length) {
-    console.log('### Renamed icons');
-    console.log('');
-    changes.renamedIcons.forEach(iconChange => {
-      console.log(`- <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.oldId}\` -> \`${iconChange.newId}\`` + issueLinks(iconChange));
+    console.log("### Renamed icons");
+    console.log("");
+    changes.renamedIcons.forEach((iconChange) => {
+      console.log(
+        `- <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.oldId}\` -> \`${iconChange.newId}\`` +
+          issueLinks(iconChange),
+      );
     });
-    console.log('');
+    console.log("");
   }
   if (changes.mergedIcons.length) {
-    console.log('### Merged icons');
-    console.log('');
-    changes.mergedIcons.forEach(iconChange => {
-      console.log(`- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> \`${iconChange.oldId}\` -> <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.newId}\`` + issueLinks(iconChange));
+    console.log("### Merged icons");
+    console.log("");
+    changes.mergedIcons.forEach((iconChange) => {
+      console.log(
+        `- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> \`${iconChange.oldId}\` -> <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.newId}\`` +
+          issueLinks(iconChange),
+      );
     });
-    console.log('');
+    console.log("");
   }
   if (changes.redesignedIcons.length) {
-    console.log('### Redesigned icons');
-    console.log('');
-    changes.redesignedIcons.forEach(iconChange => {
-      console.log(`- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> -> <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.newId}\`` + fromInfo(iconChange) + issueLinks(iconChange));
+    console.log("### Redesigned icons");
+    console.log("");
+    changes.redesignedIcons.forEach((iconChange) => {
+      console.log(
+        `- <img src="https://pinhead.ink/v${oldV}/${iconChange.oldId}.svg" width="15px"/> -> <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> \`${iconChange.newId}\`` +
+          fromInfo(iconChange) +
+          issueLinks(iconChange),
+      );
     });
-    console.log('');
+    console.log("");
   }
   if (changes.addedIcons.length) {
-    console.log('### Added icons');
-    console.log('');
-    changes.addedIcons.forEach(iconChange => {
-      console.log(`- <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> Add \`${iconChange.newId}\`` + fromInfo(iconChange) + issueLinks(iconChange));
+    console.log("### Added icons");
+    console.log("");
+    changes.addedIcons.forEach((iconChange) => {
+      console.log(
+        `- <img src="https://pinhead.ink/v${newV}/${iconChange.newId}.svg" width="15px"/> Add \`${iconChange.newId}\`` +
+          fromInfo(iconChange) +
+          issueLinks(iconChange),
+      );
     });
-    console.log('');
+    console.log("");
   }
 
   function fromInfo(iconChange) {
-    let str = '';
+    let str = "";
     if (iconChange.srcBy) {
-      str += ' by ' + stringArray(iconChange.srcBy).map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
+      str +=
+        " by " +
+        stringArray(iconChange.srcBy)
+          .map((by) => `[${by}](https://github.com/${by.slice(1)})`)
+          .join(", ");
     }
     if (iconChange.src && iconChange.importBy) {
       const srcs = stringArray(iconChange.src);
-      str += ' from ' + srcs.map(src => {
-        const importSource = importSources.find(source => source.id === src);
-        if (importSource) {
-          return `[${importSource.name}](${importSource.repo.slice(0, -4)})`;
-        }
-        return `[source](${src})`;
-      }).join(', ');
+      str +=
+        " from " +
+        srcs
+          .map((src) => {
+            const importSource = importSources.find(
+              (source) => source.id === src,
+            );
+            if (importSource) {
+              return `[${importSource.name}](${importSource.repo.slice(0, -4)})`;
+            }
+            return `[source](${src})`;
+          })
+          .join(", ");
       const importBys = stringArray(iconChange.importBy);
-      str += ' imported by ' + importBys.map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
+      str +=
+        " imported by " +
+        importBys
+          .map((by) => `[${by}](https://github.com/${by.slice(1)})`)
+          .join(", ");
       if (iconChange.by) {
         if (iconChange.by.toString() === iconChange.importBy.toString()) {
-          str += ' with edits';
+          str += " with edits";
         } else {
-          str += ' with edits by ' + stringArray(iconChange.by).map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
+          str +=
+            " with edits by " +
+            stringArray(iconChange.by)
+              .map((by) => `[${by}](https://github.com/${by.slice(1)})`)
+              .join(", ");
         }
       }
     } else if (iconChange.by) {
-      str += ' by ' + stringArray(iconChange.by).map(by => `[${by}](https://github.com/${by.slice(1)})`).join(', ');
+      str +=
+        " by " +
+        stringArray(iconChange.by)
+          .map((by) => `[${by}](https://github.com/${by.slice(1)})`)
+          .join(", ");
     }
     return str;
   }
 
   function issueLinks(iconChange) {
     if (iconChange.issue || iconChange.pr) {
-      const issues = (iconChange.pr ? stringArray(iconChange.pr) : []).concat(iconChange.issue ? stringArray(iconChange.issue) : [])
-      return ' (' + issues.map(issue => `[#${issue}](https://github.com/waysidemapping/pinhead/issues/${issue})`).join(', ') + ')';
+      const issues = (iconChange.pr ? stringArray(iconChange.pr) : []).concat(
+        iconChange.issue ? stringArray(iconChange.issue) : [],
+      );
+      return (
+        " (" +
+        issues
+          .map(
+            (issue) =>
+              `[#${issue}](https://github.com/waysidemapping/pinhead/issues/${issue})`,
+          )
+          .join(", ") +
+        ")"
+      );
     }
-    return '';
+    return "";
   }
 }
 
 function stringArray(value) {
-  return (typeof value === 'string' ? [value] : [...value]);
+  return typeof value === "string" ? [value] : [...value];
 }

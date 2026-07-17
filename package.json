@@ -35,7 +35,7 @@
     "access": "public"
   },
   "scripts": {
-    "prettier": "npx prettier --write 'docs/**/*.{js,html,css}' 'src/**/*.{js,html,css}'",
+    "prettier": "npx prettier --write 'docs/**/*.{js,html,css}' 'scripts/**/*.{js,html,css}' 'src/**/*.{js,html,css}'",
     "commons": "npm run dist_package && npm run sync_to_commons",
     "dist": "npm run dist_package",
     "dist_package": "npm run check_icons && npm run check_icon_categories && npm run check_changelog && npm run build_dist && cp metadata/changelog.json dist/changelog.json && cp metadata/external_sources.json dist/external_sources.json && cp metadata/categories.json dist/categories.json",

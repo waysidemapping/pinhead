@@ -1,29 +1,37 @@
-import { createReadStream, globSync, mkdirSync, readFileSync, writeFileSync, copyFileSync } from 'fs';
-import { join, basename } from 'path';
-import { Writable } from 'stream';
-import { SVGIcons2SVGFontStream } from 'svgicons2svgfont';
-import svg2ttf from 'svg2ttf';
+import {
+  createReadStream,
+  globSync,
+  mkdirSync,
+  readFileSync,
+  writeFileSync,
+  copyFileSync,
+} from "fs";
+import { join, basename } from "path";
+import { Writable } from "stream";
+import { SVGIcons2SVGFontStream } from "svgicons2svgfont";
+import svg2ttf from "svg2ttf";
 
-const iconsDir = 'icons';
-const distDir = 'font';
+const iconsDir = "icons";
+const distDir = "font";
 
 const firstFontVersion = 19;
 
-const fontName = 'pinhead';
-const classPrefix = 'pinhead';
+const fontName = "pinhead";
+const classPrefix = "pinhead";
 
-copyFileSync('LICENSE', join(distDir, `LICENSE`));
+copyFileSync("LICENSE", join(distDir, `LICENSE`));
 
-const changelogs = JSON.parse(readFileSync('dist/changelog.json'))
-  .toSorted((a, b) => parseInt(a.majorVersion) - parseInt(b.majorVersion));
+const changelogs = JSON.parse(readFileSync("dist/changelog.json")).toSorted(
+  (a, b) => parseInt(a.majorVersion) - parseInt(b.majorVersion),
+);
 
-const packageJson = JSON.parse(readFileSync('package.json'));
-const majorVersion = parseInt(packageJson.version.split('.')[1]);
+const packageJson = JSON.parse(readFileSync("package.json"));
+const majorVersion = parseInt(packageJson.version.split(".")[1]);
 
 const fontPackageJson = {
-  name: packageJson.name + '-font',
+  name: packageJson.name + "-font",
   description: "Official Pinhead map icon font distribution",
-  version: `1.${majorVersion}.0`
+  version: `1.${majorVersion}.0`,
 };
 
 for (const key of [
@@ -34,12 +42,15 @@ for (const key of [
   "repository",
   "bugs",
   "funding",
-  "publishConfig"
+  "publishConfig",
 ]) {
   fontPackageJson[key] = packageJson[key];
 }
 
-writeFileSync(join(distDir, `package.json`), JSON.stringify(fontPackageJson, null, 2));
+writeFileSync(
+  join(distDir, `package.json`),
+  JSON.stringify(fontPackageJson, null, 2),
+);
 
 async function buildFont() {
   mkdirSync(distDir, { recursive: true });
@@ -55,12 +66,12 @@ async function buildFont() {
     descent: 0,
   });
 
-  let svgFont = '';
+  let svgFont = "";
   const writableStream = new Writable({
     write(chunk, encoding, callback) {
       svgFont += chunk.toString();
       callback();
-    }
+    },
   });
 
   fontStream.pipe(writableStream);
@@ -79,7 +90,8 @@ async function buildFont() {
     for (const iconChange of sortedIconChanges) {
       if (iconChange.oldId) {
         if (iconChange.newId) {
-          codepointsByIconId[iconChange.newId] = codepointsByIconId[iconChange.oldId];
+          codepointsByIconId[iconChange.newId] =
+            codepointsByIconId[iconChange.oldId];
         }
         if (iconChange.newId !== iconChange.oldId) {
           delete codepointsByIconId[iconChange.oldId];
@@ -96,8 +108,9 @@ async function buildFont() {
           itemsIdsToAssignCodepoints.push(iconId);
         }
       }
-      const sortedIds = itemsIdsToAssignCodepoints
-        .toSorted((a, b) => a < b ? -1 : (a > b ? 1 : 0));
+      const sortedIds = itemsIdsToAssignCodepoints.toSorted((a, b) =>
+        a < b ? -1 : a > b ? 1 : 0,
+      );
       for (const id of sortedIds) {
         const codepoint = unicode++;
         codepointsByIconId[id] = codepoint;
@@ -107,17 +120,17 @@ async function buildFont() {
   const glyphs = [];
 
   // make sure we add icons in codepoint order
-  const codepoints = Object.values(codepointsByIconId)
-    .toSorted();
+  const codepoints = Object.values(codepointsByIconId).toSorted();
 
   for (const codepoint of codepoints) {
-    const iconId = Object.keys(codepointsByIconId)
-      .find(iconId => codepointsByIconId[iconId] === codepoint);
+    const iconId = Object.keys(codepointsByIconId).find(
+      (iconId) => codepointsByIconId[iconId] === codepoint,
+    );
     const file = `dist/icons/${iconId}.svg`;
     const glyphStream = createReadStream(file);
     glyphStream.metadata = {
       unicode: [String.fromCharCode(codepoint)],
-      name: iconId
+      name: iconId,
     };
     fontStream.write(glyphStream);
 
@@ -125,7 +138,7 @@ async function buildFont() {
   }
 
   fontStream.end();
-  await new Promise(resolve => writableStream.on('finish', resolve));
+  await new Promise((resolve) => writableStream.on("finish", resolve));
 
   const ttf = svg2ttf(svgFont);
   writeFileSync(ttfPath, Buffer.from(ttf.buffer));
@@ -162,15 +175,17 @@ async function buildFont() {
   -moz-osx-font-smoothing: grayscale;
 }
 
-${glyphs.map(g => {
-  const hex = g.codepoint.toString(16);
-  return `.${classPrefix}-${g.name}::before { content: "\\${hex}"; }`;
-}).join('\n')}
+${glyphs
+  .map((g) => {
+    const hex = g.codepoint.toString(16);
+    return `.${classPrefix}-${g.name}::before { content: "\\${hex}"; }`;
+  })
+  .join("\n")}
 `;
 
   writeFileSync(cssPath, css.trim());
-  
-    const html = `
+
+  const html = `
 <!DOCTYPE html>
 <html>
   <head>
@@ -180,18 +195,17 @@ ${glyphs.map(g => {
     <link href="pinhead.css" rel="stylesheet" />
   </head>
   <body style="font-size:15px;">
-    ${glyphs.map(g => `<span class="${classPrefix}-${g.name}"></span> <span>&lt;span class=&quot;${classPrefix}-${g.name}&quot;&gt;\&lt;/span&gt;</span><br/>`).join('\n')}
+    ${glyphs.map((g) => `<span class="${classPrefix}-${g.name}"></span> <span>&lt;span class=&quot;${classPrefix}-${g.name}&quot;&gt;\&lt;/span&gt;</span><br/>`).join("\n")}
   </body>
 </html>
 `;
 
   writeFileSync(htmlPath, html.trim());
 
-  console.log('Done:');
+  console.log("Done:");
   console.log(`- ${ttfPath}`);
   console.log(`- ${cssPath}`);
   console.log(`- ${htmlPath}`);
 }
 
-await buildFont()
-  .catch(console.error);
+await buildFont().catch(console.error);

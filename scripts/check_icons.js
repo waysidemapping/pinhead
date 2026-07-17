@@ -1,12 +1,11 @@
 // Based on CC0-licsened file:
 // https://github.com/rapideditor/temaki/blob/49b592fdc0840ff20052affa20677da5ddd0f809/scripts/check.js
 
-import chalk from 'chalk';
-import { parse } from 'path';
-import { globSync, writeFileSync, readFileSync } from 'fs';
-import svgPathParse from 'svg-path-parse';
-import xmlbuilder2 from 'xmlbuilder2';
-
+import chalk from "chalk";
+import { parse } from "path";
+import { globSync, writeFileSync, readFileSync } from "fs";
+import svgPathParse from "svg-path-parse";
+import xmlbuilder2 from "xmlbuilder2";
 
 checkIcons();
 
@@ -16,17 +15,17 @@ function ellipseAttrsToPathD(rx, cx, ry, cy) {
 
 // https://github.com/elrumordelaluz/element-to-path/blob/master/src/index.js
 function rectAttrsToPathD(attrs) {
-  const w = parseFloat(attrs('width'));
-  const h = parseFloat(attrs('height'));
-  const x = attrs('x') ? parseFloat(attrs('x')) : 0;
-  const y = attrs('y') ? parseFloat(attrs('y')) : 0;
-  let rx = attrs('rx') || 'auto';
-  let ry = attrs('ry') || 'auto';
-  if (rx === 'auto' && ry === 'auto') {
+  const w = parseFloat(attrs("width"));
+  const h = parseFloat(attrs("height"));
+  const x = attrs("x") ? parseFloat(attrs("x")) : 0;
+  const y = attrs("y") ? parseFloat(attrs("y")) : 0;
+  let rx = attrs("rx") || "auto";
+  let ry = attrs("ry") || "auto";
+  if (rx === "auto" && ry === "auto") {
     rx = ry = 0;
-  } else if (rx !== 'auto' && ry === 'auto') {
+  } else if (rx !== "auto" && ry === "auto") {
     rx = ry = calcValue(rx, w);
-  } else if (ry !== 'auto' && rx === 'auto') {
+  } else if (ry !== "auto" && rx === "auto") {
     ry = rx = calcValue(ry, h);
   } else {
     rx = calcValue(rx, w);
@@ -42,26 +41,30 @@ function rectAttrsToPathD(attrs) {
   return [
     `M${x + rx} ${y}`,
     `H${x + w - rx}`,
-    (hasCurves ? `A${rx} ${ry} 0 0 1 ${x + w} ${y + ry}` : ''),
+    hasCurves ? `A${rx} ${ry} 0 0 1 ${x + w} ${y + ry}` : "",
     `V${y + h - ry}`,
-    (hasCurves ? `A${rx} ${ry} 0 0 1 ${x + w - rx} ${y + h}` : ''),
+    hasCurves ? `A${rx} ${ry} 0 0 1 ${x + w - rx} ${y + h}` : "",
     `H${x + rx}`,
-    (hasCurves ? `A${rx} ${ry} 0 0 1 ${x} ${y + h - ry}` : ''),
+    hasCurves ? `A${rx} ${ry} 0 0 1 ${x} ${y + h - ry}` : "",
     `V${y + ry}`,
-    (hasCurves ? `A${rx} ${ry} 0 0 1 ${x + rx} ${y}` : ''),
-    'z',
-  ].filter(Boolean).join('');
+    hasCurves ? `A${rx} ${ry} 0 0 1 ${x + rx} ${y}` : "",
+    "z",
+  ]
+    .filter(Boolean)
+    .join("");
 
   function calcValue(val, base) {
-    return /%$/.test(val) ? (val.replace('%', '') * 100) / base : parseFloat(val);
+    return /%$/.test(val)
+      ? (val.replace("%", "") * 100) / base
+      : parseFloat(val);
   }
 }
 
 function checkIcons() {
-  const START = '✅   ' + chalk.yellow('Checking icons...');
-  const END = '👍  ' + chalk.green('done');
+  const START = "✅   " + chalk.yellow("Checking icons...");
+  const END = "👍  " + chalk.green("done");
 
-  console.log('');
+  console.log("");
   console.log(START);
   console.time(END);
 
@@ -69,16 +72,16 @@ function checkIcons() {
   // const iconIdPartsObj = {};
 
   globSync(`./icons/**/*.svg`).forEach(cleanSvgFile);
-    
+
   function cleanSvgFile(file) {
-    const contents = readFileSync(file, 'utf8');
+    const contents = readFileSync(file, "utf8");
     let xml;
     try {
       xml = xmlbuilder2.create(contents);
     } catch (err) {
       console.error(chalk.red(`Error - ${err.message} reading:`));
-      console.error('  ' + chalk.yellow(file));
-      console.error('');
+      console.error("  " + chalk.yellow(file));
+      console.error("");
       process.exit(1);
     }
 
@@ -99,142 +102,231 @@ function checkIcons() {
     let childrenToRemove = new Set();
     let pathDataToAdd = new Set();
 
-    xml.each((child, index, level) => {
-      const node = child.node;
-      if (node.nodeType !== 1) {   // ignore and remove things like DOCTYPE, CDATA, comments, text
-        childrenToRemove.add(child);
-        return;
-      }
-
-      // Checks for the root
-      if (level === 1) {
-        if (node.nodeName !== 'svg') {
-          console.error(chalk.red('Error - Invalid node at document root: ') + chalk.yellow(node.nodeName));
-          console.error(chalk.gray('  Each file should contain only a single root "svg" element.'));
-          console.error('  in ' + file);
-          console.error('');
-          process.exit(1);
+    xml.each(
+      (child, index, level) => {
+        const node = child.node;
+        if (node.nodeType !== 1) {
+          // ignore and remove things like DOCTYPE, CDATA, comments, text
+          childrenToRemove.add(child);
+          return;
         }
 
-        if (rootCount++ > 0) {
-          console.error(chalk.red('Error - Multiple nodes at document root'));
-          console.error(chalk.gray('  Each file should contain only a single root "svg" element.'));
-          console.error('  in ' + file);
-          console.error('');
-          process.exit(1);
-        }
-
-        if (node.getAttribute('viewBox') !== '0 0 15 15') {
-            console.warn(chalk.yellow('Warning - Unexpected viewBox on ' + node.nodeName + ': ' + node.getAttribute('viewBox')));
-            console.warn('  in ' + file);
-            console.warn('');
+        // Checks for the root
+        if (level === 1) {
+          if (node.nodeName !== "svg") {
+            console.error(
+              chalk.red("Error - Invalid node at document root: ") +
+                chalk.yellow(node.nodeName),
+            );
+            console.error(
+              chalk.gray(
+                '  Each file should contain only a single root "svg" element.',
+              ),
+            );
+            console.error("  in " + file);
+            console.error("");
             process.exit(1);
+          }
+
+          if (rootCount++ > 0) {
+            console.error(chalk.red("Error - Multiple nodes at document root"));
+            console.error(
+              chalk.gray(
+                '  Each file should contain only a single root "svg" element.',
+              ),
+            );
+            console.error("  in " + file);
+            console.error("");
+            process.exit(1);
+          }
+
+          if (node.getAttribute("viewBox") !== "0 0 15 15") {
+            console.warn(
+              chalk.yellow(
+                "Warning - Unexpected viewBox on " +
+                  node.nodeName +
+                  ": " +
+                  node.getAttribute("viewBox"),
+              ),
+            );
+            console.warn("  in " + file);
+            console.warn("");
+            process.exit(1);
+          }
+
+          // remove all attributes
+          while (child.node.attributes.length > 0) {
+            child.node.removeAttribute(child.node.attributes[0].name);
+          }
+          // add back the attributes we need in the order we want
+          child.att({
+            xmlns: "http://www.w3.org/2000/svg",
+            viewBox: "0 0 15 15",
+          });
+
+          // Checks for deeper levels
+        } else {
+          let attributesForShape = [];
+          if (node.nodeName === "ellipse" || node.nodeName === "circle") {
+            const attr = (name) => parseFloat(node.getAttribute(name));
+            pathDataToAdd.add(
+              ellipseAttrsToPathD(
+                attr("rx") || attr("r"),
+                attr("cx"),
+                attr("ry") || attr("r"),
+                attr("cy"),
+              ),
+            );
+            attributesForShape = ["r", "rx", "ry", "cx", "cy"];
+          } else if (node.nodeName === "rect") {
+            const attr = (name) => node.getAttribute(name);
+            pathDataToAdd.add(rectAttrsToPathD(attr));
+            attributesForShape = ["width", "height", "x", "y", "rx", "ry"];
+          } else if (node.nodeName === "polygon") {
+            pathDataToAdd.add("M " + node.getAttribute("points") + "z");
+            attributesForShape = ["points"];
+          } else if (node.nodeName === "path") {
+            pathDataToAdd.add(node.getAttribute("d"));
+            attributesForShape = ["d"];
+          } else if (
+            node.nodeName !== "title" &&
+            node.nodeName !== "desc" &&
+            node.nodeName !== "g"
+          ) {
+            console.warn(
+              chalk.yellow("Warning - Suspicious node: " + node.nodeName),
+            );
+            console.warn(
+              chalk.gray(
+                '  Each svg element should contain only one or more "path" elements.',
+              ),
+            );
+            console.warn("  in " + file);
+            console.warn("");
+            process.exit(1);
+          }
+
+          // remove all children since we'll re-add the paths we want later
+          childrenToRemove.add(child);
+
+          if (
+            node.getAttribute("stroke") &&
+            node.getAttribute("stroke") !== "none"
+          ) {
+            console.warn(
+              chalk.yellow(
+                "Unexpcted stroke value on " +
+                  node.nodeName +
+                  ": " +
+                  node.getAttribute("stroke"),
+              ),
+            );
+            console.warn(
+              chalk.gray("  SVGs must be renderable through fill alone."),
+            );
+            console.warn("  in " + file);
+            console.warn("");
+            process.exit(1);
+          }
+          if (
+            node.getAttribute("transform") &&
+            node.getAttribute("transform") !== "translate(0, 0)" &&
+            node.getAttribute("transform") !== "translate(-0, -0)" &&
+            node.getAttribute("transform") !== "translate(-0, 0)"
+          ) {
+            console.warn(
+              chalk.yellow(
+                "Unexpcted transform value on " +
+                  node.nodeName +
+                  ": " +
+                  node.getAttribute("transform"),
+              ),
+            );
+            console.warn(chalk.gray("  Elements must not rely on transforms."));
+            console.warn("  in " + file);
+            console.warn("");
+            process.exit(1);
+          }
+
+          // suspicious attributes
+          const suspiciousAttrs = node.attributes
+            .map((attr) => attr.name)
+            .filter(
+              (name) =>
+                !attributesForShape
+                  .concat([
+                    "fill",
+                    "id",
+                    "fill-rule",
+                    "stroke",
+                    "stroke-width",
+                    "transform",
+                    "opacity",
+                  ])
+                  .includes(name),
+            );
+
+          if (suspiciousAttrs.length) {
+            console.warn(
+              chalk.yellow(
+                "Warning - Suspicious attributes on " +
+                  node.nodeName +
+                  ": " +
+                  suspiciousAttrs,
+              ),
+            );
+            console.warn(
+              chalk.gray(
+                "  Avoid identifiers, style, and presentation attributes.",
+              ),
+            );
+            console.warn("  in " + file);
+            console.warn("");
+            process.exit(1);
+          }
         }
-
-        // remove all attributes
-        while (child.node.attributes.length > 0) {
-          child.node.removeAttribute(child.node.attributes[0].name);
-        }
-        // add back the attributes we need in the order we want
-        child.att({"xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 15 15"});
-
-      // Checks for deeper levels
-      } else {
-        let attributesForShape = [];
-        if (node.nodeName === 'ellipse' || node.nodeName === 'circle') {
-          const attr = (name) => parseFloat(node.getAttribute(name));
-          pathDataToAdd.add(ellipseAttrsToPathD(attr('rx') || attr('r'), attr('cx'), attr('ry') || attr('r'), attr('cy')));
-          attributesForShape = ['r', 'rx', 'ry', 'cx', 'cy'];
-        } else if (node.nodeName === 'rect') {
-          const attr = (name) => node.getAttribute(name);
-          pathDataToAdd.add(rectAttrsToPathD(attr));
-          attributesForShape = ['width', 'height', 'x', 'y', 'rx', 'ry'];
-        } else if (node.nodeName === 'polygon') {
-          pathDataToAdd.add('M ' + node.getAttribute('points') + 'z');
-          attributesForShape = ['points'];
-        } else if (node.nodeName === 'path') {
-          pathDataToAdd.add(node.getAttribute('d'));
-          attributesForShape = ['d'];
-        } else if (node.nodeName !== 'title' && node.nodeName !== 'desc' && node.nodeName !== 'g') {
-          console.warn(chalk.yellow('Warning - Suspicious node: ' + node.nodeName));
-          console.warn(chalk.gray('  Each svg element should contain only one or more "path" elements.'));
-          console.warn('  in ' + file);
-          console.warn('');
-          process.exit(1);
-        }
-
-        // remove all children since we'll re-add the paths we want later
-        childrenToRemove.add(child);
-
-        if (node.getAttribute('stroke') && node.getAttribute('stroke') !== 'none') {
-          console.warn(chalk.yellow('Unexpcted stroke value on ' + node.nodeName + ': ' + node.getAttribute('stroke')));
-          console.warn(chalk.gray('  SVGs must be renderable through fill alone.'));
-          console.warn('  in ' + file);
-          console.warn('');
-          process.exit(1);
-        }
-        if (node.getAttribute('transform') && node.getAttribute('transform') !== 'translate(0, 0)' && node.getAttribute('transform') !== 'translate(-0, -0)' && node.getAttribute('transform') !== 'translate(-0, 0)') {
-          console.warn(chalk.yellow('Unexpcted transform value on ' + node.nodeName + ': ' + node.getAttribute('transform')));
-          console.warn(chalk.gray('  Elements must not rely on transforms.'));
-          console.warn('  in ' + file);
-          console.warn('');
-          process.exit(1);
-        }
-
-        // suspicious attributes
-        const suspiciousAttrs = node.attributes
-          .map(attr => attr.name)
-          .filter(name => !attributesForShape.concat(['fill', 'id', 'fill-rule', 'stroke', 'stroke-width', 'transform', 'opacity']).includes(name));
-
-        if (suspiciousAttrs.length) {
-          console.warn(chalk.yellow('Warning - Suspicious attributes on ' + node.nodeName + ': ' + suspiciousAttrs));
-          console.warn(chalk.gray('  Avoid identifiers, style, and presentation attributes.'));
-          console.warn('  in ' + file);
-          console.warn('');
-          process.exit(1);
-        }
-      }
-
-    }, false, true);  /* visit_self = false, recursive = true */
+      },
+      false,
+      true,
+    ); /* visit_self = false, recursive = true */
 
     // remove nodes only after crawling everything to avoid early exit
     Array.from(childrenToRemove).forEach((child) => {
       child.remove();
     });
 
-    const paths = Array.from(pathDataToAdd).map(path => {
+    const paths = Array.from(pathDataToAdd).map((path) => {
       // automatically close any open paths since they'll appear that way anyway when filled
-      if (path[path.length - 1].toUpperCase() !== 'Z') {
-        path = path + 'Z';
+      if (path[path.length - 1].toUpperCase() !== "Z") {
+        path = path + "Z";
       }
       return path;
     });
     // Join all paths into one. This could reveal issues that need to be fixed if multiple fills are overlapping
-    const d = paths.join('');
-    const normalizedD = svgPathParse.serializePath(svgPathParse.pathParse(d).normalize({round: 2}));
-    xml.root().ele('path', {
-      d: normalizedD
+    const d = paths.join("");
+    const normalizedD = svgPathParse.serializePath(
+      svgPathParse.pathParse(d).normalize({ round: 2 }),
+    );
+    xml.root().ele("path", {
+      d: normalizedD,
     });
 
     let xmlString = xml.end({ prettyPrint: true, headless: true });
 
     // xmlbuilder2 output order of attributes is non-determinstic, so standardize it manually
-    xmlString = xmlString.replace(
-      /<svg\s+([^>]+)>/,
-      (_, attrs) => {
-        // Match full key="value" pairs
-        const attrMatches = attrs.match(/\S+="[^"]*"/g) || [];
+    xmlString = xmlString.replace(/<svg\s+([^>]+)>/, (_, attrs) => {
+      // Match full key="value" pairs
+      const attrMatches = attrs.match(/\S+="[^"]*"/g) || [];
 
-        // Sort reverse alphabetically by attribute name
-        attrMatches.sort((a, b) => {
-          const nameA = a.split("=")[0];
-          const nameB = b.split("=")[0];
-          return nameB.localeCompare(nameA);
-        });
+      // Sort reverse alphabetically by attribute name
+      attrMatches.sort((a, b) => {
+        const nameA = a.split("=")[0];
+        const nameB = b.split("=")[0];
+        return nameB.localeCompare(nameA);
+      });
 
-        return `<svg ${attrMatches.join(" ")}>`;
-      }
-    );
+      return `<svg ${attrMatches.join(" ")}>`;
+    });
 
     writeFileSync(file, xmlString);
   }
