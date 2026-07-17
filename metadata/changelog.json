@@ -17253,7 +17253,7 @@
         "newId": "sedan_under_wrench",
         "by": "@quincylvania",
         "inspo": [
-          "car_and_wrench",
+          "car_under_wrench",
           "sedan"
         ]
       },
@@ -17261,7 +17261,7 @@
         "newId": "sedan_with_raised_hood_under_wrench",
         "by": "@quincylvania",
         "inspo": [
-          "car_and_wrench",
+          "car_under_wrench",
           "sedan_with_raised_hood"
         ]
       },
@@ -17317,7 +17317,7 @@
         "newId": "station_wagon_under_wrench",
         "by": "@quincylvania",
         "inspo": [
-          "car_and_wrench",
+          "car_under_wrench",
           "station_wagon"
         ]
       },
@@ -17325,7 +17325,7 @@
         "newId": "station_wagon_with_raised_hood_under_wrench",
         "by": "@quincylvania",
         "inspo": [
-          "car_and_wrench",
+          "car_under_wrench",
           "station_wagon_with_raised_hood"
         ]
       },
@@ -17381,7 +17381,7 @@
         "newId": "pickup_truck_under_wrench",
         "by": "@quincylvania",
         "inspo": [
-          "car_and_wrench",
+          "car_under_wrench",
           "pickup_truck"
         ]
       },
@@ -17389,7 +17389,7 @@
         "newId": "pickup_truck_with_raised_hood_under_wrench",
         "by": "@quincylvania",
         "inspo": [
-          "car_and_wrench",
+          "car_under_wrench",
           "pickup_truck_with_raised_hood"
         ]
       },
@@ -17453,7 +17453,7 @@
         "newId": "taxi_under_wrench",
         "by": "@quincylvania",
         "inspo": [
-          "car_and_wrench",
+          "car_under_wrench",
           "taxi_under_taxi_checkerboard"
         ]
       },
@@ -17582,6 +17582,10 @@
         "newId": "canoe_under_key"
       },
       {
+        "oldId": "garage_and_key",
+        "newId": "garage_under_key"
+      },
+      {
         "oldId": "suitcase_and_key",
         "newId": "suitcase_under_key"
       },
@@ -17590,8 +17594,28 @@
         "newId": "suitcase_in_rectangle_outline_under_key"
       },
       {
-        "oldId": "garage_and_key",
-        "newId": "garage_under_key"
+        "oldId": "car_and_wrench",
+        "newId": "car_under_wrench"
+      },
+      {
+        "oldId": "bicycle_and_wrench",
+        "newId": "bicycle_under_wrench"
+      },
+      {
+        "oldId": "cargobike_and_wrench",
+        "newId": "cargobike_under_wrench"
+      },
+      {
+        "oldId": "motorcycle_and_wrench",
+        "newId": "motorcycle_under_wrench"
+      },
+      {
+        "oldId": "motorboat_and_wrench",
+        "newId": "motorboat_under_wrench"
+      },
+      {
+        "oldId": "garage_and_wrench",
+        "newId": "garage_under_wrench"
       },
       {
         "oldId": "ear_atop_slash",
