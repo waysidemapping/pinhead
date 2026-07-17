@@ -25,38 +25,49 @@
     </script>
   </head>
   <body>
-    <div class="container">
-      <div id="main-title">
-        <a href="/"><h1><img src="v1/pin.svg"/><span>Pinhead Map Icons</span></h1></a>
-        <div class="tagline">
-          <span><i>Quality <a href="https://github.com/waysidemapping/pinhead/blob/main/LICENSE" target="_blank">public domain</a> icons for your map pins</i></span>
+    
+    <div id="header">
+      <div class="container">
+        <div id="main-title">
+          <a href="/"><h1><img src="/latest/pin.svg"/><span>Pinhead Map Icons</span></h1></a>
+          <ul id="main-menu"></ul>
+        </div>
+        <hr/>
+        <div id="header-body">
+          <article>
+            <p>Pinhead is a library of free vector icons for maps and such. It's 100%
+              <a href="https://github.com/waysidemapping/pinhead">open source</a>,
+              <a href="https://github.com/waysidemapping/pinhead/blob/main/LICENSE">public domain</a>, and made by 
+              <a href="https://github.com/waysidemapping/pinhead/graphs/contributors">real people</a>, not AI.
+            </p>
+            <p>We're an active, collaborative project that has added an average of
+              <span id="per-day-icon-count">many</span> icons per day since v1
+              for <span id="icon-count">1,000+</span> total icons.
+            </p>
+          </article>
+          <div id="header-sidebar"></div>
         </div>
       </div>
-      <hr/>
-      <div id="icon-gallery" class="icon-grid"></div>
-      <div id="body-area">
-        <article>
-          <p><span style="font-size: 1.5em;">So you're making a map</span> and need some <b>icons</b>. Well, maybe <b>a lot</b> of icons. Like, for anything that might appear on a <b>map</b>. And they need to be visually <b>consistent</b>. Like the size and direction and whatever. And they gotta be <b>free</b>. Even <b>public domain</b>. In <b>vector</b> format. With <b>no AI</b>. Oh, and they all need to be <b>legible</b> on the <b>head of a pin</b>.</p>
-          <p>This happened to me while building <a href="https://github.com/waysidemapping/themap.is" target="_blank">themap.is</a>. I put together this icon library in case it happens to you too. It's called <b>Pinhead</b>.</p>
-          <p>Pinhead is an active, collaborative project that has grown by an average
-            of <b><span id="per-day-icon-count">many</span> icons per day</b> since v1.
-            There are now <b><span id="icon-count">1,000+</span> total icons</b> including
-            <a href="/coverage">standardized versions</a> of the most popular public domain
-            cartographic icon sets: <a href="https://github.com/mapbox/maki" target="_blank">Maki</a>,
-            <a href="https://github.com/rapideditor/temaki" target="_blank">Temaki</a>,
-            <a href="https://github.com/openstreetmap-carto/openstreetmap-carto" target="_blank">OSM Carto</a>,
-            and <a href="https://github.com/nationalparkservice/symbol-library" target="_blank">NPMap</a>.</p>
-          <p>For more info and to get involved, head over to <a href="https://github.com/waysidemapping/pinhead">GitHub</a>.</p>
-        </article>
-        <div id="sidebar"></div>
+    </div>
+    <div class="container">
+      <div id="browser">
+         <div id="sticky-topbar">
+          <img class="search-icon" src="/latest/magnifying_glass_for_search_ui.svg"/>
+          <input type="search" id="icon-search" placeholder="Filter pinheads"/>
+          <a href="#" id="scroll-top-button"><span class="wide-only">scroll to </span><span>top</span><img class="inline-icon" src="/latest/arrow_up.svg"/></a>
+        </div>
+        <div id="browser-body">
+       
+          <div id="icon-list"></div>
+            <div id="inspector-flexer">
+            <div id="inspector-scroller">
+              <div id="inspector"></div>
+            </div>
+          </div>
+        </div>
+      
       </div>
-      <div id="sticky-bar">
-        <img class="search-icon" src="v15/magnifying_glass_for_search_ui.svg"/>
-        <input type="search" id="icon-search" placeholder="Filter pinheads"/>
-        <a href="#" id="scroll-top-button"><span class="wide-only">scroll to </span><span>top</span><img class="inline-icon" src="v15/arrow_up.svg"/></a>
-      </div>
-      <div id="icon-list"></div>
-      <div id="footer" style="text-align: center;">
+      <div id="footer">
         <a href="https://waysidemapping.org" target="_blank"><img src="wayside-mapping-logo.svg" style="width: 240px;margin-bottom: 20px;"/></a>
         <p>This website is <a href="https://github.com/waysidemapping/pinhead" target="_blank">free and open source</a> (<a href="https://github.com/waysidemapping/pinhead/blob/main/LICENSE" target="_blank">CC0</a>). Collaborators welcome!</p>
       </div>
