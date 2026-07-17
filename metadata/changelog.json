@@ -17318,6 +17318,34 @@
         "newId": "conifer_tree_and_flower_and_snowcapped_mountain"
       },
       {
+        "oldId": "car_with_taxi_checkerboard",
+        "newId": "car_under_taxi_checkerboard"
+      },
+      {
+        "oldId": "bicycle_and_taxi_checkerboard",
+        "newId": "bicycle_under_taxi_checkerboard"
+      },
+      {
+        "oldId": "cargobike_and_taxi_checkerboard",
+        "newId": "cargobike_under_taxi_checkerboard"
+      },
+      {
+        "oldId": "motorcycle_and_taxi_checkerboard",
+        "newId": "motorcycle_under_taxi_checkerboard"
+      },
+      {
+        "oldId": "motorboat_and_taxi_checkerboard",
+        "newId": "motorboat_under_taxi_checkerboard"
+      },
+      {
+        "oldId": "canoe_and_taxi_checkerboard",
+        "newId": "canoe_under_taxi_checkerboard"
+      },
+      {
+        "oldId": "taxi_and_taxi_checkerboard",
+        "newId": "taxi_under_taxi_checkerboard"
+      },
+      {
         "oldId": "ear_atop_slash",
         "newId": "hearing_accessibility_symbol"
       },
