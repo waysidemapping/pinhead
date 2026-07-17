@@ -99,9 +99,10 @@
     "super": "insect"
   },
   "beer_bottle": {
-    "super": [
-      "drink_bottle"
-    ]
+    "super": "drink_bottle"
+  },
+  "beer_mug": {
+    "super": "drink_mug"
   },
   "bench": {
     "commons": "Plain black SVG bench icons"
@@ -239,6 +240,9 @@
   "celtic_cross": {
     "super": "christian_cross"
   },
+  "champagne_bottle": {
+    "super": "drink_bottle"
+  },
   "charging_station": {
     "super": "fuel_station"
   },
@@ -272,6 +276,9 @@
   "coconut_palm_tree": {
     "super": "palm_tree"
   },
+  "coffee_mug": {
+    "super": "drink_mug"
+  },
   "compact_box_truck": {
     "super": "box_truck"
   },
@@ -289,10 +296,13 @@
     "super": "boundary"
   },
   "coral": {
-    "super": "animal"
+    "super": "marine_animal"
   },
   "cowboy_hat": {
     "super": "hat"
+  },
+  "crab": {
+    "super": "marine_animal"
   },
   "crescent": {
     "super": "religious_symbol"
@@ -315,6 +325,9 @@
   },
   "deer": {
     "super": "ungulate"
+  },
+  "detergent_bottle": {
+    "super": "bottle"
   },
   "diamond": {
     "super": "quadrilateral"
@@ -344,15 +357,30 @@
   },
   "drink_bottle": {
     "super": [
-      "drink",
+      "drink_vessel",
       "bottle"
     ]
   },
+  "drink_can": {
+    "super": "drink_vessel"
+  },
   "drink_cup": {
     "super": [
-      "drink",
+      "drink_vessel",
       "cup"
     ]
+  },
+  "drink_mug": {
+    "super": "drink_cup"
+  },
+  "drink_vessel": {
+    "super": [
+      "drink",
+      "vessel"
+    ]
+  },
+  "drinking_glass": {
+    "super": "drink_cup"
   },
   "drone_aircraft": {
     "super": "aircraft"
@@ -414,7 +442,7 @@
   },
   "fish": {
     "commons": "Plain black SVG fish icons",
-    "super": "animal"
+    "super": "marine_animal"
   },
   "flag": {
     "commons": "Plain black SVG flag icons"
@@ -554,6 +582,9 @@
     "commons": "SVG map symbols of Japan",
     "match": "^jp_.+"
   },
+  "japanese_teacup": {
+    "super": "drink_cup"
+  },
   "jar": {
     "super": "vessel"
   },
@@ -636,6 +667,15 @@
   "maple_leaf": {
     "super": "leaf"
   },
+  "marine_animal": {
+    "super": "animal"
+  },
+  "martini_glass": {
+    "super": "drinking_glass"
+  },
+  "milk_carton": {
+    "super": "drink_vessel"
+  },
   "mobile_phone": {
     "commons": "Plain black SVG telephone icons"
   },
@@ -717,6 +757,15 @@
     "commons": "Plain black SVG pawprint icons",
     "super": "animal"
   },
+  "pennant": {
+    "super": "flag"
+  },
+  "pennon": {
+    "super": "pennant"
+  },
+  "perfume_bottle": {
+    "super": "bottle"
+  },
   "person": {
     "commons": "Plain black SVG people icons",
     "match": "^(person|people)$"
@@ -741,6 +790,9 @@
   },
   "pin_pad": {
     "super": "atm"
+  },
+  "pint_glass": {
+    "super": "drinking_glass"
   },
   "piping": {
     "commons": "Plumbing icons"
@@ -855,11 +907,14 @@
     "super": "bus"
   },
   "sea_lion": {
-    "super": "carnivore"
+    "super": [
+      "marine_animal",
+      "carnivore"
+    ]
   },
   "sea_star": {
     "super": [
-      "fish",
+      "marine_animal",
       "star"
     ]
   },
@@ -877,6 +932,9 @@
   },
   "semi_trailer": {
     "super": "trailer"
+  },
+  "shaker_pint_glass": {
+    "super": "pint_glass"
   },
   "shape": {},
   "shekel": {
@@ -926,6 +984,9 @@
   },
   "spacecraft": {
     "super": "aircraft"
+  },
+  "spice_bottle": {
+    "super": "bottle"
   },
   "spiky_fish": {
     "super": "fish"
@@ -1016,6 +1077,9 @@
   },
   "tipi_campsite": {
     "super": "tent"
+  },
+  "to_go_cup": {
+    "super": "drink_cup"
   },
   "tool": {
     "commons": "Plain black SVG tool icons"
@@ -1122,6 +1186,12 @@
   "water": {
     "commons": "Plain black SVG water icons"
   },
+  "water_bottle": {
+    "super": "drink_bottle"
+  },
+  "water_glass": {
+    "super": "drinking_glass"
+  },
   "water_pipe_return_bend": {
     "super": "piping"
   },
@@ -1149,6 +1219,12 @@
   },
   "wifi": {
     "match": "^wifi.*"
+  },
+  "wine_bottle": {
+    "super": "drink_bottle"
+  },
+  "wine_glass": {
+    "super": "drinking_glass"
   },
   "wizards_hat": {
     "super": "hat"
