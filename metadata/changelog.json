@@ -16698,6 +16698,70 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "memorial_stone_with_star_and_crescent",
+        "by": "@quincylvania",
+        "inspo": [
+          "memorial_stone",
+          "star_and_crescent"
+        ]
+      },
+      {
+        "newId": "memorial_stone_with_star_of_david",
+        "by": "@quincylvania",
+        "inspo": [
+          "memorial_stone",
+          "star_of_david"
+        ]
+      },
+      {
+        "newId": "memorial_stone_with_om",
+        "by": "@quincylvania",
+        "inspo": [
+          "memorial_stone",
+          "om"
+        ]
+      },
+      {
+        "newId": "memorial_stone_with_yin_yang",
+        "by": "@quincylvania",
+        "inspo": [
+          "memorial_stone",
+          "yin_yang"
+        ]
+      },
+      {
+        "newId": "memorial_stone_with_khanda",
+        "by": "@quincylvania",
+        "inspo": [
+          "memorial_stone",
+          "khanda"
+        ]
+      },
+      {
+        "newId": "memorial_stone_with_dharma_wheel",
+        "by": "@quincylvania",
+        "inspo": [
+          "memorial_stone",
+          "dharma_wheel_on_square"
+        ]
+      },
+      {
+        "newId": "memorial_stone_with_quaker_star",
+        "by": "@quincylvania",
+        "inspo": [
+          "memorial_stone",
+          "quaker_star"
+        ]
+      },
+      {
+        "newId": "memorial_stone_with_flaming_chalice",
+        "by": "@quincylvania",
+        "inspo": [
+          "memorial_stone",
+          "flaming_chalice"
+        ]
+      },
+      {
         "oldId": "greek_cross",
         "newId": "greek_cross",
         "by": "@quincylvania",
