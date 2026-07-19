@@ -16714,6 +16714,20 @@
         "inspo": "coconut_palm_tree_on_hill_in_water"
       },
       {
+        "oldId": "squat_rock",
+        "newId": "squat_rock",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "squat_rock_with_inscription",
+        "by": "@quincylvania",
+        "inspo": [
+          "squat_rock",
+          "round_rock_with_inscription"
+        ]
+      },
+      {
         "newId": "memorial_stone_with_star_and_crescent",
         "by": "@quincylvania",
         "inspo": [
