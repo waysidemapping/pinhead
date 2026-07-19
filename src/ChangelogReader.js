@@ -74,6 +74,10 @@ function loadChangelogData(c) {
     }
   }
 
+  for (const id in iconsById) {
+    iconsById[id].id = id;
+  }
+
   return { iconsById, iconsByVersionedIconId };
 }
 

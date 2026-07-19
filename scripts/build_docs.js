@@ -13,6 +13,8 @@ const version = execFileSync("npm", ["view", packageName, "version"], {
 console.log("Building docs for Pinhead v" + version);
 const currentMajorVersion = parseInt(version.split(".")[1]);
 
+execFileSync("cp", ["-r", `src/.`, join(docsDir, `src`)]);
+
 for (let i = 1; i <= currentMajorVersion; i += 1) {
   const targetDir = join(docsDir, `v${i}`);
   if (!existsSync(targetDir)) {

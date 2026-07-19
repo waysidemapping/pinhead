@@ -6,6 +6,7 @@ docs/package.json
 docs/changelog.json
 docs/categories.json
 docs/external_sources.json
+docs/src/
 docs/srcicons/
 docs/npm_publish_dates.json
 docs/commons_metadata.json
