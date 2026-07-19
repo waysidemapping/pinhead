@@ -436,7 +436,7 @@
     "super": "eye"
   },
   "face": {
-    "match": ".*face.*"
+    "match": "(^|_)face(_|$)"
   },
   "faravahar": {
     "super": "religious_symbol"
