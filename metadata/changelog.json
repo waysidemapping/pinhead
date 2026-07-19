@@ -17781,6 +17781,11 @@
         "by": "@quincylvania"
       },
       {
+        "oldId": "propane_tank_with_gas_flame",
+        "newId": "propane_tank_with_gas_flame",
+        "by": "@quincylvania"
+      },
+      {
         "oldId": "deer_with_antlers",
         "newId": "deer_with_antlers",
         "edit": "minor",
