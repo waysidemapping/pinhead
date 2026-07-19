@@ -39,6 +39,9 @@
   "apple": {
     "super": "fruit"
   },
+  "apple_core": {
+    "super": "apple"
+  },
   "archery_arrow": {
     "super": "weapon"
   },
@@ -68,7 +71,8 @@
     "super": "person"
   },
   "bag": {
-    "commons": "Plain black SVG luggage icons"
+    "commons": "Plain black SVG luggage icons",
+    "super": "container"
   },
   "bag_of_trash": {
     "commons": "Waste bags",
@@ -113,6 +117,9 @@
   },
   "big_top_tent": {
     "super": "tent"
+  },
+  "bile_duct": {
+    "super": "body_organ"
   },
   "bird": {
     "commons": "Plain black SVG bird icons",
@@ -189,6 +196,9 @@
   },
   "camper_trailer": {
     "super": "trailer"
+  },
+  "campfire": {
+    "super": "fire"
   },
   "campsite": {
     "super": "tent"
@@ -399,6 +409,9 @@
     "commons": "Plain black SVG ear icons",
     "super": "body_part"
   },
+  "egg": {
+    "super": "food"
+  },
   "electrical_diagram_symbols": {
     "commons": "SVG electrical symbols",
     "match": "^electrical_.+"
@@ -453,6 +466,9 @@
   "flagstick": {
     "super": "flag"
   },
+  "flame": {
+    "super": "fire"
+  },
   "flaming_chalice": {
     "super": "religious_symbol"
   },
@@ -491,6 +507,9 @@
   "fuel_station": {},
   "gallbladder": {
     "super": "body_organ"
+  },
+  "gas_flame": {
+    "super": "flame"
   },
   "gasoline_pump": {
     "super": "fuel_station"
@@ -664,6 +683,9 @@
   "manicured_grass": {
     "super": "grass"
   },
+  "map_pin": {
+    "super": "shape"
+  },
   "maple_leaf": {
     "super": "leaf"
   },
@@ -677,7 +699,7 @@
     "super": "drink_vessel"
   },
   "mobile_phone": {
-    "commons": "Plain black SVG telephone icons"
+    "super": "phone"
   },
   "monorail_transit_vehicle": {
     "super": "train"
@@ -732,6 +754,9 @@
   "paddlecraft": {
     "super": "boat"
   },
+  "paintbrush": {
+    "super": "writing_utensil"
+  },
   "palm_tree": {
     "super": "tree"
   },
@@ -757,6 +782,15 @@
     "commons": "Plain black SVG pawprint icons",
     "super": "animal"
   },
+  "pen": {
+    "super": "writing_utensil"
+  },
+  "pen_nib": {
+    "super": "pen"
+  },
+  "pencil": {
+    "super": "writing_utensil"
+  },
   "pennant": {
     "super": "flag"
   },
@@ -779,8 +813,9 @@
   "phone": {
     "commons": "Plain black SVG telephone icons"
   },
-  "phone_bars": {
-    "match": "^phone_bars.*"
+  "phone_bar": {
+    "match": "^phone_bars.*",
+    "super": "signal_indicator"
   },
   "pickup_truck": {
     "super": "truck"
@@ -963,6 +998,7 @@
   "shrub": {
     "super": "plant"
   },
+  "signal_indicator": {},
   "skate": {
     "super": "footwear"
   },
@@ -1141,6 +1177,9 @@
   "tshirt": {
     "super": "shirt"
   },
+  "tube": {
+    "super": "vessel"
+  },
   "tulip": {
     "super": "flower"
   },
@@ -1181,7 +1220,8 @@
     "super": "tent"
   },
   "waste_container": {
-    "commons": "Plain black SVG waste container icons"
+    "commons": "Plain black SVG waste container icons",
+    "super": "container"
   },
   "water": {
     "commons": "Plain black SVG water icons"
@@ -1218,7 +1258,8 @@
     "super": "waste_container"
   },
   "wifi": {
-    "match": "^wifi.*"
+    "match": "^wifi.*",
+    "super": "signal_indicator"
   },
   "wine_bottle": {
     "super": "drink_bottle"
@@ -1233,6 +1274,9 @@
     "super": "canine"
   },
   "wrench": {
+    "super": "hand_tool"
+  },
+  "writing_utensil": {
     "super": "hand_tool"
   },
   "yen_yuan": {
