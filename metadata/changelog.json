@@ -17764,6 +17764,21 @@
           "car_under_checkmark"
         ]
       },
+      {
+        "newId": "deer_head_under_paragraph",
+        "by": "@quincylvania",
+        "inspo": [
+          "deer_head",
+          "fish_under_paragraph"
+        ]
+      },
+      {
+        "newId": "deer_head_under_list_beside_checkmark",
+        "by": "@quincylvania",
+        "inspo": [
+          "deer_head",
+          "fish_under_list_beside_checkmark"
+        ]
       },
       {
         "newId": "deer_head_with_antlers_on_shield_mount",
