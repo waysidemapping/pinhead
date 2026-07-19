@@ -17751,6 +17751,12 @@
         "newId": "hearing_accessibility_symbol_with_t"
       },
       {
+        "newId": "deer_head_with_antlers_on_shield_mount",
+        "by": "@quincylvania",
+        "inspo": "deer_head_with_antlers",
+        "issue": "250"
+      },
+      {
         "newId": "badge_shield_with_deer_head_with_antlers",
         "by": "@quincylvania",
         "inspo": [
