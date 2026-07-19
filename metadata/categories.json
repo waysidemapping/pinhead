@@ -140,6 +140,9 @@
   "body_part": {
     "commons": "Plain black SVG medical icons"
   },
+  "bone": {
+    "super": "body_part"
+  },
   "book": {
     "commons": "Plain black SVG book icons"
   },
@@ -520,6 +523,9 @@
   "globe_gasoline_pump": {
     "super": "gasoline_pump"
   },
+  "gown": {
+    "super": "dress"
+  },
   "grass": {
     "super": "leaf"
   },
@@ -695,6 +701,15 @@
   "martini_glass": {
     "super": "drinking_glass"
   },
+  "meat": {
+    "super": "food"
+  },
+  "michigan_lower_peninsula": {
+    "super": "michigan"
+  },
+  "michigan_upper_peninsula": {
+    "super": "michigan"
+  },
   "milk_carton": {
     "super": "drink_vessel"
   },
@@ -847,6 +862,9 @@
   },
   "polygon": {
     "super": "shape"
+  },
+  "poultry_drumstick": {
+    "super": "meat"
   },
   "pound": {
     "super": "currency"
@@ -1206,6 +1224,9 @@
   "vehicle": {},
   "vending_machine": {
     "commons": "Vending machine icons"
+  },
+  "vertical_rotisserie": {
+    "super": "meat"
   },
   "vessel": {
     "super": "container"
