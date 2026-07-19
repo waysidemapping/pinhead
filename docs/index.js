@@ -1,3 +1,5 @@
+import { CategoryReader } from "/src/CategoryReader.js";
+
 let packageJson;
 
 let version;
@@ -40,6 +42,9 @@ async function setupPage(pageData) {
   const changelogs = await fetch("changelog.json").then((result) =>
     result.json(),
   );
+  const categories = await fetch("categories.json").then((result) =>
+    result.json(),
+  );
 
   let userLangs = navigator.languages
     ? navigator.languages
@@ -74,6 +79,7 @@ async function setupPage(pageData) {
   const iconsToDisplay = Object.values(iconsById).filter(
     (icon) => !icon.sensitive,
   );
+  const categoryReader = new CategoryReader(categories, Object.keys(iconsById));
 
   const v1Changelog = changelogs.find((item) => item.majorVersion === "1");
   const iconsAddedSinceLaunch =
@@ -306,6 +312,11 @@ async function setupPage(pageData) {
       inspector.innerHTML = "";
       return;
     }
+    const categoriesForIcon = categoryReader.rootCategoriesForIconId(iconId);
+    const relatedIcons = categoryReader
+      .iconIdsForRootCategoryIds(categoriesForIcon.map((cat) => cat.id))
+      .filter((iconId2) => iconId2 !== iconId);
+
     document.body.classList.add("inspector-open");
     inspector.innerHTML = [
       new Chainable("div")
@@ -465,6 +476,20 @@ async function setupPage(pageData) {
           .append(
             `<img src="https://pinhead.ink/v${majorVersion}/${iconId}.svg" width="15px" height="15px"/>`,
           ),
+        relatedIcons.length
+          ? [
+              new Chainable("h3").append("related pinheads"),
+              new Chainable("div").setAttribute("class", "icon-grid").append(
+                relatedIcons
+                  .map((iconId) => {
+                    return new Chainable("a")
+                      .setAttribute("href", `#${iconId}`)
+                      .append(iconsById[iconId].svg);
+                  })
+                  .join(""),
+              ),
+            ].join("")
+          : "",
       ),
     ].join("");
 
