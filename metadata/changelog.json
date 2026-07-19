@@ -16762,6 +16762,22 @@
         ]
       },
       {
+        "newId": "memorial_stone_with_angel_moroni",
+        "by": "@quincylvania",
+        "inspo": [
+          "memorial_stone",
+          "angel_moroni"
+        ]
+      },
+      {
+        "newId": "angel_moroni_on_square",
+        "by": "@quincylvania",
+        "inspo": [
+          "latin_cross_on_square",
+          "angel_moroni"
+        ]
+      },
+      {
         "oldId": "greek_cross",
         "newId": "greek_cross",
         "by": "@quincylvania",
