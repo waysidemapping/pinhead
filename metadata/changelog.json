@@ -17751,6 +17751,36 @@
         "newId": "hearing_accessibility_symbol_with_t"
       },
       {
+        "oldId": "sign_beside_car",
+        "newId": "sign_beside_car",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "sign_beside_taxi",
+        "newId": "sign_beside_taxi",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "sign_beside_bench_with_backrest",
+        "newId": "sign_beside_bench_with_backrest",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "tree_and_bench_with_backrest",
+        "newId": "tree_beside_bench_with_backrest",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "bench_with_backrest_in_rectangular_shelter",
+        "newId": "bench_with_backrest_in_rectangular_shelter",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
         "oldId": "deer_with_antlers",
         "newId": "deer_with_antlers",
         "edit": "minor",
