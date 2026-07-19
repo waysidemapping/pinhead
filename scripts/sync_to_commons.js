@@ -8,7 +8,7 @@ import {
   moveFile,
 } from "../src/CommonsConnection.js";
 import { ChangelogReader } from "../src/ChangelogReader.js";
-import { loadCategories } from "../src/CategoryLoader.js";
+import { CategoryReader } from "../src/CategoryReader.js";
 
 const changelogs = JSON.parse(readFileSync("dist/changelog.json"));
 const changelogReader = new ChangelogReader(changelogs);
@@ -41,7 +41,7 @@ const completeIconsById = JSON.parse(
 const iconsToUploadById = Object.assign({}, completeIconsById);
 const pagesNeedingUpdateByIconId = {};
 
-const iconCategoryInfo = loadCategories(Object.keys(completeIconsById));
+const categoryReader = new CategoryReader(Object.keys(completeIconsById));
 
 const validRemotePages = {};
 
@@ -187,10 +187,10 @@ function commonsPageCategoriesText(pinheadIconId) {
     categories.push("Pinhead icons by Quincy Morgan");
   }
 
-  if (iconCategoryInfo.byIconId[pinheadIconId]?.commons) {
-    categories = categories.concat(
-      iconCategoryInfo.byIconId[pinheadIconId].commons,
-    );
+  const commonsCategories =
+    categoryReader.commonsCategoriesForIconId(pinheadIconId);
+  if (commonsCategories?.length) {
+    categories = categories.concat(commonsCategories);
   }
   return categories.map((cat) => `[[Category:${cat}]]\n`).join("");
 }

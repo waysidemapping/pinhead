@@ -1,6 +1,6 @@
 import { parse } from "path";
 import { globSync, writeFileSync, readFileSync } from "fs";
-import { loadCategories } from "../src/CategoryLoader.js";
+import { CategoryReader } from "../src/CategoryReader.js";
 import { deconstructIconName } from "../src/IconNameDeconstructor.js";
 
 const categoriesPath = "metadata/categories.json";
@@ -43,7 +43,10 @@ function checkIcons() {
   );
 
   const rawCategoriesData = JSON.parse(readFileSync(categoriesPath));
-  const categoryInfo = loadCategories(rawCategoriesData, Object.keys(iconIds));
+  const categoryInfo = new CategoryReader(
+    rawCategoriesData,
+    Object.keys(iconIds),
+  );
 
   // for (const iconId in iconIds) {
   //   if ((categoryInfo.byIconId[iconId]?.allCategories?.length || 0) === 0) {
