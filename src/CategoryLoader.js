@@ -1,4 +1,3 @@
-import { readFileSync } from "fs";
 import { deconstructIconName } from "./IconNameDeconstructor.js";
 
 const prefixes = "anime_|cartoon_|pixel_";
@@ -6,10 +5,7 @@ const suffixes =
   "_outline|_tall|_squat|_filled|_left|_right|_up|_down|_top_left|_top_right|_bottom_left|_bottom_right|_up_down|_left_right|_top|_narrow|_wide|_head";
 
 // pass in the array of icon IDs you want to categorize
-export function loadCategories(iconIds) {
-  const categoriesPath = "metadata/categories.json";
-  const categories = JSON.parse(readFileSync(categoriesPath));
-
+export function loadCategories(categories, iconIds) {
   const explicitCategories = Object.assign({}, categories);
   const partsByIconId = {};
   const categoryInfoByIconId = {};

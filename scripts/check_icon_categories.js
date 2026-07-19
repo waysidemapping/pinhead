@@ -3,11 +3,12 @@ import { globSync, writeFileSync, readFileSync } from "fs";
 import { loadCategories } from "../src/CategoryLoader.js";
 import { deconstructIconName } from "../src/IconNameDeconstructor.js";
 
+const categoriesPath = "metadata/categories.json";
+
 reformatCategories();
 checkIcons();
 
 function reformatCategories() {
-  const categoriesPath = "metadata/categories.json";
   const categoriesIn = JSON.parse(readFileSync(categoriesPath));
   const categoriesOut = {};
   for (const key of Object.keys(categoriesIn).toSorted()) {
@@ -41,7 +42,8 @@ function checkIcons() {
     `Missing base icons for ${iconIdParts.filter((part) => !iconIds[part]).length} parts of ${iconIdParts.length} parts total`,
   );
 
-  const categoryInfo = loadCategories(Object.keys(iconIds));
+  const rawCategoriesData = JSON.parse(readFileSync(categoriesPath));
+  const categoryInfo = loadCategories(rawCategoriesData, Object.keys(iconIds));
 
   // for (const iconId in iconIds) {
   //   if ((categoryInfo.byIconId[iconId]?.allCategories?.length || 0) === 0) {
