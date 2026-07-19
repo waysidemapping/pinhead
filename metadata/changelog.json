@@ -17749,6 +17749,11 @@
       {
         "oldId": "ear_atop_slash_with_t",
         "newId": "hearing_accessibility_symbol_with_t"
+      },
+      {
+        "newId": "pixel_international_wheelchair_symbol",
+        "by": "@quincylvania",
+        "inspo": "international_wheelchair_symbol"
       }
     ]
   }
