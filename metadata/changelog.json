@@ -16728,6 +16728,21 @@
         ]
       },
       {
+        "newId": "person_falling",
+        "by": "@quincylvania",
+        "inspo": "person_falling_on_rough_surface"
+      },
+      {
+        "newId": "person_slipping",
+        "by": "@quincylvania",
+        "inspo": "person_slipping_down_cliff"
+      },
+      {
+        "newId": "person_sliding",
+        "by": "@quincylvania",
+        "inspo": "person_sliding_down_cliff"
+      },
+      {
         "newId": "memorial_stone_with_star_and_crescent",
         "by": "@quincylvania",
         "inspo": [
