@@ -67,14 +67,39 @@ export class CategoryReader {
 
   iconIdsForRootCategoryIds(categoryIds) {
     const outIconIds = [];
+    const iconCountPerCategoryId = {};
     for (const categoryId of categoryIds) {
-      for (const iconId of this.iconIds) {
+      iconCountPerCategoryId[categoryId] = 0;
+    }
+    for (const iconId of this.iconIds) {
+      const matchingCategoryIds = [];
+      for (const categoryId of categoryIds) {
         if (this.iconIdMatchesCategoryId(iconId, categoryId)) {
-          outIconIds.push(iconId);
+          matchingCategoryIds.push(categoryId);
+          iconCountPerCategoryId[categoryId] += 1;
         }
       }
+      if (matchingCategoryIds.length) {
+        outIconIds.push({iconId, matchingCategoryIds});
+      }
     }
-    return outIconIds;
+    console.log(outIconIds);
+    console.log(iconCountPerCategoryId);
+    outIconIds.sort((info1, info2) => {    
+      
+      const numPartsDiff = this.partsByIconId[info1.iconId].length - this.partsByIconId[info2.iconId].length;
+      // show base component icons first, if any
+      if (numPartsDiff !== 0 && this.partsByIconId[info1.iconId].length === 1 || this.partsByIconId[info2.iconId].length === 1) return numPartsDiff;
+
+      const numMatchingCatsDiff = info2.matchingCategoryIds.length - info1.matchingCategoryIds.length; 
+      // prefer closer matches
+      if (numMatchingCatsDiff !== 0) return numMatchingCatsDiff;
+
+      // prefer icons with less common components
+      return Math.min(...info1.matchingCategoryIds.map(id => iconCountPerCategoryId[id]).filter(count => count > 0))
+        - Math.min(...info2.matchingCategoryIds.map(id => iconCountPerCategoryId[id]).filter(count => count > 0));
+    });
+    return outIconIds.map(info => info.iconId);
   }
 
   commonsCategoriesForIconId = function (iconId) {
