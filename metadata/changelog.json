@@ -17839,6 +17839,16 @@
         "newId": "pixel_palm_tree",
         "by": "@quincylvania",
         "inspo": "palm_tree"
+      },
+      {
+        "newId": "pixel_canoe",
+        "by": "@quincylvania",
+        "inspo": "canoe"
+      },
+      {
+        "newId": "pixel_canoe_on_water",
+        "by": "@quincylvania",
+        "inspo": "canoe_on_water"
       }
     ]
   }
