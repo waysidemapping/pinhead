@@ -16698,6 +16698,22 @@
         "by": "@quincylvania"
       },
       {
+        "oldId": "palm_tree",
+        "newId": "palm_tree",
+        "edit": "flip",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "coconut_palm_tree_on_hill_in_water",
+        "newId": "coconut_palm_tree_on_hill_in_water",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "coconut_palm_tree_on_hill",
+        "by": "@quincylvania",
+        "inspo": "coconut_palm_tree_on_hill_in_water"
+      },
+      {
         "newId": "memorial_stone_with_star_and_crescent",
         "by": "@quincylvania",
         "inspo": [
