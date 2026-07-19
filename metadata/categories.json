@@ -90,6 +90,9 @@
   "barge": {
     "super": "boat"
   },
+  "baseball": {
+    "super": "ball"
+  },
   "basketball": {
     "super": "sports_ball"
   },
