@@ -17751,15 +17751,19 @@
         "newId": "hearing_accessibility_symbol_with_t"
       },
       {
-        "oldId": "deer_head_with_antlers",
-        "newId": "deer_head_with_antlers",
+        "oldId": "deer_with_antlers",
+        "newId": "deer_with_antlers",
         "edit": "minor",
         "by": "@quincylvania"
       },
       {
-        "inspo": ["deer_head_with_antlers", "checkmark_above_car"],
-        "newId": "checkmark_above_deer_head_with_antlers",
-        "by": "@quincylvania"
+        "newId": "deer_with_antlers_under_checkmark",
+        "by": "@quincylvania",
+        "inspo": [
+          "deer_with_antlers",
+          "car_under_checkmark"
+        ]
+      },
       },
       {
         "newId": "deer_head_with_antlers_on_shield_mount",
