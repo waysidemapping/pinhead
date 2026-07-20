@@ -39,7 +39,7 @@
     "commons": "npm run dist_package && npm run sync_to_commons",
     "dist": "npm run dist_package",
     "dist_package": "npm run check_icons && npm run check_icon_categories && npm run check_changelog && npm run build_dist && cp metadata/changelog.json dist/changelog.json && cp metadata/external_sources.json dist/external_sources.json && cp metadata/categories.json dist/categories.json",
-    "build_docs": "node scripts/build_docs.js && cp metadata/categories.json dist/categories.json && npm view @waysidemapping/pinhead time --json > docs/npm_publish_dates.json",
+    "build_docs": "node scripts/build_docs.js && cp metadata/categories.json docs/categories.json && npm view @waysidemapping/pinhead time --json > docs/npm_publish_dates.json",
     "build_docs_for_preview": "npm run build_docs && npm run dist_package && node scripts/build_preview_docs.js",
     "build_dist": "node scripts/build_dist.js",
     "build_font": "node scripts/build_font.js",
