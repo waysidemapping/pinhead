@@ -18,6 +18,10 @@ The 15x15 rule mostly comes from Temaki, which inherited it from Maki. Compared 
 
 Maybe! Any external icons **must** have a compatible license (CC0 or equivalent). If you're unsure, just ask. It's **not okay** to upload someone else's work if they retain copyright or have assigned usage restrictions.
 
+#### My icon has been merged. When will it be released?
+
+We aim to have a release roughly once per month. If you need something released sooner for a downstream project, feel free to ask. We can probably accommadate.
+
 ## Design guidelines
 
 If the following sections seem too technical or intimidating, feel free to just ignore them and go straight to opening a PR for your cool icon. These are intended only for managing internal consistency and I'd be happy to give you pointers after the fact. There aren't many hard rules here. Have fun with it!
