@@ -87,6 +87,9 @@
   "banana": {
     "super": "fruit"
   },
+  "barbed_hook": {
+    "super": "hook"
+  },
   "barge": {
     "super": "boat"
   },
