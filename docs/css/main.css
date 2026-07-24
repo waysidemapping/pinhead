@@ -12,6 +12,7 @@ body {
 
 svg {
   fill: currentColor;
+  overflow: visible;
 }
 
 i {
