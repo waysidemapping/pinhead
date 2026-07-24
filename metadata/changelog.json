@@ -17014,8 +17014,16 @@
         "newId": "gasoline_pump_with_droplet",
         "by": "@quincylvania",
         "inspo": [
-          "droplet",
-          "gasoline_pump"
+          "gasoline_pump",
+          "droplet"
+        ]
+      },
+      {
+        "newId": "globe_gasoline_pump_with_droplet",
+        "by": "@quincylvania",
+        "inspo": [
+          "globe_gasoline_pump",
+          "droplet"
         ]
       },
       {
