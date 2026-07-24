@@ -16829,6 +16829,11 @@
         "issue": "258"
       },
       {
+        "newId": "greek_cross_outline",
+        "by": "@quincylvania",
+        "inspo": "greek_cross"
+      },
+      {
         "oldId": "heart_with_greek_cross",
         "newId": "heart_with_greek_cross",
         "edit": "minor",
