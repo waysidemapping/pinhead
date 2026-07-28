@@ -17852,6 +17852,17 @@
         ]
       },
       {
+        "oldId": "table_tennis_paddle",
+        "newId": "table_tennis_paddle",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "table_tennis_paddle_and_ball",
+        "by": "@quincylvania",
+        "inspo": "table_tennis_paddle"
+      },
+      {
         "newId": "pixel_international_wheelchair_symbol",
         "by": "@quincylvania",
         "inspo": "international_wheelchair_symbol"
