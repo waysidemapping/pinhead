@@ -17852,6 +17852,17 @@
         ]
       },
       {
+        "newId": "pickleball_paddle",
+        "by": "@quincylvania",
+        "inspo": "pickleball_paddle_with_ball"
+      },
+      {
+        "oldId": "pickleball_paddle_with_ball",
+        "newId": "pickleball_paddle_with_ball",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
         "oldId": "table_tennis_paddle",
         "newId": "table_tennis_paddle",
         "edit": "resize",
