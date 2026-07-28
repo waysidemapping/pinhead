@@ -12,7 +12,7 @@ Probably! While this project is focused on maps, you'd be surprised how many ico
 
 #### Why 15x15 pixels?
 
-The 15x15 rule mostly comes from Temaki, which inherited it from Maki. Compared to OSM Carto's 14x14, it's pretty handy to use an odd number so that a 1px wide line can be perfectly centered. Going down to 13x13 is feasible for the some icons but starts to get hairy when trying to depcit more complex things. Maki actually used to distribute 11x11 versions of icons (sooo tiny!) but [dropped them](https://github.com/mapbox/maki/commit/96e8b4c5941d687ddf0fde527ad54dde5559eef2) in v7. Probably the benefit didn't justify the maintence overhead in the age of high-DPI displays. So yeah, 15x15 just feels like the sweet spot.
+The 15x15 rule mostly comes from Temaki, which inherited it from Maki. Compared to OSM Carto's 14x14, it's pretty handy to use an odd number so that a 1px wide line can be perfectly centered. Going down to 13x13 is feasible for the some icons but starts to get hairy when trying to depict more complex things. Maki actually used to distribute 11x11 versions of icons (sooo tiny!) but [dropped them](https://github.com/mapbox/maki/commit/96e8b4c5941d687ddf0fde527ad54dde5559eef2) in v7. Probably the benefit didn't justify the maintence overhead in the age of high-DPI displays. So yeah, 15x15 just feels like the sweet spot.
 
 #### I found a cool icon online. Can I upload it?
 
