@@ -55,7 +55,7 @@
     "sync_to_commons": "node scripts/sync_to_commons.js"
   },
   "devDependencies": {
-    "chalk": "^5.2.0",
+    "chalk": "^6.0.0",
     "dotenv": "^17.3.1",
     "prettier": "^3.9.5",
     "svg-path-parse": "^1.1.3",
