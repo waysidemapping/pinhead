@@ -131,6 +131,9 @@
     "commons": "Plain black SVG bird icons",
     "super": "animal"
   },
+  "bird_flying": {
+    "super": "bird"
+  },
   "bison": {
     "super": "ungulate"
   },
