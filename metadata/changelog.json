@@ -17472,6 +17472,10 @@
         "by": "@quincylvania"
       },
       {
+        "oldId": "people_above_car",
+        "newId": "two_people_above_car"
+      },
+      {
         "newId": "sedan_under_wrench",
         "by": "@quincylvania",
         "inspo": [
@@ -17528,10 +17532,10 @@
         ]
       },
       {
-        "newId": "people_above_sedan",
+        "newId": "two_people_above_sedan",
         "by": "@quincylvania",
         "inspo": [
-          "people_above_car",
+          "two_people_above_car",
           "sedan"
         ]
       },
@@ -17592,10 +17596,10 @@
         ]
       },
       {
-        "newId": "people_above_station_wagon",
+        "newId": "two_people_above_station_wagon",
         "by": "@quincylvania",
         "inspo": [
-          "people_above_car",
+          "two_people_above_car",
           "station_wagon"
         ]
       },
@@ -17656,10 +17660,10 @@
         ]
       },
       {
-        "newId": "people_above_pickup_truck",
+        "newId": "two_people_above_pickup_truck",
         "by": "@quincylvania",
         "inspo": [
-          "people_above_car",
+          "two_people_above_car",
           "pickup_truck"
         ]
       },
