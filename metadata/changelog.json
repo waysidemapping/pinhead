@@ -17879,6 +17879,13 @@
         "inspo": "table_tennis_paddle"
       },
       {
+        "oldId": "stomach",
+        "newId": "stomach",
+        "by": "@quincylvania",
+        "inspo": "https://raw.githubusercontent.com/resolvetosavelives/healthicons/94e1313e9ad280dcb1cb8af2eadfb73165dd7859/public/icons/svg/filled/body/stomach.svg",
+        "issue": "288"
+      },
+      {
         "newId": "pixel_international_wheelchair_symbol",
         "by": "@quincylvania",
         "inspo": "international_wheelchair_symbol"
