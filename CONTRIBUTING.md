@@ -57,6 +57,12 @@ If the following sections seem too technical or intimidating, feel free to just 
     * E.g. <img src="https://pinhead.ink/latest/chefs_knife.svg" height="15px" width="15px"/> `chefs_knife`, <img src="https://pinhead.ink/latest/hammer.svg" height="15px" width="15px"/> `hammer`, <img src="https://pinhead.ink/latest/table_tennis_paddle.svg" height="15px" width="15px"/> `table_tennis_paddle`
   * Multiple icons for different orientations generally aren't useful. Users can manually rotate or flip icons if desired.
     * Except when a different orientation gives the icon a different meaning (e.g. arrows).
+* Text (Latin alphanumeric glyphs)
+  * Glyphs are not part of uniform font and should not sacrifice legibility for consistency.
+  * Glyphs should have roughly the following dimensions:
+    * One-character icons: 15px em height, 3px stroke width 
+    * Two-character icons: 8px em height, 2px stroke width
+    * Three-character icons: 8px em height, 1.25px stroke width
 
 #### SVGs
 

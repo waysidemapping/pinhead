@@ -17886,6 +17886,27 @@
         "issue": "288"
       },
       {
+        "oldId": "nine_one_one",
+        "newId": "nine_one_one",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_nine_one_one"
+      },
+      {
+        "oldId": "cc_text",
+        "newId": "cc_text",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "oc_text",
+        "newId": "oc_text",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "wc_text",
+        "newId": "wc_text",
+        "by": "@quincylvania"
+      },
+      {
         "newId": "pixel_international_wheelchair_symbol",
         "by": "@quincylvania",
         "inspo": "international_wheelchair_symbol"
