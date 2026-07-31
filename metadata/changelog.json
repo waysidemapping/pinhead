@@ -17886,10 +17886,70 @@
         "issue": "288"
       },
       {
+        "newId": "one_one_one",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_one_one_one"
+      },
+      {
+        "newId": "one_one_two",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_one_one_two"
+      },
+      {
+        "newId": "one_two_three",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_one_two_three"
+      },
+      {
+        "newId": "two_one_one",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_two_one_one"
+      },
+      {
+        "newId": "three_one_one",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_three_one_one"
+      },
+      {
+        "newId": "four_one_one",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_four_one_one"
+      },
+      {
+        "newId": "five_one_one",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_five_one_one"
+      },
+      {
+        "newId": "six_one_one",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_six_one_one"
+      },
+      {
+        "newId": "seven_one_one",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_seven_one_one"
+      },
+      {
+        "newId": "eight_one_one",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_eight_one_one"
+      },
+      {
         "oldId": "nine_one_one",
         "newId": "nine_one_one",
         "by": "@quincylvania",
         "inspo": "phone_down_above_nine_one_one"
+      },
+      {
+        "newId": "nine_eight_eight",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_nine_eight_eight"
+      },
+      {
+        "newId": "nine_nine_nine",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_nine_nine_nine"
       },
       {
         "oldId": "cc_text",
