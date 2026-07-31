@@ -16743,6 +16743,12 @@
         "inspo": "person_sliding_down_cliff"
       },
       {
+        "oldId": "memorial_stone_with_latin_cross",
+        "newId": "memorial_stone_with_latin_cross",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
         "newId": "memorial_stone_with_star_and_crescent",
         "by": "@quincylvania",
         "inspo": [
@@ -16813,6 +16819,12 @@
           "memorial_stone",
           "angel_moroni"
         ]
+      },
+      {
+        "oldId": "coffin_with_latin_cross",
+        "newId": "coffin_with_latin_cross",
+        "edit": "minor",
+        "by": "@quincylvania"
       },
       {
         "newId": "angel_moroni_on_square",
