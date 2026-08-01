@@ -1,3 +1,4 @@
+import { ChangelogReader } from "/src/ChangelogReader.js";
 import { CategoryReader } from "/src/CategoryReader.js";
 
 let packageJson;
@@ -45,6 +46,7 @@ async function setupPage(pageData) {
   const categories = await fetch("categories.json").then((result) =>
     result.json(),
   );
+  const changelogReader = new ChangelogReader(changelogs);
 
   let userLangs = navigator.languages
     ? navigator.languages
@@ -76,9 +78,6 @@ async function setupPage(pageData) {
   for (const id in iconsById) {
     iconsById[id].id = id;
   }
-  const iconsToDisplay = Object.values(iconsById).filter(
-    (icon) => !icon.sensitive,
-  );
   const categoryReader = new CategoryReader(categories, Object.keys(iconsById));
 
   const v1Changelog = changelogs.find((item) => item.majorVersion === "1");
@@ -210,7 +209,7 @@ async function setupPage(pageData) {
         ),
       ].join(""),
     );
-
+  updateIconList();
   // document.getElementById('header-sidebar')
   //   .insertAdjacentHTML("afterbegin", [
   //     new Chainable('div')
@@ -247,45 +246,9 @@ async function setupPage(pageData) {
 
   //   ].join(''));
 
-  document.getElementById("icon-list").insertAdjacentHTML(
-    "afterbegin",
-    iconsToDisplay
-      .map((icon) => {
-        return new Chainable("a")
-          .setAttribute("href", "#" + icon.id)
-          .setAttribute("title", icon.id)
-          .setAttribute("iconid", icon.id)
-          .setAttribute("class", "icon-item");
-      })
-      .join(""),
-  );
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      for (const entry of entries) {
-        if (entry.isIntersecting) {
-          loadIconItemInner(entry.target);
-          observer.unobserve(entry.target);
-        }
-      }
-    },
-    {
-      // preload before visible
-      rootMargin: "200px",
-    },
-  );
-
-  document.querySelectorAll(".icon-item").forEach((el) => observer.observe(el));
-
-  function loadIconItemInner(el) {
-    const iconId = el.getAttribute("iconid");
-    const icon = iconsById[iconId];
-    el.innerHTML = [icon.svg].join("");
-  }
-
   function updateForHash() {
     //document.getElementById('icon-search').value = '';
-    //filterIcons('');
+    //updateIconList();
     const hash = window.location.hash;
     if (hash && hash.length > 1) {
       reloadInspector(hash.slice(1));
@@ -532,7 +495,7 @@ async function setupPage(pageData) {
 
   const searchElement = document.getElementById("icon-search");
   searchElement.addEventListener("input", function () {
-    filterIcons(searchElement.value);
+    updateIconList();
     const offset = document
       .getElementById("sticky-topbar")
       .getBoundingClientRect().height;
@@ -543,39 +506,93 @@ async function setupPage(pageData) {
         offset,
     });
   });
+
+  function updateIconList() {
+    let listContent;
+
+    const sortByVersion = false;
+
+    if (sortByVersion) {
+      listContent = changelogs
+        .toReversed()
+        .map((changelog) => {
+          return iconListSection(
+            `v${changelog.majorVersion}`,
+            Object.values(changelogReader.iconsById)
+              .filter(
+                (icon) =>
+                  icon.ogV === changelog.majorVersion && !icon.sensitive,
+              )
+              .map((icon) => iconsById[icon.id]),
+          );
+        })
+        .join("");
+    } else {
+      const query = (document.getElementById("icon-search")?.value || "")
+        .toLowerCase()
+        .trim()
+        .replaceAll(/[\s_]+/gi, "");
+      let filteredIcons;
+
+      if (query.length) {
+        const ts = Object.values(translations);
+
+        filteredIcons = Object.values(iconsById).filter((icon) => {
+          if (icon.sensitive) return false;
+
+          if (icon.id.replaceAll("_", "").includes(query)) return true;
+
+          return ts.some((t) => {
+            const iconTranslation = t.icons[icon.id];
+            return (
+              iconTranslation?.labels?.some((label) =>
+                label.toLowerCase().replaceAll(" ", "").includes(query),
+              ) ||
+              iconTranslation?.aliases?.some((alias) =>
+                alias.toLowerCase().replaceAll(" ", "").includes(query),
+              )
+            );
+          });
+        });
+        listContent = iconListSection(null, filteredIcons);
+      } else {
+        listContent = [
+          iconListSection(
+            `new in v${majorVersion}`,
+            Object.values(changelogReader.iconsById)
+              .filter((icon) => icon.ogV === majorVersion && !icon.sensitive)
+              .map((icon) => iconsById[icon.id]),
+          ),
+          iconListSection(
+            `a–z`,
+            Object.values(iconsById).filter((icon) => !icon.sensitive),
+          ),
+        ].join("");
+      }
+    }
+
+    document.getElementById("icon-list").innerHTML = listContent;
+  }
 }
 
-function filterIcons(rawQuery) {
-  const query = rawQuery
-    .toLowerCase()
-    .trim()
-    .replaceAll(/[\s_]+/gi, "");
-  const elements = document.querySelectorAll("#icon-list .icon-item");
-
-  const ts = Object.values(translations);
-  for (const element of elements) {
-    const iconId = element.getAttribute("iconid");
-    const matchesALabel = ts.some((t) => {
-      const iconTranslation = t.icons[iconId];
-      return (
-        iconTranslation?.labels?.some((label) =>
-          label.toLowerCase().replaceAll(" ", "").includes(query),
-        ) ||
-        iconTranslation?.aliases?.some((alias) =>
-          alias.toLowerCase().replaceAll(" ", "").includes(query),
-        )
-      );
-    });
-    if (
-      query === "" ||
-      iconId.replaceAll("_", "").includes(query) ||
-      matchesALabel
-    ) {
-      element.classList.remove("hidden");
-    } else {
-      element.classList.add("hidden");
-    }
-  }
+function iconListSection(title, icons) {
+  return new Chainable("div").setAttribute("id", title).append(
+    [
+      title ? new Chainable("h2").append(title) : "",
+      new Chainable("div").setAttribute("class", "icon-grid").append(
+        icons
+          .map((icon) => {
+            return new Chainable("a")
+              .setAttribute("href", "#" + icon.id)
+              .setAttribute("title", icon.id)
+              .setAttribute("iconid", icon.id)
+              .setAttribute("class", "icon-item")
+              .append(icon.svg);
+          })
+          .join(""),
+      ),
+    ].join(""),
+  );
 }
 
 class Chainable {

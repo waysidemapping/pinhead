@@ -29,10 +29,13 @@ a {
 }
 h1 {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 700;
 }
 h2 {
   font-size: 18px;
+  font-weight: 700;
+}
+h3 {
   font-weight: 700;
 }
 hr {
@@ -147,22 +150,36 @@ article > *:not(:last-child) {
 .icon-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
 }
 .icon-grid a {
   min-width: 0;
   min-height: 0;
   display: block;
-  width: 15px;
-  height: 15px;
-  flex: 0 0 15px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 5px;
 }
 .icon-grid a svg {
   min-width: 0;
   min-height: 0;
   display: block;
   width: 15px;
-  height: 15px;
+  aspect-ratio: 1;
+  flex-shrink: 0;
+}
+.icon-grid a:hover,
+.icon-grid a:active {
+  background: #e9e9e9;
+}
+.icon-grid a > * {
+  display: block;
+}
+#icon-list .icon-grid a {
+  padding: 10px;
+}
+#icon-list .icon-grid a svg {
+  width: 30px;
 }
 
 #sticky-topbar {
@@ -229,42 +246,29 @@ input[type="search"] {
 #inspector-body {
   padding: 12px;
 }
-#inspector h3 {
-  font-weight: 700;
+h3 {
   margin-bottom: 8px;
   margin-top: 32px;
   padding-bottom: 8px;
   border-bottom: 1px dashed var(--text-color);
 }
-#inspector h3:first-child {
+h3:first-child {
   margin-top: 8px;
 }
 #icon-list {
   width: 100%;
-  display: flex;
   padding-top: 16px;
-  align-items: baseline;
-  flex-wrap: wrap;
   height: fit-content;
 }
-.icon-item {
-  display: flex;
-  align-items: center;
-  padding: 10px;
+#icon-list h2 {
+  padding: 0 10px 15px 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed var(--text-color);
 }
-.icon-item:hover,
-.icon-item:active {
-  background: #e9e9e9;
+#icon-list div:not(:first-child) h2 {
+  margin-top: 30px;
+  padding-top: 15px;
 }
-.icon-item > * {
-  display: block;
-}
-.icon-item svg {
-  flex-shrink: 0;
-  height: 30px;
-  width: 30px;
-}
-
 #inspector-header {
   background: var(--text-color);
   width: fit-content;
