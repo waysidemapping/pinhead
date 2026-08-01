@@ -80,26 +80,42 @@ export class CategoryReader {
         }
       }
       if (matchingCategoryIds.length) {
-        outIconIds.push({iconId, matchingCategoryIds});
+        outIconIds.push({ iconId, matchingCategoryIds });
       }
     }
     console.log(outIconIds);
     console.log(iconCountPerCategoryId);
-    outIconIds.sort((info1, info2) => {    
-      
-      const numPartsDiff = this.partsByIconId[info1.iconId].length - this.partsByIconId[info2.iconId].length;
+    outIconIds.sort((info1, info2) => {
+      const numPartsDiff =
+        this.partsByIconId[info1.iconId].length -
+        this.partsByIconId[info2.iconId].length;
       // show base component icons first, if any
-      if (numPartsDiff !== 0 && this.partsByIconId[info1.iconId].length === 1 || this.partsByIconId[info2.iconId].length === 1) return numPartsDiff;
+      if (
+        (numPartsDiff !== 0 && this.partsByIconId[info1.iconId].length === 1) ||
+        this.partsByIconId[info2.iconId].length === 1
+      )
+        return numPartsDiff;
 
-      const numMatchingCatsDiff = info2.matchingCategoryIds.length - info1.matchingCategoryIds.length; 
+      const numMatchingCatsDiff =
+        info2.matchingCategoryIds.length - info1.matchingCategoryIds.length;
       // prefer closer matches
       if (numMatchingCatsDiff !== 0) return numMatchingCatsDiff;
 
       // prefer icons with less common components
-      return Math.min(...info1.matchingCategoryIds.map(id => iconCountPerCategoryId[id]).filter(count => count > 0))
-        - Math.min(...info2.matchingCategoryIds.map(id => iconCountPerCategoryId[id]).filter(count => count > 0));
+      return (
+        Math.min(
+          ...info1.matchingCategoryIds
+            .map((id) => iconCountPerCategoryId[id])
+            .filter((count) => count > 0),
+        ) -
+        Math.min(
+          ...info2.matchingCategoryIds
+            .map((id) => iconCountPerCategoryId[id])
+            .filter((count) => count > 0),
+        )
+      );
     });
-    return outIconIds.map(info => info.iconId);
+    return outIconIds.map((info) => info.iconId);
   }
 
   commonsCategoriesForIconId = function (iconId) {
