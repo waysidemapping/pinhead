@@ -83,8 +83,6 @@ export class CategoryReader {
         outIconIds.push({ iconId, matchingCategoryIds });
       }
     }
-    console.log(outIconIds);
-    console.log(iconCountPerCategoryId);
     outIconIds.sort((info1, info2) => {
       const numPartsDiff =
         this.partsByIconId[info1.iconId].length -
