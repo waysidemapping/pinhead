@@ -138,7 +138,7 @@ async function setupPage(pageData) {
           new Chainable("a")
             .setAttribute(
               "href",
-              `https://www.npmjs.com/package/@waysidemapping/pinhead/v/${version}`,
+              `https://www.npmjs.com/package/@waysidemapping/pinhead`,
             )
             .setAttribute("target", "_blank")
             .append(
