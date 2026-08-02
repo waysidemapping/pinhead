@@ -18084,14 +18084,39 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "cc_text_in_tv_screen",
+        "by": "@quincylvania",
+        "inspo": [
+          "cc_text",
+          "terminal_screen_with_dollar_prompt",
+          "https://upload.wikimedia.org/wikipedia/commons/0/09/Closed_captioning_symbol.svg"
+        ]
+      },
+      {
         "oldId": "oc_text",
         "newId": "oc_text",
         "by": "@quincylvania"
       },
       {
+        "newId": "oc_text_in_tv_screen",
+        "by": "@quincylvania",
+        "inspo": [
+          "oc_text",
+          "cc_text_in_tv_screen"
+        ]
+      },
+      {
         "oldId": "wc_text",
         "newId": "wc_text",
         "by": "@quincylvania"
+      },
+      {
+        "newId": "sitting_tank_toilet_beside_wc_text",
+        "by": "@quincylvania",
+        "inspo": [
+          "sitting_tank_toilet",
+          "wc_text"
+        ]
       },
       {
         "newId": "pixel_international_wheelchair_symbol",
