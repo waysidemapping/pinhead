@@ -80,7 +80,7 @@ a.inline-icon img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 0 10px;
   position: relative;
@@ -265,6 +265,9 @@ body:not(.scrolled) #scroll-top-area {
   flex-direction: row;
   gap: 16px;
 }
+body:not(.inspector-open) #inspector-flexer {
+  display: none;
+}
 #inspector-flexer {
   flex-shrink: 0;
 }
@@ -282,9 +285,6 @@ body:not(.scrolled) #scroll-top-area {
   border-bottom: 0;
   border-radius: 8px 8px 0 0;
   min-height: calc(100% - 16px);
-}
-#inspector:empty {
-  display: none;
 }
 #inspector-body {
   padding: 12px;
