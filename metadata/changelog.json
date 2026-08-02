@@ -16702,6 +16702,14 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "map_pin_with_dot_on_open_book",
+        "by": "@quincylvania",
+        "inspo": [
+          "map_pin_with_dot",
+          "open_book"
+        ]
+      },
+      {
         "oldId": "floor_lamp",
         "newId": "floor_lamp",
         "edit": "minor",
@@ -18079,14 +18087,6 @@
         "oldId": "wc_text",
         "newId": "wc_text",
         "by": "@quincylvania"
-      },
-      {
-        "newId": "map_pin_with_dot_on_open_book",
-        "by": "@quincylvania",
-        "inspo": [
-          "map_pin_with_dot",
-          "open_book"
-        ]
       },
       {
         "newId": "pixel_international_wheelchair_symbol",
