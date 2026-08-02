@@ -225,6 +225,33 @@ async function setupPage(pageData) {
   updateBodyScrollClass();
 
   updateIconList();
+
+  const sortButtons = document
+    .getElementById("sort-controls")
+    .querySelectorAll("button");
+  sortButtons.forEach((element) => {
+    element.addEventListener("click", (e) => {
+      const targetClassName = `sort-${e.target.value}`;
+      for (const button of sortButtons) {
+        const className = `sort-${button.value}`;
+        if (
+          targetClassName === className &&
+          !document.body.classList.contains(className)
+        ) {
+          if (!button.classList.contains("selected")) {
+            button.classList.add("selected");
+          }
+          document.body.classList.add(className);
+        } else if (document.body.classList.contains(className)) {
+          document.body.classList.remove(className);
+          if (button.classList.contains("selected")) {
+            button.classList.remove("selected");
+          }
+        }
+      }
+      updateIconList();
+    });
+  });
   // document.getElementById('header-sidebar')
   //   .insertAdjacentHTML("afterbegin", [
   //     new Chainable('div')
@@ -525,52 +552,69 @@ async function setupPage(pageData) {
   function updateIconList() {
     let listContent;
 
-    const sortByVersion = false;
+    const sortByVersion =
+      document.body.classList.contains("sort-chronological");
+    const sortAToZ = document.body.classList.contains("sort-alphabetical");
 
-    if (sortByVersion) {
-      listContent = changelogs
-        .toReversed()
-        .map((changelog) => {
-          return iconListSection(
-            `v${changelog.majorVersion}`,
-            `v${changelog.majorVersion}`,
-            Object.values(changelogReader.iconsById)
-              .filter(
-                (icon) =>
-                  icon.ogV === changelog.majorVersion && !icon.sensitive,
-              )
-              .map((icon) => iconsById[icon.id]),
+    const query = (document.getElementById("icon-search")?.value || "")
+      .toLowerCase()
+      .trim()
+      .replaceAll(/[\s_]+/gi, "");
+
+    let filteredIcons;
+
+    if (query.length) {
+      const ts = Object.values(translations);
+
+      filteredIcons = Object.values(iconsById).filter((icon) => {
+        if (icon.sensitive) return false;
+
+        if (icon.id.replaceAll("_", "").includes(query)) return true;
+
+        return ts.some((t) => {
+          const iconTranslation = t.icons[icon.id];
+          return (
+            iconTranslation?.labels?.some((label) =>
+              label.toLowerCase().replaceAll(" ", "").includes(query),
+            ) ||
+            iconTranslation?.aliases?.some((alias) =>
+              alias.toLowerCase().replaceAll(" ", "").includes(query),
+            )
           );
-        })
-        .join("");
-    } else {
-      const query = (document.getElementById("icon-search")?.value || "")
-        .toLowerCase()
-        .trim()
-        .replaceAll(/[\s_]+/gi, "");
-      let filteredIcons;
-
-      if (query.length) {
-        const ts = Object.values(translations);
-
-        filteredIcons = Object.values(iconsById).filter((icon) => {
-          if (icon.sensitive) return false;
-
-          if (icon.id.replaceAll("_", "").includes(query)) return true;
-
-          return ts.some((t) => {
-            const iconTranslation = t.icons[icon.id];
-            return (
-              iconTranslation?.labels?.some((label) =>
-                label.toLowerCase().replaceAll(" ", "").includes(query),
-              ) ||
-              iconTranslation?.aliases?.some((alias) =>
-                alias.toLowerCase().replaceAll(" ", "").includes(query),
-              )
-            );
-          });
         });
-        listContent = iconListSection(null, null, filteredIcons);
+      });
+      listContent = iconListSection(null, null, filteredIcons);
+    } else {
+      if (sortByVersion) {
+        listContent = changelogs
+          .toReversed()
+          .map((changelog) => {
+            return iconListSection(
+              `v${changelog.majorVersion}`,
+              `v${changelog.majorVersion}`,
+              Object.values(changelogReader.iconsById)
+                .filter(
+                  (icon) =>
+                    icon.ogV === changelog.majorVersion && !icon.sensitive,
+                )
+                .map((icon) => iconsById[icon.id]),
+            );
+          })
+          .join("");
+      } else if (sortAToZ) {
+        listContent = Array.from({ length: 26 }, (_, i) =>
+          String.fromCharCode(97 + i),
+        )
+          .map((char) => {
+            return iconListSection(
+              char,
+              char,
+              Object.values(iconsById).filter(
+                (icon) => !icon.sensitive && icon.id.startsWith(char),
+              ),
+            );
+          })
+          .join("");
       } else {
         listContent = [
           iconListSection(

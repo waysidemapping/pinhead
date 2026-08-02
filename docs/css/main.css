@@ -27,6 +27,23 @@ a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 0;
+  background: unset;
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+a:hover,
+button:hover,
+a:focus,
+button:focus {
+  text-decoration-style: double;
+}
 h1 {
   font-size: 22px;
   font-weight: 700;
@@ -170,7 +187,7 @@ article > *:not(:last-child) {
   flex-shrink: 0;
 }
 .icon-grid a:hover,
-.icon-grid a:active {
+.icon-grid a:focus {
   background: #e9e9e9;
 }
 .icon-grid a > * {
@@ -208,6 +225,13 @@ input[type="search"] {
   background: var(--bg-color);
   border-radius: 100px;
   width: 100%;
+}
+#sort-controls {
+  white-space: nowrap;
+}
+#sort-controls button.selected {
+  background: var(--text-color);
+  color: var(--bg-color);
 }
 body:not(.scrolled) #scroll-top-area {
   display: none;
