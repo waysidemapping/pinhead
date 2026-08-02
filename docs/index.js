@@ -619,7 +619,7 @@ async function setupPage(pageData) {
         listContent = [
           iconListSection(
             `v${majorVersion}`,
-            `new in v${majorVersion}`,
+            `new!`,
             Object.values(changelogReader.iconsById)
               .filter((icon) => icon.ogV === majorVersion && !icon.sensitive)
               .map((icon) => iconsById[icon.id]),
