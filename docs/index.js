@@ -518,6 +518,7 @@ async function setupPage(pageData) {
         .map((changelog) => {
           return iconListSection(
             `v${changelog.majorVersion}`,
+            `v${changelog.majorVersion}`,
             Object.values(changelogReader.iconsById)
               .filter(
                 (icon) =>
@@ -554,16 +555,18 @@ async function setupPage(pageData) {
             );
           });
         });
-        listContent = iconListSection(null, filteredIcons);
+        listContent = iconListSection(null, null, filteredIcons);
       } else {
         listContent = [
           iconListSection(
+            `v${majorVersion}`,
             `new in v${majorVersion}`,
             Object.values(changelogReader.iconsById)
               .filter((icon) => icon.ogV === majorVersion && !icon.sensitive)
               .map((icon) => iconsById[icon.id]),
           ),
           iconListSection(
+            `a–z`,
             `a–z`,
             Object.values(iconsById).filter((icon) => !icon.sensitive),
           ),
@@ -575,8 +578,8 @@ async function setupPage(pageData) {
   }
 }
 
-function iconListSection(title, icons) {
-  return new Chainable("div").setAttribute("id", title).append(
+function iconListSection(id, title, icons) {
+  return new Chainable("div").setAttribute("id", id).append(
     [
       title ? new Chainable("h2").append(title) : "",
       new Chainable("div").setAttribute("class", "icon-grid").append(
