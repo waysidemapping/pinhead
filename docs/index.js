@@ -209,6 +209,21 @@ async function setupPage(pageData) {
         ),
       ].join(""),
     );
+
+  function updateBodyScrollClass() {
+    if (window.scrollY > 250) {
+      if (!document.body.classList.contains("scrolled"))
+        document.body.classList.add("scrolled");
+    } else {
+      if (document.body.classList.contains("scrolled"))
+        document.body.classList.remove("scrolled");
+    }
+  }
+
+  window.addEventListener("scroll", updateBodyScrollClass);
+
+  updateBodyScrollClass();
+
   updateIconList();
   // document.getElementById('header-sidebar')
   //   .insertAdjacentHTML("afterbegin", [

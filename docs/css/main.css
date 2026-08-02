@@ -66,6 +66,7 @@ a.inline-icon img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+  position: relative;
 }
 #header {
   padding-top: 16px;
@@ -208,8 +209,26 @@ input[type="search"] {
   border-radius: 100px;
   width: 100%;
 }
-#scroll-top-button {
+body:not(.scrolled) #scroll-top-area {
+  display: none;
+}
+#scroll-top-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+#scroll-top-area a {
   white-space: nowrap;
+  background: var(--bg-color);
+  pointer-events: all;
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: 1px solid var(--text-color);
+  display: block;
+  width: fit-content;
+  margin-bottom: 20px;
 }
 #browser {
   width: 100%;
