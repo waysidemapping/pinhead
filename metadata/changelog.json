@@ -16702,6 +16702,28 @@
         "by": "@quincylvania"
       },
       {
+        "oldId": "floor_lamp",
+        "newId": "floor_lamp",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "potted_flower",
+        "newId": "potted_flower",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "floor_lamp_beside_potted_flower",
+        "by": "@quincylvania",
+        "inspo": [
+          "floor_lamp",
+          "potted_flower"
+        ],
+        "issue": "180",
+        "osmcarto": "shop/interior_decoration"
+      },
+      {
         "oldId": "palm_tree",
         "newId": "palm_tree",
         "edit": "flip",
