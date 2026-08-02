@@ -18008,6 +18008,11 @@
         "issue": "288"
       },
       {
+        "newId": "list_beside_checkmark",
+        "by": "@quincylvania",
+        "inspo": "car_under_list_beside_checkmark"
+      },
+      {
         "newId": "one_one_one",
         "by": "@quincylvania",
         "inspo": "phone_down_above_one_one_one"
