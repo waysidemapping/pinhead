@@ -18084,6 +18084,11 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "cc_text_above_caption",
+        "by": "@quincylvania",
+        "inspo": "cc_text"
+      },
+      {
         "newId": "cc_text_in_tv_screen",
         "by": "@quincylvania",
         "inspo": [
@@ -18096,6 +18101,11 @@
         "oldId": "oc_text",
         "newId": "oc_text",
         "by": "@quincylvania"
+      },
+      {
+        "newId": "oc_text_above_caption",
+        "by": "@quincylvania",
+        "inspo": "oc_text"
       },
       {
         "newId": "oc_text_in_tv_screen",
