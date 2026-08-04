@@ -552,9 +552,9 @@ async function setupPage(pageData) {
   function updateIconList() {
     let listContent;
 
-    const sortByVersion =
-      document.body.classList.contains("sort-chronological");
-    const sortAToZ = document.body.classList.contains("sort-alphabetical");
+    const sortMethod = Array.from(document.body.classList)
+      .find((item) => item.startsWith("sort-"))
+      ?.slice(5);
 
     const query = (document.getElementById("icon-search")?.value || "")
       .toLowerCase()
@@ -585,7 +585,7 @@ async function setupPage(pageData) {
       });
       listContent = iconListSection(null, null, filteredIcons);
     } else {
-      if (sortByVersion) {
+      if (sortMethod === "chronological") {
         listContent = changelogs
           .toReversed()
           .map((changelog) => {
@@ -601,7 +601,7 @@ async function setupPage(pageData) {
             );
           })
           .join("");
-      } else if (sortAToZ) {
+      } else if (sortMethod === "alphabetical") {
         listContent = Array.from({ length: 26 }, (_, i) =>
           String.fromCharCode(97 + i),
         )
@@ -612,6 +612,29 @@ async function setupPage(pageData) {
               Object.values(iconsById).filter(
                 (icon) => !icon.sensitive && icon.id.startsWith(char),
               ),
+            );
+          })
+          .join("");
+      } else if (sortMethod === "categorical") {
+        const iconIdsByCategoryIds = categoryReader.iconIdsByCategoryIds();
+        listContent = Object.entries(iconIdsByCategoryIds)
+          .filter(
+            ([catId, iconIds]) =>
+              iconIds.filter((iconId) => !iconsById[iconId].sensitive).length >
+              1,
+          )
+          .toSorted(([catId1], [catId2]) => {
+            if (catId1 < catId2) return -1;
+            if (catId1 > catId2) return 1;
+            return 0;
+          })
+          .map(([catId, iconIds]) => {
+            return iconListSection(
+              catId,
+              catId,
+              iconIds
+                .map((iconId) => iconsById[iconId])
+                .filter((icon) => !icon.sensitive),
             );
           })
           .join("");
@@ -641,18 +664,20 @@ function iconListSection(id, title, icons) {
   return new Chainable("div").setAttribute("id", id).append(
     [
       title ? new Chainable("h2").append(title) : "",
-      new Chainable("div").setAttribute("class", "icon-grid").append(
-        icons
-          .map((icon) => {
-            return new Chainable("a")
-              .setAttribute("href", "#" + icon.id)
-              .setAttribute("title", icon.id)
-              .setAttribute("iconid", icon.id)
-              .setAttribute("class", "icon-item")
-              .append(icon.svg);
-          })
-          .join(""),
-      ),
+      icons?.length
+        ? new Chainable("div").setAttribute("class", "icon-grid").append(
+            icons
+              .map((icon) => {
+                return new Chainable("a")
+                  .setAttribute("href", "#" + icon.id)
+                  .setAttribute("title", icon.id)
+                  .setAttribute("iconid", icon.id)
+                  .setAttribute("class", "icon-item")
+                  .append(icon.svg);
+              })
+              .join(""),
+          )
+        : "",
     ].join(""),
   );
 }

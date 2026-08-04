@@ -98,7 +98,7 @@
     "super": "ball"
   },
   "basketball": {
-    "super": "sports_ball"
+    "super": "ball"
   },
   "bear": {
     "super": "carnivore"
@@ -157,7 +157,7 @@
     "commons": "Plain black SVG book icons"
   },
   "bottle": {
-    "super": "vessel"
+    "super": "container"
   },
   "boundary": {
     "commons": "Plain black SVG icon maps",
@@ -331,7 +331,7 @@
     "super": "religious_symbol"
   },
   "cup": {
-    "super": "vessel"
+    "super": "container"
   },
   "curb": {},
   "currency": {
@@ -400,7 +400,7 @@
   "drink_vessel": {
     "super": [
       "drink",
-      "vessel"
+      "container"
     ]
   },
   "drinking_glass": {
@@ -623,7 +623,7 @@
     "super": "drink_cup"
   },
   "jar": {
-    "super": "vessel"
+    "super": "container"
   },
   "jeep": {
     "super": "car"
@@ -752,6 +752,10 @@
   },
   "mountain": {
     "super": "landform"
+  },
+  "multi_character_text": {
+    "match": ".+_text$",
+    "super": "text"
   },
   "nordic_cross": {
     "super": "christian_cross"
@@ -1065,9 +1069,6 @@
   "spoon": {
     "super": "cutlery"
   },
-  "sports_ball": {
-    "super": "ball"
-  },
   "spray_can": {
     "super": "container"
   },
@@ -1143,11 +1144,10 @@
     "commons": "Plain black SVG terminal icons"
   },
   "text": {
-    "commons": "SVG text icons",
-    "match": ".+_text$"
+    "commons": "SVG text icons"
   },
   "tipi_campsite": {
-    "super": "tent"
+    "super": "campsite"
   },
   "to_go_cup": {
     "super": "drink_cup"
@@ -1212,9 +1212,6 @@
   "tshirt": {
     "super": "shirt"
   },
-  "tube": {
-    "super": "vessel"
-  },
   "tulip": {
     "super": "flower"
   },
@@ -1245,14 +1242,11 @@
   "vertical_rotisserie": {
     "super": "meat"
   },
-  "vessel": {
-    "super": "container"
-  },
   "vneck_tshirt": {
     "super": "tshirt"
   },
   "volleyball": {
-    "super": "sports_ball"
+    "super": "ball"
   },
   "wall_tent": {
     "super": "tent"

@@ -55,6 +55,38 @@ export class CategoryReader {
     return false;
   }
 
+  iconIdsByCategoryIds() {
+    const iconIdsByCategoryId = {};
+    for (const catId in this.categories) {
+      for (const iconId of this.iconIds) {
+        if (this.iconIdMatchesCategoryId(iconId, catId)) {
+          const allCatIds = this.allCategoriesForCategoryId(catId);
+          for (const catId of allCatIds) {
+            if (!iconIdsByCategoryId[catId]) iconIdsByCategoryId[catId] = [];
+            if (!iconIdsByCategoryId[catId].includes(iconId))
+              iconIdsByCategoryId[catId].push(iconId);
+          }
+        }
+      }
+    }
+    return iconIdsByCategoryId;
+  }
+
+  allCategoriesForCategoryId(categoryId) {
+    let categoriesToCheck = [categoryId];
+    const outCategories = [];
+    while (categoriesToCheck.length) {
+      const categoryId = categoriesToCheck.shift();
+      if (!outCategories.includes(categoryId)) {
+        outCategories.push(categoryId);
+        const superCategoryIds = this.categories[categoryId]?.super;
+        if (superCategoryIds)
+          categoriesToCheck = categoriesToCheck.concat(superCategoryIds);
+      }
+    }
+    return outCategories;
+  }
+
   rootCategoriesForIconId(iconId) {
     const outCategories = [];
     for (const categoryId in this.categories) {
