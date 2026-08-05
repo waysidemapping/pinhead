@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions to Pinhead are **open**. We'd love for you to be involved! If you'd like to add or improve some icons, by all means open an [issue](https://github.com/waysidemapping/pinhead/issues/new) or [pull request](https://github.com/waysidemapping/pinhead/pulls/new). See the [open issues](https://github.com/waysidemapping/pinhead/issues) to browse icons that folks have requested.
+Contributions to Pinhead are **open**. We'd love for you to be involved! If you'd like to add or improve some icons, by all means open an [issue](https://github.com/waysidemapping/pinhead/issues/new) or [pull request](https://github.com/waysidemapping/pinhead/pulls/new). Designers can browse the [icon to-do list](https://github.com/waysidemapping/pinhead/issues/views/9437) for inspiration. If you'd rather hack on code, docs, or something else, see [these open issues](https://github.com/waysidemapping/pinhead/issues/views/9438).
 
 By contributing, you agree to license your original work as [CC0](/LICENSE) and to upload license-compatible material only.
 
