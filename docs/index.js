@@ -630,7 +630,7 @@ async function setupPage(pageData) {
           })
           .map(([catId, iconIds]) => {
             return iconListSection(
-              catId,
+              "",
               catId,
               iconIds
                 .map((iconId) => iconsById[iconId])

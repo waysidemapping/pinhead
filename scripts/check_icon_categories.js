@@ -1,7 +1,7 @@
 import { parse } from "path";
 import { globSync, writeFileSync, readFileSync } from "fs";
 import { CategoryReader } from "../src/CategoryReader.js";
-import { deconstructIconName } from "../src/IconNameDeconstructor.js";
+import { deconstructIconName } from "../src/CategoryReader.js";
 
 const categoriesPath = "metadata/categories.json";
 
