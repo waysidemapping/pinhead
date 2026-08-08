@@ -7185,6 +7185,11 @@
         "by": "@quincylvania",
         "inspo": "cabin_with_chimney",
         "nps": "cabin"
+      },
+      {
+        "oldId": "entrance_station",
+        "newId": "entrance_station",
+        "by": "@quincylvania"
       }
     ]
   },
