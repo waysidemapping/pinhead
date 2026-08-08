@@ -7385,7 +7385,8 @@
       },
       {
         "oldId": "star_of_david",
-        "newId": "star_of_david_filled"
+        "newId": "star_of_david_filled",
+        "by": "@quincylvania"
       },
       {
         "newId": "star_of_david_filled_outline",
