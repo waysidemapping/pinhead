@@ -17874,6 +17874,10 @@
         "newId": "hearing_accessibility_symbol_with_t"
       },
       {
+        "oldId": "pipe",
+        "newId": "bent_tobacco_pipe"
+      },
+      {
         "oldId": "sign_beside_car",
         "newId": "sign_beside_car",
         "edit": "minor",
