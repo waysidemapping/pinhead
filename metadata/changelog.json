@@ -18485,6 +18485,26 @@
           "pixel_arrows_left_right",
           "arrow_right"
         ]
+      },
+      {
+        "newId": "pixel_arrow_top_right",
+        "by": "@quincylvania",
+        "inspo": "arrow_top_right"
+      },
+      {
+        "newId": "pixel_arrow_bottom_right",
+        "by": "@quincylvania",
+        "inspo": "arrow_bottom_right"
+      },
+      {
+        "newId": "pixel_arrow_bottom_left",
+        "by": "@quincylvania",
+        "inspo": "arrow_bottom_left"
+      },
+      {
+        "newId": "pixel_arrow_top_left",
+        "by": "@quincylvania",
+        "inspo": "arrow_top_left"
       }
     ]
   }
