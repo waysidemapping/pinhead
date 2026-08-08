@@ -18024,6 +18024,40 @@
         "inspo": "car_under_list_beside_checkmark"
       },
       {
+        "oldId": "ahimsa_hand_outline",
+        "newId": "ahimsa_hand_outline",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "ahimsa_hand",
+        "by": "@quincylvania",
+        "inspo": "ahimsa_hand_outline"
+      },
+      {
+        "newId": "ahimsa_hand_on_square",
+        "by": "@quincylvania",
+        "inspo": [
+          "ahimsa_hand",
+          "latin_cross_on_square"
+        ]
+      },
+      {
+        "newId": "coffin_with_ahimsa_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "ahimsa_hand",
+          "coffin"
+        ]
+      },
+      {
+        "newId": "memorial_stone_with_ahimsa_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "ahimsa_hand",
+          "memorial_stone"
+        ]
+      },
+      {
         "oldId": "cc_text",
         "newId": "cc_text",
         "by": "@quincylvania"
