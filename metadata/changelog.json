@@ -9769,6 +9769,7 @@
         "src": "healthicons",
         "importBy": "@quincylvania",
         "issue": "107",
+        "sensitive": "sexually_suggestive",
         "healthicons": "contraceptives/male-condom"
       },
       {
@@ -9776,6 +9777,7 @@
         "src": "healthicons",
         "importBy": "@quincylvania",
         "issue": "107",
+        "sensitive": "sexually_suggestive",
         "healthicons": "contraceptives/female-condom"
       },
       {
@@ -9785,7 +9787,8 @@
           "condom_and_venus",
           "mars"
         ],
-        "issue": "107"
+        "issue": "107",
+        "sensitive": "sexually_suggestive"
       }
     ]
   },
