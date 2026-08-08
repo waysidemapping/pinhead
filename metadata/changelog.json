@@ -17878,6 +17878,20 @@
         "newId": "bent_tobacco_pipe"
       },
       {
+        "oldId": "bowling_pin",
+        "newId": "bowling_pin_top_right"
+      },
+      {
+        "newId": "bowling_pin",
+        "by": "@quincylvania",
+        "inspo": "bowling_pin_and_bowling_ball"
+      },
+      {
+        "newId": "candlepin",
+        "by": "@quincylvania",
+        "inspo": "candlepin_with_ball"
+      },
+      {
         "oldId": "sign_beside_car",
         "newId": "sign_beside_car",
         "edit": "minor",
