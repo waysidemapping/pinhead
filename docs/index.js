@@ -63,15 +63,6 @@ async function setupPage(pageData) {
   const currentChangelog = changelogs.find(
     (item) => item.majorVersion === majorVersion,
   );
-  const newIconIds = currentChangelog.iconChanges
-    .filter(
-      (iconChange) =>
-        iconChange.newId &&
-        (!iconChange.oldId ||
-          ((iconChange.by || iconChange.src) &&
-            !["flip", "resize", "minor", "merge"].includes(iconChange.edit))),
-    )
-    .map((iconChange) => iconChange.newId);
 
   const parser = new DOMParser();
   const iconsById = pageData.icons;
@@ -252,41 +243,6 @@ async function setupPage(pageData) {
       updateIconList();
     });
   });
-  // document.getElementById('header-sidebar')
-  //   .insertAdjacentHTML("afterbegin", [
-  //     new Chainable('div')
-  //       .setAttribute('class', 'sidebar-header')
-  //       .append(
-  //         new Chainable('h2')
-  //           .setAttribute('class', 'version-title')
-  //           .append(
-  //             new Chainable('a')
-  //               .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases/tag/v${version}`)
-  //               .setAttribute('target', '_blank')
-  //               .append('v' + majorVersion)
-  //           ),
-  //         new Chainable('p')
-  //           .setAttribute('class', 'date-line')
-  //           .setAttribute('title', releaseDate)
-  //           .append(new Date(releaseDate).toLocaleDateString(undefined, {
-  //             dateStyle: "short"
-  //           //  day: "numeric", month: "short", year: "numeric"
-  //           }))
-  //       ),
-  //     // new Chainable('div')
-  //     //   .setAttribute('class', 'icon-grid')
-  //     //   .insertAdjacentHTML("afterbegin",
-  //     //     newIconIds.map(iconId => {
-  //     //       const icon = iconsById[iconId];
-  //     //       return new Chainable('a')
-  //     //         .setAttribute('href', '#' + iconId)
-  //     //         .setAttribute('title', iconId)
-  //     //         .insertAdjacentHTML("afterbegin", icon.svg)
-  //     //       }
-  //     //     ).join('')
-  //     //   ),
-
-  //   ].join(''));
 
   function updateForHash() {
     //document.getElementById('icon-search').value = '';
@@ -592,12 +548,20 @@ async function setupPage(pageData) {
             return iconListSection(
               `v${changelog.majorVersion}`,
               `v${changelog.majorVersion}`,
-              Object.values(changelogReader.iconsById)
+              changelog.iconChanges
                 .filter(
-                  (icon) =>
-                    icon.ogV === changelog.majorVersion && !icon.sensitive,
+                  (iconChange) =>
+                    iconChange.newId &&
+                    !iconChange.oldId &&
+                    !iconChange.sensitive,
                 )
-                .map((icon) => iconsById[icon.id]),
+                .map((iconChange) => {
+                  const latestId =
+                    changelogReader.iconsByVersionedIconId[
+                      `v${changelog.majorVersion}/${iconChange.newId}`
+                    ];
+                  return iconsById[latestId];
+                }),
             );
           })
           .join("");
@@ -605,15 +569,29 @@ async function setupPage(pageData) {
         listContent = Array.from({ length: 26 }, (_, i) =>
           String.fromCharCode(97 + i),
         )
-          .map((char) => {
-            return iconListSection(
+          .map((char) =>
+            iconListSection(
               char,
               char,
               Object.values(iconsById).filter(
                 (icon) => !icon.sensitive && icon.id.startsWith(char),
               ),
-            );
-          })
+            ),
+          )
+          .concat([
+            iconListSection(
+              "0-9",
+              "0-9",
+              Object.values(iconsById)
+                .filter(
+                  (icon) => !icon.sensitive && !isNaN(parseInt(icon.id[0])),
+                )
+                .toSorted(
+                  (a, b) =>
+                    parseInt(a.id.split("_")[0]) - parseInt(b.id.split("_")[0]),
+                ),
+            ),
+          ])
           .join("");
       } else if (sortMethod === "categorical") {
         const iconIdsByCategoryIds = categoryReader.iconIdsByCategoryIds();
@@ -624,6 +602,12 @@ async function setupPage(pageData) {
               1,
           )
           .toSorted(([catId1], [catId2]) => {
+            const cat1IsNum = !isNaN(parseInt(catId1[0]));
+            const cat2IsNum = !isNaN(parseInt(catId2[0]));
+            if ((cat1IsNum || cat2IsNum) && cat1IsNum !== cat2IsNum) {
+              if (cat1IsNum) return 1;
+              return -1;
+            }
             if (catId1 < catId2) return -1;
             if (catId1 > catId2) return 1;
             return 0;
@@ -643,14 +627,35 @@ async function setupPage(pageData) {
           iconListSection(
             `v${majorVersion}`,
             `new!`,
-            Object.values(changelogReader.iconsById)
-              .filter((icon) => icon.ogV === majorVersion && !icon.sensitive)
-              .map((icon) => iconsById[icon.id]),
+            changelogs[changelogs.length - 1].iconChanges
+              .filter(
+                (iconChange) =>
+                  iconChange.newId &&
+                  (!iconChange.oldId ||
+                    ((iconChange.by || iconChange.src) &&
+                      !["flip", "resize", "minor", "merge"].includes(
+                        iconChange.edit,
+                      ))),
+              )
+              .map((icon) => iconsById[icon.newId])
+              .filter((icon) => icon && !icon.sensitive),
           ),
           iconListSection(
             `a-z`,
             `a-z`,
-            Object.values(iconsById).filter((icon) => !icon.sensitive),
+            Object.values(iconsById)
+              .toSorted((icon1, icon2) => {
+                const oneIsNum = !isNaN(parseInt(icon1.id[0]));
+                const twoIsNum = !isNaN(parseInt(icon2.id[0]));
+                if ((oneIsNum || twoIsNum) && oneIsNum !== twoIsNum) {
+                  if (oneIsNum) return 1;
+                  return -1;
+                }
+                if (icon1.id < icon2.id) return -1;
+                if (icon1.id > icon2.id) return 1;
+                return 0;
+              })
+              .filter((icon) => !icon.sensitive),
           ),
         ].join("");
       }

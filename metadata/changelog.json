@@ -17770,18 +17770,6 @@
         "inspo": "die_face_with_six_pips"
       },
       {
-        "oldId": "ten",
-        "newId": "one_zero"
-      },
-      {
-        "oldId": "eleven",
-        "newId": "one_one"
-      },
-      {
-        "oldId": "twelve",
-        "newId": "one_two"
-      },
-      {
         "oldId": "conifer_tree_and_flower_and_mountain_snowcapped",
         "newId": "conifer_tree_and_flower_and_snowcapped_mountain"
       },
@@ -18018,72 +18006,6 @@
         "inspo": "car_under_list_beside_checkmark"
       },
       {
-        "newId": "one_one_one",
-        "by": "@quincylvania",
-        "inspo": "phone_down_above_one_one_one"
-      },
-      {
-        "newId": "one_one_two",
-        "by": "@quincylvania",
-        "inspo": "phone_down_above_one_one_two"
-      },
-      {
-        "newId": "one_two_three",
-        "by": "@quincylvania",
-        "inspo": "phone_down_above_one_two_three"
-      },
-      {
-        "newId": "two_one_one",
-        "by": "@quincylvania",
-        "inspo": "phone_down_above_two_one_one"
-      },
-      {
-        "newId": "three_one_one",
-        "by": "@quincylvania",
-        "inspo": "phone_down_above_three_one_one"
-      },
-      {
-        "newId": "four_one_one",
-        "by": "@quincylvania",
-        "inspo": "phone_down_above_four_one_one"
-      },
-      {
-        "newId": "five_one_one",
-        "by": "@quincylvania",
-        "inspo": "phone_down_above_five_one_one"
-      },
-      {
-        "newId": "six_one_one",
-        "by": "@quincylvania",
-        "inspo": "phone_down_above_six_one_one"
-      },
-      {
-        "newId": "seven_one_one",
-        "by": "@quincylvania",
-        "inspo": "phone_down_above_seven_one_one"
-      },
-      {
-        "newId": "eight_one_one",
-        "by": "@quincylvania",
-        "inspo": "phone_down_above_eight_one_one"
-      },
-      {
-        "oldId": "nine_one_one",
-        "newId": "nine_one_one",
-        "by": "@quincylvania",
-        "inspo": "phone_down_above_nine_one_one"
-      },
-      {
-        "newId": "nine_eight_eight",
-        "by": "@quincylvania",
-        "inspo": "phone_down_above_nine_eight_eight"
-      },
-      {
-        "newId": "nine_nine_nine",
-        "by": "@quincylvania",
-        "inspo": "phone_down_above_nine_nine_nine"
-      },
-      {
         "oldId": "cc_text",
         "newId": "cc_text",
         "by": "@quincylvania"
@@ -18132,6 +18054,357 @@
           "sitting_tank_toilet",
           "wc_text"
         ]
+      },
+      {
+        "oldId": "zero",
+        "newId": "0",
+        "issue": "307"
+      },
+      {
+        "oldId": "zero_above_water",
+        "newId": "0_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "one",
+        "newId": "1",
+        "issue": "307"
+      },
+      {
+        "oldId": "one_above_water",
+        "newId": "1_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "one_minus",
+        "newId": "1_minus",
+        "issue": "307"
+      },
+      {
+        "oldId": "one_minus_above_water",
+        "newId": "1_minus_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "one_plus",
+        "newId": "1_plus",
+        "issue": "307"
+      },
+      {
+        "oldId": "one_plus_above_water",
+        "newId": "1_plus_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "two",
+        "newId": "2",
+        "issue": "307"
+      },
+      {
+        "oldId": "two_above_water",
+        "newId": "2_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "two_minus",
+        "newId": "2_minus",
+        "issue": "307"
+      },
+      {
+        "oldId": "two_minus_above_water",
+        "newId": "2_minus_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "two_plus",
+        "newId": "2_plus",
+        "issue": "307"
+      },
+      {
+        "oldId": "two_plus_above_water",
+        "newId": "2_plus_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "three",
+        "newId": "3",
+        "issue": "307"
+      },
+      {
+        "oldId": "three_above_water",
+        "newId": "3_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "three_minus",
+        "newId": "3_minus",
+        "issue": "307"
+      },
+      {
+        "oldId": "three_minus_above_water",
+        "newId": "3_minus_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "three_plus",
+        "newId": "3_plus",
+        "issue": "307"
+      },
+      {
+        "oldId": "three_plus_above_water",
+        "newId": "3_plus_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "four",
+        "newId": "4",
+        "issue": "307"
+      },
+      {
+        "oldId": "four_above_water",
+        "newId": "4_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "four_minus",
+        "newId": "4_minus",
+        "issue": "307"
+      },
+      {
+        "oldId": "four_minus_above_water",
+        "newId": "4_minus_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "four_plus",
+        "newId": "4_plus",
+        "issue": "307"
+      },
+      {
+        "oldId": "four_plus_above_water",
+        "newId": "4_plus_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "five",
+        "newId": "5",
+        "issue": "307"
+      },
+      {
+        "oldId": "five_above_water",
+        "newId": "5_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "five_minus",
+        "newId": "5_minus",
+        "issue": "307"
+      },
+      {
+        "oldId": "five_minus_above_water",
+        "newId": "5_minus_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "five_plus",
+        "newId": "5_plus",
+        "issue": "307"
+      },
+      {
+        "oldId": "five_plus_above_water",
+        "newId": "5_plus_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "six",
+        "newId": "6",
+        "issue": "307"
+      },
+      {
+        "oldId": "six_above_water",
+        "newId": "6_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "six_minus",
+        "newId": "6_minus",
+        "issue": "307"
+      },
+      {
+        "oldId": "six_minus_above_water",
+        "newId": "6_minus_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "six_plus",
+        "newId": "6_plus",
+        "issue": "307"
+      },
+      {
+        "oldId": "six_plus_above_water",
+        "newId": "6_plus_above_water",
+        "issue": "307"
+      },
+      {
+        "oldId": "seven",
+        "newId": "7",
+        "issue": "307"
+      },
+      {
+        "oldId": "eight",
+        "newId": "8",
+        "issue": "307"
+      },
+      {
+        "oldId": "nine",
+        "newId": "9",
+        "issue": "307"
+      },
+      {
+        "oldId": "ten",
+        "newId": "10",
+        "issue": "307"
+      },
+      {
+        "oldId": "eleven",
+        "newId": "11",
+        "issue": "307"
+      },
+      {
+        "oldId": "twelve",
+        "newId": "12",
+        "issue": "307"
+      },
+      {
+        "newId": "111",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_111"
+      },
+      {
+        "newId": "112",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_112"
+      },
+      {
+        "newId": "123",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_123"
+      },
+      {
+        "newId": "211",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_211"
+      },
+      {
+        "newId": "311",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_311"
+      },
+      {
+        "newId": "411",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_411"
+      },
+      {
+        "newId": "511",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_511"
+      },
+      {
+        "newId": "611",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_611"
+      },
+      {
+        "newId": "711",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_711"
+      },
+      {
+        "newId": "811",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_811"
+      },
+      {
+        "oldId": "nine_one_one",
+        "newId": "911",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_911"
+      },
+      {
+        "newId": "988",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_988"
+      },
+      {
+        "newId": "999",
+        "by": "@quincylvania",
+        "inspo": "phone_down_above_999"
+      },
+      {
+        "oldId": "phone_down_above_one_one_one",
+        "newId": "phone_down_above_111",
+        "issue": "307"
+      },
+      {
+        "oldId": "phone_down_above_one_one_two",
+        "newId": "phone_down_above_112",
+        "issue": "307"
+      },
+      {
+        "oldId": "phone_down_above_one_two_three",
+        "newId": "phone_down_above_123",
+        "issue": "307"
+      },
+      {
+        "oldId": "phone_down_above_two_one_one",
+        "newId": "phone_down_above_211",
+        "issue": "307"
+      },
+      {
+        "oldId": "phone_down_above_three_one_one",
+        "newId": "phone_down_above_311",
+        "issue": "307"
+      },
+      {
+        "oldId": "phone_down_above_four_one_one",
+        "newId": "phone_down_above_411",
+        "issue": "307"
+      },
+      {
+        "oldId": "phone_down_above_five_one_one",
+        "newId": "phone_down_above_511",
+        "issue": "307"
+      },
+      {
+        "oldId": "phone_down_above_six_one_one",
+        "newId": "phone_down_above_611",
+        "issue": "307"
+      },
+      {
+        "oldId": "phone_down_above_seven_one_one",
+        "newId": "phone_down_above_711",
+        "issue": "307"
+      },
+      {
+        "oldId": "phone_down_above_eight_one_one",
+        "newId": "phone_down_above_811",
+        "issue": "307"
+      },
+      {
+        "oldId": "phone_down_above_nine_one_one",
+        "newId": "phone_down_above_911",
+        "issue": "307"
+      },
+      {
+        "oldId": "phone_down_above_nine_eight_eight",
+        "newId": "phone_down_above_988",
+        "issue": "307"
+      },
+      {
+        "oldId": "phone_down_above_nine_nine_nine",
+        "newId": "phone_down_above_999",
+        "issue": "307"
       },
       {
         "newId": "pixel_international_wheelchair_symbol",

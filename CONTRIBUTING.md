@@ -74,7 +74,7 @@ If the following sections seem too technical or intimidating, feel free to just 
 
 * An icon's filename is its unique ID. Choosing a good initial filename reduces the chance of needing to rename an icon later.
 * Filenames should use American English.
-* Filenames should contain only lowercase letters, numbers, and underscores, and should start with a letter.
+* Filenames should contain only lowercase letters, numbers, and underscores, and should start with a letter or number.
 * Filenames should be literal instead of symbolic.
   * E.g. prefer <img src="https://pinhead.ink/latest/giraffe.svg" height="15px" width="15px"/> `giraffe` to `zoo` and <img src="https://pinhead.ink/latest/greek_cross.svg" height="15px" width="15px"/> `greek_cross` to `medicine`.
 * Filenames should consist of noun phrases separated by prepositions, conjunctions, or verb phrases describing the relationship between elements in the icon. 
