@@ -648,8 +648,8 @@ async function setupPage(pageData) {
               .map((icon) => iconsById[icon.id]),
           ),
           iconListSection(
-            `a–z`,
-            `a–z`,
+            `a-z`,
+            `a-z`,
             Object.values(iconsById).filter((icon) => !icon.sensitive),
           ),
         ].join("");
