@@ -276,7 +276,7 @@ async function setupPage(pageData) {
     const categoriesForIcon = categoryReader.rootCategoriesForIconId(iconId);
     const relatedIcons = categoryReader
       .iconIdsForRootCategoryIds(categoriesForIcon.map((cat) => cat.id))
-      .filter((iconId2) => iconId2 !== iconId);
+      .filter((iconId2) => iconId2 !== iconId && !iconsById[iconId2].sensitive);
 
     document.body.classList.add("inspector-open");
     inspector.innerHTML = [
