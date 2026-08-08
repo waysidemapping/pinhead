@@ -20,188 +20,80 @@ for (const importSource of importSources) {
   importSource.seenIcons = {};
 }
 
+const iconChangeProps = [
+  "oldId",
+  "newId",
+  "edit",
+  "by",
+  "inspo",
+  "inspoBy",
+  "src",
+  "srcBy",
+  "importBy",
+  "issue",
+  "pr",
+  "char",
+  "sensitive",
+].concat(importSources.map((source) => source.id));
+
 const externalSourceIconsDir = "docs/srcicons";
 
 downloadExternalSourceAssets(externalSourceIconsDir);
-validateChangelog();
 
-function validateChangelog() {
-  const iconsById = {};
+const changelogPath = "metadata/changelog.json";
 
-  const iconChangeProps = [
-    "oldId",
-    "newId",
-    "edit",
-    "by",
-    "inspo",
-    "inspoBy",
-    "src",
-    "srcBy",
-    "importBy",
-    "issue",
-    "pr",
-    "char",
-    "sensitive",
-  ].concat(importSources.map((source) => source.id));
+const changelogs = JSON.parse(readFileSync(changelogPath));
 
-  const changelogPath = "metadata/changelog.json";
+if (validateChangelogs(changelogs)) {
+  const currentChangelog = changelogs.find(
+    (c) => c.majorVersion === currentMajorVersion,
+  );
+  printTextForChangelog(currentChangelog);
 
-  const changelogs = JSON.parse(readFileSync(changelogPath));
+  console.log("changelog.json is valid");
+} else {
+  console.log("changelog.json is not valid, exiting…");
+  process.exit(1);
+}
+
+const formattedChangelogs = formatChangelogs(changelogs);
+writeFileSync(changelogPath, JSON.stringify(formattedChangelogs, null, 2));
+
+function formatChangelogs(changelogs) {
+  const formattedChangelogs = changelogs.toSorted(
+    (a, b) => parseInt(a.majorVersion) - parseInt(b.majorVersion),
+  );
+  // sort properties into a consistent order
+  formattedChangelogs.map((changelog) => {
+    changelog.iconChanges = changelog.iconChanges.map((iconChange) => {
+      const returner = {};
+      for (const prop of iconChangeProps) {
+        if (prop in iconChange) {
+          returner[prop] = iconChange[prop];
+        }
+        // collapse single string arrays down to string
+        if (Array.isArray(returner[prop]) && returner[prop].length === 1) {
+          returner[prop] = returner[prop][0];
+        }
+      }
+      return returner;
+    });
+  });
+  return formattedChangelogs;
+}
+
+function validateChangelogs(changelogs) {
   // sort oldest to newest
-  changelogs.sort(
+  const sortedChangelogs = changelogs.toSorted(
     (a, b) => parseInt(a.majorVersion) - parseInt(b.majorVersion),
   );
 
-  for (const versionChangelog of changelogs) {
-    const v = versionChangelog.majorVersion;
+  const iconsById = {};
 
-    // Make sure we process all deletions/changes before additions
-    const sortedIconChanges = versionChangelog.iconChanges.toSorted((a, b) => {
-      if (b.oldId && !a.oldId) return 1;
-      if (!b.oldId && a.oldId) return -1;
-      return 0;
-    });
-
-    for (const iconChange of sortedIconChanges) {
-      for (const key in iconChange) {
-        if (!iconChangeProps.includes(key)) {
-          console.error(
-            `Unexpected property "${key}" for "${iconChange.newId}" in version ${v}`,
-          );
-          return;
-        }
-        if (!iconChange[key]) {
-          console.error(
-            `Unexpected empty property "${key}" for "${iconChange.newId}" in version ${v}`,
-          );
-          return;
-        }
-      }
-      if (!iconChange.oldId && !iconChange.newId) {
-        console.error(`Missing both "newId" and "oldId" in version ${v}`);
-        return;
-      }
-      if (iconChange.newId) {
-        if (!iconChange.oldId && !iconChange.by && !iconChange.src) {
-          console.error(
-            `Missing provenance for "${iconChange.newId}" in version ${v}`,
-          );
-          return;
-        }
-        if (iconChange.importBy && !iconChange.src) {
-          console.error(
-            `Unexpected "importBy": "${iconChange.importBy}" without "src": "…" for "${iconChange.newId}" in version ${v}`,
-          );
-          return;
-        }
-        if (iconChange.src) {
-          if (!iconChange.importBy) {
-            console.error(
-              `Missing "importBy" for "${iconChange.newId}" in version ${v}`,
-            );
-            return;
-          }
-          if (!iconChange.src.includes("://")) {
-            if (!importSources.find((source) => source.id === iconChange.src)) {
-              console.error(
-                `Unknown "src": "${iconChange.src}" for "${iconChange.newId}" in version ${v}`,
-              );
-              return;
-            }
-            if (!iconChange[iconChange.src]) {
-              console.error(
-                `Missing "${iconChange.src}": "…" property for "${iconChange.newId}" in version ${v}`,
-              );
-              return;
-            }
-          }
-        }
-        if (iconChange.inspo) {
-          const inspos = stringArray(iconChange.inspo);
-          for (const inspo of inspos) {
-            if (
-              !inspo.includes("://") &&
-              !iconsById[inspo] &&
-              !versionChangelog.iconChanges.find(
-                (foreignIconChange) => foreignIconChange.newId === inspo,
-              )
-            ) {
-              console.error(
-                `Unknown icon referenced via "inspo": "${inspo}" for "${iconChange.newId}" in version ${v}`,
-              );
-              return;
-            }
-          }
-        }
-      }
-
-      for (const importSource of importSources) {
-        if (iconChange[importSource.id]) {
-          const ids = stringArray(iconChange[importSource.id]);
-          for (const id of ids) {
-            if (importSource.seenIcons[id]) {
-              console.error(
-                `"${iconChange.newId}" and "${importSource.seenIcons[id]}" both reference the same "${importSource.id}" icon: "${id}"`,
-              );
-              return;
-            }
-            const filename = id + (importSource.filenameSuffix || "") + ".svg";
-            const iconFile = join(
-              externalSourceIconsDir,
-              importSource.id,
-              filename,
-            );
-
-            if (!existsSync(iconFile)) {
-              console.error(
-                `No such icon "${iconFile}" referenced by "${iconChange.newId}" in version ${v}`,
-              );
-              return;
-            }
-            importSource.seenIcons[id] = iconChange.newId;
-          }
-        }
-      }
-
-      // update commulative icon log
-      if (iconChange.oldId) {
-        if (!iconsById[iconChange.oldId]) {
-          console.error(
-            `Can't find old icon ${iconChange.oldId} for "${iconChange.newId}" in version ${v}`,
-          );
-          return;
-        }
-        if (iconChange.newId !== iconChange.oldId) {
-          delete iconsById[iconChange.oldId];
-        }
-      }
-      if (iconChange.newId && iconChange.newId !== iconChange.oldId) {
-        if (iconsById[iconChange.newId] && iconChange.edit !== "merge") {
-          console.error(
-            `Duplicate changelog entry for icon "${iconChange.newId}" in version ${v}`,
-          );
-          return;
-        }
-        iconsById[iconChange.newId] = true;
-      }
+  for (const versionChangelog of sortedChangelogs) {
+    if (!validateChangelog(versionChangelog, iconsById)) {
+      return;
     }
-
-    // sort properties into a consistent order
-    versionChangelog.iconChanges = versionChangelog.iconChanges.map(
-      (iconChange) => {
-        const returner = {};
-        for (const prop of iconChangeProps) {
-          if (prop in iconChange) {
-            returner[prop] = iconChange[prop];
-          }
-          // collapse single string arrays down to string
-          if (Array.isArray(returner[prop]) && returner[prop].length === 1) {
-            returner[prop] = returner[prop][0];
-          }
-        }
-        return returner;
-      },
-    );
   }
 
   for (const idInChangelog in iconsById) {
@@ -220,15 +112,149 @@ function validateChangelog() {
       return;
     }
   }
+  return true;
+}
 
-  const currentChangelog = changelogs.find(
-    (c) => c.majorVersion === currentMajorVersion,
-  );
-  printTextForChangelog(currentChangelog);
+function validateChangelog(versionChangelog, iconsById) {
+  // Make sure we process all deletions/changes before additions
+  const sortedIconChanges = versionChangelog.iconChanges.toSorted((a, b) => {
+    if (b.oldId && !a.oldId) return 1;
+    if (!b.oldId && a.oldId) return -1;
+    return 0;
+  });
 
-  console.log("changelog.json is valid");
+  for (const iconChange of sortedIconChanges) {
+    if (!validateIconChange(iconChange, versionChangelog, iconsById)) {
+      return;
+    }
+  }
+  return true;
+}
 
-  writeFileSync(changelogPath, JSON.stringify(changelogs, null, 2));
+function validateIconChange(iconChange, versionChangelog, iconsById) {
+  const v = versionChangelog.majorVersion;
+  for (const key in iconChange) {
+    if (!iconChangeProps.includes(key)) {
+      console.error(
+        `Unexpected property "${key}" for "${iconChange.newId}" in version ${v}`,
+      );
+      return;
+    }
+    if (!iconChange[key]) {
+      console.error(
+        `Unexpected empty property "${key}" for "${iconChange.newId}" in version ${v}`,
+      );
+      return;
+    }
+  }
+  if (!iconChange.oldId && !iconChange.newId) {
+    console.error(`Missing both "newId" and "oldId" in version ${v}`);
+    return;
+  }
+  if (iconChange.newId) {
+    if (!iconChange.oldId && !iconChange.by && !iconChange.src) {
+      console.error(
+        `Missing provenance for "${iconChange.newId}" in version ${v}`,
+      );
+      return;
+    }
+    if (iconChange.importBy && !iconChange.src) {
+      console.error(
+        `Unexpected "importBy": "${iconChange.importBy}" without "src": "…" for "${iconChange.newId}" in version ${v}`,
+      );
+      return;
+    }
+    if (iconChange.src) {
+      if (!iconChange.importBy) {
+        console.error(
+          `Missing "importBy" for "${iconChange.newId}" in version ${v}`,
+        );
+        return;
+      }
+      if (!iconChange.src.includes("://")) {
+        if (!importSources.find((source) => source.id === iconChange.src)) {
+          console.error(
+            `Unknown "src": "${iconChange.src}" for "${iconChange.newId}" in version ${v}`,
+          );
+          return;
+        }
+        if (!iconChange[iconChange.src]) {
+          console.error(
+            `Missing "${iconChange.src}": "…" property for "${iconChange.newId}" in version ${v}`,
+          );
+          return;
+        }
+      }
+    }
+    if (iconChange.inspo) {
+      const inspos = stringArray(iconChange.inspo);
+      for (const inspo of inspos) {
+        if (
+          !inspo.includes("://") &&
+          !iconsById[inspo] &&
+          !versionChangelog.iconChanges.find(
+            (foreignIconChange) => foreignIconChange.newId === inspo,
+          )
+        ) {
+          console.error(
+            `Unknown icon referenced via "inspo": "${inspo}" for "${iconChange.newId}" in version ${v}`,
+          );
+          return;
+        }
+      }
+    }
+  }
+
+  for (const importSource of importSources) {
+    if (iconChange[importSource.id]) {
+      const ids = stringArray(iconChange[importSource.id]);
+      for (const id of ids) {
+        if (importSource.seenIcons[id]) {
+          console.error(
+            `"${iconChange.newId}" and "${importSource.seenIcons[id]}" both reference the same "${importSource.id}" icon: "${id}"`,
+          );
+          return;
+        }
+        const filename = id + (importSource.filenameSuffix || "") + ".svg";
+        const iconFile = join(
+          externalSourceIconsDir,
+          importSource.id,
+          filename,
+        );
+
+        if (!existsSync(iconFile)) {
+          console.error(
+            `No such icon "${iconFile}" referenced by "${iconChange.newId}" in version ${v}`,
+          );
+          return;
+        }
+        importSource.seenIcons[id] = iconChange.newId;
+      }
+    }
+  }
+
+  // update commulative icon log
+  if (iconChange.oldId) {
+    if (!iconsById[iconChange.oldId]) {
+      console.error(
+        `Can't find old icon ${iconChange.oldId} for "${iconChange.newId}" in version ${v}`,
+      );
+      return;
+    }
+    if (iconChange.newId !== iconChange.oldId) {
+      delete iconsById[iconChange.oldId];
+    }
+  }
+  if (iconChange.newId && iconChange.newId !== iconChange.oldId) {
+    if (iconsById[iconChange.newId] && iconChange.edit !== "merge") {
+      console.error(
+        `Duplicate changelog entry for icon "${iconChange.newId}" in version ${v}`,
+      );
+      return;
+    }
+    iconsById[iconChange.newId] = true;
+  }
+  return true;
 }
 
 function getCategorizedChangesForChangelog(changelog) {
