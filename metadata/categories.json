@@ -236,7 +236,10 @@
     "super": "mammal"
   },
   "carousel": {
-    "super": "amusement_ride"
+    "super": [
+      "amusement_ride",
+      "horse"
+    ]
   },
   "carriage": {
     "super": "trailer"
@@ -914,6 +917,9 @@
   "quaker_star": {
     "super": "christian_symbol"
   },
+  "racehorse": {
+    "super": "horse"
+  },
   "raised_curb": {
     "super": "curb"
   },
@@ -936,7 +942,10 @@
     "super": "spacecraft"
   },
   "rocking_horse": {
-    "super": "amusement_ride"
+    "super": [
+      "amusement_ride",
+      "horse"
+    ]
   },
   "rolled_curb": {
     "super": "curb"
@@ -1073,7 +1082,10 @@
     "super": "container"
   },
   "spring_rider": {
-    "super": "amusement_ride"
+    "super": [
+      "amusement_ride",
+      "horse"
+    ]
   },
   "square": {
     "super": "rectangle"
