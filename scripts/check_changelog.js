@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, writeFileSync, globSync } from "fs";
 import { join, parse } from "path";
 import { downloadExternalSourceAssets } from "../src/ExternalSourceManager.js";
+import { downloadLegacyAssets } from "../src/LegacyAssetManager.js";
 
 const version = JSON.parse(readFileSync("package.json")).version;
 const currentMajorVersion = version.split(".")[1];
@@ -38,6 +39,7 @@ const iconChangeProps = [
 
 const externalSourceIconsDir = "docs/srcicons";
 
+downloadLegacyAssets("docs");
 downloadExternalSourceAssets(externalSourceIconsDir);
 
 const changelogPath = "metadata/changelog.json";
@@ -132,7 +134,7 @@ function validateChangelog(versionChangelog, iconsById) {
 }
 
 function validateIconChange(iconChange, versionChangelog, iconsById) {
-  const v = versionChangelog.majorVersion;
+  const v = parseInt(versionChangelog.majorVersion);
   for (const key in iconChange) {
     if (!iconChangeProps.includes(key)) {
       console.error(
@@ -237,9 +239,28 @@ function validateIconChange(iconChange, versionChangelog, iconsById) {
   if (iconChange.oldId) {
     if (!iconsById[iconChange.oldId]) {
       console.error(
-        `Can't find old icon ${iconChange.oldId} for "${iconChange.newId}" in version ${v}`,
+        `Can't find old icon "${iconChange.oldId}" for "${iconChange.newId}" in version ${v}`,
       );
       return;
+    }
+    if (v > 1 && (iconChange.by || iconChange.src)) {
+      // expect SVGs to be different
+      const oldFile = readFileSync(
+        `./docs/v${v - 1}/${iconChange.oldId}.svg`,
+        "utf8",
+      );
+      const newfileRoot =
+        parseInt(currentMajorVersion) === v ? "./icons" : `./docs/v${v}`;
+      const newFile = readFileSync(
+        `${newfileRoot}/${iconChange.newId}.svg`,
+        "utf8",
+      );
+      if (newFile === oldFile) {
+        console.error(
+          `No difference between old icon "v${v - 1}/${iconChange.oldId}" and new icon "v${v}/${iconChange.newId}"`,
+        );
+        return;
+      }
     }
     if (iconChange.newId !== iconChange.oldId) {
       delete iconsById[iconChange.oldId];
