@@ -18034,6 +18034,11 @@
         "inspo": "cc_text"
       },
       {
+        "newId": "tv_screen",
+        "by": "@quincylvania",
+        "inspo": "cc_text_in_tv_screen"
+      },
+      {
         "newId": "cc_text_in_tv_screen",
         "by": "@quincylvania",
         "inspo": [
