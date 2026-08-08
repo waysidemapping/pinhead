@@ -18152,6 +18152,48 @@
         "newId": "pixel_canoe_on_water",
         "by": "@quincylvania",
         "inspo": "canoe_on_water"
+      },
+      {
+        "newId": "pixel_arrows_left_right",
+        "by": "@quincylvania",
+        "inspo": "pixel_arrows_left_right_above_water"
+      },
+      {
+        "newId": "pixel_arrows_up_down",
+        "by": "@quincylvania",
+        "inspo": "pixel_arrows_left_right"
+      },
+      {
+        "newId": "pixel_arrow_up",
+        "by": "@quincylvania",
+        "inspo": [
+          "pixel_arrows_up_down",
+          "arrow_up"
+        ]
+      },
+      {
+        "newId": "pixel_arrow_down",
+        "by": "@quincylvania",
+        "inspo": [
+          "pixel_arrows_up_down",
+          "arrow_down"
+        ]
+      },
+      {
+        "newId": "pixel_arrow_left",
+        "by": "@quincylvania",
+        "inspo": [
+          "pixel_arrows_left_right",
+          "arrow_left"
+        ]
+      },
+      {
+        "newId": "pixel_arrow_right",
+        "by": "@quincylvania",
+        "inspo": [
+          "pixel_arrows_left_right",
+          "arrow_right"
+        ]
       }
     ]
   }
