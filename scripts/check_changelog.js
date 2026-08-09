@@ -1,7 +1,9 @@
 import { existsSync, readFileSync, writeFileSync, globSync } from "fs";
+import { readFile } from "fs/promises";
 import { join, parse } from "path";
 import { downloadExternalSourceAssets } from "../src/ExternalSourceManager.js";
 import { downloadLegacyAssets } from "../src/LegacyAssetManager.js";
+import sharp from "sharp";
 
 const version = JSON.parse(readFileSync("package.json")).version;
 const currentMajorVersion = version.split(".")[1];
@@ -20,6 +22,9 @@ globSync(`./icons/**/*.svg`).forEach((file) => {
 for (const importSource of importSources) {
   importSource.seenIcons = {};
 }
+
+const svgPromisesByPath = new Map();
+const rasterBufferPromisesBySvgPath = new Map();
 
 const iconChangeProps = [
   "oldId",
@@ -46,13 +51,17 @@ const changelogPath = "metadata/changelog.json";
 
 const changelogs = JSON.parse(readFileSync(changelogPath));
 
-if (validateChangelogs(changelogs)) {
+const startTime = Date.now();
+
+if (await validateChangelogs(changelogs)) {
   const currentChangelog = changelogs.find(
     (c) => c.majorVersion === currentMajorVersion,
   );
-  printTextForChangelog(currentChangelog);
+  // printTextForChangelog(currentChangelog);
 
-  console.log("changelog.json is valid");
+  console.log(
+    "changelog.json is valid, done in " + (Date.now() - startTime) + " ms",
+  );
 } else {
   console.log("changelog.json is not valid, exiting…");
   process.exit(1);
@@ -84,7 +93,7 @@ function formatChangelogs(changelogs) {
   return formattedChangelogs;
 }
 
-function validateChangelogs(changelogs) {
+async function validateChangelogs(changelogs) {
   // sort oldest to newest
   const sortedChangelogs = changelogs.toSorted(
     (a, b) => parseInt(a.majorVersion) - parseInt(b.majorVersion),
@@ -93,7 +102,7 @@ function validateChangelogs(changelogs) {
   const iconsById = {};
 
   for (const versionChangelog of sortedChangelogs) {
-    if (!validateChangelog(versionChangelog, iconsById)) {
+    if (!(await validateChangelog(versionChangelog, iconsById))) {
       return;
     }
   }
@@ -117,7 +126,7 @@ function validateChangelogs(changelogs) {
   return true;
 }
 
-function validateChangelog(versionChangelog, iconsById) {
+async function validateChangelog(versionChangelog, iconsById) {
   // Make sure we process all deletions/changes before additions
   const sortedIconChanges = versionChangelog.iconChanges.toSorted((a, b) => {
     if (b.oldId && !a.oldId) return 1;
@@ -125,15 +134,51 @@ function validateChangelog(versionChangelog, iconsById) {
     return 0;
   });
 
+  const hasIconChangeForIconId = {};
+
   for (const iconChange of sortedIconChanges) {
-    if (!validateIconChange(iconChange, versionChangelog, iconsById)) {
+    if (iconChange.newId) {
+      hasIconChangeForIconId[iconChange.newId] = true;
+    }
+    if (!(await validateIconChange(iconChange, versionChangelog, iconsById))) {
+      return;
+    }
+  }
+
+  const v = parseInt(versionChangelog.majorVersion);
+
+  if (v > 1) {
+    // ensure that a changelog entry exists if the icon SVG has changed
+    const iconsDir =
+      v === parseInt(currentMajorVersion) ? "./icons" : `./docs/v${v}`;
+    const iconFiles = globSync(`${iconsDir}/**/*.svg`);
+    const promises = iconFiles.map(async (file) => {
+      const id = parse(file).name;
+      if (!hasIconChangeForIconId[id]) {
+        if (
+          !(await svgsAreVisuallyEquivalent(
+            `./docs/v${v - 1}/${id}.svg`,
+            file,
+            v > 4,
+          ))
+        ) {
+          throw new Error(
+            `Missing changelog entry for changed file "${id}.svg" in version ${v}`,
+          );
+        }
+      }
+    });
+    try {
+      await Promise.all(promises);
+    } catch (error) {
+      console.error(error);
       return;
     }
   }
   return true;
 }
 
-function validateIconChange(iconChange, versionChangelog, iconsById) {
+async function validateIconChange(iconChange, versionChangelog, iconsById) {
   const v = parseInt(versionChangelog.majorVersion);
   for (const key in iconChange) {
     if (!iconChangeProps.includes(key)) {
@@ -243,23 +288,29 @@ function validateIconChange(iconChange, versionChangelog, iconsById) {
       );
       return;
     }
-    if (v > 1 && (iconChange.by || iconChange.src)) {
+    if (v > 1) {
       // expect SVGs to be different
-      const oldFile = readFileSync(
-        `./docs/v${v - 1}/${iconChange.oldId}.svg`,
-        "utf8",
-      );
       const newfileRoot =
         parseInt(currentMajorVersion) === v ? "./icons" : `./docs/v${v}`;
-      const newFile = readFileSync(
+      const sameSvg = await svgsAreVisuallyEquivalent(
+        `./docs/v${v - 1}/${iconChange.oldId}.svg`,
         `${newfileRoot}/${iconChange.newId}.svg`,
-        "utf8",
+        v > 4,
       );
-      if (newFile === oldFile) {
-        console.error(
-          `No difference between old icon "v${v - 1}/${iconChange.oldId}" and new icon "v${v}/${iconChange.newId}"`,
-        );
-        return;
+      if (iconChange.by || iconChange.src) {
+        if (sameSvg) {
+          console.error(
+            `No difference between SVGs of old icon "v${v - 1}/${iconChange.oldId}" and new icon "v${v}/${iconChange.newId}"`,
+          );
+          return;
+        }
+      } else {
+        if (!sameSvg) {
+          console.error(
+            `Unexpected difference between SVGs of old icon "v${v - 1}/${iconChange.oldId}" and new icon "v${v}/${iconChange.newId}"`,
+          );
+          return;
+        }
       }
     }
     if (iconChange.newId !== iconChange.oldId) {
@@ -455,6 +506,65 @@ function printTextForChangelog(changelog) {
     }
     return "";
   }
+}
+
+function getSvg(svgPath) {
+  if (!svgPromisesByPath.has(svgPath)) {
+    svgPromisesByPath.set(svgPath, readFile(svgPath, "utf8"));
+  }
+
+  return svgPromisesByPath.get(svgPath);
+}
+
+function getRasterBuffer(svgPath, svg) {
+  if (!rasterBufferPromisesBySvgPath.has(svgPath)) {
+    rasterBufferPromisesBySvgPath.set(
+      svgPath,
+      sharp(Buffer.from(svg)).resize(60, 60).ensureAlpha().raw().toBuffer(),
+    );
+  }
+
+  return rasterBufferPromisesBySvgPath.get(svgPath);
+}
+
+async function svgsAreVisuallyEquivalent(svgPath1, svgPath2, strict) {
+  const [svg1, svg2] = await Promise.all([getSvg(svgPath1), getSvg(svgPath2)]);
+  if (svg1 === svg2) return true;
+
+  const [a, b] = await Promise.all([
+    getRasterBuffer(svgPath1, svg1),
+    getRasterBuffer(svgPath2, svg2),
+  ]);
+
+  if (strict) return a.equals(b);
+
+  if (a.length !== b.length) return false;
+
+  // amount within which different channel values will be treated as the same value
+  const channelTolerance = 8;
+  // percent of pixels allowed to differ
+  const pixelTolerance = 0.01;
+
+  let differentPixels = 0;
+  const totalPixels = a.length / 4;
+
+  for (let i = 0; i < a.length; i += 4) {
+    const different =
+      Math.abs(a[i] - b[i]) > channelTolerance ||
+      Math.abs(a[i + 1] - b[i + 1]) > channelTolerance ||
+      Math.abs(a[i + 2] - b[i + 2]) > channelTolerance ||
+      Math.abs(a[i + 3] - b[i + 3]) > channelTolerance;
+
+    if (different) {
+      differentPixels++;
+
+      if (differentPixels / totalPixels > pixelTolerance) {
+        return false;
+      }
+    }
+  }
+
+  return true;
 }
 
 function stringArray(value) {
