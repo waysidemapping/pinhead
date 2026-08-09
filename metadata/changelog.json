@@ -17074,13 +17074,6 @@
         "issue": "258"
       },
       {
-        "oldId": "vending_machine_with_greek_cross",
-        "newId": "vending_machine_with_greek_cross",
-        "edit": "minor",
-        "by": "@quincylvania",
-        "issue": "258"
-      },
-      {
         "newId": "pill_bottle",
         "by": "@quincylvania",
         "inspo": "pill_bottle_with_greek_cross"
