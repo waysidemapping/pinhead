@@ -17111,7 +17111,8 @@
           "r",
           "x"
         ],
-        "issue": "299"
+        "issue": "299",
+        "char": "℞"
       },
       {
         "newId": "capsule_pill_beside_rx_symbol",
