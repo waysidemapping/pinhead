@@ -17077,6 +17077,24 @@
         "newId": "capsule_pill"
       },
       {
+        "newId": "rx_symbol",
+        "by": "@quincylvania",
+        "inspo": [
+          "r",
+          "x"
+        ],
+        "issue": "299"
+      },
+      {
+        "newId": "capsule_pill_beside_rx_symbol",
+        "by": "@quincylvania",
+        "inspo": [
+          "capsule_pill",
+          "rx_symbol"
+        ],
+        "issue": "299"
+      },
+      {
         "oldId": "greek_cross",
         "newId": "greek_cross",
         "by": "@quincylvania",
@@ -17155,6 +17173,15 @@
         "issue": "258"
       },
       {
+        "newId": "pill_bottle_with_rx_symbol",
+        "by": "@quincylvania",
+        "inspo": [
+          "pill_bottle",
+          "rx_symbol"
+        ],
+        "issue": "299"
+      },
+      {
         "newId": "mortar_and_pestle",
         "by": "@quincylvania",
         "inspo": "mortar_and_pestle_with_greek_cross"
@@ -17165,6 +17192,15 @@
         "edit": "minor",
         "by": "@quincylvania",
         "issue": "258"
+      },
+      {
+        "newId": "mortar_and_pestle_with_rx_symbol",
+        "by": "@quincylvania",
+        "inspo": [
+          "mortar_and_pestle",
+          "rx_symbol"
+        ],
+        "issue": "299"
       },
       {
         "newId": "book_with_greek_cross",
@@ -17413,6 +17449,15 @@
           "greek_cross",
           "outstretched_hand"
         ]
+      },
+      {
+        "newId": "rx_symbol_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "rx_symbol",
+          "outstretched_hand"
+        ],
+        "issue": "299"
       },
       {
         "newId": "droplet_above_outstretched_hand",
