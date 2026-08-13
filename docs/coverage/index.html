@@ -137,7 +137,7 @@
       html += `<th class="header"><a href="/">Pinhead v${currentVersion}</a></th>`;
       html += `<th>Unicode</th>`;
       for (const importSource of importSources) {
-        html += `<th><a href="${importSource.repo}" target="_blank">${importSource.name}</a></th>`;
+        html += `<th><a href="${importSource.commit ? importSource.repo.slice(0, -4) + "/tree/" + importSource.commit : importSource.repo}" target="_blank">${importSource.name + (importSource.commit ? " (" + importSource.commit.slice(0, 7) + ")" : "")}</a></th>`;
       }
       html += `</tr>`;
 

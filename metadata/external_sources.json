@@ -43,6 +43,7 @@
     "id": "opentrailmap",
     "name": "OpenTrailMap",
     "repo": "https://github.com/osmus/opentrailmap.git",
+    "commit": "1bbd884f245453047cbbef4156114f1fcc1be34f",
     "iconDir": "style/sprites/svg",
     "ignoreFiles": "^(oneway-)|(fill-)|(stroke-)"
   },

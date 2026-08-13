@@ -35,7 +35,20 @@ function ensureEmptyDir(dir) {
 function downloadExternalSourceIcons(importSource, targetDir) {
   ensureEmptyDir(targetDir);
 
-  execSync(`git clone --depth 1 ${importSource.repo} "tmp/${importSource.id}"`);
+  if (importSource.commit) {
+    execSync(`git init "tmp/${importSource.id}"`);
+    execSync(
+      `git -C "tmp/${importSource.id}" remote add origin ${importSource.repo}`,
+    );
+    execSync(
+      `git -C "tmp/${importSource.id}" fetch --depth=1 origin ${importSource.commit}`,
+    );
+    execSync(`git -C "tmp/${importSource.id}" checkout FETCH_HEAD`);
+  } else {
+    execSync(
+      `git clone --depth 1 ${importSource.repo} "tmp/${importSource.id}"`,
+    );
+  }
   const srcDir = join(`tmp/${importSource.id}`, importSource.iconDir || "");
   execSync(`cp -r "${srcDir}/." "${targetDir}"`);
 
