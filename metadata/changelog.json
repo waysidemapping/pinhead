@@ -16715,8 +16715,25 @@
         "pr": "331"
       },
       {
-        "newId": "basketball",
+        "newId": "tennis_ball",
+        "by": [
+          "@wmisener",
+          "@quincylvania"
+        ],
+        "inspo": "basketball",
+        "americana": "poi_baseball"
+      },
+      {
+        "newId": "baseball",
         "by": "@quincylvania",
+        "inspo": "tennis_ball"
+      },
+      {
+        "newId": "basketball",
+        "by": [
+          "@wmisener",
+          "@quincylvania"
+        ],
         "inspo": "basketball_in_basketball_net",
         "americana": "poi_basketball"
       },
