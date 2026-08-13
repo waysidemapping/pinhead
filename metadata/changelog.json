@@ -17230,6 +17230,22 @@
         "issue": "299"
       },
       {
+        "newId": "pill_bottle_with_circular_pill",
+        "by": "@quincylvania",
+        "inspo": [
+          "pill_bottle",
+          "circular_pill"
+        ]
+      },
+      {
+        "newId": "pill_bottle_with_capsule_pill",
+        "by": "@quincylvania",
+        "inspo": [
+          "pill_bottle",
+          "capsule_pill"
+        ]
+      },
+      {
         "newId": "mortar_and_pestle",
         "by": "@quincylvania",
         "inspo": "mortar_and_pestle_with_greek_cross"
