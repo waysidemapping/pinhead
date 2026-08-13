@@ -16720,6 +16720,7 @@
           "@quincylvania"
         ],
         "inspo": "basketball",
+        "issue": "4",
         "americana": "poi_baseball"
       },
       {
@@ -16736,6 +16737,7 @@
         "src": "americana",
         "srcBy": "@wmisener",
         "importBy": "@quincylvania",
+        "issue": "4",
         "char": "🛹",
         "americana": "poi_skateboard"
       },
@@ -16746,12 +16748,24 @@
           "@quincylvania"
         ],
         "inspo": "basketball_in_basketball_net",
+        "issue": "4",
         "americana": "poi_basketball"
       },
       {
         "oldId": "basketball_in_basketball_net",
         "newId": "basketball_in_basketball_net",
         "by": "@quincylvania"
+      },
+      {
+        "newId": "horse_high_stepping",
+        "src": "americana",
+        "srcBy": "@wmisener",
+        "importBy": "@quincylvania",
+        "issue": [
+          "4",
+          "12"
+        ],
+        "americana": "poi_horse"
       },
       {
         "newId": "funnel",
