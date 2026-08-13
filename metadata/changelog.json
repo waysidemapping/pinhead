@@ -18145,6 +18145,18 @@
         "issue": "288"
       },
       {
+        "newId": "groin_with_rememberance_ribbon",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "conditions/cervical-cancer"
+      },
+      {
+        "newId": "groin",
+        "by": "@quincylvania",
+        "inspo": "groin_with_rememberance_ribbon"
+      },
+      {
         "newId": "list_beside_checkmark",
         "by": "@quincylvania",
         "inspo": "car_under_list_beside_checkmark"
