@@ -17073,6 +17073,34 @@
         ]
       },
       {
+        "newId": "circular_pill",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "medications/pill-1"
+      },
+      {
+        "newId": "two_circular_pills",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "medications/pills-2"
+      },
+      {
+        "newId": "three_circular_pills",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "medications/pills-3"
+      },
+      {
+        "newId": "four_circular_pills",
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "medications/pills-4"
+      },
+      {
         "oldId": "pill",
         "newId": "capsule_pill"
       },
@@ -17093,6 +17121,25 @@
           "rx_symbol"
         ],
         "issue": "299"
+      },
+      {
+        "newId": "circular_pill_and_capsule_pill",
+        "by": "@quincylvania",
+        "inspo": [
+          "capsule_pill",
+          "circular_pill"
+        ]
+      },
+      {
+        "newId": "triangular_pill_and_circular_pill_and_capsule_pill",
+        "inspo": [
+          "capsule_pill",
+          "circular_pill"
+        ],
+        "src": "healthicons",
+        "importBy": "@quincylvania",
+        "issue": "107",
+        "healthicons": "medications/medicines"
       },
       {
         "oldId": "greek_cross",
@@ -17458,6 +17505,14 @@
           "outstretched_hand"
         ],
         "issue": "299"
+      },
+      {
+        "newId": "circular_pill_and_capsule_pill_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "circular_pill_and_capsule_pill",
+          "outstretched_hand"
+        ]
       },
       {
         "newId": "droplet_above_outstretched_hand",
