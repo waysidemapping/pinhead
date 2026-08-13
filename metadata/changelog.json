@@ -108,6 +108,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "char": "🏈",
+        "americana": "poi_american_football",
         "maki": "american-football"
       },
       {
@@ -1015,6 +1016,7 @@
         "newId": "campsite",
         "src": "maki",
         "importBy": "@quincylvania",
+        "americana": "poi_tent_circle",
         "maki": "campsite",
         "nps": "campsite",
         "opentrailmap": [
@@ -4964,6 +4966,7 @@
         "newId": "racquet",
         "src": "maki",
         "importBy": "@quincylvania",
+        "americana": "poi_tennis_racket",
         "maki": "tennis"
       },
       {
@@ -6380,6 +6383,7 @@
       {
         "newId": "triangle_up_outline",
         "by": "@quincylvania",
+        "americana": "peak",
         "maki": "triangle-stroked"
       },
       {
@@ -6669,6 +6673,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "char": "🏐",
+        "americana": "poi_volleyball",
         "maki": "volleyball"
       },
       {
@@ -10587,7 +10592,8 @@
         "char": [
           "⚽️",
           "⚽︎"
-        ]
+        ],
+        "americana": "poi_soccer"
       },
       {
         "newId": "slot",
@@ -11794,7 +11800,8 @@
           "@ooosssay",
           "@quincylvania"
         ],
-        "pr": "162"
+        "pr": "162",
+        "americana": "poi_four_square"
       },
       {
         "newId": "four_square_court_with_ball",
@@ -18057,7 +18064,8 @@
       {
         "newId": "pickleball_paddle",
         "by": "@quincylvania",
-        "inspo": "pickleball_paddle_with_ball"
+        "inspo": "pickleball_paddle_with_ball",
+        "americana": "poi_pickleball"
       },
       {
         "oldId": "pickleball_paddle_with_ball",
