@@ -5477,7 +5477,6 @@
         "newId": "skateboard",
         "src": "maki",
         "importBy": "@quincylvania",
-        "char": "🛹",
         "maki": "skateboard"
       },
       {
@@ -16727,6 +16726,18 @@
         "newId": "baseball",
         "by": "@quincylvania",
         "inspo": "tennis_ball"
+      },
+      {
+        "oldId": "skateboard",
+        "newId": "skateboard_profile"
+      },
+      {
+        "newId": "skateboard",
+        "src": "americana",
+        "srcBy": "@wmisener",
+        "importBy": "@quincylvania",
+        "char": "🛹",
+        "americana": "poi_skateboard"
       },
       {
         "newId": "basketball",
