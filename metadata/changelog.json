@@ -17073,6 +17073,10 @@
         ]
       },
       {
+        "oldId": "pill",
+        "newId": "capsule_pill"
+      },
+      {
         "oldId": "greek_cross",
         "newId": "greek_cross",
         "by": "@quincylvania",
