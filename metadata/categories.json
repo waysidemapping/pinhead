@@ -88,6 +88,9 @@
   "banana": {
     "super": "fruit"
   },
+  "banknote_stack": {
+    "super": "banknote"
+  },
   "barbed_hook": {
     "super": "hook"
   },

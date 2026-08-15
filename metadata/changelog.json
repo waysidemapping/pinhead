@@ -363,9 +363,7 @@
         "newId": "banknote",
         "src": "maki",
         "importBy": "@quincylvania",
-        "maki": "bank",
-        "osmcarto": "amenity/bank",
-        "osmic": "money/bank"
+        "maki": "bank"
       },
       {
         "newId": "banknote_in_hand",
@@ -17494,6 +17492,68 @@
           "dog_sitting_wearing_collar",
           "droplet"
         ]
+      },
+      {
+        "oldId": "banknote",
+        "newId": "banknote",
+        "by": "@quincylvania",
+        "issue": "310"
+      },
+      {
+        "oldId": "banknote_in_hand",
+        "newId": "banknote_in_hand",
+        "by": "@quincylvania",
+        "issue": "310"
+      },
+      {
+        "oldId": "banknote_in_slot",
+        "newId": "banknote_stack_in_slot",
+        "by": "@quincylvania",
+        "issue": "310"
+      },
+      {
+        "newId": "banknote_in_slot",
+        "by": "@quincylvania",
+        "inspo": "banknote_stack_in_slot",
+        "issue": "310"
+      },
+      {
+        "oldId": "arrow_up_to_banknote_in_slot",
+        "newId": "arrow_up_to_banknote_in_slot",
+        "by": "@quincylvania",
+        "issue": "310"
+      },
+      {
+        "oldId": "arrow_down_from_banknote_in_slot",
+        "newId": "arrow_down_from_banknote_in_slot",
+        "by": "@quincylvania",
+        "issue": "310"
+      },
+      {
+        "newId": "banknote_stack",
+        "by": "@quincylvania",
+        "inspo": "banknote",
+        "issue": "310",
+        "osmcarto": "amenity/bank",
+        "osmic": "money/bank"
+      },
+      {
+        "newId": "arrow_up_to_banknote_stack_in_slot",
+        "by": "@quincylvania",
+        "inspo": [
+          "arrow_up_to_banknote_in_slot",
+          "banknote_stack"
+        ],
+        "issue": "310"
+      },
+      {
+        "newId": "arrow_down_from_banknote_stack_in_slot",
+        "by": "@quincylvania",
+        "inspo": [
+          "arrow_down_from_banknote_in_slot",
+          "banknote_stack"
+        ],
+        "issue": "310"
       },
       {
         "newId": "outstretched_hand",
