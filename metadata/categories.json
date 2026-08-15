@@ -225,6 +225,9 @@
   "capital_star": {
     "super": "star"
   },
+  "capsule_pill": {
+    "super": "pill"
+  },
   "car": {
     "commons": "Plain black SVG automobile icons",
     "super": "motor_vehicle"
@@ -295,6 +298,9 @@
   },
   "circle": {
     "super": "shape"
+  },
+  "circular_pill": {
+    "super": "pill"
   },
   "clothing": {
     "commons": "Plain black SVG clothing icons"
@@ -1213,6 +1219,9 @@
   },
   "triangle": {
     "super": "polygon"
+  },
+  "triangular_pill": {
+    "super": "pill"
   },
   "tricorne_hat": {
     "super": "hat"
