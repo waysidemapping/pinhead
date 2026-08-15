@@ -16883,6 +16883,14 @@
         ]
       },
       {
+        "newId": "nine_point_star_outline_on_square",
+        "by": "@quincylvania",
+        "inspo": [
+          "nine_point_star_outline",
+          "latin_cross_on_square"
+        ]
+      },
+      {
         "oldId": "memorial_stone_with_latin_cross",
         "newId": "memorial_stone_with_latin_cross",
         "edit": "minor",
@@ -16977,6 +16985,14 @@
         ]
       },
       {
+        "newId": "memorial_stone_with_nine_point_star_outline",
+        "by": "@quincylvania",
+        "inspo": [
+          "nine_point_star_outline",
+          "memorial_stone"
+        ]
+      },
+      {
         "oldId": "coffin_with_latin_cross",
         "newId": "coffin_with_latin_cross",
         "edit": "minor",
@@ -17067,6 +17083,14 @@
         "by": "@quincylvania",
         "inspo": [
           "ankh",
+          "coffin"
+        ]
+      },
+      {
+        "newId": "coffin_with_nine_point_star_outline",
+        "by": "@quincylvania",
+        "inspo": [
+          "nine_point_star_outline",
           "coffin"
         ]
       },

@@ -769,6 +769,9 @@
     "match": ".+_text$",
     "super": "text"
   },
+  "nine_point_star": {
+    "super": "religious_symbol"
+  },
   "nordic_cross": {
     "super": "christian_cross"
   },
