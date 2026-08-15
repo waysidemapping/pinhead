@@ -876,6 +876,9 @@
   "pint_glass": {
     "super": "drinking_glass"
   },
+  "pip": {
+    "match": "^(one_|two_|three_|four_|five_|six_|seven_|eight_|nine_|ten_|eleven_|twelve_)?pip(s)?$"
+  },
   "piping": {
     "commons": "Plumbing icons"
   },
