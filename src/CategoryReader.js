@@ -1,9 +1,6 @@
 import pluralize from "pluralize";
 
 const prefixes = "anime_|cartoon_|pixel_";
-const numberPrefixes =
-  "one_|two_|three_|four_|five_|six_|seven_|eight_|nine_|ten_|eleven_|twelve_";
-const numberPrefixRegex = new RegExp(`^(${numberPrefixes})`);
 const suffixes =
   "_outline|_tall|_squat|_filled|_left|_right|_up|_down|_top_left|_top_right|_bottom_left|_bottom_right|_up_down|_left_right|_top|_narrow|_wide|_head";
 const iconNamePartSeparator =
@@ -26,7 +23,7 @@ export class CategoryReader {
 
     for (const iconId of iconIds) {
       const parts = deconstructIconName(iconId).map((part) =>
-        pluralize.singular(part).replace(numberPrefixRegex, ""),
+        pluralize.singular(part),
       );
       this.partsByIconId[iconId] = parts;
       for (const part of parts) {
@@ -49,7 +46,7 @@ export class CategoryReader {
         categories[catId].regex = new RegExp(categories[catId].match, "g");
       } else {
         categories[catId].regex = new RegExp(
-          `^(${prefixes})?(${numberPrefixes})?(${pluralize.singular(catId)}|${pluralize.plural(catId)})(${suffixes})*$`,
+          `^(${prefixes})?(${pluralize.singular(catId)}|${pluralize.plural(catId)})(${suffixes})*$`,
           "g",
         );
       }
