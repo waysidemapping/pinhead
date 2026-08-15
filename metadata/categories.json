@@ -294,7 +294,10 @@
     "super": "cutlery"
   },
   "christian_cross": {
-    "super": "christian_symbol"
+    "super": [
+      "christian_symbol",
+      "cross"
+    ]
   },
   "christian_symbol": {
     "super": "religious_symbol"
@@ -342,6 +345,7 @@
   "crescent": {
     "super": "religious_symbol"
   },
+  "cross": {},
   "cup": {
     "super": "container"
   },
@@ -703,6 +707,9 @@
   },
   "lowered_curb": {
     "super": "curb"
+  },
+  "madison_cross": {
+    "super": "cross"
   },
   "mammal": {
     "super": "animal"
