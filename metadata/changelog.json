@@ -17580,6 +17580,14 @@
         "issue": "310"
       },
       {
+        "newId": "atm_text_above_banknote_in_slot",
+        "by": "@quincylvania",
+        "inspo": [
+          "atm_text",
+          "banknote_in_slot"
+        ]
+      },
+      {
         "newId": "outstretched_hand",
         "by": "@quincylvania",
         "inspo": "heart_above_outstretched_hand"
