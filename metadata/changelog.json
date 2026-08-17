@@ -16766,6 +16766,26 @@
         "americana": "poi_horse"
       },
       {
+        "oldId": "spoon_and_fork",
+        "newId": "spoon_beside_fork"
+      },
+      {
+        "oldId": "spoon_and_chopsticks",
+        "newId": "spoon_beside_chopsticks"
+      },
+      {
+        "oldId": "fork_and_sausage",
+        "newId": "fork_beside_sausage"
+      },
+      {
+        "oldId": "fork_and_spoon",
+        "newId": "fork_beside_spoon"
+      },
+      {
+        "oldId": "fork_and_knife",
+        "newId": "fork_beside_knife"
+      },
+      {
         "newId": "funnel",
         "by": "@quincylvania"
       },
