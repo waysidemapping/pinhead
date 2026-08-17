@@ -4,7 +4,7 @@ const prefixes = "anime_|cartoon_|pixel_";
 const suffixes =
   "_outline|_tall|_squat|_filled|_left|_right|_up|_down|_top_left|_top_right|_bottom_left|_bottom_right|_up_down|_left_right|_top|_narrow|_wide|_head";
 const iconNamePartSeparator =
-  /_with_|_on_|_in_|_onto_|_into_|_and_|_under_|_over_|_above_|_beside_|_between_|_atop_|_within_|_from_|_to_|_toward_|_wearing_|_holding_|_carrying_|_crossing_|_dragging_|_aiming_|_boarding_|_riding_|_driving_|_jockeying_|_using_/;
+  /_with_|_on_|_in_|_onto_|_into_|_and_|_under_|_over_|_above_|_beside_|_between_|_atop_|_within_|_from_|_to_|_toward_|_wearing_|_holding_|_carrying_|_crossing_|_dragging_|_aiming_|_boarding_|_riding_|_paddling_|_driving_|_jockeying_|_using_/;
 
 function stringArray(value) {
   return typeof value === "string" ? [value] : [...value];
