@@ -16802,6 +16802,20 @@
         ]
       },
       {
+        "newId": "bridge_shape_diagonal",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "bridge_shape_horizontal",
+        "by": "@quincylvania",
+        "inspo": "bridge_shape_diagonal"
+      },
+      {
+        "newId": "bridge_shape_vertical",
+        "by": "@quincylvania",
+        "inspo": "bridge_shape_diagonal"
+      },
+      {
         "newId": "funnel",
         "by": "@quincylvania"
       },
