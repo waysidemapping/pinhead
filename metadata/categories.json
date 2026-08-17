@@ -942,6 +942,9 @@
   "racehorse": {
     "super": "horse"
   },
+  "raft": {
+    "super": "paddlecraft"
+  },
   "raised_curb": {
     "super": "curb"
   },

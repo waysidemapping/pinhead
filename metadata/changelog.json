@@ -16786,6 +16786,22 @@
         "newId": "fork_beside_knife"
       },
       {
+        "newId": "fork_beside_fish",
+        "by": "@quincylvania",
+        "inspo": [
+          "fish",
+          "fork_beside_sausage"
+        ]
+      },
+      {
+        "newId": "fish_beside_sausage",
+        "by": "@quincylvania",
+        "inspo": [
+          "fish",
+          "fork_beside_sausage"
+        ]
+      },
+      {
         "newId": "funnel",
         "by": "@quincylvania"
       },
