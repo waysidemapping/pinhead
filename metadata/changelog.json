@@ -17757,9 +17757,13 @@
         "inspo": "airboat_on_water"
       },
       {
-        "newId": "person_wearing_helmet_padding_raft",
+        "oldId": "person_wearing_helmet_padding_raft_on_water",
+        "newId": "person_wearing_helmet_paddling_raft_on_water"
+      },
+      {
+        "newId": "person_wearing_helmet_paddling_raft",
         "by": "@quincylvania",
-        "inspo": "person_wearing_helmet_padding_raft_on_water"
+        "inspo": "person_wearing_helmet_paddling_raft_on_water"
       },
       {
         "newId": "hand_reaching_down_toward_water",
