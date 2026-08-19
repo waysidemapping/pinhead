@@ -1418,6 +1418,8 @@
       {
         "newId": "clock_face",
         "by": "@quincylvania",
+        "openhistoricalmap": "clock",
+        "osmic": "amenity/clock"
         "temaki": "clock"
       },
       {
