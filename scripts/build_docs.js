@@ -10,3 +10,5 @@ const docsDir = "docs/";
 execFileSync("cp", ["-r", `src/.`, join(docsDir, `src`)]);
 downloadExternalSourceAssets(join(docsDir, "srcicons"));
 downloadLegacyAssets(docsDir);
+
+console.log("Done building docs");
