@@ -12,7 +12,7 @@ Probably! While this project is focused on maps, you'd be surprised how many ico
 
 #### Why 15x15 pixels?
 
-The 15x15 rule mostly comes from Temaki, which inherited it from Maki. Compared to OSM Carto's 14x14, it's pretty handy to use an odd number so that a 1px wide line can be perfectly centered. Going down to 13x13 is feasible for the some icons but starts to get hairy when trying to depict more complex things. Maki actually used to distribute 11x11 versions of icons (sooo tiny!) but [dropped them](https://github.com/mapbox/maki/commit/96e8b4c5941d687ddf0fde527ad54dde5559eef2) in v7. Probably the benefit didn't justify the maintence overhead in the age of high-DPI displays. So yeah, 15x15 just feels like the sweet spot.
+The 15x15 rule mostly comes from Temaki, which inherited it from Maki. Compared to OSM Carto's 14x14, it's pretty handy to use an odd number so that a 1px wide line can be perfectly centered. Going down to 13x13 is feasible for the some icons but starts to get hairy when trying to depict more complex things. Maki actually used to distribute 11x11 versions of icons (sooo tiny!) but [dropped them](https://github.com/mapbox/maki/commit/96e8b4c5941d687ddf0fde527ad54dde5559eef2) in v7. Probably the benefit didn't justify the maintenance overhead in the age of high-DPI displays. So yeah, 15x15 just feels like the sweet spot.
 
 #### I found a cool icon online. Can I upload it?
 
@@ -20,7 +20,7 @@ Maybe! Any external icons **must** have a compatible license (CC0 or equivalent)
 
 #### My icon has been merged. When will it be released?
 
-We aim to have a release roughly once per month. If you need something released sooner for a downstream project, feel free to ask. We can probably accommadate.
+We aim to have a release roughly once per month. If you need something released sooner for a downstream project, feel free to ask. We can probably accommodate.
 
 ## Design guidelines
 
@@ -33,7 +33,7 @@ If the following sections seem too technical or intimidating, feel free to just 
   * _Ideally_ icons should also be legible on a traditional 1x display at 15x15 pixels, but alas this is not always possible for some of the more complex graphics.
   * Snapping shapes to 1px and 0.5px increments on the 15x15 pixel grid can often help.
   * Shapes that are too small, overly detailed, or too close together usually look muddy at small sizes.
-  * Screen legiblity is more of an art than a science, try experimenting.
+  * Screen legibility is more of an art than a science, try experimenting.
 * Perspective
   * Most things are more iconic from one angle than another. Prefer in this order:
     * <img src="https://pinhead.ink/latest/car.svg" height="15px" width="15px"/> A straight-on horizontal perspective
