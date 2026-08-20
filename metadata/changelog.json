@@ -390,7 +390,8 @@
         "newId": "barbecue_grill_with_steam",
         "src": "nps",
         "importBy": "@quincylvania",
-        "nps": "grill"
+        "nps": "grill",
+        "osmcarto": "amenity/bbq"
       },
       {
         "newId": "barbell",
@@ -674,6 +675,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "osmic": "barrier/bollard",
         "temaki": "bollard"
       },
       {
