@@ -17683,6 +17683,14 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "briefcase_with_rx_symbol",
+        "by": "@quincylvania",
+        "inspo": [
+          "briefcase",
+          "rx_symbol"
+        ]
+      },
+      {
         "oldId": "briefcase_with_bolt",
         "newId": "briefcase_with_bolt",
         "edit": "resize",
