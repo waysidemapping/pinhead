@@ -17689,6 +17689,14 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "briefcase_with_wifi",
+        "by": "@quincylvania",
+        "inspo": [
+          "briefcase",
+          "wifi"
+        ]
+      },
+      {
         "oldId": "briefcase_with_info_i",
         "newId": "briefcase_with_info_i",
         "edit": "resize",
