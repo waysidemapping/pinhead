@@ -17246,13 +17246,6 @@
         "issue": "258"
       },
       {
-        "oldId": "briefcase_with_greek_cross",
-        "newId": "briefcase_with_greek_cross",
-        "edit": "minor",
-        "by": "@quincylvania",
-        "issue": "258"
-      },
-      {
         "oldId": "bag_with_greek_cross",
         "newId": "bag_with_greek_cross",
         "edit": "minor",
@@ -17551,15 +17544,6 @@
         "nps": "flush-toilets"
       },
       {
-        "newId": "briefcase_with_droplet",
-        "by": "@quincylvania",
-        "inspo": [
-          "briefcase",
-          "droplet"
-        ],
-        "issue": "237"
-      },
-      {
         "newId": "dog_sitting_wearing_collar_and_droplet",
         "by": "@quincylvania",
         "inspo": [
@@ -17636,6 +17620,58 @@
           "atm_text",
           "banknote_in_slot"
         ]
+      },
+      {
+        "oldId": "suitcase",
+        "newId": "suitcase",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "briefcase",
+        "newId": "briefcase",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "briefcase_with_droplet",
+        "by": "@quincylvania",
+        "inspo": [
+          "briefcase",
+          "droplet"
+        ],
+        "issue": "237"
+      },
+      {
+        "oldId": "briefcase_with_greek_cross",
+        "newId": "briefcase_with_greek_cross",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "258"
+      },
+      {
+        "oldId": "briefcase_with_heavy_six_point_asterisk",
+        "newId": "briefcase_with_heavy_six_point_asterisk",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "briefcase_with_bolt",
+        "newId": "briefcase_with_bolt",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "briefcase_with_info_i",
+        "newId": "briefcase_with_info_i",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "briefcase_with_shield",
+        "newId": "briefcase_with_shield",
+        "edit": "resize",
+        "by": "@quincylvania"
       },
       {
         "newId": "outstretched_hand",
