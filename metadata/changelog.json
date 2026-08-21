@@ -17657,6 +17657,14 @@
         "issue": "237"
       },
       {
+        "newId": "briefcase_with_gas_flame",
+        "by": "@quincylvania",
+        "inspo": [
+          "briefcase",
+          "gas_flame"
+        ]
+      },
+      {
         "oldId": "briefcase_with_greek_cross",
         "newId": "briefcase_with_greek_cross",
         "edit": "minor",
