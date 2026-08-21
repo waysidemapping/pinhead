@@ -16740,6 +16740,11 @@
         "americana": "poi_skateboard"
       },
       {
+        "newId": "skateboard_deck",
+        "by": "@quincylvania",
+        "inspo": "skateboard"
+      },
+      {
         "newId": "basketball",
         "by": [
           "@wmisener",
