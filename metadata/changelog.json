@@ -390,8 +390,7 @@
         "newId": "barbecue_grill_with_steam",
         "src": "nps",
         "importBy": "@quincylvania",
-        "nps": "grill",
-        "osmcarto": "amenity/bbq"
+        "nps": "grill"
       },
       {
         "newId": "barbell",
