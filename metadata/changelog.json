@@ -17662,6 +17662,12 @@
         "issue": "237"
       },
       {
+        "oldId": "briefcase_with_bolt",
+        "newId": "briefcase_with_bolt",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
         "newId": "briefcase_with_gas_flame",
         "by": "@quincylvania",
         "inspo": [
@@ -17691,37 +17697,11 @@
         ]
       },
       {
-        "oldId": "briefcase_with_bolt",
-        "newId": "briefcase_with_bolt",
-        "edit": "resize",
-        "by": "@quincylvania"
-      },
-      {
-        "newId": "briefcase_with_wifi",
+        "newId": "briefcase_with_circular_pill_and_capsule_pill",
         "by": "@quincylvania",
         "inspo": [
           "briefcase",
-          "wifi"
-        ]
-      },
-      {
-        "oldId": "briefcase_with_info_i",
-        "newId": "briefcase_with_info_i",
-        "edit": "resize",
-        "by": "@quincylvania"
-      },
-      {
-        "oldId": "briefcase_with_shield",
-        "newId": "briefcase_with_shield",
-        "edit": "resize",
-        "by": "@quincylvania"
-      },
-      {
-        "newId": "briefcase_with_map_pin_with_dot",
-        "by": "@quincylvania",
-        "inspo": [
-          "briefcase",
-          "map_pin_with_dot"
+          "circular_pill_and_capsule_pill"
         ]
       },
       {
@@ -17757,6 +17737,34 @@
         ]
       },
       {
+        "newId": "briefcase_with_wifi",
+        "by": "@quincylvania",
+        "inspo": [
+          "briefcase",
+          "wifi"
+        ]
+      },
+      {
+        "oldId": "briefcase_with_shield",
+        "newId": "briefcase_with_shield",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "briefcase_with_map_pin_with_dot",
+        "by": "@quincylvania",
+        "inspo": [
+          "briefcase",
+          "map_pin_with_dot"
+        ]
+      },
+      {
+        "oldId": "briefcase_with_info_i",
+        "newId": "briefcase_with_info_i",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
         "newId": "briefcase_with_question_mark",
         "by": "@quincylvania",
         "inspo": [
@@ -17782,6 +17790,22 @@
         "newId": "heart_above_outstretched_hand",
         "edit": "minor",
         "by": "@quincylvania"
+      },
+      {
+        "newId": "droplet_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "droplet",
+          "outstretched_hand"
+        ]
+      },
+      {
+        "newId": "gas_flame_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "gas_flame",
+          "outstretched_hand"
+        ]
       },
       {
         "newId": "greek_cross_above_outstretched_hand",
@@ -17817,26 +17841,18 @@
         ]
       },
       {
-        "newId": "droplet_above_outstretched_hand",
-        "by": "@quincylvania",
-        "inspo": [
-          "droplet",
-          "outstretched_hand"
-        ]
-      },
-      {
-        "newId": "gas_flame_above_outstretched_hand",
-        "by": "@quincylvania",
-        "inspo": [
-          "gas_flame",
-          "outstretched_hand"
-        ]
-      },
-      {
         "newId": "leaf_above_outstretched_hand",
         "by": "@quincylvania",
         "inspo": [
           "leaf",
+          "outstretched_hand"
+        ]
+      },
+      {
+        "newId": "conifer_tree_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "conifer_tree",
           "outstretched_hand"
         ]
       },
@@ -17881,18 +17897,18 @@
         ]
       },
       {
-        "newId": "map_pin_with_dot_above_outstretched_hand",
-        "by": "@quincylvania",
-        "inspo": [
-          "map_pin_with_dot",
-          "outstretched_hand"
-        ]
-      },
-      {
         "newId": "wifi_above_outstretched_hand",
         "by": "@quincylvania",
         "inspo": [
           "wifi",
+          "outstretched_hand"
+        ]
+      },
+      {
+        "newId": "map_pin_with_dot_above_outstretched_hand",
+        "by": "@quincylvania",
+        "inspo": [
+          "map_pin_with_dot",
           "outstretched_hand"
         ]
       },
