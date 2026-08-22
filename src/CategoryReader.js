@@ -1,4 +1,7 @@
-import pluralize from "pluralize";
+const pluralize =
+  typeof window === "undefined"
+    ? (await import("pluralize")).default
+    : window.pluralize;
 
 const prefixes = "anime_|cartoon_|pixel_";
 const suffixes =
