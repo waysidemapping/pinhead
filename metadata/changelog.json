@@ -19098,6 +19098,12 @@
         "newId": "pixel_arrow_top_left",
         "by": "@quincylvania",
         "inspo": "arrow_top_left"
+      },
+      {
+        "oldId": "noodle_bowl_and_chopsticks_with_noodles",
+        "newId": "noodle_bowl_and_chopsticks_with_noodles",
+        "edit": "flip",
+        "by": "@quincylvania"
       }
     ]
   }
