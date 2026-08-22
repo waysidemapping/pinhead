@@ -2304,6 +2304,7 @@
         "importBy": "@quincylvania",
         "maki": "embassy",
         "nps": "flagpole",
+        "opengemeenten": "Vlag",
         "osmcarto": "office/embassy",
         "osmic": "administration/embassy"
       },
@@ -2728,6 +2729,7 @@
           "❤︎"
         ],
         "healthicons": "symbols/heart",
+        "opengemeenten": "Levensloop",
         "maki": "heart",
         "temaki": "heart",
         "viglino": "princesse/svg/coeur"
@@ -5845,6 +5847,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "char": "🩺",
+        "healthicons": "devices/stethoscope",
         "maki": "doctor"
       },
       {
@@ -11132,6 +11135,7 @@
         "src": "opengemeenten",
         "importBy": "@quincylvania",
         "issue": "141",
+        "healthicons": "devices/syringe",
         "opengemeenten": "Vaccinatie"
       },
       {
