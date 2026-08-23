@@ -19195,6 +19195,10 @@
         "newId": "bagel_with_seeds"
       },
       {
+        "oldId": "step_ladder_doubled_sided",
+        "newId": "step_ladder_double_sided"
+      },
+      {
         "oldId": "noodle_bowl_and_chopsticks_with_noodles",
         "newId": "noodle_bowl_and_chopsticks_with_noodles",
         "edit": "flip",
