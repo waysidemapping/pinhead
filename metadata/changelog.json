@@ -16853,6 +16853,11 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "lattice_tower_with_ball_tip_antenna_on_ground",
+        "by": "@quincylvania",
+        "inspo": "lattice_tower_with_ball_tip_antenna_on_ground_with_beams"
+      },
+      {
         "oldId": "skyscraper_on_ground",
         "newId": "skyscraper_on_ground",
         "edit": "minor",
