@@ -16858,6 +16858,17 @@
         "inspo": "lattice_tower_with_ball_tip_antenna_on_ground_with_beams"
       },
       {
+        "oldId": "lattice_tower_with_observation_deck_on_ground",
+        "newId": "lattice_tower_with_observation_deck_on_ground",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "lattice_tower_with_observation_deck",
+        "by": "@quincylvania",
+        "inspo": "lattice_tower_with_observation_deck_on_ground"
+      },
+      {
         "oldId": "skyscraper_on_ground",
         "newId": "skyscraper_on_ground",
         "edit": "minor",
