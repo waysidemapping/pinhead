@@ -16848,6 +16848,10 @@
         ]
       },
       {
+        "oldId": "conifer_tree_and_oval_broadleaved_tree",
+        "newId": "conifer_tree_beside_oval_broadleaved_tree"
+      },
+      {
         "newId": "horizontal_bar",
         "by": "@quincylvania",
         "inspo": "person_hanging_from_horizontal_bar"
