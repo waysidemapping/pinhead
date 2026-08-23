@@ -22,7 +22,6 @@ export class CategoryReader {
     this.iconIds = iconIds;
     const explicitCategories = Object.assign({}, categories);
     this.partsByIconId = {};
-    const categoryInfoByIconId = {};
 
     for (const iconId of iconIds) {
       const parts = deconstructIconName(iconId).map((part) =>
@@ -68,19 +67,40 @@ export class CategoryReader {
 
   iconIdsByCategoryIds() {
     const iconIdsByCategoryId = {};
+    const categoryIdsByIconId = {};
     for (const catId in this.categories) {
       for (const iconId of this.iconIds) {
         if (this.iconIdMatchesCategoryId(iconId, catId)) {
           const allCatIds = this.allCategoriesForCategoryId(catId);
           for (const catId of allCatIds) {
             if (!iconIdsByCategoryId[catId]) iconIdsByCategoryId[catId] = [];
-            if (!iconIdsByCategoryId[catId].includes(iconId))
+            if (!categoryIdsByIconId[iconId])
+              categoryIdsByIconId[iconId] = new Set();
+            if (!iconIdsByCategoryId[catId].includes(iconId)) {
               iconIdsByCategoryId[catId].push(iconId);
+              categoryIdsByIconId[iconId].add(catId);
+            }
           }
         }
       }
     }
-    return iconIdsByCategoryId;
+
+    const uncategorizedIconIds = new Set();
+    for (const catId in iconIdsByCategoryId) {
+      if (iconIdsByCategoryId[catId].length === 1) {
+        const loneIconId = iconIdsByCategoryId[catId][0];
+        categoryIdsByIconId[loneIconId].delete(catId);
+        if (!categoryIdsByIconId[loneIconId].size) {
+          uncategorizedIconIds.add(loneIconId);
+          delete categoryIdsByIconId[loneIconId];
+        }
+        delete iconIdsByCategoryId[catId];
+      }
+    }
+    return {
+      categorized: iconIdsByCategoryId,
+      uncategorized: Array.from(uncategorizedIconIds),
+    };
   }
 
   allCategoriesForCategoryId(categoryId) {

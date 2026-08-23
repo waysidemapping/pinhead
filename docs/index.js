@@ -594,7 +594,8 @@ async function setupPage(pageData) {
           ])
           .join("");
       } else if (sortMethod === "categorical") {
-        const iconIdsByCategoryIds = categoryReader.iconIdsByCategoryIds();
+        const catInfo = categoryReader.iconIdsByCategoryIds();
+        const iconIdsByCategoryIds = catInfo.categorized;
         listContent = Object.entries(iconIdsByCategoryIds)
           .filter(
             ([catId, iconIds]) =>
@@ -622,7 +623,18 @@ async function setupPage(pageData) {
             );
           })
           .join("");
+
+        if (catInfo.uncategorized.length) {
+          listContent += iconListSection(
+            "",
+            "<i>uncategorized</i>",
+            catInfo.uncategorized
+              .map((iconId) => iconsById[iconId])
+              .filter((icon) => !icon.sensitive),
+          );
+        }
       } else {
+        // default layout
         listContent = [
           iconListSection(
             `v${majorVersion}`,
