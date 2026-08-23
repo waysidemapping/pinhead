@@ -16842,6 +16842,11 @@
         ]
       },
       {
+        "newId": "horizontal_bar",
+        "by": "@quincylvania",
+        "inspo": "person_hanging_from_horizontal_bar"
+      },
+      {
         "oldId": "floor_lamp",
         "newId": "floor_lamp",
         "edit": "minor",
