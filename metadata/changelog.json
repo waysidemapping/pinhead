@@ -16901,6 +16901,22 @@
         "newId": "conifer_tree_beside_oval_broadleaved_tree"
       },
       {
+        "newId": "conifer_tree_beside_oval_broadleaved_tree_on_ground",
+        "by": "@quincylvania",
+        "inspo": "conifer_tree_beside_oval_broadleaved_tree"
+      },
+      {
+        "newId": "conifer_tree_beside_conifer_tree_on_ground",
+        "by": "@quincylvania",
+        "inspo": "conifer_tree_beside_conifer_tree"
+      },
+      {
+        "newId": "oval_broadleaved_tree_beside_oval_broadleaved_tree_on_ground",
+        "by": "@quincylvania",
+        "inspo": "oval_broadleaved_tree_beside_oval_broadleaved_tree",
+        "opengemeenten": "Bomen"
+      },
+      {
         "newId": "horizontal_bar",
         "by": "@quincylvania",
         "inspo": "person_hanging_from_horizontal_bar"
