@@ -96,7 +96,7 @@ If the following sections seem too technical or intimidating, feel free to just 
 
 ## Icon policies
 
-These polcies guide how the Pinhead project operates.
+These policies guide how the Pinhead project operates.
 
 ### AI/ML policy
 
