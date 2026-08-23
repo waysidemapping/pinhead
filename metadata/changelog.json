@@ -16864,10 +16864,20 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "skyscraper",
+        "by": "@quincylvania",
+        "inspo": "skyscraper_on_ground"
+      },
+      {
         "oldId": "lowrise_apartment_building_on_ground",
         "newId": "lowrise_apartment_building_on_ground",
         "edit": "minor",
         "by": "@quincylvania"
+      },
+      {
+        "newId": "lowrise_apartment_building",
+        "by": "@quincylvania",
+        "inspo": "lowrise_apartment_building_on_ground"
       },
       {
         "oldId": "lowrise_building_and_tree_on_ground",
@@ -16880,6 +16890,11 @@
         "newId": "plane_takeoff_above_ground",
         "edit": "minor",
         "by": "@quincylvania"
+      },
+      {
+        "newId": "plane_takeoff",
+        "by": "@quincylvania",
+        "inspo": "plane_takeoff_above_ground"
       },
       {
         "oldId": "conifer_tree_and_oval_broadleaved_tree",
