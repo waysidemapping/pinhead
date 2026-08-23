@@ -16848,6 +16848,35 @@
         ]
       },
       {
+        "oldId": "lattice_tower_with_ball_tip_antenna_on_ground_with_beams",
+        "newId": "lattice_tower_with_ball_tip_antenna_on_ground_with_beams",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "skyscraper_on_ground",
+        "newId": "skyscraper_on_ground",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "lowrise_apartment_building_on_ground",
+        "newId": "lowrise_apartment_building_on_ground",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "lowrise_building_and_tree_on_ground",
+        "newId": "lowrise_building_and_tree_on_ground",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "plane_takeoff_above_ground",
+        "newId": "plane_takeoff_above_ground",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
         "oldId": "conifer_tree_and_oval_broadleaved_tree",
         "newId": "conifer_tree_beside_oval_broadleaved_tree"
       },
