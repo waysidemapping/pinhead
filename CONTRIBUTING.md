@@ -130,7 +130,7 @@ Regardless of the above, icons will **not** be included in Pinhead if they inclu
 * AI-generated material
 * Material considered universally offensive
 
-Icons that some audiences may find objectionable may still be included provided they serve a legitimate purpose. Icons commonly considered problematic should be marked `sensitive` in the metadata files. Some examples include:
+Icons that some audiences may find objectionable may still be included provided they serve a legitimate purpose. Icons commonly considered problematic [should be marked `sensitive`](https://github.com/waysidemapping/pinhead/commit/93d4c4fa2cbaf2c24e9dff188ac759d256b68c6a) in the metadata files. Some examples include:
 
 * Symbols depicting nudity for medical purposes
   * E.g. a groin icon may be useful in a medical app for people seeking sexual healthcare, especially if the app is not well translated into their language 
