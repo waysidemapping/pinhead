@@ -24,7 +24,7 @@ We aim to have a release roughly once per month. If you need something released 
 
 ## Design guidelines
 
-If the following sections seem too technical or intimidating, feel free to just ignore them and go straight to opening a PR for your cool icon. These are intended only for managing internal consistency and I'd be happy to give you pointers after the fact. There aren't many hard rules here. Have fun with it!
+If the following sections seem too technical or intimidating, feel free to just ignore them and go straight to opening a PR for your cool icon. These are intended only for managing internal consistency and I'd be happy to give you pointers after the fact. These may sound like hard rules but they're not. Have fun with it!
 
 #### Visual design
 
@@ -32,8 +32,12 @@ If the following sections seem too technical or intimidating, feel free to just 
   * Icons should be basically legible when displayed at 15x15 screen points on a 2x pixel density display.
   * _Ideally_ icons should also be legible on a traditional 1x display at 15x15 pixels, but alas this is not always possible for some of the more complex graphics.
   * Snapping shapes to 1px and 0.5px increments on the 15x15 pixel grid can often help.
-  * Shapes that are too small, overly detailed, or too close together usually look muddy at small sizes.
+  * Shapes that are too small, too detailed, or too close together usually look muddy at small sizes.
   * Screen legibility is more of an art than a science, try experimenting.
+* Abstraction
+  * Using the right level of abstraction makes shapes legible and iconic.
+  * Too little abstraction causes most shapes to look like blobs at small sizes.
+  * Too much abstraction causes shapes to look like blobs at any size.
 * Perspective
   * Most things are more iconic from one angle than another. Prefer in this order:
     * <img src="https://pinhead.ink/latest/car.svg" height="15px" width="15px"/> A straight-on horizontal perspective
