@@ -17489,6 +17489,22 @@
         ]
       },
       {
+        "newId": "droplet_with_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "droplet",
+          "exclamation_point"
+        ]
+      },
+      {
+        "newId": "droplet_with_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "droplet",
+          "exclamation_point"
+        ]
+      },
+      {
         "newId": "droplet_beside_greek_cross",
         "by": "@quincylvania",
         "inspo": "droplet_with_greek_cross"
