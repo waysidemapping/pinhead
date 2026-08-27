@@ -17792,6 +17792,30 @@
         "issue": "383"
       },
       {
+        "newId": "flush_curb_with_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": "flush_curb_with_question_mark",
+        "issue": "383"
+      },
+      {
+        "newId": "lowered_curb_with_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": "lowered_curb_with_question_mark",
+        "issue": "383"
+      },
+      {
+        "newId": "rolled_curb_with_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": "rolled_curb_with_question_mark",
+        "issue": "383"
+      },
+      {
+        "newId": "raised_curb_with_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": "raised_curb_with_question_mark",
+        "issue": "383"
+      },
+      {
         "oldId": "banknote",
         "newId": "banknote",
         "by": "@quincylvania",
