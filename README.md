@@ -27,6 +27,18 @@ Pinhead is distributed in a variety of formats suited to the likes of cartograph
 
 A small community is developing around Pinhead! We're working to make this the best and largest library of public domain map icons anywhere on the web, but we can't do it alone. Come join us in the [#pinhead](https://osmus.slack.com/archives/C0AH40E4J9W) channel on [OSM US Slack](https://slack.openstreetmap.us/). Bring your questions, comments, and ideas, or feel free to [open an issue](https://github.com/waysidemapping/pinhead/issues/new) on GitHub. You can also contact me ([@quincylvania](https://github.com/quincylvania)) directly through any of the channels listed on [my website](https://waysidemapping.org).
 
+## Contributing
+
+Contributions to Pinhead are **open**. See the [contributors' guide](CONTRIBUTING.md) for details, including the icon design guidelines, the code of conduct, and the AI/ML policy.
+
+## Pinhead in use
+
+The following public projects are known to have integrated Pinhead icons.
+
+- [iD](https://github.com/openstreetmap/iD): Pinhead is supported for preset icons in the [iD tagging schema](https://github.com/openstreetmap/id-tagging-schema), used by various OpenStreetMap projects
+- [Ultra](https://gitlab.com/trailstash/ultra): users can specify Pinhead icon IDs for their pins when creating custom web maps
+- [OpenTrailMap](https://github.com/osmus/OpenTrailMap): after Pinhead integrated all of its custom icons, OpenTrailMap switched to using Pinhead as its main icon source
+
 ## Where the icons are from
 
 Pinhead is seeded from the following public domain sources, but does not mirror them exactly. Instead, the goal is to create a unified set of icons with standardized design elements and conventions. Check out the [coverage](https://pinhead.ink/coverage) page to see how Pinhead compares to these other icon sets. Thank you to all of the contributors to these projects.
@@ -45,10 +57,6 @@ Pinhead is seeded from the following public domain sources, but does not mirror 
 - If you know of another icon source that might be a good fit for Pinhead, please [let us know](https://github.com/waysidemapping/pinhead/issues/new)!
 
 Pinhead also contains hundreds of custom icons that do not have parallels in other sets. Some of these are variants or derivatives of other icons, while others are totally original.
-
-## Contributing
-
-Contributions to Pinhead are **open**. See the [contributors' guide](CONTRIBUTING.md) for details, including the icon design guidelines, the code of conduct, and the AI/ML policy.
 
 ## License
 

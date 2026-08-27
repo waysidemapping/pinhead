@@ -24,7 +24,7 @@ We aim to have a release roughly once per month. If you need something released 
 
 ## Design guidelines
 
-If the following sections seem too technical or intimidating, feel free to just ignore them and go straight to opening a PR for your cool icon. These are intended only for managing internal consistency and I'd be happy to give you pointers after the fact. There aren't many hard rules here. Have fun with it!
+If the following sections seem too technical or intimidating, feel free to just ignore them and go straight to opening a PR for your cool icon. These are intended only for managing internal consistency and I'd be happy to give you pointers after the fact. These may sound like hard rules but they're not. Have fun with it!
 
 #### Visual design
 
@@ -32,7 +32,8 @@ If the following sections seem too technical or intimidating, feel free to just 
   * Icons should be basically legible when displayed at 15x15 screen points on a 2x pixel density display.
   * _Ideally_ icons should also be legible on a traditional 1x display at 15x15 pixels, but alas this is not always possible for some of the more complex graphics.
   * Snapping shapes to 1px and 0.5px increments on the 15x15 pixel grid can often help.
-  * Shapes that are too small, overly detailed, or too close together usually look muddy at small sizes.
+  * Shapes that are too small, too detailed, or too close together usually look muddy at small sizes.
+  * Shapes that are overly simplified (minimalist) might not have enough detail to be legible.
   * Screen legibility is more of an art than a science, try experimenting.
 * Perspective
   * Most things are more iconic from one angle than another. Prefer in this order:
@@ -73,7 +74,7 @@ If the following sections seem too technical or intimidating, feel free to just 
 #### Filenames
 
 * An icon's filename is its unique ID. Choosing a good initial filename reduces the chance of needing to rename an icon later.
-* Filenames should use American English.
+* Filenames should use American English (sorry).
 * Filenames should contain only lowercase letters, numbers, and underscores, and should start with a letter or number.
 * Filenames should be literal instead of symbolic.
   * E.g. prefer <img src="https://pinhead.ink/latest/giraffe.svg" height="15px" width="15px"/> `giraffe` to `zoo` and <img src="https://pinhead.ink/latest/greek_cross.svg" height="15px" width="15px"/> `greek_cross` to `medicine`.
@@ -92,7 +93,7 @@ If the following sections seem too technical or intimidating, feel free to just 
 * Filenames for graphical design variants (size, shape, stroke, etc.) should be suffixed with the graphical difference.
    * E.g. <img src="https://pinhead.ink/latest/circle_outline.svg" height="15px" width="15px"/> `circle_outline`, not "outlined_circle"
    * E.g. <img src="https://pinhead.ink/latest/diamond_tall.svg" height="15px" width="15px"/> `diamond_tall`, not "tall_diamond"
-* Note: Prior to v26, most icons were categorized in subdirectories. The subpath was not intended to be part of the icon's ID.
+* Note: Prior to v26, most icons were categorized in subdirectories. The subpath was not part of the icon's ID.
 
 ## Icon policies
 
