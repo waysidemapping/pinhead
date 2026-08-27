@@ -17494,7 +17494,8 @@
         "inspo": [
           "droplet",
           "exclamation_point"
-        ]
+        ],
+        "issue": "383"
       },
       {
         "newId": "droplet_with_exclamation_point",
@@ -17502,12 +17503,31 @@
         "inspo": [
           "droplet",
           "exclamation_point"
-        ]
+        ],
+        "issue": "383"
       },
       {
         "newId": "droplet_beside_greek_cross",
         "by": "@quincylvania",
         "inspo": "droplet_with_greek_cross"
+      },
+      {
+        "newId": "droplet_beside_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "droplet",
+          "question_mark"
+        ],
+        "issue": "383"
+      },
+      {
+        "newId": "droplet_beside_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "droplet",
+          "exclamation_point"
+        ],
+        "issue": "383"
       },
       {
         "newId": "droplet_above_water",
@@ -17667,6 +17687,54 @@
           "dog_sitting_wearing_collar",
           "droplet"
         ]
+      },
+      {
+        "oldId": "dog_sitting_and_exclamation_point",
+        "newId": "dog_sitting_and_exclamation_point",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "dog_sitting_wearing_collar_and_exclamation_point",
+        "newId": "dog_sitting_wearing_collar_and_exclamation_point",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "wolf_head_and_exclamation_point",
+        "newId": "wolf_head_and_exclamation_point",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "dog_sitting_and_question_mark",
+        "by": "@quincylvania",
+        "inspo": "dog_sitting_and_exclamation_point",
+        "issue": "383"
+      },
+      {
+        "newId": "dog_sitting_wearing_collar_and_question_mark",
+        "by": "@quincylvania",
+        "inspo": "dog_sitting_wearing_collar_and_exclamation_point",
+        "issue": "383"
+      },
+      {
+        "newId": "wolf_head_and_question_mark",
+        "by": "@quincylvania",
+        "inspo": "wolf_head_and_exclamation_point",
+        "issue": "383"
+      },
+      {
+        "newId": "gull_and_question_mark",
+        "by": "@quincylvania",
+        "inspo": "gull_and_exclamation_point",
+        "issue": "383"
+      },
+      {
+        "newId": "hairy_caterpillar_and_question_mark",
+        "by": "@quincylvania",
+        "inspo": "hairy_caterpillar_and_exclamation_point",
+        "issue": "383"
       },
       {
         "oldId": "banknote",
@@ -17877,7 +17945,8 @@
         "inspo": [
           "briefcase",
           "question_mark"
-        ]
+        ],
+        "issue": "383"
       },
       {
         "newId": "briefcase_with_exclamation_point",
@@ -17885,7 +17954,8 @@
         "inspo": [
           "briefcase",
           "exclamation_point"
-        ]
+        ],
+        "issue": "383"
       },
       {
         "newId": "outstretched_hand",
@@ -18025,7 +18095,8 @@
         "inspo": [
           "question_mark",
           "outstretched_hand"
-        ]
+        ],
+        "issue": "383"
       },
       {
         "newId": "exclamation_point_above_outstretched_hand",
@@ -18033,7 +18104,8 @@
         "inspo": [
           "exclamation_point",
           "outstretched_hand"
-        ]
+        ],
+        "issue": "383"
       },
       {
         "newId": "thumbs_down_hand_with_sleeve",
@@ -19213,6 +19285,10 @@
       {
         "oldId": "step_ladder_doubled_sided",
         "newId": "step_ladder_double_sided"
+      },
+      {
+        "oldId": "three_books_stacked",
+        "newId": "book_stack"
       },
       {
         "oldId": "noodle_bowl_and_chopsticks_with_noodles",
