@@ -17043,6 +17043,24 @@
         ]
       },
       {
+        "newId": "question_mark_on_square",
+        "by": "@quincylvania",
+        "inspo": [
+          "question_mark",
+          "latin_cross_on_square"
+        ],
+        "issue": "383"
+      },
+      {
+        "newId": "exclamation_point_on_square",
+        "by": "@quincylvania",
+        "inspo": [
+          "exclamation_point",
+          "latin_cross_on_square"
+        ],
+        "issue": "383"
+      },
+      {
         "oldId": "memorial_stone_with_latin_cross",
         "newId": "memorial_stone_with_latin_cross",
         "edit": "minor",
@@ -17145,6 +17163,24 @@
         ]
       },
       {
+        "newId": "memorial_stone_with_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "memorial_stone",
+          "question_mark"
+        ],
+        "issue": "383"
+      },
+      {
+        "newId": "memorial_stone_with_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "memorial_stone",
+          "exclamation_point"
+        ],
+        "issue": "383"
+      },
+      {
         "oldId": "coffin_with_latin_cross",
         "newId": "coffin_with_latin_cross",
         "edit": "minor",
@@ -17245,6 +17281,24 @@
           "nine_point_star_outline",
           "coffin"
         ]
+      },
+      {
+        "newId": "coffin_with_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "coffin",
+          "question_mark"
+        ],
+        "issue": "383"
+      },
+      {
+        "newId": "coffin_with_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "coffin",
+          "exclamation_point"
+        ],
+        "issue": "383"
       },
       {
         "newId": "circular_pill",
