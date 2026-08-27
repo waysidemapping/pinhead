@@ -153,9 +153,6 @@
   "banknote": {
     "super": "legal_tender"
   },
-  "banknote_stack": {
-    "super": "banknote"
-  },
   "barbed_hook": {
     "super": "hook"
   },
