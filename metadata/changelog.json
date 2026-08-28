@@ -17839,6 +17839,60 @@
         "issue": "383"
       },
       {
+        "newId": "badge_shield_with_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "badge_shield",
+          "question_mark"
+        ],
+        "issue": "383"
+      },
+      {
+        "newId": "badge_shield_with_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "badge_shield",
+          "exclamation_point"
+        ],
+        "issue": "383"
+      },
+      {
+        "newId": "vending_machine_with_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "vending_machine",
+          "question_mark"
+        ],
+        "issue": "383"
+      },
+      {
+        "newId": "vending_machine_with_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "vending_machine",
+          "exclamation_point"
+        ],
+        "issue": "383"
+      },
+      {
+        "newId": "book_with_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "book",
+          "question_mark"
+        ],
+        "issue": "383"
+      },
+      {
+        "newId": "book_with_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "book",
+          "exclamation_point"
+        ],
+        "issue": "383"
+      },
+      {
         "oldId": "banknote",
         "newId": "banknote",
         "by": "@quincylvania",
