@@ -16828,6 +16828,15 @@
         "inspo": "bridge_shape_diagonal"
       },
       {
+        "newId": "bridge_in_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "bridge",
+          "pier_mounted_in_water"
+        ],
+        "issue": "290"
+      },
+      {
         "newId": "funnel",
         "by": "@quincylvania"
       },
