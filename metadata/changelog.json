@@ -17752,21 +17752,6 @@
         ]
       },
       {
-        "oldId": "phone_right_with_exclamation_point",
-        "newId": "phone_right_beside_exclamation_point",
-        "edit": "resize",
-        "by": "@quincylvania"
-      },
-      {
-        "newId": "phone_right_beside_question_mark",
-        "by": "@quincylvania",
-        "inspo": [
-          "phone_right_beside_exclamation_point",
-          "question_mark"
-        ],
-        "issue": "383"
-      },
-      {
         "oldId": "dog_sitting_and_exclamation_point",
         "newId": "dog_sitting_and_exclamation_point",
         "edit": "minor",
@@ -17836,6 +17821,21 @@
         "newId": "raised_curb_with_exclamation_point",
         "by": "@quincylvania",
         "inspo": "raised_curb_with_question_mark",
+        "issue": "383"
+      },
+      {
+        "oldId": "phone_right_with_exclamation_point",
+        "newId": "phone_right_beside_exclamation_point",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "phone_right_beside_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "phone_right_beside_exclamation_point",
+          "question_mark"
+        ],
         "issue": "383"
       },
       {
