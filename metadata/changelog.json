@@ -17884,6 +17884,24 @@
         "issue": "383"
       },
       {
+        "newId": "vending_machine_with_mars",
+        "by": "@quincylvania",
+        "inspo": [
+          "vending_machine",
+          "mars"
+        ],
+        "issue": "391"
+      },
+      {
+        "newId": "vending_machine_with_venus_mars",
+        "by": "@quincylvania",
+        "inspo": [
+          "vending_machine",
+          "venus_mars"
+        ],
+        "issue": "391"
+      },
+      {
         "newId": "book_with_question_mark",
         "by": "@quincylvania",
         "inspo": [
@@ -18084,6 +18102,24 @@
           "briefcase",
           "venus"
         ]
+      },
+      {
+        "newId": "briefcase_with_mars",
+        "by": "@quincylvania",
+        "inspo": [
+          "briefcase",
+          "mars"
+        ],
+        "issue": "391"
+      },
+      {
+        "newId": "briefcase_with_venus_mars",
+        "by": "@quincylvania",
+        "inspo": [
+          "briefcase",
+          "venus_mars"
+        ],
+        "issue": "391"
       },
       {
         "newId": "briefcase_with_wifi",
