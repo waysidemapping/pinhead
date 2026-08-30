@@ -18004,6 +18004,15 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "shopping_bag_with_info_i",
+        "by": "@quincylvania",
+        "inspo": [
+          "shopping_bag",
+          "info_i"
+        ],
+        "issue": "365"
+      },
+      {
         "newId": "shopping_bag_with_question_mark",
         "by": "@quincylvania",
         "inspo": [
