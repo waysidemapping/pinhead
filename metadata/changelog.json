@@ -18481,6 +18481,14 @@
         ]
       },
       {
+        "newId": "briefcase_with_music_notes_eighth",
+        "by": "@quincylvania",
+        "inspo": [
+          "briefcase",
+          "music_notes_eighth"
+        ]
+      },
+      {
         "oldId": "briefcase_with_info_i",
         "newId": "briefcase_with_info_i",
         "edit": "resize",
