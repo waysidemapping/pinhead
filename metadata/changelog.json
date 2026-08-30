@@ -17640,6 +17640,24 @@
         ]
       },
       {
+        "newId": "gasoline_pump_with_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "gasoline_pump",
+          "question_mark"
+        ],
+        "issue": "383"
+      },
+      {
+        "newId": "gasoline_pump_with_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "gasoline_pump",
+          "exclamation_point"
+        ],
+        "issue": "383"
+      },
+      {
         "newId": "globe_gasoline_pump_with_droplet",
         "by": "@quincylvania",
         "inspo": [
