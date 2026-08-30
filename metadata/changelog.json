@@ -17908,6 +17908,30 @@
         "issue": "383"
       },
       {
+        "newId": "shopping_bag_with_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "shopping_bag",
+          "question_mark"
+        ],
+        "issue": [
+          "365",
+          "383"
+        ]
+      },
+      {
+        "newId": "shopping_bag_with_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "shopping_bag",
+          "exclamation_point"
+        ],
+        "issue": [
+          "365",
+          "383"
+        ]
+      },
+      {
         "newId": "vending_machine_with_question_mark",
         "by": "@quincylvania",
         "inspo": [
