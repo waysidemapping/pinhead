@@ -19829,6 +19829,12 @@
         "newId": "book_stack"
       },
       {
+        "oldId": "crab",
+        "newId": "crab",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
         "oldId": "noodle_bowl_and_chopsticks_with_noodles",
         "newId": "noodle_bowl_and_chopsticks_with_noodles",
         "edit": "flip",
