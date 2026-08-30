@@ -18004,6 +18004,39 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "shopping_bag_with_venus",
+        "by": "@quincylvania",
+        "inspo": [
+          "shopping_bag",
+          "venus"
+        ],
+        "issue": "365"
+      },
+      {
+        "newId": "shopping_bag_with_mars",
+        "by": "@quincylvania",
+        "inspo": [
+          "shopping_bag",
+          "venus"
+        ],
+        "issue": [
+          "365",
+          "391"
+        ]
+      },
+      {
+        "newId": "shopping_bag_with_venus_mars",
+        "by": "@quincylvania",
+        "inspo": [
+          "shopping_bag",
+          "venus"
+        ],
+        "issue": [
+          "365",
+          "391"
+        ]
+      },
+      {
         "newId": "shopping_bag_with_info_i",
         "by": "@quincylvania",
         "inspo": [
