@@ -18004,6 +18004,15 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "shopping_bag_with_stardust",
+        "by": "@quincylvania",
+        "inspo": [
+          "shopping_bag",
+          "stardust"
+        ],
+        "issue": "365"
+      },
+      {
         "newId": "shopping_bag_with_wifi",
         "by": "@quincylvania",
         "inspo": [
