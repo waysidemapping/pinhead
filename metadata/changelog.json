@@ -17833,6 +17833,21 @@
         "issue": "383"
       },
       {
+        "newId": "traffic_cone_and_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "traffic_cone_and_exclamation_point",
+          "question_mark"
+        ],
+        "issue": "383"
+      },
+      {
+        "oldId": "traffic_cone_and_exclamation_point",
+        "newId": "traffic_cone_and_exclamation_point",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
         "oldId": "phone_right_with_exclamation_point",
         "newId": "phone_right_beside_exclamation_point",
         "edit": "resize",
@@ -17843,6 +17858,15 @@
         "by": "@quincylvania",
         "inspo": [
           "phone_right_beside_exclamation_point",
+          "question_mark"
+        ],
+        "issue": "383"
+      },
+      {
+        "newId": "spherical_virus_with_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "spherical_virus_with_exclamation_point",
           "question_mark"
         ],
         "issue": "383"
@@ -18316,30 +18340,6 @@
           "outstretched_hand"
         ],
         "issue": "383"
-      },
-      {
-        "newId": "spherical_virus_with_question_mark",
-        "by": "@quincylvania",
-        "inspo": [
-          "spherical_virus_with_exclamation_point",
-          "question_mark"
-        ],
-        "issue": "383"
-      },
-      {
-        "newId": "traffic_cone_and_question_mark",
-        "by": "@quincylvania",
-        "inspo": [
-          "traffic_cone_and_exclamation_point",
-          "question_mark"
-        ],
-        "issue": "383"
-      },
-      {
-        "oldId": "traffic_cone_and_exclamation_point",
-        "newId": "traffic_cone_and_exclamation_point",
-        "edit": "minor",
-        "by": "@quincylvania"
       },
       {
         "newId": "thumbs_down_hand_with_sleeve",
