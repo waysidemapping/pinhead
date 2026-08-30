@@ -17908,6 +17908,102 @@
         "issue": "383"
       },
       {
+        "oldId": "shopping_bag",
+        "newId": "shopping_bag",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_baht",
+        "newId": "shopping_bag_with_baht",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_dollar",
+        "newId": "shopping_bag_with_dollar",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_euro",
+        "newId": "shopping_bag_with_euro",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_peso",
+        "newId": "shopping_bag_with_peso",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_pound",
+        "newId": "shopping_bag_with_pound",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_ruble",
+        "newId": "shopping_bag_with_ruble",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_rupee",
+        "newId": "shopping_bag_with_rupee",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_shekel",
+        "newId": "shopping_bag_with_shekel",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_yen_yuan",
+        "newId": "shopping_bag_with_yen_yuan",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_ampersand",
+        "newId": "shopping_bag_with_ampersand",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_anime_eye_and_eyebrow",
+        "newId": "shopping_bag_with_anime_eye_and_eyebrow",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_arrows_recirculating",
+        "newId": "shopping_bag_with_arrows_recirculating",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_heart",
+        "newId": "shopping_bag_with_heart",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_pawprint",
+        "newId": "shopping_bag_with_pawprint",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "shopping_bag_with_tag",
+        "newId": "shopping_bag_with_tag",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
         "newId": "shopping_bag_with_question_mark",
         "by": "@quincylvania",
         "inspo": [
