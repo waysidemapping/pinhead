@@ -17861,6 +17861,28 @@
         "issue": "383"
       },
       {
+        "oldId": "sea_lion",
+        "newId": "sea_lion",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "sea_lion_and_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "sea_lion",
+          "question_mark"
+        ]
+      },
+      {
+        "newId": "sea_lion_and_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "sea_lion",
+          "exclamation_point"
+        ]
+      },
+      {
         "newId": "flush_curb_with_exclamation_point",
         "by": "@quincylvania",
         "inspo": "flush_curb_with_question_mark",
