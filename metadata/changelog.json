@@ -17970,6 +17970,28 @@
         "issue": "383"
       },
       {
+        "oldId": "bird",
+        "newId": "bird",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "bird_and_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "bird",
+          "question_mark"
+        ]
+      },
+      {
+        "newId": "bird_and_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "bird",
+          "exclamation_point"
+        ]
+      },
+      {
         "oldId": "sea_lion",
         "newId": "sea_lion",
         "edit": "minor",
