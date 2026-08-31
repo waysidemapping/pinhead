@@ -16726,7 +16726,7 @@
         "pr": "429"
       },
       {
-        "newId": "spray_can",
+        "newId": "spray_paint_can",
         "by": [
           "@ooosssay",
           "@quincylvania"
@@ -16735,10 +16735,14 @@
         "pr": "427"
       },
       {
-        "newId": "spray_can_with_spray",
+        "newId": "spray_paint_can_with_spray",
         "by": [
           "@ooosssay",
           "@quincylvania"
+        ],
+        "inspo": [
+          "spray_paint_can",
+          "bear_spray_can_with_spray"
         ],
         "issue": "246",
         "pr": "427"

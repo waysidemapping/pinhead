@@ -1876,13 +1876,22 @@
     "super": "arch_gateway"
   },
   "paint_roller": {
-    "super": "hand_tool"
+    "super": [
+      "hand_tool",
+      "paint"
+    ]
   },
   "paintbrush": {
-    "super": "writing_utensil"
+    "super": [
+      "writing_utensil",
+      "paint"
+    ]
   },
   "palace": {
     "super": "castle"
+  },
+  "palette": {
+    "super": "paint"
   },
   "palm_tree": {
     "super": "tree"
@@ -2577,6 +2586,12 @@
   },
   "spray_can": {
     "super": "container"
+  },
+  "spray_paint_can": {
+    "super": [
+      "spray_can",
+      "paint"
+    ]
   },
   "spring_rider": {
     "super": [
