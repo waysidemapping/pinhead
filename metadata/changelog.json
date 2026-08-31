@@ -17934,6 +17934,14 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "cat_sitting_and_whistle",
+        "by": "@quincylvania",
+        "inspo": [
+          "cat_sitting",
+          "dog_sitting_wearing_collar_and_whistle"
+        ]
+      },
+      {
         "oldId": "wolf_head_and_exclamation_point",
         "newId": "wolf_head_and_exclamation_point",
         "edit": "minor",
