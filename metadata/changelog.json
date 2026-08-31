@@ -17934,6 +17934,12 @@
         "by": "@quincylvania"
       },
       {
+        "oldId": "cat_sitting",
+        "newId": "cat_sitting",
+        "edit": "resize",
+        "by": "@quincylvania"
+      },
+      {
         "newId": "cat_sitting_and_whistle",
         "by": "@quincylvania",
         "inspo": [
