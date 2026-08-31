@@ -17948,6 +17948,22 @@
         ]
       },
       {
+        "newId": "cat_sitting_and_question_mark",
+        "by": "@quincylvania",
+        "inspo": [
+          "cat_sitting",
+          "question_mark"
+        ]
+      },
+      {
+        "newId": "cat_sitting_and_exclamation_point",
+        "by": "@quincylvania",
+        "inspo": [
+          "cat_sitting",
+          "exclamation_point"
+        ]
+      },
+      {
         "oldId": "wolf_head_and_exclamation_point",
         "newId": "wolf_head_and_exclamation_point",
         "edit": "minor",
