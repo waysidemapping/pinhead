@@ -241,6 +241,9 @@
   "bent_tobacco_pipe": {
     "super": "smoking"
   },
+  "bento": {
+    "super": "prepared_food"
+  },
   "bicycle": {
     "commons": "Plain black SVG bicycle icons",
     "super": "vehicle"
@@ -1147,6 +1150,9 @@
   },
   "food_and_drink": {
     "commons": "Plain black SVG food and drink icons"
+  },
+  "food_truck": {
+    "super": "truck"
   },
   "foot": {
     "super": "body_part"
