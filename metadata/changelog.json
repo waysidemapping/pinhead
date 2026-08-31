@@ -16726,6 +16726,24 @@
         "pr": "429"
       },
       {
+        "newId": "spray_can",
+        "by": [
+          "@ooosssay",
+          "@quincylvania"
+        ],
+        "issue": "246",
+        "pr": "427"
+      },
+      {
+        "newId": "spray_can_with_spray",
+        "by": [
+          "@ooosssay",
+          "@quincylvania"
+        ],
+        "issue": "246",
+        "pr": "427"
+      },
+      {
         "newId": "curling_stone",
         "by": "@ooosssay",
         "pr": "331"
