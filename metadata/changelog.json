@@ -16941,15 +16941,116 @@
         "by": "@quincylvania"
       },
       {
-        "oldId": "plane_takeoff_above_ground",
-        "newId": "plane_takeoff_above_ground",
-        "edit": "minor",
-        "by": "@quincylvania"
+        "oldId": "airport_terminal_with_plane_takeoff",
+        "newId": "airport_terminal_with_plane_ascending",
+        "issue": "236"
       },
       {
-        "newId": "plane_takeoff",
+        "newId": "plane_ascending",
         "by": "@quincylvania",
-        "inspo": "plane_takeoff_above_ground"
+        "inspo": "plane_ascending_above_ground",
+        "issue": "236"
+      },
+      {
+        "oldId": "plane_takeoff_above_ground",
+        "newId": "plane_ascending_above_ground",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "236"
+      },
+      {
+        "newId": "plane_ascending_above_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "plane_ascending",
+          "water"
+        ],
+        "issue": "236"
+      },
+      {
+        "newId": "plane_cruising",
+        "by": "@quincylvania",
+        "inspo": "plane_cruising_above_ground",
+        "issue": "236"
+      },
+      {
+        "newId": "plane_cruising_above_ground",
+        "by": "@quincylvania",
+        "inspo": "plane_ascending_above_ground",
+        "issue": "236"
+      },
+      {
+        "newId": "plane_cruising_above_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "plane_cruising",
+          "water"
+        ],
+        "issue": "236"
+      },
+      {
+        "newId": "plane_descending",
+        "by": "@quincylvania",
+        "inspo": "plane_descending_above_ground",
+        "issue": "236"
+      },
+      {
+        "newId": "plane_descending_above_ground",
+        "by": "@quincylvania",
+        "inspo": "plane_ascending_above_ground",
+        "issue": "236",
+        "char": "🛬"
+      },
+      {
+        "newId": "plane_descending_above_water",
+        "by": "@quincylvania",
+        "inspo": [
+          "plane_descending",
+          "water"
+        ],
+        "issue": "236"
+      },
+      {
+        "newId": "seaplane",
+        "by": "@quincylvania",
+        "inspo": "seaplane_above_water",
+        "issue": "236"
+      },
+      {
+        "newId": "seaplane_above_water",
+        "by": "@quincylvania",
+        "inspo": "seaplane_ascending_above_water",
+        "issue": "236"
+      },
+      {
+        "newId": "seaplane_on_water",
+        "by": "@quincylvania",
+        "inspo": "seaplane_above_water",
+        "issue": "236"
+      },
+      {
+        "oldId": "seaplane_takeoff",
+        "newId": "seaplane_ascending",
+        "issue": "236"
+      },
+      {
+        "oldId": "seaplane_takeoff_above_water",
+        "newId": "seaplane_ascending_above_water",
+        "edit": "minor",
+        "by": "@quincylvania",
+        "issue": "236"
+      },
+      {
+        "newId": "seaplane_descending",
+        "by": "@quincylvania",
+        "inspo": "seaplane_ascending",
+        "issue": "236"
+      },
+      {
+        "newId": "seaplane_descending_above_water",
+        "by": "@quincylvania",
+        "inspo": "seaplane_ascending_above_water",
+        "issue": "236"
       },
       {
         "oldId": "conifer_tree_and_oval_broadleaved_tree",
