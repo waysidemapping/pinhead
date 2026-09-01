@@ -16908,6 +16908,104 @@
         ]
       },
       {
+        "oldId": "japanese_teacup_with_steam",
+        "newId": "japanese_teacup_with_steam",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "japanese_teacup",
+        "by": "@quincylvania",
+        "inspo": "japanese_teacup_with_steam"
+      },
+      {
+        "newId": "japanese_teacup_and_wifi",
+        "by": "@quincylvania",
+        "inspo": [
+          "japanese_teacup",
+          "teacup_and_saucer_and_wifi"
+        ]
+      },
+      {
+        "newId": "japanese_teacup_and_pawprint",
+        "by": "@quincylvania",
+        "inspo": [
+          "japanese_teacup",
+          "teacup_and_saucer_and_pawprint"
+        ]
+      },
+      {
+        "oldId": "cup_and_saucer",
+        "newId": "teacup_and_saucer",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "cup_and_saucer_and_wifi",
+        "newId": "teacup_and_saucer_and_wifi",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "oldId": "cup_and_saucer_and_pawprint",
+        "newId": "teacup_and_saucer_and_pawprint",
+        "edit": "minor",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "teacup",
+        "by": "@quincylvania",
+        "inspo": "teacup_and_saucer"
+      },
+      {
+        "newId": "teacup_and_saucer_with_steam",
+        "by": "@quincylvania",
+        "inspo": [
+          "japanese_teacup_with_steam",
+          "teacup_and_saucer"
+        ]
+      },
+      {
+        "newId": "teacup_with_steam",
+        "by": "@quincylvania",
+        "inspo": "teacup_and_saucer_with_steam"
+      },
+      {
+        "oldId": "coffee_mug_with_steam",
+        "newId": "coffee_mug_with_steam",
+        "by": "@quincylvania",
+        "inspo": "japanese_teacup_with_steam"
+      },
+      {
+        "newId": "coffee_mug",
+        "by": "@quincylvania",
+        "inspo": "coffee_mug_with_steam"
+      },
+      {
+        "newId": "coffee_mug_and_saucer",
+        "by": "@quincylvania",
+        "inspo": [
+          "coffee_mug",
+          "teacup_and_saucer"
+        ]
+      },
+      {
+        "newId": "coffee_mug_and_wifi",
+        "by": "@quincylvania",
+        "inspo": [
+          "coffee_mug",
+          "teacup_and_saucer_and_wifi"
+        ]
+      },
+      {
+        "newId": "coffee_mug_and_pawprint",
+        "by": "@quincylvania",
+        "inspo": [
+          "coffee_mug",
+          "teacup_and_saucer_and_pawprint"
+        ]
+      },
+      {
         "oldId": "lattice_tower_with_ball_tip_antenna_on_ground_with_beams",
         "newId": "lattice_tower_with_ball_tip_antenna_on_ground_with_beams",
         "by": "@quincylvania"
