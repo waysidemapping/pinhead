@@ -707,7 +707,10 @@
     "super": "coffee"
   },
   "coffee_mug": {
-    "super": "drink_mug"
+    "super": [
+      "hot_drink_cup",
+      "drink_mug"
+    ]
   },
   "coin": {
     "super": "legal_tender"
@@ -1322,6 +1325,9 @@
   },
   "handled_comb": {
     "super": "comb"
+  },
+  "handled_teacup": {
+    "super": "teacup"
   },
   "handshake": {
     "super": "hand"
@@ -2766,7 +2772,7 @@
   },
   "teacup": {
     "super": [
-      "drink_cup",
+      "hot_drink_cup",
       "tea"
     ]
   },
@@ -2821,7 +2827,7 @@
     "super": "microbiology"
   },
   "to_go_cup": {
-    "super": "drink_cup"
+    "super": "hot_drink_cup"
   },
   "toilet_paper_roll": {
     "super": "paper"

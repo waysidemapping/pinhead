@@ -16923,7 +16923,7 @@
         "by": "@quincylvania",
         "inspo": [
           "japanese_teacup",
-          "teacup_and_saucer_and_wifi"
+          "handled_teacup_and_saucer_and_wifi"
         ]
       },
       {
@@ -16931,44 +16931,44 @@
         "by": "@quincylvania",
         "inspo": [
           "japanese_teacup",
-          "teacup_and_saucer_and_pawprint"
+          "handled_teacup_and_saucer_and_pawprint"
         ]
       },
       {
         "oldId": "cup_and_saucer",
-        "newId": "teacup_and_saucer",
+        "newId": "handled_teacup_and_saucer",
         "edit": "minor",
         "by": "@quincylvania"
       },
       {
         "oldId": "cup_and_saucer_and_wifi",
-        "newId": "teacup_and_saucer_and_wifi",
+        "newId": "handled_teacup_and_saucer_and_wifi",
         "edit": "minor",
         "by": "@quincylvania"
       },
       {
         "oldId": "cup_and_saucer_and_pawprint",
-        "newId": "teacup_and_saucer_and_pawprint",
+        "newId": "handled_teacup_and_saucer_and_pawprint",
         "edit": "minor",
         "by": "@quincylvania"
       },
       {
-        "newId": "teacup",
+        "newId": "handled_teacup",
         "by": "@quincylvania",
-        "inspo": "teacup_and_saucer"
+        "inspo": "handled_teacup_and_saucer"
       },
       {
-        "newId": "teacup_and_saucer_with_steam",
+        "newId": "handled_teacup_and_saucer_with_steam",
         "by": "@quincylvania",
         "inspo": [
           "japanese_teacup_with_steam",
-          "teacup_and_saucer"
+          "handled_teacup_and_saucer"
         ]
       },
       {
-        "newId": "teacup_with_steam",
+        "newId": "handled_teacup_with_steam",
         "by": "@quincylvania",
-        "inspo": "teacup_and_saucer_with_steam"
+        "inspo": "handled_teacup_and_saucer_with_steam"
       },
       {
         "oldId": "coffee_mug_with_steam",
@@ -16986,7 +16986,7 @@
         "by": "@quincylvania",
         "inspo": [
           "coffee_mug",
-          "teacup_and_saucer"
+          "handled_teacup_and_saucer"
         ]
       },
       {
@@ -16994,7 +16994,7 @@
         "by": "@quincylvania",
         "inspo": [
           "coffee_mug",
-          "teacup_and_saucer_and_wifi"
+          "handled_teacup_and_saucer_and_wifi"
         ]
       },
       {
@@ -17002,7 +17002,7 @@
         "by": "@quincylvania",
         "inspo": [
           "coffee_mug",
-          "teacup_and_saucer_and_pawprint"
+          "handled_teacup_and_saucer_and_pawprint"
         ]
       },
       {
