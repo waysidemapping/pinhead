@@ -224,7 +224,10 @@
         "newId": "arrow_right",
         "src": "maki",
         "importBy": "@quincylvania",
-        "char": "→",
+        "char": [
+          "→",
+          "➡️"
+        ],
         "maki": "arrow"
       },
       {
@@ -9159,37 +9162,65 @@
       {
         "newId": "arrow_left",
         "by": "@quincylvania",
-        "inspo": "arrow_right"
+        "inspo": "arrow_right",
+        "char": [
+          "←",
+          "⬅️"
+        ]
       },
       {
         "newId": "arrow_up",
         "by": "@quincylvania",
-        "inspo": "arrow_right"
+        "inspo": "arrow_right",
+        "char": [
+          "↑",
+          "⬆️"
+        ]
       },
       {
         "newId": "arrow_down",
         "by": "@quincylvania",
-        "inspo": "arrow_right"
+        "inspo": "arrow_right",
+        "char": [
+          "↓",
+          "⬇️"
+        ]
       },
       {
         "newId": "arrow_bottom_left",
         "by": "@quincylvania",
-        "inspo": "arrow_right"
+        "inspo": "arrow_right",
+        "char": [
+          "↙",
+          "↙️"
+        ]
       },
       {
         "newId": "arrow_bottom_right",
         "by": "@quincylvania",
-        "inspo": "arrow_right"
+        "inspo": "arrow_right",
+        "char": [
+          "↘",
+          "↘️"
+        ]
       },
       {
         "newId": "arrow_top_left",
         "by": "@quincylvania",
-        "inspo": "arrow_right"
+        "inspo": "arrow_right",
+        "char": [
+          "↖",
+          "↖️"
+        ]
       },
       {
         "newId": "arrow_top_right",
         "by": "@quincylvania",
-        "inspo": "arrow_right"
+        "inspo": "arrow_right",
+        "char": [
+          "↗",
+          "↗️"
+        ]
       },
       {
         "newId": "arrow_down_from_up_bracket",
@@ -13357,6 +13388,10 @@
         "newId": "arrows_left_right",
         "by": "@quincylvania",
         "inspo": "arrows_left_right_above_water",
+        "char": [
+          "↔",
+          "↔️"
+        ],
         "opentrailmap": "access_point-minor"
       },
       {
