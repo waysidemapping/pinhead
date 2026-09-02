@@ -5094,6 +5094,7 @@
         "newId": "recycling_symbol",
         "src": "nps",
         "importBy": "@quincylvania",
+        "char": "♻️",
         "maki": "recycling",
         "nps": "recycling",
         "opengemeenten": "Recycle",
@@ -9474,6 +9475,7 @@
         "src": "healthicons",
         "importBy": "@quincylvania",
         "issue": "107",
+        "char": "🦠",
         "healthicons": "body/bacteria"
       },
       {
