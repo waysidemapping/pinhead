@@ -2556,6 +2556,7 @@
         "newId": "grapes",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🍇",
         "temaki": "grapes"
       },
       {
@@ -3015,6 +3016,7 @@
         "newId": "jewel",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "💎",
         "osmic": "shop/jewellery",
         "temaki": "jewelry_store"
       },
@@ -5094,6 +5096,7 @@
         "newId": "recycling_symbol",
         "src": "nps",
         "importBy": "@quincylvania",
+        "char": "♻️",
         "maki": "recycling",
         "nps": "recycling",
         "opengemeenten": "Recycle",
@@ -9474,6 +9477,7 @@
         "src": "healthicons",
         "importBy": "@quincylvania",
         "issue": "107",
+        "char": "🦠",
         "healthicons": "body/bacteria"
       },
       {
@@ -12678,7 +12682,8 @@
         "newId": "trophy_with_star",
         "by": "@ooosssay",
         "inspo": "star",
-        "pr": "185"
+        "pr": "185",
+        "char": "🏆",
       },
       {
         "newId": "banana",
@@ -13809,6 +13814,7 @@
       {
         "oldId": "gasoline_pump",
         "newId": "gasoline_pump",
+        "char": "⛽",
         "by": "@quincylvania"
       },
       {
