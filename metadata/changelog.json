@@ -19104,6 +19104,19 @@
         "newId": "noodle_bowl_and_chopsticks_with_noodles",
         "edit": "flip",
         "by": "@quincylvania"
+      },
+      {
+        "newId": "book_simplified_in_slot",
+        "by": [
+          "@matkoniecz",
+          "@ooosssay",
+          "@quincylvania"
+        ],
+        "inspo": [
+          "book_with_bookmark_in_slot"
+        ],
+        "issue": "353",
+        "pr": "442"
       }
     ]
   }
