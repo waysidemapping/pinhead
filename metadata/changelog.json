@@ -2430,6 +2430,7 @@
         "newId": "gas_flame",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🔥",
         "temaki": "gas"
       },
       {
@@ -6442,7 +6443,8 @@
         "newId": "trumpet",
         "src": "osmcarto",
         "importBy": "@quincylvania",
-        "osmcarto": "shop/musical_instrument"
+        "osmcarto": "shop/musical_instrument",
+        "char": "🎺",
       },
       {
         "newId": "tshirt",
@@ -8682,6 +8684,7 @@
         "srcBy": "@viglino",
         "importBy": "@quincylvania",
         "issue": "81",
+        "char": "👑",
         "viglino": "princesse/svg/couronne"
       },
       {
@@ -8808,6 +8811,7 @@
         "srcBy": "@viglino",
         "importBy": "@quincylvania",
         "issue": "81",
+        "char": "💣",
         "viglino": "pirate/svg/arme-bombe"
       },
       {
@@ -9258,7 +9262,8 @@
       {
         "newId": "piano_keys",
         "by": "@ooosssay",
-        "pr": "103"
+        "pr": "103",
+        "char": "🎹"
       },
       {
         "newId": "hand_dropping_circles",
@@ -11041,6 +11046,7 @@
           "141",
           "50"
         ],
+        "char": "💬",
         "opengemeenten": "Chat"
       },
       {
@@ -11121,6 +11127,7 @@
         "src": "opengemeenten",
         "importBy": "@quincylvania",
         "issue": "141",
+        "char": "🤝",
         "opengemeenten": "Ondernemen"
       },
       {
@@ -11173,6 +11180,7 @@
         "src": "opengemeenten",
         "importBy": "@quincylvania",
         "issue": "141",
+        "char": "💉",
         "healthicons": "devices/syringe",
         "opengemeenten": "Vaccinatie"
       },
@@ -12600,19 +12608,22 @@
       {
         "newId": "flying_saucer",
         "by": "@ooosssay",
-        "pr": "185"
+        "pr": "185",
+        "char": "🛸"
       },
       {
         "newId": "spooky_ghost",
         "by": "@ooosssay",
-        "pr": "185"
+        "pr": "185",
+        "char": "👻"
       },
       {
         "newId": "poultry_drumstick",
         "by": "@ooosssay",
         "inspo": "bone",
         "issue": "23",
-        "pr": "185"
+        "pr": "185",
+        "char": "🍗"
       },
       {
         "newId": "chip_bag",
@@ -14904,6 +14915,7 @@
         "src": "openhistoricalmap",
         "importBy": "@quincylvania",
         "issue": "233",
+        "char": "🎙️",
         "openhistoricalmap": "studio"
       },
       {
