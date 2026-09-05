@@ -20193,6 +20193,14 @@
         "issue": "307"
       },
       {
+        "newId": "person_walking_on_rope",
+        "by": "@matkoniecz",
+        "inspo": [
+          "person_walking_in_water"
+        ],
+        "issue": "350"
+      },
+      {
         "newId": "pixel_international_wheelchair_symbol",
         "by": "@quincylvania",
         "inspo": "international_wheelchair_symbol"
