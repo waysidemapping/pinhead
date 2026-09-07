@@ -103,11 +103,17 @@
       "portal"
     ]
   },
+  "archery": {
+    "super": "sport"
+  },
   "archery_arrow": {
-    "super": "weapon"
+    "super": "archery"
   },
   "archery_bow": {
-    "super": "weapon"
+    "super": [
+      "archery",
+      "ranged_weapon"
+    ]
   },
   "arm": {
     "super": "body_part"
@@ -1452,7 +1458,7 @@
     "super": "bird"
   },
   "gun": {
-    "super": "weapon"
+    "super": "ranged_weapon"
   },
   "hair_dryer": {
     "super": [
@@ -2464,6 +2470,9 @@
   },
   "raised_curb": {
     "super": "curb"
+  },
+  "ranged_weapon": {
+    "super": "weapon"
   },
   "ranger_hat": {
     "super": "hat"
