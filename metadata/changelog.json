@@ -16870,6 +16870,18 @@
         "by": "@quincylvania"
       },
       {
+        "newId": "horse",
+        "by": "@quincylvania",
+        "inspo": "person_riding_horse",
+        "issue": "12"
+      },
+      {
+        "newId": "horse_running",
+        "by": "@quincylvania",
+        "inspo": "person_jockeying_horse_running",
+        "issue": "12"
+      },
+      {
         "newId": "horse_high_stepping",
         "src": "americana",
         "srcBy": "@wmisener",
