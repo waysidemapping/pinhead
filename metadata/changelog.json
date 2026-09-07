@@ -17323,13 +17323,17 @@
       {
         "oldId": "person_standing",
         "newId": "person_standing",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "issue": "448"
       },
       {
         "oldId": "person_with_droplets",
         "newId": "person_standing_with_droplets",
         "by": "@quincylvania",
-        "issue": "230"
+        "issue": [
+          "230",
+          "448"
+        ]
       },
       {
         "newId": "person_standing_with_heart",
@@ -17342,37 +17346,44 @@
       {
         "oldId": "person_with_open_arms",
         "newId": "person_standing_open_armed",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "issue": "448"
       },
       {
         "oldId": "person_reaching_up",
         "newId": "person_standing_reaching_up",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "issue": "448"
       },
       {
         "oldId": "womens_restroom_symbol",
         "newId": "person_standing_wearing_dress",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "issue": "448"
       },
       {
         "oldId": "mens_restroom_symbol",
         "newId": "broadshouldered_person_standing",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "issue": "448"
       },
       {
         "oldId": "womens_and_mens_restroom_symbol",
         "newId": "person_standing_wearing_dress_beside_broadshouldered_person_standing",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "issue": "448"
       },
       {
         "oldId": "womens_and_mens_separate_restrooms_symbol",
         "newId": "person_standing_wearing_dress_beside_divider_beside_broadshouldered_person_standing",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "issue": "448"
       },
       {
         "oldId": "family_restroom_symbol",
         "newId": "person_standing_wearing_dress_beside_child_standing_beside_broadshouldered_person_standing",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "issue": "448"
       },
       {
         "newId": "person_sitting_in_seat_beside_person_sitting_in_seat",
