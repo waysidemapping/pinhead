@@ -17386,6 +17386,15 @@
         "issue": "448"
       },
       {
+        "oldId": "person_aiming_archery_bow",
+        "newId": "person_standing_aiming_archery_bow"
+      },
+      {
+        "newId": "person_aiming_archery_bow",
+        "by": "@quincylvania",
+        "inspo": "person_standing_aiming_archery_bow"
+      },
+      {
         "newId": "person_sitting_in_seat_beside_person_sitting_in_seat",
         "by": "@quincylvania",
         "inspo": "person_sitting_in_seat"
@@ -20528,10 +20537,6 @@
       {
         "oldId": "pregnant_person",
         "newId": "pregnant_person_standing"
-      },
-      {
-        "oldId": "person_aiming_archery_bow",
-        "newId": "person_standing_aiming_archery_bow"
       },
       {
         "oldId": "person_holding_shopping_bags_walking",
