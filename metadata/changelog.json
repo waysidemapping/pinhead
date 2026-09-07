@@ -20503,6 +20503,10 @@
         "newId": "pixel_person"
       },
       {
+        "oldId": "people_and_person_pointing",
+        "newId": "two_people_standing_beside_person_standing_pointing"
+      },
+      {
         "oldId": "overweight_person",
         "newId": "overweight_person_standing"
       },
