@@ -17276,9 +17276,13 @@
         "opengemeenten": "Bomen"
       },
       {
-        "newId": "horizontal_bar",
+        "oldId": "person_hanging_from_horizontal_bar",
+        "newId": "person_hanging_from_pull_up_bar"
+      },
+      {
+        "newId": "pull_up_bar",
         "by": "@quincylvania",
-        "inspo": "person_hanging_from_horizontal_bar"
+        "inspo": "person_hanging_from_pull_up_bar"
       },
       {
         "oldId": "floor_lamp",
