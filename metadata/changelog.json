@@ -16945,18 +16945,18 @@
         ]
       },
       {
-        "newId": "bridge_shape_diagonal",
+        "newId": "bridge_shape_bottom_left_top_right",
         "by": "@quincylvania"
       },
       {
-        "newId": "bridge_shape_horizontal",
+        "newId": "bridge_shape_left_right",
         "by": "@quincylvania",
-        "inspo": "bridge_shape_diagonal"
+        "inspo": "bridge_shape_bottom_left_top_right"
       },
       {
-        "newId": "bridge_shape_vertical",
+        "newId": "bridge_shape_up_down",
         "by": "@quincylvania",
-        "inspo": "bridge_shape_diagonal"
+        "inspo": "bridge_shape_bottom_left_top_right"
       },
       {
         "newId": "bridge_in_water",
