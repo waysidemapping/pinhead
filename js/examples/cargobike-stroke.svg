@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 17 17"
+   width="17"
+   height="17"
+   version="1.1"
+   id="svg11"
+   sodipodi:docname="cargobike-stroke.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview13"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="43.56652"
+     inkscape:cx="6.1170826"
+     inkscape:cy="10.570043"
+     inkscape:window-width="2000"
+     inkscape:window-height="1248"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg11" />
+  <defs
+     id="defs5">
+    <clipPath
+       id="stroke-clip">
+      <path
+         d="M-1 -1V16H16V-16Z M0 0 M5.5 3C5.22 3 5 3.22 5 3.5C5 3.78 5.22 4 5.5 4H6.14L7.81 9H6.81L5.77 5.92C5.91 5.83 6 5.67 6 5.5C6 5.22 5.78 5 5.5 5H5H4C3.72 5 3.5 5.22 3.5 5.5C3.5 5.78 3.72 6 4 6H4.69L6.05 9.72C6.14 9.89 6.31 10 6.5 10h2h1h1c0.19 0 0.36 -0.11 0.45 -0.27l2.02 -3C13.12 6.43 12.94 6.07 12.62 6.01L7.52 4.99L6.97 3.34C6.91 3.14 6.72 3 6.5 3Zm-3 2.99C1.12 5.99 0 7.12 0 8.5C0 9.88 1.12 11.01 2.5 11.01C3.88 11.01 5 9.88 5 8.5C5 7.12 3.88 5.99 2.5 5.99Zm0 0.93c0.87 0 1.57 0.7 1.57 1.58c0 0.88 -0.7 1.58 -1.57 1.58C1.63 10.08 0.93 9.38 0.93 8.5C0.93 7.62 1.63 6.92 2.5 6.92ZM13.5 8C12.68 8 12 8.68 12 9.51c0 0.83 0.68 1.5 1.5 1.5c0.82 0 1.5 -0.68 1.5 -1.5C15 8.68 14.32 8 13.5 8Zm0 0.81c0.39 0 0.69 0.31 0.69 0.7c0 0.39 -0.31 0.7 -0.69 0.7c-0.39 0 -0.69 -0.31 -0.69 -0.7c0 -0.39 0.31 -0.7 0.69 -0.7z"
+         clip-rule="evenodd"
+         fill="black"
+         id="path2" />
+    </clipPath>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4745"
+       x="-0.15511711"
+       y="-0.29048148"
+       width="1.3102342"
+       height="1.580963">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.55281525"
+         id="feGaussianBlur4747" />
+    </filter>
+  </defs>
+  <path
+     clip-path="url(#stroke-clip)"
+     fill="none"
+     stroke-linejoin="round"
+     stroke="#fff"
+     stroke-width="2"
+     d="M 5.5,3 C 5.22,3 5,3.22 5,3.5 5,3.78 5.22,4 5.5,4 h 0.64 l 1.67,5 h -1 L 5.77,5.92 C 5.91,5.83 6,5.67 6,5.5 6,5.22 5.78,5 5.5,5 H 5 4 C 3.72,5 3.5,5.22 3.5,5.5 3.5,5.78 3.72,6 4,6 H 4.69 L 6.05,9.72 C 6.14,9.89 6.31,10 6.5,10 h 2 1 1 c 0.19,0 0.36,-0.11 0.45,-0.27 l 2.02,-3 C 13.12,6.43 12.94,6.07 12.62,6.01 L 7.52,4.99 6.97,3.34 C 6.91,3.14 6.72,3 6.5,3 Z m -3,2.99 C 1.12,5.99 0,7.12 0,8.5 0,9.88 1.12,11.01 2.5,11.01 3.88,11.01 5,9.88 5,8.5 5,7.12 3.88,5.99 2.5,5.99 Z m 0,0.93 c 0.87,0 1.57,0.7 1.57,1.58 0,0.88 -0.7,1.58 -1.57,1.58 -0.87,0 -1.57,-0.7 -1.57,-1.58 0,-0.88 0.7,-1.58 1.57,-1.58 z M 13.5,8 C 12.68,8 12,8.68 12,9.51 c 0,0.83 0.68,1.5 1.5,1.5 0.82,0 1.5,-0.68 1.5,-1.5 C 15,8.68 14.32,8 13.5,8 Z m 0,0.81 c 0.39,0 0.69,0.31 0.69,0.7 0,0.39 -0.31,0.7 -0.69,0.7 -0.39,0 -0.69,-0.31 -0.69,-0.7 0,-0.39 0.31,-0.7 0.69,-0.7 z"
+     id="path7"
+     style="mix-blend-mode:normal;stroke:#ff2929;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal;filter:url(#filter4745)"
+     transform="translate(1,1)" />
+  <path
+     d="M5.5 3C5.22 3 5 3.22 5 3.5C5 3.78 5.22 4 5.5 4H6.14L7.81 9H6.81L5.77 5.92C5.91 5.83 6 5.67 6 5.5C6 5.22 5.78 5 5.5 5H5H4C3.72 5 3.5 5.22 3.5 5.5C3.5 5.78 3.72 6 4 6H4.69L6.05 9.72C6.14 9.89 6.31 10 6.5 10h2h1h1c0.19 0 0.36 -0.11 0.45 -0.27l2.02 -3C13.12 6.43 12.94 6.07 12.62 6.01L7.52 4.99L6.97 3.34C6.91 3.14 6.72 3 6.5 3Zm-3 2.99C1.12 5.99 0 7.12 0 8.5C0 9.88 1.12 11.01 2.5 11.01C3.88 11.01 5 9.88 5 8.5C5 7.12 3.88 5.99 2.5 5.99Zm0 0.93c0.87 0 1.57 0.7 1.57 1.58c0 0.88 -0.7 1.58 -1.57 1.58C1.63 10.08 0.93 9.38 0.93 8.5C0.93 7.62 1.63 6.92 2.5 6.92ZM13.5 8C12.68 8 12 8.68 12 9.51c0 0.83 0.68 1.5 1.5 1.5c0.82 0 1.5 -0.68 1.5 -1.5C15 8.68 14.32 8 13.5 8Zm0 0.81c0.39 0 0.69 0.31 0.69 0.7c0 0.39 -0.31 0.7 -0.69 0.7c-0.39 0 -0.69 -0.31 -0.69 -0.7c0 -0.39 0.31 -0.7 0.69 -0.7z"
+     id="path4739"
+     transform="translate(1 1)" />
+</svg>
