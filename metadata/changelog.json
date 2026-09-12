@@ -461,6 +461,7 @@
         "newId": "bed",
         "src": "osmcarto",
         "importBy": "@quincylvania",
+        "char": "🛏️",
         "osmcarto": "shop/bed"
       },
       {
@@ -595,6 +596,7 @@
         "newId": "bicyclist",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🚴",
         "maki": "bicycle-share",
         "nps": "bicycle-trail"
       },
@@ -784,6 +786,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "💼",
         "maki": "suitcase",
         "temaki": "briefcase"
       },
@@ -976,6 +979,7 @@
         "newId": "camera",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "📷",
         "maki": "attraction",
         "nps": "photography",
         "openhistoricalmap": "photo",
@@ -1448,6 +1452,7 @@
         "newId": "cocktail",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🍸",
         "maki": "bar",
         "openhistoricalmap": "bar",
         "osmcarto": "amenity/bar",
@@ -2006,6 +2011,7 @@
         "newId": "ear",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "👂",
         "healthicons": "body/ear",
         "temaki": "ear"
       },
@@ -2019,6 +2025,7 @@
         "newId": "ear_with_hearing_aid",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🦻",
         "osmcarto": "shop/hearing_aids",
         "temaki": "hearing_aid"
       },
@@ -2393,6 +2400,7 @@
         "newId": "fountain_from_fountain_basin",
         "by": "@quincylvania",
         "inspo": "fountain_from_water",
+        "char": "⛲",
         "osmcarto": "amenity/fountain"
       },
       {
@@ -2532,6 +2540,7 @@
         "newId": "golfer",
         "src": "maki",
         "importBy": "@quincylvania",
+        "char": "🏌️",
         "maki": "golf",
         "nps": "golfing"
       },
@@ -12088,11 +12097,11 @@
         "newId": "sauvastika",
         "by": "@ooosssay",
         "pr": "163",
+        "sensitive": "hate",
         "char": [
           "卍",
           "࿖"
-        ],
-        "sensitive": "hate"
+        ]
       },
       {
         "newId": "sauvastika_with_dots",
@@ -12100,18 +12109,18 @@
           "@ooosssay",
           "@quincylvania"
         ],
-        "char": "࿘",
-        "sensitive": "hate"
+        "sensitive": "hate",
+        "char": "࿘"
       },
       {
         "newId": "swastika",
         "by": "@ooosssay",
         "pr": "163",
+        "sensitive": "hate",
         "char": [
           "卐",
           "࿕"
-        ],
-        "sensitive": "hate"
+        ]
       },
       {
         "newId": "swastika_with_dots",
@@ -12119,8 +12128,8 @@
           "@ooosssay",
           "@quincylvania"
         ],
-        "char": "࿗",
-        "sensitive": "hate"
+        "sensitive": "hate",
+        "char": "࿗"
       },
       {
         "newId": "pixel_peso",
