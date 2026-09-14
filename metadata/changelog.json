@@ -361,6 +361,7 @@
         "newId": "balloon",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🎈",
         "temaki": "balloon"
       },
       {
@@ -633,6 +634,7 @@
         "src": "opentrailmap",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "char": "🐦",
         "opentrailmap": "wildlife_refuge"
       },
       {
@@ -2520,6 +2522,7 @@
         "newId": "goggles",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🥽",
         "temaki": "tanning2"
       },
       {
@@ -2653,6 +2656,7 @@
         "newId": "hand",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "✋",
         "temaki": "hand"
       },
       {
@@ -3765,6 +3769,7 @@
         "newId": "mountain",
         "by": "@quincylvania",
         "inspo": "mountain_with_greek_cross",
+        "char": "⛰️",
         "osmic": "nature/peak"
       },
       {
@@ -4947,6 +4952,7 @@
         "newId": "purse",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "👛",
         "temaki": "handbag"
       },
       {
@@ -5522,7 +5528,8 @@
       {
         "newId": "skull",
         "by": "@quincylvania",
-        "inspo": "skull_with_x_oblique"
+        "inspo": "skull_with_x_oblique",
+        "char": "💀"
       },
       {
         "newId": "skull_with_x_oblique",
@@ -5609,6 +5616,7 @@
         "newId": "snowboarder",
         "src": "nps",
         "importBy": "@quincylvania",
+        "char": "🏂",
         "nps": "snowboarding",
         "temaki": "snowboarding"
       },
@@ -6906,6 +6914,7 @@
         "newId": "window",
         "src": "temaki",
         "importBy": "@quincylvania",
+        "char": "🪟",
         "temaki": "window"
       },
       {
@@ -8214,7 +8223,8 @@
       {
         "newId": "person_climbing",
         "by": "@quincylvania",
-        "inspo": "person_climbing_with_climbing_rope"
+        "inspo": "person_climbing_with_climbing_rope",
+        "char": "🧗"
       },
       {
         "newId": "bus_within_guideway",
@@ -8781,7 +8791,8 @@
       {
         "newId": "butterfly",
         "by": "@quincylvania",
-        "inspo": "butterfly_with_stars_and_dots"
+        "inspo": "butterfly_with_stars_and_dots",
+        "char": "🦋"
       },
       {
         "newId": "sailing_ship_in_water",
@@ -9489,6 +9500,7 @@
         "src": "healthicons",
         "importBy": "@quincylvania",
         "issue": "107",
+        "char": "🦟",
         "healthicons": "zoonoses/mosquito"
       },
       {
@@ -9547,6 +9559,7 @@
         "src": "healthicons",
         "importBy": "@quincylvania",
         "issue": "107",
+        "char": "🧬",
         "healthicons": "body/dna"
       },
       {
@@ -9646,6 +9659,7 @@
         "src": "healthicons",
         "importBy": "@quincylvania",
         "issue": "107",
+        "char": "🦵",
         "healthicons": "body/leg"
       },
       {
@@ -14919,7 +14933,8 @@
     "iconChanges": [
       {
         "newId": "canoe",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "char": "🛶"
       },
       {
         "newId": "canoe_on_water",
@@ -16527,7 +16542,8 @@
         "inspo": [
           "neutral_face_in_circle_outline",
           "happy_face_in_circle_outline"
-        ]
+        ],
+        "char": "☺"
       },
       {
         "newId": "smiling_face_with_eyeglasses_in_circle_outline",
@@ -16816,7 +16832,8 @@
         "newId": "bento",
         "by": "@ooosssay",
         "issue": "352",
-        "pr": "426"
+        "pr": "426",
+        "char": "🍱"
       },
       {
         "newId": "food_truck",
@@ -16849,7 +16866,8 @@
       {
         "newId": "curling_stone",
         "by": "@ooosssay",
-        "pr": "331"
+        "pr": "331",
+        "char": "🥌"
       },
       {
         "newId": "tennis_ball",
@@ -19647,7 +19665,8 @@
       {
         "newId": "keyboard",
         "by": "@quincylvania",
-        "inspo": "phone_down_above_keyboard"
+        "inspo": "phone_down_above_keyboard",
+        "char": "⌨️"
       },
       {
         "newId": "keyboard_in_rectangle",
@@ -19920,7 +19939,8 @@
       {
         "newId": "table_tennis_paddle_and_ball",
         "by": "@quincylvania",
-        "inspo": "table_tennis_paddle"
+        "inspo": "table_tennis_paddle",
+        "char": "🏓"
       },
       {
         "oldId": "stomach",
