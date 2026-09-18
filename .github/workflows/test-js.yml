@@ -1,0 +1,16 @@
+name: Run JS Tests
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '25.x'
+    - run: npm --prefix js i
+    - run: npm --prefix js test
+
