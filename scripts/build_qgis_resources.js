@@ -1,4 +1,4 @@
-import { execSync } from "child_process";
+import { execSync, spawnSync } from "child_process";
 import {
   readFileSync,
   existsSync,
@@ -37,12 +37,15 @@ copyFileSync("LICENSE", join(collectionDir, `LICENSE`));
 copyTemplateFiles("qgis_resources_repo_template", outputDir);
 
 function downloadPackage(spec) {
-  const file = execSync(`npm pack "${spec}" --silent`, {
+  const packResult = spawnSync("npm", ["pack", spec, "--silent"], {
     encoding: "utf8",
-  }).trim();
+  });
+  if (packResult.status !== 0) throw new Error(packResult.stderr);
+  const file = basename(packResult.stdout.trim());
   const folderName = file.replace(/\.tgz$/, "");
 
-  execSync(`tar -xzf "${file}"`, { stdio: "inherit" });
+  const tarResult = spawnSync("tar", ["-xzf", file], { stdio: "inherit" });
+  if (tarResult.status !== 0) throw new Error("tar extraction failed");
 
   if (!existsSync("package"))
     throw new Error("package/ folder not found after extraction.");
@@ -60,7 +63,7 @@ function downloadLegacyIcons(majorVersion, targetDir) {
       : packageName + "@^" + majorVersion;
   const folderName = downloadPackage(spec);
 
-  const iconDir = join(folderName, "dist", "icons");
+  const iconDir = join(basename(folderName), "dist", "icons");
   if (!existsSync(iconDir))
     throw new Error(`dist/icons not found in ${folderName}`);
 
@@ -92,7 +95,7 @@ function copySvgs(sourceDir, destDir, majorVersion) {
         '<path fill="param(fill) #888" stroke="param(outline) #000" stroke-width="param(outline-width) 0" fill-opacity="param(fill-opacity) 1" stroke-opacity="param(outline-opacity) 1" ',
       );
       writeFileSync(
-        join(destDir, filename) + `.v${majorVersion}.svg`,
+        join(destDir, basename(filename)) + `.v${majorVersion}.svg`,
         svgString,
       );
     }
@@ -106,7 +109,7 @@ function copyTemplateFiles(sourceDir, destDir) {
   };
   const entries = readdirSync(sourceDir, { withFileTypes: true });
   for (const entry of entries) {
-    const fullPath = join(sourceDir, entry.name);
+    const fullPath = join(sourceDir, basename(entry.name));
     if (entry.isFile()) {
       if (
         [".py", ".txt", ".md", ".ini"].includes(extname(fullPath).toLowerCase())
@@ -115,9 +118,9 @@ function copyTemplateFiles(sourceDir, destDir) {
         for (const placeholder in placeholderMap) {
           string = string.replaceAll(placeholder, placeholderMap[placeholder]);
         }
-        writeFileSync(join(destDir, entry.name), string);
+        writeFileSync(join(destDir, basename(entry.name)), string);
       } else {
-        copyFileSync(fullPath, join(destDir, entry.name));
+        copyFileSync(fullPath, join(destDir, basename(entry.name)));
       }
     }
   }
