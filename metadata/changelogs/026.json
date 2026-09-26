@@ -212,6 +212,45 @@
       "americana": "poi_horse"
     },
     {
+      "newId": "phone_top_right_and_exclamation_point",
+      "by": [
+        "@Geo-2695",
+        "@quincylvania"
+      ],
+      "inspo": [
+        "phone_top_right",
+        "exclamation_point"
+      ],
+      "pr": "470"
+    },
+    {
+      "newId": "phone_top_right_and_question_mark",
+      "by": "@quincylvania",
+      "inspo": [
+        "phone_top_right_and_exclamation_point",
+        "question_mark"
+      ],
+      "issue": "383"
+    },
+    {
+      "oldId": "phone_top_right_with_plus",
+      "newId": "phone_top_right_and_plus",
+      "by": "@quincylvania"
+    },
+    {
+      "newId": "phone_top_right_and_minus",
+      "by": "@quincylvania",
+      "inspo": "phone_top_right_and_plus"
+    },
+    {
+      "newId": "phone_bottom_right_and_minus",
+      "by": "@quincylvania",
+      "inspo": [
+        "phone_bottom_right",
+        "phone_top_right_and_minus"
+      ]
+    },
+    {
       "oldId": "spoon_and_fork",
       "newId": "spoon_beside_fork"
     },
@@ -1267,7 +1306,7 @@
     },
     {
       "oldId": "phone_top_right_with_greek_cross",
-      "newId": "phone_top_right_with_greek_cross",
+      "newId": "phone_top_right_and_greek_cross",
       "edit": "minor",
       "by": "@quincylvania",
       "issue": "258"
