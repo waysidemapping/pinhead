@@ -81,6 +81,9 @@
   "amphitheater": {
     "super": "theater"
   },
+  "amphora": {
+    "super": "vase"
+  },
   "amusement_ride": {
     "super": "vehicle"
   },
@@ -1477,9 +1480,6 @@
   },
   "gravestone": {
     "super": "memorial_stone"
-  },
-  "grecian_vase": {
-    "super": "vase"
   },
   "greek_cross": {
     "super": "christian_cross"

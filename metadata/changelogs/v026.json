@@ -3230,6 +3230,10 @@
       "newId": "bent_tobacco_pipe"
     },
     {
+      "oldId": "grecian_vase",
+      "newId": "amphora"
+    },
+    {
       "oldId": "bowling_pin",
       "newId": "bowling_pin_top_right"
     },
