@@ -106,7 +106,7 @@ async function validateChangelogs(srcChangelogsPattern, destChangelogPath) {
   const iconsById = {};
 
   const files = globSync(srcChangelogsPattern);
-  files.sort((f1, f2) => parseInt(parse(f1).name) - parseInt(parse(f2).name));
+  files.sort((f1, f2) => parseInt(parse(f1).name.slice(1)) - parseInt(parse(f2).name.slice(1)));
 
   const changelogsOut = [];
 
