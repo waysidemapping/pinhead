@@ -350,8 +350,7 @@ async function validateIconChange(iconChange, versionChangelog, iconsById) {
 }
 
 function printTextForChangelog(changelog) {
-  const newV = changelog.majorVersion;
-  console.log(`## [${version}] - ${changelog.date}`);
+  console.log(`## [${changelog.majorVersion}] - ${changelog.date}`);
   console.log("");
   const changelogHtml = describer.getChangelogBodyHtml(changelog);
   const changelogMarkdown = turndownService.turndown(changelogHtml);
@@ -362,7 +361,6 @@ function getSvg(svgPath) {
   if (!svgPromisesByPath.has(svgPath)) {
     svgPromisesByPath.set(svgPath, readFile(svgPath, "utf8"));
   }
-
   return svgPromisesByPath.get(svgPath);
 }
 
@@ -373,7 +371,6 @@ function getRasterBuffer(svgPath, svg) {
       sharp(Buffer.from(svg)).resize(60, 60).ensureAlpha().raw().toBuffer(),
     );
   }
-
   return rasterBufferPromisesBySvgPath.get(svgPath);
 }
 
