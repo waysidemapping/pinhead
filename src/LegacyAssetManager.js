@@ -1,5 +1,12 @@
 import { execFileSync } from "child_process";
-import { existsSync, rmSync, mkdirSync, renameSync, copyFileSync } from "fs";
+import {
+  existsSync,
+  rmSync,
+  mkdirSync,
+  renameSync,
+  copyFileSync,
+  readFileSync,
+} from "fs";
 import { join } from "path";
 
 const packageName = "@waysidemapping/pinhead";
@@ -54,9 +61,14 @@ function downloadLegacyIcons(
     throw new Error(`dist/icons not found in ${folderName}`);
 
   execFileSync("cp", ["-r", `${iconDir}/.`, targetDir]);
+
+  // TODO: remove this line after publishing v26 on npm
   execFileSync("cp", ["-r", `${iconDir}/.`, join(docsDir, "latest")]);
 
   if (isCurrentMajorVersion) {
+    const latestDir = join(docsDir, "latest");
+    execFileSync("cp", ["-r", `${iconDir}/.`, latestDir]);
+
     copyFileSync(
       join(folderName, "package.json"),
       join(docsDir, "package.json"),
@@ -66,6 +78,24 @@ function downloadLegacyIcons(
         join(folderName, "dist/changelog.json"),
         join(docsDir, "changelog.json"),
       );
+    if (existsSync(join(folderName, "dist/id_upgrades.json"))) {
+      copyFileSync(
+        join(folderName, "dist/id_upgrades.json"),
+        join(docsDir, "id_upgrades.json"),
+      );
+
+      const idUpgradePaths = JSON.parse(
+        readFileSync(join(docsDir, "id_upgrades.json")),
+      );
+      for (const historicalId in idUpgradePaths) {
+        const latestId = idUpgradePaths[historicalId];
+        copyFileSync(
+          join(latestDir, `${latestId}.svg`),
+          join(latestDir, `${historicalId}.svg`),
+        );
+      }
+    }
+
     if (existsSync(join(folderName, "dist/external_sources.json")))
       copyFileSync(
         join(folderName, "dist/external_sources.json"),

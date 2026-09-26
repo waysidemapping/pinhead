@@ -18,12 +18,13 @@ Visiting [pinhead.ink](https://pinhead.ink) is the best way to browse the icons.
 
 You can get the latest release as a static archive using the `download` link on [pinhead.ink](https://pinhead.ink). The compressed directory is <2 MB. You can also browse [past versions](https://github.com/waysidemapping/pinhead/releases). Each release contains the following files:
 
-- `dist/icons/*.svg`: the individual icon SVG files
-- `dist/icons/index.json`: a list of all the available icons in this version
-- `dist/icons/index.complete.json`: same as the above but with the SVG code included inline
-- `dist/changelog.json`: a machine-readable list of icon additions, deletions, and renames between Pinhead versions
-- `dist/external_sources.json`: a detailed list of the external icon sources referenced in `changelog.json`
-- `dist/categories.json`: icon category data
+- `dist/icons/*.svg`: The individual icon SVG files
+- `dist/icons/index.json`: A list of all the available icons in this version
+- `dist/icons/index.complete.json`: Same as the above but with the SVG code included inline
+- `dist/changelog.json`: A machine-readable list of icon additions, deletions, redesigns, and renames between Pinhead versions
+- `dist/id_upgrades.json`: Simplified data for upgrading icon names between Pinhead versions in the format `"historical_id": "latest_id"`
+- `dist/external_sources.json`: A detailed list of the external icon sources referenced in `changelog.json`
+- `dist/categories.json`: Icon category data
 
 Note that if you just "download once and forget" then you'll miss out on any future improvements.
 
@@ -60,8 +61,9 @@ The following files are hosted on pinhead.ink (through GitHub Pages) at the foll
   - `https://pinhead.ink/v*/pinhead.ttf`: Icons compiled into a font file
   - `https://pinhead.ink/v*/pinhead.css`: Stylesheet for easy web usage of the font file
 - For the latest version:
-  - `https://pinhead.ink/latest/*.svg`: The individual icon SVG files, with each file representing the highest-versioned icon of that name (even if the name was later changed)
-  - `https://pinhead.ink/changelog.json`: A machine-readable list of icon additions, deletions, and renames between Pinhead versions
+  - `https://pinhead.ink/latest/*.svg`: The individual icon SVG files for the latest version. Retired filenames from prior versions are supported but correspond to the latest design (following the upgrade path specified in `changelog.json`).
+  - `https://pinhead.ink/changelog.json`: A machine-readable list of icon additions, deletions, redesigns, and renames between Pinhead versions
+  - `https://pinhead.ink/id_upgrades.json`: Simplified data for upgrading icon names between Pinhead versions in the format `"historical_id": "latest_id"`
   - `https://pinhead.ink/external_sources.json`: A detailed list of the external icon sources referenced in `changelog.json`
   - `https://pinhead.ink/categories.json`: Icon category data
 

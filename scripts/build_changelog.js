@@ -67,9 +67,7 @@ downloadExternalSourceAssets(externalSourceIconsDir);
 const startTime = Date.now();
 
 ensureEmptyDir("dist");
-if (
-  await validateChangelogs("metadata/changelogs/*.json", "dist/changelog.json")
-) {
+if (await validateChangelogs("metadata/changelogs/*.json", "dist")) {
   console.log(
     "changelog.json is valid, done in " + (Date.now() - startTime) + " ms",
   );
@@ -102,11 +100,14 @@ function formatChangelog(changelog) {
   });
 }
 
-async function validateChangelogs(srcChangelogsPattern, destChangelogPath) {
+async function validateChangelogs(srcChangelogsPattern, destDir) {
   const iconsById = {};
 
   const files = globSync(srcChangelogsPattern);
-  files.sort((f1, f2) => parseInt(parse(f1).name.slice(1)) - parseInt(parse(f2).name.slice(1)));
+  files.sort(
+    (f1, f2) =>
+      parseInt(parse(f1).name.slice(1)) - parseInt(parse(f2).name.slice(1)),
+  );
 
   const changelogsOut = [];
 
@@ -140,8 +141,58 @@ async function validateChangelogs(srcChangelogsPattern, destChangelogPath) {
       return;
     }
   }
-  writeFileSync(destChangelogPath, JSON.stringify(changelogsOut, null, 2));
+
+  writeFileSync(
+    destDir + "/changelog.json",
+    JSON.stringify(changelogsOut, null, 2),
+  );
+  const upgradeMappings = getIconUpgradeMappings(changelogsOut);
+  writeFileSync(
+    destDir + "/id_upgrades.json",
+    JSON.stringify(upgradeMappings, null, 2),
+  );
   return true;
+}
+
+function getIconUpgradeMappings(changelogs) {
+  const latestIdByHistoricalId = {};
+  for (const changelog of changelogs) {
+    const sortedIconChanges = changelog.iconChanges.toSorted((a, b) => {
+      if (b.oldId && !a.oldId) return 1;
+      if (!b.oldId && a.oldId) return -1;
+      return 0;
+    });
+    for (const iconChange of sortedIconChanges) {
+      if (
+        iconChange.newId &&
+        iconChange.oldId &&
+        iconChange.oldId !== iconChange.newId
+      ) {
+        latestIdByHistoricalId[iconChange.oldId] = iconChange.newId;
+        for (const historicalId in latestIdByHistoricalId) {
+          if (iconChange.oldId === latestIdByHistoricalId[historicalId]) {
+            if (historicalId === iconChange.newId) {
+              // if an ID has been reverted to a historical ID then no upgrade is needed
+              delete latestIdByHistoricalId[historicalId];
+            } else {
+              latestIdByHistoricalId[historicalId] = iconChange.newId;
+            }
+          }
+        }
+      }
+      if (iconChange.newId && latestIdByHistoricalId[iconChange.newId]) {
+        // if a historical ID has been reassigned to a new icon then no upgrade is needed
+        delete latestIdByHistoricalId[iconChange.newId];
+      }
+    }
+  }
+
+  const latestIdByHistoricalIdSorted = {};
+  const sortedKeys = Object.keys(latestIdByHistoricalId).toSorted();
+  for (const key of sortedKeys) {
+    latestIdByHistoricalIdSorted[key] = latestIdByHistoricalId[key];
+  }
+  return latestIdByHistoricalIdSorted;
 }
 
 async function validateChangelog(versionChangelog, iconsById) {

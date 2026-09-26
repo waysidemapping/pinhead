@@ -19,6 +19,7 @@ execFileSync("cp", [
   join(docsDir, `modules/pluralize`),
 ]);
 
+// TODO: remove this line after publishing v26 on npm
 execFileSync("cp", [
   `metadata/categories.json`,
   join(docsDir, `categories.json`),
