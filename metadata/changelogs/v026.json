@@ -5313,6 +5313,14 @@
       "newId": "pixel_arrow_top_left",
       "by": "@quincylvania",
       "inspo": "arrow_top_left"
+    },
+    {
+      "newId": "car_and_bench_on_ground",
+      "by": "@ooosssay",
+      "inspo": [
+        "car",
+        "conifer_tree_and_bench_on_ground"
+      ]
     }
   ]
 }
