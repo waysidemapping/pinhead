@@ -260,6 +260,22 @@
       ]
     },
     {
+      "newId": "phone_right_beside_droplet",
+      "by": "@quincylvania",
+      "inspo": [
+        "phone_right",
+        "droplet"
+      ]
+    },
+    {
+      "newId": "phone_right_beside_gas_flame",
+      "by": "@quincylvania",
+      "inspo": [
+        "phone_right",
+        "gas_flame"
+      ]
+    },
+    {
       "oldId": "spoon_and_fork",
       "newId": "spoon_beside_fork"
     },
