@@ -25,6 +25,15 @@
       "pr": "429"
     },
     {
+      "newId": "pencil_beside_ruler",
+      "by": "@ooosssay",
+      "inspo": [
+        "pencil_and_apple",
+        "https://raw.githubusercontent.com/mapbox/maki/refs/tags/v7.0.0/icons/school.svg"
+      ],
+      "pr": "475"
+    },
+    {
       "newId": "spray_paint_can",
       "by": [
         "@ooosssay",
