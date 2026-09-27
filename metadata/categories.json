@@ -436,7 +436,7 @@
     "match": "^(belgium|netherlands|madagascar)$"
   },
   "bowl": {
-    "super": "dish"
+    "super": "dishware"
   },
   "bowling_ball": {
     "super": [
@@ -712,7 +712,7 @@
     ]
   },
   "chefs_knife": {
-    "super": "knife"
+    "super": "kitchen_knife"
   },
   "cherry": {
     "super": "fruit"
@@ -805,7 +805,7 @@
     ]
   },
   "cleaver": {
-    "super": "knife"
+    "super": "kitchen_knife"
   },
   "climbing_frame": {
     "super": "playground_equipment"
@@ -1250,7 +1250,7 @@
     "super": "box"
   },
   "fillet_knife": {
-    "super": "knife"
+    "super": "kitchen_knife"
   },
   "film": {
     "super": [
@@ -1755,11 +1755,17 @@
   "kidney": {
     "super": "internal_organ"
   },
+  "kitchen_knife": {
+    "super": [
+      "knife",
+      "kitchenware"
+    ]
+  },
   "kitchen_sink": {
     "super": "piping"
   },
   "knife": {
-    "super": "cutlery"
+    "super": "hand_tool"
   },
   "labyrinth": {
     "super": "maze"
@@ -2328,6 +2334,9 @@
   },
   "plaque": {
     "super": "sign"
+  },
+  "plate": {
+    "super": "dishware"
   },
   "play_shelter": {
     "super": [
@@ -3094,6 +3103,12 @@
   },
   "table": {
     "super": "furniture"
+  },
+  "table_knife": {
+    "super": [
+      "cutlery",
+      "knife"
+    ]
   },
   "table_lamp": {
     "super": "lamp"
