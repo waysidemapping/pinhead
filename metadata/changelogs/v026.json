@@ -292,6 +292,20 @@
       "newId": "pixel_fork_beside_table_knife"
     },
     {
+      "oldId": "gable_roofed_shelter_with_spoon_and_knife",
+      "newId": "spoon_beside_table_knife_in_gable_roofed_shelter",
+      "by": "@quincylvania",
+      "inspo": [
+        "spoon_beside_chopsticks",
+        "fork_beside_table_knife"
+      ]
+    },
+    {
+      "newId": "spoon_beside_table_knife",
+      "by": "@quincylvania",
+      "inspo": "spoon_beside_table_knife_in_gable_roofed_shelter"
+    },
+    {
       "newId": "fork_beside_plate_beside_table_knife",
       "by": "@quincylvania",
       "inspo": "fork_beside_table_knife"
