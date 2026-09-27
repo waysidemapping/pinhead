@@ -3234,6 +3234,10 @@
       "newId": "amphora"
     },
     {
+      "oldId": "desk_lamp",
+      "newId": "table_lamp"
+    },
+    {
       "oldId": "bowling_pin",
       "newId": "bowling_pin_top_right"
     },

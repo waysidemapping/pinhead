@@ -1004,9 +1004,6 @@
   "delicate_arch": {
     "super": "natural_arch"
   },
-  "desk_lamp": {
-    "super": "lamp"
-  },
   "detergent_bottle": {
     "super": "bottle"
   },
@@ -3097,6 +3094,9 @@
   },
   "table": {
     "super": "furniture"
+  },
+  "table_lamp": {
+    "super": "lamp"
   },
   "tabletop_microphone": {
     "super": "microphone"
