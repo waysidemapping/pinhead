@@ -276,8 +276,20 @@
       "newId": "fork_beside_spoon"
     },
     {
+      "oldId": "knife",
+      "newId": "table_knife"
+    },
+    {
       "oldId": "fork_and_knife",
-      "newId": "fork_beside_knife"
+      "newId": "fork_beside_table_knife"
+    },
+    {
+      "oldId": "fork_crossing_knife",
+      "newId": "fork_crossing_table_knife"
+    },
+    {
+      "oldId": "pixel_fork_and_knife",
+      "newId": "pixel_fork_beside_table_knife"
     },
     {
       "newId": "fork_beside_fish",
