@@ -4862,7 +4862,7 @@
     {
       "newId": "poo_pile",
       "by": "@quincylvania",
-      "inspo": "https://github.com/openstreetmap-carto/openstreetmap-carto/blob/40820143374b5550fb294cfc754db8ca662094b0/symbols/amenity/excrement_bags.svg"
+      "inspo": "https://raw.githubusercontent.com/openstreetmap-carto/openstreetmap-carto/40820143374b5550fb294cfc754db8ca662094b0/symbols/amenity/excrement_bags.svg"
     },
     {
       "newId": "portable_fence",
