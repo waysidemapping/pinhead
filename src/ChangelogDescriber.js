@@ -210,14 +210,14 @@ export class ChangelogDescriber {
     if (iconChange.inspo) {
       str += `<br/><table>`;
       for (const inspo of stringArray(iconChange.inspo)) {
-        const link = inspo.startsWith("http") ? inspo : `#${inspo}`;
-        const imgSrc = inspo.startsWith("http")
-          ? inspo
-          : `${this.fileBase}/v${iconChange.v}/${inspo}.svg`;
-        const label = inspo.startsWith("http") ? "external source" : inspo;
         str += "<tr>";
-        str += `<td><img src="${imgSrc}" width="15px"/></td>`;
-        str += `<td>Based on <a target="_blank" href="${link}" style="line-break: anywhere;">${label}</a></td>`;
+        if (inspo.startsWith("http")) {
+          str += `<td><img src="${inspo}" width="15px"/></td>`;
+          str += `<td>Based on <a target="_blank" href="${inspo}" title="${inspo}">external source</a></td>`;
+        } else {
+          str += `<td><img src="${this.fileBase}/v${iconChange.v}/${inspo}.svg" width="15px"/></td>`;
+          str += `<td>Based on <a href="#${inspo}" class="inline-icon-id">${inspo}</a></td>`;
+        }
         str += `</tr>`;
       }
       str += `</table>`;
