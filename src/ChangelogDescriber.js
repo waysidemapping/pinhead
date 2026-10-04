@@ -37,7 +37,6 @@ export class ChangelogDescriber {
 
   getChangelogBodyHtml(changelog) {
     let html = "";
-    const importSources = this.importSources;
     const changes = this.getCategorizedChangesForChangelog(changelog);
     const newV = changelog.majorVersion;
     const oldV = parseInt(newV) - 1;
@@ -48,7 +47,7 @@ export class ChangelogDescriber {
       changes.deletedIcons.forEach((iconChange) => {
         html +=
           `<li><img src="${this.fileBase}/v${oldV}/${iconChange.oldId}.svg" width="15px"/> Remove <b>${iconChange.oldId}</b>` +
-          issueLinks(iconChange) +
+          this.issueLinksForIconChange(iconChange) +
           `</li>`;
       });
       html += "</ul>";
@@ -59,8 +58,8 @@ export class ChangelogDescriber {
       changes.renamedAndRedesignedIcons.forEach((iconChange) => {
         html +=
           `<li><img src="${this.fileBase}/v${oldV}/${iconChange.oldId}.svg" width="15px"/> <b>${iconChange.oldId}</b> -> <img src="${this.fileBase}/v${newV}/${iconChange.newId}.svg" width="15px"/> <b>${iconChange.newId}</b>` +
-          fromInfo(iconChange) +
-          issueLinks(iconChange) +
+          this.provenanceInfoForIconChange(iconChange) +
+          this.issueLinksForIconChange(iconChange) +
           `</li>`;
       });
       html += "</ul>";
@@ -71,7 +70,7 @@ export class ChangelogDescriber {
       changes.renamedIcons.forEach((iconChange) => {
         html +=
           `<li><img src="${this.fileBase}/v${newV}/${iconChange.newId}.svg" width="15px"/> <b>${iconChange.oldId}</b> -> <b>${iconChange.newId}</b>` +
-          issueLinks(iconChange) +
+          this.issueLinksForIconChange(iconChange) +
           `</li>`;
       });
       html += "</ul>";
@@ -82,7 +81,7 @@ export class ChangelogDescriber {
       changes.mergedIcons.forEach((iconChange) => {
         html +=
           `<li><img src="${this.fileBase}/v${oldV}/${iconChange.oldId}.svg" width="15px"/> <b>${iconChange.oldId}</b> -> <img src="${this.fileBase}/v${newV}/${iconChange.newId}.svg" width="15px"/> <b>${iconChange.newId}</b>` +
-          issueLinks(iconChange) +
+          this.issueLinksForIconChange(iconChange) +
           `</li>`;
       });
       html += "</ul>";
@@ -93,8 +92,8 @@ export class ChangelogDescriber {
       changes.redesignedIcons.forEach((iconChange) => {
         html +=
           `<li><img src="${this.fileBase}/v${oldV}/${iconChange.oldId}.svg" width="15px"/> -> <img src="${this.fileBase}/v${newV}/${iconChange.newId}.svg" width="15px"/> <b>${iconChange.newId}</b>` +
-          fromInfo(iconChange) +
-          issueLinks(iconChange) +
+          this.provenanceInfoForIconChange(iconChange) +
+          this.issueLinksForIconChange(iconChange) +
           `</li>`;
       });
       html += "</ul>";
@@ -105,96 +104,171 @@ export class ChangelogDescriber {
       changes.addedIcons.forEach((iconChange) => {
         html +=
           `<li><img src="${this.fileBase}/v${newV}/${iconChange.newId}.svg" width="15px"/> Add <b>${iconChange.newId}</b>` +
-          fromInfo(iconChange) +
-          issueLinks(iconChange) +
+          this.provenanceInfoForIconChange(iconChange) +
+          this.issueLinksForIconChange(iconChange) +
           `</li>`;
       });
       html += "</ul>";
     }
 
     return html;
+  }
 
-    function fromInfo(iconChange) {
-      let str = "";
-      if (iconChange.srcBy) {
-        str +=
-          " by " +
-          stringArray(iconChange.srcBy)
-            .map(
-              (by) => `<a href="https://github.com/${by.slice(1)}">${by}</a>`,
-            )
-            .join(", ");
+  provenanceInfoForIconChange(iconChange) {
+    let str = "";
+    if (iconChange.srcBy) str += " by " + byList(iconChange.srcBy);
+    if (iconChange.src && iconChange.importBy) {
+      const srcs = stringArray(iconChange.src);
+      str +=
+        " from " +
+        srcs
+          .map((src) => {
+            const importSource = this.importSources.find(
+              (source) => source.id === src,
+            );
+            if (importSource) {
+              return `<a href="${importSource.repo.slice(0, -4)}">${importSource.name}</a>`;
+            }
+            return `<a href="${src}">source</a>`;
+          })
+          .join(", ");
+      str += " imported by " + byList(iconChange.importBy);
+      if (iconChange.by) {
+        if (iconChange.by.toString() === iconChange.importBy.toString()) {
+          str += " with edits";
+        } else {
+          str += " with edits by " + byList(iconChange.by);
+        }
       }
-      if (iconChange.src && iconChange.importBy) {
-        const srcs = stringArray(iconChange.src);
-        str +=
-          " from " +
-          srcs
-            .map((src) => {
-              const importSource = importSources.find(
-                (source) => source.id === src,
-              );
-              if (importSource) {
-                return `<a href="${importSource.repo.slice(0, -4)}">${importSource.name}</a>`;
-              }
-              return `<a href="${src}">source</a>`;
-            })
-            .join(", ");
-        const importBys = stringArray(iconChange.importBy);
-        str +=
-          " imported by " +
-          importBys
-            .map(
-              (by) => `<a href="https://github.com/${by.slice(1)}">${by}</a>`,
-            )
-            .join(", ");
-        if (iconChange.by) {
-          if (iconChange.by.toString() === iconChange.importBy.toString()) {
-            str += " with edits";
-          } else {
-            str +=
-              " with edits by " +
-              stringArray(iconChange.by)
-                .map(
-                  (by) =>
-                    `<a href="https://github.com/${by.slice(1)}">${by}</a>`,
-                )
-                .join(", ");
+    } else if (iconChange.by) {
+      str += " by " + byList(iconChange.by);
+    }
+    return str;
+  }
+
+  issueLinksForIconChange(iconChange) {
+    if (!iconChange.issue && !iconChange.pr) return "";
+
+    const issues = (iconChange.pr ? stringArray(iconChange.pr) : []).concat(
+      iconChange.issue ? stringArray(iconChange.issue) : [],
+    );
+    return (
+      " (" +
+      issues
+        .map(
+          (issue) =>
+            `<a href="https://github.com/waysidemapping/pinhead/issues/${issue}">#${issue}</a>`,
+        )
+        .join(", ") +
+      ")"
+    );
+  }
+
+  getHistoryHtmlForIconChange(iconChange) {
+    if (!iconChange.newId) return "";
+
+    let str = "<tr>";
+    str += `<td><b title="${iconChange.date}">v${iconChange.v}</b></td>`;
+    str += `<td><img src="${this.fileBase}/v${iconChange.v}/${iconChange.newId}.svg" width="15px"/></td>`;
+    str += "<td>";
+
+    const inlineNewId = `<span class="inline-icon-id">${iconChange.newId}</span>`;
+    if (iconChange.oldId) {
+      if (iconChange.newId) {
+        if (iconChange.oldId === iconChange.newId) {
+          str += "Redesigned";
+        } else if (iconChange.by || iconChange.src) {
+          str += `Renamed ${inlineNewId} and redesigned`;
+        } else if (iconChange.edit === "merge") {
+          str += `Merged into ${inlineNewId}`;
+        } else {
+          str += `Renamed ${inlineNewId}`;
+        }
+      } else {
+        str += "Deleted";
+      }
+    } else {
+      str += `${inlineNewId}`;
+    }
+
+    if (iconChange.src) {
+      str += " imported";
+      if (iconChange.importBy) str += " by " + byList(iconChange.importBy);
+      if (iconChange.by) {
+        if (iconChange.by.toString() === iconChange.importBy.toString()) {
+          str += " with edits";
+        } else {
+          str += " with edits by " + byList(iconChange.by);
+        }
+      }
+    } else {
+      if (iconChange.by) str += " by " + byList(iconChange.by);
+    }
+
+    str +=
+      // this.provenanceInfoForIconChange(iconChange) +
+      this.issueLinksForIconChange(iconChange);
+
+    if (iconChange.inspo) {
+      str += `<br/><table>`;
+      for (const inspo of stringArray(iconChange.inspo)) {
+        const link = inspo.startsWith("http") ? inspo : `#${inspo}`;
+        const imgSrc = inspo.startsWith("http")
+          ? inspo
+          : `${this.fileBase}/v${iconChange.v}/${inspo}.svg`;
+        const label = inspo.startsWith("http") ? "external source" : inspo;
+        str += "<tr>";
+        str += `<td><img src="${imgSrc}" width="15px"/></td>`;
+        str += `<td>Based on <a href="${link}" style="line-break: anywhere;">${label}</a></td>`;
+        str += `</tr>`;
+      }
+      str += `</table>`;
+    }
+
+    if (iconChange.src) {
+      str += `<br/><table>`;
+      for (const src of stringArray(iconChange.src)) {
+        if (src.startsWith("http")) {
+          str += "<tr>";
+          str += `<td><img src="${src}" width="15px"/></td>`;
+          str += `<td>From <a target="_blank" href="${src}" title="${src}">external source</a></td>`;
+          str += `</tr>`;
+        } else {
+          const importSource = this.importSources.find(
+            (source) => source.id === src,
+          );
+          const srcIds = stringArray(iconChange[src]);
+          for (const srcId of srcIds) {
+            const imgSrc = `${this.fileBase}/srcicons/${src}/${srcId}${importSource.filenameSuffix || ""}.svg`;
+            const srcIconLink = `${importSource.repo.slice(0, -4)}/tree/${importSource.commit || importSource.branch || "main"}/${importSource.iconDir ? importSource.iconDir + "/" : ""}/${srcId}${importSource.filenameSuffix || ""}.svg`;
+            let labelHtml = `<a target="_blank" href="${srcIconLink}" style="line-break: anywhere;">${srcId}</a>`;
+            if (iconChange.srcBy)
+              labelHtml += " by " + byList(iconChange.srcBy);
+            labelHtml += ` from <a target="_blank" href="${importSource.repo.slice(0, -4)}">${importSource.name}</a>`;
+            str += "<tr>";
+            str += `<td><img src="${imgSrc}" width="15px"/></td>`;
+            str += `<td>${labelHtml}</td>`;
+            str += `</tr>`;
           }
         }
-      } else if (iconChange.by) {
-        str +=
-          " by " +
-          stringArray(iconChange.by)
-            .map(
-              (by) => `<a href="https://github.com/${by.slice(1)}">${by}</a>`,
-            )
-            .join(", ");
       }
-      return str;
+      str += `</table>`;
     }
 
-    function issueLinks(iconChange) {
-      if (iconChange.issue || iconChange.pr) {
-        const issues = (iconChange.pr ? stringArray(iconChange.pr) : []).concat(
-          iconChange.issue ? stringArray(iconChange.issue) : [],
-        );
-        return (
-          " (" +
-          issues
-            .map(
-              (issue) =>
-                `<a href="https://github.com/waysidemapping/pinhead/issues/${issue}">#${issue}</a>`,
-            )
-            .join(", ") +
-          ")"
-        );
-      }
-      return "";
-    }
-
-    function stringArray(value) {
-      return typeof value === "string" ? [value] : [...value];
-    }
+    str += "</td></tr>";
+    return str;
   }
+}
+
+function byList(bys) {
+  return stringArray(bys)
+    .map(
+      (by) =>
+        `<a target="_blank" href="https://github.com/${by.slice(1)}">${by}</a>`,
+    )
+    .join(", ");
+}
+
+function stringArray(value) {
+  return typeof value === "string" ? [value] : [...value];
 }

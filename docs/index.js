@@ -1,5 +1,6 @@
 import { ChangelogReader } from "/src/ChangelogReader.js";
 import { CategoryReader } from "/src/CategoryReader.js";
+import { ChangelogDescriber } from "/src/ChangelogDescriber.js";
 
 let packageJson;
 
@@ -47,6 +48,12 @@ async function setupPage(pageData) {
     result.json(),
   );
   const changelogReader = new ChangelogReader(changelogs);
+
+  const importSources = await fetch("/external_sources.json").then((result) =>
+    result.json(),
+  );
+
+  const changelogDescriber = new ChangelogDescriber(importSources);
 
   let userLangs = navigator.languages
     ? navigator.languages
@@ -278,6 +285,9 @@ async function setupPage(pageData) {
       .iconIdsForRootCategoryIds(categoriesForIcon.map((cat) => cat.id))
       .filter((iconId2) => iconId2 !== iconId && !iconsById[iconId2].sensitive);
 
+    const changelogInfo = changelogReader.iconsById[iconId];
+
+    const changes = changelogInfo.changes;
     document.body.classList.add("inspector-open");
     inspector.innerHTML = [
       new Chainable("div")
@@ -442,6 +452,17 @@ async function setupPage(pageData) {
           .append(
             `<img src="https://pinhead.ink/v${majorVersion}/${iconId}.svg" width="15px" height="15px"/>`,
           ),
+        [
+          new Chainable("h3").append("history"),
+          new Chainable("table").setAttribute("class", "history-table").append(
+            changes
+              .toReversed()
+              .map((change) =>
+                changelogDescriber.getHistoryHtmlForIconChange(change),
+              )
+              .join(""),
+          ),
+        ].join(""),
         relatedIcons.length
           ? [
               new Chainable("h3").append("related pinheads"),

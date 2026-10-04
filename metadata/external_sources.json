@@ -3,6 +3,7 @@
     "id": "americana",
     "name": "OSM Americana",
     "repo": "https://github.com/osm-americana/openstreetmap-americana.git",
+    "branch": "main",
     "iconDir": "icons",
     "ignoreFiles": "^(shield)|(oneway)"
   },
@@ -10,18 +11,21 @@
     "id": "healthicons",
     "name": "Health Icons",
     "repo": "https://github.com/resolvetosavelives/healthicons.git",
+    "branch": "main",
     "iconDir": "public/icons/svg/filled-24px"
   },
   {
     "id": "maki",
     "name": "Maki",
     "repo": "https://github.com/mapbox/maki.git",
+    "branch": "main",
     "iconDir": "icons"
   },
   {
     "id": "nps",
     "name": "NPS",
     "repo": "https://github.com/nationalparkservice/symbol-library.git",
+    "branch": "gh-pages",
     "iconDir": "src/standalone",
     "filenameSuffix": "-black-22",
     "ignoreFiles": "^transparent"
@@ -30,12 +34,14 @@
     "id": "opengemeenten",
     "name": "OpenGemeenten",
     "repo": "https://github.com/OpenGemeenten/Iconenset.git",
+    "branch": "master",
     "iconDir": "Svg/Regular diapositive"
   },
   {
     "id": "openhistoricalmap",
     "name": "OpenHistoricalMap",
     "repo": "https://github.com/OpenHistoricalMap/map-styles.git",
+    "branch": "staging",
     "iconDir": "historical/poi",
     "filenameSuffix": "-18"
   },
@@ -51,6 +57,7 @@
     "id": "osmcarto",
     "name": "OSM Carto",
     "repo": "https://github.com/openstreetmap-carto/openstreetmap-carto.git",
+    "branch": "master",
     "iconDir": "symbols",
     "ignoreFiles": "(^generating_patterns\\/)|(^shields\\/)|(^unpaved\\/)|(^[^/]+$)"
   },
@@ -58,6 +65,7 @@
     "id": "osmic",
     "name": "Osmic",
     "repo": "https://github.com/gmgeo/osmic.git",
+    "branch": "master",
     "filenameSuffix": "-14",
     "iconDir": ""
   },
@@ -65,12 +73,14 @@
     "id": "temaki",
     "name": "Temaki",
     "repo": "https://github.com/rapideditor/temaki.git",
+    "branch": "main",
     "iconDir": "icons"
   },
   {
     "id": "viglino",
     "name": "Viglino",
     "repo": "https://github.com/Viglino/map-font-symbols.git",
+    "branch": "main",
     "ignoreFiles": "^(?!.*(princesse\/svg\/|pirate\/svg\/)).*|.*\/old\/.*$"
   }
 ]

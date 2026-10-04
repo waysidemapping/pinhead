@@ -25,7 +25,7 @@ if (
   versionParts[2] !== "0" ||
   currentVersion.includes("dev") ||
   Object.values(localIconsById).some(
-    (icon) => parseInt(icon.v) > parseInt(currentMajorVersion),
+    (icon) => parseInt(icon.changes.at(-1).v) > parseInt(currentMajorVersion),
   )
 ) {
   console.log(
@@ -98,7 +98,7 @@ function processCategoryPage(page) {
     if (targetId === pinheadIconId) {
       const iconInfo = localIconsById[pinheadIconId];
       if (iconInfo) {
-        const latestV = parseInt(localIconsById[pinheadIconId].v);
+        const latestV = parseInt(iconInfo.changes.at(-1).v);
         if (commonsIconV < latestV) {
           pagesNeedingUpdateByIconId[pinheadIconId] = page;
         } else {
@@ -200,7 +200,7 @@ function textForNewFile(pinheadIconId) {
   return `=={{int:filedesc}}==
 {{Information
 |description    = {{en|1=Plain black vector icon depicting "${pinheadIconId.replaceAll("_", " ")}". Intended for display at 15x15 pixels or greater. Part of the [https://pinhead.ink Pinhead] map icon library.}}
-|date           = ${icon.ogDate}
+|date           = ${icon.changes[0].date}
 |source         = ${commonsPageSourceValue(pinheadIconId)}
 |author         = ${commonsPageAuthorValue(pinheadIconId)}
 |permission     = 
@@ -208,7 +208,7 @@ function textForNewFile(pinheadIconId) {
 }}
 
 =={{int:license-header}}==
-{{Pinhead|${pinheadIconId}|v=${icon.v}}}
+{{Pinhead|${pinheadIconId}|v=${icon.changes.at(-1).v}}}
 {{Cc-zero}}
 
 ${commonsPageCategoriesText(pinheadIconId)}`;
@@ -273,7 +273,7 @@ function updatedFileText(text, pinheadIconId) {
   if (versionRegex.test(text)) {
     text = text.replace(
       versionRegex,
-      `$1${pinheadIconId}$3${localIconsById[pinheadIconId].v}$5`,
+      `$1${pinheadIconId}$3${localIconsById[pinheadIconId].changes.at(-1).v}$5`,
     );
   } else {
     return false;
@@ -387,7 +387,7 @@ async function uploadEntityStatements() {
     }
 
     // inception = date
-    propsToUpload.P571 = pinheadIconInfo.ogDate;
+    propsToUpload.P571 = pinheadIconInfo.changes[0].date;
 
     // This is commented out since the unicode character property is not yet recommended for Commons files
     // if (pinheadIconInfo.char) {

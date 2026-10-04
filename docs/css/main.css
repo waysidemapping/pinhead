@@ -81,6 +81,27 @@ a.inline-icon img {
   margin-right: 4px;
 }
 
+.inline-icon-id {
+  background-color: var(--highlight-color);
+  line-break: anywhere;
+}
+.history-table {
+  line-height: 1.2em;
+}
+.history-table table {
+  margin: 6px 0;
+}
+.history-table img {
+  vertical-align: middle;
+  margin: 2px 0;
+}
+.history-table td:not(:first-child) {
+  padding-left: 4px;
+}
+.history-table td:not(:last-child) {
+  padding-right: 4px;
+}
+
 .container {
   width: 100%;
   max-width: 1220px;
@@ -124,7 +145,6 @@ article {
   position: relative;
   margin: 0 auto;
   line-height: 26px;
-
   text-align: center;
 }
 article::before {

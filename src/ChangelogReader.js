@@ -16,6 +16,8 @@ function loadChangelogData(c) {
       return 0;
     });
     for (const iconChange of sortedIconChanges) {
+      iconChange.v = version;
+      iconChange.date = date;
       // update commulative icon log
       if (iconChange.oldId) {
         if (iconChange.newId) {
@@ -25,18 +27,10 @@ function loadChangelogData(c) {
             }
           }
           iconsById[iconChange.newId] = iconsById[iconChange.oldId];
-          iconsById[iconChange.newId].date = date;
-          iconsById[iconChange.newId].v = version;
           if (iconChange.newId !== iconChange.oldId) {
             if (!iconsById[iconChange.newId].oldIds)
               iconsById[iconChange.newId].oldIds = [];
             iconsById[iconChange.newId].oldIds.push(iconChange.oldId);
-            iconsById[iconChange.newId].renameDate = date;
-            iconsById[iconChange.newId].renameV = version;
-          }
-          if (iconChange.by || iconChange.src) {
-            iconsById[iconChange.newId].redesignDate = date;
-            iconsById[iconChange.newId].redesignV = version;
           }
           for (const key in iconChange) {
             if (!["newId", "oldId"].includes(key)) {
@@ -53,12 +47,9 @@ function loadChangelogData(c) {
         if (iconChange.newId !== iconChange.oldId) {
           delete iconsById[iconChange.oldId];
         }
-      } else if (iconChange.newId) {
+      } else {
         iconsById[iconChange.newId] = {
-          date: date,
-          v: version,
-          ogDate: date,
-          ogV: version,
+          changes: [],
         };
         for (const key in iconChange) {
           if (!["newId", "oldId"].includes(key)) {
@@ -66,6 +57,7 @@ function loadChangelogData(c) {
           }
         }
       }
+      iconsById[iconChange.newId].changes.push(iconChange);
     }
 
     for (const id in iconsById) {
