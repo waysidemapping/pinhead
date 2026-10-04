@@ -17,6 +17,7 @@ const variantPrefixes = [
 
 const amountPrefixes = [
   "crossed",
+  "stacked",
   "double",
   "triple",
   "one",
@@ -44,7 +45,6 @@ const suffixes = [
   "outward",
   "profile",
   "right",
-  "stack",
   "top_left",
   "top_right",
   "top",
