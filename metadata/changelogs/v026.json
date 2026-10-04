@@ -2808,10 +2808,45 @@
       "issue": "310"
     },
     {
-      "newId": "atm_text_above_banknote_in_slot",
+      "oldId": "ice_text",
+      "newId": "ice_uppercase",
+      "issue": "439"
+    },
+    {
+      "oldId": "ice_text_above_icicles",
+      "newId": "ice_uppercase_above_icicles",
+      "issue": "439"
+    },
+    {
+      "oldId": "sos_text",
+      "newId": "sos_uppercase",
+      "issue": "439"
+    },
+    {
+      "oldId": "phone_down_above_sos_text",
+      "newId": "phone_down_above_sos_uppercase",
+      "issue": "439"
+    },
+    {
+      "oldId": "atm_text",
+      "newId": "atm_uppercase",
+      "issue": "439"
+    },
+    {
+      "oldId": "art_text",
+      "newId": "art_uppercase",
+      "issue": "439"
+    },
+    {
+      "oldId": "art_text_above_swash_line",
+      "newId": "art_uppercase_above_swash_line",
+      "issue": "439"
+    },
+    {
+      "newId": "atm_uppercase_above_banknote_in_slot",
       "by": "@quincylvania",
       "inspo": [
-        "atm_text",
+        "atm_uppercase",
         "banknote_in_slot"
       ]
     },
@@ -3526,57 +3561,60 @@
     },
     {
       "oldId": "cc_text",
-      "newId": "cc_text",
-      "by": "@quincylvania"
+      "newId": "cc_uppercase",
+      "by": "@quincylvania",
+      "issue": "439"
     },
     {
-      "newId": "cc_text_above_caption",
+      "newId": "cc_uppercase_above_caption",
       "by": "@quincylvania",
-      "inspo": "cc_text"
+      "inspo": "cc_uppercase"
     },
     {
       "newId": "tv_screen",
       "by": "@quincylvania",
-      "inspo": "cc_text_in_tv_screen"
+      "inspo": "cc_uppercase_in_tv_screen"
     },
     {
-      "newId": "cc_text_in_tv_screen",
+      "newId": "cc_uppercase_in_tv_screen",
       "by": "@quincylvania",
       "inspo": [
-        "cc_text",
+        "cc_uppercase",
         "terminal_screen_with_dollar_prompt",
         "https://upload.wikimedia.org/wikipedia/commons/0/09/Closed_captioning_symbol.svg"
       ]
     },
     {
       "oldId": "oc_text",
-      "newId": "oc_text",
-      "by": "@quincylvania"
-    },
-    {
-      "newId": "oc_text_above_caption",
+      "newId": "oc_uppercase",
       "by": "@quincylvania",
-      "inspo": "oc_text"
+      "issue": "439"
     },
     {
-      "newId": "oc_text_in_tv_screen",
+      "newId": "oc_uppercase_above_caption",
+      "by": "@quincylvania",
+      "inspo": "oc_uppercase"
+    },
+    {
+      "newId": "oc_uppercase_in_tv_screen",
       "by": "@quincylvania",
       "inspo": [
-        "oc_text",
-        "cc_text_in_tv_screen"
+        "oc_uppercase",
+        "cc_uppercase_in_tv_screen"
       ]
     },
     {
       "oldId": "wc_text",
-      "newId": "wc_text",
-      "by": "@quincylvania"
+      "newId": "wc_uppercase",
+      "by": "@quincylvania",
+      "issue": "439"
     },
     {
-      "newId": "sitting_tank_toilet_and_wc_text",
+      "newId": "sitting_tank_toilet_and_wc_uppercase",
       "by": "@quincylvania",
       "inspo": [
         "sitting_tank_toilet",
-        "wc_text"
+        "wc_uppercase"
       ]
     },
     {

@@ -2064,8 +2064,8 @@
   "mounted_scope": {
     "super": "telescope"
   },
-  "multi_character_text": {
-    "match": ".+_text$",
+  "multi_character_uppercase_text": {
+    "match": ".+_uppercase$",
     "super": "text"
   },
   "musical_instrument": {

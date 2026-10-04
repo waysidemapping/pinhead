@@ -86,8 +86,8 @@ If the following sections seem too technical or intimidating, feel free to just 
   * E.g. using the name <img src="https://pinhead.ink/latest/bus_with_destination_display.svg" height="15px" width="15px"/> `bus_with_destination_display` instead of "bus" leaves room for a variant icon <img src="https://pinhead.ink/latest/bus.svg" height="15px" width="15px"/> `bus`.
 * Standalone letters in filenames should refer to capital letters.
   * E.g. <img src="https://pinhead.ink/latest/a.svg" height="15px" width="15px"/> `a`, not "capital_a"
-* Filenames for multiletter elements (words, abbreviations, etc.) should consist of the letters suffixed with `_text`.
-  * E.g. <img src="https://pinhead.ink/latest/atm_text.svg" height="15px" width="15px"/> `atm_text`, not "atm"
+* Filenames for multiletter elements (words, abbreviations, etc.) should consist of the letters suffixed with the case.
+  * E.g. <img src="https://pinhead.ink/latest/atm_uppercase.svg" height="15px" width="15px"/> `atm_uppercase`, not "atm"
 * Filenames for stylized variants (pixel art, cartoon, etc.) should be prefixed with the style name.
    * E.g. <img src="https://pinhead.ink/latest/pixel_anchor.svg" height="15px" width="15px"/> `pixel_anchor`, not "anchor_pixelated"
 * Filenames for graphical design variants (size, shape, stroke, etc.) should be suffixed with the graphical difference.
