@@ -1099,11 +1099,13 @@
     },
     {
       "newId": "arrow_left_from_rectangle_tall_outline",
-      "by": "@quincylvania"
+      "by": "@quincylvania",
+      "inspo": "arrow_right_from_rectangle_tall_outline"
     },
     {
       "newId": "arrow_left_to_rectangle_tall_outline",
-      "by": "@quincylvania"
+      "by": "@quincylvania",
+      "inspo": "arrow_right_to_rectangle_tall_outline"
     },
     {
       "newId": "arrow_right_from_rectangle_tall_outline",
@@ -1119,19 +1121,23 @@
     },
     {
       "newId": "arrow_up_from_rectangle_outline",
-      "by": "@quincylvania"
+      "by": "@quincylvania",
+      "inspo": "arrow_right_from_rectangle_tall_outline"
     },
     {
       "newId": "arrow_down_from_rectangle_outline",
-      "by": "@quincylvania"
+      "by": "@quincylvania",
+      "inspo": "arrow_right_from_rectangle_tall_outline"
     },
     {
       "newId": "arrow_up_to_rectangle_outline",
-      "by": "@quincylvania"
+      "by": "@quincylvania",
+      "inspo": "arrow_right_to_rectangle_tall_outline"
     },
     {
       "newId": "arrow_down_to_rectangle_outline",
-      "by": "@quincylvania"
+      "by": "@quincylvania",
+      "inspo": "arrow_right_to_rectangle_tall_outline"
     },
     {
       "newId": "pixel_exclamation_point",
