@@ -1753,7 +1753,7 @@
       "newId": "cat_sitting_and_question_mark",
       "by": "@quincylvania",
       "inspo": [
-        "cat_sitting",
+        "cat_sitting_and_exclamation_point",
         "question_mark"
       ]
     },
@@ -1762,7 +1762,7 @@
       "by": "@quincylvania",
       "inspo": [
         "cat_sitting",
-        "exclamation_point"
+        "dog_sitting_and_exclamation_point"
       ]
     },
     {
@@ -1774,25 +1774,37 @@
     {
       "newId": "dog_sitting_and_question_mark",
       "by": "@quincylvania",
-      "inspo": "dog_sitting_and_exclamation_point",
+      "inspo": [
+        "dog_sitting_and_exclamation_point",
+        "question_mark"
+      ],
       "issue": "383"
     },
     {
       "newId": "dog_sitting_wearing_collar_and_question_mark",
       "by": "@quincylvania",
-      "inspo": "dog_sitting_wearing_collar_and_exclamation_point",
+      "inspo": [
+        "dog_sitting_wearing_collar_and_exclamation_point",
+        "question_mark"
+      ],
       "issue": "383"
     },
     {
       "newId": "wolf_head_and_question_mark",
       "by": "@quincylvania",
-      "inspo": "wolf_head_and_exclamation_point",
+      "inspo": [
+        "wolf_head_and_exclamation_point",
+        "question_mark"
+      ],
       "issue": "383"
     },
     {
       "newId": "gull_and_question_mark",
       "by": "@quincylvania",
-      "inspo": "gull_and_exclamation_point",
+      "inspo": [
+        "gull_and_exclamation_point",
+        "question_mark"
+      ],
       "issue": "383"
     },
     {
@@ -1811,7 +1823,7 @@
       "newId": "bird_and_question_mark",
       "by": "@quincylvania",
       "inspo": [
-        "bird",
+        "bird_and_exclamation_point",
         "question_mark"
       ]
     },
@@ -1841,7 +1853,7 @@
       "newId": "sea_lion_and_question_mark",
       "by": "@quincylvania",
       "inspo": [
-        "sea_lion",
+        "sea_lion_and_exclamation_point",
         "question_mark"
       ]
     },
@@ -1850,7 +1862,7 @@
       "by": "@quincylvania",
       "inspo": [
         "sea_lion",
-        "exclamation_point"
+        "wolf_head_and_exclamation_point"
       ]
     },
     {
@@ -1865,7 +1877,7 @@
       "newId": "lion_and_question_mark",
       "by": "@quincylvania",
       "inspo": [
-        "lion",
+        "lion_and_exclamation_point",
         "question_mark"
       ]
     },
@@ -1874,31 +1886,43 @@
       "by": "@quincylvania",
       "inspo": [
         "lion",
-        "exclamation_point"
+        "wolf_head_and_exclamation_point"
       ]
     },
     {
       "newId": "flush_curb_with_exclamation_point",
       "by": "@quincylvania",
-      "inspo": "flush_curb_with_question_mark",
+      "inspo": [
+        "flush_curb_with_question_mark",
+        "exclamation_point"
+      ],
       "issue": "383"
     },
     {
       "newId": "lowered_curb_with_exclamation_point",
       "by": "@quincylvania",
-      "inspo": "lowered_curb_with_question_mark",
+      "inspo": [
+        "lowered_curb_with_question_mark",
+        "exclamation_point"
+      ],
       "issue": "383"
     },
     {
       "newId": "rolled_curb_with_exclamation_point",
       "by": "@quincylvania",
-      "inspo": "rolled_curb_with_question_mark",
+      "inspo": [
+        "rolled_curb_with_question_mark",
+        "exclamation_point"
+      ],
       "issue": "383"
     },
     {
       "newId": "raised_curb_with_exclamation_point",
       "by": "@quincylvania",
-      "inspo": "raised_curb_with_question_mark",
+      "inspo": [
+        "raised_curb_with_question_mark",
+        "exclamation_point"
+      ],
       "issue": "383"
     },
     {
@@ -4778,7 +4802,10 @@
     {
       "newId": "rounded_triangle_up_with_question_mark",
       "by": "@quincylvania",
-      "inspo": "rounded_triangle_up_with_exclamation_point",
+      "inspo": [
+        "rounded_triangle_up_with_exclamation_point",
+        "question_mark"
+      ],
       "issue": "383"
     },
     {

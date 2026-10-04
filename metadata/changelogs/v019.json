@@ -69,7 +69,10 @@
     {
       "newId": "dog_sitting_and_exclamation_point",
       "by": "@quincylvania",
-      "inspo": "dog_sitting",
+      "inspo": [
+        "dog_sitting",
+        "wolf_head_and_exclamation_point"
+      ],
       "issue": "149"
     },
     {
@@ -84,7 +87,10 @@
     {
       "newId": "dog_sitting_wearing_collar_and_exclamation_point",
       "by": "@quincylvania",
-      "inspo": "dog_sitting_wearing_collar",
+      "inspo": [
+        "dog_sitting_wearing_collar",
+        "dog_sitting_and_exclamation_point"
+      ],
       "issue": "149"
     },
     {
