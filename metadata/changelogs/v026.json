@@ -2781,6 +2781,15 @@
       ]
     },
     {
+      "oldId": "campsite_with_canoe",
+      "newId": "campsite_above_canoe"
+    },
+    {
+      "newId": "canoe_above_water",
+      "by": "@quincylvania",
+      "inspo": "canoe_on_water"
+    },
+    {
       "oldId": "person_wearing_helmet_padding_raft_on_water",
       "newId": "person_wearing_helmet_paddling_raft_on_water"
     },
@@ -5304,9 +5313,9 @@
       "inspo": "canoe"
     },
     {
-      "newId": "pixel_canoe_on_water",
+      "newId": "pixel_canoe_above_water",
       "by": "@quincylvania",
-      "inspo": "canoe_on_water"
+      "inspo": "canoe_above_water"
     },
     {
       "newId": "pixel_arrows_left_right",
