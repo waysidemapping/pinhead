@@ -146,7 +146,7 @@ export class ChangelogDescriber {
     return str;
   }
 
-  issueLinksForIconChange(iconChange) {
+  issueLinksForIconChange(iconChange, targetBlank) {
     if (!iconChange.issue && !iconChange.pr) return "";
 
     const issues = (iconChange.pr ? stringArray(iconChange.pr) : []).concat(
@@ -157,7 +157,7 @@ export class ChangelogDescriber {
       issues
         .map(
           (issue) =>
-            `<a href="https://github.com/waysidemapping/pinhead/issues/${issue}">#${issue}</a>`,
+            `<a ${targetBlank ? 'target="blank"' : ""} href="https://github.com/waysidemapping/pinhead/issues/${issue}">#${issue}</a>`,
         )
         .join(", ") +
       ")"
@@ -205,9 +205,7 @@ export class ChangelogDescriber {
       if (iconChange.by) str += " by " + byList(iconChange.by);
     }
 
-    str +=
-      // this.provenanceInfoForIconChange(iconChange) +
-      this.issueLinksForIconChange(iconChange);
+    str += this.issueLinksForIconChange(iconChange, true);
 
     if (iconChange.inspo) {
       str += `<br/><table>`;
@@ -219,7 +217,7 @@ export class ChangelogDescriber {
         const label = inspo.startsWith("http") ? "external source" : inspo;
         str += "<tr>";
         str += `<td><img src="${imgSrc}" width="15px"/></td>`;
-        str += `<td>Based on <a href="${link}" style="line-break: anywhere;">${label}</a></td>`;
+        str += `<td>Based on <a target="_blank" href="${link}" style="line-break: anywhere;">${label}</a></td>`;
         str += `</tr>`;
       }
       str += `</table>`;
