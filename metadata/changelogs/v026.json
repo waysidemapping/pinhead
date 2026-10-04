@@ -1999,6 +1999,15 @@
       "issue": "383"
     },
     {
+      "newId": "badge_shield_with_wifi",
+      "by": "@quincylvania",
+      "inspo": [
+        "badge_shield",
+        "wifi"
+      ],
+      "issue": "47"
+    },
+    {
       "oldId": "shopping_bag",
       "newId": "shopping_bag",
       "edit": "minor",
