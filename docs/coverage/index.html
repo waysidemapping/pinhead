@@ -24,13 +24,15 @@
         border-spacing: 0;
       }
       th {
+        background: #fff;
+      }
+      tr.header-row th {
         position: sticky;
         top: 0;
-
         background: #fff;
       }
       th.header {
-        z-index: 100000;
+        z-index: 1000000;
       }
       tr:empty {
         height: 22px;
@@ -69,10 +71,10 @@
       td div img {
         vertical-align: middle;
       }
-      tr:nth-child(even) {
-        background-color: #eeeeee;
-      }
       tr:nth-child(odd) {
+        background-color: #eee;
+      }
+      tr:nth-child(even) {
         background-color: #fff;
       }
     </style>
@@ -133,11 +135,19 @@
       importSources.sort((a, b) => b.iconCount - a.iconCount);
 
       let html = ``;
-      html += `<tr>`;
+      html += `<tr class="header-row">`;
       html += `<th class="header"><a href="/">Pinhead v${currentVersion}</a></th>`;
       html += `<th>Unicode</th>`;
       for (const importSource of importSources) {
         html += `<th><a href="${importSource.commit ? importSource.repo.slice(0, -4) + "/tree/" + importSource.commit : importSource.repo}" target="_blank">${importSource.name + (importSource.commit ? " (" + importSource.commit.slice(0, 7) + ")" : "")}</a></th>`;
+      }
+      html += `</tr>`;
+
+      html += `<tr class="subheader-row">`;
+      html += `<th class="header">${icons.length} icons</th>`;
+      html += `<th></th>`;
+      for (const importSource of importSources) {
+        html += `<th>${importSource.iconCount} icons</a></th>`;
       }
       html += `</tr>`;
 
