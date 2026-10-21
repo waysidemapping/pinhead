@@ -682,8 +682,8 @@ async function setupPage(pageData) {
               .filter((icon) => icon && !icon.sensitive),
           ),
           iconListSection(
-            `a-z`,
-            `a-z`,
+            `all`,
+            `all icons`,
             Object.values(iconsById)
               .toSorted((icon1, icon2) => {
                 const oneIsNum = !isNaN(parseInt(icon1.id[0]));
