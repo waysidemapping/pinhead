@@ -156,6 +156,9 @@
     "a_frame_tent": {
       "super": "tent"
     },
+    "accessibility_symbol": {
+      "commons": "SVG accessibility icons"
+    },
     "activity_panel": {
       "super": "playground_equipment"
     },
@@ -196,7 +199,10 @@
       ]
     },
     "ahimsa_hand": {
-      "super": "religious_symbol"
+      "super": [
+        "religious_symbol",
+        "hand"
+      ]
     },
     "airboat": {
       "super": "motorboat"
@@ -273,12 +279,16 @@
       "super": "building"
     },
     "apple": {
+      "commons": [
+        "Plain black SVG fruit icons",
+        "SVG apple icons"
+      ],
       "super": "fruit"
     },
     "apple_core": {
       "super": [
         "apple",
-        "busted"
+        "damaged"
       ]
     },
     "arch_gatway": {
@@ -291,9 +301,11 @@
       "super": "sport"
     },
     "archery_arrow": {
+      "commons": "Arrow (weapon) icons",
       "super": "archery"
     },
     "archery_bow": {
+      "commons": "Bow_icons",
       "super": [
         "archery",
         "ranged_weapon"
@@ -306,14 +318,42 @@
       "super": "tent"
     },
     "arrow": {
-      "commons": "Black SVG arrow icons",
+      "commons": "Plain black SVG arrow icons",
       "super": "shape"
     },
+    "arrow_down": {
+      "commons": "Plain black SVG down arrow icons",
+      "super": "arrow"
+    },
+    "arrow_left": {
+      "commons": "Plain black SVG left arrow icons",
+      "super": "arrow"
+    },
+    "arrow_right": {
+      "commons": "Plain black SVG right arrow icons",
+      "super": "arrow"
+    },
+    "arrow_up": {
+      "commons": "Plain black SVG up arrow icons",
+      "super": "arrow"
+    },
+    "arrows_left_right": {
+      "commons": "Plain black SVG left and right arrow icons",
+      "super": "arrow"
+    },
+    "arrows_up_down": {
+      "commons": "Plain black SVG up and down arrow icons",
+      "super": "arrow"
+    },
     "artwork": {},
+    "asterisk": {
+      "commons": "Asterisks"
+    },
     "astrologers_hat": {
       "super": "hat"
     },
     "at_sign": {
+      "commons": "At sign in SVG",
       "super": [
         "a",
         "typographical_symbol"
@@ -340,6 +380,19 @@
     "bacteria": {
       "super": "microbiology"
     },
+    "badge_shield": {
+      "commons": "Plain black SVG shield icons"
+    },
+    "badminton": {
+      "commons": "Badminton icons",
+      "super": "sport"
+    },
+    "badminton_racket": {
+      "super": [
+        "badminton",
+        "racket"
+      ]
+    },
     "bag": {
       "commons": "Plain black SVG luggage icons",
       "super": "container"
@@ -362,6 +415,7 @@
       "super": "food"
     },
     "ball": {
+      "commons": "Plain black SVG sports balls icons",
       "super": "sport_equipment"
     },
     "ball_tip_antenna": {
@@ -377,6 +431,7 @@
       "super": "banana"
     },
     "banknote": {
+      "commons": "Plain black SVG banknote icons",
       "super": "legal_tender"
     },
     "bar": {
@@ -415,6 +470,9 @@
     "barricade": {
       "super": "barrier"
     },
+    "barrier": {
+      "commons": "Barrier icons"
+    },
     "baseball": {
       "super": "ball"
     },
@@ -437,18 +495,22 @@
       "super": "electronic_device"
     },
     "battery": {
+      "commons": "Plain black SVG battery icons",
       "super": "electric_power"
     },
     "battlement": {
+      "commons": "Battlement icons",
       "super": "barrier"
     },
     "bear": {
+      "commons": "Plain black SVG bear icons",
       "super": "carnivore"
     },
     "bear_spray_can": {
       "super": "spray_can"
     },
     "bed": {
+      "commons": "Plain black SVG bed icons",
       "super": "furniture"
     },
     "bee": {
@@ -571,6 +633,7 @@
       "super": "officer"
     },
     "bottle": {
+      "commons": "Bottle icons",
       "super": "container"
     },
     "bouncy_cushion": {
@@ -583,6 +646,10 @@
     "bowl": {
       "super": "dishware"
     },
+    "bowling": {
+      "commons": "Bowling icons",
+      "super": "sport"
+    },
     "bowling_ball": {
       "super": [
         "ball",
@@ -590,7 +657,10 @@
       ]
     },
     "bowling_pin": {
-      "super": "bowling"
+      "super": [
+        "bowling",
+        "sport_equipment"
+      ]
     },
     "box": {
       "super": "container"
@@ -613,10 +683,20 @@
     "bread": {
       "super": "baked_good"
     },
+    "brick": {
+      "commons": "Brick icons"
+    },
     "brick_trowel": {
       "super": "trowel"
     },
+    "brick_wall": {
+      "super": [
+        "brick",
+        "wall"
+      ]
+    },
     "bridge": {
+      "commons": "SVG bridge icons",
       "super": "erected_structure"
     },
     "bridge_shape": {
@@ -655,7 +735,7 @@
       "super": "star"
     },
     "bull": {
-      "super": "ungulate"
+      "super": "cattle"
     },
     "bulldozer": {
       "super": "construction_vehicle"
@@ -734,6 +814,7 @@
       "super": "vacuum_cleaner"
     },
     "canoe": {
+      "commons": "Plain black SVG canoe icons",
       "super": "paddlecraft"
     },
     "cape_landform": {
@@ -806,7 +887,12 @@
       "super": "castle"
     },
     "cat": {
+      "commons": "Plain black SVG cat icons",
       "super": "carnivore"
+    },
+    "cattle": {
+      "commons": "Plain black SVG cattle icons",
+      "super": "ungulate"
     },
     "cattle_grid": {
       "super": "portal"
@@ -846,6 +932,9 @@
     },
     "checkered_flag": {
       "super": "flag"
+    },
+    "checkmark": {
+      "commons": "Plain black SVG check mark icons"
     },
     "cheese": {
       "super": "food"
@@ -923,6 +1012,7 @@
       ]
     },
     "circle": {
+      "commons": "Plain black round SVG icons",
       "super": "shape"
     },
     "circle_a": {
@@ -989,10 +1079,7 @@
       "super": "coffee"
     },
     "coffee_mug": {
-      "super": [
-        "hot_drink_cup",
-        "drink_mug"
-      ]
+      "super": "drink_mug"
     },
     "coin": {
       "super": "legal_tender"
@@ -1074,7 +1161,7 @@
       "super": "marine_animal"
     },
     "crack": {
-      "super": "busted"
+      "super": "damaged"
     },
     "crane": {
       "super": "erected_structure"
@@ -1141,9 +1228,6 @@
     "cube": {
       "super": "3d_shape"
     },
-    "cup": {
-      "super": "container"
-    },
     "cupcake": {
       "super": "baked_good"
     },
@@ -1171,6 +1255,7 @@
       "super": "3d_shape"
     },
     "dagger": {
+      "commons": "Dagger icons",
       "super": "bladed_weapon"
     },
     "daisy": {
@@ -1182,8 +1267,15 @@
         "barrier"
       ]
     },
+    "damaged": {
+      "commons": "Damaged object icons"
+    },
     "deer": {
+      "commons": "Plain black SVG deer icons",
       "super": "ungulate"
+    },
+    "deer_head": {
+      "super": "deer"
     },
     "delicate_arch": {
       "super": "natural_arch"
@@ -1223,6 +1315,9 @@
     "dish": {
       "super": "kitchenware"
     },
+    "dishware": {
+      "super": "kitchenware"
+    },
     "diving_mask": {
       "super": "mask"
     },
@@ -1234,6 +1329,7 @@
       "super": "canine"
     },
     "dog_sled": {
+      "commons": "Dogsled icons",
       "super": "sled"
     },
     "dollar": {
@@ -1262,6 +1358,7 @@
       "super": "food_and_drink"
     },
     "drink_bottle": {
+      "commons": "Beverage bottle icons",
       "super": [
         "drink",
         "bottle"
@@ -1273,23 +1370,23 @@
         "container"
       ]
     },
-    "drink_cup": {
-      "super": [
-        "drink",
-        "cup"
-      ]
-    },
     "drink_mug": {
-      "super": "drink_cup"
+      "super": "drinkware"
     },
     "drinking_glass": {
-      "super": "drink_cup"
+      "super": "drinkware"
+    },
+    "drinkware": {
+      "super": [
+        "drink",
+        "kitchenware"
+      ]
     },
     "drone_aircraft": {
       "super": "aircraft"
     },
     "droplet": {
-      "commons": "Plain black SVG water icons",
+      "commons": "Plain black SVG drop icons",
       "super": "shape"
     },
     "duck": {
@@ -1314,6 +1411,9 @@
     "egg": {
       "super": "food"
     },
+    "eight_point_asterisk": {
+      "super": "asterisk"
+    },
     "eighth_note": {
       "super": "musical_note"
     },
@@ -1327,6 +1427,9 @@
       "commons": "SVG electrical symbols",
       "match": "^electrical_.+",
       "super": "electricity"
+    },
+    "electricity": {
+      "commons": "Electrical icons"
     },
     "electronic_device": {
       "super": [
@@ -1370,6 +1473,7 @@
       "super": "currency_sign"
     },
     "exclamation_point": {
+      "commons": "Plain black SVG exclamation mark icons",
       "super": "punctuation_mark"
     },
     "eye": {
@@ -1416,6 +1520,7 @@
       "super": "internal_organ"
     },
     "fence": {
+      "commons": "Fence icons",
       "super": "barrier"
     },
     "ferris_wheel": {
@@ -1457,11 +1562,11 @@
     "fingernail_polished": {
       "super": "fingernail"
     },
+    "fire": {
+      "commons": "Plain black SVG fire icons"
+    },
     "fire_extinguisher": {
-      "super": [
-        "fire",
-        "spray_can"
-      ]
+      "super": "spray_can"
     },
     "firewood": {
       "super": "wood"
@@ -1550,6 +1655,7 @@
       "super": "clothing"
     },
     "fork": {
+      "commons": "SVG fork icons",
       "super": "cutlery"
     },
     "fort": {
@@ -1574,6 +1680,9 @@
     "fuel_station": {},
     "funnel": {
       "super": "tool"
+    },
+    "furniture": {
+      "commons": "Plain black SVG furniture icons"
     },
     "gable_roofed_building": {
       "super": "building"
@@ -1609,6 +1718,7 @@
       "super": "fuel_station"
     },
     "gate": {
+      "commons": "Gate icons",
       "super": "portal"
     },
     "gavel": {
@@ -1734,6 +1844,7 @@
       "super": "candy"
     },
     "hash": {
+      "commons": "Hash",
       "super": "typographical_symbol"
     },
     "hat": {
@@ -1867,6 +1978,7 @@
       "super": "body_part"
     },
     "international_wheelchair_symbol": {
+      "commons": "Plain black SVG wheelchair user icons",
       "super": [
         "wheelchair",
         "accessibility_symbol"
@@ -1924,7 +2036,7 @@
     "junk_car": {
       "super": [
         "car",
-        "busted"
+        "damaged"
       ]
     },
     "kayak": {
@@ -1934,6 +2046,7 @@
       "super": "hand_tool"
     },
     "keyboard": {
+      "commons": "SVG computer keyboards icons",
       "super": "input_device"
     },
     "keystone": {
@@ -1954,11 +2067,18 @@
     "kitchen_sink": {
       "super": "piping"
     },
+    "kitchenware": {
+      "commons": "SVG kitchenware icons"
+    },
     "knife": {
+      "commons": "Knife icons",
       "super": "hand_tool"
     },
     "labyrinth": {
       "super": "maze"
+    },
+    "lamp": {
+      "commons": "Lamp icons"
     },
     "lamppost": {
       "super": "street_lamp"
@@ -2031,6 +2151,7 @@
       "super": "lift_gate"
     },
     "lightbulb": {
+      "commons": "Plain black SVG light bulb icons",
       "super": "lamp"
     },
     "lighthouse": {
@@ -2097,6 +2218,7 @@
       "super": "groin"
     },
     "mammal": {
+      "commons": "Plain black SVG mammal icons",
       "super": "animal"
     },
     "manhole_cover": {
@@ -2113,6 +2235,7 @@
       "super": "house"
     },
     "map_pin": {
+      "commons": "Pin icons",
       "super": "shape"
     },
     "maple_leaf": {
@@ -2128,6 +2251,7 @@
       "super": "building"
     },
     "mars": {
+      "commons": "♂",
       "super": "sex_and_gender_symbol"
     },
     "martini_glass": {
@@ -2143,9 +2267,11 @@
       "super": "medical_science"
     },
     "medical_science": {
+      "commons": "Plain black SVG medical icons",
       "super": "science"
     },
     "megaphone": {
+      "commons": "Plain black SVG megaphone icons",
       "super": "speaker"
     },
     "memorial_stone": {
@@ -2206,10 +2332,14 @@
       "super": "railway_track"
     },
     "minus": {
+      "commons": "Icons with minus sign",
       "super": "typographical_symbol"
     },
     "mobile_phone": {
       "super": "phone"
+    },
+    "money": {
+      "commons": "Plain black SVG money icons"
     },
     "monopod_antenna": {
       "super": "antenna"
@@ -2230,6 +2360,7 @@
       "super": "vehicle"
     },
     "motorboat": {
+      "commons": "Plain black SVG motorboat icons",
       "super": [
         "boat",
         "motor_vehicle"
@@ -2261,10 +2392,14 @@
       "match": ".+_uppercase$",
       "super": "text"
     },
+    "music": {
+      "commons": "Plain black SVG music icons"
+    },
     "musical_instrument": {
       "super": "music"
     },
     "musical_note": {
+      "commons": "Plain black SVG musical note icons",
       "super": "music"
     },
     "natural_arch": {
@@ -2293,7 +2428,10 @@
       "super": "body_part"
     },
     "number": {
-      "commons": "Number icons",
+      "commons": [
+        "Number icons",
+        "Plain black SVG numbers"
+      ],
       "match": "^\\d+$"
     },
     "oak_leaf": {
@@ -2306,6 +2444,7 @@
       ]
     },
     "octagon": {
+      "commons": "Regular octagons",
       "super": "polygon"
     },
     "office_building": {
@@ -2347,7 +2486,11 @@
     "paifang": {
       "super": "arch_gateway"
     },
+    "paint": {
+      "commons": "Paint icons"
+    },
     "paint_roller": {
+      "commons": "Paint roller icons",
       "super": [
         "hand_tool",
         "paint"
@@ -2419,6 +2562,7 @@
       "super": "animal"
     },
     "payment_card": {
+      "commons": "Plain black SVG payment card icons",
       "super": "money"
     },
     "peace_sign": {
@@ -2484,6 +2628,7 @@
       "super": "truck"
     },
     "pill": {
+      "commons": "Pill icons",
       "super": "medical_science"
     },
     "pill_bottle": {
@@ -2498,7 +2643,9 @@
     "pint_glass": {
       "super": "drinking_glass"
     },
-    "pip": {},
+    "pip": {
+      "super": "dot"
+    },
     "piping": {
       "commons": "Plumbing icons",
       "super": "water_infrastructure"
@@ -2529,6 +2676,7 @@
       "super": "sign"
     },
     "plate": {
+      "commons": "Plate icons",
       "super": "dishware"
     },
     "play_shelter": {
@@ -2540,7 +2688,11 @@
     "play_structure": {
       "super": "playground_equipment"
     },
+    "playground_equipment": {
+      "commons": "Playground icons"
+    },
     "plus": {
+      "commons": "Plain black SVG plus icons",
       "super": "typographical_symbol"
     },
     "pointy_rock": {
@@ -2641,6 +2793,7 @@
       ]
     },
     "punctuation_mark": {
+      "commons": "Punctuation in SVG",
       "super": "typographical_symbol"
     },
     "purse": {
@@ -2650,6 +2803,7 @@
       "super": "toy"
     },
     "puzzle_piece": {
+      "commons": "SVG jigsaw puzzle icons",
       "super": "puzzle"
     },
     "quadcopter_drone": {
@@ -2665,7 +2819,14 @@
       "super": "musical_note"
     },
     "question_mark": {
+      "commons": "Plain black SVG question mark icons",
       "super": "punctuation_mark"
+    },
+    "racket": {
+      "super": [
+        "hand_tool",
+        "sport_equipment"
+      ]
     },
     "racquet": {
       "super": [
@@ -2694,13 +2855,13 @@
     "railway_track_askew": {
       "super": [
         "railway_track",
-        "busted"
+        "damaged"
       ]
     },
     "railway_track_partial": {
       "super": [
         "railway_track",
-        "busted"
+        "damaged"
       ]
     },
     "raised_curb": {
@@ -2720,6 +2881,7 @@
     },
     "ray": {},
     "rectangle": {
+      "commons": "Rectangle icons",
       "super": "parallelogram"
     },
     "rectangular_shelter": {
@@ -2818,6 +2980,13 @@
     "russian_orthodox_cross": {
       "super": "christian_cross"
     },
+    "rx_symbol": {
+      "commons": "℞",
+      "super": [
+        "r",
+        "x"
+      ]
+    },
     "saddle_shape": {
       "super": [
         "mountain_saddle",
@@ -2863,6 +3032,9 @@
     "school_bus": {
       "super": "bus"
     },
+    "science": {
+      "commons": "Plain black SVG science icons"
+    },
     "scissor": {
       "super": [
         "hand_tool",
@@ -2870,6 +3042,7 @@
       ]
     },
     "screen": {
+      "commons": "Display screen icons",
       "super": "electronic_device"
     },
     "sculpture": {
@@ -2908,6 +3081,9 @@
     "semi_trailer": {
       "super": "trailer"
     },
+    "sex_and_gender_symbol": {
+      "commons": "Gender symbols"
+    },
     "shaker_pint_glass": {
       "super": "pint_glass"
     },
@@ -2920,7 +3096,7 @@
       "super": "currency_sign"
     },
     "shelter": {
-      "super": "erected_structure"
+      "super": "building"
     },
     "ship": {
       "super": "boat"
@@ -2987,6 +3163,9 @@
     "sitting_tank_toilet": {
       "super": "toilet"
     },
+    "six_point_asterisk": {
+      "super": "asterisk"
+    },
     "sixteenth_note": {
       "super": "musical_note"
     },
@@ -2997,6 +3176,7 @@
       ]
     },
     "skateboard": {
+      "commons": "Plain black SVG skateboard icons",
       "super": [
         "wheeled_vehicle",
         "board"
@@ -3069,8 +3249,15 @@
     "snowmobile": {
       "super": "vehicle"
     },
+    "soccer": {
+      "commons": "SVG association football icons",
+      "super": "sport"
+    },
     "soccer_ball": {
-      "super": "ball"
+      "super": [
+        "ball",
+        "soccer"
+      ]
     },
     "spacecraft": {
       "super": "aircraft"
@@ -3124,9 +3311,12 @@
       "super": "ghost"
     },
     "spoon": {
+      "commons": "SVG spoon icons",
       "super": "cutlery"
     },
-    "sport": {},
+    "sport": {
+      "commons": "Plain black SVG sports icons"
+    },
     "sport_court": {
       "super": "sport"
     },
@@ -3134,6 +3324,7 @@
       "super": "sport"
     },
     "spray_can": {
+      "commons": "Spray can icons",
       "super": "container"
     },
     "spray_paint_can": {
@@ -3152,6 +3343,7 @@
       "super": "telescope"
     },
     "square": {
+      "commons": "Square SVG icons",
       "super": "rectangle"
     },
     "square_academic_cap": {
@@ -3170,13 +3362,11 @@
       "super": "carriage"
     },
     "star": {
+      "commons": "Plain black SVG five-pointed star icons",
       "super": "polygon"
     },
     "star_of_david": {
-      "super": [
-        "religious_symbol",
-        "star"
-      ]
+      "super": "religious_symbol"
     },
     "stardust": {
       "super": "star"
@@ -3304,6 +3494,7 @@
       "super": "furniture"
     },
     "table_knife": {
+      "commons": "Kitchen knife icons",
       "super": [
         "cutlery",
         "knife"
@@ -3311,6 +3502,16 @@
     },
     "table_lamp": {
       "super": "lamp"
+    },
+    "table_tennis": {
+      "commons": "Table tennis icons",
+      "super": "sport"
+    },
+    "table_tennis_paddle": {
+      "super": [
+        "table_tennis",
+        "racket"
+      ]
     },
     "tabletop_microphone": {
       "super": "microphone"
@@ -3334,6 +3535,7 @@
       "super": "car"
     },
     "tea": {
+      "commons": "SVG tea icons",
       "super": "drink"
     },
     "tea_bag": {
@@ -3341,7 +3543,7 @@
     },
     "teacup": {
       "super": [
-        "hot_drink_cup",
+        "drinkware",
         "tea"
       ]
     },
@@ -3357,8 +3559,22 @@
     "temaki": {
       "super": "sushi"
     },
+    "tennis": {
+      "commons": "Tennis icons",
+      "super": "sport"
+    },
     "tennis_ball": {
-      "super": "ball"
+      "commons": "Tennis ball icons",
+      "super": [
+        "tennis",
+        "ball"
+      ]
+    },
+    "tennis_racket": {
+      "super": [
+        "tennis",
+        "racket"
+      ]
     },
     "tent": {
       "commons": "Plain black SVG tent icons",
@@ -3373,6 +3589,12 @@
     },
     "thatched_roof_hut": {
       "super": "building"
+    },
+    "thumbs_down_hand": {
+      "super": "hand"
+    },
+    "thumbs_up_hand": {
+      "super": "hand"
     },
     "thyroid": {
       "super": "internal_organ"
@@ -3399,7 +3621,10 @@
       "super": "microbiology"
     },
     "to_go_cup": {
-      "super": "hot_drink_cup"
+      "super": "drinkware"
+    },
+    "toilet": {
+      "commons": "Toilet icons"
     },
     "toilet_paper_roll": {
       "super": "paper"
@@ -3437,6 +3662,9 @@
     },
     "town_building": {
       "super": "building"
+    },
+    "toy": {
+      "commons": "Toy icons"
     },
     "traditional_festive_latin_clothes": {
       "super": "clothing"
@@ -3504,13 +3732,14 @@
     "tree_stump": {
       "super": "tree"
     },
-    "tree_trump": {
+    "tree_trunk": {
       "super": "tree"
     },
     "trench": {
       "super": "barrier"
     },
     "triangle": {
+      "commons": "SVG triangle icons",
       "super": "polygon"
     },
     "triangular_pill": {
@@ -3572,19 +3801,23 @@
       "super": "turtle"
     },
     "tv": {
-      "super": [
-        "tv_screen",
-        "electric_appliance"
-      ]
+      "commons": "SVG television icons",
+      "super": "electric_appliance"
     },
     "tv_screen": {
-      "super": "screen"
+      "super": [
+        "tv",
+        "screen"
+      ]
     },
     "two_button_computer_mouse": {
       "super": "personal_computer"
     },
     "typha": {
       "super": "plant"
+    },
+    "typographical_symbol": {
+      "commons": "SVG glyphs"
     },
     "underground_infrastructure": {
       "super": "infrastructure"
@@ -3635,6 +3868,7 @@
       "commons": "Vending machine icons"
     },
     "venus": {
+      "commons": "♀",
       "super": "sex_and_gender_symbol"
     },
     "venus_mars": {
@@ -3665,6 +3899,7 @@
       "super": "physical_media"
     },
     "virus": {
+      "commons": "SVG virus icons",
       "super": "microbiology"
     },
     "vneck_tshirt": {
@@ -3680,6 +3915,7 @@
       "super": "clothing"
     },
     "wall": {
+      "commons": "Wall icons",
       "super": "barrier"
     },
     "wall_hanging": {
@@ -3764,7 +4000,11 @@
     "webcam": {
       "super": "camera"
     },
+    "wheel": {
+      "commons": "Wheel icons"
+    },
     "wheelchair": {
+      "commons": "Plain black SVG wheelchair icons",
       "super": "wheeled_vehicle"
     },
     "wheeled_vehicle": {
@@ -3777,6 +4017,7 @@
       "super": "waste_container"
     },
     "wifi": {
+      "commons": "Plain black SVG Wi-Fi icons",
       "match": "^wifi.*",
       "super": "signal_indicator"
     },
@@ -3821,12 +4062,17 @@
       "super": "hat"
     },
     "wolf": {
+      "commons": "Plain black SVG wolf icons",
       "super": "canine"
+    },
+    "wolf_head": {
+      "super": "wolf"
     },
     "wood": {
       "super": "tree"
     },
     "wrench": {
+      "commons": "Plain black SVG wrench icons",
       "super": "hand_tool"
     },
     "writing_utensil": {
