@@ -165,10 +165,12 @@ export async function moveFile(fromName, toName, reason, noRedirect) {
     to: "File:" + toName,
     reason: reason,
     movetalk: 1,
-    noredirect: noRedirect ? 1 : 0,
     token: loginInfo.token,
     format: "json",
   };
+  if (noRedirect) {
+    params.noredirect = "1";
+  }
   const res = await fetch(commonsApiBase, {
     method: "POST",
     body: new URLSearchParams(params),
