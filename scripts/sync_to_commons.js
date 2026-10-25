@@ -41,7 +41,12 @@ const completeIconsById = JSON.parse(
 const iconsToUploadById = Object.assign({}, completeIconsById);
 const pagesNeedingUpdateByIconId = {};
 
-const categoryReader = new CategoryReader(Object.keys(completeIconsById));
+const categoryInfo = JSON.parse(readFileSync("dist/id_metadata.json"));
+
+const categoryReader = new CategoryReader(
+  categoryInfo,
+  Object.keys(completeIconsById),
+);
 
 const validRemotePages = {};
 

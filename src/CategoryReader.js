@@ -132,13 +132,13 @@ export class CategoryReader {
   }
 
   rootCategoriesForIconId(iconId) {
-    const outCategories = [];
+    const outCategories = new Set();
     for (const categoryId in this.categories) {
       if (this.iconIdMatchesCategoryId(iconId, categoryId)) {
-        outCategories.push(this.categories[categoryId]);
+        outCategories.add(this.categories[categoryId]);
       }
     }
-    return outCategories;
+    return Array.from(outCategories);
   }
 
   iconIdsForRootCategoryIds(categoryIds) {
@@ -192,19 +192,31 @@ export class CategoryReader {
     return outIconIds.map((info) => info.iconId);
   }
 
+  commonsCategoriesForCategory = function (cat) {
+    if (cat.commons) {
+      return stringArray(cat.commons);
+    } else if (cat.super) {
+      return stringArray(cat.super)
+        .map((superCatId) => {
+          const superCat = this.categories[superCatId];
+          if (!superCat) {
+            console.error("Missing Commons category info for: " + superCatId);
+          }
+          return this.commonsCategoriesForCategory(superCat);
+        })
+        .flat(1);
+    }
+    return [];
+  };
+
   commonsCategoriesForIconId = function (iconId) {
-    return this.byIconId[iconId].rootCategories
-      .map((rootCatId) => {
-        let catIdsToCheck = [rootCatId];
-        while (catIdsToCheck.length > 0) {
-          const catId = catIdsToCheck.shift();
-          const cat = this.byCategoryId[catId];
-          if (cat.commons) return stringArray(cat.commons);
-          if (cat.super) catIdsToCheck = catIdsToCheck.concat(cat.super);
-        }
-      })
-      .filter(Boolean)
-      .flat(1);
+    return Array.from(
+      new Set(
+        this.rootCategoriesForIconId(iconId)
+          .map((rootCat) => this.commonsCategoriesForCategory(rootCat))
+          .flat(1),
+      ),
+    );
   };
 }
 
