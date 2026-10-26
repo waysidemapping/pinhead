@@ -60,6 +60,8 @@ for (const page of pages) {
   processCategoryPage(page);
 }
 
+console.log(Object.keys(iconsToMoveByOldId).length + " renamed icons to move");
+
 await moveRenamedIcons().catch(catchError);
 
 await uploadNewIconVersions().catch(catchError);
@@ -140,22 +142,29 @@ function processCategoryPage(page) {
 
 async function moveRenamedIcons() {
   for (const oldId in iconsToMoveByOldId) {
+
     const page = iconsToMoveByOldId[oldId].page;
     const oldFilename = page.title.slice(5);
     const targetId = iconsToMoveByOldId[oldId].targetId;
-    const newFilename = `${targetId} Pinhead icon.svg`;
+    let newFilename = `${targetId.replaceAll('_', ' ')} Pinhead icon.svg`;
+    newFilename = newFilename.charAt(0).toUpperCase() + newFilename.slice(1);
 
-    // Don't leave a redirect page if we're going to upload another icon with the same name
-    const noRedirect = !!iconsToUploadById[oldId];
+    if (newFilename !== oldFilename) {
+      // Don't leave a redirect page if we're going to upload another icon with the same name
+      const noRedirect = !!iconsToUploadById[oldId];
 
-    let reason = "Fix name of file originally uploaded by me.";
-    if (noRedirect) {
-      reason +=
-        " Leaving no redirect to make way for corrected file of this name.";
+      let reason = "Fix name of file originally uploaded by me.";
+      if (noRedirect) {
+        reason +=
+          " Leaving no redirect to make way for corrected file of this name.";
+      }
+      const result = await moveFile(oldFilename, newFilename, reason, noRedirect);
+      console.log(result);
+    } else {
+      console.log(`Page is already located at "File:${oldFilename}", skipping page move`);
     }
-    const result = await moveFile(oldFilename, newFilename, reason, noRedirect);
-    console.log(result);
-    page.title = "File:" + newFilename.replaceAll("_", " ");
+
+    page.title = "File:" + newFilename;
     // Always update page even if file is the same since the page text needs to be updated
     pagesNeedingUpdateByIconId[targetId] = page;
   }
