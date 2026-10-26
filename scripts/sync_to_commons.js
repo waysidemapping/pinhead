@@ -142,11 +142,10 @@ function processCategoryPage(page) {
 
 async function moveRenamedIcons() {
   for (const oldId in iconsToMoveByOldId) {
-
     const page = iconsToMoveByOldId[oldId].page;
     const oldFilename = page.title.slice(5);
     const targetId = iconsToMoveByOldId[oldId].targetId;
-    let newFilename = `${targetId.replaceAll('_', ' ')} Pinhead icon.svg`;
+    let newFilename = `${targetId.replaceAll("_", " ")} Pinhead icon.svg`;
     newFilename = newFilename.charAt(0).toUpperCase() + newFilename.slice(1);
 
     if (newFilename !== oldFilename) {
@@ -158,10 +157,17 @@ async function moveRenamedIcons() {
         reason +=
           " Leaving no redirect to make way for corrected file of this name.";
       }
-      const result = await moveFile(oldFilename, newFilename, reason, noRedirect);
+      const result = await moveFile(
+        oldFilename,
+        newFilename,
+        reason,
+        noRedirect,
+      );
       console.log(result);
     } else {
-      console.log(`Page is already located at "File:${oldFilename}", skipping page move`);
+      console.log(
+        `Page is already located at "File:${oldFilename}", skipping page move`,
+      );
     }
 
     page.title = "File:" + newFilename;
