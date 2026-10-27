@@ -258,12 +258,12 @@ async function uploadMissingIcons() {
           pinheadIconId: pinheadIconId,
           filename: json.upload.filename,
         };
+        console.log("Upload complete");
+      } else {
+        console.log(json);
+        console.log("Upload failed");
       }
-      console.log(
-        json.upload?.result + ": " + json.upload?.imageinfo?.descriptionurl,
-      );
     }
-    console.log("Upload complete");
   } else {
     console.log("No icons to upload");
   }
