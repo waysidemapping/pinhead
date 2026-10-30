@@ -991,6 +991,7 @@
       "super": "chocolate"
     },
     "chopstick": {
+      "commons": "Plain black SVG chopstick icons",
       "super": "cutlery"
     },
     "christian_cross": {
@@ -1655,7 +1656,7 @@
       "super": "clothing"
     },
     "fork": {
-      "commons": "SVG fork icons",
+      "commons": "Plain black SVG fork icons",
       "super": "cutlery"
     },
     "fort": {
@@ -3311,7 +3312,7 @@
       "super": "ghost"
     },
     "spoon": {
-      "commons": "SVG spoon icons",
+      "commons": "Plain black SVG spoon icons",
       "super": "cutlery"
     },
     "sport": {
@@ -3494,7 +3495,7 @@
       "super": "furniture"
     },
     "table_knife": {
-      "commons": "Kitchen knife icons",
+      "commons": "Plain black SVG kitchen knife icons",
       "super": [
         "cutlery",
         "knife"
