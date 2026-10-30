@@ -2624,6 +2624,16 @@
     "picket_fence": {
       "super": "fence"
     },
+    "pickleball": {
+      "commons": "Pickleball icons",
+      "super": "sport"
+    },
+    "pickleball_paddle": {
+      "super": [
+        "pickleball",
+        "racket"
+      ]
+    },
     "pickup_truck": {
       "super": "truck"
     },
