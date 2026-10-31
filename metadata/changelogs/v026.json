@@ -529,7 +529,8 @@
       "inspo": [
         "coffee_mug",
         "handled_teacup_and_saucer"
-      ]
+      ],
+      "openhistoricalmap": "cafe"
     },
     {
       "newId": "coffee_mug_and_wifi",

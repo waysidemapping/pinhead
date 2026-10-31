@@ -2118,6 +2118,7 @@
       "americana": "poi_envelope",
       "maki": "post",
       "nps": "post-office",
+      "opengemeenten": "Bericht",
       "openhistoricalmap": "post_office",
       "osmcarto": "amenity/post_office",
       "osmic": "amenity/post-office"
