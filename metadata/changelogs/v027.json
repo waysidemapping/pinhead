@@ -303,6 +303,55 @@
       ]
     },
     {
+      "newId": "droplet_in_eaved_gabled_building_with_chimney",
+      "by": "@quincylvania",
+      "inspo": [
+        "droplet_in_eaved_gabled_building",
+        "eaved_gabled_building_with_chimney"
+      ]
+    },
+    {
+      "newId": "spoon_beside_table_knife_in_eaved_gabled_building_with_chimney",
+      "by": "@quincylvania",
+      "inspo": [
+        "spoon_beside_table_knife_in_eaved_gabled_building",
+        "eaved_gabled_building_with_chimney"
+      ]
+    },
+    {
+      "newId": "person_walking_with_hiking_pole_wearing_backpack_in_eaved_gabled_building_with_chimney",
+      "by": "@quincylvania",
+      "inspo": [
+        "person_walking_with_hiking_pole_wearing_backpack_in_eaved_gabled_building",
+        "eaved_gabled_building_with_chimney"
+      ]
+    },
+    {
+      "newId": "heart_in_eaved_gabled_building_with_chimney",
+      "by": "@quincylvania",
+      "inspo": [
+        "heart_in_eaved_gabled_building",
+        "eaved_gabled_building_with_chimney"
+      ],
+      "issue": "434"
+    },
+    {
+      "newId": "picnic_table_in_eaved_gabled_building_with_chimney",
+      "by": "@quincylvania",
+      "inspo": [
+        "picnic_table_in_eaved_gabled_building",
+        "eaved_gabled_building_with_chimney"
+      ]
+    },
+    {
+      "newId": "open_book_in_eaved_gabled_building_with_chimney",
+      "by": "@quincylvania",
+      "inspo": [
+        "open_book_in_eaved_gabled_building",
+        "eaved_gabled_building_with_chimney"
+      ]
+    },
+    {
       "oldId": "wide_p_under_roof",
       "newId": "wide_p_under_gabled_roof",
       "issue": "495"
