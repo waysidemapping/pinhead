@@ -391,6 +391,12 @@
       "oldId": "groin_with_rememberance_ribbon",
       "newId": "groin_with_remembrance_ribbon",
       "issue": "497"
+    },
+    {
+      "oldId": "shopping_bag_with_heart",
+      "newId": "shopping_bag_with_heart",
+      "by": "Geo-2695",
+      "pr": "484"
     }
   ]
 }
