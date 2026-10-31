@@ -3686,8 +3686,14 @@
     "text": {
       "commons": "SVG text icons"
     },
-    "thatched_roof_hut": {
-      "super": "building"
+    "thatched_building": {
+      "super": [
+        "thatched_roof",
+        "building"
+      ]
+    },
+    "thatched_roof": {
+      "super": "roof"
     },
     "thumbs_down_hand": {
       "super": "hand"

@@ -509,7 +509,7 @@
     },
     {
       "oldId": "thatched_roof_hut",
-      "newId": "thatched_roof_building_with_door",
+      "newId": "thatched_building_with_door",
       "issue": "495"
     },
     {
@@ -573,9 +573,9 @@
       "issue": "495"
     },
     {
-      "newId": "thatched_roof_building",
+      "newId": "thatched_building",
       "by": "@quincylvania",
-      "inspo": "thatched_roof_building_with_door",
+      "inspo": "thatched_building_with_door",
       "issue": "495"
     },
     {
