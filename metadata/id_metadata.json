@@ -1776,6 +1776,7 @@
       "super": "flame"
     },
     "gasoline_pump": {
+      "commons": "Plain black SVG fuel pump icons",
       "super": "fuel_station"
     },
     "gate": {
