@@ -1542,7 +1542,7 @@
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/face-vomitting"
+      "healthicons": "emotions/face-vomiting"
     },
     {
       "newId": "frowning_face_with_head_bandage_in_circle_outline",
