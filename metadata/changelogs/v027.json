@@ -124,6 +124,16 @@
       "issue": "495"
     },
     {
+      "newId": "people_sleeping_in_bunkbeds_in_eaved_open_gabled_building",
+      "by": "@quincylvania",
+      "inspo": [
+        "people_sleeping_in_bunkbeds",
+        "eaved_open_gabled_building"
+      ],
+      "issue": "233",
+      "openhistoricalmap": "hostel"
+    },
+    {
       "newId": "eaved_box_gabled_building",
       "by": "@quincylvania",
       "inspo": "eaved_box_gabled_building_with_chimney_and_door",
