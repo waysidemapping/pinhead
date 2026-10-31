@@ -482,6 +482,36 @@
       "issue": "495"
     },
     {
+      "oldId": "shelter",
+      "newId": "eaved_monopitched_shelter",
+      "issue": "495"
+    },
+    {
+      "oldId": "tornado_beside_shelter",
+      "newId": "tornado_beside_eaved_monopitched_shelter",
+      "issue": "495"
+    },
+    {
+      "oldId": "picnic_table_in_shelter",
+      "newId": "picnic_table_in_eaved_monopitched_shelter",
+      "issue": "495"
+    },
+    {
+      "oldId": "person_sleeping_in_shelter",
+      "newId": "person_sleeping_in_eaved_monopitched_shelter",
+      "issue": "495"
+    },
+    {
+      "oldId": "horse_in_shelter",
+      "newId": "horse_in_eaved_monopitched_shelter",
+      "issue": "495"
+    },
+    {
+      "oldId": "dog_wearing_collar_in_shelter",
+      "newId": "dog_wearing_collar_in_eaved_monopitched_shelter",
+      "issue": "495"
+    },
+    {
       "newId": "thatched_roof_building",
       "by": "@quincylvania",
       "inspo": "thatched_roof_building_with_door",

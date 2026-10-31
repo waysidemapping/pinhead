@@ -1448,6 +1448,12 @@
         "gabled_shelter"
       ]
     },
+    "eaved_monopitched_shelter": {
+      "super": [
+        "eaved_shelter",
+        "monopitched_shelter"
+      ]
+    },
     "eaved_open_gabled_building": {
       "super": [
         "eaved_gabled_building",
@@ -2408,6 +2414,15 @@
     },
     "money": {
       "commons": "Plain black SVG money icons"
+    },
+    "monopitched_roof": {
+      "super": "roof"
+    },
+    "monopitched_shelter": {
+      "super": [
+        "shelter",
+        "monopitched_roof"
+      ]
     },
     "monopod_antenna": {
       "super": "antenna"
