@@ -585,6 +585,11 @@
       "issue": "495"
     },
     {
+      "oldId": "roofed_information_board",
+      "newId": "information_board_with_hipped_roof",
+      "issue": "495"
+    },
+    {
       "oldId": "rememberance_ribbon",
       "newId": "remembrance_ribbon",
       "issue": "497"

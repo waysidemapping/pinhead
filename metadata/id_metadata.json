@@ -1963,6 +1963,9 @@
     "hill": {
       "super": "elevated_landform"
     },
+    "hipped_roof": {
+      "super": "roof"
+    },
     "honeycomb": {
       "super": [
         "food",
@@ -2032,6 +2035,9 @@
     },
     "info_i": {
       "super": "i"
+    },
+    "information_board": {
+      "super": "sign"
     },
     "inline_skate": {
       "super": [
@@ -3034,9 +3040,6 @@
     },
     "roof": {
       "super": "shelter"
-    },
-    "roofed_information_board": {
-      "super": "sign"
     },
     "room": {
       "super": "building"
