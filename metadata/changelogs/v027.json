@@ -665,6 +665,15 @@
       ],
       "issue": "107",
       "healthicons": "people/doctor"
+    },
+    {
+      "newId": "poo_pile_with_smiling_face",
+      "by": "@quincylvania",
+      "inspo": [
+        "poo_pile",
+        "smiling_face"
+      ],
+      "char": "💩"
     }
   ]
 }
