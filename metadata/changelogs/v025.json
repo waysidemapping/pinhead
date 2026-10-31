@@ -1483,7 +1483,7 @@
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/angry"
+      "healthicons": "emotions/face-angry"
     },
     {
       "newId": "anguished_face_in_circle_outline",
@@ -1495,21 +1495,21 @@
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/measles"
+      "healthicons": "emotions/face-measles"
     },
     {
       "newId": "calm_face_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/calm"
+      "healthicons": "emotions/face-calm"
     },
     {
       "newId": "confused_face_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/confused"
+      "healthicons": "emotions/face-confused"
     },
     {
       "newId": "coughing_face_in_circle_outline",
@@ -1521,91 +1521,91 @@
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/coughing"
+      "healthicons": "emotions/face-coughing"
     },
     {
       "newId": "coughing_face_with_phlegm_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/expectorate"
+      "healthicons": "emotions/face-expectorate"
     },
     {
       "newId": "face_with_tongue_out_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/tongue"
+      "healthicons": "emotions/face-tongue"
     },
     {
       "newId": "vomiting_face_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/vomitting"
+      "healthicons": "emotions/face-vomitting"
     },
     {
       "newId": "frowning_face_with_head_bandage_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/bandaged"
+      "healthicons": "emotions/face-bandaged"
     },
     {
       "newId": "laughing_face_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/happy"
+      "healthicons": "emotions/face-happy"
     },
     {
       "newId": "nauseous_face_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/nauseous"
+      "healthicons": "emotions/face-nauseous"
     },
     {
       "newId": "nervous_face_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/nervous"
+      "healthicons": "emotions/face-nervous"
     },
     {
       "newId": "neutral_face_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/neutral"
+      "healthicons": "emotions/face-neutral"
     },
     {
       "newId": "sad_face_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/not-ok"
+      "healthicons": "emotions/face-not-ok"
     },
     {
       "newId": "sad_face_with_tear_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/crying"
+      "healthicons": "emotions/face-crying"
     },
     {
       "newId": "happy_face_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/ok"
+      "healthicons": "emotions/face-ok"
     },
     {
       "newId": "happy_face_with_face_mask_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/masked"
+      "healthicons": "emotions/face-masked"
     },
     {
       "newId": "smiling_face_in_circle_outline",
@@ -1621,14 +1621,14 @@
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/eyeglasses"
+      "healthicons": "emotions/face-eyeglasses"
     },
     {
       "newId": "sobbing_face_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/loudly-crying"
+      "healthicons": "emotions/face-loudly-crying"
     },
     {
       "newId": "surprised_face_in_circle_outline",
@@ -1643,42 +1643,42 @@
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/dizzy"
+      "healthicons": "emotions/face-dizzy"
     },
     {
       "newId": "tired_face_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/sad"
+      "healthicons": "emotions/face-sad"
     },
     {
       "newId": "tired_face_with_sweat_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/sweating"
+      "healthicons": "emotions/face-sweating"
     },
     {
       "newId": "tired_face_with_oral_thermometer_and_brow_sweat_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/fever"
+      "healthicons": "emotions/face-fever"
     },
     {
       "newId": "tired_face_with_z_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/sleepy"
+      "healthicons": "emotions/face-sleepy"
     },
     {
       "newId": "woozy_face_in_circle_outline",
       "src": "healthicons",
       "importBy": "@quincylvania",
       "issue": "107",
-      "healthicons": "emotions/woozy"
+      "healthicons": "emotions/face-woozy"
     },
     {
       "newId": "angry_face_in_circle",

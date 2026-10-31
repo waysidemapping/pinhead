@@ -276,7 +276,8 @@
         "heart_in_eaved_gabled_shelter",
         "eaved_gabled_building"
       ],
-      "issue": "434"
+      "issue": "434",
+      "healthicons": "symbols/hospice"
     },
     {
       "newId": "picnic_table_in_eaved_gabled_building",

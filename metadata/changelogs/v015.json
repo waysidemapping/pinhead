@@ -48,7 +48,11 @@
     {
       "newId": "bone",
       "by": "@quincylvania",
-      "char": "🦴"
+      "char": "🦴",
+      "healthicons": [
+        "body/bone-long",
+        "body/bone"
+      ]
     },
     {
       "newId": "jack_o_lantern",

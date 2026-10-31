@@ -2707,6 +2707,7 @@
       "newId": "hands_sign_language_interpretation",
       "src": "nps",
       "importBy": "@quincylvania",
+      "healthicons": "symbols/american-sign-language",
       "nps": "sign-language-interpretation"
     },
     {
@@ -4380,7 +4381,7 @@
       "src": "nps",
       "importBy": "@quincylvania",
       "char": "🤱",
-      "healthicons": "people/lactation",
+      "healthicons": "people/lactating",
       "nps": "breastfeeding-station"
     },
     {
