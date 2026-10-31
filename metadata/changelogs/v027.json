@@ -1,0 +1,386 @@
+{
+  "majorVersion": "27",
+  "date": "2026-11-30",
+  "iconChanges": [
+    {
+      "newId": "gabled_building",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building",
+      "issue": "495"
+    },
+    {
+      "newId": "gabled_building_with_door",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building_with_door",
+      "issue": "495"
+    },
+    {
+      "newId": "gabled_building_with_chimney",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building_with_chimney",
+      "issue": "495"
+    },
+    {
+      "newId": "gabled_building_with_chimney_and_door",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building_with_chimney_and_door",
+      "issue": "495"
+    },
+    {
+      "oldId": "house_with_flag",
+      "newId": "gabled_building_with_flag_and_door",
+      "by": "@quincylvania",
+      "issue": "495"
+    },
+    {
+      "oldId": "house_with_flag_and_info_i",
+      "newId": "gabled_building_with_flag_and_info_i",
+      "by": "@quincylvania",
+      "issue": "495"
+    },
+    {
+      "newId": "eaved_gabled_building",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building",
+      "issue": "495"
+    },
+    {
+      "newId": "eaved_gabled_building_with_door",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building_with_door",
+      "issue": "495"
+    },
+    {
+      "newId": "eaved_gabled_building_with_chimney",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building_with_chimney",
+      "issue": "495"
+    },
+    {
+      "newId": "eaved_gabled_building_with_chimney_and_door",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building_with_chimney_and_door",
+      "issue": "495"
+    },
+    {
+      "newId": "eaved_open_gabled_building",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building",
+      "issue": "495"
+    },
+    {
+      "newId": "eaved_open_gabled_building_with_door",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building_with_door",
+      "issue": "495"
+    },
+    {
+      "newId": "eaved_open_gabled_building_with_chimney",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building_with_chimney",
+      "issue": "495"
+    },
+    {
+      "newId": "eaved_open_gabled_building_with_chimney_and_door",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building_with_chimney_and_door",
+      "issue": "495"
+    },
+    {
+      "newId": "eaved_box_gabled_building",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building_with_chimney_and_door",
+      "issue": "495"
+    },
+    {
+      "newId": "eaved_box_gabled_building_with_door",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building_with_chimney_and_door",
+      "issue": "495"
+    },
+    {
+      "newId": "eaved_box_gabled_building_with_chimney",
+      "by": "@quincylvania",
+      "inspo": "eaved_box_gabled_building_with_chimney_and_door",
+      "issue": "495"
+    },
+    {
+      "oldId": "house_with_chimney",
+      "newId": "eaved_box_gabled_building_with_chimney_and_door",
+      "by": "@quincylvania",
+      "issue": "495"
+    },
+    {
+      "oldId": "gable_roofed_shelter",
+      "newId": "eaved_gabled_shelter",
+      "by": "@quincylvania",
+      "issue": "495"
+    },
+    {
+      "oldId": "droplet_in_gable_roofed_shelter",
+      "newId": "droplet_in_eaved_gabled_shelter",
+      "by": "@quincylvania",
+      "issue": "495"
+    },
+    {
+      "oldId": "spoon_beside_table_knife_in_gable_roofed_shelter",
+      "newId": "spoon_beside_table_knife_in_eaved_gabled_shelter",
+      "by": "@quincylvania",
+      "issue": "495"
+    },
+    {
+      "oldId": "person_walking_with_hiking_pole_wearing_backpack_in_gable_roofed_shelter",
+      "newId": "person_walking_with_hiking_pole_wearing_backpack_in_eaved_gabled_shelter",
+      "by": "@quincylvania",
+      "issue": "495"
+    },
+    {
+      "newId": "heart_in_eaved_gabled_shelter",
+      "by": "@quincylvania",
+      "inspo": [
+        "heart",
+        "eaved_gabled_shelter"
+      ],
+      "issue": "434"
+    },
+    {
+      "newId": "picnic_table_in_eaved_gabled_shelter",
+      "by": "@quincylvania",
+      "inspo": [
+        "picnic_table",
+        "eaved_gabled_shelter"
+      ]
+    },
+    {
+      "oldId": "gable_roofed_shelter_with_fireplace_and_chimney",
+      "newId": "eaved_gabled_shelter_with_fireplace_and_chimney",
+      "by": "@quincylvania",
+      "issue": "495"
+    },
+    {
+      "oldId": "gable_roofed_building",
+      "newId": "gabled_shelter",
+      "issue": "495"
+    },
+    {
+      "oldId": "car_in_gable_roofed_building",
+      "newId": "car_in_gabled_shelter",
+      "issue": "495"
+    },
+    {
+      "oldId": "tabletop_microphone_in_gable_roofed_building",
+      "newId": "tabletop_microphone_in_gabled_shelter",
+      "issue": "495"
+    },
+    {
+      "oldId": "house_and_trees_on_hill_in_water",
+      "newId": "eaved_box_gabled_building_and_trees_on_hill_in_water",
+      "issue": "495"
+    },
+    {
+      "oldId": "house_and_industrial_building_and_lowrise_building",
+      "newId": "gabled_building_with_door_and_industrial_building_and_lowrise_building",
+      "issue": "495"
+    },
+    {
+      "oldId": "hanging_sign_with_house",
+      "newId": "hanging_sign_with_eaved_gabled_building_with_door",
+      "issue": "495"
+    },
+    {
+      "oldId": "pixel_house_with_chimney",
+      "newId": "pixel_eaved_box_gabled_building_with_chimney_and_door",
+      "issue": "495"
+    },
+    {
+      "oldId": "pixel_house_with_flag",
+      "newId": "pixel_gabled_building_with_flag_and_door",
+      "issue": "495"
+    },
+    {
+      "newId": "droplet_in_eaved_gabled_building",
+      "by": "@quincylvania",
+      "inspo": [
+        "droplet_in_eaved_gabled_shelter",
+        "eaved_gabled_building"
+      ]
+    },
+    {
+      "newId": "spoon_beside_table_knife_in_eaved_gabled_building",
+      "by": "@quincylvania",
+      "inspo": [
+        "spoon_beside_table_knife_in_eaved_gabled_shelter",
+        "eaved_gabled_building"
+      ]
+    },
+    {
+      "newId": "person_walking_with_hiking_pole_wearing_backpack_in_eaved_gabled_building",
+      "by": "@quincylvania",
+      "inspo": [
+        "person_walking_with_hiking_pole_wearing_backpack_in_eaved_gabled_shelter",
+        "eaved_gabled_building"
+      ]
+    },
+    {
+      "newId": "heart_in_eaved_gabled_building",
+      "by": "@quincylvania",
+      "inspo": [
+        "heart_in_eaved_gabled_shelter",
+        "eaved_gabled_building"
+      ],
+      "issue": "434"
+    },
+    {
+      "newId": "picnic_table_in_eaved_gabled_building",
+      "by": "@quincylvania",
+      "inspo": [
+        "picnic_table_in_eaved_gabled_shelter",
+        "eaved_gabled_building"
+      ]
+    },
+    {
+      "newId": "eaved_gabled_building_with_fireplace_and_chimney",
+      "by": "@quincylvania",
+      "inspo": [
+        "eaved_gabled_shelter_with_fireplace_and_chimney",
+        "eaved_gabled_building"
+      ]
+    },
+    {
+      "oldId": "wide_p_under_roof",
+      "newId": "wide_p_under_gabled_roof",
+      "issue": "495"
+    },
+    {
+      "oldId": "wide_e_under_roof",
+      "newId": "wide_e_under_gabled_roof",
+      "issue": "495"
+    },
+    {
+      "oldId": "open_book_under_roof",
+      "newId": "open_book_under_gabled_roof",
+      "issue": "495"
+    },
+    {
+      "oldId": "droplet_under_roof",
+      "newId": "droplet_under_gabled_roof",
+      "issue": "495"
+    },
+    {
+      "oldId": "crates_under_roof",
+      "newId": "crates_under_gabled_roof",
+      "issue": "495"
+    },
+    {
+      "oldId": "bell_in_tall_gable_roofed_building",
+      "newId": "bell_in_tall_gabled_shelter",
+      "issue": "495"
+    },
+    {
+      "newId": "spoon_beside_table_knife_under_gabled_roof",
+      "by": "@quincylvania",
+      "inspo": [
+        "spoon_beside_table_knife_in_eaved_gabled_shelter",
+        "droplet_under_gabled_roof"
+      ]
+    },
+    {
+      "newId": "person_walking_with_hiking_pole_wearing_backpack_under_gabled_roof",
+      "by": "@quincylvania",
+      "inspo": [
+        "person_walking_with_hiking_pole_wearing_backpack_in_eaved_gabled_shelter",
+        "droplet_under_gabled_roof"
+      ]
+    },
+    {
+      "newId": "heart_under_gabled_roof",
+      "by": "@quincylvania",
+      "inspo": [
+        "heart_in_eaved_gabled_shelter",
+        "droplet_under_gabled_roof"
+      ],
+      "issue": "434"
+    },
+    {
+      "newId": "picnic_table_under_gabled_roof",
+      "by": "@quincylvania",
+      "inspo": [
+        "picnic_table_in_eaved_gabled_shelter",
+        "droplet_under_gabled_roof"
+      ]
+    },
+    {
+      "newId": "gabled_roof_with_fireplace_and_chimney",
+      "by": "@quincylvania",
+      "inspo": [
+        "eaved_gabled_shelter_with_fireplace_and_chimney",
+        "droplet_under_gabled_roof"
+      ]
+    },
+    {
+      "newId": "bicycle_under_gabled_roof",
+      "by": "@quincylvania",
+      "inspo": [
+        "bicycle_in_box_gabled_shelter",
+        "droplet_under_gabled_roof"
+      ]
+    },
+    {
+      "newId": "car_under_gabled_roof",
+      "by": "@quincylvania",
+      "inspo": [
+        "car_in_gabled_shelter",
+        "droplet_under_gabled_roof"
+      ]
+    },
+    {
+      "newId": "tabletop_microphone_under_gabled_roof",
+      "by": "@quincylvania",
+      "inspo": [
+        "tabletop_microphone_in_gabled_shelter",
+        "droplet_under_gabled_roof"
+      ]
+    },
+    {
+      "oldId": "thatched_roof_hut",
+      "newId": "thatched_roof_building_with_door",
+      "issue": "495"
+    },
+    {
+      "newId": "box_gabled_shelter",
+      "by": "@quincylvania",
+      "inspo": "bicycle_in_box_gabled_shelter"
+    },
+    {
+      "oldId": "garage",
+      "newId": "gabled_building_with_garage_door",
+      "by": "@quincylvania",
+      "issue": "495"
+    },
+    {
+      "oldId": "bicycle_in_garage",
+      "newId": "bicycle_in_box_gabled_shelter",
+      "by": "@quincylvania",
+      "issue": "495"
+    },
+    {
+      "newId": "car_in_box_gabled_shelter",
+      "by": "@quincylvania",
+      "inspo": [
+        "car_in_gabled_shelter",
+        "box_gabled_shelter"
+      ]
+    },
+    {
+      "oldId": "key_with_house_keychain",
+      "newId": "key_on_keychain_with_eaved_gabled_building_with_window",
+      "issue": "495"
+    },
+    {
+      "newId": "thatched_roof_building",
+      "by": "@quincylvania",
+      "inspo": "thatched_roof_building_with_door",
+      "issue": "495"
+    }
+  ]
+}

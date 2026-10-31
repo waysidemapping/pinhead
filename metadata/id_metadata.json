@@ -665,6 +665,21 @@
     "box": {
       "super": "container"
     },
+    "box_gabled_building": {
+      "super": [
+        "gabled_building",
+        "box_gabled_roof"
+      ]
+    },
+    "box_gabled_roof": {
+      "super": "gabled_roof"
+    },
+    "box_gabled_shelter": {
+      "super": [
+        "gabled_shelter",
+        "box_gabled_roof"
+      ]
+    },
     "box_truck": {
       "super": "truck"
     },
@@ -1408,6 +1423,42 @@
       "commons": "Plain black SVG ear icons",
       "super": "body_part"
     },
+    "eaved_box_gabled_building": {
+      "super": [
+        "eaved_gabled_building",
+        "box_gabled_building"
+      ]
+    },
+    "eaved_building": {
+      "super": [
+        "eave",
+        "building"
+      ]
+    },
+    "eaved_gabled_building": {
+      "super": [
+        "eaved_building",
+        "gabled_building"
+      ]
+    },
+    "eaved_gabled_shelter": {
+      "super": [
+        "eaved_shelter",
+        "gabled_shelter"
+      ]
+    },
+    "eaved_open_gabled_building": {
+      "super": [
+        "eaved_gabled_building",
+        "open_gabled_building"
+      ]
+    },
+    "eaved_shelter": {
+      "super": [
+        "eave",
+        "shelter"
+      ]
+    },
     "egg": {
       "super": "food"
     },
@@ -1684,11 +1735,20 @@
     "furniture": {
       "commons": "Plain black SVG furniture icons"
     },
-    "gable_roofed_building": {
-      "super": "building"
+    "gabled_building": {
+      "super": [
+        "gabled_roof",
+        "building"
+      ]
     },
-    "gable_roofed_shelter": {
-      "super": "shelter"
+    "gabled_roof": {
+      "super": "roof"
+    },
+    "gabled_shelter": {
+      "super": [
+        "gabled_roof",
+        "shelter"
+      ]
     },
     "gallbladder": {
       "super": "internal_organ"
@@ -1946,6 +2006,12 @@
     },
     "ichthys": {
       "super": "christian_symbol"
+    },
+    "icy_eave": {
+      "super": [
+        "eave",
+        "ice"
+      ]
     },
     "id_card": {
       "super": "personal_identification"
@@ -2461,6 +2527,9 @@
     },
     "open_envelope": {
       "super": "envelope"
+    },
+    "open_gabled_building": {
+      "super": "gabled_building"
     },
     "open_scissor": {
       "super": "scissor"
