@@ -189,6 +189,22 @@
       ]
     },
     {
+      "newId": "car_in_gabled_building",
+      "by": "@quincylvania",
+      "inspo": [
+        "car_in_gabled_shelter",
+        "gabled_building"
+      ]
+    },
+    {
+      "newId": "tabletop_microphone_in_gabled_building",
+      "by": "@quincylvania",
+      "inspo": [
+        "tabletop_microphone_in_gabled_shelter",
+        "gabled_building"
+      ]
+    },
+    {
       "newId": "crates_in_gabled_building",
       "by": "@quincylvania",
       "inspo": [
