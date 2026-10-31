@@ -205,6 +205,14 @@
       ]
     },
     {
+      "newId": "open_book_in_gabled_building",
+      "by": "@quincylvania",
+      "inspo": [
+        "open_book_under_gabled_roof",
+        "gabled_building"
+      ]
+    },
+    {
       "newId": "crates_in_gabled_building",
       "by": "@quincylvania",
       "inspo": [
@@ -275,6 +283,14 @@
       "by": "@quincylvania",
       "inspo": [
         "picnic_table_in_eaved_gabled_shelter",
+        "eaved_gabled_building"
+      ]
+    },
+    {
+      "newId": "open_book_in_eaved_gabled_building",
+      "by": "@quincylvania",
+      "inspo": [
+        "open_book_under_gabled_roof",
         "eaved_gabled_building"
       ]
     },
