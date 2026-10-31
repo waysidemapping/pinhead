@@ -640,6 +640,21 @@
         "splash_up",
         "fountain_from_water"
       ]
+    },
+    {
+      "oldId": "person",
+      "newId": "person",
+      "by": "@quincylvania"
+    },
+    {
+      "newId": "person_wearing_greek_cross",
+      "by": "@quincylvania",
+      "inspo": [
+        "person",
+        "greek_cross"
+      ],
+      "issue": "107",
+      "healthicons": "people/health-worker"
     }
   ]
 }
