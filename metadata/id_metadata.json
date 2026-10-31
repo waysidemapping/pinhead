@@ -1448,10 +1448,10 @@
         "gabled_shelter"
       ]
     },
-    "eaved_monopitched_shelter": {
+    "eaved_leanto_shelter": {
       "super": [
         "eaved_shelter",
-        "monopitched_shelter"
+        "leanto_shelter"
       ]
     },
     "eaved_open_gabled_building": {
@@ -2195,6 +2195,12 @@
     "leafless_tree": {
       "super": "tree"
     },
+    "leanto_shelter": {
+      "super": [
+        "shelter",
+        "monopitched_roof"
+      ]
+    },
     "legal_tender": {
       "super": "money"
     },
@@ -2417,12 +2423,6 @@
     },
     "monopitched_roof": {
       "super": "roof"
-    },
-    "monopitched_shelter": {
-      "super": [
-        "shelter",
-        "monopitched_roof"
-      ]
     },
     "monopod_antenna": {
       "super": "antenna"
