@@ -3400,6 +3400,9 @@
     "spiral_labyrinth": {
       "super": "labyrinth"
     },
+    "splash": {
+      "super": "droplet"
+    },
     "spleen": {
       "super": "internal_organ"
     },

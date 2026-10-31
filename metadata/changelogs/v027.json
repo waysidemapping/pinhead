@@ -593,6 +593,42 @@
       "newId": "shopping_bag_with_heart",
       "by": "Geo-2695",
       "pr": "484"
+    },
+    {
+      "newId": "splash_up",
+      "src": "osmic",
+      "importBy": "@quincylvania",
+      "issue": "40",
+      "osmic": "nature/spring"
+    },
+    {
+      "newId": "splash_down",
+      "by": "@quincylvania",
+      "inspo": "splash_up"
+    },
+    {
+      "newId": "splash_up_from_fountain_basin",
+      "by": "@quincylvania",
+      "inspo": [
+        "splash_up",
+        "fountain_from_fountain_basin"
+      ]
+    },
+    {
+      "newId": "splash_up_from_ground",
+      "by": "@quincylvania",
+      "inspo": [
+        "splash_up",
+        "geyser_from_ground"
+      ]
+    },
+    {
+      "newId": "splash_up_from_water",
+      "by": "@quincylvania",
+      "inspo": [
+        "splash_up",
+        "fountain_from_water"
+      ]
     }
   ]
 }
