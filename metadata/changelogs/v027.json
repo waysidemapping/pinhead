@@ -655,6 +655,16 @@
       ],
       "issue": "107",
       "healthicons": "people/health-worker"
+    },
+    {
+      "newId": "person_with_stethoscope",
+      "by": "@quincylvania",
+      "inspo": [
+        "person",
+        "stethoscope"
+      ],
+      "issue": "107",
+      "healthicons": "people/doctor"
     }
   ]
 }
