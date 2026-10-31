@@ -1448,6 +1448,12 @@
         "gabled_shelter"
       ]
     },
+    "eaved_hipped_roof": {
+      "super": [
+        "eave",
+        "hipped_roof"
+      ]
+    },
     "eaved_leanto_shelter": {
       "super": [
         "eaved_shelter",
