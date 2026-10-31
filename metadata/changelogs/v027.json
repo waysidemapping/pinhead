@@ -173,6 +173,14 @@
       "issue": "495"
     },
     {
+      "newId": "crates_in_gabled_building",
+      "by": "@quincylvania",
+      "inspo": [
+        "crates_under_gabled_roof",
+        "gabled_building"
+      ]
+    },
+    {
       "oldId": "house_and_trees_on_hill_in_water",
       "newId": "eaved_box_gabled_building_and_trees_on_hill_in_water",
       "issue": "495"
