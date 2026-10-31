@@ -381,6 +381,16 @@
       "by": "@quincylvania",
       "inspo": "thatched_roof_building_with_door",
       "issue": "495"
+    },
+    {
+      "oldId": "rememberance_ribbon",
+      "newId": "remembrance_ribbon",
+      "issue": "497"
+    },
+    {
+      "oldId": "groin_with_rememberance_ribbon",
+      "newId": "groin_with_remembrance_ribbon",
+      "issue": "497"
     }
   ]
 }
