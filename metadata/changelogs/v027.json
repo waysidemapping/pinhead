@@ -163,6 +163,14 @@
       "issue": "495"
     },
     {
+      "newId": "bicycle_in_gabled_shelter",
+      "by": "@quincylvania",
+      "inspo": [
+        "gabled_shelter",
+        "bicycle_in_box_gabled_shelter"
+      ]
+    },
+    {
       "oldId": "car_in_gable_roofed_building",
       "newId": "car_in_gabled_shelter",
       "issue": "495"
@@ -171,6 +179,14 @@
       "oldId": "tabletop_microphone_in_gable_roofed_building",
       "newId": "tabletop_microphone_in_gabled_shelter",
       "issue": "495"
+    },
+    {
+      "newId": "bicycle_in_gabled_building",
+      "by": "@quincylvania",
+      "inspo": [
+        "bicycle_in_gabled_shelter",
+        "gabled_building"
+      ]
     },
     {
       "newId": "crates_in_gabled_building",
