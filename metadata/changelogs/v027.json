@@ -674,6 +674,11 @@
         "smiling_face"
       ],
       "char": "💩"
+    },
+    {
+      "newId": "pixel_jack_o_lantern",
+      "by": "@quincylvania",
+      "inspo": "jack_o_lantern"
     }
   ]
 }
