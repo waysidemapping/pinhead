@@ -1,18 +1,8 @@
 import { execSync } from "child_process";
-import {
-  readFileSync,
-  existsSync,
-  rmSync,
-  mkdirSync,
-  globSync,
-  writeFileSync,
-} from "fs";
+import { existsSync, rmSync, mkdirSync, globSync, writeFileSync } from "fs";
 import { join } from "path";
 
-export function downloadExternalSourceAssets(toDir, overwrite) {
-  const importSources = JSON.parse(
-    readFileSync("metadata/external_sources.json"),
-  );
+export function downloadExternalSourceAssets(importSources, toDir, overwrite) {
   ensureEmptyDir("tmp");
 
   for (const importSource of importSources) {

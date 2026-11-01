@@ -1,6 +1,6 @@
 import { execFileSync } from "child_process";
 import { join } from "path";
-import { writeFileSync, mkdirSync } from "fs";
+import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { downloadExternalSourceAssets } from "../src/ExternalSourceManager.js";
 import { downloadLegacyAssets } from "../src/LegacyAssetManager.js";
 
@@ -9,8 +9,13 @@ console.log("Building docs");
 const docsDir = "docs/";
 
 execFileSync("cp", ["-r", `src/.`, join(docsDir, `src`)]);
-downloadExternalSourceAssets(join(docsDir, "srcicons"));
+
 downloadLegacyAssets(docsDir);
+
+const importSources = JSON.parse(
+  readFileSync(join(docsDir, "external_sources.json")),
+);
+downloadExternalSourceAssets(importSources, join(docsDir, "srcicons"));
 
 mkdirSync(join(docsDir, "modules"), { recursive: true });
 execFileSync("cp", [

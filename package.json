@@ -40,7 +40,7 @@
     "dist": "npm run build_dist",
     "build_dist": "npm run check_icons && npm run check_icon_categories && npm run build_changelog && npm run build_icons && cp metadata/external_sources.json dist/external_sources.json && cp metadata/id_metadata.json dist/id_metadata.json",
     "build_docs": "node scripts/build_docs.js",
-    "build_docs_for_preview": "npm run build_docs && npm run build_dist && node scripts/build_preview_docs.js",
+    "build_docs_for_preview": "npm run build_dist && node scripts/build_preview_docs.js",
     "build_icons": "node scripts/build_icons.js",
     "build_font": "node scripts/build_font.js",
     "qgis_resources": "npm run build_dist && npm run prep_qgis_resources_repo && npm run build_qgis_resources && npm run sync_qgis_resources_repo",

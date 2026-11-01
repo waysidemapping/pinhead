@@ -52,7 +52,7 @@ const iconChangeProps = [
 const externalSourceIconsDir = "docs/srcicons";
 
 downloadLegacyAssets("docs");
-downloadExternalSourceAssets(externalSourceIconsDir);
+downloadExternalSourceAssets(importSources, externalSourceIconsDir);
 
 const startTime = Date.now();
 
