@@ -96,6 +96,14 @@
       ]
     },
     {
+      "newId": "people_sleeping_in_bunkbeds_under_gabled_roof",
+      "by": "@quincylvania",
+      "inspo": [
+        "people_sleeping_in_bunkbeds_in_eaved_open_gabled_building",
+        "gabled_roof"
+      ]
+    },
+    {
       "newId": "gabled_roof_with_fireplace_and_chimney",
       "by": "@quincylvania",
       "inspo": [
@@ -141,6 +149,14 @@
       "by": "@quincylvania",
       "inspo": [
         "picnic_table",
+        "eaved_gabled_shelter"
+      ]
+    },
+    {
+      "newId": "people_sleeping_in_bunkbeds_in_eaved_gabled_shelter",
+      "by": "@quincylvania",
+      "inspo": [
+        "people_sleeping_in_bunkbeds_in_eaved_open_gabled_building",
         "eaved_gabled_shelter"
       ]
     },
@@ -355,6 +371,14 @@
       ]
     },
     {
+      "newId": "people_sleeping_in_bunkbeds_in_eaved_gabled_building",
+      "by": "@quincylvania",
+      "inspo": [
+        "people_sleeping_in_bunkbeds_in_eaved_open_gabled_building",
+        "eaved_gabled_building"
+      ]
+    },
+    {
       "newId": "eaved_gabled_building_with_chimney",
       "by": "@quincylvania",
       "inspo": "eaved_box_gabled_building_with_chimney",
@@ -428,6 +452,14 @@
       "by": "@quincylvania",
       "inspo": [
         "open_book_in_eaved_gabled_building",
+        "eaved_gabled_building_with_chimney"
+      ]
+    },
+    {
+      "newId": "people_sleeping_in_bunkbeds_in_eaved_gabled_building_with_chimney",
+      "by": "@quincylvania",
+      "inspo": [
+        "people_sleeping_in_bunkbeds_in_eaved_open_gabled_building",
         "eaved_gabled_building_with_chimney"
       ]
     },
