@@ -104,6 +104,22 @@
       ]
     },
     {
+      "newId": "dog_wearing_collar_under_gabled_roof",
+      "by": "@quincylvania",
+      "inspo": [
+        "dog_wearing_collar_in_eaved_leanto_shelter",
+        "gabled_roof"
+      ]
+    },
+    {
+      "newId": "horse_under_gabled_roof",
+      "by": "@quincylvania",
+      "inspo": [
+        "horse_in_eaved_leanto_shelter",
+        "gabled_roof"
+      ]
+    },
+    {
       "newId": "gabled_roof_with_fireplace_and_chimney",
       "by": "@quincylvania",
       "inspo": [
@@ -602,6 +618,14 @@
       "newId": "person_sleeping_in_eaved_leanto_shelter",
       "by": "@quincylvania",
       "issue": "495"
+    },
+    {
+      "newId": "people_sleeping_in_bunkbeds_in_eaved_leanto_shelter",
+      "by": "@quincylvania",
+      "inspo": [
+        "people_sleeping_in_bunkbeds_in_eaved_open_gabled_building",
+        "person_sleeping_in_eaved_leanto_shelter"
+      ]
     },
     {
       "oldId": "horse_in_shelter",
