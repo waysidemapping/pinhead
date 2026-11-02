@@ -583,6 +583,7 @@
     {
       "oldId": "shelter",
       "newId": "eaved_leanto_shelter",
+      "by": "@quincylvania",
       "issue": "495"
     },
     {
@@ -593,21 +594,25 @@
     {
       "oldId": "picnic_table_in_shelter",
       "newId": "picnic_table_in_eaved_leanto_shelter",
+      "by": "@quincylvania",
       "issue": "495"
     },
     {
       "oldId": "person_sleeping_in_shelter",
       "newId": "person_sleeping_in_eaved_leanto_shelter",
+      "by": "@quincylvania",
       "issue": "495"
     },
     {
       "oldId": "horse_in_shelter",
       "newId": "horse_in_eaved_leanto_shelter",
+      "by": "@quincylvania",
       "issue": "495"
     },
     {
       "oldId": "dog_wearing_collar_in_shelter",
       "newId": "dog_wearing_collar_in_eaved_leanto_shelter",
+      "by": "@quincylvania",
       "issue": "495"
     },
     {
