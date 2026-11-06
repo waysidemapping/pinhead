@@ -635,6 +635,22 @@
       "issue": "495"
     },
     {
+      "newId": "bicycle_in_eaved_leanto_shelter",
+      "by": "@quincylvania",
+      "inspo": [
+        "bicycle_in_box_gabled_shelter",
+        "eaved_leanto_shelter"
+      ]
+    },
+    {
+      "newId": "eaved_leanto_shelter_with_fireplace_and_chimney",
+      "by": "@quincylvania",
+      "inspo": [
+        "eaved_leanto_shelter",
+        "eaved_gabled_shelter_with_fireplace_and_chimney"
+      ]
+    },
+    {
       "newId": "eaved_leanto_building",
       "by": "@quincylvania",
       "inspo": "eaved_leanto_shelter",
@@ -669,6 +685,16 @@
       "by": "@quincylvania",
       "inspo": "dog_wearing_collar_in_eaved_leanto_shelter",
       "issue": "495"
+    },
+    {
+      "newId": "bicycle_in_eaved_leanto_building",
+      "by": "@quincylvania",
+      "inspo": "bicycle_in_eaved_leanto_shelter"
+    },
+    {
+      "newId": "eaved_leanto_building_with_fireplace_and_chimney",
+      "by": "@quincylvania",
+      "inspo": "eaved_leanto_shelter_with_fireplace_and_chimney"
     },
     {
       "oldId": "shelter",
