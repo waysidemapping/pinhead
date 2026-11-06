@@ -573,6 +573,11 @@
       "issue": "495"
     },
     {
+      "oldId": "bench_with_backrest_in_rectangular_shelter",
+      "newId": "bench_with_backrest_in_eaved_rectangular_shelter",
+      "issue": "495"
+    },
+    {
       "newId": "eaved_leanto_shelter",
       "by": "@quincylvania",
       "inspo": "picnic_table_in_eaved_leanto_shelter"

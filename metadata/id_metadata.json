@@ -1472,6 +1472,12 @@
         "open_gabled_building"
       ]
     },
+    "eaved_rectangular_shelter": {
+      "super": [
+        "eaved_shelter",
+        "rectangular_shelter"
+      ]
+    },
     "eaved_shelter": {
       "super": [
         "eave",
