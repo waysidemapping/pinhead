@@ -1454,6 +1454,12 @@
         "hipped_roof"
       ]
     },
+    "eaved_leanto_building": {
+      "super": [
+        "eaved_building",
+        "leanto_building"
+      ]
+    },
     "eaved_leanto_shelter": {
       "super": [
         "eaved_shelter",
@@ -2207,10 +2213,19 @@
     "leafless_tree": {
       "super": "tree"
     },
+    "leanto_building": {
+      "super": [
+        "building",
+        "leanto_roof"
+      ]
+    },
+    "leanto_roof": {
+      "super": "roof"
+    },
     "leanto_shelter": {
       "super": [
         "shelter",
-        "monopitched_roof"
+        "leanto_roof"
       ]
     },
     "legal_tender": {
@@ -2432,9 +2447,6 @@
     },
     "money": {
       "commons": "Plain black SVG money icons"
-    },
-    "monopitched_roof": {
-      "super": "roof"
     },
     "monopod_antenna": {
       "super": "antenna"

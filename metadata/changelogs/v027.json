@@ -635,6 +635,42 @@
       "issue": "495"
     },
     {
+      "newId": "eaved_leanto_building",
+      "by": "@quincylvania",
+      "inspo": "eaved_leanto_shelter",
+      "issue": "495"
+    },
+    {
+      "newId": "picnic_table_in_eaved_leanto_building",
+      "by": "@quincylvania",
+      "inspo": "picnic_table_in_eaved_leanto_shelter",
+      "issue": "495"
+    },
+    {
+      "newId": "person_sleeping_in_eaved_leanto_building",
+      "by": "@quincylvania",
+      "inspo": "person_sleeping_in_eaved_leanto_shelter",
+      "issue": "495"
+    },
+    {
+      "newId": "people_sleeping_in_bunkbeds_in_eaved_leanto_building",
+      "by": "@quincylvania",
+      "inspo": "people_sleeping_in_bunkbeds_in_eaved_leanto_shelter",
+      "issue": "495"
+    },
+    {
+      "newId": "horse_in_eaved_leanto_building",
+      "by": "@quincylvania",
+      "inspo": "horse_in_eaved_leanto_shelter",
+      "issue": "495"
+    },
+    {
+      "newId": "dog_wearing_collar_in_eaved_leanto_building",
+      "by": "@quincylvania",
+      "inspo": "dog_wearing_collar_in_eaved_leanto_shelter",
+      "issue": "495"
+    },
+    {
       "oldId": "shelter",
       "newId": "eaved_leanto_shelter_with_floor",
       "by": "@quincylvania",
