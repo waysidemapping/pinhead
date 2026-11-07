@@ -783,6 +783,67 @@
       "char": "💩"
     },
     {
+      "newId": "two_giraffes",
+      "by": "@quincylvania",
+      "inspo": "giraffe"
+    },
+    {
+      "newId": "zoo_uppercase",
+      "by": "@quincylvania",
+      "inspo": [
+        "z",
+        "o"
+      ]
+    },
+    {
+      "newId": "lion_on_zoo_uppercase",
+      "by": "@quincylvania",
+      "inspo": [
+        "lion",
+        "zoo_uppercase"
+      ]
+    },
+    {
+      "newId": "bear_on_zoo_uppercase",
+      "by": "@quincylvania",
+      "inspo": [
+        "bear",
+        "zoo_uppercase"
+      ]
+    },
+    {
+      "newId": "two_giraffes_on_zoo_uppercase",
+      "by": "@quincylvania",
+      "inspo": [
+        "two_giraffes",
+        "zoo_uppercase"
+      ]
+    },
+    {
+      "newId": "bison_on_zoo_uppercase",
+      "by": "@quincylvania",
+      "inspo": [
+        "bison",
+        "zoo_uppercase"
+      ]
+    },
+    {
+      "newId": "parrot_on_zoo_uppercase",
+      "by": "@quincylvania",
+      "inspo": [
+        "parrot",
+        "zoo_uppercase"
+      ]
+    },
+    {
+      "newId": "waterfowl_on_zoo_uppercase",
+      "by": "@quincylvania",
+      "inspo": [
+        "waterfowl",
+        "zoo_uppercase"
+      ]
+    },
+    {
       "newId": "pixel_jack_o_lantern",
       "by": "@quincylvania",
       "inspo": "jack_o_lantern"
