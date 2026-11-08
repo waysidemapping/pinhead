@@ -144,6 +144,10 @@
     "3d_shape": {
       "super": "shape"
     },
+    "a": {
+      "commons": "Plain black SVG letter A icons",
+      "super": "letter"
+    },
     "a_frame_sidewall_tent": {
       "super": [
         "a_frame_tent",
@@ -373,6 +377,10 @@
     },
     "audio_device": {
       "super": "electronic_device"
+    },
+    "b": {
+      "commons": "Plain black SVG letter B icons",
+      "super": "letter"
     },
     "baby": {
       "super": "person"
@@ -794,6 +802,10 @@
     },
     "button": {
       "super": "fastener"
+    },
+    "c": {
+      "commons": "Plain black SVG letter C icons",
+      "super": "letter"
     },
     "cable_railway_track": {
       "super": "railway_track"
@@ -1273,6 +1285,10 @@
     "cylinder": {
       "super": "3d_shape"
     },
+    "d": {
+      "commons": "Plain black SVG letter D icons",
+      "super": "letter"
+    },
     "dagger": {
       "commons": "Dagger icons",
       "super": "bladed_weapon"
@@ -1419,6 +1435,10 @@
     },
     "dvd_case": {
       "super": "dvd"
+    },
+    "e": {
+      "commons": "Plain black SVG letter E icons",
+      "super": "letter"
     },
     "eagle": {
       "super": "raptor"
@@ -1576,6 +1596,10 @@
     },
     "eyewear": {
       "super": "headwear"
+    },
+    "f": {
+      "commons": "Plain black SVG letter F icons",
+      "super": "letter"
     },
     "f22_raptor_fighter_jet": {
       "super": "fighter_jet_plane"
@@ -1763,6 +1787,10 @@
     "furniture": {
       "commons": "Plain black SVG furniture icons"
     },
+    "g": {
+      "commons": "Plain black SVG letter G icons",
+      "super": "letter"
+    },
     "gabled_building": {
       "super": [
         "gabled_roof",
@@ -1881,6 +1909,10 @@
     },
     "gun": {
       "super": "ranged_weapon"
+    },
+    "h": {
+      "commons": "Plain black SVG letter H icons",
+      "super": "letter"
     },
     "hair_dryer": {
       "super": [
@@ -2033,6 +2065,10 @@
     "hunting_stand": {
       "super": "building"
     },
+    "i": {
+      "commons": "Plain black SVG letter I icons",
+      "super": "letter"
+    },
     "ice_cream": {
       "super": "food"
     },
@@ -2100,6 +2136,10 @@
     "isosceles_trapezoid": {
       "super": "trapezoid"
     },
+    "j": {
+      "commons": "Plain black SVG letter J icons",
+      "super": "letter"
+    },
     "jack_o_lantern": {
       "super": [
         "pumpkin",
@@ -2146,6 +2186,10 @@
         "damaged"
       ]
     },
+    "k": {
+      "commons": "Plain black SVG letter K icons",
+      "super": "letter"
+    },
     "kayak": {
       "super": "paddlecraft"
     },
@@ -2180,6 +2224,10 @@
     "knife": {
       "commons": "Knife icons",
       "super": "hand_tool"
+    },
+    "l": {
+      "commons": "Plain black SVG letter L icons",
+      "super": "letter"
     },
     "labyrinth": {
       "super": "maze"
@@ -2247,8 +2295,6 @@
       "super": "money"
     },
     "letter": {
-      "commons": "Single letter icons",
-      "match": "^[a-z]$",
       "super": "text"
     },
     "letter_box_us": {
@@ -2329,6 +2375,10 @@
     },
     "lucha_libre_mask": {
       "super": "mask"
+    },
+    "m": {
+      "commons": "Plain black SVG letter M icons",
+      "super": "letter"
     },
     "madison_cross": {
       "super": "cross"
@@ -2524,6 +2574,10 @@
       "commons": "Plain black SVG musical note icons",
       "super": "music"
     },
+    "n": {
+      "commons": "Plain black SVG letter N icons",
+      "super": "letter"
+    },
     "natural_arch": {
       "super": [
         "arch",
@@ -2555,6 +2609,10 @@
         "Plain black SVG numbers"
       ],
       "match": "^\\d+$"
+    },
+    "o": {
+      "commons": "Plain black SVG letter O icons",
+      "super": "letter"
     },
     "oak_leaf": {
       "super": "leaf"
@@ -2604,6 +2662,10 @@
     },
     "overweight_person": {
       "super": "person"
+    },
+    "p": {
+      "commons": "Plain black SVG letter P icons",
+      "super": "letter"
     },
     "paddlecraft": {
       "super": "boat"
@@ -2941,6 +3003,10 @@
       "commons": "SVG jigsaw puzzle icons",
       "super": "puzzle"
     },
+    "q": {
+      "commons": "Plain black SVG letter Q icons",
+      "super": "letter"
+    },
     "quadcopter_drone": {
       "super": "drone_aircraft"
     },
@@ -2956,6 +3022,10 @@
     "question_mark": {
       "commons": "Plain black SVG question mark icons",
       "super": "punctuation_mark"
+    },
+    "r": {
+      "commons": "Plain black SVG letter R icons",
+      "super": "letter"
     },
     "racket": {
       "super": [
@@ -3118,6 +3188,10 @@
         "r",
         "x"
       ]
+    },
+    "s": {
+      "commons": "Plain black SVG letter S icons",
+      "super": "letter"
     },
     "saddle_shape": {
       "super": [
@@ -3625,6 +3699,10 @@
         "syrup"
       ]
     },
+    "t": {
+      "commons": "Plain black SVG letter T icons",
+      "super": "letter"
+    },
     "table": {
       "super": "furniture"
     },
@@ -3960,6 +4038,10 @@
     "typographical_symbol": {
       "commons": "SVG glyphs"
     },
+    "u": {
+      "commons": "Plain black SVG letter U icons",
+      "super": "letter"
+    },
     "underground_infrastructure": {
       "super": "infrastructure"
     },
@@ -3988,6 +4070,10 @@
         "motor_vehicle",
         "wheeled_vehicle"
       ]
+    },
+    "v": {
+      "commons": "Plain black SVG letter V icons",
+      "super": "letter"
     },
     "vacuum_cleaner": {
       "super": [
@@ -4051,6 +4137,10 @@
     },
     "volleyball": {
       "super": "ball"
+    },
+    "w": {
+      "commons": "Plain black SVG letter W icons",
+      "super": "letter"
     },
     "waiters_attire": {
       "super": "clothing"
@@ -4219,11 +4309,19 @@
     "writing_utensil": {
       "super": "hand_tool"
     },
+    "x": {
+      "commons": "Plain black SVG letter X icons",
+      "super": "letter"
+    },
     "x_cross": {
       "super": [
         "junction",
         "x"
       ]
+    },
+    "y": {
+      "commons": "Plain black SVG letter Y icons",
+      "super": "letter"
     },
     "y_junction": {
       "super": [
@@ -4237,6 +4335,10 @@
     },
     "yin_yang": {
       "super": "religious_symbol"
+    },
+    "z": {
+      "commons": "Plain black SVG letter Z icons",
+      "super": "letter"
     }
   }
 }
