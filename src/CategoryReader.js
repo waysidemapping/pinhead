@@ -69,9 +69,10 @@ export class CategoryReader {
     return name.split(this.iconNamePartSeparator);
   }
 
-  iconIdMatchesCategoryId(iconId, categoryId) {
+  iconIdMatchesRootCategoryId(iconId, categoryId) {
+    const catRegex = this.categories[categoryId].regex;
     for (const part of this.partsByIconId[iconId]) {
-      if (part.match(this.categories[categoryId].regex)) {
+      if (part.match(catRegex)) {
         return true;
       }
     }
@@ -83,7 +84,7 @@ export class CategoryReader {
     const categoryIdsByIconId = {};
     for (const catId in this.categories) {
       for (const iconId of this.iconIds) {
-        if (this.iconIdMatchesCategoryId(iconId, catId)) {
+        if (this.iconIdMatchesRootCategoryId(iconId, catId)) {
           const allCatIds = this.allCategoriesForCategoryId(catId);
           for (const catId of allCatIds) {
             if (!iconIdsByCategoryId[catId]) iconIdsByCategoryId[catId] = [];
@@ -125,7 +126,9 @@ export class CategoryReader {
         outCategories.push(categoryId);
         const superCategoryIds = this.categories[categoryId]?.super;
         if (superCategoryIds)
-          categoriesToCheck = categoriesToCheck.concat(superCategoryIds);
+          categoriesToCheck = categoriesToCheck.concat(
+            stringArray(superCategoryIds),
+          );
       }
     }
     return outCategories;
@@ -134,7 +137,7 @@ export class CategoryReader {
   rootCategoriesForIconId(iconId) {
     const outCategories = new Set();
     for (const categoryId in this.categories) {
-      if (this.iconIdMatchesCategoryId(iconId, categoryId)) {
+      if (this.iconIdMatchesRootCategoryId(iconId, categoryId)) {
         outCategories.add(this.categories[categoryId]);
       }
     }
@@ -150,7 +153,7 @@ export class CategoryReader {
     for (const iconId of this.iconIds) {
       const matchingCategoryIds = [];
       for (const categoryId of categoryIds) {
-        if (this.iconIdMatchesCategoryId(iconId, categoryId)) {
+        if (this.iconIdMatchesRootCategoryId(iconId, categoryId)) {
           matchingCategoryIds.push(categoryId);
           iconCountPerCategoryId[categoryId] += 1;
         }
