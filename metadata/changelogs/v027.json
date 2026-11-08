@@ -860,6 +860,29 @@
       ]
     },
     {
+      "oldId": "ice_cream_on_cone",
+      "newId": "ice_cream_on_cone",
+      "by": "@quincylvania",
+      "inspo": "vending_machine_with_ice_cream_on_cone"
+    },
+    {
+      "newId": "ice_pop",
+      "by": "@quincylvania"
+    },
+    {
+      "newId": "ice_pop_with_bite",
+      "by": "@quincylvania",
+      "inspo": "ice_pop"
+    },
+    {
+      "newId": "ice_pop_beside_ice_cream_on_cone",
+      "by": "@quincylvania",
+      "inspo": [
+        "ice_pop",
+        "ice_cream_on_cone"
+      ]
+    },
+    {
       "newId": "pixel_jack_o_lantern",
       "by": "@quincylvania",
       "inspo": "jack_o_lantern"
