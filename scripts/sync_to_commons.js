@@ -13,7 +13,6 @@ import { CategoryReader } from "../src/CategoryReader.js";
 const changelogs = JSON.parse(readFileSync("dist/changelog.json"));
 const changelogReader = new ChangelogReader(changelogs);
 const localIconsById = changelogReader.iconsById;
-const localIconsByVersionedIconId = changelogReader.iconsByVersionedIconId;
 
 const currentVersion = JSON.parse(readFileSync("package.json")).version;
 const versionParts = currentVersion.split(".");
@@ -99,14 +98,16 @@ function processCategoryPage(page) {
 
   if (results && results.length >= 3) {
     const pinheadIconId = results[1];
-    const commonsIconV = parseInt(results[2]);
-    const versionedIconId = `v${commonsIconV}/${pinheadIconId}`;
-    const targetId = localIconsByVersionedIconId[versionedIconId];
+    const commonsIconV = results[2];
+    const targetId = changelogReader.latestIconIdForVersionedIconId(
+      versionedIconId,
+      commonsIconV,
+    );
     if (targetId === pinheadIconId) {
       const iconInfo = localIconsById[pinheadIconId];
       if (iconInfo) {
         const latestV = parseInt(iconInfo.changes.at(-1).v);
-        if (commonsIconV < latestV) {
+        if (parseInt(commonsIconV) < latestV) {
           pagesNeedingUpdateByIconId[pinheadIconId] = page;
         } else {
           validRemotePages[page.pageid] = {

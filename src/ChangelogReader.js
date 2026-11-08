@@ -1,10 +1,5 @@
-function loadChangelogData(c) {
-  const changelogs = c.toSorted(
-    (a, b) => parseInt(a.majorVersion) - parseInt(b.majorVersion),
-  );
-
+function loadChangelogData(changelogs) {
   const iconsById = {};
-  const iconsByVersionedIconId = {};
 
   for (const versionChangelog of changelogs) {
     const date = versionChangelog.date;
@@ -21,17 +16,7 @@ function loadChangelogData(c) {
       // update commulative icon log
       if (iconChange.oldId) {
         if (iconChange.newId) {
-          for (const id in iconsByVersionedIconId) {
-            if (iconChange.oldId === iconsByVersionedIconId[id]) {
-              iconsByVersionedIconId[id] = iconChange.newId;
-            }
-          }
           iconsById[iconChange.newId] = iconsById[iconChange.oldId];
-          if (iconChange.newId !== iconChange.oldId) {
-            if (!iconsById[iconChange.newId].oldIds)
-              iconsById[iconChange.newId].oldIds = [];
-            iconsById[iconChange.newId].oldIds.push(iconChange.oldId);
-          }
           for (const key in iconChange) {
             if (!["newId", "oldId"].includes(key)) {
               const vals = stringArray(iconChange[key]);
@@ -59,18 +44,13 @@ function loadChangelogData(c) {
       }
       iconsById[iconChange.newId].changes.push(iconChange);
     }
-
-    for (const id in iconsById) {
-      const versionedIconId = `v${version}/${id}`;
-      iconsByVersionedIconId[versionedIconId] = id;
-    }
   }
 
   for (const id in iconsById) {
     iconsById[id].id = id;
   }
 
-  return { iconsById, iconsByVersionedIconId };
+  return iconsById;
 }
 
 function stringArray(value) {
@@ -79,8 +59,23 @@ function stringArray(value) {
 
 export class ChangelogReader {
   constructor(changelogs) {
-    const data = loadChangelogData(changelogs);
-    this.iconsById = data.iconsById;
-    this.iconsByVersionedIconId = data.iconsByVersionedIconId;
+    this.changelogs = changelogs.toSorted(
+      (a, b) => parseInt(a.majorVersion) - parseInt(b.majorVersion),
+    );
+    this.iconsById = loadChangelogData(this.changelogs);
   }
+
+  latestIconIdForVersionedIconId = function (versionedIconId, version) {
+    let targetIconId = versionedIconId;
+    for (const versionChangelog of this.changelogs) {
+      if (parseInt(versionChangelog.majorVersion) >= parseInt(version)) {
+        for (const iconChange of versionChangelog.iconChanges) {
+          if (iconChange.oldId === targetIconId && iconChange.newId) {
+            targetIconId = iconChange.newId;
+          }
+        }
+      }
+    }
+    return targetIconId;
+  };
 }

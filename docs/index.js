@@ -586,9 +586,10 @@ async function setupPage(pageData) {
                 )
                 .map((iconChange) => {
                   const latestId =
-                    changelogReader.iconsByVersionedIconId[
-                      `v${changelog.majorVersion}/${iconChange.newId}`
-                    ];
+                    changelogReader.latestIconIdForVersionedIconId(
+                      iconChange.newId,
+                      changelog.majorVersion,
+                    );
                   return iconsById[latestId];
                 }),
             );
