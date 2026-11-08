@@ -461,7 +461,10 @@ async function setupPage(pageData) {
             changes
               .toReversed()
               .map((change) =>
-                changelogDescriber.getHistoryHtmlForIconChange(change),
+                changelogDescriber.getHistoryHtmlForIconChange(
+                  change,
+                  changelogReader,
+                ),
               )
               .join(""),
           ),

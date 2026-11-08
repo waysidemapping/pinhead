@@ -164,7 +164,7 @@ export class ChangelogDescriber {
     );
   }
 
-  getHistoryHtmlForIconChange(iconChange) {
+  getHistoryHtmlForIconChange(iconChange, changelogReader) {
     if (!iconChange.newId) return "";
 
     let str = "<tr>";
@@ -216,7 +216,7 @@ export class ChangelogDescriber {
           str += `<td>Based on <a target="_blank" href="${inspo}" title="${inspo}">external source</a></td>`;
         } else {
           str += `<td><img src="${this.fileBase}/v${iconChange.v}/${inspo}.svg" width="15px"/></td>`;
-          str += `<td>Based on <a href="#${inspo}" class="inline-icon-id">${inspo}</a></td>`;
+          str += `<td>Based on <a href="#${changelogReader.latestIconIdForVersionedIconId(inspo, iconChange.v)}" class="inline-icon-id">${inspo}</a></td>`;
         }
         str += `</tr>`;
       }
