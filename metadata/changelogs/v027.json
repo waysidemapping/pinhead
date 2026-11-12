@@ -860,10 +860,19 @@
       ]
     },
     {
+      "oldId": "vending_machine_with_ice_cream_on_cone",
+      "newId": "vending_machine_with_scoop_of_ice_cream_in_cone"
+    },
+    {
       "oldId": "ice_cream_on_cone",
-      "newId": "ice_cream_on_cone",
+      "newId": "scoop_of_ice_cream_in_cone",
       "by": "@quincylvania",
-      "inspo": "vending_machine_with_ice_cream_on_cone"
+      "inspo": "vending_machine_with_scoop_of_ice_cream_in_cone"
+    },
+    {
+      "newId": "scoop_of_ice_cream_in_cup",
+      "by": "@quincylvania",
+      "inspo": "scoop_of_ice_cream_in_cone"
     },
     {
       "newId": "ice_pop",
@@ -875,11 +884,11 @@
       "inspo": "ice_pop"
     },
     {
-      "newId": "ice_pop_beside_ice_cream_on_cone",
+      "newId": "ice_pop_beside_scoop_of_ice_cream_in_cone",
       "by": "@quincylvania",
       "inspo": [
         "ice_pop",
-        "ice_cream_on_cone"
+        "scoop_of_ice_cream_in_cone"
       ]
     },
     {

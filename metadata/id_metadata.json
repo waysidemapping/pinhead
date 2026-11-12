@@ -1405,6 +1405,9 @@
         "container"
       ]
     },
+    "drink_cup": {
+      "super": "drinkware"
+    },
     "drink_mug": {
       "super": "drinkware"
     },
@@ -1776,6 +1779,12 @@
     "freight_car": {
       "super": "train"
     },
+    "frozen_treat": {
+      "super": [
+        "food",
+        "ice"
+      ]
+    },
     "fruit": {
       "commons": "Plain black SVG fruit icons",
       "super": "food"
@@ -2069,17 +2078,25 @@
       "commons": "Plain black SVG letter I icons",
       "super": "letter"
     },
+    "ice": {
+      "commons": "Ice icons"
+    },
     "ice_cream": {
-      "super": "food"
+      "commons": "Plain black SVG ice cream icons",
+      "super": "frozen_treat"
     },
     "ice_pop": {
-      "super": "food"
+      "commons": "Ice lollipop icons",
+      "super": "frozen_treat"
     },
     "ice_skate": {
       "super": "skate"
     },
     "ichthys": {
       "super": "christian_symbol"
+    },
+    "icicle": {
+      "super": "ice"
     },
     "icy_eave": {
       "super": [
@@ -3247,6 +3264,9 @@
         "hair_care"
       ]
     },
+    "scoop_of_ice_cream": {
+      "super": "ice_cream"
+    },
     "screen": {
       "commons": "Display screen icons",
       "super": "electronic_device"
@@ -3425,6 +3445,10 @@
     "snomobile": {
       "super": "motor_vehicle"
     },
+    "snow": {
+      "commons": "Snow icons",
+      "super": "ice"
+    },
     "snowboard": {
       "super": [
         "sled",
@@ -3451,6 +3475,10 @@
         "snowcapped_mountain",
         "mountain_valley"
       ]
+    },
+    "snowflake": {
+      "commons": "Plain black SVG snowflake icons",
+      "super": "snow"
     },
     "snowmobile": {
       "super": "vehicle"
