@@ -2578,7 +2578,6 @@
       "super": "telescope"
     },
     "multi_character_uppercase_text": {
-      "match": ".+_uppercase$",
       "super": "text"
     },
     "music": {
@@ -3837,6 +3836,10 @@
     "thatched_roof": {
       "super": "roof"
     },
+    "three_character_uppercase_text": {
+      "match": "^(.)(.)(.)_uppercase$",
+      "super": "multi_character_uppercase_text"
+    },
     "thumbs_down_hand": {
       "super": "hand"
     },
@@ -4059,6 +4062,10 @@
     },
     "two_button_computer_mouse": {
       "super": "personal_computer"
+    },
+    "two_character_uppercase_text": {
+      "match": "^(.)(.)_uppercase$",
+      "super": "multi_character_uppercase_text"
     },
     "typha": {
       "super": "plant"
