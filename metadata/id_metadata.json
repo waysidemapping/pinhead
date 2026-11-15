@@ -674,7 +674,7 @@
       ]
     },
     "box": {
-      "super": "container"
+      "super": "packaging"
     },
     "box_gabled_building": {
       "super": [
@@ -1010,6 +1010,12 @@
     },
     "child": {
       "super": "person"
+    },
+    "chip": {
+      "super": "food"
+    },
+    "chip_bag": {
+      "super": "wrapper"
     },
     "chipped_log": {
       "super": "firewood"
@@ -1437,7 +1443,10 @@
       "super": "optical_disk"
     },
     "dvd_case": {
-      "super": "dvd"
+      "super": [
+        "dvd",
+        "packaging"
+      ]
     },
     "e": {
       "commons": "Plain black SVG letter E icons",
@@ -2682,6 +2691,9 @@
     "p": {
       "commons": "Plain black SVG letter P icons",
       "super": "letter"
+    },
+    "packaging": {
+      "super": "container"
     },
     "paddlecraft": {
       "super": "boat"
@@ -4336,6 +4348,9 @@
     },
     "wood": {
       "super": "tree"
+    },
+    "wrapper": {
+      "super": "packaging"
     },
     "wrench": {
       "commons": "Plain black SVG wrench icons",
