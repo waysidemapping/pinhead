@@ -885,6 +885,14 @@
       "inspo": "ice_pop"
     },
     {
+      "newId": "vending_machine_with_ice_pop",
+      "by": "@quincylvania",
+      "inspo": [
+        "ice_pop",
+        "vending_machine_with_scoop_of_ice_cream_in_cone"
+      ]
+    },
+    {
       "newId": "ice_pop_beside_scoop_of_ice_cream_in_cone",
       "by": "@quincylvania",
       "inspo": [
