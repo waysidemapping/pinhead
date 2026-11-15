@@ -867,7 +867,8 @@
       "oldId": "ice_cream_on_cone",
       "newId": "scoop_of_ice_cream_in_cone",
       "by": "@quincylvania",
-      "inspo": "vending_machine_with_scoop_of_ice_cream_in_cone"
+      "inspo": "vending_machine_with_scoop_of_ice_cream_in_cone",
+      "issue": "509"
     },
     {
       "newId": "scoop_of_ice_cream_in_cup",
