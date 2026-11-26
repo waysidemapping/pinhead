@@ -1265,6 +1265,9 @@
     "cube": {
       "super": "3d_shape"
     },
+    "cup": {
+      "super": "kitchenware"
+    },
     "cupcake": {
       "super": "baked_good"
     },
@@ -1358,6 +1361,12 @@
     },
     "dishware": {
       "super": "kitchenware"
+    },
+    "dispensing_machine": {
+      "commons": "Vending machine icons",
+      "super": [
+        "standalone_machine"
+      ]
     },
     "diving_mask": {
       "super": "mask"
@@ -2093,6 +2102,12 @@
     "ice_cream": {
       "commons": "Plain black SVG ice cream icons",
       "super": "frozen_treat"
+    },
+    "ice_cube": {
+      "super": [
+        "ice",
+        "cube"
+      ]
     },
     "ice_pop": {
       "commons": "Ice lollipop icons",
@@ -3504,6 +3519,9 @@
         "soccer"
       ]
     },
+    "soft_serve": {
+      "super": "ice_cream"
+    },
     "spacecraft": {
       "super": "aircraft"
     },
@@ -3688,14 +3706,20 @@
     "stroller": {
       "super": "vehicle"
     },
+    "sugar": {
+      "super": "food"
+    },
     "sugar_cube": {
       "super": [
-        "food",
+        "sugar",
         "cube"
       ]
     },
     "sugarcane_stalk": {
-      "super": "plant"
+      "super": [
+        "sugar",
+        "plant"
+      ]
     },
     "suitcase": {
       "commons": "Plain black SVG luggage icons",
@@ -4139,7 +4163,10 @@
     },
     "vehicle": {},
     "vending_machine": {
-      "commons": "Vending machine icons"
+      "commons": "Vending machine icons",
+      "super": [
+        "standalone_machine"
+      ]
     },
     "venus": {
       "commons": "♀",

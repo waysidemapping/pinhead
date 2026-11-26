@@ -3,100 +3,6 @@
   "date": "2026-11-30",
   "iconChanges": [
     {
-      "newId": "diamond",
-      "by": "@quincylvania",
-      "inspo": [
-        "square",
-        "rounded_diamond"
-      ],
-      "issue": "451",
-      "char": "◆"
-    },
-    {
-      "newId": "diamond_outline",
-      "by": "@quincylvania",
-      "inspo": [
-        "diamond",
-        "square_outline"
-      ],
-      "issue": "451",
-      "char": "◇"
-    },
-    {
-      "oldId": "jewel",
-      "newId": "jewel_outline",
-      "by": "@quincylvania"
-    },
-    {
-      "newId": "jewel",
-      "by": "@quincylvania",
-      "inspo": "jewel_outline"
-    },
-    {
-      "newId": "perfume_bottle_with_spray_beside_jewel_outline_above_purse",
-      "src": "temaki",
-      "srcBy": "@bhousel",
-      "importBy": "@quincylvania",
-      "issue": "181",
-      "temaki": "fashion_accessories"
-    },
-    {
-      "oldId": "utility_meter_with_bolt",
-      "newId": "utility_meter_beside_bolt"
-    },
-    {
-      "oldId": "utility_meter_with_cable",
-      "newId": "utility_meter_beside_cable"
-    },
-    {
-      "oldId": "utility_meter_with_droplet",
-      "newId": "utility_meter_beside_droplet"
-    },
-    {
-      "oldId": "utility_meter_with_gas_flame",
-      "newId": "utility_meter_beside_gas_flame"
-    },
-    {
-      "oldId": "utility_valve_with_droplet",
-      "newId": "utility_valve_beside_droplet"
-    },
-    {
-      "oldId": "utility_valve_with_gas_flame",
-      "newId": "utility_valve_beside_gas_flame"
-    },
-    {
-      "oldId": "utility_shutoff_with_bolt",
-      "newId": "utility_shutoff_beside_bolt"
-    },
-    {
-      "oldId": "utility_shutoff_with_cable",
-      "newId": "utility_shutoff_beside_cable"
-    },
-    {
-      "newId": "utility_meter_beside_sewage_pipe_cross_section",
-      "src": "temaki",
-      "srcBy": "@bhousel",
-      "importBy": "@quincylvania",
-      "issue": "181",
-      "temaki": "waste_meter"
-    },
-    {
-      "newId": "utility_valve_beside_sewage_pipe_cross_section",
-      "src": "temaki",
-      "srcBy": "@bhousel",
-      "importBy": "@quincylvania",
-      "issue": "181",
-      "temaki": "waste_shutoff"
-    },
-    {
-      "newId": "machine_with_handwheel_and_flat_coin",
-      "src": "temaki",
-      "srcBy": "@bhousel",
-      "importBy": "@quincylvania",
-      "issue": "181",
-      "temaki": "vending_flat_coin"
-    },
-    {
       "newId": "gabled_roof",
       "by": "@quincylvania",
       "inspo": "crates_under_gabled_roof"
@@ -948,20 +854,190 @@
     {
       "newId": "noodle_bowl",
       "by": "@quincylvania",
-      "inspo": [
-        "noodle_bowl_with_steam",
-        "zoo_uppercase"
-      ]
+      "inspo": "noodle_bowl_with_steam"
+    },
+    {
+      "oldId": "utility_meter_with_bolt",
+      "newId": "utility_meter_beside_bolt"
+    },
+    {
+      "oldId": "utility_meter_with_cable",
+      "newId": "utility_meter_beside_cable"
+    },
+    {
+      "oldId": "utility_meter_with_droplet",
+      "newId": "utility_meter_beside_droplet"
+    },
+    {
+      "oldId": "utility_meter_with_gas_flame",
+      "newId": "utility_meter_beside_gas_flame"
+    },
+    {
+      "oldId": "utility_valve_with_droplet",
+      "newId": "utility_valve_beside_droplet"
+    },
+    {
+      "oldId": "utility_valve_with_gas_flame",
+      "newId": "utility_valve_beside_gas_flame"
+    },
+    {
+      "oldId": "utility_shutoff_with_bolt",
+      "newId": "utility_shutoff_beside_bolt"
+    },
+    {
+      "oldId": "utility_shutoff_with_cable",
+      "newId": "utility_shutoff_beside_cable"
+    },
+    {
+      "newId": "utility_meter_beside_sewage_pipe_cross_section",
+      "src": "temaki",
+      "srcBy": "@bhousel",
+      "importBy": "@quincylvania",
+      "issue": "181",
+      "temaki": "waste_meter"
+    },
+    {
+      "newId": "utility_valve_beside_sewage_pipe_cross_section",
+      "src": "temaki",
+      "srcBy": "@bhousel",
+      "importBy": "@quincylvania",
+      "issue": "181",
+      "temaki": "waste_shutoff"
+    },
+    {
+      "newId": "machine_with_handwheel_and_flat_coin",
+      "src": "temaki",
+      "srcBy": "@bhousel",
+      "importBy": "@quincylvania",
+      "issue": "181",
+      "temaki": "vending_flat_coin"
+    },
+    {
+      "newId": "dispensing_machine",
+      "by": "@quincylvania",
+      "inspo": "cup_with_steam_in_dispensing_machine_with_handled_teacup_and_saucer"
+    },
+    {
+      "newId": "cup_with_steam_in_dispensing_machine_with_handled_teacup_and_saucer",
+      "src": "temaki",
+      "srcBy": "@bhousel",
+      "importBy": "@quincylvania",
+      "issue": "181",
+      "temaki": "vending_hot_drink2"
+    },
+    {
+      "newId": "dispensing_machine_with_handled_teacup_and_saucer",
+      "by": "@quincylvania",
+      "inspo": "cup_with_steam_in_dispensing_machine_with_handled_teacup_and_saucer"
+    },
+    {
+      "newId": "soft_serve_in_cup_in_dispensing_machine_with_scoop_of_ice_cream_in_cone",
+      "src": "temaki",
+      "srcBy": "@bhousel",
+      "importBy": "@quincylvania",
+      "issue": "181",
+      "temaki": "vending_ice_cream2"
+    },
+    {
+      "newId": "dispensing_machine_with_scoop_of_ice_cream_in_cone",
+      "by": "@quincylvania",
+      "inspo": "soft_serve_in_cup_in_dispensing_machine_with_scoop_of_ice_cream_in_cone"
+    },
+    {
+      "newId": "ice_cubes_to_cup_from_dispensing_machine_with_snowflake",
+      "src": "temaki",
+      "srcBy": "@bhousel",
+      "importBy": "@quincylvania",
+      "issue": "181",
+      "temaki": "vending_ice"
+    },
+    {
+      "newId": "dispensing_machine_with_snowflake",
+      "by": "@quincylvania",
+      "inspo": "ice_cubes_to_cup_from_dispensing_machine_with_snowflake"
+    },
+    {
+      "oldId": "vending_machine_with_drink_cup_with_steam",
+      "newId": "cup_with_steam_in_vending_machine",
+      "by": "@quincylvania",
+      "inspo": "handled_teacup_with_steam"
+    },
+    {
+      "newId": "cup_with_steam",
+      "by": "@quincylvania",
+      "inspo": "cup_with_steam_in_vending_machine"
+    },
+    {
+      "newId": "ice_cubes_to_cup",
+      "by": "@quincylvania",
+      "inspo": "ice_cubes_to_cup_from_dispensing_machine_with_snowflake"
+    },
+    {
+      "newId": "soft_serve_in_cup",
+      "by": "@quincylvania",
+      "inspo": "soft_serve_in_cup_in_dispensing_machine_with_scoop_of_ice_cream_in_cone"
     },
     {
       "oldId": "vending_machine_with_ice_cream_on_cone",
-      "newId": "vending_machine_with_scoop_of_ice_cream_in_cone"
+      "newId": "scoop_of_ice_cream_in_cone_in_vending_machine"
+    },
+    {
+      "oldId": "vending_machine_with_baguette",
+      "newId": "baguette_in_vending_machine"
+    },
+    {
+      "oldId": "vending_machine_with_cigarette_with_smoke_curl",
+      "newId": "cigarette_with_smoke_curl_in_vending_machine"
+    },
+    {
+      "oldId": "vending_machine_with_drink_can",
+      "newId": "drink_can_in_vending_machine"
+    },
+    {
+      "oldId": "vending_machine_with_egg",
+      "newId": "egg_in_vending_machine"
+    },
+    {
+      "oldId": "vending_machine_with_exclamation_point",
+      "newId": "exclamation_point_in_vending_machine"
+    },
+    {
+      "oldId": "vending_machine_with_greek_cross",
+      "newId": "greek_cross_in_vending_machine"
+    },
+    {
+      "oldId": "vending_machine_with_heart",
+      "newId": "heart_in_vending_machine"
+    },
+    {
+      "oldId": "vending_machine_with_mars",
+      "newId": "mars_in_vending_machine"
+    },
+    {
+      "oldId": "vending_machine_with_postage_stamp",
+      "newId": "postage_stamp_in_vending_machine"
+    },
+    {
+      "oldId": "vending_machine_with_question_mark",
+      "newId": "question_mark_in_vending_machine"
+    },
+    {
+      "oldId": "vending_machine_with_ticket",
+      "newId": "ticket_in_vending_machine"
+    },
+    {
+      "oldId": "vending_machine_with_venus_mars",
+      "newId": "venus_mars_in_vending_machine"
+    },
+    {
+      "oldId": "vending_machine_with_venus",
+      "newId": "venus_in_vending_machine"
     },
     {
       "oldId": "ice_cream_on_cone",
       "newId": "scoop_of_ice_cream_in_cone",
       "by": "@quincylvania",
-      "inspo": "vending_machine_with_scoop_of_ice_cream_in_cone",
+      "inspo": "scoop_of_ice_cream_in_cone_in_vending_machine",
       "issue": "509"
     },
     {
@@ -979,11 +1055,11 @@
       "inspo": "ice_pop"
     },
     {
-      "newId": "vending_machine_with_ice_pop",
+      "newId": "ice_pop_in_vending_machine",
       "by": "@quincylvania",
       "inspo": [
         "ice_pop",
-        "vending_machine_with_scoop_of_ice_cream_in_cone"
+        "scoop_of_ice_cream_in_cone_in_vending_machine"
       ]
     },
     {
@@ -993,6 +1069,44 @@
         "ice_pop",
         "scoop_of_ice_cream_in_cone"
       ]
+    },
+    {
+      "oldId": "jewel",
+      "newId": "jewel_outline",
+      "by": "@quincylvania"
+    },
+    {
+      "newId": "jewel",
+      "by": "@quincylvania",
+      "inspo": "jewel_outline"
+    },
+    {
+      "newId": "perfume_bottle_with_spray_beside_jewel_outline_above_purse",
+      "src": "temaki",
+      "srcBy": "@bhousel",
+      "importBy": "@quincylvania",
+      "issue": "181",
+      "temaki": "fashion_accessories"
+    },
+    {
+      "newId": "diamond",
+      "by": "@quincylvania",
+      "inspo": [
+        "square",
+        "rounded_diamond"
+      ],
+      "issue": "451",
+      "char": "◆"
+    },
+    {
+      "newId": "diamond_outline",
+      "by": "@quincylvania",
+      "inspo": [
+        "diamond",
+        "square_outline"
+      ],
+      "issue": "451",
+      "char": "◇"
     },
     {
       "newId": "pixel_jack_o_lantern",
