@@ -23,6 +23,16 @@
       "char": "◇"
     },
     {
+      "oldId": "jewel",
+      "newId": "jewel_outline",
+      "by": "@quincylvania"
+    },
+    {
+      "newId": "jewel",
+      "by": "@quincylvania",
+      "inspo": "jewel_outline"
+    },
+    {
       "newId": "gabled_roof",
       "by": "@quincylvania",
       "inspo": "crates_under_gabled_roof"
