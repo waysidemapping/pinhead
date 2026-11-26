@@ -3,6 +3,26 @@
   "date": "2026-11-30",
   "iconChanges": [
     {
+      "newId": "diamond",
+      "by": "@quincylvania",
+      "inspo": [
+        "square",
+        "rounded_diamond"
+      ],
+      "issue": "451",
+      "char": "◆"
+    },
+    {
+      "newId": "diamond_outline",
+      "by": "@quincylvania",
+      "inspo": [
+        "diamond",
+        "square_outline"
+      ],
+      "issue": "451",
+      "char": "◇"
+    },
+    {
       "newId": "gabled_roof",
       "by": "@quincylvania",
       "inspo": "crates_under_gabled_roof"
