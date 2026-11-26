@@ -924,6 +924,19 @@
       "inspo": "cup_with_steam_in_dispensing_machine_with_handled_teacup_and_saucer"
     },
     {
+      "newId": "spray_to_cup_from_dispensing_machine_with_drink_cup_with_straw",
+      "src": "temaki",
+      "srcBy": "@bhousel",
+      "importBy": "@quincylvania",
+      "issue": "181",
+      "temaki": "vending_cold_drink2"
+    },
+    {
+      "newId": "dispensing_machine_with_drink_cup_with_straw",
+      "by": "@quincylvania",
+      "inspo": "spray_to_cup_from_dispensing_machine_with_drink_cup_with_straw"
+    },
+    {
       "newId": "cup_with_steam_in_dispensing_machine_with_handled_teacup_and_saucer",
       "src": "temaki",
       "srcBy": "@bhousel",
