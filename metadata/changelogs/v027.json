@@ -33,6 +33,14 @@
       "inspo": "jewel_outline"
     },
     {
+      "newId": "perfume_bottle_with_spray_beside_jewel_outline_above_purse",
+      "src": "temaki",
+      "srcBy": "@bhousel",
+      "importBy": "@quincylvania",
+      "issue": "181",
+      "temaki": "fashion_accessories"
+    },
+    {
       "newId": "gabled_roof",
       "by": "@quincylvania",
       "inspo": "crates_under_gabled_roof"
