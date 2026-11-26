@@ -1089,6 +1089,37 @@
       "temaki": "fashion_accessories"
     },
     {
+      "oldId": "geyser",
+      "newId": "geyser_outline"
+    },
+    {
+      "oldId": "geyser_from_ground",
+      "newId": "geyser_outline_from_ground"
+    },
+    {
+      "newId": "geyser",
+      "by": "@quincylvania",
+      "inspo": "geyser_outline"
+    },
+    {
+      "newId": "geyser_from_ground",
+      "by": "@quincylvania",
+      "inspo": "geyser_outline_from_ground"
+    },
+    {
+      "newId": "geyser_from_water",
+      "by": "@quincylvania",
+      "inspo": "geyser_outline_from_water"
+    },
+    {
+      "newId": "geyser_outline_from_water",
+      "by": "@quincylvania",
+      "inspo": [
+        "geyser_outline_from_ground",
+        "fountain_from_water"
+      ]
+    },
+    {
       "newId": "diamond",
       "by": "@quincylvania",
       "inspo": [
