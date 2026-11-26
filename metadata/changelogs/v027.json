@@ -41,6 +41,38 @@
       "temaki": "fashion_accessories"
     },
     {
+      "oldId": "utility_meter_with_bolt",
+      "newId": "utility_meter_beside_bolt"
+    },
+    {
+      "oldId": "utility_meter_with_cable",
+      "newId": "utility_meter_beside_cable"
+    },
+    {
+      "oldId": "utility_meter_with_droplet",
+      "newId": "utility_meter_beside_droplet"
+    },
+    {
+      "oldId": "utility_meter_with_gas_flame",
+      "newId": "utility_meter_beside_gas_flame"
+    },
+    {
+      "oldId": "utility_valve_with_droplet",
+      "newId": "utility_valve_beside_droplet"
+    },
+    {
+      "oldId": "utility_valve_with_gas_flame",
+      "newId": "utility_valve_beside_gas_flame"
+    },
+    {
+      "oldId": "utility_shutoff_with_bolt",
+      "newId": "utility_shutoff_beside_bolt"
+    },
+    {
+      "oldId": "utility_shutoff_with_cable",
+      "newId": "utility_shutoff_beside_cable"
+    },
+    {
       "newId": "gabled_roof",
       "by": "@quincylvania",
       "inspo": "crates_under_gabled_roof"
