@@ -89,6 +89,14 @@
       "temaki": "waste_shutoff"
     },
     {
+      "newId": "machine_with_handwheel_and_flat_coin",
+      "src": "temaki",
+      "srcBy": "@bhousel",
+      "importBy": "@quincylvania",
+      "issue": "181",
+      "temaki": "vending_flat_coin"
+    },
+    {
       "newId": "gabled_roof",
       "by": "@quincylvania",
       "inspo": "crates_under_gabled_roof"
