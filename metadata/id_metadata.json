@@ -1516,6 +1516,12 @@
         "open_gabled_building"
       ]
     },
+    "eaved_open_pitched_building": {
+      "super": [
+        "eaved_building",
+        "open_pitched_building"
+      ]
+    },
     "eaved_rectangular_shelter": {
       "super": [
         "eaved_shelter",
@@ -2324,7 +2330,10 @@
       ]
     },
     "leanto_roof": {
-      "super": "roof"
+      "super": [
+        "pitched_roof",
+        "roof"
+      ]
     },
     "leanto_shelter": {
       "super": [
@@ -2683,7 +2692,19 @@
       "super": "envelope"
     },
     "open_gabled_building": {
-      "super": "gabled_building"
+      "super": [
+        "gabled_building",
+        "open_roofed_building"
+      ]
+    },
+    "open_pitched_building": {
+      "super": [
+        "pitched_building",
+        "open_roofed_building"
+      ]
+    },
+    "open_roofed_building": {
+      "super": "building"
     },
     "open_scissor": {
       "super": "scissor"
@@ -2892,6 +2913,15 @@
     },
     "pistol": {
       "super": "gun"
+    },
+    "pitched_building": {
+      "super": [
+        "building",
+        "pitched_roof"
+      ]
+    },
+    "pitched_roof": {
+      "super": "roof"
     },
     "pixel": {
       "commons": "One-color SVG pixel art (black)",
@@ -3340,9 +3370,6 @@
       "super": "pint_glass"
     },
     "shape": {},
-    "shed": {
-      "super": "building"
-    },
     "shekel": {
       "commons": "Shekel sign",
       "super": "currency_sign"
@@ -4416,6 +4443,9 @@
     "z": {
       "commons": "Plain black SVG letter Z icons",
       "super": "letter"
+    },
+    "z_door": {
+      "super": "door"
     }
   }
 }
